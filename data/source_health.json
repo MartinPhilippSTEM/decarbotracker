@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-30T14:26:16.730387+00:00",
+  "checked_at": "2026-09-30T14:46:23.932075+00:00",
   "sources": [
     {
       "source_id": "cvvm-ekologie",
@@ -13,8 +13,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-09T11:20:06Z",
-      "duration_s": 1.87,
-      "checked_at": "2026-09-30T14:25:18.073960Z",
+      "duration_s": 1.21,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Průzkumy CVVM k ekologii a klimatu."
     },
     {
@@ -29,8 +29,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-18T08:02:41Z",
-      "duration_s": 1.48,
-      "checked_at": "2026-09-30T14:25:18.075194Z",
+      "duration_s": 1.12,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -45,8 +45,8 @@
       "http_status": null,
       "count": 3,
       "newest": "2025-09-22T11:03:46Z",
-      "duration_s": 0.97,
-      "checked_at": "2026-09-30T14:25:18.075870Z",
+      "duration_s": 0.75,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -61,8 +61,8 @@
       "http_status": null,
       "count": 12,
       "newest": "2026-09-25T08:22:00Z",
-      "duration_s": 1.69,
-      "checked_at": "2026-09-30T14:25:18.077087Z",
+      "duration_s": 2.27,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "České klima, komunikační průvodci."
     },
     {
@@ -77,8 +77,8 @@
       "http_status": null,
       "count": 60,
       "newest": "2026-09-25T00:00:00Z",
-      "duration_s": 0.34,
-      "checked_at": "2026-09-30T14:25:18.077793Z",
+      "duration_s": 0.35,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Atom feed."
     },
     {
@@ -93,8 +93,8 @@
       "http_status": null,
       "count": 15,
       "newest": "2026-05-27T05:30:48Z",
-      "duration_s": 2.48,
-      "checked_at": "2026-09-30T14:25:18.078354Z",
+      "duration_s": 1.89,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -109,8 +109,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-22T04:00:05Z",
-      "duration_s": 1.95,
-      "checked_at": "2026-09-30T14:25:18.078865Z",
+      "duration_s": 1.87,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -125,8 +125,8 @@
       "http_status": null,
       "count": 11,
       "newest": "2026-09-15T09:55:03Z",
-      "duration_s": 1.54,
-      "checked_at": "2026-09-30T14:25:18.079377Z",
+      "duration_s": 1.05,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -141,8 +141,8 @@
       "http_status": null,
       "count": 20,
       "newest": "2026-09-30T10:32:00Z",
-      "duration_s": 0.85,
-      "checked_at": "2026-09-30T14:25:18.415905Z",
+      "duration_s": 0.93,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -157,8 +157,8 @@
       "http_status": null,
       "count": 9,
       "newest": "2026-09-30T13:18:08Z",
-      "duration_s": 1.05,
-      "checked_at": "2026-09-30T14:25:19.042559Z",
+      "duration_s": 0.83,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -173,8 +173,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-30T07:47:33Z",
-      "duration_s": 0.73,
-      "checked_at": "2026-09-30T14:25:19.266205Z",
+      "duration_s": 0.86,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Pracovní inzeráty se odfiltrují (exclude_title_patterns)."
     },
     {
@@ -189,8 +189,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-23T11:43:55Z",
-      "duration_s": 2.28,
-      "checked_at": "2026-09-30T14:25:19.558936Z",
+      "duration_s": 1.95,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Bez www."
     },
     {
@@ -205,8 +205,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-22T16:26:09Z",
-      "duration_s": 1.49,
-      "checked_at": "2026-09-30T14:25:19.622195Z",
+      "duration_s": 1.16,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -221,8 +221,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-22T09:58:26Z",
-      "duration_s": 2.11,
-      "checked_at": "2026-09-30T14:25:19.767341Z",
+      "duration_s": 1.64,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -236,9 +236,9 @@
       "detail": "",
       "http_status": null,
       "count": 10,
-      "newest": "2026-09-30T11:19:31Z",
-      "duration_s": 0.85,
-      "checked_at": "2026-09-30T14:25:19.945604Z",
+      "newest": "2026-09-30T13:45:33Z",
+      "duration_s": 0.72,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -253,8 +253,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-30T09:30:04Z",
-      "duration_s": 0.86,
-      "checked_at": "2026-09-30T14:25:19.999476Z",
+      "duration_s": 0.7,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -269,8 +269,8 @@
       "http_status": null,
       "count": 12,
       "newest": "2026-09-25T12:07:00Z",
-      "duration_s": 1.36,
-      "checked_at": "2026-09-30T14:25:20.026381Z",
+      "duration_s": 2.96,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -285,8 +285,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-30T13:29:54Z",
-      "duration_s": 0.78,
-      "checked_at": "2026-09-30T14:25:20.090368Z",
+      "duration_s": 0.53,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -301,8 +301,8 @@
       "http_status": null,
       "count": 20,
       "newest": "2026-09-30T13:11:00Z",
-      "duration_s": 0.18,
-      "checked_at": "2026-09-30T14:25:20.557799Z",
+      "duration_s": 0.33,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -317,8 +317,8 @@
       "http_status": null,
       "count": 30,
       "newest": "2026-09-30T10:00:00Z",
-      "duration_s": 1.95,
-      "checked_at": "2026-09-30T14:25:20.738080Z",
+      "duration_s": 1.62,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -332,9 +332,9 @@
       "detail": "",
       "http_status": null,
       "count": 60,
-      "newest": "2026-09-30T14:00:00Z",
-      "duration_s": 7.31,
-      "checked_at": "2026-09-30T14:25:20.798250Z",
+      "newest": "2026-09-30T14:25:00Z",
+      "duration_s": 2.65,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -348,9 +348,9 @@
       "detail": "",
       "http_status": null,
       "count": 60,
-      "newest": "2026-09-30T13:47:00Z",
-      "duration_s": 0.95,
-      "checked_at": "2026-09-30T14:25:20.858461Z",
+      "newest": "2026-09-30T14:09:00Z",
+      "duration_s": 0.82,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -364,9 +364,9 @@
       "detail": "",
       "http_status": null,
       "count": 46,
-      "newest": "2026-09-30T13:19:00Z",
-      "duration_s": 0.96,
-      "checked_at": "2026-09-30T14:25:20.867716Z",
+      "newest": "2026-09-30T14:25:00Z",
+      "duration_s": 0.67,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -380,9 +380,9 @@
       "detail": "",
       "http_status": null,
       "count": 30,
-      "newest": "2026-09-30T14:23:06Z",
-      "duration_s": 1.36,
-      "checked_at": "2026-09-30T14:25:21.108782Z",
+      "newest": "2026-09-30T14:39:07Z",
+      "duration_s": 0.9,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -397,8 +397,8 @@
       "http_status": null,
       "count": 21,
       "newest": "2026-08-31T00:00:00Z",
-      "duration_s": 1.89,
-      "checked_at": "2026-09-30T14:25:21.387466Z",
+      "duration_s": 3.03,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Feed /feed/ je platný, ale prázdný (ověřeno 30. 9. 2026) – proto scraping výpisu."
     },
     {
@@ -413,8 +413,8 @@
       "http_status": null,
       "count": 18,
       "newest": "2025-09-19T00:00:00Z",
-      "duration_s": 1.82,
-      "checked_at": "2026-09-30T14:25:21.805495Z",
+      "duration_s": 3.82,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Feed /feed/ je platný, ale prázdný (ověřeno 30. 9. 2026) – proto scraping výpisu."
     },
     {
@@ -429,8 +429,8 @@
       "http_status": null,
       "count": 17,
       "newest": "2026-09-09T00:00:00Z",
-      "duration_s": 0.84,
-      "checked_at": "2026-09-30T14:25:21.828425Z",
+      "duration_s": 0.71,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Průzkumy postojů k energetice."
     },
     {
@@ -445,9 +445,9 @@
       "http_status": 403,
       "count": 0,
       "newest": null,
-      "duration_s": 0.91,
-      "checked_at": "2026-09-30T14:25:21.838859Z",
-      "notes": ""
+      "duration_s": 0.68,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
+      "notes": "Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     },
     {
       "source_id": "hnuti-duha",
@@ -462,7 +462,7 @@
       "count": 10,
       "newest": null,
       "duration_s": 1.08,
-      "checked_at": "2026-09-30T14:25:21.881074Z",
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Výpis nemá data – použije se datum prvního spatření."
     },
     {
@@ -477,8 +477,8 @@
       "http_status": null,
       "count": 60,
       "newest": "2026-09-25T00:00:00Z",
-      "duration_s": 1.91,
-      "checked_at": "2026-09-30T14:25:22.467034Z",
+      "duration_s": 1.4,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Aktuality CzechGlobe (často odkazy na média)."
     },
     {
@@ -493,8 +493,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-30T06:35:17Z",
-      "duration_s": 0.28,
-      "checked_at": "2026-09-30T14:25:22.667335Z",
+      "duration_s": 0.3,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -509,8 +509,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-28T11:56:56Z",
-      "duration_s": 2.2,
-      "checked_at": "2026-09-30T14:25:22.689522Z",
+      "duration_s": 2.09,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -525,8 +525,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-06-24T12:20:45Z",
-      "duration_s": 2.78,
-      "checked_at": "2026-09-30T14:25:22.752495Z",
+      "duration_s": 2.16,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -541,8 +541,8 @@
       "http_status": null,
       "count": 12,
       "newest": "2026-09-22T00:00:00Z",
-      "duration_s": 1.41,
-      "checked_at": "2026-09-30T14:25:22.943998Z",
+      "duration_s": 1.76,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -557,8 +557,8 @@
       "http_status": null,
       "count": 12,
       "newest": "2026-09-30T14:12:01Z",
-      "duration_s": 0.73,
-      "checked_at": "2026-09-30T14:25:22.956478Z",
+      "duration_s": 0.37,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Specializované klimatické médium s vlastními analýzami."
     },
     {
@@ -573,8 +573,8 @@
       "http_status": null,
       "count": 40,
       "newest": "2026-09-30T10:27:45Z",
-      "duration_s": 2.53,
-      "checked_at": "2026-09-30T14:25:23.276871Z",
+      "duration_s": 2.54,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -588,9 +588,9 @@
       "detail": "",
       "http_status": null,
       "count": 12,
-      "newest": "2026-09-29T14:39:27Z",
-      "duration_s": 0.36,
-      "checked_at": "2026-09-30T14:25:23.625789Z",
+      "newest": "2026-09-30T14:21:19Z",
+      "duration_s": 0.42,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -605,8 +605,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-30T10:01:54Z",
-      "duration_s": 0.09,
-      "checked_at": "2026-09-30T14:25:23.688220Z",
+      "duration_s": 0.33,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -621,8 +621,8 @@
       "http_status": null,
       "count": 12,
       "newest": "2026-09-29T09:15:40Z",
-      "duration_s": 1.95,
-      "checked_at": "2026-09-30T14:25:23.781214Z",
+      "duration_s": 2.46,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Klimatická komunikace."
     },
     {
@@ -637,8 +637,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-11T09:25:18Z",
-      "duration_s": 1.12,
-      "checked_at": "2026-09-30T14:25:23.980994Z",
+      "duration_s": 0.95,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -653,8 +653,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-17T12:30:19Z",
-      "duration_s": 0.44,
-      "checked_at": "2026-09-30T14:25:24.357979Z",
+      "duration_s": 0.4,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -669,8 +669,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-29T23:01:00Z",
-      "duration_s": 2.48,
-      "checked_at": "2026-09-30T14:25:24.373403Z",
+      "duration_s": 1.43,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -685,8 +685,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-28T13:39:31Z",
-      "duration_s": 1.57,
-      "checked_at": "2026-09-30T14:25:24.797103Z",
+      "duration_s": 1.1,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -701,8 +701,8 @@
       "http_status": null,
       "count": 30,
       "newest": "2026-09-30T12:00:47Z",
-      "duration_s": 0.82,
-      "checked_at": "2026-09-30T14:25:24.887960Z",
+      "duration_s": 0.64,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -717,8 +717,8 @@
       "http_status": null,
       "count": 30,
       "newest": "2026-09-30T13:44:12Z",
-      "duration_s": 0.48,
-      "checked_at": "2026-09-30T14:25:25.097084Z",
+      "duration_s": 0.38,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -733,8 +733,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-23T23:00:00Z",
-      "duration_s": 1.55,
-      "checked_at": "2026-09-30T14:25:25.528112Z",
+      "duration_s": 0.42,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -749,8 +749,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-29T21:13:45Z",
-      "duration_s": 1.27,
-      "checked_at": "2026-09-30T14:25:25.575350Z",
+      "duration_s": 0.78,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -765,8 +765,8 @@
       "http_status": null,
       "count": 20,
       "newest": "2026-09-30T12:58:29Z",
-      "duration_s": 0.9,
-      "checked_at": "2026-09-30T14:25:25.704442Z",
+      "duration_s": 0.26,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -780,9 +780,9 @@
       "detail": "",
       "http_status": null,
       "count": 31,
-      "newest": "2026-09-30T05:00:00Z",
-      "duration_s": 1.2,
-      "checked_at": "2026-09-30T14:25:25.735333Z",
+      "newest": "2026-09-30T14:31:37Z",
+      "duration_s": 0.28,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Ověřeno 30. 9. 2026."
     },
     {
@@ -797,8 +797,8 @@
       "http_status": null,
       "count": 25,
       "newest": "2026-09-14T08:00:00Z",
-      "duration_s": 0.95,
-      "checked_at": "2026-09-30T14:25:25.805085Z",
+      "duration_s": 0.66,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Ověřeno 30. 9. 2026."
     },
     {
@@ -813,9 +813,9 @@
       "http_status": 403,
       "count": 0,
       "newest": null,
-      "duration_s": 1.27,
-      "checked_at": "2026-09-30T14:25:26.370813Z",
-      "notes": "Jejich /feed/ je prázdný."
+      "duration_s": 0.42,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
+      "notes": "Jejich /feed/ je prázdný. Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     },
     {
       "source_id": "iea-news",
@@ -829,9 +829,9 @@
       "http_status": 403,
       "count": 0,
       "newest": null,
-      "duration_s": 1.01,
-      "checked_at": "2026-09-30T14:25:26.604334Z",
-      "notes": "RSS už neexistuje. Stránka /commentaries vrací 404, komentáře jsou ale součástí výpisu /news."
+      "duration_s": 0.4,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
+      "notes": "RSS už neexistuje. Stránka /commentaries vrací 404, komentáře jsou ale součástí výpisu /news. Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     },
     {
       "source_id": "iea-reports",
@@ -845,9 +845,9 @@
       "http_status": 403,
       "count": 0,
       "newest": null,
-      "duration_s": 0.92,
-      "checked_at": "2026-09-30T14:25:26.758671Z",
-      "notes": "RSS už neexistuje."
+      "duration_s": 0.34,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
+      "notes": "RSS už neexistuje. Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     },
     {
       "source_id": "agora",
@@ -861,8 +861,8 @@
       "http_status": null,
       "count": 9,
       "newest": "2026-09-25T00:00:00Z",
-      "duration_s": 1.32,
-      "checked_at": "2026-09-30T14:25:26.846988Z",
+      "duration_s": 1.0,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -877,9 +877,9 @@
       "http_status": 403,
       "count": 0,
       "newest": null,
-      "duration_s": 0.97,
-      "checked_at": "2026-09-30T14:25:26.850616Z",
-      "notes": ""
+      "duration_s": 0.53,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
+      "notes": "Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     },
     {
       "source_id": "clew",
@@ -893,8 +893,8 @@
       "http_status": null,
       "count": 15,
       "newest": "2026-09-30T11:44:01Z",
-      "duration_s": 1.63,
-      "checked_at": "2026-09-30T14:25:26.933728Z",
+      "duration_s": 1.18,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -909,8 +909,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-18T00:00:00Z",
-      "duration_s": 0.81,
-      "checked_at": "2026-09-30T14:25:27.082155Z",
+      "duration_s": 0.77,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -925,8 +925,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-28T12:00:52Z",
-      "duration_s": 0.57,
-      "checked_at": "2026-09-30T14:25:27.610087Z",
+      "duration_s": 0.19,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -941,8 +941,8 @@
       "http_status": null,
       "count": 60,
       "newest": "2026-09-30T12:25:09Z",
-      "duration_s": 0.41,
-      "checked_at": "2026-09-30T14:25:27.642393Z",
+      "duration_s": 0.14,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -957,8 +957,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-30T09:00:00Z",
-      "duration_s": 0.47,
-      "checked_at": "2026-09-30T14:25:27.675006Z",
+      "duration_s": 0.14,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -973,8 +973,8 @@
       "http_status": null,
       "count": 30,
       "newest": "2026-09-30T12:00:05Z",
-      "duration_s": 0.74,
-      "checked_at": "2026-09-30T14:25:27.824188Z",
+      "duration_s": 0.27,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -989,8 +989,8 @@
       "http_status": null,
       "count": 60,
       "newest": "2026-09-30T07:30:00Z",
-      "duration_s": 0.39,
-      "checked_at": "2026-09-30T14:25:27.894302Z",
+      "duration_s": 0.27,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -1005,8 +1005,8 @@
       "http_status": null,
       "count": 20,
       "newest": "2026-09-30T08:45:00Z",
-      "duration_s": 0.89,
-      "checked_at": "2026-09-30T14:25:28.053817Z",
+      "duration_s": 0.4,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -1021,8 +1021,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-24T21:16:10Z",
-      "duration_s": 0.56,
-      "checked_at": "2026-09-30T14:25:28.109657Z",
+      "duration_s": 0.55,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -1037,8 +1037,8 @@
       "http_status": null,
       "count": 10,
       "newest": "2026-09-30T12:00:52Z",
-      "duration_s": 0.71,
-      "checked_at": "2026-09-30T14:25:28.141092Z",
+      "duration_s": 0.67,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -1053,8 +1053,8 @@
       "http_status": null,
       "count": 20,
       "newest": "2026-09-30T06:00:00Z",
-      "duration_s": 0.81,
-      "checked_at": "2026-09-30T14:25:28.164894Z",
+      "duration_s": 0.46,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "WordPress REST API. CDN Pantheon odmítá httpx (403) – stahuje se záložně přes urllib."
     },
     {
@@ -1069,8 +1069,8 @@
       "http_status": null,
       "count": 20,
       "newest": "2026-09-02T00:00:00Z",
-      "duration_s": 1.78,
-      "checked_at": "2026-09-30T14:25:28.180794Z",
+      "duration_s": 1.84,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -1085,8 +1085,8 @@
       "http_status": null,
       "count": 8,
       "newest": "2026-09-29T00:00:00Z",
-      "duration_s": 1.2,
-      "checked_at": "2026-09-30T14:25:28.285994Z",
+      "duration_s": 0.16,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "RSS 1.0 / RDF."
     },
     {
@@ -1101,8 +1101,8 @@
       "http_status": null,
       "count": 135,
       "newest": "2026-09-30T12:54:15Z",
-      "duration_s": 7.22,
-      "checked_at": "2026-09-30T14:25:29.958701Z",
+      "duration_s": 10.62,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -1112,13 +1112,13 @@
       "url": "https://api.openalex.org/works",
       "region": "GLOBAL",
       "enabled": true,
-      "status": "empty",
-      "detail": "OpenAlex: 0 dotazů OK, po 2 chybách (např. 503) zbytek přeskočen",
+      "status": "ok",
+      "detail": "OpenAlex: 1 dotazů OK, po 2 chybách (např. 503) zbytek přeskočen",
       "http_status": null,
-      "count": 0,
-      "newest": null,
-      "duration_s": 39.43,
-      "checked_at": "2026-09-30T14:25:29.958701Z",
+      "count": 30,
+      "newest": "2026-09-29T00:00:00Z",
+      "duration_s": 63.67,
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": ""
     },
     {
@@ -1134,7 +1134,7 @@
       "count": 0,
       "newest": null,
       "duration_s": 0.0,
-      "checked_at": "2026-09-30T14:26:16.622130Z",
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Vypnuto 30. 9. 2026: přesměrování na rapporteur.com, Cloudflare vrací 403 i prohlížečovému UA."
     },
     {
@@ -1150,7 +1150,7 @@
       "count": 0,
       "newest": null,
       "duration_s": 0.0,
-      "checked_at": "2026-09-30T14:26:16.622130Z",
+      "checked_at": "2026-09-30T14:44:59.537641Z",
       "notes": "Vypnuto 30. 9. 2026: Cloudflare JS výzva ('Just a moment…') i pro prohlížečový UA."
     }
   ]
