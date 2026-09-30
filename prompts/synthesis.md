@@ -39,7 +39,6 @@ Zahraniční zjištění zařaď do SWOT jen tehdy, když mají zjevný význam 
 - `executive_summary_cs`: 3–5 vět.
 - `swot`: viz výše.
 - `top_items`: 8–12 nejdůležitějších položek seřazených podle důležitosti, české položky a položky o ČR nahoře. Prvních 5 se zobrazí v přehledové tabulce na začátku stránky – ať jsou to skutečně nejpodstatnější analýzy, studie a průzkumy týdne (ne pozvánky ani drobné zprávy). U každé:
-  - `short_cs`: jedna krátká, srozumitelná věta (max. ~20 slov) do tabulky: co položka přináší. Bez tučného písma.
   - `why_it_matters_cs`: 2–3 věty, proč je důležitá pro ČR a veřejnost.
   - `key_finding_cs`: konkrétní zjištění, jen s čísly ze vstupu. Pokud výtah konkrétní zjištění neobsahuje, napiš to.
   - `category`: jedno téma.
@@ -49,8 +48,10 @@ Zahraniční zjištění zařaď do SWOT jen tehdy, když mají zjevný význam 
   - `communication_recommendations`: praktická komunikační doporučení opřená o vstupy (evidence_item_ids). Seznam může být prázdný.
 - `forecasts_cs`: nové prognózy a scénáře (autor, horizont, klíčové číslo ze vstupu). Seznam může být prázdný.
 - `by_region`: krátké odstavce v pořadí `cz`, `eu`, `us`; `global` může být prázdný řetězec.
-- `events_cs`: konkrétní nadcházející nebo právě proběhlé **události s termínem**, které plynou ze vstupů: konference, debaty, zveřejnění dat nebo reportů, hlasování, termíny legislativy, začátek programů. U každé `when` (datum nebo termín doslova ze vstupu; jinak „termín neuveden“), `text_cs` (jedna věta: co, kdo, proč to stojí za pozornost) a `evidence_item_ids`. Seřaď chronologicky, max. 6. Pokud žádné nejsou, vrať prázdný seznam.
-- `watchlist_cs`: 3–5 obecnějších věcí ke sledování (trendy, otevřené otázky, očekávaná rozhodnutí bez přesného data). Neopakuj události z `events_cs`. Uveď jen to, co plyne ze vstupů; jinak prázdný seznam.
+- `watchlist_cs`: max. 10 položek ke sledování, které plynou ze vstupů, dvou druhů:
+  - **události s termínem** (konference, debaty, zveřejnění dat nebo reportů, hlasování, termíny legislativy, začátek programů): do `when` napiš datum nebo termín doslova ze vstupu (např. „6. 10. 2026“, „září 2026“). Tyto se zobrazí v tabulce „Události a termíny“ na začátku přehledu – napiš je jako jednu větu: co, kdo a proč to stojí za pozornost.
+  - **obecnější věci ke sledování** (trendy, otevřené otázky, očekávaná rozhodnutí bez data): `when` nech prázdný řetězec.
+  Události seřaď chronologicky a dej je na začátek seznamu. Nic si nevymýšlej; pokud nic takového ve vstupech není, vrať prázdný seznam.
 - `data_gaps_cs`: co tento týden chybělo nebo co nešlo ověřit (např. chybějící metodika průzkumu, nic nového k ČR, jen výtahy bez plného textu).
 
 Piš česky, věcně a čtivě, v krátkých odstavcích. Nepoužívej superlativy, které nejsou doložené.

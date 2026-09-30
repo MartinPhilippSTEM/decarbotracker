@@ -16,7 +16,6 @@ from decarbotracker.llm import (
 from decarbotracker.models import (
     REGION_ORDER,
     ByRegion,
-    Event,
     Forecast,
     PublicAttitudes,
     Recommendation,
@@ -27,6 +26,7 @@ from decarbotracker.models import (
     Swot,
     SwotPoint,
     TopItem,
+    WatchItem,
     WeeklyReport,
 )
 from decarbotracker.weeks import week_bounds
@@ -136,8 +136,7 @@ def validate_draft(draft: ReportDraft, valid: set[str], geo_of: dict[str, str]) 
     pa.surveys = keep_points(pa.surveys, "průzkumy")
     pa.communication_recommendations = keep_points(pa.communication_recommendations, "doporučení")
     draft.forecasts_cs = keep_points(draft.forecasts_cs, "prognózy")
-    draft.events_cs = keep_points(draft.events_cs, "události")[:6]
-    draft.watchlist_cs = keep_points(draft.watchlist_cs, "watchlist")[:5]
+    draft.watchlist_cs = keep_points(draft.watchlist_cs, "watchlist/události")[:10]
 
     problems = [f"kvadrant SWOT '{q}' je po kontrole prázdný" for q in QUADRANTS if not getattr(draft.swot, q)]
     if len(draft.top_items) < 3:
@@ -173,7 +172,7 @@ def mock_draft(selected: list[ScoredItem]) -> ReportDraft:
         threats=[pt(i, "Hrozba") for i in range(9, 12)],
     )
     tops = [
-        TopItem(item_id=s.item.id, short_cs=f"[Ukázka] {s.score.one_line_cs[:120]}",
+        TopItem(item_id=s.item.id,
                 why_it_matters_cs=f"[Ukázka – dry-run] **{s.item.source_name}**: {s.score.one_line_cs}",
                 key_finding_cs="Ukázkový výstup bez volání AI – konkrétní zjištění ověřte u zdroje.",
                 category=s.score.topics[0])
@@ -205,9 +204,8 @@ def mock_draft(selected: list[ScoredItem]) -> ReportDraft:
         forecasts_cs=forecasts,
         by_region=ByRegion(cz=f"[Ukázka] {len(cz)} položek s fokusem na ČR.", eu="[Ukázka] EU.", us="[Ukázka] USA.",
                            **{"global": ""}),
-        events_cs=[Event(when="termín neuveden", text_cs=f"[Ukázka – dry-run] {selected[0].item.title}",
-                         evidence_item_ids=[selected[0].item.id])],
-        watchlist_cs=[],
+        watchlist_cs=[WatchItem(when="6. 10. 2026", text_cs=f"[Ukázka – dry-run] {selected[0].item.title}",
+                                evidence_item_ids=[selected[0].item.id])],
         data_gaps_cs=["Režim dry-run: bez skutečné syntézy AI."],
     )
 
@@ -274,7 +272,7 @@ def fallback_report(week: str, scored: list[ScoredItem], considered: int, settin
         items_considered=considered, items_selected=len(top), status=status, notices_cs=notices,  # type: ignore[arg-type]
         cz_content_present=cz,
         headline_cs="Přehled bez AI syntézy – nejlépe hodnocené položky týdne",
-        top_items=[TopItem(item_id=s.item.id, short_cs=s.score.one_line_cs, why_it_matters_cs=s.score.one_line_cs or s.item.title,
+        top_items=[TopItem(item_id=s.item.id, why_it_matters_cs=s.score.one_line_cs or s.item.title,
                            key_finding_cs="Bez AI syntézy – ověřte u zdroje.", category=s.score.topics[0])
                    for s in top],
         items=item_refs(top),
@@ -366,7 +364,7 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
         notices_cs=notices, cz_content_present=cz_present,
         headline_cs=draft.headline_cs, executive_summary_cs=draft.executive_summary_cs, swot=draft.swot,
         top_items=draft.top_items, public_attitudes_cs=draft.public_attitudes_cs, forecasts_cs=draft.forecasts_cs,
-        by_region=draft.by_region, events_cs=draft.events_cs, watchlist_cs=draft.watchlist_cs, data_gaps_cs=draft.data_gaps_cs,
+        by_region=draft.by_region, watchlist_cs=draft.watchlist_cs, data_gaps_cs=draft.data_gaps_cs,
         items=item_refs(selected), validation_log=validation_log,
     )
     if client is not None:

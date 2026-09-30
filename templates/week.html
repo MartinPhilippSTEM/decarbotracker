@@ -18,7 +18,10 @@
   </header>
 
   {% set top5 = r.top_items[:5] %}
-  {% if top5 or r.events_cs %}
+  {# události = položky watchlistu s konkrétním termínem; ostatní jdou do sekce Co dál sledovat #}
+  {% set events = r.watchlist_cs|selectattr('when')|rejectattr('when', 'in', ['neuvedeno', 'termín neuveden', '-', '—'])|list %}
+  {% set watch = r.watchlist_cs|reject('in', events)|list %}
+  {% if top5 or events %}
   <section aria-labelledby="prehled" class="glance">
     <h2 id="prehled">Na první pohled</h2>
     {% if top5 %}
@@ -35,7 +38,7 @@
             {% if it.title_cs %}<br><span class="title-cs">{{ it.title_cs }}</span>{% endif %}
             <br><span class="card-meta"><span class="tag tag-{{ it.geo_focus|lower }}">{{ it.geo_focus }}</span> {{ it.source_name }}{% if it.is_opinion %} · <span class="tag tag-opinion">názor</span>{% endif %}</span>
           </td>
-          <td>{{ (t.short_cs or it.one_line_cs or t.why_it_matters_cs)|rich }}</td>
+          <td>{{ (it.one_line_cs or t.why_it_matters_cs)|rich }}</td>
         </tr>
       {% endif %}{% endfor %}
       </tbody>
@@ -43,13 +46,13 @@
     </div>
     {% endif %}
 
-    {% if r.events_cs %}
+    {% if events %}
     <h3>Události a termíny</h3>
     <div class="table-wrap">
     <table class="events">
       <thead><tr><th scope="col">Kdy</th><th scope="col">Co se děje</th><th scope="col">Zdroj</th></tr></thead>
       <tbody>
-      {% for e in r.events_cs %}
+      {% for e in events %}
         <tr><td class="when">{{ e.when }}</td><td>{{ e.text_cs|rich }}</td><td>{{ evidence(e.evidence_item_ids, items) }}</td></tr>
       {% endfor %}
       </tbody>
@@ -141,10 +144,10 @@
   </section>
   {% endif %}
 
-  {% if r.watchlist_cs %}
+  {% if watch %}
   <section aria-labelledby="sledovat">
     <h2 id="sledovat">Co dál sledovat</h2>
-    <ul>{% for w in r.watchlist_cs %}<li>{{ w.text_cs|rich }} {{ evidence(w.evidence_item_ids, items) }}</li>{% endfor %}</ul>
+    <ul>{% for w in watch %}<li>{{ w.text_cs|rich }} {{ evidence(w.evidence_item_ids, items) }}</li>{% endfor %}</ul>
   </section>
   {% endif %}
 

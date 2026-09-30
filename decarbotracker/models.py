@@ -123,17 +123,9 @@ class Swot(BaseModel):
 
 class TopItem(BaseModel):
     item_id: str
-    # povinné: volitelná pole ve strukturovaném výstupu výrazně zvětšují gramatiku (API pak vrací 400)
-    short_cs: str = Field(description="jedna krátká věta (max. ~20 slov) do přehledové tabulky")
     why_it_matters_cs: str
     key_finding_cs: str
     category: Topic
-
-
-class Event(BaseModel):
-    when: str = Field(description="datum nebo termín doslova ze vstupu, např. '6. 10. 2026'; jinak 'termín neuveden'")
-    text_cs: str = Field(description="co se stane (konference, zveřejnění dat, hlasování, publikace…)")
-    evidence_item_ids: list[str]
 
 
 class Survey(BaseModel):
@@ -175,6 +167,8 @@ class ByRegion(BaseModel):
 
 
 class WatchItem(BaseModel):
+    # pozn.: schéma držet malé – API odmítá příliš velkou gramatiku strukturovaného výstupu
+    when: str = Field(description="termín doslova ze vstupu (např. '6. 10. 2026'), nebo prázdný řetězec, pokud žádný není")
     text_cs: str
     evidence_item_ids: list[str]
 
@@ -189,7 +183,6 @@ class ReportDraft(BaseModel):
     public_attitudes_cs: PublicAttitudes
     forecasts_cs: list[Forecast]
     by_region: ByRegion
-    events_cs: list[Event]
     watchlist_cs: list[WatchItem]
     data_gaps_cs: list[str]
 
@@ -242,7 +235,6 @@ class WeeklyReport(BaseModel):
     public_attitudes_cs: PublicAttitudes | None = None
     forecasts_cs: list[Forecast] = Field(default_factory=list)
     by_region: ByRegion | None = None
-    events_cs: list[Event] = Field(default_factory=list)
     watchlist_cs: list[WatchItem] = Field(default_factory=list)
     data_gaps_cs: list[str] = Field(default_factory=list)
     items: list[ReportItemRef] = Field(default_factory=list)
