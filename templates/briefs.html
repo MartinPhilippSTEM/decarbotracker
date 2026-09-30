@@ -8,7 +8,7 @@
 {% for b in briefs %}
   <li>
     <p class="kicker"><a href="{{ base }}dotazy/{{ b.slug }}/">{{ b.topic }}</a> · {{ b.generated_at|date_cs }} · posledních {{ b.days }} dní</p>
-    <p>{{ b.headline_cs }}</p>
+    <p>{{ b.headline_cs|plain }}</p>
   </li>
 {% endfor %}
 </ul>

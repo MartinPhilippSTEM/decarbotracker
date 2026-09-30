@@ -9,11 +9,11 @@
   <lastBuildDate>{{ now|rfc822 }}</lastBuildDate>
 {% for r in reports %}
   <item>
-    <title>Týden {{ r.week }}: {{ r.headline_cs }}</title>
+    <title>Týden {{ r.week }}: {{ r.headline_cs|plain }}</title>
     <link>{{ site_url }}tydny/{{ r.week|week_slug }}/</link>
     <guid isPermaLink="true">{{ site_url }}tydny/{{ r.week|week_slug }}/</guid>
     <pubDate>{{ r.generated_at|rfc822 }}</pubDate>
-    <description>{{ period_of(r) }}. {{ r.executive_summary_cs }}</description>
+    <description>{{ period_of(r) }}. {{ r.executive_summary_cs|plain }}</description>
   </item>
 {% endfor %}
 </channel>

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import re
 import shutil
 import time
 from datetime import UTC, datetime
@@ -11,6 +12,7 @@ from pathlib import Path
 from typing import Any
 
 from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoescape
+from markupsafe import Markup, escape
 from pydantic import ValidationError
 
 from decarbotracker.config import CODE_ROOT, Settings, load_sources, normalize_base_url, project_root
@@ -47,6 +49,22 @@ def date_cs(value: Any, with_year: bool = True) -> str:
         value = datetime.fromisoformat(value)
     s = f"{value.day}. {MONTHS_CS[value.month - 1]}"
     return f"{s} {value.year}" if with_year else s
+
+
+_BOLD = re.compile(r"\*\*(.+?)\*\*", re.S)
+
+
+def rich(value: Any) -> Markup:
+    """Text z modelu → HTML: vše se escapuje, jen **tučně** se převede na <strong>."""
+    if not value:
+        return Markup("")
+    escaped = str(escape(str(value)))
+    return Markup(_BOLD.sub(r"<strong>\1</strong>", escaped).replace("**", ""))
+
+
+def plain(value: Any) -> str:
+    """Stejný text bez značek ** (pro <title>, RSS, meta description)."""
+    return str(value or "").replace("**", "")
 
 
 def load_reports() -> list[WeeklyReport]:
@@ -87,6 +105,8 @@ def make_env(base_url: str, settings: Settings) -> Environment:
         now=datetime.now(UTC),
     )
     env.filters["date_cs"] = date_cs
+    env.filters["rich"] = rich
+    env.filters["plain"] = plain
     env.filters["rfc822"] = lambda d: format_datetime(d if isinstance(d, datetime) else datetime.fromisoformat(d))
     env.filters["week_slug"] = week_slug
     return env

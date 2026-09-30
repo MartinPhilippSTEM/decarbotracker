@@ -17,6 +17,8 @@
   --t-bg: #f8ebeb; --t-line: #983232;
   --tag-cz: #1d5c57; --tag-eu: #2c4f8a; --tag-us: #7a3e6c; --tag-global: #5b5f63;
   --logo-vein: var(--bg);
+  --highlight: #fbe7a1;
+  --summary-bg: #eef5f3;
   --radius: 6px;
   --maxw: 60rem;
   color-scheme: light dark;
@@ -39,6 +41,8 @@
     --o-bg: #142130; --o-line: #7fb3dd;
     --t-bg: #2b1718; --t-line: #e78b8b;
     --tag-cz: #7cc4b8; --tag-eu: #93b4ea; --tag-us: #dca3cf; --tag-global: #b4b9bd;
+    --highlight: rgba(234, 179, 8, .30);
+    --summary-bg: #17231f;
   }
 }
 
@@ -152,6 +156,31 @@ small { color: var(--muted); }
   body { font-size: 16px; }
   h1 { font-size: 1.5rem; }
   .swot { grid-template-columns: 1fr; }
+}
+/* zvýraznění klíčových sdělení (**tučně** z textu AI) – efekt zvýrazňovače */
+.summary strong, .swot li strong, .card strong:not(:first-child), .why strong, .top5 td:last-child strong,
+.attitudes strong, .regions dd strong, .events strong {
+  font-weight: 650;
+  background: linear-gradient(transparent 55%, var(--highlight) 55%);
+  padding: 0 .1em;
+}
+.summary { background: var(--summary-bg); border-left: 5px solid var(--accent); border-radius: var(--radius); padding: .8rem 1.1rem; margin: 1rem 0; }
+.summary p { margin: .2rem 0; font-size: 1.1rem; line-height: 1.65; }
+.summary .summary-label { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); font-weight: 700; margin: 0 0 .2rem; }
+
+/* tabulky „Na první pohled“ */
+.glance h3 { margin-top: 1rem; }
+.top5 td, .events td { padding: .55rem .5rem; }
+.top5 td.num { font-weight: 700; color: var(--accent); font-size: 1.1rem; width: 2rem; }
+.top5 td:nth-child(2) { width: 48%; }
+.top5 .card-meta { display: inline-block; margin-top: .2rem; }
+.events td.when { white-space: nowrap; font-weight: 600; width: 8rem; }
+.events .evidence::before { content: ""; }
+@media (max-width: 720px) {
+  .top5 thead, .events thead { display: none; }
+  .top5 tr, .events tr { display: block; border-bottom: 1px solid var(--line); padding: .4rem 0; }
+  .top5 td, .events td { display: block; border: 0; padding: .15rem 0; width: auto !important; }
+  .top5 td.num { display: inline-block; }
 }
 @media print {
   .site-header nav, .skip { display: none; }

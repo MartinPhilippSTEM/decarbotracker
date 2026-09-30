@@ -61,3 +61,23 @@ def test_feed_is_valid_xml(settings, with_report, tmp_path):
     root = ET.parse(out / "feed.xml").getroot()
     link = root.find("channel/item/link").text
     assert link == "https://example.github.io/decarbotracker/tydny/2026-w39/"
+
+
+def test_rich_filter_escapes_html_and_renders_bold():
+    from decarbotracker.render import plain, rich
+
+    out = str(rich("Podpora <script>x</script> **roste o 5 %** a **klesá**"))
+    assert "<script>" not in out and "&lt;script&gt;" in out
+    assert "<strong>roste o 5 %</strong>" in out and "<strong>klesá</strong>" in out
+    assert str(rich("lichý ** znak")) == "lichý  znak"
+    assert plain("**a** b") == "a b"
+
+
+def test_glance_tables_rendered(settings, with_report, tmp_path):
+    out = build_site(settings, out_dir=tmp_path / "site")
+    html = (out / "index.html").read_text(encoding="utf-8")
+    assert "Pět nejdůležitějších analýz a článků" in html
+    assert "Události a termíny" in html
+    assert html.index("Na první pohled") < html.index('id="swot"')
+    assert "<strong>deterministický ukázkový výstup</strong>" in html
+    assert "**" not in html

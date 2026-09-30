@@ -4,6 +4,7 @@ from conftest import make_item, make_scored
 from decarbotracker.llm import LLMMaxTokens, LLMRefusal, LLMValidationError, UsageTracker
 from decarbotracker.models import (
     ByRegion,
+    Event,
     PublicAttitudes,
     Recommendation,
     ReportDraft,
@@ -42,6 +43,8 @@ def _draft(ids, bad="neexistuje123"):
             Recommendation(text_cs="Bez doložení.", evidence_item_ids=[bad]),
         ]),
         forecasts_cs=[], by_region=ByRegion(cz="CZ text", eu="EU", us="US", **{"global": ""}),
+        events_cs=[Event(when="6. 10. 2026", text_cs="Zveřejnění dat", evidence_item_ids=[ids[1]]),
+                   Event(when="neuvedeno", text_cs="Vymyšlená akce", evidence_item_ids=[bad])],
         watchlist_cs=[], data_gaps_cs=[],
     )
 
@@ -55,6 +58,7 @@ def test_validate_removes_invalid_evidence_ids():
     assert draft.swot.threats[0].evidence_item_ids == [ids[0]]
     assert all(t.item_id in ids for t in draft.top_items)
     assert len(draft.public_attitudes_cs.communication_recommendations) == 1
+    assert [e.text_cs for e in draft.events_cs] == ["Zveřejnění dat"]
     assert any("neplatná ID" in line or "bez platného doložení" in line for line in logs)
     # CZ položky v top_items první
     assert geo[draft.top_items[0].item_id] == "CZ"

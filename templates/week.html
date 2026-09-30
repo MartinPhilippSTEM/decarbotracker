@@ -1,16 +1,63 @@
 {% extends "base.html" %}
 {% from "_macros.html" import tags, item_date, item_title, evidence %}
 {% block title %}{% if is_latest %}{{ site.title }} – týden {{ r.week }}{% else %}Týden {{ r.week }} – {{ site.title }}{% endif %}{% endblock %}
-{% block description %}{{ r.headline_cs or site.tagline }}{% endblock %}
+{% block description %}{{ (r.headline_cs or site.tagline)|plain }}{% endblock %}
 {% block content %}
 <article class="report">
   <header class="report-head">
     <p class="kicker">{% if is_latest %}Nejnovější přehled · {% endif %}Týden {{ r.week }} · {{ period }}</p>
-    {% if r.headline_cs %}<h1>{{ r.headline_cs }}</h1>{% else %}<h1>Týden {{ r.week }}</h1>{% endif %}
+    {% if r.headline_cs %}<h1>{{ r.headline_cs|plain }}</h1>{% else %}<h1>Týden {{ r.week }}</h1>{% endif %}
     {% for n in r.notices_cs %}<p class="notice{% if r.status == 'fallback' %} notice-warn{% endif %}">{{ n }}</p>{% endfor %}
-    {% if r.executive_summary_cs %}<p class="lead">{{ r.executive_summary_cs }}</p>{% endif %}
+    {% if r.executive_summary_cs %}
+    <div class="summary">
+      <p class="summary-label">Shrnutí týdne</p>
+      <p>{{ r.executive_summary_cs|rich }}</p>
+    </div>
+    {% endif %}
     <p class="meta">Posouzeno {{ r.items_considered }} položek, do přehledu vybráno {{ r.items_selected }} · model: {{ r.model }} · vygenerováno {{ r.generated_at|date_cs }}</p>
   </header>
+
+  {% set top5 = r.top_items[:5] %}
+  {% if top5 or r.events_cs %}
+  <section aria-labelledby="prehled" class="glance">
+    <h2 id="prehled">Na první pohled</h2>
+    {% if top5 %}
+    <h3>Pět nejdůležitějších analýz a článků</h3>
+    <div class="table-wrap">
+    <table class="top5">
+      <thead><tr><th scope="col">#</th><th scope="col">Co vyšlo</th><th scope="col">Proč je to důležité</th></tr></thead>
+      <tbody>
+      {% for t in top5 %}{% set it = items.get(t.item_id) %}{% if it %}
+        <tr>
+          <td class="num">{{ loop.index }}</td>
+          <td>
+            <a href="{{ it.url }}" rel="noopener" class="item-link"><strong>{{ it.title }}</strong></a>
+            {% if it.title_cs %}<br><span class="title-cs">{{ it.title_cs }}</span>{% endif %}
+            <br><span class="card-meta"><span class="tag tag-{{ it.geo_focus|lower }}">{{ it.geo_focus }}</span> {{ it.source_name }}{% if it.is_opinion %} · <span class="tag tag-opinion">názor</span>{% endif %}</span>
+          </td>
+          <td>{{ (t.short_cs or it.one_line_cs or t.why_it_matters_cs)|rich }}</td>
+        </tr>
+      {% endif %}{% endfor %}
+      </tbody>
+    </table>
+    </div>
+    {% endif %}
+
+    {% if r.events_cs %}
+    <h3>Události a termíny</h3>
+    <div class="table-wrap">
+    <table class="events">
+      <thead><tr><th scope="col">Kdy</th><th scope="col">Co se děje</th><th scope="col">Zdroj</th></tr></thead>
+      <tbody>
+      {% for e in r.events_cs %}
+        <tr><td class="when">{{ e.when }}</td><td>{{ e.text_cs|rich }}</td><td>{{ evidence(e.evidence_item_ids, items) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
 
   {% if r.swot %}
   <section aria-labelledby="swot">
@@ -22,7 +69,7 @@
         <h3><span class="swot-letter" aria-hidden="true">{{ letter }}</span> {{ label }}</h3>
         <ul>
         {% for p in r.swot[key] %}
-          <li><span class="tag tag-{{ p.geo|lower }}">{{ p.geo }}</span> {{ p.text_cs }} {{ evidence(p.evidence_item_ids, items) }}</li>
+          <li><span class="tag tag-{{ p.geo|lower }}">{{ p.geo }}</span> {{ p.text_cs|rich }} {{ evidence(p.evidence_item_ids, items) }}</li>
         {% endfor %}
         </ul>
       </div>
@@ -33,14 +80,14 @@
 
   {% if r.top_items %}
   <section aria-labelledby="top">
-    <h2 id="top">Nejdůležitější položky</h2>
+    <h2 id="top">Nejdůležitější položky podrobněji</h2>
     <ol class="cards">
     {% for t in r.top_items %}{% set it = items.get(t.item_id) %}{% if it %}
       <li class="card">
         <p class="card-meta">{{ tags(it) }} <span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}</p>
         <h3>{{ item_title(it) }}</h3>
-        {% if t.key_finding_cs %}<p><strong>Zjištění:</strong> {{ t.key_finding_cs }}</p>{% endif %}
-        <p class="why">{{ t.why_it_matters_cs }}</p>
+        {% if t.key_finding_cs %}<p><strong>Zjištění:</strong> {{ t.key_finding_cs|rich }}</p>{% endif %}
+        <p class="why">{{ t.why_it_matters_cs|rich }}</p>
       </li>
     {% endif %}{% endfor %}
     </ol>
@@ -50,13 +97,13 @@
   {% if r.public_attitudes_cs %}{% set pa = r.public_attitudes_cs %}
   <section aria-labelledby="postoje" class="attitudes">
     <h2 id="postoje">Postoje veřejnosti a komunikace</h2>
-    <p>{{ pa.summary_cs }}</p>
+    <p>{{ pa.summary_cs|rich }}</p>
     {% if pa.surveys %}
     <h3>Nové průzkumy</h3>
     <ul class="plain">
     {% for s in pa.surveys %}
       <li class="survey">
-        <p>{{ s.finding_cs }} {{ evidence(s.evidence_item_ids, items) }}</p>
+        <p>{{ s.finding_cs|rich }} {{ evidence(s.evidence_item_ids, items) }}</p>
         <dl class="facts"><dt>Kdo</dt><dd>{{ s.institution }}</dd><dt>Kdy</dt><dd>{{ s.fieldwork }}</dd><dt>Kde</dt><dd>{{ s.country }}</dd><dt>N</dt><dd>{{ s.sample_n }}</dd><dt>Metoda</dt><dd>{{ s.method }}</dd></dl>
       </li>
     {% endfor %}
@@ -65,7 +112,7 @@
     {% if pa.communication_recommendations %}
     <h3>Komunikační doporučení</h3>
     <ul>
-    {% for c in pa.communication_recommendations %}<li>{{ c.text_cs }} {{ evidence(c.evidence_item_ids, items) }}</li>{% endfor %}
+    {% for c in pa.communication_recommendations %}<li>{{ c.text_cs|rich }} {{ evidence(c.evidence_item_ids, items) }}</li>{% endfor %}
     </ul>
     {% endif %}
   </section>
@@ -76,7 +123,7 @@
     <h2 id="prognozy">Prognózy a scénáře</h2>
     <ul>
     {% for f in r.forecasts_cs %}
-      <li><strong>{{ f.author }}</strong> (horizont: {{ f.horizon }}; klíčové číslo: {{ f.key_figure }}) – {{ f.text_cs }} {{ evidence(f.evidence_item_ids, items) }}</li>
+      <li><strong>{{ f.author }}</strong> (horizont: {{ f.horizon }}; klíčové číslo: {{ f.key_figure }}) – {{ f.text_cs|rich }} {{ evidence(f.evidence_item_ids, items) }}</li>
     {% endfor %}
     </ul>
   </section>
@@ -86,25 +133,25 @@
   <section aria-labelledby="regiony">
     <h2 id="regiony">Podle regionů</h2>
     <dl class="regions">
-      <dt><span class="tag tag-cz">CZ</span> Česko</dt><dd>{{ r.by_region.cz }}</dd>
-      <dt><span class="tag tag-eu">EU</span> Evropa</dt><dd>{{ r.by_region.eu }}</dd>
-      <dt><span class="tag tag-us">US</span> USA</dt><dd>{{ r.by_region.us }}</dd>
-      {% if r.by_region.global_ %}<dt><span class="tag tag-global">GLOBAL</span> Svět</dt><dd>{{ r.by_region.global_ }}</dd>{% endif %}
+      <dt><span class="tag tag-cz">CZ</span> Česko</dt><dd>{{ r.by_region.cz|rich }}</dd>
+      <dt><span class="tag tag-eu">EU</span> Evropa</dt><dd>{{ r.by_region.eu|rich }}</dd>
+      <dt><span class="tag tag-us">US</span> USA</dt><dd>{{ r.by_region.us|rich }}</dd>
+      {% if r.by_region.global_ %}<dt><span class="tag tag-global">GLOBAL</span> Svět</dt><dd>{{ r.by_region.global_|rich }}</dd>{% endif %}
     </dl>
   </section>
   {% endif %}
 
   {% if r.watchlist_cs %}
   <section aria-labelledby="sledovat">
-    <h2 id="sledovat">Ke sledování příští týden</h2>
-    <ul>{% for w in r.watchlist_cs %}<li>{{ w.text_cs }} {{ evidence(w.evidence_item_ids, items) }}</li>{% endfor %}</ul>
+    <h2 id="sledovat">Co dál sledovat</h2>
+    <ul>{% for w in r.watchlist_cs %}<li>{{ w.text_cs|rich }} {{ evidence(w.evidence_item_ids, items) }}</li>{% endfor %}</ul>
   </section>
   {% endif %}
 
   {% if r.data_gaps_cs %}
   <section aria-labelledby="mezery">
     <h2 id="mezery">Co chybělo nebo nešlo ověřit</h2>
-    <ul>{% for g in r.data_gaps_cs %}<li>{{ g }}</li>{% endfor %}</ul>
+    <ul class="gaps">{% for g in r.data_gaps_cs %}<li>{{ g|rich }}</li>{% endfor %}</ul>
   </section>
   {% endif %}
 
@@ -128,7 +175,7 @@
   {% if recent|length > 1 %}
   <h2>Předchozí týdny</h2>
   <ul class="plain week-list">
-  {% for w in recent[1:] %}<li><a href="{{ base }}tydny/{{ w.week|week_slug }}/">{{ w.week }}</a> – {{ w.headline_cs }}</li>{% endfor %}
+  {% for w in recent[1:] %}<li><a href="{{ base }}tydny/{{ w.week|week_slug }}/">{{ w.week }}</a> – {{ w.headline_cs|plain }}</li>{% endfor %}
   </ul>
   <p><a href="{{ base }}archiv/">Celý archiv →</a></p>
   {% endif %}
