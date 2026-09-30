@@ -38,7 +38,7 @@
             {% if it.title_cs %}<br><span class="title-cs">{{ it.title_cs }}</span>{% endif %}
             <br><span class="card-meta"><span class="tag tag-{{ it.geo_focus|lower }}">{{ it.geo_focus }}</span> {{ it.source_name }}{% if it.is_opinion %} · <span class="tag tag-opinion">názor</span>{% endif %}</span>
           </td>
-          <td>{{ (it.one_line_cs or t.why_it_matters_cs)|rich }}</td>
+          <td>{{ (t.why_it_matters_cs|first_sentence or it.one_line_cs)|rich }}</td>
         </tr>
       {% endif %}{% endfor %}
       </tbody>

@@ -62,6 +62,19 @@ def rich(value: Any) -> Markup:
     return Markup(_BOLD.sub(r"<strong>\1</strong>", escaped).replace("**", ""))
 
 
+_SENTENCE_END = re.compile(r"(?<=[.!?…])\s+(?=[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ„\"(*])")
+
+
+def first_sentence(value: Any) -> str:
+    """První věta textu (pro krátký sloupec tabulky); nerozdělí zkratky typu „tzv.“ uprostřed věty."""
+    text = str(value or "").strip()
+    parts = _SENTENCE_END.split(text, maxsplit=1)
+    first = parts[0].strip()
+    if first.count("**") % 2:  # nerozbij tučné zvýraznění přes hranici věty
+        first = first.replace("**", "")
+    return first
+
+
 def plain(value: Any) -> str:
     """Stejný text bez značek ** (pro <title>, RSS, meta description)."""
     return str(value or "").replace("**", "")
@@ -107,6 +120,7 @@ def make_env(base_url: str, settings: Settings) -> Environment:
     env.filters["date_cs"] = date_cs
     env.filters["rich"] = rich
     env.filters["plain"] = plain
+    env.filters["first_sentence"] = first_sentence
     env.filters["rfc822"] = lambda d: format_datetime(d if isinstance(d, datetime) else datetime.fromisoformat(d))
     env.filters["week_slug"] = week_slug
     return env
