@@ -51,6 +51,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
 
+      - name: Kontrola API klíče (hodnota se nevypisuje)
+        if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m decarbotracker check-key
+
       - name: Týdenní pipeline
         id: run
         if: github.event_name != 'push'

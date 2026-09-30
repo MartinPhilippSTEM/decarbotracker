@@ -99,6 +99,33 @@ def cmd_check_sources(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_check_key(args: argparse.Namespace) -> int:
+    """Ověří ANTHROPIC_API_KEY bez vypsání jeho hodnoty."""
+    import anthropic
+
+    from decarbotracker.llm import describe_key
+
+    settings = load_settings()
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    print(f"ANTHROPIC_API_KEY: {describe_key(key)}")
+    if not key:
+        return 1
+    try:
+        client = anthropic.Anthropic(api_key=settings.anthropic_api_key, max_retries=1, timeout=30)
+        models = [m.id for m in client.models.list(limit=50)]
+        wanted = [settings.llm.model_scoring, settings.llm.model_synthesis]
+        print("Klíč je PLATNÝ. Dostupné potřebné modely:",
+              ", ".join(f"{m} {'✓' if m in models else '✗ (nedostupný)'}" for m in wanted))
+        return 0
+    except anthropic.AuthenticationError as exc:
+        print(f"Klíč je NEPLATNÝ (401): {exc.message}")
+    except anthropic.PermissionDeniedError as exc:
+        print(f"Klíč nemá oprávnění (403): {exc.message}")
+    except anthropic.APIError as exc:
+        print(f"Ověření se nezdařilo: {exc}")
+    return 1
+
+
 def cmd_build(args: argparse.Namespace) -> int:
     from decarbotracker.render import build_site
 
@@ -199,6 +226,9 @@ def build_parser() -> argparse.ArgumentParser:
     c.add_argument("--only", help="jen vybrané zdroje (id oddělená čárkou)")
     c.add_argument("--no-academic", dest="academic", action="store_false", help="bez Crossref/OpenAlex")
     c.set_defaults(func=cmd_check_sources)
+
+    k = sub.add_parser("check-key", help="ověří ANTHROPIC_API_KEY (hodnotu nevypisuje)")
+    k.set_defaults(func=cmd_check_key)
 
     b = sub.add_parser("build", help="jen přegeneruje web z uložených JSON dat")
     b.add_argument("--base-url", help="přepíše base_url (např. /decarbotracker/)")

@@ -41,6 +41,28 @@ class LLMModelUnavailable(LLMError):
     pass
 
 
+class LLMAuthError(LLMError):
+    """Neplatný klíč / chybějící oprávnění / došel kredit – další volání nemají smysl."""
+
+
+def describe_key(key: str | None) -> str:
+    """Bezpečný popis klíče (bez jeho hodnoty) pro diagnostiku."""
+    if not key:
+        return "klíč chybí (prázdná hodnota)"
+    problems = []
+    if key != key.strip():
+        problems.append("na začátku/konci je mezera nebo nový řádek")
+    if any(c in key for c in "\"'"):
+        problems.append("obsahuje uvozovky")
+    if "=" in key:
+        problems.append("obsahuje '=' (nevložil se i název proměnné?)")
+    if "..." in key or "…" in key:
+        problems.append("obsahuje '...' (zkopírována zkrácená verze ze seznamu klíčů?)")
+    ok_prefix = key.strip().startswith("sk-ant-api")
+    return (f"délka {len(key)} znaků, začíná 'sk-ant-api': {'ano' if ok_prefix else 'NE'}"
+            + (f"; problémy: {', '.join(problems)}" if problems else "; formát vypadá v pořádku"))
+
+
 class UsageTracker:
     """Sčítá tokeny a odhadovanou cenu za běh."""
 
@@ -151,13 +173,16 @@ class ClaudeClient:
         except anthropic.NotFoundError as exc:
             raise LLMModelUnavailable(f"Model {model} není dostupný: {exc.message}") from exc
         except anthropic.AuthenticationError as exc:
-            raise LLMError("Neplatný ANTHROPIC_API_KEY (401). Zkontrolujte klíč v .env / GitHub Secrets.") from exc
+            raise LLMAuthError(
+                f"Neplatný ANTHROPIC_API_KEY (401: {exc.message}). Klíč: {describe_key(self.settings.anthropic_api_key)}. "
+                "Zkontrolujte klíč v .env / GitHub Secrets."
+            ) from exc
         except anthropic.PermissionDeniedError as exc:
-            raise LLMError(f"Klíč nemá oprávnění (403): {exc.message}") from exc
+            raise LLMAuthError(f"Klíč nemá oprávnění (403): {exc.message}") from exc
         except anthropic.BadRequestError as exc:
             msg = exc.message
             if "credit balance" in msg.lower():
-                raise LLMError("Na účtu Anthropic došel kredit – dobijte ho v Console → Billing.") from exc
+                raise LLMAuthError("Na účtu Anthropic došel kredit – dobijte ho v Console → Billing.") from exc
             raise LLMError(f"Chybný požadavek (400): {msg}") from exc
         except anthropic.APIConnectionError as exc:
             raise LLMError(f"Síťová chyba při volání Claude API: {exc}") from exc

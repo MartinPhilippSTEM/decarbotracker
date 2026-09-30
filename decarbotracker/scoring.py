@@ -9,6 +9,7 @@ from decarbotracker.config import SelectionSettings, Settings, prompt_path
 from decarbotracker.filter import KeywordMatcher, default_matcher, item_text, normalize_text
 from decarbotracker.llm import (
     ClaudeClient,
+    LLMAuthError,
     LLMError,
     LLMMaxTokens,
     LLMModelUnavailable,
@@ -164,6 +165,10 @@ def score_items(items: list[Item], settings: Settings, client: ClaudeClient | No
                 else:
                     rest.extend(batch)
                 continue
+            except LLMAuthError as exc:
+                log.error("%s – skórování zbytku heuristicky", exc)
+                rest = [i for b in [batch, *queue] for i in b] + rest
+                break
             except LLMError as exc:
                 log.error("Skórování dávky selhalo (%s) – použita heuristika", exc)
                 rest.extend(batch)

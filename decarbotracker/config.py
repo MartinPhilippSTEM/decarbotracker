@@ -164,7 +164,8 @@ def load_settings() -> Settings:
     if not settings.site.site_url.endswith("/"):
         settings.site.site_url += "/"
     settings.contact_email = os.environ.get("CONTACT_EMAIL", settings.contact_email) or ""
-    settings.anthropic_api_key = os.environ.get("ANTHROPIC_API_KEY") or None
+    # odstraň mezery, nové řádky a uvozovky, které se často přidají při vkládání klíče
+    settings.anthropic_api_key = (os.environ.get("ANTHROPIC_API_KEY") or "").strip().strip("\"'").strip() or None
     settings.openalex_api_key = os.environ.get("OPENALEX_API_KEY") or None
     return settings
 
