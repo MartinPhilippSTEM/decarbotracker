@@ -39,10 +39,12 @@ class RobotsCache:
             rp: robotparser.RobotFileParser | None = robotparser.RobotFileParser()
             try:
                 resp = client.get(f"{host}/robots.txt", headers={"Accept": "text/plain"}, timeout=10)
-                if resp.status_code in (401, 403):
-                    rp.disallow_all = True  # type: ignore[union-attr]
-                elif resp.status_code >= 400 or "html" in resp.headers.get("content-type", "") and b"user-agent" not in resp.content[:5000].lower():
-                    rp = None  # robots.txt neexistuje → vše povoleno
+                looks_html = "html" in resp.headers.get("content-type", "") and b"user-agent" not in resp.content[:5000].lower()
+                if resp.status_code >= 500:
+                    rp.disallow_all = True  # type: ignore[union-attr]  # RFC 9309: server error → nestahovat
+                elif resp.status_code >= 400 or looks_html:
+                    # RFC 9309: 4xx (i 401/403 z ochrany proti botům) = robots.txt nedostupný → bez omezení
+                    rp = None
                 else:
                     rp.parse(resp.text.splitlines())  # type: ignore[union-attr]
             except httpx.HTTPError:

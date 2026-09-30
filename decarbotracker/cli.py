@@ -119,7 +119,8 @@ def cmd_check_key(args: argparse.Namespace) -> int:
         models = [m.id for m in client.models.list(limit=50)]
         wanted = [settings.llm.model_scoring, settings.llm.model_synthesis]
         print("Klíč je PLATNÝ. Dostupné potřebné modely:",
-              ", ".join(f"{m} {'✓' if m in models else '✗ (nedostupný)'}" for m in wanted))
+              ", ".join(f"{m} {'✓' if any(x == m or x.startswith(m + '-') for x in models) else '✗ (nedostupný)'}"
+                        for m in wanted))
         return 0
     except anthropic.AuthenticationError as exc:
         print(f"Klíč je NEPLATNÝ (401): {exc.message}")

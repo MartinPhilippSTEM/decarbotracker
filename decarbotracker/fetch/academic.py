@@ -109,17 +109,20 @@ def fetch_openalex(client: httpx.Client, settings: Settings, budget: Budget, sin
         requests.insert(0, {"filter": f"{date_filter},primary_location.source.issn:{'|'.join(issns)}"})
 
     items: list[Item] = []
-    done = 0
+    done = failed = 0
     for req in requests[:limit]:
+        if failed >= 2:
+            return items, f"OpenAlex: {done} dotazů OK, po {failed} chybách (např. 503) zbytek přeskočen"
         if not budget.take():
             break
         try:
             resp = get(client, OPENALEX_URL, accept=JSON_ACCEPT, params={**params_base, **req},
-                       headers=headers, max_retries=1, browser_fallback=False)
+                       headers=headers, max_retries=0, browser_fallback=False)
         except FetchError as exc:
             if exc.status == 429:
                 return items, "OpenAlex: vyčerpaný denní rozpočet (bez API klíče je sdílený podle IP) – přeskočeno"
             log.warning("OpenAlex dotaz selhal: %s", exc)
+            failed += 1
             continue
         done += 1
         for work in (resp.json() or {}).get("results", []):

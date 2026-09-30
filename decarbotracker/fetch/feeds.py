@@ -8,7 +8,7 @@ from datetime import datetime
 import feedparser
 import httpx
 
-from decarbotracker.fetch.http import FEED_ACCEPT, JSON_ACCEPT, get
+from decarbotracker.fetch.http import BROWSER_UA, FEED_ACCEPT, JSON_ACCEPT, get
 from decarbotracker.models import Item, Source
 from decarbotracker.normalize import build_item, from_struct_time, parse_date
 
@@ -178,10 +178,13 @@ def fetch_feed(client: httpx.Client, source: Source, *, max_retries: int = 2, no
         resp = get(client, source.url, accept=JSON_ACCEPT, max_retries=max_retries)
         return parse_wp_json_bytes(resp.content, source, now=now)
     resp = get(client, source.url, accept=FEED_ACCEPT, max_retries=max_retries)
-    return parse_feed_bytes(
-        resp.content,
-        source,
-        content_type=resp.headers.get("content-type", ""),
-        now=now,
-        base_url=str(resp.url),
-    )
+    try:
+        return parse_feed_bytes(resp.content, source, content_type=resp.headers.get("content-type", ""),
+                                now=now, base_url=str(resp.url))
+    except ParseError as exc:
+        if exc.kind not in ("html_instead_of_feed", "cloudflare"):
+            raise
+        # ochrana proti botům někdy místo feedu vrátí HTML – jeden pokus s prohlížečovým User-Agentem
+        resp = get(client, source.url, accept=FEED_ACCEPT, max_retries=0, headers={"User-Agent": BROWSER_UA})
+        return parse_feed_bytes(resp.content, source, content_type=resp.headers.get("content-type", ""),
+                                now=now, base_url=str(resp.url))
