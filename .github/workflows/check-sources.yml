@@ -22,6 +22,12 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Kontrola API klíče a schémat (za zlomek centu, hodnota klíče se nevypisuje)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+        run: python -m decarbotracker check-key
       - name: Kontrola zdrojů
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}

@@ -121,7 +121,7 @@ def cmd_check_key(args: argparse.Namespace) -> int:
         print("Klíč je PLATNÝ. Dostupné potřebné modely:",
               ", ".join(f"{m} {'✓' if any(x == m or x.startswith(m + '-') for x in models) else '✗ (nedostupný)'}"
                         for m in wanted))
-        return 0
+        return check_schemas(client, settings)
     except anthropic.AuthenticationError as exc:
         print(f"Klíč je NEPLATNÝ (401): {exc.message}")
     except anthropic.PermissionDeniedError as exc:
@@ -129,6 +129,27 @@ def cmd_check_key(args: argparse.Namespace) -> int:
     except anthropic.APIError as exc:
         print(WORKSPACE_HINT if "workspace" in str(exc).lower() else f"Ověření se nezdařilo: {exc}")
     return 1
+
+
+def check_schemas(client, settings) -> int:
+    """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
+    import anthropic
+
+    from decarbotracker.models import BriefDraft, ReportDraft, ScoreBatch
+
+    status = 0
+    for model_id, schema in ((settings.llm.model_scoring, ScoreBatch), (settings.llm.model_synthesis, ReportDraft),
+                             (settings.llm.model_synthesis, BriefDraft)):
+        try:
+            client.messages.create(
+                model=model_id, max_tokens=16, messages=[{"role": "user", "content": "Test schématu, odpověz krátce."}],
+                output_config={"format": {"type": "json_schema", "schema": anthropic.transform_schema(schema)}},
+            )
+            print(f"Schéma {schema.__name__} ({model_id}): OK")
+        except anthropic.BadRequestError as exc:
+            print(f"Schéma {schema.__name__} ({model_id}): CHYBA – {exc.message}")
+            status = 1
+    return status
 
 
 def cmd_build(args: argparse.Namespace) -> int:

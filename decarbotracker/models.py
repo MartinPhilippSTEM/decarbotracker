@@ -123,7 +123,8 @@ class Swot(BaseModel):
 
 class TopItem(BaseModel):
     item_id: str
-    short_cs: str = Field(default="", description="jedna krátká věta (max. ~20 slov) do přehledové tabulky")
+    # povinné: volitelná pole ve strukturovaném výstupu výrazně zvětšují gramatiku (API pak vrací 400)
+    short_cs: str = Field(description="jedna krátká věta (max. ~20 slov) do přehledové tabulky")
     why_it_matters_cs: str
     key_finding_cs: str
     category: Topic
