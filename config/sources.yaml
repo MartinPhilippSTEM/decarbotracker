@@ -344,7 +344,7 @@ sources:
     topic_filter: false
     weight: 0.9
     enabled: true
-    notes: ""
+    notes: "Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     scrape: {item: "article.c-articles__item", title: "h3 a.b-article__link", date: "time", date_attr: datetime}
 
   - id: hnuti-duha
@@ -639,7 +639,7 @@ sources:
     topic_filter: false
     weight: 1.3
     enabled: true
-    notes: "Jejich /feed/ je prázdný."
+    notes: "Jejich /feed/ je prázdný. Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     scrape: {item: "a.card", title: ".cardtitle", date: ".carddate"}
 
   - id: iea-news
@@ -652,7 +652,7 @@ sources:
     topic_filter: false
     weight: 1.3
     enabled: true
-    notes: "RSS už neexistuje. Stránka /commentaries vrací 404, komentáře jsou ale součástí výpisu /news."
+    notes: "RSS už neexistuje. Stránka /commentaries vrací 404, komentáře jsou ale součástí výpisu /news. Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     scrape: {item: "div.m-news-detailed-listing", title: ".m-news-detailed-listing__title", link: "a.m-news-detailed-listing__link", date: ".m-news-detailed-listing__date"}
 
   - id: iea-reports
@@ -665,7 +665,7 @@ sources:
     topic_filter: false
     weight: 1.3
     enabled: true
-    notes: "RSS už neexistuje."
+    notes: "RSS už neexistuje. Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     scrape: {item: "li.m-card-listing-item", title: ".m-card__title", link: "a.m-card", date: ".m-card__type"}
 
   - id: agora
@@ -691,7 +691,7 @@ sources:
     topic_filter: false
     weight: 1.1
     enabled: true
-    notes: ""
+    notes: "Z GitHub Actions vrací 403 (web blokuje datová centra), z běžného počítače funguje (ověřeno 30. 9. 2026)."
     scrape: {item: "article.c-card", title: "h3.c-card__title a", date: "time.c-card__date", date_attr: datetime}
 
   - id: clew
