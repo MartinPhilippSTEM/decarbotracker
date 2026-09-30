@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decarbotracker"
+version = "1.0.0"
+description = "Týdenní přehled analýz, studií a průzkumů o dekarbonizaci s AI syntézou a SWOT analýzou."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "anthropic>=1.9,<2",
+    "feedparser>=6.0.11",
+    "httpx>=0.28",
+    "beautifulsoup4>=4.12",
+    "rapidfuzz>=3.9",
+    "python-dateutil>=2.9",
+    "Jinja2>=3.1",
+    "pydantic>=2.8,<3",
+    "PyYAML>=6.0",
+    "python-dotenv>=1.0",
+    "tenacity>=9.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.setuptools]
+packages = ["decarbotracker", "decarbotracker.fetch"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

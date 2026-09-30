@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Dotazy na téma – {{ site.title }}{% endblock %}
+{% block content %}
+<h1>Dotazy na téma</h1>
+<p>Kdykoliv během týdne se lze doptat na aktuální zjištění k vybranému tématu (např. „tepelná čerpadla“, „ETS2 domácnosti“, „postoje k jádru“). Dotaz spustíte v GitHubu (Actions → <em>ask</em> → Run workflow) nebo lokálně příkazem <code>python -m decarbotracker ask "téma"</code>. Výsledek se objeví zde.</p>
+{% if briefs %}
+<ul class="plain archive">
+{% for b in briefs %}
+  <li>
+    <p class="kicker"><a href="{{ base }}dotazy/{{ b.slug }}/">{{ b.topic }}</a> · {{ b.generated_at|date_cs }} · posledních {{ b.days }} dní</p>
+    <p>{{ b.headline_cs }}</p>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>Zatím nebyl zadán žádný dotaz.</p>
+{% endif %}
+{% endblock %}

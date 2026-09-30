@@ -1,0 +1,29 @@
+name: ci
+
+# Kontrola kódu při každém push/PR: ruff + pytest. Bez síťových volání a bez API klíče.
+on:
+  push:
+    paths-ignore:
+      - 'data/**'
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: ruff
+        run: ruff check .
+      - name: pytest
+        run: python -m pytest
+      - name: dry-run build (bez sítě, nad uloženými daty)
+        run: python -m decarbotracker build --base-url /decarbotracker/

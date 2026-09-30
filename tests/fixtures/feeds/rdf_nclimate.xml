@@ -1,0 +1,91 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns="http://purl.org/rss/1.0/" xmlns:admin="http://webns.net/mvcb/">
+    <channel rdf:about="http://feeds.nature.com/nclimate/rss/current">
+        <title>Nature Climate Change</title>
+        <description>Nature Climate Change is a monthly journal dedicated to publishing high-quality research papers that describe the most significant and cutting-edge research on the causes, impacts and wider implications of global climate change. The journal publishes climate research across the physical, biological and social sciences and strives to integrate and communicate interdisciplinary research. The journal aims to play a leading role in: providing accessibility to a broad audience to research published both within and outside the journal; raising the visibility of climate change research in related research communities as well as the mainstream media; and offering a forum for discussion of the challenges faced by researchers and policy makers (and other interested parties) in understanding the complex mechanisms and impacts associated with the Earth’s changing climate.</description>
+        <link>http://feeds.nature.com/nclimate/rss/current</link>
+        <admin:generatorAgent rdf:resource="https://www.nature.com/"/>
+        <admin:errorReportsTo rdf:resource="mailto:feedback@nature.com"/>
+        <dc:publisher>Nature Publishing Group</dc:publisher>
+        <dc:language>en</dc:language>
+        <dc:rights>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</dc:rights>
+        <prism:publicationName>Nature Climate Change</prism:publicationName>
+        
+        
+        <prism:copyright>© 2026 Macmillan Publishers Limited, part of Springer Nature. All rights reserved.</prism:copyright>
+        <prism:rightsAgent>permissions@nature.com</prism:rightsAgent>
+        <image rdf:resource="https://www.nature.com/uploads/product/nclimate/rss.png"/>
+        <items>
+            <rdf:Seq>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02736-4"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02759-x"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02739-1"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02741-7"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02756-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02762-2"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02748-0"/>
+                
+                    <rdf:li rdf:resource="https://www.nature.com/articles/s41558-026-02760-4"/>
+                
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="https://www.nature.com/uploads/product/nclimate/rss.png">
+        <title>Nature Climate Change</title>
+        <url>https://www.nature.com/uploads/product/nclimate/rss.png</url>
+        <link>http://feeds.nature.com/nclimate/rss/current</link>
+    </image>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-026-02736-4">
+            <title><![CDATA[Governments must reconcile dissonant climate assessment approaches]]></title>
+            <link>https://www.nature.com/articles/s41558-026-02736-4</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 29 September 2026; <a href="https://www.nature.com/articles/s41558-026-02736-4">doi:10.1038/s41558-026-02736-4</a></p>Security analysts and government economists increasingly present policymakers with different pictures of the same climate and nature risk. We argue that governments need a shared way to weigh these assessments, particularly given that under-preparing for a severe, irreversible outcome costs far more than over-preparing.]]></content:encoded>
+            <dc:title><![CDATA[Governments must reconcile dissonant climate assessment approaches]]></dc:title>
+            <dc:creator>Paul Behrens</dc:creator><dc:creator>Jesse F. Abrams</dc:creator><dc:creator>Hugh Montgomery</dc:creator><dc:creator>Richard Nugee</dc:creator><dc:creator>Nathalie Seddon</dc:creator><dc:creator>Sandy Trust</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-026-02736-4</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2026-09-29; | doi:10.1038/s41558-026-02736-4</dc:source>
+            <dc:date>2026-09-29</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-026-02736-4</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-026-02736-4</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-026-02759-x">
+            <title><![CDATA[Generative artifical intelligence for climate dialogue justice]]></title>
+            <link>https://www.nature.com/articles/s41558-026-02759-x</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 25 September 2026; <a href="https://www.nature.com/articles/s41558-026-02759-x">doi:10.1038/s41558-026-02759-x</a></p>Climate action requires inclusive dialogue among diverse stakeholders to help inform decision-making for governance and planning. We examine how generative artificial intelligence (GenAI) could broaden participation and support synthesis across regions, disciplines and participants, while underscoring the importance of human authority to safeguard AI.]]></content:encoded>
+            <dc:title><![CDATA[Generative artifical intelligence for climate dialogue justice]]></dc:title>
+            <dc:creator>Masahiro Ryo</dc:creator><dc:creator>Timon McPhearson</dc:creator><dc:creator>Victor Galaz</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-026-02759-x</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2026-09-25; | doi:10.1038/s41558-026-02759-x</dc:source>
+            <dc:date>2026-09-25</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-026-02759-x</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-026-02759-x</prism:url>
+        </item>
+    
+        <item rdf:about="https://www.nature.com/articles/s41558-026-02739-1">
+            <title><![CDATA[Carbon removal projects need to get justice right]]></title>
+            <link>https://www.nature.com/articles/s41558-026-02739-1</link>
+            <content:encoded>
+                <![CDATA[<p>Nature Climate Change, Published online: 24 September 2026; <a href="https://www.nature.com/articles/s41558-026-02739-1">doi:10.1038/s41558-026-02739-1</a></p>Public support for carbon removal grows when people get a say and a share in the benefits, across diverse sociopolitical contexts. No amount of carbon removed can substitute for fair process and fair outcomes. Fairness must be designed into carbon removal governance from the start.]]></content:encoded>
+            <dc:title><![CDATA[Carbon removal projects need to get justice right]]></dc:title>
+            <dc:creator>Livia Fritz</dc:creator><dc:creator>Lucilla Losi</dc:creator><dc:creator>Christine Merk</dc:creator><dc:creator>Michela Boldrini</dc:creator><dc:creator>Valentina Bosetti</dc:creator><dc:creator>Chad M. Baum</dc:creator><dc:creator>Benjamin K. Sovacool</dc:creator>
+            <dc:identifier>doi:10.1038/s41558-026-02739-1</dc:identifier>
+            <dc:source>Nature Climate Change, Published online: 2026-09-24; | doi:10.1038/s41558-026-02739-1</dc:source>
+            <dc:date>2026-09-24</dc:date>
+            <prism:publicationName>Nature Climate Change</prism:publicationName>
+            <prism:doi>10.1038/s41558-026-02739-1</prism:doi>
+            <prism:url>https://www.nature.com/articles/s41558-026-02739-1</prism:url>
+        </item>
+    
+</rdf:RDF>

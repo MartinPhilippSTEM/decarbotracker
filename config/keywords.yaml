@@ -1,0 +1,150 @@
+# Klíčová slova pro levný předfiltr (bez LLM).
+# Porovnává se s textem BEZ DIAKRITIKY a malými písmeny, takže pište kmeny bez háčků a čárek.
+# Pozor na vkladné e v češtině: 'čerpadlo' → 'čerpadel', proto kmen 'cerpad' (ne 'cerpadl').
+#  - stems: shoda na ZAČÁTKU slova (kmen), víceslovné fráze = každé slovo jako kmen, v pořadí za sebou
+#  - exact: shoda na CELÉ slovo (zkratky jako ETS, OZE)
+# Zdroje s topic_filter: false projdou vždy; ostatní musí mít aspoň jednu shodu.
+
+stems:
+  cs:
+    - klima
+    - klimat
+    - emis
+    - dekarbon
+    - bezemis
+    - obnoviteln
+    - fotovolt
+    - solarn
+    - vetrn
+    - vetrnik
+    - jadern
+    - jadr
+    - uhel
+    - uhli
+    - uheln
+    - teplarn
+    - tepeln cerpad
+    - energetick chudob
+    - energeticky chudob
+    - spravedliv transformac
+    - spravedliv prechod
+    - uheln region
+    - zelen dohod
+    - uspor energi
+    - zatepl
+    - elektromobil
+    - vodik
+    - skleniko
+    - oteplov
+    - uhlikov
+    - povolenk
+    - cena elektrin
+    - ceny elektrin
+    - ceny energi
+    - cena energi
+    - energetik
+    - energetick
+    - modernizacni fond
+    - socialni klimaticky fond
+    - nova zelena usporam
+    - postoj
+    - verejn mineni
+    - pruzkum
+    - komunikac
+    - dezinformac
+    - sucho
+    - adaptac
+  en:
+    - climate
+    - emission
+    - decarboni
+    - renewable
+    - net zero
+    - net-zero
+    - solar
+    - wind power
+    - wind farm
+    - offshore wind
+    - onshore wind
+    - nuclear
+    - coal
+    - heat pump
+    - energy transition
+    - energy poverty
+    - fuel poverty
+    - just transition
+    - carbon
+    - greenhouse
+    - global warming
+    - electric vehicle
+    - hydrogen
+    - energy efficiency
+    - electricity price
+    - energy price
+    - power market
+    - grid
+    - public opinion
+    - attitude
+    - survey
+    - poll
+    - messaging
+    - framing
+    - narrative
+    - misinformation
+    - disinformation
+    - forecast
+    - outlook
+    - scenario
+    - green deal
+    - clean energy
+    - fossil
+    - methane
+    - heatwave
+    - extreme weather
+exact:
+  - ets
+  - ets2
+  - eu ets
+  - cbam
+  - oze
+  - fve
+  - cop30
+  - cop31
+  - ipcc
+  - unfccc
+  - ev
+  - evs
+  - lng
+  - co2
+  - smr
+
+# Kategorie pro heuristické skórování (dry-run a záloha, když LLM není k dispozici).
+categories:
+  public_attitudes: [postoj, verejn mineni, pruzkum, public opinion, attitude, survey, poll, acceptance, akceptac, podpor verejnosti, public support]
+  communication: [komunikac, narativ, dezinformac, messaging, framing, narrative, misinformation, disinformation, communicat]
+  forecast: [forecast, outlook, scenario, prognoz, scenar, projection, vyhled]
+  just_transition: [spravedliv transformac, spravedliv prechod, energetick chudob, energeticky chudob, just transition, energy poverty, fuel poverty, uheln region]
+  energy_markets: [cena elektrin, ceny elektrin, ceny energi, cena energi, electricity price, energy price, power market, povolenk, trh s elektrin]
+  decarbonization_policy: [ets, ets2, cbam, zelen dohod, green deal, climate policy, klimaticka politik, regulac, zakon, legislat, directive, smernic]
+  technology: [fotovolt, solarn, vetrn, jadern, tepeln cerpad, heat pump, hydrogen, vodik, nuclear, solar, wind, batter, bateri, smr]
+  study: [studie, study, analyz, analysis, report, zprava, paper, research, vyzkum]
+
+# Položky, jejichž titulek odpovídá některému vzoru, se vždy vyřadí (inzeráty, sbírky, akce).
+exclude_title_patterns:
+  - "hledame"
+  - "volna pozice"
+  - "volne misto"
+  - "pracovni pozic"
+  - "nabidka prace"
+  - "pridej se k nam"
+  - "prijmeme"
+  - "we are hiring"
+  - "we're hiring"
+  - "job opening"
+  - "vacancy"
+  - "vacancies"
+  - "careers at"
+  - "internship"
+  - "staz"
+  - "podpor nas"
+  - "darujte"

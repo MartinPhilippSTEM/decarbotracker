@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Zdroje a metodika – {{ site.title }}{% endblock %}
+{% block content %}
+<h1>Zdroje a metodika</h1>
+
+<section aria-labelledby="co">
+  <h2 id="co">Co decarbotracker dělá</h2>
+  <p>Jednou týdně (v pondělí ráno) automaticky posbírá nové analýzy, studie, průzkumy a odborné články o energetice, dekarbonizaci a změně klimatu. Vybere z nich nejdůležitější a pomocí modelu Claude z nich vytvoří česky psaný přehled se SWOT analýzou. Během týdne lze zadat i dotaz na konkrétní téma (sekce <a href="{{ base }}dotazy/">Dotazy</a>).</p>
+  <p class="notice"><strong>Text generuje AI.</strong> Shrnutí vznikají automaticky z metadat a krátkých výtahů, ne z plných textů. Model má pokyn nevymýšlet čísla ani zdroje a každý bod doložit konkrétní položkou; přesto může chybovat. Každé zjištění před použitím ověřte u původního zdroje.</p>
+</section>
+
+<section aria-labelledby="swot">
+  <h2 id="swot">Perspektiva SWOT</h2>
+  <p>SWOT vždy hodnotí <strong>dekarbonizaci České republiky a podporu veřejnosti pro ni</strong>:</p>
+  <dl class="regions">
+    <dt>S – silné stránky</dt><dd>příznivé skutečnosti a trendy v ČR, o které se lze opřít</dd>
+    <dt>W – slabé stránky</dt><dd>vnitřní slabiny a bariéry v ČR</dd>
+    <dt>O – příležitosti</dt><dd>vnější příležitosti (EU, technologie, trhy, financování, komunikační okna)</dd>
+    <dt>T – hrozby</dt><dd>vnější hrozby (politické, ekonomické, dezinformační, cenové)</dd>
+  </dl>
+  <p>Každý bod musí odkazovat na aspoň jednu položku ze vstupu. Body bez platného doložení se automaticky vyřazují.</p>
+</section>
+
+<section aria-labelledby="vyber">
+  <h2 id="vyber">Jak se vybírají položky</h2>
+  <ol>
+    <li><strong>Sběr:</strong> RSS/Atom feedy, WordPress API, konfigurovatelný scraping výpisů (s respektem k robots.txt) a odborné časopisy přes Crossref a OpenAlex. Bere se okno jednoho ISO týdne (pondělí–neděle, UTC). Položky bez data se řadí podle data prvního spatření.</li>
+    <li><strong>Deduplikace:</strong> podle normalizované URL, DOI a podobnosti titulků. U duplicit má přednost primární zdroj (think tank, výzkum) před médiem.</li>
+    <li><strong>Předfiltr:</strong> tematicky čisté zdroje projdou vždy. Obecná média a široké feedy musí obsahovat klíčová slova (česká i anglická, kmeny kvůli skloňování).</li>
+    <li><strong>Skórování (levnější model {{ llm.model_scoring }}):</strong> relevance 0–10, témata, geografický fokus a typ obsahu.</li>
+    <li><strong>Finální skóre</strong> = relevance × geografická váha × váha typu zdroje × váha zdroje; +{{ (sel.bonus_attitudes * 100)|round|int }} % pro postoje veřejnosti a komunikaci, +{{ (sel.bonus_original_research * 100)|round|int }} % pro originální výzkum a data, −{{ (sel.opinion_penalty * 100)|round|int }} % pro komentáře.</li>
+    <li><strong>Výběr:</strong> max. {{ sel.max_items_synthesis }} položek do syntézy, přičemž se zajistí aspoň {{ sel.min_cz }} položek s fokusem na ČR a {{ sel.min_attitudes }} k postojům a komunikaci (pokud existují).</li>
+    <li><strong>Syntéza (model {{ llm.model_synthesis }})</strong> s kontrolou, že všechna citovaná ID existují. Když syntéza selže, zveřejní se týden bez SWOT jen se seznamem nejlépe hodnocených položek.</li>
+  </ol>
+  <h3>Váhy</h3>
+  <table class="weights">
+    <thead><tr><th>Region</th><th>Váha</th></tr></thead>
+    <tbody>
+    {% for k, v in sel.geo_weights.items() %}<tr><td>{{ region_labels.get(k, k) }} ({{ k }})</td><td>{{ v }}{% if k == "GLOBAL" %} (+{{ sel.global_relevance_bonus }} při zjevné relevanci pro ČR/EU){% endif %}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+  <table class="weights">
+    <thead><tr><th>Typ zdroje</th><th>Váha</th></tr></thead>
+    <tbody>
+    {% for k, v in sel.source_type_weights.items() %}<tr><td>{{ source_type_labels.get(k, k) }}</td><td>{{ v }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+  <p>Český obsah a obsah o ČR je ve výstupu vždy první. Pokud v daném týdnu k ČR nic podstatného nevyšlo, přehled to výslovně uvede.</p>
+</section>
+
+<section aria-labelledby="zdroje">
+  <h2 id="zdroje">Sledované zdroje a jejich stav</h2>
+  <p class="hint">Stav z poslední kontroly{% if checked_at %} ({{ checked_at|date_cs }}){% endif %}. „Zastaralý“ = nejnovější položka je starší než 60 dní (u zdrojů s nízkou frekvencí publikace to je normální).</p>
+  <div class="table-wrap">
+  <table class="sources">
+    <thead><tr><th>Zdroj</th><th>Region</th><th>Typ</th><th>Stav</th><th>Položek</th><th>Nejnovější</th></tr></thead>
+    <tbody>
+    {% for row in rows %}{% set s = row.s %}{% set h = row.h %}
+      <tr class="{{ 'off' if not s.enabled else '' }}">
+        <td><a href="{{ s.homepage or s.url }}" rel="noopener">{{ s.name }}</a>{% if s.notes and (not s.enabled or h.get('status') not in (None, 'ok')) %}<br><small>{{ s.notes }}</small>{% endif %}</td>
+        <td>{{ s.region }}</td>
+        <td>{{ source_type_labels.get(s.source_type, s.source_type) }}</td>
+        <td>{% if not s.enabled %}<span class="st st-disabled">vypnutý</span>{% elif h %}<span class="st st-{{ h.get('status') }}">{{ status_labels.get(h.get('status'), h.get('status')) }}</span>{% else %}—{% endif %}</td>
+        <td>{{ h.get('count', '—') if h else '—' }}</td>
+        <td>{{ (h.get('newest')|date_cs) if h and h.get('newest') else '—' }}</td>
+      </tr>
+    {% endfor %}
+    {% for h in api_rows %}
+      <tr><td>{{ h.get('name') }}<br><small>{{ h.get('detail') }}</small></td><td>GLOBAL</td><td>odborné časopisy</td><td><span class="st st-{{ h.get('status') }}">{{ status_labels.get(h.get('status'), h.get('status')) }}</span></td><td>{{ h.get('count') }}</td><td>{{ (h.get('newest')|date_cs) if h.get('newest') else '—' }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <h3>Sledovat ručně</h3>
+  <p>Tyto zdroje se automaticky nesledují (nízká frekvence, weby vyžadující JavaScript):</p>
+  <ul>{% for name, url, why in manual %}<li><a href="{{ url }}" rel="noopener">{{ name }}</a> – {{ why }}</li>{% endfor %}</ul>
+</section>
+
+<section aria-labelledby="prava">
+  <h2 id="prava">Právní rámec</h2>
+  <p>Web ukládá a zobrazuje pouze metadata (titulek, zdroj, datum, odkaz), krátké výtahy a vlastní shrnutí. Plné texty článků se neukládají ani nezobrazují.</p>
+</section>
+{% endblock %}

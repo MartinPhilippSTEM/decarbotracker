@@ -1,0 +1,869 @@
+# Seznam sledovaných zdrojů.
+# Pole: id (unikátní, ASCII), name, type (rss / wp_json / scrape), url, region (CZ/EU/US/GLOBAL),
+#       source_type (think_tank/research/polling/government/media/journal/ngo/industry), language,
+#       topic_filter (true = položka musí projít klíčovými slovy), weight (0.5–1.5), enabled, notes.
+# Scrape zdroje mají navíc sekci scrape: {item, title, link, date, date_attr, summary} s CSS selektory.
+# Stav ověřte příkazem:  python -m decarbotracker check-sources
+
+sources:
+  # ======================================================================= ČESKO – RSS
+  - id: cvvm-ekologie
+    name: CVVM – Ekologie
+    type: rss
+    url: "https://cvvm.soc.cas.cz/cz/tiskove-zpravy/ostatni/ekologie?format=feed&type=rss"
+    region: CZ
+    source_type: polling
+    language: cs
+    topic_filter: false
+    weight: 1.5
+    enabled: true
+    notes: "Průzkumy CVVM k ekologii a klimatu."
+
+  - id: stem
+    name: STEM
+    type: rss
+    url: "https://www.stem.cz/feed/"
+    region: CZ
+    source_type: polling
+    language: cs
+    topic_filter: true
+    weight: 1.3
+    enabled: true
+    notes: ""
+
+  - id: stem-klima
+    name: STEM – změna klimatu
+    type: rss
+    url: "https://www.stem.cz/tag/zmena-klimatu/feed/"
+    region: CZ
+    source_type: polling
+    language: cs
+    topic_filter: false
+    weight: 1.4
+    enabled: true
+    notes: ""
+
+  - id: institut2050
+    name: Institut 2050
+    type: rss
+    url: "https://institut2050.cz/feed/"
+    region: CZ
+    source_type: think_tank
+    language: cs
+    topic_filter: false
+    weight: 1.5
+    enabled: true
+    notes: "České klima, komunikační průvodci."
+
+  - id: fakta-o-klimatu
+    name: Fakta o klimatu
+    type: rss
+    url: "https://faktaoklimatu.cz/feed.xml"
+    region: CZ
+    source_type: research
+    language: cs
+    topic_filter: false
+    weight: 1.3
+    enabled: true
+    notes: "Atom feed."
+
+  - id: paq-studie
+    name: PAQ Research – studie
+    type: rss
+    url: "https://www.paqresearch.cz/tema/studie/feed/"
+    region: CZ
+    source_type: research
+    language: cs
+    topic_filter: true
+    weight: 1.3
+    enabled: true
+    notes: ""
+
+  - id: median
+    name: Median
+    type: rss
+    url: "https://www.median.eu/cs/?feed=rss2"
+    region: CZ
+    source_type: polling
+    language: cs
+    topic_filter: true
+    weight: 1.2
+    enabled: true
+    notes: ""
+
+  - id: klimaticka-koalice
+    name: Klimatická koalice
+    type: rss
+    url: "https://klimatickakoalice.cz/aktualne/aktuality?format=feed&type=rss"
+    region: CZ
+    source_type: ngo
+    language: cs
+    topic_filter: false
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: ekolist
+    name: Ekolist
+    type: rss
+    url: "https://ekolist.cz/rss/"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: oenergetice
+    name: oEnergetice
+    type: rss
+    url: "https://oenergetice.cz/feed"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: greenpeace-cz
+    name: Greenpeace ČR
+    type: rss
+    url: "https://www.greenpeace.org/czech/feed/"
+    region: CZ
+    source_type: ngo
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: "Pracovní inzeráty se odfiltrují (exclude_title_patterns)."
+
+  - id: nesehnuti
+    name: NESEHNUTÍ
+    type: rss
+    url: "https://nesehnuti.cz/feed/"
+    region: CZ
+    source_type: ngo
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    notes: "Bez www."
+
+  - id: incien
+    name: INCIEN
+    type: rss
+    url: "https://incien.org/feed/"
+    region: CZ
+    source_type: think_tank
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: solarni-asociace
+    name: Solární asociace
+    type: rss
+    url: "https://www.solarniasociace.cz/feed/"
+    region: CZ
+    source_type: industry
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: mzp
+    name: Ministerstvo životního prostředí
+    type: rss
+    url: "https://mzp.gov.cz/rss.xml"
+    region: CZ
+    source_type: government
+    language: cs
+    topic_filter: true
+    weight: 1.1
+    enabled: true
+    notes: ""
+
+  - id: eru
+    name: Energetický regulační úřad
+    type: rss
+    url: "https://eru.gov.cz/rss.xml"
+    region: CZ
+    source_type: government
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: europeum
+    name: EUROPEUM
+    type: rss
+    url: "https://www.europeum.org/feed/"
+    region: CZ
+    source_type: think_tank
+    language: cs
+    topic_filter: true
+    weight: 1.1
+    enabled: true
+    notes: ""
+
+  - id: denik-referendum
+    name: Deník Referendum
+    type: rss
+    url: "https://denikreferendum.cz/rss.xml"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    notes: ""
+
+  - id: irozhlas-veda
+    name: iROZHLAS – Věda a technologie
+    type: rss
+    url: "https://www.irozhlas.cz/rss/irozhlas/section/veda-technologie"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: ct24-veda
+    name: ČT24 – Věda
+    type: rss
+    url: "https://ct24.ceskatelevize.cz/rss/veda"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: respekt
+    name: Respekt
+    type: rss
+    url: "https://www.respekt.cz/api/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: hn-byznys
+    name: Hospodářské noviny – Byznys
+    type: rss
+    url: "https://byznys.hn.cz/?m=rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    notes: ""
+
+  - id: e15
+    name: E15
+    type: rss
+    url: "https://www.e15.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    notes: ""
+
+  - id: seznam-zpravy
+    name: Seznam Zprávy
+    type: rss
+    url: "https://www.seznamzpravy.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    notes: ""
+
+  - id: sme
+    name: Svaz moderní energetiky
+    type: scrape
+    url: "https://www.modernienergetika.cz/aktuality/"
+    region: CZ
+    source_type: industry
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: "Feed /feed/ je platný, ale prázdný (ověřeno 30. 9. 2026) – proto scraping výpisu."
+    scrape: {item: "div.item-inner", title: "h3 a", date: "p.date"}
+
+  - id: alies
+    name: AliES – Aliance pro energetickou soběstačnost
+    type: scrape
+    url: "https://www.alies.cz/clanky/"
+    region: CZ
+    source_type: think_tank
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: "Feed /feed/ je platný, ale prázdný (ověřeno 30. 9. 2026) – proto scraping výpisu."
+    scrape: {item: "div.item-inner", title: "h3 a", date: "span.date"}
+
+  - id: ipsos-cz
+    name: Ipsos Česko
+    type: scrape
+    url: "https://www.ipsos.com/cs-cz/news-hub"
+    region: CZ
+    source_type: polling
+    language: cs
+    topic_filter: true
+    weight: 1.3
+    enabled: true
+    notes: "Průzkumy postojů k energetice."
+    scrape: {item: "div.insights-block, div.list-item", title: "h3 a", date: "time", date_attr: datetime, summary: "div.list-item__teaser, div.insights-block__description"}
+
+  - id: irozhlas-klima
+    name: iROZHLAS – tag klimatická změna
+    type: scrape
+    url: "https://www.irozhlas.cz/zpravy-tag/klimaticka-zmena"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: false
+    weight: 0.9
+    enabled: true
+    notes: ""
+    scrape: {item: "article.c-articles__item", title: "h3 a.b-article__link", date: "time", date_attr: datetime}
+
+  - id: hnuti-duha
+    name: Hnutí DUHA
+    type: scrape
+    url: "https://hnutiduha.cz/novinky/"
+    region: CZ
+    source_type: ngo
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: "Výpis nemá data – použije se datum prvního spatření."
+    scrape: {item: "article.b-post-card", title: "h3.b-post-card__title a"}
+
+  - id: klimatickazmena
+    name: CzechGlobe – klimatickazmena.cz
+    type: scrape
+    url: "https://www.klimatickazmena.cz/aktualne/"
+    region: CZ
+    source_type: research
+    language: cs
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: "Aktuality CzechGlobe (často odkazy na média)."
+    scrape: {item: "div.space-y-6:has(> a > h2)", title: "a > h2", date: "div.font-bold", summary: "div.prose"}
+
+  # ======================================================================= STŘEDNÍ A VÝCHODNÍ EVROPA – RSS
+  - id: bankwatch
+    name: CEE Bankwatch Network
+    type: rss
+    url: "https://feeds.feedburner.com/Bnkwtch-PR"
+    region: EU
+    source_type: ngo
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: epg
+    name: Energy Policy Group (RO)
+    type: rss
+    url: "https://www.epg-thinktank.org/feed/"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: wiseeuropa
+    name: WiseEuropa (PL)
+    type: rss
+    url: "https://wise-europa.eu/en/feed/"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: forum-energii
+    name: Forum Energii (PL) – publikace
+    type: scrape
+    url: "https://www.forum-energii.eu/en/publications"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: ""
+    scrape: {item: "div.news.d-xl-none", title: ".news__title", link: "a.opacity-0", date: "time", date_attr: datetime, summary: ".news__shortdesc"}
+
+  # ======================================================================= EU / EVROPA – RSS
+  - id: carbon-brief
+    name: Carbon Brief
+    type: rss
+    url: "https://www.carbonbrief.org/feed/"
+    region: EU
+    source_type: media
+    language: en
+    topic_filter: false
+    weight: 1.3
+    enabled: true
+    notes: "Specializované klimatické médium s vlastními analýzami."
+
+  - id: climate-home
+    name: Climate Home News
+    type: rss
+    url: "https://www.climatechangenews.com/feed/"
+    region: GLOBAL
+    source_type: media
+    language: en
+    topic_filter: false
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: e3g
+    name: E3G
+    type: rss
+    url: "https://www.e3g.org/feed/"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: ""
+
+  - id: energy-monitor
+    name: Energy Monitor
+    type: rss
+    url: "https://www.energymonitor.ai/feed/"
+    region: GLOBAL
+    source_type: media
+    language: en
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: climate-outreach
+    name: Climate Outreach
+    type: rss
+    url: "https://climateoutreach.org/feed/"
+    region: EU
+    source_type: research
+    language: en
+    topic_filter: false
+    weight: 1.3
+    enabled: true
+    notes: "Klimatická komunikace."
+
+  - id: more-in-common-de
+    name: More in Common Deutschland
+    type: rss
+    url: "https://www.moreincommon.de/feed/"
+    region: EU
+    source_type: research
+    language: de
+    topic_filter: true
+    weight: 1.2
+    enabled: true
+    notes: ""
+
+  - id: more-in-common-uk
+    name: More in Common UK
+    type: rss
+    url: "https://www.moreincommon.org.uk/feed/"
+    region: EU
+    source_type: research
+    language: en
+    topic_filter: true
+    weight: 1.2
+    enabled: true
+    notes: ""
+
+  - id: grantham-news
+    name: Grantham Institute (LSE) – news
+    type: rss
+    url: "https://www.lse.ac.uk/granthaminstitute/feed/?post_type=news"
+    region: EU
+    source_type: research
+    language: en
+    topic_filter: false
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: grantham-publications
+    name: Grantham Institute (LSE) – publikace
+    type: rss
+    url: "https://www.lse.ac.uk/granthaminstitute/feed/?post_type=publication"
+    region: EU
+    source_type: research
+    language: en
+    topic_filter: false
+    weight: 1.2
+    enabled: true
+    notes: ""
+
+  - id: dg-clima
+    name: Evropská komise – DG CLIMA
+    type: rss
+    url: "https://climate.ec.europa.eu/node/2/rss_en"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: ""
+
+  - id: dg-ener
+    name: Evropská komise – DG ENER
+    type: rss
+    url: "https://energy.ec.europa.eu/node/2/rss_en"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: gem
+    name: Global Energy Monitor
+    type: rss
+    url: "https://globalenergymonitor.org/rss.xml"
+    region: GLOBAL
+    source_type: research
+    language: en
+    topic_filter: false
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: bnef
+    name: BloombergNEF
+    type: rss
+    url: "https://about.bnef.com/insights/feed/"
+    region: GLOBAL
+    source_type: research
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: ipsos-global
+    name: Ipsos (global)
+    type: rss
+    url: "https://www.ipsos.com/en/rss.xml"
+    region: GLOBAL
+    source_type: polling
+    language: en
+    topic_filter: true
+    weight: 1.1
+    enabled: true
+    notes: ""
+
+  - id: euractiv
+    name: Euractiv – Energy & Environment
+    type: rss
+    url: "https://www.euractiv.com/sections/energy-environment/feed/"
+    region: EU
+    source_type: media
+    language: en
+    topic_filter: true
+    weight: 0.9
+    enabled: false
+    notes: "Vypnuto 30. 9. 2026: přesměrování na rapporteur.com, Cloudflare vrací 403 i prohlížečovému UA."
+
+  - id: politico-eu
+    name: Politico Europe – Energy
+    type: rss
+    url: "https://www.politico.eu/section/energy/feed/"
+    region: EU
+    source_type: media
+    language: en
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    notes: "Ověřeno 30. 9. 2026."
+
+  - id: eea
+    name: Evropská agentura pro životní prostředí (EEA)
+    type: rss
+    url: "https://www.eea.europa.eu/en/newsroom/rss-feeds/eeas-press-releases-rss/rss.xml"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: true
+    weight: 1.1
+    enabled: true
+    notes: "Ověřeno 30. 9. 2026."
+
+  # ======================================================================= EU / GLOBÁLNÍ THINK TANKY – SCRAPING
+  - id: ember
+    name: Ember
+    type: scrape
+    url: "https://ember-energy.org/latest-updates/"
+    region: GLOBAL
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.3
+    enabled: true
+    notes: "Jejich /feed/ je prázdný."
+    scrape: {item: "a.card", title: ".cardtitle", date: ".carddate"}
+
+  - id: iea-news
+    name: IEA – news a commentaries
+    type: scrape
+    url: "https://www.iea.org/news"
+    region: GLOBAL
+    source_type: government
+    language: en
+    topic_filter: false
+    weight: 1.3
+    enabled: true
+    notes: "RSS už neexistuje. Stránka /commentaries vrací 404, komentáře jsou ale součástí výpisu /news."
+    scrape: {item: "div.m-news-detailed-listing", title: ".m-news-detailed-listing__title", link: "a.m-news-detailed-listing__link", date: ".m-news-detailed-listing__date"}
+
+  - id: iea-reports
+    name: IEA – reports
+    type: scrape
+    url: "https://www.iea.org/reports"
+    region: GLOBAL
+    source_type: government
+    language: en
+    topic_filter: false
+    weight: 1.3
+    enabled: true
+    notes: "RSS už neexistuje."
+    scrape: {item: "li.m-card-listing-item", title: ".m-card__title", link: "a.m-card", date: ".m-card__type"}
+
+  - id: agora
+    name: Agora Energiewende
+    type: scrape
+    url: "https://www.agora-energiewende.org/news-events"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: ""
+    scrape: {item: "div.teaser__body", title: "h3.teaser__title a", date: "time"}
+
+  - id: bruegel
+    name: Bruegel – Energy & climate
+    type: scrape
+    url: "https://www.bruegel.org/topics/energy-and-climate-policy"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: ""
+    scrape: {item: "article.c-card", title: "h3.c-card__title a", date: "time.c-card__date", date_attr: datetime}
+
+  - id: clew
+    name: Clean Energy Wire – news
+    type: scrape
+    url: "https://www.cleanenergywire.org/news"
+    region: EU
+    source_type: media
+    language: en
+    topic_filter: false
+    weight: 0.9
+    enabled: true
+    notes: ""
+    scrape: {item: "div.views-row", title: "h2 a", date: "time", date_attr: datetime}
+
+  - id: climate-action-tracker
+    name: Climate Action Tracker – publikace
+    type: scrape
+    url: "https://climateactiontracker.org/publications/"
+    region: GLOBAL
+    source_type: research
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: ""
+    scrape: {item: "div.listing__item", title: "h3.listing__item-title a", date: ".metadata", summary: ".listing__item-description"}
+
+  # ======================================================================= USA – RSS
+  - id: yale-ycc
+    name: Yale Program on Climate Change Communication
+    type: rss
+    url: "https://climatecommunication.yale.edu/feed/"
+    region: US
+    source_type: research
+    language: en
+    topic_filter: false
+    weight: 1.5
+    enabled: true
+    notes: ""
+
+  - id: pew
+    name: Pew Research Center
+    type: rss
+    url: "https://www.pewresearch.org/feed/"
+    region: US
+    source_type: polling
+    language: en
+    topic_filter: true
+    weight: 1.2
+    enabled: true
+    notes: ""
+
+  - id: inside-climate-news
+    name: Inside Climate News
+    type: rss
+    url: "https://insideclimatenews.org/feed/"
+    region: US
+    source_type: media
+    language: en
+    topic_filter: false
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: heatmap
+    name: Heatmap News
+    type: rss
+    url: "https://heatmap.news/feeds/feed.rss"
+    region: US
+    source_type: media
+    language: en
+    topic_filter: false
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: canary-media
+    name: Canary Media
+    type: rss
+    url: "https://www.canarymedia.com/rss.rss"
+    region: US
+    source_type: media
+    language: en
+    topic_filter: false
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: grist
+    name: Grist
+    type: rss
+    url: "https://grist.org/feed/"
+    region: US
+    source_type: media
+    language: en
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    notes: ""
+
+  - id: energy-innovation
+    name: Energy Innovation
+    type: rss
+    url: "https://energyinnovation.org/feed/"
+    region: US
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.0
+    enabled: false
+    notes: "Vypnuto 30. 9. 2026: Cloudflare JS výzva ('Just a moment…') i pro prohlížečový UA."
+
+  - id: climatexchange
+    name: ClimateXChange
+    type: rss
+    url: "https://climate-xchange.org/feed/"
+    region: US
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 0.9
+    enabled: true
+    notes: ""
+
+  - id: rhodium
+    name: Rhodium Group – publikace
+    type: rss
+    url: "https://rhg.com/feed/?post_type=publication"
+    region: US
+    source_type: research
+    language: en
+    topic_filter: true
+    weight: 1.1
+    enabled: true
+    notes: ""
+
+  - id: rmi
+    name: RMI
+    type: wp_json
+    url: "https://rmi.org/wp-json/wp/v2/resource?per_page=20"
+    region: US
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: "WordPress REST API. CDN Pantheon odmítá httpx (403) – stahuje se záložně přes urllib."
+
+  # ======================================================================= USA – SCRAPING
+  - id: gallup-environment
+    name: Gallup – Environment
+    type: scrape
+    url: "https://news.gallup.com/topic/environment.aspx"
+    region: US
+    source_type: polling
+    language: en
+    topic_filter: true
+    weight: 1.2
+    enabled: true
+    notes: ""
+    scrape: {item: "section.cmstile:has(h3 a)", title: "h3 a", date: "time", date_attr: datetime, summary: "p.item-synopsis"}
+
+  # ======================================================================= GLOBÁLNÍ – RSS
+  - id: nature-climate-change
+    name: Nature Climate Change
+    type: rss
+    url: "https://www.nature.com/nclimate.rss"
+    region: GLOBAL
+    source_type: journal
+    language: en
+    topic_filter: false
+    weight: 1.2
+    enabled: true
+    notes: "RSS 1.0 / RDF."

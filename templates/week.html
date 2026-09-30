@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tags, item_date, item_title, evidence %}
+{% block title %}{% if is_latest %}{{ site.title }} – týden {{ r.week }}{% else %}Týden {{ r.week }} – {{ site.title }}{% endif %}{% endblock %}
+{% block description %}{{ r.headline_cs or site.tagline }}{% endblock %}
+{% block content %}
+<article class="report">
+  <header class="report-head">
+    <p class="kicker">{% if is_latest %}Nejnovější přehled · {% endif %}Týden {{ r.week }} · {{ period }}</p>
+    {% if r.headline_cs %}<h1>{{ r.headline_cs }}</h1>{% else %}<h1>Týden {{ r.week }}</h1>{% endif %}
+    {% for n in r.notices_cs %}<p class="notice{% if r.status == 'fallback' %} notice-warn{% endif %}">{{ n }}</p>{% endfor %}
+    {% if r.executive_summary_cs %}<p class="lead">{{ r.executive_summary_cs }}</p>{% endif %}
+    <p class="meta">Posouzeno {{ r.items_considered }} položek, do přehledu vybráno {{ r.items_selected }} · model: {{ r.model }} · vygenerováno {{ r.generated_at|date_cs }}</p>
+  </header>
+
+  {% if r.swot %}
+  <section aria-labelledby="swot">
+    <h2 id="swot">SWOT: dekarbonizace ČR a podpora veřejnosti</h2>
+    <p class="hint">Perspektiva je pevně daná: S = příznivé skutečnosti a trendy v ČR, W = vnitřní slabiny a bariéry v ČR, O = vnější příležitosti, T = vnější hrozby. <a href="{{ base }}metodika/#swot">Více v metodice</a>.</p>
+    <div class="swot">
+      {% for key, label, letter in [("strengths", "Silné stránky", "S"), ("weaknesses", "Slabé stránky", "W"), ("opportunities", "Příležitosti", "O"), ("threats", "Hrozby", "T")] %}
+      <div class="swot-q swot-{{ key }}">
+        <h3><span class="swot-letter" aria-hidden="true">{{ letter }}</span> {{ label }}</h3>
+        <ul>
+        {% for p in r.swot[key] %}
+          <li><span class="tag tag-{{ p.geo|lower }}">{{ p.geo }}</span> {{ p.text_cs }} {{ evidence(p.evidence_item_ids, items) }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if r.top_items %}
+  <section aria-labelledby="top">
+    <h2 id="top">Nejdůležitější položky</h2>
+    <ol class="cards">
+    {% for t in r.top_items %}{% set it = items.get(t.item_id) %}{% if it %}
+      <li class="card">
+        <p class="card-meta">{{ tags(it) }} <span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}</p>
+        <h3>{{ item_title(it) }}</h3>
+        {% if t.key_finding_cs %}<p><strong>Zjištění:</strong> {{ t.key_finding_cs }}</p>{% endif %}
+        <p class="why">{{ t.why_it_matters_cs }}</p>
+      </li>
+    {% endif %}{% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if r.public_attitudes_cs %}{% set pa = r.public_attitudes_cs %}
+  <section aria-labelledby="postoje" class="attitudes">
+    <h2 id="postoje">Postoje veřejnosti a komunikace</h2>
+    <p>{{ pa.summary_cs }}</p>
+    {% if pa.surveys %}
+    <h3>Nové průzkumy</h3>
+    <ul class="plain">
+    {% for s in pa.surveys %}
+      <li class="survey">
+        <p>{{ s.finding_cs }} {{ evidence(s.evidence_item_ids, items) }}</p>
+        <dl class="facts"><dt>Kdo</dt><dd>{{ s.institution }}</dd><dt>Kdy</dt><dd>{{ s.fieldwork }}</dd><dt>Kde</dt><dd>{{ s.country }}</dd><dt>N</dt><dd>{{ s.sample_n }}</dd><dt>Metoda</dt><dd>{{ s.method }}</dd></dl>
+      </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% if pa.communication_recommendations %}
+    <h3>Komunikační doporučení</h3>
+    <ul>
+    {% for c in pa.communication_recommendations %}<li>{{ c.text_cs }} {{ evidence(c.evidence_item_ids, items) }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if r.forecasts_cs %}
+  <section aria-labelledby="prognozy">
+    <h2 id="prognozy">Prognózy a scénáře</h2>
+    <ul>
+    {% for f in r.forecasts_cs %}
+      <li><strong>{{ f.author }}</strong> (horizont: {{ f.horizon }}; klíčové číslo: {{ f.key_figure }}) – {{ f.text_cs }} {{ evidence(f.evidence_item_ids, items) }}</li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if r.by_region %}
+  <section aria-labelledby="regiony">
+    <h2 id="regiony">Podle regionů</h2>
+    <dl class="regions">
+      <dt><span class="tag tag-cz">CZ</span> Česko</dt><dd>{{ r.by_region.cz }}</dd>
+      <dt><span class="tag tag-eu">EU</span> Evropa</dt><dd>{{ r.by_region.eu }}</dd>
+      <dt><span class="tag tag-us">US</span> USA</dt><dd>{{ r.by_region.us }}</dd>
+      {% if r.by_region.global_ %}<dt><span class="tag tag-global">GLOBAL</span> Svět</dt><dd>{{ r.by_region.global_ }}</dd>{% endif %}
+    </dl>
+  </section>
+  {% endif %}
+
+  {% if r.watchlist_cs %}
+  <section aria-labelledby="sledovat">
+    <h2 id="sledovat">Ke sledování příští týden</h2>
+    <ul>{% for w in r.watchlist_cs %}<li>{{ w.text_cs }} {{ evidence(w.evidence_item_ids, items) }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+
+  {% if r.data_gaps_cs %}
+  <section aria-labelledby="mezery">
+    <h2 id="mezery">Co chybělo nebo nešlo ověřit</h2>
+    <ul>{% for g in r.data_gaps_cs %}<li>{{ g }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+
+  <section aria-labelledby="podklady">
+    <h2 id="podklady">Všechny podklady ({{ r.items|length }})</h2>
+    <p class="hint">Položky, se kterými syntéza pracovala. Odkazy u bodů výše vedou sem.</p>
+    <ul class="sources-list">
+    {% for it in r.items %}
+      <li id="i-{{ it.id }}">
+        <p class="card-meta">{{ tags(it) }} <span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}</p>
+        <p class="item-title">{{ item_title(it) }}</p>
+        {% if it.one_line_cs %}<p class="one-line">{{ it.one_line_cs }}</p>{% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+</article>
+
+{% if is_latest and (recent|length > 1 or briefs) %}
+<aside class="more">
+  {% if recent|length > 1 %}
+  <h2>Předchozí týdny</h2>
+  <ul class="plain week-list">
+  {% for w in recent[1:] %}<li><a href="{{ base }}tydny/{{ w.week|week_slug }}/">{{ w.week }}</a> – {{ w.headline_cs }}</li>{% endfor %}
+  </ul>
+  <p><a href="{{ base }}archiv/">Celý archiv →</a></p>
+  {% endif %}
+  {% if briefs %}
+  <h2>Poslední dotazy</h2>
+  <ul class="plain week-list">
+  {% for b in briefs %}<li><a href="{{ base }}dotazy/{{ b.slug }}/">{{ b.topic }}</a> – {{ b.generated_at|date_cs }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+</aside>
+{% endif %}
+{% endblock %}

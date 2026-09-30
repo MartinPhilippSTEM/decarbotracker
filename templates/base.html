@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.tagline }}{% endblock %}">
+<link rel="stylesheet" href="{{ base }}static/style.css">
+<link rel="icon" href="{{ base }}static/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} – týdenní přehledy" href="{{ base }}feed.xml">
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ base }}" aria-label="{{ site.title }} – úvod">
+      <svg class="logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><use href="{{ base }}static/logo.svg#mark"></use></svg>
+      <span class="wordmark">decarbotracker</span>
+    </a>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a href="{{ base }}"{% if page == "home" %} aria-current="page"{% endif %}>Tento týden</a>
+      <a href="{{ base }}archiv/"{% if page in ("archive", "week") %} aria-current="page"{% endif %}>Archiv</a>
+      <a href="{{ base }}dotazy/"{% if page == "briefs" %} aria-current="page"{% endif %}>Dotazy</a>
+      <a href="{{ base }}metodika/"{% if page == "methodology" %} aria-current="page"{% endif %}>Zdroje a metodika</a>
+      <a href="{{ base }}feed.xml" class="rss" title="RSS feed">RSS</a>
+    </nav>
+  </div>
+</header>
+<main id="obsah" class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Upozornění:</strong> texty přehledů generuje umělá inteligence (Claude) z metadat a krátkých výtahů. Mohou obsahovat chyby – každé zjištění ověřte u původního zdroje. Web zobrazuje jen metadata, krátké výtahy a vlastní shrnutí, nikoli plné texty.</p>
+    <p><a href="{{ base }}metodika/">Zdroje a metodika</a> · <a href="{{ base }}feed.xml">RSS</a> · <a href="{{ site.repo_url }}">Zdrojový kód</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="cs">
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <link href="https://faktaoklimatu.cz/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://faktaoklimatu.cz/" rel="alternate" type="text/html" hreflang="cs" />
+  <updated>2026-09-29T09:18:31+00:00</updated>
+  <id>https://faktaoklimatu.cz/feed.xml</id>
+  <title type="html">Fakta o klimatu</title>
+  <subtitle>Shromažďujeme data o klimatu a klimatické změně, která poskytují vědecké instituce a zpracováváme z nich grafy a infografiky pro další použití.</subtitle>
+  <icon>https://faktaoklimatu.cz/assets-local/favicon.png</icon>
+  <logo>https://faktaoklimatu.cz/assets-local/logo-2x1.png</logo>
+  <rights>CC BY 4.0</rights>
+  <author>
+    <name>faktaoklimatu.cz</name>
+    <email>info@faktaoklimatu.cz</email>
+  </author>
+    <entry xml:lang="cs"><title type="html">EU ETS: Emise a povolenky zdarma v Česku</title>
+      <link href="https://faktaoklimatu.cz/studie/2026-interaktivni-prehled-ets" rel="alternate" type="text/html" title="EU ETS: Emise a povolenky zdarma v Česku" />
+      <published>2026-09-25T00:00:00+00:00</published>
+      <updated>2026-09-25T00:00:00+00:00</updated>
+      <id>https://faktaoklimatu.cz/studie/2026-interaktivni-prehled-ets</id>
+      <author>
+          <name>faktaoklimatu.cz</name>
+      </author>
+      <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://faktaoklimatu.cz/assets-local/img/preview.png" />
+      <media:content medium="image" url="https://faktaoklimatu.cz/assets-local/img/preview.png" xmlns:media="http://search.yahoo.com/mrss/" />
+      <content type="html" xml:base="https://faktaoklimatu.cz/studie/2026-interaktivni-prehled-ets">&lt;p&gt;&lt;em&gt;Více informací naleznete v plné verzi na našem webu.&lt;/em&gt;&lt;/p&gt;
+      </content>
+    </entry>
+    <entry xml:lang="cs"><title type="html">Jak má mechanismus CBAM chránit evropský průmysl?</title>
+      <link href="https://faktaoklimatu.cz/explainery/cbam" rel="alternate" type="text/html" title="Jak má mechanismus CBAM chránit evropský průmysl?" />
+      <published>2026-08-06T00:00:00+00:00</published>
+      <updated>2026-09-23T00:00:00+00:00</updated>
+      <id>https://faktaoklimatu.cz/explainery/cbam</id>
+      <author>
+          <name>faktaoklimatu.cz</name>
+      </author>
+      <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://faktaoklimatu.cz/assets/covers/cbam_600.jpg" />
+      <media:content medium="image" url="https://faktaoklimatu.cz/assets/covers/cbam_600.jpg" xmlns:media="http://search.yahoo.com/mrss/" />
+      <content type="html" xml:base="https://faktaoklimatu.cz/explainery/cbam">&lt;img src=&quot;https://faktaoklimatu.cz/assets/covers/cbam_600.jpg&quot; alt=&quot;Jak má mechanismus CBAM chránit evropský průmysl?&quot; /&gt;
+            &lt;p&gt;Konkurenceschopnost unijního průmyslu vůči výrobcům ze zemí mimo EU je dlouhodobě tématem veřejné debaty. Kromě nákladů na energie hrají zásadní roli také odlišné emisní standardy. Zatímco Unie už dvě dekády zpoplatňuje emise skleníkových plynů v energetice či průmyslu, ve třetích zemích jsou platby za uhlík často nižší nebo žádné. CBAM je jedním z mechanismů, jak pro domácí výrobce na unijním trhu zajistit rovnější podmínky.&lt;/p&gt;
+
+          &lt;p&gt;&lt;em&gt;Více informací naleznete v plné verzi na našem webu.&lt;/em&gt;&lt;/p&gt;
+      </content>
+    </entry>
+    <entry xml:lang="cs"><title type="html">Emise skleníkových plynů v EU podle sektorů</title>
+      <link href="https://faktaoklimatu.cz/infografiky/emise-eu-detail" rel="alternate" type="text/html" title="Emise skleníkových plynů v EU podle sektorů" />
+      <published>2026-07-29T00:00:00+00:00</published>
+      <updated>2026-07-29T00:00:00+00:00</updated>
+      <id>https://faktaoklimatu.cz/infografiky/emise-eu-detail</id>
+      <author>
+          <name>faktaoklimatu.cz</name>
+      </author>
+      <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://faktaoklimatu.cz/assets/generated/emise-eu-detail_600.png" />
+      <media:content medium="image" url="https://faktaoklimatu.cz/assets/generated/emise-eu-detail_600.png" xmlns:media="http://search.yahoo.com/mrss/" />
+      <content type="html" xml:base="https://faktaoklimatu.cz/infografiky/emise-eu-detail">&lt;img src=&quot;https://faktaoklimatu.cz/assets/generated/emise-eu-detail_600.png&quot; alt=&quot;Emise skleníkových plynů v EU podle sektorů&quot; /&gt;
+            &lt;p&gt;Rozložení celkových emisí skleníkových plynů (v tunách CO&lt;sub&gt;2&lt;/sub&gt; ekvivalentu) v EU za rok 2024 v jednotlivých sektorech lidské činnosti. Roční objem emisí Evropské unie je 3 147 mil. tun (údaj z roku 2024). V přepočtu na obyvatele to je 7,00 tun CO&lt;sub&gt;2&lt;/sub&gt;eq/obyvatele.&lt;/p&gt;
+
+          &lt;p&gt;&lt;em&gt;Více informací naleznete v plné verzi na našem webu.&lt;/em&gt;&lt;/p&gt;
+      </content>
+    </entry></feed>

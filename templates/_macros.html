@@ -1,0 +1,18 @@
+{% macro tags(it, show_topics=True) -%}
+<span class="tag tag-{{ it.geo_focus|lower }}" title="Geografický fokus">{{ it.geo_focus }}</span>
+<span class="tag tag-type">{{ source_type_labels.get(it.source_type, it.source_type) }}</span>
+{% if it.is_opinion %}<span class="tag tag-opinion" title="Komentář nebo stanovisko, ne data">názor</span>{% endif %}
+{% if show_topics %}{% for t in it.topics[:3] %}<span class="tag tag-topic">{{ topic_labels.get(t, t) }}</span>{% endfor %}{% endif %}
+{%- endmacro %}
+
+{% macro item_date(it) -%}
+{% if it.published_at %}<time datetime="{{ it.published_at.isoformat() }}">{{ it.published_at|date_cs }}</time>{% else %}<span title="Zdroj neuvádí datum">datum neuvedeno</span>{% endif %}
+{%- endmacro %}
+
+{% macro item_title(it) -%}
+<a href="{{ it.url }}" rel="noopener" class="item-link">{{ it.title }}</a>{% if it.title_cs %} <span class="title-cs">({{ it.title_cs }})</span>{% endif %}
+{%- endmacro %}
+
+{% macro evidence(ids, items) -%}
+<span class="evidence">{% for i in ids %}{% set it = items.get(i) %}{% if it %}<a href="#i-{{ i }}" title="{{ it.title }}">{{ it.source_name }}</a>{% if not loop.last %}, {% endif %}{% endif %}{% endfor %}</span>
+{%- endmacro %}

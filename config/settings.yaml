@@ -1,0 +1,116 @@
+# Hlavní nastavení decarbotracker.
+# Tajné klíče sem NIKDY nepište – patří do .env (lokálně) nebo GitHub Secrets (CI).
+
+site:
+  title: decarbotracker
+  tagline: "Týdenní přehled analýz, studií a průzkumů o dekarbonizaci, klimatu a postojích veřejnosti"
+  # Lokálně "/". V GitHub Actions se přepíše automaticky (proměnná DECARBO_BASE_URL = /decarbotracker/).
+  base_url: "/"
+  # Absolutní adresa webu (pro feed.xml). V CI se nastaví automaticky z actions/configure-pages.
+  site_url: "http://localhost:8000/"
+  repo_url: "https://github.com/"
+  output_dir: site
+  archive_weeks_on_home: 8
+
+# Kontaktní e-mail pro Crossref ("polite pool"). Lze přepsat proměnnou CONTACT_EMAIL.
+contact_email: ""
+# HTTP hlavičky musí být ASCII – proto bez diakritiky.
+user_agent: "decarbotracker/1.0 (+{repo_url}; vyzkumny agregator)"
+
+llm:
+  # Ověřeno 30. 9. 2026 v platform.claude.com/docs (Models overview, Model deprecations):
+  #  - claude-haiku-4-5: aktivní, vyřazení nejdříve 15. 10. 2026 (zatím bez oznámení, platí 60denní výpověď)
+  #  - claude-sonnet-5-5: aktivní, vyřazení nejdříve 28. 9. 2027
+  # Pokud levný model přestane existovat (404), použije se automaticky model_scoring_fallback.
+  model_scoring: claude-haiku-4-5
+  model_scoring_fallback: claude-sonnet-5-5
+  model_synthesis: claude-sonnet-5-5
+  # Použije se, když syntézu model odmítne (stop_reason = refusal) i po serverovém fallbacku.
+  model_synthesis_fallback: claude-opus-5-5
+  # Serverový fallback Claude API (beta server-side-fallback-2026-07-01, fallbacks="default").
+  server_side_fallback: true
+  # Modely, které přijímají output_config.effort (Haiku 4.5 ho nepodporuje).
+  effort_models: [claude-sonnet-5-5, claude-opus-5-5, claude-sonnet-5, claude-opus-5]
+  synthesis_effort: medium
+  scoring_effort: low
+  synthesis_max_tokens: 16000        # thinking tokeny se počítají do limitu
+  synthesis_max_tokens_retry: 32000  # při stop_reason = max_tokens
+  scoring_max_tokens: 8000
+  scoring_batch_size: 25
+  scoring_summary_chars: 450
+  synthesis_summary_chars: 900
+  max_items_scoring: 320             # max. položek poslaných do LLM skórování (po předfiltru)
+  max_cost_usd: 1.0                  # tvrdý limit odhadovaných nákladů na jeden běh
+  scoring_budget_share: 0.45         # kolik z limitu smí spotřebovat skórování
+  expected_synthesis_output_tokens: 14000
+  timeout_s: 600
+  max_retries: 4
+  # Ceny v USD za 1 milion tokenů (ověřeno 30. 9. 2026). Cache write = 1,25× vstup, cache read = 0,1× vstup.
+  pricing:
+    claude-haiku-4-5:  {input: 1.0, output: 5.0,  cache_write: 1.25, cache_read: 0.10}
+    claude-sonnet-5-5: {input: 2.0, output: 10.0, cache_write: 2.50, cache_read: 0.20}
+    claude-sonnet-5:   {input: 2.0, output: 10.0, cache_write: 2.50, cache_read: 0.20}
+    claude-opus-5-5:   {input: 4.0, output: 20.0, cache_write: 5.00, cache_read: 0.20}
+
+selection:
+  max_items_synthesis: 40
+  min_cz: 5            # minimální zastoupení položek s fokusem na ČR (pokud existují)
+  min_attitudes: 5     # minimální zastoupení položek o postojích veřejnosti / komunikaci
+  geo_weights: {CZ: 1.0, EU: 0.7, US: 0.4, GLOBAL: 0.5}
+  global_relevance_bonus: 0.2   # přičte se ke GLOBAL, pokud má položka zjevnou relevanci pro ČR/EU
+  source_type_weights:
+    polling: 1.2
+    research: 1.15
+    think_tank: 1.1
+    journal: 1.05
+    government: 1.0
+    ngo: 0.9
+    industry: 0.85
+    media: 0.8
+  bonus_attitudes: 0.30          # +30 % pro postoje veřejnosti / komunikaci
+  bonus_original_research: 0.15  # +15 % pro originální výzkum / data
+  opinion_penalty: 0.10          # −10 % pro komentáře a stanoviska
+  fuzzy_title_threshold: 90      # rapidfuzz token_set_ratio pro duplicitní titulky
+  undated_first_run_cap: 3       # u nedatovaných položek při prvním stažení zdroje vezmi max. N nejnovějších
+  seen_retention_weeks: 30
+
+fetch:
+  connect_timeout: 10
+  read_timeout: 20
+  max_workers: 8
+  stale_days: 60
+  max_retries: 2
+  max_items_per_source: 60
+
+academic:
+  enabled: true
+  max_requests: 50                 # rozpočet API dotazů na jeden běh (OpenAlex + Crossref)
+  openalex_no_key_max_requests: 4  # bez OPENALEX_API_KEY je denní rozpočet velmi malý
+  openalex_per_page: 50
+  crossref_rows: 100
+  lookback_days: 7
+  journals:
+    - {name: "Nature Climate Change", issn: ["1758-678X"]}
+    - {name: "Nature Energy", issn: ["2058-7546"]}
+    - {name: "Global Environmental Change", issn: ["0959-3780"]}
+    - {name: "Energy Research & Social Science", issn: ["2214-6296"]}
+    - {name: "Energy Policy", issn: ["0301-4215"], topic_filter: true}
+    - {name: "Climatic Change", issn: ["0165-0009"]}
+    - {name: "Climate Policy", issn: ["1469-3062"]}
+    - {name: "Environmental Politics", issn: ["0964-4016"], topic_filter: true}
+    - {name: "Joule", issn: ["2542-4351"], topic_filter: true}
+    - {name: "One Earth", issn: ["2590-3322"], topic_filter: true}
+    - {name: "PNAS", issn: ["0027-8424"], topic_filter: true}
+  # Tematické dotazy pro OpenAlex (boolean operátory VELKÝMI písmeny).
+  openalex_queries:
+    - {id: opinion, search: '("public opinion" OR attitudes OR "public support") AND (climate OR "climate policy" OR decarbonization)'}
+    - {id: acceptability, search: '("policy acceptability" OR "public acceptance" OR "policy support") AND (carbon OR climate OR energy)'}
+    - {id: communication, search: '("climate communication" OR framing OR messaging OR narratives) AND climate'}
+    - {id: just_transition, search: '"just transition" OR "energy justice"'}
+    - {id: energy_poverty, search: '"energy poverty" OR "fuel poverty"'}
+    - {id: ets2, search: '(ETS2 OR "emissions trading" OR "carbon price" OR "carbon pricing") AND (households OR distributional OR "social climate fund")'}
+    - {id: cee, search: '(Czech OR Czechia OR "Central Eastern Europe" OR "Central and Eastern Europe" OR Visegrad) AND (climate OR energy OR decarbonization OR emissions)'}
+
+ask:
+  default_days: 14
+  max_items: 30

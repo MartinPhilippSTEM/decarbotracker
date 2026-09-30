@@ -1,0 +1,24 @@
+# tajné klíče – NIKDY necommitovat
+.env
+.env.*
+!.env.example
+
+# prostředí a mezivýstupy
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# vygenerovaný web (staví se v GitHub Actions)
+site/
+
+# dočasné soubory
+data/.tmp-*
+*.log
+.DS_Store
+Thumbs.db

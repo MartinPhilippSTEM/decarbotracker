@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% from "_macros.html" import tags, item_date, item_title, evidence %}
+{% block title %}{{ b.topic }} – dotaz – {{ site.title }}{% endblock %}
+{% block description %}{{ b.headline_cs }}{% endblock %}
+{% block content %}
+<article class="report">
+  <header class="report-head">
+    <p class="kicker">Dotaz na téma · {{ b.period_from|date_cs }} – {{ b.period_to|date_cs }}</p>
+    <h1>{{ b.topic }}</h1>
+    {% for n in b.notices_cs %}<p class="notice{% if b.status in ('fallback', 'empty') %} notice-warn{% endif %}">{{ n }}</p>{% endfor %}
+    <p class="lead"><strong>{{ b.headline_cs }}</strong></p>
+    {% if b.summary_cs %}<p>{{ b.summary_cs }}</p>{% endif %}
+    <p class="meta">Model: {{ b.model }} · vygenerováno {{ b.generated_at|date_cs }} · {{ b.items|length }} podkladů</p>
+  </header>
+  {% if b.key_findings %}
+  <section aria-labelledby="zjisteni">
+    <h2 id="zjisteni">Klíčová zjištění</h2>
+    <ul>{% for f in b.key_findings %}<li><span class="tag tag-{{ f.geo|lower }}">{{ f.geo }}</span> {{ f.text_cs }} {{ evidence(f.evidence_item_ids, items) }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  {% if b.public_attitudes_cs %}<section><h2>Postoje veřejnosti a komunikace</h2><p>{{ b.public_attitudes_cs }}</p></section>{% endif %}
+  {% if b.forecasts_cs %}<section><h2>Prognózy a scénáře</h2><p>{{ b.forecasts_cs }}</p></section>{% endif %}
+  {% if b.by_region %}
+  <section><h2>Podle regionů</h2>
+    <dl class="regions">
+      <dt><span class="tag tag-cz">CZ</span> Česko</dt><dd>{{ b.by_region.cz }}</dd>
+      <dt><span class="tag tag-eu">EU</span> Evropa</dt><dd>{{ b.by_region.eu }}</dd>
+      <dt><span class="tag tag-us">US</span> USA</dt><dd>{{ b.by_region.us }}</dd>
+      {% if b.by_region.global_ %}<dt><span class="tag tag-global">GLOBAL</span> Svět</dt><dd>{{ b.by_region.global_ }}</dd>{% endif %}
+    </dl>
+  </section>
+  {% endif %}
+  {% if b.data_gaps_cs %}<section><h2>Co chybí nebo nejde ověřit</h2><ul>{% for g in b.data_gaps_cs %}<li>{{ g }}</li>{% endfor %}</ul></section>{% endif %}
+  {% if b.items %}
+  <section aria-labelledby="podklady">
+    <h2 id="podklady">Podklady ({{ b.items|length }})</h2>
+    <ul class="sources-list">
+    {% for it in b.items %}
+      <li id="i-{{ it.id }}">
+        <p class="card-meta">{{ tags(it, False) }} <span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}</p>
+        <p class="item-title">{{ item_title(it) }}</p>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Archiv týdnů – {{ site.title }}{% endblock %}
+{% block content %}
+<h1>Archiv týdnů</h1>
+{% if reports %}
+<ul class="plain archive">
+{% for r in reports %}
+  <li>
+    <p class="kicker"><a href="{{ base }}tydny/{{ r.week|week_slug }}/">{{ r.week }}</a> · {{ period_of(r) }}{% if r.status != "ok" %} · <span class="tag tag-opinion">{{ {"fallback": "bez syntézy", "dry_run": "dry-run"}.get(r.status, r.status) }}</span>{% endif %}</p>
+    <p>{{ r.headline_cs }}</p>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>Zatím tu nejsou žádné týdenní přehledy.</p>
+{% endif %}
+{% endblock %}
