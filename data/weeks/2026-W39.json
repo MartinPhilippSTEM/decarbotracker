@@ -1,0 +1,419 @@
+{
+  "week": "2026-W39",
+  "period_from": "2026-09-21T00:00:00Z",
+  "period_to": "2026-09-27T23:59:59.999999Z",
+  "generated_at": "2026-09-30T13:33:35.708194Z",
+  "model": "—",
+  "items_considered": 182,
+  "items_selected": 15,
+  "status": "fallback",
+  "notices_cs": [
+    "Syntézu AI se tento týden nepodařilo vytvořit (Neplatný ANTHROPIC_API_KEY (401). Zkontrolujte klíč v .env / GitHub Secrets.). Zobrazujeme jen nejlépe hodnocené položky bez SWOT analýzy."
+  ],
+  "cz_content_present": true,
+  "headline_cs": "Přehled bez AI syntézy – nejlépe hodnocené položky týdne",
+  "executive_summary_cs": "",
+  "swot": null,
+  "top_items": [
+    {
+      "item_id": "2e956a2c7e97",
+      "why_it_matters_cs": "Více informací naleznete v plné verzi na našem webu.",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "energy_markets"
+    },
+    {
+      "item_id": "5e370d2986ae",
+      "why_it_matters_cs": "V září 2026 zahajujeme Akademii 2050, vzdělávací program Institutu 2050 a Fakt o klimatu.",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "decarbonization_policy"
+    },
+    {
+      "item_id": "5471f90119a8",
+      "why_it_matters_cs": "Falešných zpráv, nepravd a lží se ve veřejném prostoru a na sociálních sítích denně šíří nespočet a je čím dál těžší je rozeznat. Na dalším veřejném natáčení podcastu Café Evropa s…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "communication"
+    },
+    {
+      "item_id": "93fac07ae429",
+      "why_it_matters_cs": "V pondělí v Železné Rudě jednali zástupci Ministerstva životního prostředí se starosty dotčených obcí a zástupci bavorské samosprávy o aktuálním stavu a dalším postupu při řešení h…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "57f5d2d99054",
+      "why_it_matters_cs": "Odolná krajina, která dokáže zadržet vodu, lepší připravenost obcí a měst na horko, sucho i povodně, dostatek pitné vody a dostupné informace o přírodních rizicích. To jsou hlavní …",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "decarbonization_policy"
+    },
+    {
+      "item_id": "fd9cebb3138f",
+      "why_it_matters_cs": "Chce-li Česko zachovat současnou úroveň spotřeby vody a její kvalitu, neobejde se bez stavby nových údolních nádrží na horních partiích vodních toků, řekl v rozhovoru pro ČTK Miros…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "decarbonization_policy"
+    },
+    {
+      "item_id": "5e9515736143",
+      "why_it_matters_cs": "„Infantilizace“ komunikace v politice přichází v době, kdy svět řeší jedny z nejtěžších otázek za několik desetiletí",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "communication"
+    },
+    {
+      "item_id": "8b4fad334b11",
+      "why_it_matters_cs": "Noc vědy je největší tuzemskou akcí, která veřejnosti představuje, jak krásné mohou být být věda a poznávání světa. Tématem letošního ročníku, který se koná v pátek 25. září, je ko…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "communication"
+    },
+    {
+      "item_id": "28e4e89e9c09",
+      "why_it_matters_cs": "Abstract Alongside the need for rapid emissions reductions, removing carbon dioxide from the atmosphere is emerging as a central pillar of global climate policy. Scaling up carbon …",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "51f93dd67871",
+      "why_it_matters_cs": "What ultimately limits heat removal during boiling, and can the boiling crisis be surpassed? The critical heat flux is traditionally viewed as a terminal threshold beyond which vap…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "communication"
+    },
+    {
+      "item_id": "dcab1736e925",
+      "why_it_matters_cs": "This paper examines whether international public renewable energy finance (IPREF) improves firm-level energy efficiency (EE) in Vietnam. We combine national-level IPREF data with f…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "79cf0aedd141",
+      "why_it_matters_cs": "Poland’s energy sector looked very different just a decade ago. In 2016, coal accounted for around 80% of electricity generation, while the prospect of large-scale wind and solar d…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "technology"
+    },
+    {
+      "item_id": "f8c12a8d43b4",
+      "why_it_matters_cs": "Nature Climate Change, Published online: 24 September 2026; doi:10.1038/s41558-026-02739-1 Public support for carbon removal grows when people get a say and a share in the benefits…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "1898b951b780",
+      "why_it_matters_cs": "This structured narrative review synthesizes current knowledge on the development of seaweed aquaculture in the Mekong Delta under climate change. Literature searches were conducte…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "communication"
+    },
+    {
+      "item_id": "3e38a6625bdf",
+      "why_it_matters_cs": "Abstract The year 2025 marked a critical transition for indoor air quality policy, evolving from a neglected domain to a cornerstone of climate and health resilience. This perspect…",
+      "key_finding_cs": "Bez AI syntézy – ověřte u zdroje.",
+      "category": "public_attitudes"
+    }
+  ],
+  "public_attitudes_cs": null,
+  "forecasts_cs": [],
+  "by_region": null,
+  "watchlist_cs": [],
+  "data_gaps_cs": [
+    "Neplatný ANTHROPIC_API_KEY (401). Zkontrolujte klíč v .env / GitHub Secrets."
+  ],
+  "items": [
+    {
+      "id": "2e956a2c7e97",
+      "title": "EU ETS: Emise a povolenky zdarma v Česku",
+      "title_cs": "",
+      "url": "https://faktaoklimatu.cz/studie/2026-interaktivni-prehled-ets",
+      "source_name": "Fakta o klimatu",
+      "source_type": "research",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-25T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "energy_markets",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Více informací naleznete v plné verzi na našem webu.",
+      "final_score": 13.754,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false
+    },
+    {
+      "id": "5e370d2986ae",
+      "title": "Akademie 2050: vzdělávací program o klimatu, odolnosti a strategii pro Česko",
+      "title_cs": "",
+      "url": "https://institut2050.cz/akademie-2050",
+      "source_name": "Institut 2050",
+      "source_type": "think_tank",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-25T08:22:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "V září 2026 zahajujeme Akademii 2050, vzdělávací program Institutu 2050 a Fakt o klimatu.",
+      "final_score": 8.25,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false
+    },
+    {
+      "id": "5471f90119a8",
+      "title": "Debata | Jazyk dezinformací: Jak vznikají informační fauly v jazyce?",
+      "title_cs": "",
+      "url": "https://www.europeum.org/udalosti/debata-jazyk-dezinformaci-jak-vznikaji-informacni-fauly-v-jazyce/",
+      "source_name": "EUROPEUM",
+      "source_type": "think_tank",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-25T12:07:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication"
+      ],
+      "one_line_cs": "Falešných zpráv, nepravd a lží se ve veřejném prostoru a na sociálních sítích denně šíří nespočet a je čím dál těžší je rozeznat. Na dalším veřejném natáčení podcastu Café Evropa s…",
+      "final_score": 7.865,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "93fac07ae429",
+      "title": "Zástupci MŽP informovali starosty a Bavorsko o stavu kontaminovaného území v bývalém vojenském prostoru v Národním parku Šumava",
+      "title_cs": "",
+      "url": "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/zastupci-mzp-informovali-starosty-a-bavorsko-o-stavu-kontaminovaneho-uzemi-v-byvalem-vojenskem",
+      "source_name": "Ministerstvo životního prostředí",
+      "source_type": "government",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-22T06:02:45Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes"
+      ],
+      "one_line_cs": "V pondělí v Železné Rudě jednali zástupci Ministerstva životního prostředí se starosty dotčených obcí a zástupci bavorské samosprávy o aktuálním stavu a dalším postupu při řešení h…",
+      "final_score": 7.15,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "57f5d2d99054",
+      "title": "Vláda schválila plán adaptace na změnu klimatu. Zaměří se na vodu, odolnou krajinu, připravenost obcí a nový portál s informacemi o rizicích",
+      "title_cs": "",
+      "url": "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/vlada-schvalila-plan-adaptace-na-zmenu-klimatu-zameri-se-na-vodu-odolnou-krajinu-pripravenost-obci-a",
+      "source_name": "Ministerstvo životního prostředí",
+      "source_type": "government",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-21T13:21:04Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Odolná krajina, která dokáže zadržet vodu, lepší připravenost obcí a měst na horko, sucho i povodně, dostatek pitné vody a dostupné informace o přírodních rizicích. To jsou hlavní …",
+      "final_score": 6.6,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false
+    },
+    {
+      "id": "fd9cebb3138f",
+      "title": "Při současné spotřebě vody je třeba stavět další přehrady",
+      "title_cs": "",
+      "url": "https://www.klimatickazmena.cz/pri-soucasne-spotrebe-vody-je-treba-stavet-dalsi-prehrady/",
+      "source_name": "CzechGlobe – klimatickazmena.cz",
+      "source_type": "research",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-25T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Chce-li Česko zachovat současnou úroveň spotřeby vody a její kvalitu, neobejde se bez stavby nových údolních nádrží na horních partiích vodních toků, řekl v rozhovoru pro ČTK Miros…",
+      "final_score": 5.819,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false
+    },
+    {
+      "id": "5e9515736143",
+      "title": "Ty, ty, ty… Co všechno udělají pro hlasy?",
+      "title_cs": "",
+      "url": "https://www.respekt.cz/tydenik/2026/40/ty-ty-ty-co-vsechno-udelaji-pro-hlasy",
+      "source_name": "Respekt",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-27T10:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication"
+      ],
+      "one_line_cs": "„Infantilizace“ komunikace v politice přichází v době, kdy svět řeší jedny z nejtěžších otázek za několik desetiletí",
+      "final_score": 4.68,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "8b4fad334b11",
+      "title": "Noc vědy otevře veřejnosti dveře 155 výzkumných institucí",
+      "title_cs": "",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/noc-vedy-otevre-verejnosti-dvere-155-vyzkumnych-instituci-377922",
+      "source_name": "ČT24 – Věda",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-09-25T06:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "study"
+      ],
+      "one_line_cs": "Noc vědy je největší tuzemskou akcí, která veřejnosti představuje, jak krásné mohou být být věda a poznávání světa. Tématem letošního ročníku, který se koná v pátek 25. září, je ko…",
+      "final_score": 4.68,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "28e4e89e9c09",
+      "title": "Public support for novel carbon removal hinges on procedural and distributive fairness",
+      "title_cs": "",
+      "url": "https://doi.org/10.1038/s41558-026-02741-7",
+      "source_name": "Nature Climate Change",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-09-24T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Abstract Alongside the need for rapid emissions reductions, removing carbon dioxide from the atmosphere is emerging as a central pillar of global climate policy. Scaling up carbon …",
+      "final_score": 8.6336,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "51f93dd67871",
+      "title": "Microbubble emission boiling reinterpreted: Condensation-driven oscillations enable heat transfer beyond the critical heat flux",
+      "title_cs": "",
+      "url": "https://doi.org/10.1073/pnas.2612649123",
+      "source_name": "PNAS",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-09-23T16:25:03Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication"
+      ],
+      "one_line_cs": "What ultimately limits heat removal during boiling, and can the boiling crisis be surpassed? The critical heat flux is traditionally viewed as a terminal threshold beyond which vap…",
+      "final_score": 6.9069,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "dcab1736e925",
+      "title": "INTERNATIONAL PUBLIC RENEWABLE ENERGY FINANCE AND FIRM-LEVEL ENERGY EFFICIENCY: EVIDENCE FROM VIETNAM",
+      "title_cs": "",
+      "url": "https://doi.org/10.37569/dalatuniversity.16.3.1686(2026)",
+      "source_name": "Dalat University Journal of Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-09-25T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "study"
+      ],
+      "one_line_cs": "This paper examines whether international public renewable energy finance (IPREF) improves firm-level energy efficiency (EE) in Vietnam. We combine national-level IPREF data with f…",
+      "final_score": 6.9069,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "79cf0aedd141",
+      "title": "10 Years of Poland’s Energy Transition — The Forum Energii Perspective",
+      "title_cs": "",
+      "url": "https://www.forum-energii.eu/en/10-years-of-polands-energy-transition",
+      "source_name": "Forum Energii (PL) – publikace",
+      "source_type": "think_tank",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-09-22T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology"
+      ],
+      "one_line_cs": "Poland’s energy sector looked very different just a decade ago. In 2016, coal accounted for around 80% of electricity generation, while the prospect of large-scale wind and solar d…",
+      "final_score": 6.776,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false
+    },
+    {
+      "id": "f8c12a8d43b4",
+      "title": "Carbon removal projects need to get justice right",
+      "title_cs": "",
+      "url": "https://www.nature.com/articles/s41558-026-02739-1",
+      "source_name": "Nature Climate Change",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-09-24T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes"
+      ],
+      "one_line_cs": "Nature Climate Change, Published online: 24 September 2026; doi:10.1038/s41558-026-02739-1 Public support for carbon removal grows when people get a say and a share in the benefits…",
+      "final_score": 6.593,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "1898b951b780",
+      "title": "Sustainable seaweed aquaculture development in the Mekong Delta under climate change",
+      "title_cs": "",
+      "url": "https://doi.org/10.1007/s44274-026-01089-1",
+      "source_name": "Discover Environment",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-09-26T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication"
+      ],
+      "one_line_cs": "This structured narrative review synthesizes current knowledge on the development of seaweed aquaculture in the Mekong Delta under climate change. Literature searches were conducte…",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    },
+    {
+      "id": "3e38a6625bdf",
+      "title": "Indoor air quality at the climate-health nexus: The case for enforceable standards",
+      "title_cs": "",
+      "url": "https://doi.org/10.1088/1748-9326/aeabc0",
+      "source_name": "Environmental Research Letters",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-09-23T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Abstract The year 2025 marked a critical transition for indoor air quality policy, evolving from a neglected domain to a cornerstone of climate and health resilience. This perspect…",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true
+    }
+  ],
+  "usage": {
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.0,
+    "by_model": {}
+  },
+  "validation_log": []
+}
