@@ -114,6 +114,17 @@ class UsageTracker:
         return self.info.cost_usd
 
 
+WORKSPACE_HINT = ("Klíč není přiřazený k pracovnímu prostoru (workspace). Nastavte ANTHROPIC_WORKSPACE_ID "
+                  "(ID ve tvaru wrkspc_… z Console → Settings → Workspaces), nebo vytvořte klíč uvnitř workspace.")
+
+
+def make_anthropic_client(settings: Settings, *, max_retries: int, timeout: float) -> anthropic.Anthropic:
+    """Klient Claude API; u klíčů bez workspace posílá hlavičku anthropic-workspace-id."""
+    headers = {"anthropic-workspace-id": settings.anthropic_workspace_id} if settings.anthropic_workspace_id else None
+    return anthropic.Anthropic(api_key=settings.anthropic_api_key, max_retries=max_retries, timeout=timeout,
+                               default_headers=headers)
+
+
 def _text_of(message: Any) -> str:
     return "".join(getattr(b, "text", "") for b in message.content if getattr(b, "type", "") == "text")
 
@@ -127,11 +138,7 @@ class ClaudeClient:
         self.settings = settings
         self.llm = settings.llm
         self.tracker = tracker or UsageTracker(settings.llm)
-        self.client = anthropic.Anthropic(
-            api_key=settings.anthropic_api_key,
-            max_retries=self.llm.max_retries,
-            timeout=self.llm.timeout_s,
-        )
+        self.client = make_anthropic_client(settings, max_retries=self.llm.max_retries, timeout=self.llm.timeout_s)
 
     def _kwargs(self, model: str, system: str, user: str, schema: type[BaseModel], max_tokens: int,
                 effort: str | None, cache_system: bool) -> dict[str, Any]:
@@ -183,6 +190,8 @@ class ClaudeClient:
             msg = exc.message
             if "credit balance" in msg.lower():
                 raise LLMAuthError("Na účtu Anthropic došel kredit – dobijte ho v Console → Billing.") from exc
+            if "workspace" in msg.lower():
+                raise LLMAuthError(WORKSPACE_HINT) from exc
             raise LLMError(f"Chybný požadavek (400): {msg}") from exc
         except anthropic.APIConnectionError as exc:
             raise LLMError(f"Síťová chyba při volání Claude API: {exc}") from exc

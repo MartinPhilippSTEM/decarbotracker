@@ -128,6 +128,8 @@ class Settings(BaseModel):
     # tajné hodnoty – jen z prostředí, nikdy se neukládají ani nelogují
     anthropic_api_key: str | None = Field(default=None, exclude=True, repr=False)
     openalex_api_key: str | None = Field(default=None, exclude=True, repr=False)
+    # ID pracovního prostoru (wrkspc_…) – nutné u klíčů, které nejsou přiřazené k workspace
+    anthropic_workspace_id: str | None = Field(default=None, exclude=True, repr=False)
 
     @property
     def ua(self) -> str:
@@ -167,6 +169,7 @@ def load_settings() -> Settings:
     # odstraň mezery, nové řádky a uvozovky, které se často přidají při vkládání klíče
     settings.anthropic_api_key = (os.environ.get("ANTHROPIC_API_KEY") or "").strip().strip("\"'").strip() or None
     settings.openalex_api_key = os.environ.get("OPENALEX_API_KEY") or None
+    settings.anthropic_workspace_id = (os.environ.get("ANTHROPIC_WORKSPACE_ID") or "").strip() or None
     return settings
 
 

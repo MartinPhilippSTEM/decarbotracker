@@ -110,8 +110,12 @@ def cmd_check_key(args: argparse.Namespace) -> int:
     print(f"ANTHROPIC_API_KEY: {describe_key(key)}")
     if not key:
         return 1
+    from decarbotracker.llm import WORKSPACE_HINT, make_anthropic_client
+
+    ws = settings.anthropic_workspace_id
+    print(f"ANTHROPIC_WORKSPACE_ID: {'nastaveno (' + ws[:10] + '…)' if ws else 'nenastaveno'}")
     try:
-        client = anthropic.Anthropic(api_key=settings.anthropic_api_key, max_retries=1, timeout=30)
+        client = make_anthropic_client(settings, max_retries=1, timeout=30)
         models = [m.id for m in client.models.list(limit=50)]
         wanted = [settings.llm.model_scoring, settings.llm.model_synthesis]
         print("Klíč je PLATNÝ. Dostupné potřebné modely:",
@@ -122,7 +126,7 @@ def cmd_check_key(args: argparse.Namespace) -> int:
     except anthropic.PermissionDeniedError as exc:
         print(f"Klíč nemá oprávnění (403): {exc.message}")
     except anthropic.APIError as exc:
-        print(f"Ověření se nezdařilo: {exc}")
+        print(WORKSPACE_HINT if "workspace" in str(exc).lower() else f"Ověření se nezdařilo: {exc}")
     return 1
 
 
