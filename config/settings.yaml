@@ -7,8 +7,8 @@ site:
   # Lokálně "/". V GitHub Actions se přepíše automaticky (proměnná DECARBO_BASE_URL = /decarbotracker/).
   base_url: "/"
   # Absolutní adresa webu (pro feed.xml). V CI se nastaví automaticky z actions/configure-pages.
-  site_url: "http://localhost:8000/"
-  repo_url: "https://github.com/"
+  site_url: "https://martinphilippstem.github.io/decarbotracker/"
+  repo_url: "https://github.com/MartinPhilippSTEM/decarbotracker"
   output_dir: site
   archive_weeks_on_home: 8
 
