@@ -2,13 +2,13 @@
   "week": "2026-W39",
   "period_from": "2026-09-21T00:00:00Z",
   "period_to": "2026-09-27T23:59:59.999999Z",
-  "generated_at": "2026-09-30T13:40:41.268139Z",
+  "generated_at": "2026-09-30T13:47:17.982114Z",
   "model": "—",
   "items_considered": 211,
   "items_selected": 15,
   "status": "fallback",
   "notices_cs": [
-    "Syntézu AI se tento týden nepodařilo vytvořit (Neplatný ANTHROPIC_API_KEY (401). Zkontrolujte klíč v .env / GitHub Secrets.). Zobrazujeme jen nejlépe hodnocené položky bez SWOT analýzy."
+    "Syntézu AI se tento týden nepodařilo vytvořit (Neplatný ANTHROPIC_API_KEY (401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CfZjAEgeZuRbKEs5eyxYo'}). Klíč: délka 31 znaků, začíná 'sk-ant-api': NE; formát vypadá v pořádku. Zkontrolujte klíč v .env / GitHub Secrets.). Zobrazujeme jen nejlépe hodnocené položky bez SWOT analýzy."
   ],
   "cz_content_present": true,
   "headline_cs": "Přehled bez AI syntézy – nejlépe hodnocené položky týdne",
@@ -111,7 +111,7 @@
   "by_region": null,
   "watchlist_cs": [],
   "data_gaps_cs": [
-    "Neplatný ANTHROPIC_API_KEY (401). Zkontrolujte klíč v .env / GitHub Secrets."
+    "Neplatný ANTHROPIC_API_KEY (401: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CfZjAEgeZuRbKEs5eyxYo'}). Klíč: délka 31 znaků, začíná 'sk-ant-api': NE; formát vypadá v pořádku. Zkontrolujte klíč v .env / GitHub Secrets."
   ],
   "items": [
     {
