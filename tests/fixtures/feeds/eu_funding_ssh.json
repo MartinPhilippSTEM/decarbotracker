@@ -1,0 +1,200 @@
+{
+ "totalResults": 249,
+ "results": [
+  {
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2027-07-D3-32",
+   "title": null,
+   "metadata": {
+    "identifier": [
+     "HORIZON-CL5-2027-07-D3-32"
+    ],
+    "title": [
+     "Delivery of industrial CCUS clusters – Societal Readiness pilot"
+    ],
+    "callTitle": [
+     "ENERGY"
+    ],
+    "callIdentifier": [
+     "HORIZON-CL5-2027-07"
+    ],
+    "startDate": [
+     "2027-08-04T00:00:00.000+0000"
+    ],
+    "deadlineDate": [
+     "2027-12-01T00:00:00.000+0000"
+    ],
+    "budgetOverview": [
+     "{\"budgetYearsColumns\":[\"2027\"],\"budgetTopicActionMap\":{\"113296\":[{\"action\":\"HORIZON-CL5-2027-07-D3-11 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":2,\"minContribution\":8500000,\"maxContribution\":8500000,\"budgetYearMap\":{\"2027\":\"17000000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}],\"113289\":[{\"action\":\"HORIZON-CL5-2027-07-D3-28 - HORIZON-CSA HORIZON Coordination and Support Actions\",\"expectedGrants\":1,\"minContribution\":6000000,\"maxContribution\":6000000,\"budgetYearMap\":{\"2027\":\"6000000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}],\"113291\":[{\"action\":\"HORIZON-CL5-2027-07-D3-32 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":10000000,\"maxContribution\":10000000,\"budgetYearMap\":{\"2027\":\"30000000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}],\"113290\":[{\"action\":\"HORIZON-CL5-2027-07-D3-16 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":9500000,\"maxContribution\":9500000,\"budgetYearMap\":{\"2027\":\"28500000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}],\"113293\":[{\"action\":\"HORIZON-CL5-2027-07-D3-25 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":9500000,\"maxContribution\":9500000,\"budgetYearMap\":{\"2027\":\"28500000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}],\"113292\":[{\"action\":\"HORIZON-CL5-2027-07-D3-26 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":9500000,\"maxContribution\":9500000,\"budgetYearMap\":{\"2027\":\"28500000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}],\"113295\":[{\"action\":\"HORIZON-CL5-2027-07-D3-27 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":7500000,\"maxContribution\":7500000,\"budgetYearMap\":{\"2027\":\"22500000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}],\"113294\":[{\"action\":\"HORIZON-CL5-2027-07-D3-17 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":6000000,\"maxContribution\":6000000,\"budgetYearMap\":{\"2027\":\"18000000\"},\"plannedOpeningDate\":\"2027-08-04\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-12-01\"]}]}}"
+    ],
+    "crossCuttingPriorities": [
+     "SSH",
+     "RePowerEU",
+     "DigitalAgenda",
+     "SocietalEngagement",
+     "AI"
+    ],
+    "descriptionByte": [
+     "<p class=\"topicdescriptionkind\">Expected Outcome:</p><p>Project results are expected to contribute to all of the following outcomes: </p><ol level=\"0\">  <li>Near-to-market solutions for the safe integration and use of CCUS technologies in the energy- and carbon-intensive industry;</li><li>A pipeline of projects that have the potential for commercial scale-up.</li><li>Deeper understanding of the needs and concerns of diverse social groups involved in or potentially affected by the R&amp;I development of the technology, thereby increasing the potential for beneficial societal uptake and building trust in results and outcomes. </li> </ol><p class=\"topicdescriptionkind\">Scope:</p><p>Projects are expected to be the de-risking first step to develop local or regional industrial CCUS clusters, i.e. (multi) source and (multi) sink solutions for the decarbonisation of the hard-to-abate industries of the region. Projects are expected to be the basis and orientation for future full-size projects. To maximise the impact, projects should have a substantial industrial involvement.</p><p>Projects should address most, but not necessarily all of the below issues:</p><ul level=\"0\"><li>Detailed planning and preparation for retrofitting capture systems to existing industrial plants;</li><li>Demonstrating important system components;</li><li>Identification and characterisation of the clustering potential of (cross-border) regional CO2 emitters;</li><li>Optimisation of industrial symbiosis between emitters and potential users of CO2;</li><li>Development of tools to optimise the design and operation of the cluster(s) and operate CO2 streams with different compositions, flow rates and operating regimes to comply with the constraints for the shared transport and storage infrastructure;</li><li>Identification of potential regional users of a common CO<sub>2</sub> infrastructure (this could also include enlargement counties, such as the Western Balkans, Ukraine and Moldova);</li><li>Comprehensive economic and technical assessment to identify the best (multimodal) transport options, including the re-use of existing infrastructure;</li><li>Development of business models for regional CO2 transport networks, including for dispersed industrial sites to link these to larger industrial clusters or pipeline networks;</li><li>Consideration of feasible CO2 geological storage services</li><li>Comprehensive set of studies and preparatory actions leading to permitting;</li><li>Scenarios for integ"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2027-07-D3-32"
+    ],
+    "status": [
+     "31094501"
+    ],
+    "typesOfAction": [
+     "HORIZON Innovation Actions"
+    ],
+    "programmePeriod": [
+     "2021 - 2027"
+    ]
+   }
+  },
+  {
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2027-06-D6-04",
+   "title": null,
+   "metadata": {
+    "identifier": [
+     "HORIZON-CL5-2027-06-D6-04"
+    ],
+    "title": [
+     "Holistic solutions for CCAM integration in critical scenarios (CCAM Partnership)"
+    ],
+    "callTitle": [
+     "MOBILITY"
+    ],
+    "callIdentifier": [
+     "HORIZON-CL5-2027-06"
+    ],
+    "startDate": [
+     "2027-06-03T00:00:00.000+0000"
+    ],
+    "deadlineDate": [
+     "2027-10-07T00:00:00.000+0000"
+    ],
+    "budgetOverview": [
+     "{\"budgetYearsColumns\":[\"2027\"],\"budgetTopicActionMap\":{\"113281\":[{\"action\":\"HORIZON-CL5-2027-06-D6-08 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":7000000,\"maxContribution\":7000000,\"budgetYearMap\":{\"2027\":\"21000000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113283\":[{\"action\":\"HORIZON-CL5-2027-06-D6-11 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":1,\"minContribution\":5000000,\"maxContribution\":5000000,\"budgetYearMap\":{\"2027\":\"5000000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113282\":[{\"action\":\"HORIZON-CL5-2027-06-D6-05 - HORIZON-CSA HORIZON Coordination and Support Actions\",\"expectedGrants\":1,\"minContribution\":4000000,\"maxContribution\":4000000,\"budgetYearMap\":{\"2027\":\"4000000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113285\":[{\"action\":\"HORIZON-CL5-2027-06-D6-04 - HORIZON-RIA HORIZON  Research and Innovation Actions\",\"expectedGrants\":1,\"minContribution\":5500000,\"maxContribution\":5500000,\"budgetYearMap\":{\"2027\":\"5500000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113284\":[{\"action\":\"HORIZON-CL5-2027-06-D6-12 - HORIZON-CSA HORIZON Coordination and Support Actions\",\"expectedGrants\":1,\"minContribution\":1600000,\"maxContribution\":1600000,\"budgetYearMap\":{\"2027\":\"1600000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}]}}"
+    ],
+    "crossCuttingPriorities": [
+     "PART-COPROGR",
+     "SSH",
+     "DigitalAgenda",
+     "AI"
+    ],
+    "descriptionByte": [
+     "<p class=\"topicdescriptionkind\">Expected Outcome:</p><p>Project results are expected to contribute to all the following expected outcomes:</p><ul level=\"0\"><li>Detailed clustered collection of critical use cases and scenarios based on the findings of former or current national and international research projects, as well as the identification of missing aspects.</li><li>In-depth analysis of stakeholders that may be affected by critical situations and edge cases and that have high interest and/or influence in resolving these situations through their capabilities. </li><li>Availability of real-time holistic situation interpretation services addressing the respective needs of road users of all kinds, road operators, service providers and related perspectives, as well as its social participation and technological integration, i.e. the role of each technological component in the overall system-of-systems.</li><li>Availability of a “local deconflicting CCAM architecture” that detects and deconflicts corner case situations (automatically through active and passive technologies or by including remote operation techniques). This includes the capability from online calculation of optimal countermeasures to ensure safety, and reduce any negative impacts on all road users, by considering available infrastructure (including also automated and connected digital components, like sensors, intelligent traffic control systems, cooperative communication), and overall conditions. Such an architecture also needs to address relevant requirements, particularly in technology and near and far communications, outlining the technical standards and investments necessary for risk mitigation. These may include solutions to increase road users’ situational awareness and the provision of reliable, accurate and timely warnings.</li><li>Establishment of working methods and harmonization of interfaces with national/local road authorities, operators and emergency services (e.g. first responders in case of accidents), including remote operations and road enforcement. The aim must be the creation or adaption of decision-support tools that can be integrated with mobility platforms, traffic control systems, and emergency services. This also includes the definition of related shared governance models. Understanding of the requirements for public road authorities (national and local) to address CCAM critical cases, defining their role in supporting and enabling CCAM operations.</li><li>Enhanced us"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2027-06-D6-04"
+    ],
+    "status": [
+     "31094501"
+    ],
+    "typesOfAction": [
+     "HORIZON  Research and Innovation Actions"
+    ],
+    "programmePeriod": [
+     "2021 - 2027"
+    ]
+   }
+  },
+  {
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2027-06-D6-08",
+   "title": null,
+   "metadata": {
+    "identifier": [
+     "HORIZON-CL5-2027-06-D6-08"
+    ],
+    "title": [
+     "Enhancing Mobility for All: affordable, reliable, and accessible multimodal transport for inclusive rural and urban connectivity – Societal Readiness pilot"
+    ],
+    "callTitle": [
+     "MOBILITY"
+    ],
+    "callIdentifier": [
+     "HORIZON-CL5-2027-06"
+    ],
+    "startDate": [
+     "2027-06-03T00:00:00.000+0000"
+    ],
+    "deadlineDate": [
+     "2027-10-07T00:00:00.000+0000"
+    ],
+    "budgetOverview": [
+     "{\"budgetYearsColumns\":[\"2027\"],\"budgetTopicActionMap\":{\"113281\":[{\"action\":\"HORIZON-CL5-2027-06-D6-08 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":3,\"minContribution\":7000000,\"maxContribution\":7000000,\"budgetYearMap\":{\"2027\":\"21000000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113283\":[{\"action\":\"HORIZON-CL5-2027-06-D6-11 - HORIZON-IA HORIZON Innovation Actions\",\"expectedGrants\":1,\"minContribution\":5000000,\"maxContribution\":5000000,\"budgetYearMap\":{\"2027\":\"5000000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113282\":[{\"action\":\"HORIZON-CL5-2027-06-D6-05 - HORIZON-CSA HORIZON Coordination and Support Actions\",\"expectedGrants\":1,\"minContribution\":4000000,\"maxContribution\":4000000,\"budgetYearMap\":{\"2027\":\"4000000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113285\":[{\"action\":\"HORIZON-CL5-2027-06-D6-04 - HORIZON-RIA HORIZON  Research and Innovation Actions\",\"expectedGrants\":1,\"minContribution\":5500000,\"maxContribution\":5500000,\"budgetYearMap\":{\"2027\":\"5500000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}],\"113284\":[{\"action\":\"HORIZON-CL5-2027-06-D6-12 - HORIZON-CSA HORIZON Coordination and Support Actions\",\"expectedGrants\":1,\"minContribution\":1600000,\"maxContribution\":1600000,\"budgetYearMap\":{\"2027\":\"1600000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-10-07\"]}]}}"
+    ],
+    "crossCuttingPriorities": [
+     "SSH",
+     "DigitalAgenda",
+     "SocietalEngagement",
+     "AI"
+    ],
+    "descriptionByte": [
+     "<p class=\"topicdescriptionkind\">Expected Outcome:</p><p>Proposals should address all of the following outcomes:</p><ul level=\"0\"><li>Strategies, best practices and innovative solutions are made available to local authorities and actors to improve the availability, accessibility, and affordability of rural-urban transport and provide rural and urban populations in a vulnerable situation with better access to services and opportunities;</li><li>Integrated multimodal solutions, which ensure seamless transitions between rural and urban transport modes improving first- and last-mile connectivity, are piloted and related implementation plans are developed for/by local authorities and transport operators;</li><li>Responsiveness to a deeper understanding of the needs and concerns of diverse social group involved in or potentially affected by the R&amp;I development, thereby increasing the potential for beneficial societal uptake, and building trust in results and outcomes. Development of options for behavioural change towards healthier, safer and more sustainable mobility and lifestyles in rural and urban populations in a vulnerable situation.</li> </ul><p class=\"topicdescriptionkind\">Scope:</p><p>EU policies, such as the Sustainable and Smart Mobility Strategy and the European Green Deal, emphasise the need for inclusive, efficient, accessible and sustainable transport systems that leave no one behind. Transport poverty refers to individuals’ and households’ inability or difficulty to meet the costs of private or public transport, or their lack of or limited access to transport needed for their access to essential socioeconomic services and activities. Considering the national and spatial context, transport poverty affects both rural and underserved urban areas. Addressing this challenge requires innovative multimodal transport solutions which integrate various modes efficiently, leveraging digitalisation, shared mobility, and demand-responsive transport to enhance affordability, reliability, and accessibility, thereby ensuring Mobility as a Right.</p><p>Proposals should address all the following aspects:</p><ul level=\"0\"><li>Building on the outcome of previous calls and existing knowledge (e.g. SMARTA-NET<sup>[1]</sup>, the study on Novel policy ideas for a shift to low-carbon mobility<sup>[2]</sup>, the study on Transport poverty: definitions, indicators, determinants, and mitigation strategies<sup>[3]</sup> and other relevant EU-funded projects<sup>[4]</sup>),"
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2027-06-D6-08"
+    ],
+    "status": [
+     "31094501"
+    ],
+    "typesOfAction": [
+     "HORIZON Innovation Actions"
+    ],
+    "programmePeriod": [
+     "2021 - 2027"
+    ]
+   }
+  },
+  {
+   "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NATURE-2027-03-01",
+   "title": null,
+   "metadata": {
+    "identifier": [
+     "HORIZON-NATURE-2027-03-01"
+    ],
+    "title": [
+     "Advancing interdisciplinary, data-driven research at the biodiversity- health interface under a One Health approach"
+    ],
+    "callTitle": [
+     "Transformative change towards a nature-positive economy and society"
+    ],
+    "callIdentifier": [
+     "HORIZON-NATURE-2027-03"
+    ],
+    "startDate": [
+     "2027-06-03T00:00:00.000+0000"
+    ],
+    "deadlineDate": [
+     "2027-09-16T00:00:00.000+0000"
+    ],
+    "budgetOverview": [
+     "{\"budgetYearsColumns\":[\"2027\"],\"budgetTopicActionMap\":{\"115942\":[{\"action\":\"HORIZON-NATURE-2027-03-01 - HORIZON-RIA HORIZON  Research and Innovation Actions\",\"expectedGrants\":1,\"minContribution\":20000000,\"maxContribution\":20000000,\"budgetYearMap\":{\"2027\":\"20000000\"},\"plannedOpeningDate\":\"2027-06-03\",\"deadlineModel\":\"single-stage\",\"deadlineDates\":[\"2027-09-16\"]}]}}"
+    ],
+    "crossCuttingPriorities": [
+     "OCEAN",
+     "SSH",
+     "EoscAndFairData",
+     "AI",
+     "DigitalAgenda",
+     "INCO"
+    ],
+    "descriptionByte": [
+     "<p class=\"topicdescriptionkind\">Expected Outcome:</p><p>Proposals are expected to contribute to <strong>all</strong> the following expected outcomes:</p><ul level=\"0\"><li>public authorities, researchers and policymakers have access to robust knowledge foundations and analytical frameworks that enable inter- and transdisciplinary biodiversity-related research and collaboration, address interdependencies and strengthen the operationalisation of the One Health and Planetary Health approaches;</li><li>researchers, public authorities and global organisations have access to Findable Accessible Interoperable and Reusable (FAIR) data<sup>[1]</sup> supported by enhanced digital infrastructures. These data will build on improved identification, mobilisation and interoperability of existing data across thematic areas relevant to ecosystem and wildlife health, the main drivers of biodiversity loss and their impacts on human and animal health;</li><li>researchers, affected communities, food producers, data scientists, public authorities, healthcare professionals and animal health professionals, policymakers, risk assessors civil society organisations, private sector actors, societal partners and other stakeholders can assess the health benefits and risk prevention associated with maintaining, improving and restoring ecosystem health. These stakeholders will also be supported in applying evidence-based and tested recommendations, tools and solutions to effectively mainstream biodiversity in the operationalisation of One Health and Planetary Health approaches through biodiversity conservation and restoration actions and multi-host disease prevention.</li></ul><p class=\"topicdescriptionkind\">Scope:</p><p>A holistic life and environmental sciences approach that protects ecosystem, human and animal health must account for interdependencies between biodiversity and health domains. Inter- and transdisciplinary research supporting holistic approaches such as One Health and Planetary Health faces persistent barriers related to data quality, fragmentation, accessibility and interoperability, which should be addressed according to the FAIR principles.</p><p>This topic is expected to support the objectives of the EU biodiversity strategy for 2030<sup>[2]</sup>, the implementation of the Nature Restoration Regulation<sup>[3]</sup>, the European Data Union Strategy<sup>[4]</sup>, the Strategy for European Life Sciences<sup>[5]</sup>, the EU Global Health Strategy<sup>[6]</sup>, the "
+    ],
+    "url": [
+     "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NATURE-2027-03-01"
+    ],
+    "status": [
+     "31094501"
+    ],
+    "typesOfAction": [
+     "HORIZON  Research and Innovation Actions"
+    ],
+    "programmePeriod": [
+     "2021 - 2027"
+    ]
+   }
+  }
+ ]
+}

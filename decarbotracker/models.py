@@ -9,7 +9,7 @@ from pydantic import BaseModel, Field
 
 Region = Literal["CZ", "EU", "US", "GLOBAL"]
 SourceType = Literal[
-    "think_tank", "research", "polling", "government", "media", "journal", "ngo", "industry"
+    "think_tank", "research", "polling", "government", "media", "journal", "ngo", "industry", "funding"
 ]
 Topic = Literal[
     "decarbonization_policy",
@@ -40,7 +40,7 @@ class ScrapeConfig(BaseModel):
 class Source(BaseModel):
     id: str
     name: str
-    type: Literal["rss", "wp_json", "scrape"]
+    type: Literal["rss", "wp_json", "scrape", "eu_funding"]
     url: str
     region: Region
     source_type: SourceType
@@ -49,6 +49,8 @@ class Source(BaseModel):
     weight: float = Field(default=1.0, ge=0.5, le=1.5)
     enabled: bool = True
     notes: str = ""
+    # true = položky ze zdroje se posuzují i jako příležitosti (výzvy, granty)
+    funding: bool = False
     homepage: str = ""
     scrape: ScrapeConfig | None = None
 
@@ -187,6 +189,29 @@ class ReportDraft(BaseModel):
     data_gaps_cs: list[str]
 
 
+class OpportunityDraft(BaseModel):
+    """Výzva / grant vybraný modelem (strukturovaný výstup; všechna pole povinná kvůli velikosti gramatiky)."""
+
+    item_id: str
+    title_cs: str = Field(description="název výzvy česky (u českých výzev originál)")
+    funder: str = Field(description="poskytovatel, např. TA ČR, Evropská komise (Horizon Europe), EUKI")
+    amount_min: str = Field(description="minimální částka na projekt doslova ze vstupu s měnou; jinak 'neuvedeno'")
+    amount_max: str = Field(description="maximální částka na projekt doslova ze vstupu s měnou; jinak 'neuvedeno'")
+    open_from: str = Field(description="od kdy lze podávat (datum ze vstupu); jinak 'neuvedeno'")
+    deadline: str = Field(description="uzávěrka podávání (datum ze vstupu); jinak 'neuvedeno'")
+    summary_cs: str = Field(description="max. 2 věty: co výzva podporuje a pro koho")
+
+
+class OpportunityBatch(BaseModel):
+    opportunities: list[OpportunityDraft]
+
+
+class Opportunity(OpportunityDraft):
+    title: str
+    url: str
+    source_name: str
+
+
 class ReportItemRef(BaseModel):
     """Metadata položky uložená s reportem (pro render bez přístupu k surovým datům)."""
 
@@ -236,6 +261,7 @@ class WeeklyReport(BaseModel):
     forecasts_cs: list[Forecast] = Field(default_factory=list)
     by_region: ByRegion | None = None
     watchlist_cs: list[WatchItem] = Field(default_factory=list)
+    opportunities_cs: list[Opportunity] = Field(default_factory=list)
     data_gaps_cs: list[str] = Field(default_factory=list)
     items: list[ReportItemRef] = Field(default_factory=list)
     usage: UsageInfo = Field(default_factory=UsageInfo)

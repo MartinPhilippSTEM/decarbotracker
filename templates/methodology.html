@@ -45,6 +45,8 @@
     {% for k, v in sel.source_type_weights.items() %}<tr><td>{{ source_type_labels.get(k, k) }}</td><td>{{ v }}</td></tr>{% endfor %}
     </tbody>
   </table>
+  <h3 id="prilezitosti">Příležitosti (výzvy a granty)</h3>
+  <p>Kandidáty jsou položky z grantových zdrojů (TA ČR, EUKI, EU Funding &amp; Tenders Portal – jen výzvy se štítkem SSH k tématům klima a energetika) a zprávy, které v titulku ohlašují výzvu. Model {{ llm.model_synthesis }} z nich vybere nejvýše 6 výzev vhodných pro sociologický, politologický nebo ekonomický výzkum a vynechá technologické a investiční dotace. Částky a termíny přebírá jen ze zdroje, jinak uvádí „neuvedeno“. Každá výzva se zobrazí jen jednou.</p>
   <p>Český obsah a obsah o ČR je ve výstupu vždy první. Pokud v daném týdnu k ČR nic podstatného nevyšlo, přehled to výslovně uvede.</p>
 </section>
 

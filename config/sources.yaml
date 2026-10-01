@@ -199,6 +199,32 @@ sources:
     enabled: true
     notes: ""
 
+  - id: tacr
+    name: Technologická agentura ČR (TA ČR)
+    type: rss
+    url: "https://tacr.gov.cz/feed/"
+    region: CZ
+    source_type: government
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    funding: true
+    notes: "Aktuality a veřejné soutěže; posuzuje se i jako zdroj výzev (Příležitosti). Přidáno 1. 10. 2026."
+
+  - id: obnovitelne
+    name: Obnovitelně.cz
+    type: scrape
+    url: "https://www.obnovitelne.cz/"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    notes: "Feed nemá (ověřeno 1. 10. 2026) – scraping titulní stránky; výpis nemá data. Přidáno 1. 10. 2026."
+    scrape: {item: "a[href*=\"/clanek/\"]", title: ":self"}
+
   - id: europeum
     name: EUROPEUM
     type: rss
@@ -422,6 +448,46 @@ sources:
     enabled: true
     notes: ""
     scrape: {item: "div.news.d-xl-none", title: ".news__title", link: "a.opacity-0", date: "time", date_attr: datetime, summary: ".news__shortdesc"}
+
+  # ======================================================================= EU / EVROPA – FINANCOVÁNÍ A NADACE
+  - id: euki
+    name: EUKI – European Climate Initiative
+    type: rss
+    url: "https://www.euki.de/en/feed/"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: false
+    weight: 1.0
+    enabled: true
+    funding: true
+    notes: "Německá klimatická iniciativa pro EU (projekty, výzvy); posuzuje se i jako zdroj výzev. Přidáno 1. 10. 2026."
+
+  - id: ecf
+    name: European Climate Foundation
+    type: scrape
+    url: "https://europeanclimate.org/latest-updates/"
+    region: EU
+    source_type: ngo
+    language: en
+    topic_filter: false
+    weight: 1.0
+    enabled: true
+    notes: "Feed nemá (ověřeno 1. 10. 2026) – scraping výpisu novinek. Přidáno 1. 10. 2026."
+    scrape: {item: "div.card", title: "h3 a", date: "div.text_box_head", summary: "p.card_desc"}
+
+  - id: eu-funding
+    name: EU Funding & Tenders Portal (výzvy SSH)
+    type: eu_funding
+    url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals"
+    region: EU
+    source_type: funding
+    language: en
+    topic_filter: false
+    weight: 1.0
+    enabled: true
+    funding: true
+    notes: "Otevřené a ohlášené výzvy se štítkem SSH (společenské vědy) k tématům klima/energie, přes veřejné vyhledávací API portálu. Jen do sekce Příležitosti. Přidáno 1. 10. 2026."
 
   # ======================================================================= EU / EVROPA – RSS
   - id: carbon-brief

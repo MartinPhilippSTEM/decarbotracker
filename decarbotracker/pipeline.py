@@ -7,12 +7,13 @@ from collections import Counter
 from collections.abc import Callable
 from datetime import UTC, datetime
 
-from decarbotracker.config import Settings
+from decarbotracker.config import Settings, load_sources
 from decarbotracker.dedup import SUPPRESSED, SeenState, deduplicate, select_window
 from decarbotracker.fetch.academic import fetch_academic
 from decarbotracker.filter import prefilter
 from decarbotracker.llm import ClaudeClient, LLMError, UsageTracker
 from decarbotracker.models import Item, WeeklyReport
+from decarbotracker.opportunities import find_opportunities
 from decarbotracker.scoring import score_items, select_for_synthesis
 from decarbotracker.sources import SourceHealth, disabled_health, fetch_all, save_health
 from decarbotracker.storage import items_path, read_json, week_path, write_json
@@ -69,7 +70,8 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
             log.warning("Zdroj %s: %s %s", h.source_id, h.status, h.detail)
 
     seen = SeenState.load()
-    all_items = merge_with_stored(fetched, stored)
+    # výzvy z grantových portálů nejsou zprávy – jdou jen do sekce Příležitosti
+    all_items = [i for i in merge_with_stored(fetched, stored) if i.source_type != "funding"]
     windowed, suppressed = select_window(all_items, week, seen, settings.selection.undated_first_run_cap)
     # deduplikace až nad týdenním oknem (fuzzy porovnání je O(n²)); vrací deterministické pořadí
     windowed = deduplicate(windowed, settings.selection.fuzzy_title_threshold)
@@ -100,6 +102,14 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
         log.info("Do syntézy vybráno %d položek (CZ: %d, postoje/komunikace: %d)", len(selected), n_cz, n_att)
         report = synthesize(week, selected, len(candidates), settings, client)
 
+    # Příležitosti (výzvy, granty) – z čerstvě stažených položek; s --reuse-items se přeskočí
+    funding_ids = {s.id for s in load_sources() if s.funding}
+    opportunities, opp_log = find_opportunities(fetched, settings, client, seen, funding_ids, now, week)
+    report.opportunities_cs = opportunities
+    report.validation_log.extend(opp_log)
+    if client is not None:
+        report.usage = client.tracker.info
+
     write_json(week_path(week), report)
     log.info("Uložen %s (stav: %s)", week_path(week).name, report.status)
     u = report.usage
@@ -113,6 +123,8 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
         for item in suppressed:
             seen.items.setdefault(item.id, SUPPRESSED)
         seen.sources.update(i.source_id for i in fetched)
+        for opp in opportunities:
+            seen.opportunities.setdefault(opp.item_id, week)
         seen.prune(week, settings.selection.seen_retention_weeks)
         seen.save()
     return report

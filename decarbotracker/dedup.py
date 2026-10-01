@@ -72,21 +72,24 @@ class SeenState:
     """Mapa id položky → týden, kdy byla poprvé zařazena. Brání opakování položek z minulých týdnů."""
 
     def __init__(self, items: dict[str, str] | None = None, sources: list[str] | None = None,
-                 dois: dict[str, str] | None = None):
+                 dois: dict[str, str] | None = None, opportunities: dict[str, str] | None = None):
         self.items: dict[str, str] = dict(items or {})
         self.dois: dict[str, str] = dict(dois or {})
         self.sources: set[str] = set(sources or [])
+        # výzvy už zobrazené v sekci Příležitosti (id → týden), aby se neopakovaly
+        self.opportunities: dict[str, str] = dict(opportunities or {})
 
     @classmethod
     def load(cls) -> SeenState:
         data = read_json(seen_path(), default={}) or {}
-        return cls(data.get("items"), data.get("sources_initialized"), data.get("dois"))
+        return cls(data.get("items"), data.get("sources_initialized"), data.get("dois"), data.get("opportunities"))
 
     def save(self) -> None:
         write_json(seen_path(), {
             "items": dict(sorted(self.items.items())),
             "dois": dict(sorted(self.dois.items())),
             "sources_initialized": sorted(self.sources),
+            "opportunities": dict(sorted(self.opportunities.items())),
         })
 
     def seen_before(self, item: Item, week: str) -> bool:

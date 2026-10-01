@@ -64,6 +64,10 @@ def fetch_source(source: Source, settings: Settings, client, now: datetime | Non
         elif source.type == "scrape":
             items = fetch_scrape(client, source, user_agent=settings.ua,
                                  max_retries=settings.fetch.max_retries, now=now)
+        elif source.type == "eu_funding":
+            from decarbotracker.fetch.funding import fetch_eu_funding
+
+            items = fetch_eu_funding(client, source, now=now)
         else:  # pragma: no cover - validace modelu to nedovolí
             raise ParseError("parse_error", f"Neznámý typ zdroje {source.type}")
     except FetchError as exc:

@@ -182,7 +182,30 @@ small { color: var(--muted); }
   .top5 td, .events td { display: block; border: 0; padding: .15rem 0; width: auto !important; }
   .top5 td.num { display: inline-block; }
 }
+/* tabulka Příležitosti */
+.opps td { padding: .55rem .5rem; }
+.opps td:first-child { width: 32%; }
+.opps td.money, .opps td.when { white-space: nowrap; font-size: .9rem; }
+@media (max-width: 720px) {
+  .opps thead { display: none; }
+  .opps tr { display: block; border-bottom: 1px solid var(--line); padding: .4rem 0; }
+  .opps td { display: block; border: 0; padding: .15rem 0; width: auto !important; white-space: normal !important; }
+}
+
+/* tlačítko Zpět nahoru (bez JavaScriptu) */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.to-top {
+  position: fixed; right: 1rem; bottom: 1rem; z-index: 20;
+  display: inline-flex; align-items: center; gap: .3rem;
+  background: var(--accent); color: var(--bg); text-decoration: none; font-weight: 600; font-size: .9rem;
+  padding: .45rem .8rem; border-radius: 999px; box-shadow: 0 2px 8px rgba(0, 0, 0, .18); opacity: .92;
+}
+.to-top:hover, .to-top:focus { opacity: 1; color: var(--bg); }
+@media (max-width: 720px) { .to-top span { display: none; } .to-top { padding: .5rem .7rem; } }
+
 @media print {
+  .to-top { display: none; }
   .site-header nav, .skip { display: none; }
   .swot-q { break-inside: avoid; }
 }

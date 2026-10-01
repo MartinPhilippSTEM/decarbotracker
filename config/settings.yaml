@@ -67,6 +67,7 @@ selection:
     ngo: 0.9
     industry: 0.85
     media: 0.8
+    funding: 0.8
   bonus_attitudes: 0.30          # +30 % pro postoje veřejnosti / komunikaci
   bonus_original_research: 0.15  # +15 % pro originální výzkum / data
   opinion_penalty: 0.10          # −10 % pro komentáře a stanoviska
@@ -114,3 +115,14 @@ academic:
 ask:
   default_days: 14
   max_items: 30
+
+# Sekce „Příležitosti“: výzvy a granty pro společenskovědní tým (ne technologické dotace).
+# Kandidáti = položky ze zdrojů s funding: true + zprávy s „výzva/grant/call…“ v titulku.
+# Každá výzva se zobrazí jen jednou (pamatuje se v data/seen.json).
+opportunities:
+  enabled: true
+  max_items: 6        # max. počet výzev v jednom přehledu
+  pool_max: 50        # max. počet kandidátů poslaných AI k posouzení
+  lookback_days: 30   # jak staré zprávy o výzvách brát v úvahu
+  effort: low
+  max_tokens: 6000

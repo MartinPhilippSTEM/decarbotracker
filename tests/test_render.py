@@ -81,3 +81,20 @@ def test_glance_tables_rendered(settings, with_report, tmp_path):
     assert html.index("Na první pohled") < html.index('id="swot"')
     assert "<strong>deterministický ukázkový výstup</strong>" in html
     assert "**" not in html
+
+
+def test_opportunities_table_and_back_to_top(settings, with_report, tmp_path):
+    from decarbotracker.models import Opportunity, WeeklyReport
+    from decarbotracker.storage import read_json
+
+    rep = WeeklyReport.model_validate(read_json(week_path("2026-W39")))
+    rep.opportunities_cs = [Opportunity(item_id="x1", title_cs="Výzva SIGMA", funder="TA ČR", amount_min="1 mil. Kč",
+                                        amount_max="10 mil. Kč", open_from="1. 10. 2026", deadline="15. 12. 2026",
+                                        summary_cs="Podpora **společenskovědního** výzkumu.", title="SIGMA",
+                                        url="https://tacr.gov.cz/x", source_name="TA ČR")]
+    write_json(week_path("2026-W39"), rep)
+    html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
+    assert "Příležitosti: výzvy a financování" in html
+    assert "max. 10 mil. Kč" in html and "15. 12. 2026" in html
+    assert html.index("Události a termíny") < html.index("Příležitosti: výzvy") < html.index('id="swot"')
+    assert 'href="#nahoru"' in html and 'id="nahoru"' in html

@@ -27,6 +27,7 @@ REGION_LABELS = {"CZ": "Česko", "EU": "EU/Evropa", "US": "USA", "GLOBAL": "Glob
 SOURCE_TYPE_LABELS = {
     "think_tank": "think tank", "research": "výzkum", "polling": "průzkum", "government": "vláda/instituce",
     "media": "média", "journal": "odborný časopis", "ngo": "NGO", "industry": "průmysl",
+    "funding": "grantový portál",
 }
 TOPIC_LABELS = {
     "decarbonization_policy": "klimatická politika", "energy_markets": "energetické trhy",

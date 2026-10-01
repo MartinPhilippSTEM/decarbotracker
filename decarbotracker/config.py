@@ -110,6 +110,15 @@ class AcademicSettings(BaseModel):
     openalex_queries: list[dict[str, str]] = Field(default_factory=list)
 
 
+class OpportunitySettings(BaseModel):
+    enabled: bool = True
+    max_items: int = 6
+    pool_max: int = 50
+    lookback_days: int = 30
+    effort: str = "low"
+    max_tokens: int = 6000
+
+
 class AskSettings(BaseModel):
     default_days: int = 14
     max_items: int = 30
@@ -122,6 +131,7 @@ class Settings(BaseModel):
     fetch: FetchSettings = Field(default_factory=FetchSettings)
     academic: AcademicSettings = Field(default_factory=AcademicSettings)
     ask: AskSettings = Field(default_factory=AskSettings)
+    opportunities: OpportunitySettings = Field(default_factory=OpportunitySettings)
     contact_email: str = ""
     user_agent: str = "decarbotracker/1.0 (+{repo_url}; vyzkumny agregator)"
 

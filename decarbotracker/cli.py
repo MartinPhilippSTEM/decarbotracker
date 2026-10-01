@@ -135,11 +135,12 @@ def check_schemas(client, settings) -> int:
     """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
     import anthropic
 
-    from decarbotracker.models import BriefDraft, ReportDraft, ScoreBatch
+    from decarbotracker.models import BriefDraft, OpportunityBatch, ReportDraft, ScoreBatch
 
     status = 0
     for model_id, schema in ((settings.llm.model_scoring, ScoreBatch), (settings.llm.model_synthesis, ReportDraft),
-                             (settings.llm.model_synthesis, BriefDraft)):
+                             (settings.llm.model_synthesis, BriefDraft),
+                             (settings.llm.model_synthesis, OpportunityBatch)):
         try:
             client.messages.create(
                 model=model_id, max_tokens=16, messages=[{"role": "user", "content": "Test schématu, odpověz krátce."}],

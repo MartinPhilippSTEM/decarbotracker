@@ -8,7 +8,7 @@ from decarbotracker.fetch.feeds import ParseError
 from decarbotracker.fetch.scrape import parse_listing
 
 SCRAPE_SOURCES = [s for s in load_sources() if s.type == "scrape" and s.enabled]
-UNDATED = {"hnuti-duha"}  # výpis bez dat – použije se datum prvního spatření
+UNDATED = {"hnuti-duha", "obnovitelne"}  # výpis bez dat – použije se datum prvního spatření
 
 
 def test_every_enabled_scraper_has_fixture():

@@ -10,6 +10,7 @@ Týdenní přehled nových analýz, studií, průzkumů a odborných článků o
   3. levnějším modelem Claude ohodnotí relevanci každé položky (s důrazem na **ČR** a na **postoje veřejnosti a komunikaci**),
   4. silnějším modelem z ~40 nejlepších položek napíše přehled: hlavní poselství, shrnutí, SWOT, nejdůležitější položky, průzkumy a komunikační doporučení, prognózy, přehled podle regionů a co sledovat příští týden,
   5. výsledek zveřejní jako web na GitHub Pages a nabídne ho i jako RSS (`feed.xml`).
+- Na začátku přehledu je sekce **Na první pohled**: 5 nejdůležitějších analýz, **Události a termíny** a **Příležitosti**. Příležitosti jsou výzvy a granty z TA ČR, EUKI a EU Funding & Tenders Portal (jen SSH výzvy ke klimatu a energetice). AI vybírá jen ty, které se hodí pro sociologický, politologický nebo ekonomický výzkum, a vynechává technologické dotace. U každé výzvy uvádí min./max. částku, termíny a dvě věty o obsahu. Každá výzva se zobrazí jen jednou. Nastavení najdete v `config/settings.yaml` v sekci `opportunities`.
 - **Kdykoliv během týdne** se můžete doptat na konkrétní téma, např. „tepelná čerpadla“ nebo „postoje k jádru“ (viz [Dotaz na téma](#dotaz-na-téma)).
 - Váš počítač nemusí být zapnutý, všechno běží v GitHub Actions.
 

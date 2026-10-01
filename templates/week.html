@@ -21,7 +21,7 @@
   {# události = položky watchlistu s konkrétním termínem; ostatní jdou do sekce Co dál sledovat #}
   {% set events = r.watchlist_cs|selectattr('when')|rejectattr('when', 'in', ['neuvedeno', 'termín neuveden', '-', '—'])|list %}
   {% set watch = r.watchlist_cs|reject('in', events)|list %}
-  {% if top5 or events %}
+  {% if top5 or events or r.opportunities_cs %}
   <section aria-labelledby="prehled" class="glance">
     <h2 id="prehled">Na první pohled</h2>
     {% if top5 %}
@@ -54,6 +54,26 @@
       <tbody>
       {% for e in events %}
         <tr><td class="when">{{ e.when }}</td><td>{{ e.text_cs|rich }}</td><td>{{ evidence(e.evidence_item_ids, items) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    {% endif %}
+
+    {% if r.opportunities_cs %}
+    <h3 id="prilezitosti">Příležitosti: výzvy a financování</h3>
+    <p class="hint">Výzvy vhodné pro společenskovědní výzkum (bez technologických a investičních dotací). Vybírá AI – podmínky vždy ověřte u poskytovatele.</p>
+    <div class="table-wrap">
+    <table class="opps">
+      <thead><tr><th scope="col">Výzva</th><th scope="col">Objem na projekt</th><th scope="col">Podávání</th><th scope="col">O čem je</th></tr></thead>
+      <tbody>
+      {% for o in r.opportunities_cs %}
+        <tr>
+          <td><a href="{{ o.url }}" rel="noopener" class="item-link"><strong>{{ o.title_cs }}</strong></a><br><span class="card-meta">{{ o.funder }}</span></td>
+          <td class="money">min. {{ o.amount_min }}<br>max. {{ o.amount_max }}</td>
+          <td class="when">od {{ o.open_from }}<br>do <strong>{{ o.deadline }}</strong></td>
+          <td>{{ o.summary_cs|rich }}</td>
+        </tr>
       {% endfor %}
       </tbody>
     </table>
