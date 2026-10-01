@@ -1,0 +1,62 @@
+name: notify
+
+# Ruční odeslání e-mailu se 3 zjištěními a návrhem vlákna na X pro poslední (nebo zadaný) přehled.
+# Týdenní e-mail posílá automaticky workflow weekly – tohle je pro test nebo opětovné odeslání.
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Týden YYYY-Www (prázdné = poslední přehled)'
+        required: false
+        default: ''
+      force:
+        description: 'Odeslat znovu, i když už e-mail za tento týden odešel'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Nastavení Pages
+        id: pages
+        uses: actions/configure-pages@v6
+      - name: E-mail
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          DECARBO_SITE_URL: ${{ steps.pages.outputs.base_url }}/
+          WEEK_INPUT: ${{ inputs.week }}
+          FORCE: ${{ inputs.force }}
+        run: |
+          ARGS=""
+          if [ -n "$WEEK_INPUT" ]; then
+            if ! [[ "$WEEK_INPUT" =~ ^[0-9]{4}-W[0-9]{2}$ ]]; then echo "::error::Neplatný týden"; exit 1; fi
+            ARGS="--week $WEEK_INPUT"
+          fi
+          if [ "$FORCE" = "true" ]; then ARGS="$ARGS --force"; fi
+          python -m decarbotracker notify $ARGS
+      - name: Uložení
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/digests/ || true
+          git diff --staged --quiet || git commit -m "data: e-mail [skip ci]"
+          git pull --rebase
+          git push

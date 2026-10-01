@@ -268,6 +268,40 @@ class WeeklyReport(BaseModel):
     validation_log: list[str] = Field(default_factory=list)
 
 
+# --------------------------------------------------------------------------- e-mail se 3 zjištěními + vlákno na X
+
+
+class DigestFinding(BaseModel):
+    item_id: str
+    geo: Region
+    title_cs: str = Field(description="krátký úderný titulek zjištění, max. ~10 slov")
+    text_cs: str = Field(description="2–3 věty: co zjištění říká a proč je důležité; čísla jen doslova ze vstupu")
+
+
+class DigestDraft(BaseModel):
+    findings: list[DigestFinding]
+    x_thread: list[str] = Field(description="4–6 příspěvků vlákna na X, každý max. 270 znaků")
+
+
+class DigestFindingOut(DigestFinding):
+    title: str
+    url: str
+    source_name: str
+
+
+class Digest(BaseModel):
+    week: str
+    generated_at: datetime
+    model: str
+    headline_cs: str
+    report_url: str
+    findings: list[DigestFindingOut]
+    x_thread: list[str]
+    notes: list[str] = Field(default_factory=list)
+    usage: UsageInfo = Field(default_factory=UsageInfo)
+    sent_at: datetime | None = None
+
+
 # --------------------------------------------------------------------------- dotaz na téma
 
 

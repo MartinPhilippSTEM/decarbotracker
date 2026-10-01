@@ -22,7 +22,7 @@ class _SecretFilter(logging.Filter):
 
     def __init__(self) -> None:
         super().__init__()
-        self.secrets = [v for k in ("ANTHROPIC_API_KEY", "OPENALEX_API_KEY") if (v := os.environ.get(k)) and len(v) > 8]
+        self.secrets = [v for k in ("ANTHROPIC_API_KEY", "OPENALEX_API_KEY", "RESEND_API_KEY") if (v := os.environ.get(k)) and len(v) > 8]
 
     def filter(self, record: logging.LogRecord) -> bool:
         if self.secrets:
@@ -131,16 +131,70 @@ def cmd_check_key(args: argparse.Namespace) -> int:
     return 1
 
 
+def cmd_notify(args: argparse.Namespace) -> int:
+    """E-mail se 3 zjištěními a návrhem vlákna na X pro hotový týdenní přehled."""
+    from datetime import UTC, datetime
+
+    from decarbotracker.digest import build_digest
+    from decarbotracker.llm import ClaudeClient, LLMError, UsageTracker
+    from decarbotracker.mailer import MailError, render_email, send_email
+    from decarbotracker.models import Digest, WeeklyReport
+    from decarbotracker.storage import digest_path, read_json, week_path, write_json
+
+    settings = load_settings()
+    week = args.week
+    if not week:
+        weeks = sorted(p.stem for p in (project_root() / "data" / "weeks").glob("*.json"))
+        if not weeks:
+            print("Žádný týdenní přehled k odeslání.")
+            return 1
+        week = weeks[-1]
+    report = WeeklyReport.model_validate(read_json(week_path(week)))
+    existing = read_json(digest_path(week), default=None)
+    digest = Digest.model_validate(existing) if existing else None
+    if digest is None or digest.generated_at < report.generated_at or args.regenerate:
+        client = None
+        if not args.dry_run:
+            try:
+                client = ClaudeClient(settings, UsageTracker(settings.llm))
+            except LLMError as exc:
+                print(f"({exc} – zjištění se vyberou bez AI)")
+        digest = build_digest(report, settings, client)
+        if not args.dry_run:
+            write_json(digest_path(week), digest)
+    subject, html, text = render_email(digest)
+    if args.dry_run or args.no_send:
+        preview = project_root() / "email-preview.html"
+        with open(preview, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(html)
+        print(text)
+        print(f"\n(Neodesláno. Náhled e-mailu: {preview})")
+        return 0
+    if digest.sent_at and not args.force:
+        print(f"E-mail za týden {week} už byl odeslán {digest.sent_at:%d. %m. %Y %H:%M} UTC (znovu: --force).")
+        return 0
+    try:
+        send_email(digest)
+    except MailError as exc:
+        print(f"E-mail se nepodařilo odeslat: {exc}")
+        return 1
+    digest.sent_at = datetime.now(UTC)
+    write_json(digest_path(week), digest)
+    print(f"E-mail za týden {week} odeslán: {subject}")
+    return 0
+
+
 def check_schemas(client, settings) -> int:
     """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
     import anthropic
 
-    from decarbotracker.models import BriefDraft, OpportunityBatch, ReportDraft, ScoreBatch
+    from decarbotracker.models import BriefDraft, DigestDraft, OpportunityBatch, ReportDraft, ScoreBatch
 
     status = 0
     for model_id, schema in ((settings.llm.model_scoring, ScoreBatch), (settings.llm.model_synthesis, ReportDraft),
                              (settings.llm.model_synthesis, BriefDraft),
-                             (settings.llm.model_synthesis, OpportunityBatch)):
+                             (settings.llm.model_synthesis, OpportunityBatch),
+                             (settings.llm.model_synthesis, DigestDraft)):
         try:
             client.messages.create(
                 model=model_id, max_tokens=16, messages=[{"role": "user", "content": "Test schématu, odpověz krátce."}],
@@ -253,6 +307,14 @@ def build_parser() -> argparse.ArgumentParser:
     c.add_argument("--only", help="jen vybrané zdroje (id oddělená čárkou)")
     c.add_argument("--no-academic", dest="academic", action="store_false", help="bez Crossref/OpenAlex")
     c.set_defaults(func=cmd_check_sources)
+
+    n = sub.add_parser("notify", help="e-mail se 3 zjištěními a návrhem vlákna na X")
+    n.add_argument("--week", help="týden (výchozí: poslední přehled)")
+    n.add_argument("--dry-run", action="store_true", help="bez AI a bez odeslání, jen náhled")
+    n.add_argument("--no-send", action="store_true", help="připravit, ale neodeslat (náhled email-preview.html)")
+    n.add_argument("--regenerate", action="store_true", help="znovu vybrat zjištění (stojí ~0,02 USD)")
+    n.add_argument("--force", action="store_true", help="odeslat znovu, i když už jednou odešlo")
+    n.set_defaults(func=cmd_notify)
 
     k = sub.add_parser("check-key", help="ověří ANTHROPIC_API_KEY (hodnotu nevypisuje)")
     k.set_defaults(func=cmd_check_key)

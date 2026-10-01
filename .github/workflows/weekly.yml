@@ -105,3 +105,22 @@ jobs:
       - name: Nasazení na GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+      # E-mail se 3 zjištěními a návrhem vlákna na X – až po nasazení, aby fungoval odkaz.
+      # Selhání e-mailu neshodí běh (web už je nasazený).
+      - name: E-mail se zjištěními
+        if: github.event_name != 'push'
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          DECARBO_SITE_URL: ${{ steps.pages.outputs.base_url }}/
+          WEEK: ${{ steps.run.outputs.week }}
+        run: |
+          python -m decarbotracker notify --week "$WEEK"
+          git add data/digests/ || true
+          git diff --staged --quiet || git commit -m "data: e-mail týden ${WEEK} [skip ci]"
+          git pull --rebase
+          git push
