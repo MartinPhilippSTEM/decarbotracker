@@ -96,3 +96,27 @@ def test_cli_notify_dry_run(settings, report, tmp_path, capsys):
     assert main(["notify", "--dry-run"]) == 0
     assert (tmp_path / "email-preview.html").exists()
     assert "NÁVRH VLÁKNA NA X" in capsys.readouterr().out
+
+
+def test_digest_retries_on_max_tokens(settings, report):
+    from decarbotracker.llm import LLMMaxTokens
+
+    ids = [i.id for i in report.items]
+    ok = DigestDraft(findings=[DigestFinding(item_id=ids[0], geo="CZ", title_cs="A", text_cs="a"),
+                               DigestFinding(item_id=ids[5], geo="EU", title_cs="B", text_cs="b"),
+                               DigestFinding(item_id=ids[6], geo="EU", title_cs="C", text_cs="c")],
+                     x_thread=["1", "{ODKAZ}"])
+
+    class Flaky(FakeClient):
+        calls = []
+
+        def structured(self, **kw):
+            self.calls.append(kw["max_tokens"])
+            if len(self.calls) == 1:
+                raise LLMMaxTokens("cut")
+            return ok, None
+
+    client = Flaky(settings, ok)
+    d = build_digest(report, settings, client)
+    assert client.calls == [12000, 24000]
+    assert d.model == settings.llm.model_synthesis and [f.title_cs for f in d.findings] == ["A", "B", "C"]

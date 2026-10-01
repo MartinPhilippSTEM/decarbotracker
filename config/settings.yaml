@@ -125,4 +125,4 @@ opportunities:
   pool_max: 50        # max. počet kandidátů poslaných AI k posouzení
   lookback_days: 30   # jak staré zprávy o výzvách brát v úvahu
   effort: low
-  max_tokens: 6000
+  max_tokens: 12000   # vč. přemýšlení modelu; při uříznutí se zkusí 2× tolik

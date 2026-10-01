@@ -7,7 +7,7 @@ import re
 from datetime import UTC, datetime
 
 from decarbotracker.config import Settings, prompt_path
-from decarbotracker.llm import ClaudeClient, LLMError
+from decarbotracker.llm import ClaudeClient, LLMError, LLMMaxTokens
 from decarbotracker.models import Digest, DigestDraft, DigestFinding, DigestFindingOut, WeeklyReport
 from decarbotracker.weeks import week_slug
 
@@ -128,14 +128,23 @@ def build_digest(report: WeeklyReport, settings: Settings, client: ClaudeClient 
     thread: list[str] = []
     model = "deterministicky (bez AI)"
     if client is not None and report.top_items:
-        try:
-            draft, _ = client.structured(
-                model=settings.llm.model_synthesis, system=prompt_path("digest.md").read_text(encoding="utf-8"),
-                user=_input_text(report), schema=DigestDraft, max_tokens=4000, effort="low", cache_system=False)
-            findings, thread, model = draft.findings, draft.x_thread, settings.llm.model_synthesis
-        except LLMError as exc:
-            log.error("Výběr zjištění pro e-mail selhal: %s – použiji zálohu", exc)
-            notes.append(f"AI výběr selhal ({exc}); použita záloha")
+        # do max_tokens se počítá i „přemýšlení“ modelu – limit s rezervou, při uříznutí jeden pokus s vyšším
+        for max_tokens in (12000, 24000):
+            try:
+                draft, _ = client.structured(
+                    model=settings.llm.model_synthesis, system=prompt_path("digest.md").read_text(encoding="utf-8"),
+                    user=_input_text(report), schema=DigestDraft, max_tokens=max_tokens, effort="low",
+                    cache_system=False)
+                findings, thread, model = draft.findings, draft.x_thread, settings.llm.model_synthesis
+                break
+            except LLMMaxTokens:
+                log.warning("Výběr zjištění uříznut na max_tokens=%d", max_tokens)
+            except LLMError as exc:
+                log.error("Výběr zjištění pro e-mail selhal: %s – použiji zálohu", exc)
+                notes.append(f"AI výběr selhal ({exc}); použita záloha")
+                break
+        else:
+            notes.append("AI výběr byl uříznut na limitu délky; použita záloha")
     if not findings:
         findings = _deterministic(report)
     findings = _enforce_mix(findings, report, notes)

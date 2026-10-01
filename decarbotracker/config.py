@@ -116,7 +116,7 @@ class OpportunitySettings(BaseModel):
     pool_max: int = 50
     lookback_days: int = 30
     effort: str = "low"
-    max_tokens: int = 6000
+    max_tokens: int = 12000
 
 
 class AskSettings(BaseModel):

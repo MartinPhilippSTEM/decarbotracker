@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 from decarbotracker.config import Settings, prompt_path
 from decarbotracker.dedup import SeenState
-from decarbotracker.llm import ClaudeClient, LLMError
+from decarbotracker.llm import ClaudeClient, LLMError, LLMMaxTokens
 from decarbotracker.models import Item, Opportunity, OpportunityBatch
 from decarbotracker.normalize import strip_diacritics
 
@@ -81,13 +81,21 @@ def find_opportunities(items: list[Item], settings: Settings, client: ClaudeClie
         return _finalize(drafts, pool, cfg.max_items)
     system = prompt_path("opportunities.md").read_text(encoding="utf-8")
     user = f"Dnešní datum: {now.date().isoformat()}\n\n## Položky\n\n" + "\n".join(_format(i) for i in pool)
-    try:
-        parsed, _ = client.structured(model=settings.llm.model_synthesis, system=system, user=user,
-                                      schema=OpportunityBatch, max_tokens=cfg.max_tokens, effort=cfg.effort,
-                                      cache_system=False)
-    except LLMError as exc:
-        log.error("Výběr příležitostí selhal: %s", exc)
-        return [], [f"příležitosti: výběr selhal ({exc})"]
+    parsed = None
+    # do max_tokens se počítá i „přemýšlení“ modelu – při uříznutí jeden pokus s dvojnásobným limitem
+    for max_tokens in (cfg.max_tokens, cfg.max_tokens * 2):
+        try:
+            parsed, _ = client.structured(model=settings.llm.model_synthesis, system=system, user=user,
+                                          schema=OpportunityBatch, max_tokens=max_tokens, effort=cfg.effort,
+                                          cache_system=False)
+            break
+        except LLMMaxTokens:
+            log.warning("Výběr příležitostí uříznut na max_tokens=%d", max_tokens)
+        except LLMError as exc:
+            log.error("Výběr příležitostí selhal: %s", exc)
+            return [], [f"příležitosti: výběr selhal ({exc})"]
+    if parsed is None:
+        return [], ["příležitosti: odpověď byla uříznuta na limitu délky"]
     opps, logs = _finalize(parsed.opportunities, pool, cfg.max_items)
     log.info("Příležitosti: vybráno %d z %d kandidátů", len(opps), len(pool))
     return opps, logs
