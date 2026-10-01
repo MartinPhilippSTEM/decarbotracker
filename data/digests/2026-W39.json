@@ -1,0 +1,63 @@
+{
+  "week": "2026-W39",
+  "generated_at": "2026-10-01T10:39:30.930686Z",
+  "model": "deterministicky (bez AI)",
+  "headline_cs": "Česko schválilo adaptační plán na změnu klimatu, zatímco nové studie ukazují, že podpora klimatických opatření stojí na spravedlnosti a srozumitelné komunikaci.",
+  "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w39/",
+  "findings": [
+    {
+      "item_id": "57f5d2d99054",
+      "geo": "CZ",
+      "title_cs": "Vláda schválila plán adaptace na změnu klimatu. Zaměří se na vodu, odolnou krajinu, připravenost obcí a nový portál s informacemi o rizicích",
+      "text_cs": "Plán na 2026–2030 obsahuje 95 adaptačních opatření rozpracovaných do 252 úkolů.",
+      "title": "Vláda schválila plán adaptace na změnu klimatu. Zaměří se na vodu, odolnou krajinu, připravenost obcí a nový portál s informacemi o rizicích",
+      "url": "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/vlada-schvalila-plan-adaptace-na-zmenu-klimatu-zameri-se-na-vodu-odolnou-krajinu-pripravenost-obci-a",
+      "source_name": "Ministerstvo životního prostředí"
+    },
+    {
+      "item_id": "8ea315b1d427",
+      "geo": "CZ",
+      "title_cs": "V energetické chudobě žije více než milion obyvatel ČR. Rostoucí ceny fosilních paliv situaci zhorší, pokud stát nepomůže",
+      "text_cs": "Podle Hnutí DUHA žije v energetické chudobě více než milion obyvatel ČR. Podrobnosti ve zdroji nejsou k dispozici.",
+      "title": "V energetické chudobě žije více než milion obyvatel ČR. Rostoucí ceny fosilních paliv situaci zhorší, pokud stát nepomůže",
+      "url": "https://hnutiduha.cz/aktualne/v-energeticke-chudobe-zije-vice-nez-milion-obyvatel-cr-rostouci-ceny-fosilnich-paliv-situaci-zhorsi-pokud-stat-nepomuze/",
+      "source_name": "Hnutí DUHA"
+    },
+    {
+      "item_id": "28e4e89e9c09",
+      "geo": "GLOBAL",
+      "title_cs": "Veřejná podpora pro inovativní odstranění uhlíku závisí na procedurální a distribuční spravedlnosti",
+      "text_cs": "Při vzorku N = 10 852 v Brazílii, Malajsii, Saúdské Arábii, Itálii, Norsku a Británii podporu zvyšuje otevřený proces, sdílení přínosů a neziskové uspořádání.",
+      "title": "Public support for novel carbon removal hinges on procedural and distributive fairness",
+      "url": "https://doi.org/10.1038/s41558-026-02741-7",
+      "source_name": "Nature Climate Change"
+    }
+  ],
+  "x_thread": [
+    "🧵 Co tento týden přinesly analýzy a průzkumy o dekarbonizaci? Česko schválilo adaptační plán na změnu klimatu, zatímco nové studie ukazují, že podpora klimatických opatření stojí na spravedlnosti a srozumitelné komunikaci.",
+    "1/ Vláda schválila plán adaptace na změnu klimatu. Zaměří se na vodu, odolnou krajinu, připravenost obcí a nový portál s informacemi o rizicích: Plán na 2026–2030 obsahuje 95 adaptačních opatření rozpracovaných do 252 úkolů. (zdroj: Ministerstvo životního prostředí)",
+    "2/ V energetické chudobě žije více než milion obyvatel ČR. Rostoucí ceny fosilních paliv situaci zhorší, pokud stát nepomůže: Podle Hnutí DUHA žije v energetické chudobě více než milion obyvatel ČR. Podrobnosti ve zdroji nejsou k dispozici. (zdroj: Hnutí DUHA)",
+    "3/ Veřejná podpora pro inovativní odstranění uhlíku závisí na procedurální a distribuční spravedlnosti: Při vzorku N = 10 852 v Brazílii, Malajsii, Saúdské Arábii, Itálii, Norsku a Británii podporu zvyšuje otevřený proces, sdílení přínosů a neziskové uspořádání. (zdroj: Nature…",
+    "Celý týdenní přehled se SWOT a zdroji: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w39/ #klima #energetika"
+  ],
+  "notes": [
+    "AI výběr selhal (Odpověď byla uříznuta na limitu max_tokens=4000); použita záloha"
+  ],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 4719,
+    "output_tokens": 4000,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.049438,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 1.0,
+        "input_tokens": 4719.0,
+        "output_tokens": 4000.0,
+        "cost_usd": 0.049438
+      }
+    }
+  },
+  "sent_at": "2026-10-01T10:39:31.147093Z"
+}
