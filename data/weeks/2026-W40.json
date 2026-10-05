@@ -435,6 +435,42 @@
       "source_name": "EU Funding & Tenders Portal (výzvy SSH)"
     }
   ],
+  "sentiment": {
+    "index": 11,
+    "label_cs": "mírně příznivá",
+    "n": 40,
+    "negative": 0.258,
+    "neutral": 0.322,
+    "positive": 0.42,
+    "by_region": [
+      {
+        "region": "CZ",
+        "n": 5,
+        "negative": 0.45,
+        "neutral": 0.132,
+        "positive": 0.418,
+        "index": 11
+      },
+      {
+        "region": "EU",
+        "n": 20,
+        "negative": 0.2,
+        "neutral": 0.357,
+        "positive": 0.443,
+        "index": 14
+      },
+      {
+        "region": "GLOBAL",
+        "n": 15,
+        "negative": 0.279,
+        "neutral": 0.332,
+        "positive": 0.389,
+        "index": 5
+      }
+    ],
+    "most_positive_id": "cce7c73156c0",
+    "most_negative_id": "14e92a8e8563"
+  },
   "data_gaps_cs": [
     "K několika položkám chybí výtah (Climate Outreach, studie o energetické chudobě v Anglii, Skotsku a Francii, německá studie o postojích k větrným elektrárnám, studie o sdílení skepticismu na sociálních sítích), proto nelze uvést jejich zjištění.",
     "U většiny zahraničních experimentů chybí termín sběru dat a velikost vzorku. Instituce jsou uvedeny jako neuvedeno.",
@@ -462,7 +498,8 @@
       "one_line_cs": "V říjnu se v České republice budou konat místní referenda o větrných elektrárnách a prvotní výsledky ukazují silné odmítání.",
       "final_score": 9.568,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "cce7c73156c0",
@@ -484,7 +521,8 @@
       "one_line_cs": "Ministerstvo podporuje výzkumný vodíkový polygon CEETe H₂ v Ostravě z fondu Spravedlivé transformace.",
       "final_score": 8.855,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 2
     },
     {
       "id": "d2a06117fa57",
@@ -503,7 +541,8 @@
       "one_line_cs": "Elektřina byla v září nejdražší od roku 2022 a české uhelné elektrárny výrazně zvýšily výrobu.",
       "final_score": 6.44,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": -1
     },
     {
       "id": "bc5cbccf01a0",
@@ -523,7 +562,8 @@
       "one_line_cs": "ERÚ vydal šest nových cenových výměrů na rok 2027, včetně úprav pro podporované obnovitelné zdroje energie.",
       "final_score": 6.0,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
     },
     {
       "id": "ea86f10b2bf0",
@@ -543,7 +583,8 @@
       "one_line_cs": "Analýza projektu horkovodu z Dukovan do Brna s rozpravou o argumentech kritiků a příznivců jaderné energetiky.",
       "final_score": 4.68,
       "is_opinion": true,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "82ddc33c8680",
@@ -562,7 +603,8 @@
       "one_line_cs": "Nový průzkum ukazuje, že klimatická změna se vrátila do nejvyšších priorit veřejnosti.",
       "final_score": 14.0807,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "14e92a8e8563",
@@ -582,7 +624,8 @@
       "one_line_cs": "Studie mapuje rostoucí propast mezi mladými lidmi a institucemi v klimatické akci, přičemž mládež pociťuje institucionální selhání.",
       "final_score": 9.6697,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "1650a4c31023",
@@ -603,7 +646,8 @@
       "one_line_cs": "Výzkumný experiment v Španělsku testuje, jak různé formulace uhlíkové daně ovlivňují veřejnou podporu.",
       "final_score": 9.6697,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "fe6679d92fbe",
@@ -624,7 +668,8 @@
       "one_line_cs": "Experiment v Británii zkoumá, jak pravicově populistické argumenty proti klimatické politice ovlivňují postoje veřejnosti.",
       "final_score": 9.6697,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "05940bb5f4d9",
@@ -645,7 +690,8 @@
       "one_line_cs": "Studie v Kanadě srovnává skutečný dopad klimatických politik na zaměstnanost s veřejným vnímáním hrozby pro pracovní místa.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "0ed81cc2080f",
@@ -666,7 +712,8 @@
       "one_line_cs": "Recenzovaná studie porovnává přístupy ke energetické chudobě v Británii a Francii a jejich dopad na různé skupiny populace.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "149a4e510ec1",
@@ -686,7 +733,8 @@
       "one_line_cs": "Studie mapuje politické a geografické rozdíly v přijatelnosti onshore větrné energie v Německu.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "497e5bf03dc6",
@@ -706,7 +754,8 @@
       "one_line_cs": "Analýza dat z 25 postsocialistických zemí ukazuje, jak důvěra v instituce a dostupnost domácností ovlivňují ochotu platit za klimatickou politiku.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "5921cf103c43",
@@ -726,7 +775,8 @@
       "one_line_cs": "Výzkum zkoumá, jak občané vnímají role olika aktérů v klimatické politice a jejich očekávání od governance v procesu participace.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "9f1ae9fa1221",
@@ -746,7 +796,8 @@
       "one_line_cs": "Studie zkoumá, jak evropské země legitimizovaly domácí změny v závislosti na ruské energii během války na Ukrajině.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "a1b28c9908aa",
@@ -767,7 +818,8 @@
       "one_line_cs": "Výzkum zkoumá, jak klimatické narrativy v médiích a dezinformace ovlivňují ekonomické postoje veřejnosti.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "c41bb5162673",
@@ -788,7 +840,8 @@
       "one_line_cs": "Přehled klimatických obstrukcí a jejich vlivů na veřejné vnímání, governance a klimatickou politiku.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "d51666ff99cd",
@@ -808,7 +861,8 @@
       "one_line_cs": "Analýza klimatických diskurzů na sociálních médiích v globálních městech s fokusem na emocionální a sémantické architektury veřejného vnímání klimatu.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "e0bb8c78db4e",
@@ -829,7 +883,8 @@
       "one_line_cs": "Finsky experiment zkoumá, jak různé zdůvodnění emisních obchodů s dopravou ovlivňuje jejich veřejné přijetí v závislosti na straničnosti a důvěře.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "ef55c04ee84d",
@@ -849,7 +904,8 @@
       "one_line_cs": "Studie na německých datech ukazuje, jak osobní ekonomická tíseň snižuje podporu zelených stran navzdory podpoře klimatické akce.",
       "final_score": 8.461,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "8137cc612ad9",
@@ -869,7 +925,8 @@
       "one_line_cs": "Studie argumentuje pro jednotný přístup vlád k vyhodnocování klimatických a přírodních rizik z bezpečnostní a ekonomické perspektivy.",
       "final_score": 8.0262,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "5b017ab1341d",
@@ -890,7 +947,8 @@
       "one_line_cs": "Analýza asymetrie vědecké pozornosti věnované různým klimatickým převratným bodům a jejich relevance pro řízení klimatického rizika.",
       "final_score": 7.4382,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0
     },
     {
       "id": "744dcaf7eec9",
@@ -911,7 +969,8 @@
       "one_line_cs": "Zkoumání uskutečnitelnosti dlouhodobých klimatických cílů EU a Číny pomocí integrovaných modelů.",
       "final_score": 7.4382,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0
     },
     {
       "id": "e89d47cc4ab1",
@@ -931,7 +990,8 @@
       "one_line_cs": "Studie řízení spravedlivé transformace v procesu odstavování uhelné výroby v Portugalsku, s důrazem na zkušenosti pracovníků.",
       "final_score": 7.4382,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
     },
     {
       "id": "52e1ec639ff9",
@@ -951,7 +1011,8 @@
       "one_line_cs": "Analýza jak novináři v Německu, Rakousku a Švýcarsku propojují Earth Day s hnutím Fridays for Future v mediálním pokrytí.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "6cc97d9ca711",
@@ -972,7 +1033,8 @@
       "one_line_cs": "Studie zkoumá veřejné vnímání a připravenost pro technologii zachycování a skladování uhlíku.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "712aec22db71",
@@ -992,7 +1054,8 @@
       "one_line_cs": "Experiment ukazuje, že narativní formát klimatické komunikace vzbuzuje emocí a zvyšuje podporu politik více než expozitorický text.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "723bd1232726",
@@ -1012,7 +1075,8 @@
       "one_line_cs": "Empirická studie sociálních tipping pointů a jejich role v transformaci směrem k uhlíkové neutralitě.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "9eea722f5e3f",
@@ -1033,7 +1097,8 @@
       "one_line_cs": "Studie sociálního učení v participativním procesu regionálního plánování energetické transformace ve Švýcarsku.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "c3153dc4881c",
@@ -1053,7 +1118,8 @@
       "one_line_cs": "Studie zkoumá, jak sociální identita a stranické preference ovlivňují šíření klimatické skepse na sociálních médiích.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "ce45bb40d2cf",
@@ -1073,7 +1139,8 @@
       "one_line_cs": "Studie zkoumá, jak různé typy demokratických deliberací ovlivňují účastníky klimatických rozhodovacích procesů.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "d0e4dc08d6de",
@@ -1094,7 +1161,8 @@
       "one_line_cs": "Koncept 'sporných emisí' kvantifikuje vliv grassroots odporu na mitigaci klimatických projektů.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
     },
     {
       "id": "d8dabd233748",
@@ -1114,7 +1182,8 @@
       "one_line_cs": "Studie ukazuje, že odpor k uhlíkovému cenovému systému je spjat s vnímanou nespravedlností spíše než s nízkým příjmem.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "dbc8b1f0d88a",
@@ -1135,7 +1204,8 @@
       "one_line_cs": "Studie zkoumá vnímání rizik a společenskou přijatelnost solárních paliv vytvořených umělou fotosyntézou v Německu.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "f3fb4d03d2b3",
@@ -1156,7 +1226,8 @@
       "one_line_cs": "Studie zkoumá, jak veřejnost v Německu vnímá roli klimatických a ostatních vědců v debatách na sociálních médiích.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
     },
     {
       "id": "fd59577d75cb",
@@ -1176,7 +1247,8 @@
       "one_line_cs": "Kvalitativní analýza odporu proti klimatickým protestům Extinction Rebellion a Just Stop Oil v online prostorech Spojené království.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "ff5fd7d9b71e",
@@ -1197,7 +1269,8 @@
       "one_line_cs": "Studie ukazuje, že povědomí o technologiích přímého zachycování CO2 snižuje individuální motivaci ke snížení emisí.",
       "final_score": 7.2522,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": true
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
     },
     {
       "id": "9588136c237a",
@@ -1218,7 +1291,8 @@
       "one_line_cs": "Analýza spravedlivé transformace v lignitových regionech Řecka s využitím EU fondů přesahujících 1,6 miliardy eur.",
       "final_score": 6.5084,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 2
     },
     {
       "id": "da0620630561",
@@ -1239,7 +1313,8 @@
       "one_line_cs": "Studie o možnosti dekádiálních klimatických předpovědí zvýšit předvídatelnost větrných a slunečních zdrojů pro evropský energetický sektor.",
       "final_score": 6.5084,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
     },
     {
       "id": "ce9fb48bf0a9",
@@ -1259,7 +1334,8 @@
       "one_line_cs": "Oficiální zveřejnění harmonogramů aukcí EU ETS1 a ETS2 na rok 2027 Evropskou energetickou burzou.",
       "final_score": 6.16,
       "is_opinion": false,
-      "is_public_attitudes_or_communication": false
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
     }
   ],
   "usage": {
