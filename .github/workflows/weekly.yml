@@ -2,11 +2,20 @@ name: weekly
 
 on:
   schedule:
-    # Každé pondělí v 04:17 UTC = 06:17 letního času SELČ (od konce října do března 05:17 SEČ).
-    # Cron v GitHub Actions běží vždy v UTC. Lichá minuta (ne celá hodina) snižuje riziko zpoždění ve špičce.
+    # Cron v GitHub Actions běží vždy v UTC. Pondělí 00:17 UTC = 02:17 letního času (SELČ) / 01:17 zimního (SEČ).
+    # GitHub plánované běhy spouští „podle možností“ a občas je vynechá (stalo se 5. 10. 2026), proto
+    # opakované pokusy každých 30 min do rána + dva pozdější. První úspěšný přehled ostatní pokusy přeskočí
+    # (krok „Je už týden hotový?“ – bez instalace, bez AI, bez e-mailu). Liché minuty kvůli špičkám.
+    - cron: '17 0 * * 1'
+    - cron: '47 0 * * 1'
+    - cron: '17 1 * * 1'
+    - cron: '47 1 * * 1'
+    - cron: '17 2 * * 1'
+    - cron: '47 2 * * 1'
+    - cron: '17 3 * * 1'
+    - cron: '47 3 * * 1'
     - cron: '17 4 * * 1'
-    # Záložní termíny (07:47 a 11:23 UTC): GitHub plánované běhy občas vynechá (stalo se 5. 10. 2026).
-    # Když už je týden hotový, běh se přeskočí (--skip-if-done) a nic se neplatí ani neposílá podruhé.
+    - cron: '47 4 * * 1'
     - cron: '47 7 * * 1'
     - cron: '23 11 * * 1'
   workflow_dispatch:
@@ -43,20 +52,37 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # U plánovaných pokusů: když už je přehled za uplynulý týden hotový (stav ok), vše ostatní se přeskočí.
+      - name: Je už týden hotový?
+        id: done
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "skip=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import datetime, json, pathlib
+          y, w, _ = (datetime.datetime.now(datetime.UTC) - datetime.timedelta(days=7)).isocalendar()
+          p = pathlib.Path(f"data/weeks/{y}-W{w:02d}.json")
+          done = p.exists() and json.loads(p.read_text(encoding="utf-8")).get("status") == "ok"
+          print(f"skip={'true' if done else 'false'}")
+          PY
+          cat "$GITHUB_OUTPUT"
+
       - uses: actions/setup-python@v7
+        if: steps.done.outputs.skip != 'true'
         with:
           python-version: '3.12'
           cache: pip
 
       - name: Instalace
+        if: steps.done.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
       - name: Nastavení Pages
         id: pages
+        if: steps.done.outputs.skip != 'true'
         uses: actions/configure-pages@v6
 
       - name: Kontrola API klíče (hodnota se nevypisuje)
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.done.outputs.skip != 'true'
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -65,7 +91,7 @@ jobs:
 
       - name: Týdenní pipeline
         id: run
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.done.outputs.skip != 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}
@@ -85,7 +111,7 @@ jobs:
           python -m decarbotracker run $ARGS
 
       - name: Uložení dat do repozitáře
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.done.outputs.skip != 'true'
         env:
           WEEK: ${{ steps.run.outputs.week }}
         run: |
@@ -97,6 +123,7 @@ jobs:
           git push
 
       - name: Sestavení webu
+        if: steps.done.outputs.skip != 'true'
         env:
           DECARBO_BASE_URL: ${{ steps.pages.outputs.base_path }}/
           DECARBO_SITE_URL: ${{ steps.pages.outputs.base_url }}/
@@ -104,17 +131,19 @@ jobs:
         run: python -m decarbotracker build
 
       - uses: actions/upload-pages-artifact@v5
+        if: steps.done.outputs.skip != 'true'
         with:
           path: site
 
       - name: Nasazení na GitHub Pages
         id: deployment
+        if: steps.done.outputs.skip != 'true'
         uses: actions/deploy-pages@v5
 
       # E-mail se 3 zjištěními a návrhem vlákna na X – až po nasazení, aby fungoval odkaz.
       # Selhání e-mailu neshodí běh (web už je nasazený).
       - name: E-mail se zjištěními
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && steps.done.outputs.skip != 'true'
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
