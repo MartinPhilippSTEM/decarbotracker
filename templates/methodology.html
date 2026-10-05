@@ -45,6 +45,10 @@
     {% for k, v in sel.source_type_weights.items() %}<tr><td>{{ source_type_labels.get(k, k) }}</td><td>{{ v }}</td></tr>{% endfor %}
     </tbody>
   </table>
+  <h3 id="nalada">Přibližná nálada diskurzu (odhad)</h3>
+  <p>Při hodnocení relevance AI orientačně odhadne u každé zprávy i její vyznění pro dekarbonizaci ČR a podporu veřejnosti na škále −2 (spíše nepříznivé) až +2 (spíše příznivé); jde o perspektivu „dobrá/špatná zpráva pro transformaci“, ne o tón jazyka. Týdenní odhad je vážený průměr přepočtený na škálu −100 až +100, kde důležitější zprávy (vyšší finální skóre) váží víc. Zahrnuje jen relevantní zprávy ohodnocené AI; při méně než 8 zprávách se nezobrazuje a regiony s méně než 3 zprávami se neodhadují.</p>
+  <p>Ukazatel je jen orientační: vzorek zpráv je omezený a závisí na tom, co zdroje v daném týdnu zveřejnily, hodnocení AI může být nepřesné a výkyvy mezi týdny mohou být náhodné. Nejde o měření veřejného mínění.</p>
+
   <h3 id="prilezitosti">Příležitosti (výzvy a granty)</h3>
   <p>Kandidáty jsou položky z grantových zdrojů (TA ČR, EUKI, EU Funding &amp; Tenders Portal – jen výzvy se štítkem SSH k tématům klima a energetika) a zprávy, které v titulku ohlašují výzvu. Model {{ llm.model_synthesis }} z nich vybere nejvýše 6 výzev vhodných pro sociologický, politologický nebo ekonomický výzkum a vynechá technologické a investiční dotace. Částky a termíny přebírá jen ze zdroje, jinak uvádí „neuvedeno“. Každá výzva se zobrazí jen jednou.</p>
   <p>Český obsah a obsah o ČR je ve výstupu vždy první. Pokud v daném týdnu k ČR nic podstatného nevyšlo, přehled to výslovně uvede.</p>

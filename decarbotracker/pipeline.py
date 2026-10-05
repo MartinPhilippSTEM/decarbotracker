@@ -15,6 +15,7 @@ from decarbotracker.llm import ClaudeClient, LLMError, UsageTracker
 from decarbotracker.models import Item, WeeklyReport
 from decarbotracker.opportunities import find_opportunities
 from decarbotracker.scoring import score_items, select_for_synthesis
+from decarbotracker.sentiment import summarize as summarize_sentiment
 from decarbotracker.sources import SourceHealth, disabled_health, fetch_all, save_health
 from decarbotracker.storage import items_path, read_json, week_path, write_json
 from decarbotracker.synthesis import fallback_report, synthesize
@@ -101,6 +102,9 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
         n_att = sum(1 for s in selected if s.score.is_public_attitudes_or_communication)
         log.info("Do syntézy vybráno %d položek (CZ: %d, postoje/komunikace: %d)", len(selected), n_cz, n_att)
         report = synthesize(week, selected, len(candidates), settings, client)
+
+    # Orientační odhad nálady diskurzu (z hodnocení AI; bez dalšího volání)
+    report.sentiment = summarize_sentiment(scored, {i.id for i in report.items})
 
     # Příležitosti (výzvy, granty) – z čerstvě stažených položek; s --reuse-items se přeskočí
     funding_ids = {s.id for s in load_sources() if s.funding}

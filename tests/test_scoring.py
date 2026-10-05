@@ -7,7 +7,7 @@ from decarbotracker.scoring import final_score, heuristic_score, score_items, se
 def _score(**kw) -> ItemScore:
     base = dict(item_id="x", relevance=8, topics=["study"], geo_focus="CZ",
                 is_public_attitudes_or_communication=False, is_original_research=False, relevant_to_cz_eu=False,
-                is_opinion=False, title_cs="", one_line_cs="")
+                is_opinion=False, title_cs="", one_line_cs="", sentiment=0)
     base.update(kw)
     return ItemScore(**base)
 

@@ -82,6 +82,7 @@ def heuristic_score(item: Item, matcher: KeywordMatcher | None = None) -> ItemSc
         is_opinion=False,
         title_cs="",
         one_line_cs=(item.summary_raw[:180] + "…") if len(item.summary_raw) > 180 else item.summary_raw or item.title,
+        sentiment=0,
     )
 
 
@@ -107,6 +108,7 @@ def _batches(items: list[Item], size: int) -> Iterable[list[Item]]:
 def _sanitize(score: ItemScore, item: Item) -> ItemScore:
     score.item_id = item.id
     score.relevance = max(0, min(10, int(score.relevance)))
+    score.sentiment = max(-2, min(2, int(score.sentiment)))
     if not score.topics:
         score.topics = ["decarbonization_policy"]
     score.topics = list(dict.fromkeys(score.topics))

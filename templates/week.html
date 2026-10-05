@@ -17,6 +17,60 @@
     <p class="meta">Posouzeno {{ r.items_considered }} položek, do přehledu vybráno {{ r.items_selected }} · model: {{ r.model }} · vygenerováno {{ r.generated_at|date_cs }}</p>
   </header>
 
+  {% if r.sentiment %}{% set s = r.sentiment %}
+  {% set tone = 'neg' if s.index <= -10 else ('pos' if s.index >= 10 else 'neu') %}
+  <section aria-labelledby="nalada" class="mood">
+    <h2 id="nalada">Přibližná nálada diskurzu <span class="mood-est">(odhad)</span></h2>
+    <div class="mood-grid">
+      <div class="mood-card">
+        <p class="mood-k">Orientační odhad vyznění zpráv pro dekarbonizaci ČR a podporu veřejnosti</p>
+        <p class="mood-v mood-{{ tone }}"><span class="mood-num">{{ '%+d'|format(s.index) if s.index else '≈ 0' }}</span> <span class="mood-label">{{ s.label_cs }}</span></p>
+        <div class="mood-scale" role="img" aria-label="Odhad {{ s.index }} na škále −100 až +100">
+          <span class="mood-needle" style="left: {{ ((s.index + 100) / 2)|round(1) }}%"></span>
+        </div>
+        <div class="mood-ends"><span>−100 spíše nepříznivé</span><span>0</span><span>+100 spíše příznivé</span></div>
+        <p class="mood-note">Vychází z {{ s.n }} hodnocených zpráv{% if prev_index is not none %} · předchozí týden přibližně {{ '%+d'|format(prev_index) if prev_index else '0' }}{% endif %}</p>
+      </div>
+      {% if trend|length >= 2 %}
+      {% set w = 260 %}{% set step = w / (trend|length - 1) %}
+      <div class="mood-card">
+        <p class="mood-k">Vývoj odhadu (posledních {{ trend|length }} týdnů)</p>
+        <svg viewBox="0 0 {{ w + 20 }} 80" width="100%" height="80" role="img" aria-label="Trend odhadu nálady">
+          <line x1="10" y1="40" x2="{{ w + 10 }}" y2="40" class="mood-zero"/>
+          <polyline class="mood-line" points="{% for wk, v in trend %}{{ (10 + loop.index0 * step)|round(1) }},{{ (40 - v * 0.36)|round(1) }} {% endfor %}"/>
+          {% for wk, v in trend %}<circle cx="{{ (10 + loop.index0 * step)|round(1) }}" cy="{{ (40 - v * 0.36)|round(1) }}" r="{{ 4 if loop.last else 2.5 }}" class="mood-dot"><title>{{ wk }}: {{ v }}</title></circle>{% endfor %}
+        </svg>
+        <p class="mood-note">{{ trend[0][0] }} – {{ trend[-1][0] }}</p>
+      </div>
+      {% endif %}
+    </div>
+    <div class="mood-regions">
+      {% for g in s.by_region %}
+      <div class="mood-row">
+        <span class="mood-reg">{{ region_labels.get(g.region, g.region) }}</span>
+        {% if g.n >= 3 %}
+        <span class="mood-bar" title="nepříznivé {{ (g.negative*100)|round|int }} %, neutrální {{ (g.neutral*100)|round|int }} %, příznivé {{ (g.positive*100)|round|int }} %">
+          <span class="seg neg" style="width: {{ (g.negative*100)|round(1) }}%"></span><span class="seg neu" style="width: {{ (g.neutral*100)|round(1) }}%"></span><span class="seg pos" style="width: {{ (g.positive*100)|round(1) }}%"></span>
+        </span>
+        <span class="mood-rn">≈ {{ '%+d'|format(g.index) if g.index else '0' }} <small>(n = {{ g.n }})</small></span>
+        {% else %}
+        <span class="mood-few">příliš málo zpráv pro odhad (n = {{ g.n }})</span>
+        {% endif %}
+      </div>
+      {% endfor %}
+      <p class="mood-legend"><span class="sw neg"></span> spíše nepříznivé <span class="sw neu"></span> neutrální / smíšené <span class="sw pos"></span> spíše příznivé <span class="mood-hint">· podíly vážené důležitostí zprávy</span></p>
+    </div>
+    {% set mp = items.get(s.most_positive_id) if s.most_positive_id else none %}{% set mn = items.get(s.most_negative_id) if s.most_negative_id else none %}
+    {% if mp or mn %}
+    <div class="mood-picks">
+      {% if mp %}<p class="pick pos"><span>Příklad spíše příznivé zprávy</span><a href="{{ mp.url }}" target="_blank" rel="noopener">{{ mp.title_cs or mp.title }}&nbsp;↗</a></p>{% endif %}
+      {% if mn %}<p class="pick neg"><span>Příklad spíše nepříznivé zprávy</span><a href="{{ mn.url }}" target="_blank" rel="noopener">{{ mn.title_cs or mn.title }}&nbsp;↗</a></p>{% endif %}
+    </div>
+    {% endif %}
+    <p class="hint">Jde o přibližný odhad z hodnocení AI na omezeném vzorku zpráv, ne o měření veřejného mínění. Vyznění se posuzuje z perspektivy dekarbonizace ČR (stejně jako SWOT); výkyvy mezi týdny mohou být náhodné. <a href="{{ base }}metodika/#nalada">Jak odhad vzniká</a>.</p>
+  </section>
+  {% endif %}
+
   {% set top5 = r.top_items[:5] %}
   {# události = položky watchlistu s konkrétním termínem; ostatní jdou do sekce Co dál sledovat #}
   {% set events = r.watchlist_cs|selectattr('when')|rejectattr('when', 'in', ['neuvedeno', 'termín neuveden', '-', '—'])|list %}

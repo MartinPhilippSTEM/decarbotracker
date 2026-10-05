@@ -221,6 +221,7 @@ def item_refs(selected: list[ScoredItem]) -> list[ReportItemRef]:
             geo_focus=s.score.geo_focus, published_at=s.item.published_at,
             date_is_first_seen=s.item.published_at is None, topics=list(s.score.topics),
             one_line_cs=s.score.one_line_cs, final_score=s.final_score, is_opinion=s.score.is_opinion,
+            sentiment=s.score.sentiment,
             is_public_attitudes_or_communication=s.score.is_public_attitudes_or_communication,
         )
         for s in selected

@@ -180,10 +180,15 @@ def build_site(settings: Settings, out_dir: Path | None = None, base_url: str | 
     reports = load_reports()
     health = load_health()
 
+    chronological = sorted((x for x in reports if x.sentiment), key=lambda x: x.week)
+
     def ctx(r: WeeklyReport) -> dict[str, Any]:
         items = {i.id: i for i in r.items}
+        # trend odhadu nálady: posledních až 8 týdnů do tohoto týdne včetně
+        trend = [(x.week, x.sentiment.index) for x in chronological if x.week <= r.week][-8:]
+        prev = trend[-2][1] if len(trend) >= 2 and trend[-1][0] == r.week else None
         return {"r": r, "items": items, "period": format_period_cs(r.period_from, r.period_to),
-                "opp_groups": group_opportunities(r.opportunities_cs)}
+                "opp_groups": group_opportunities(r.opportunities_cs), "trend": trend, "prev_index": prev}
 
     week_tpl = env.get_template("week.html")
     if reports:

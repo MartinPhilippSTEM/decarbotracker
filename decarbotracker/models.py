@@ -94,6 +94,8 @@ class ItemScore(BaseModel):
     is_opinion: bool = Field(description="op-ed, stanovisko NGO/průmyslu, komentář")
     title_cs: str = Field(description="český překlad názvu, pokud je název anglický; jinak prázdný řetězec")
     one_line_cs: str
+    sentiment: int = Field(description="vyznění pro dekarbonizaci ČR a podporu veřejnosti: -2 výrazně nepříznivé, "
+                                       "-1 spíše nepříznivé, 0 neutrální/smíšené, 1 spíše příznivé, 2 výrazně příznivé")
 
 
 class ScoreBatch(BaseModel):
@@ -230,6 +232,30 @@ class ReportItemRef(BaseModel):
     final_score: float = 0.0
     is_opinion: bool = False
     is_public_attitudes_or_communication: bool = False
+    sentiment: int = 0
+
+
+class RegionSentiment(BaseModel):
+    region: Region
+    n: int
+    negative: float  # podíl 0–1
+    neutral: float
+    positive: float
+    index: int  # -100 … +100
+
+
+class SentimentSummary(BaseModel):
+    """Orientační odhad nálady diskurzu z hodnocení AI (vážený průměr vyznění zpráv)."""
+
+    index: int  # -100 … +100
+    label_cs: str
+    n: int
+    negative: float
+    neutral: float
+    positive: float
+    by_region: list[RegionSentiment] = Field(default_factory=list)
+    most_positive_id: str | None = None
+    most_negative_id: str | None = None
 
 
 class UsageInfo(BaseModel):
@@ -262,6 +288,7 @@ class WeeklyReport(BaseModel):
     by_region: ByRegion | None = None
     watchlist_cs: list[WatchItem] = Field(default_factory=list)
     opportunities_cs: list[Opportunity] = Field(default_factory=list)
+    sentiment: SentimentSummary | None = None
     data_gaps_cs: list[str] = Field(default_factory=list)
     items: list[ReportItemRef] = Field(default_factory=list)
     usage: UsageInfo = Field(default_factory=UsageInfo)

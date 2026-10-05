@@ -24,5 +24,10 @@ Dostaneš seznam položek (titulek, zdroj, typ zdroje, region zdroje, datum, kr�
 - `is_opinion`: `true` pro komentář, op-ed, stanovisko NGO, průmyslové asociace nebo politika.
 - `title_cs`: pokud titulek není česky, přelož ho věrně do češtiny. U českých titulků vrať prázdný řetězec.
 - `one_line_cs`: jedna věcná česká věta (max. ~200 znaků), co položka přináší. Žádná čísla, která nejsou ve vstupu.
+- `sentiment` (celé číslo −2 až +2): **vyznění zprávy pro dekarbonizaci ČR a podporu veřejnosti** – zda jde spíše o dobrou, nebo špatnou zprávu pro transformaci, ne o tón jazyka.
+  - +2 výrazně příznivé (např. rostoucí podpora opatření, výrazný pokles emisí, přijatá ambiciózní politika),
+  - +1 spíše příznivé, 0 neutrální, smíšené nebo čistě informativní (kalendáře, pozvánky, metodické texty),
+  - −1 spíše nepříznivé, −2 výrazně nepříznivé (např. odpor veřejnosti, růst emisí, oslabení politik, dezinformační kampaň).
+  Při nejistotě volte 0.
 
 Vrať hodnocení pro KAŽDOU položku ze vstupu, ve stejném pořadí.
