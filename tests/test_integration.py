@@ -4,7 +4,6 @@ from datetime import UTC, datetime
 
 from conftest import FIXTURES, make_source, read_fixture
 
-from decarbotracker.ask import query_patterns, run_ask, slugify
 from decarbotracker.cli import main
 from decarbotracker.config import load_sources
 from decarbotracker.fetch.feeds import parse_feed_bytes, parse_wp_json_bytes
@@ -85,20 +84,6 @@ def test_cli_build_command(settings, tmp_path):
     assert main(["build", "--base-url", "/decarbotracker/"]) == 0
     html = (tmp_path / "site" / "index.html").read_text(encoding="utf-8")
     assert "/decarbotracker/static/style.css" in html
-
-
-def test_ask_dry_run(settings):
-    items, _ = fixture_collector(settings, NOW)
-    brief = run_ask("uhlí a elektřina", settings, days=400, dry_run=True, now=NOW, items=items)
-    assert brief.status in ("dry_run", "empty")
-    assert brief.slug.startswith("2026-09-30-uhli-a-elektrina")
-
-
-def test_query_patterns_handle_czech_inflection():
-    pats = query_patterns("tepelná čerpadla")
-    text = "prodej tepelnych cerpadel klesl"
-    assert all(p.search(text) for p in pats)
-    assert slugify("Postoje k jádru?") == "postoje-k-jadru"
 
 
 def test_run_skip_if_done(settings, capsys):

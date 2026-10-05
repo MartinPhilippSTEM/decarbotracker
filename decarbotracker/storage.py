@@ -52,7 +52,3 @@ def health_path() -> Path:
 
 def digest_path(week: str) -> Path:
     return data_dir() / "digests" / f"{week}.json"
-
-
-def briefs_dir() -> Path:
-    return data_dir() / "briefs"

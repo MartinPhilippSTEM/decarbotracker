@@ -196,11 +196,10 @@ def check_schemas(client, settings) -> int:
     """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
     import anthropic
 
-    from decarbotracker.models import BriefDraft, DigestDraft, OpportunityBatch, ReportDraft, ScoreBatch
+    from decarbotracker.models import DigestDraft, OpportunityBatch, ReportDraft, ScoreBatch
 
     status = 0
     for model_id, schema in ((settings.llm.model_scoring, ScoreBatch), (settings.llm.model_synthesis, ReportDraft),
-                             (settings.llm.model_synthesis, BriefDraft),
                              (settings.llm.model_synthesis, OpportunityBatch),
                              (settings.llm.model_synthesis, DigestDraft)):
         try:
@@ -247,26 +246,6 @@ def cmd_serve(args: argparse.Namespace) -> int:
             httpd.serve_forever()
         except KeyboardInterrupt:
             print("\nUkončeno.")
-    return 0
-
-
-def cmd_ask(args: argparse.Namespace) -> int:
-    from decarbotracker.ask import run_ask
-    from decarbotracker.render import build_site
-
-    settings = load_settings()
-    brief = run_ask(args.topic, settings, days=args.days, dry_run=args.dry_run)
-    build_site(settings)
-    print(f"\n{brief.headline_cs}\n")
-    if brief.summary_cs:
-        print(brief.summary_cs, "\n")
-    for f in brief.key_findings:
-        print(f" • [{f.geo}] {f.text_cs}")
-    print(f"\nUloženo: data/briefs/{brief.slug}.json · stránka: dotazy/{brief.slug}/")
-    if brief.usage.calls:
-        print(f"Odhad nákladů LLM: ${brief.usage.cost_usd:.4f}")
-    github_output(slug=brief.slug, status=brief.status)
-    maybe_deploy(args, f"data: dotaz {brief.slug}")
     return 0
 
 
@@ -337,13 +316,6 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--port", type=int, default=8000)
     s.add_argument("--base-url", default="/", help="např. /decarbotracker/ pro test cest jako na GitHub Pages")
     s.set_defaults(func=cmd_serve)
-
-    a = sub.add_parser("ask", help="dotaz na aktuální zjištění k tématu")
-    a.add_argument("topic", help="téma, např. \"tepelná čerpadla\"")
-    a.add_argument("--days", type=int, help="kolik dní zpět hledat (výchozí 14)")
-    a.add_argument("--dry-run", action="store_true", help="bez volání LLM")
-    a.add_argument("--no-deploy", action="store_true", help="neposílat výsledek na GitHub")
-    a.set_defaults(func=cmd_ask)
     return p
 
 

@@ -112,10 +112,6 @@ academic:
     - {id: ets2, search: '(ETS2 OR "emissions trading" OR "carbon price" OR "carbon pricing") AND (households OR distributional OR "social climate fund")'}
     - {id: cee, search: '(Czech OR Czechia OR "Central Eastern Europe" OR "Central and Eastern Europe" OR Visegrad) AND (climate OR energy OR decarbonization OR emissions)'}
 
-ask:
-  default_days: 14
-  max_items: 30
-
 # Sekce „Příležitosti“: výzvy a granty pro společenskovědní tým (ne technologické dotace).
 # Kandidáti = položky ze zdrojů s funding: true + zprávy s „výzva/grant/call…“ v titulku.
 # Každá výzva se zobrazí jen jednou (pamatuje se v data/seen.json).

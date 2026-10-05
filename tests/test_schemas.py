@@ -7,7 +7,7 @@ Volitelné vlastnosti násobí velikost gramatiky, kterou API kompiluje; při p�
 import pytest
 from anthropic import transform_schema
 
-from decarbotracker.models import BriefDraft, DigestDraft, OpportunityBatch, ReportDraft, ScoreBatch
+from decarbotracker.models import DigestDraft, OpportunityBatch, ReportDraft, ScoreBatch
 
 
 def _objects(schema: dict):
@@ -20,7 +20,7 @@ def _objects(schema: dict):
         yield from _objects(schema["items"])
 
 
-@pytest.mark.parametrize("model", [ReportDraft, BriefDraft, ScoreBatch, OpportunityBatch, DigestDraft], ids=lambda m: m.__name__)
+@pytest.mark.parametrize("model", [ReportDraft, ScoreBatch, OpportunityBatch, DigestDraft], ids=lambda m: m.__name__)
 def test_structured_output_schema_has_no_optional_properties(model):
     schema = transform_schema(model)
     for obj in _objects(schema):

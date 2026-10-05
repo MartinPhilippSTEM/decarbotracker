@@ -24,12 +24,11 @@ on:
         description: 'ISO týden ve tvaru YYYY-Www, např. 2026-W39 (prázdné = týden, který právě skončil)'
         required: false
         default: ''
-  # Lokální "run"/"ask" pošle data do repa → tady se jen znovu sestaví a nasadí web (bez nového běhu pipeline).
+  # Lokální "run" pošle data do repa / změna vzhledu → tady se jen znovu sestaví a nasadí web (bez AI).
   push:
     branches: [main]
     paths:
       - 'data/weeks/**'
-      - 'data/briefs/**'
       - 'templates/**'
       - 'static/**'
 

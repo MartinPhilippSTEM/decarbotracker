@@ -11,7 +11,7 @@ Týdenní přehled nových analýz, studií, průzkumů a odborných článků o
   4. silnějším modelem z ~40 nejlepších položek napíše přehled: hlavní poselství, shrnutí, SWOT, nejdůležitější položky, průzkumy a komunikační doporučení, prognózy, přehled podle regionů a co sledovat příští týden,
   5. výsledek zveřejní jako web na GitHub Pages a nabídne ho i jako RSS (`feed.xml`).
 - Na začátku přehledu je sekce **Na první pohled**: 5 nejdůležitějších analýz, **Události a termíny** a **Příležitosti**. Příležitosti jsou výzvy a granty z TA ČR, EUKI a EU Funding & Tenders Portal (jen SSH výzvy ke klimatu a energetice). AI vybírá jen ty, které se hodí pro sociologický, politologický nebo ekonomický výzkum, a vynechává technologické dotace. U každé výzvy uvádí min./max. částku, termíny a dvě věty o obsahu. Každá výzva se zobrazí jen jednou. Nastavení najdete v `config/settings.yaml` v sekci `opportunities`.
-- **Kdykoliv během týdne** se můžete doptat na konkrétní téma, např. „tepelná čerpadla“ nebo „postoje k jádru“ (viz [Dotaz na téma](#dotaz-na-téma)).
+- Po každém přehledu přijde **e-mail** se třemi nejzajímavějšími zjištěními (aspoň jedno z ČR, aspoň jedno ze světa) a s návrhem vlákna na X.
 - Váš počítač nemusí být zapnutý, všechno běží v GitHub Actions.
 
 Každý bod SWOT i každé doporučení musí odkazovat na konkrétní zdroj. Program to po vygenerování kontroluje a body bez doložení vyřadí. Text přesto generuje AI, takže **zjištění před použitím ověřte u původního zdroje**.
@@ -105,19 +105,6 @@ Od té doby se web obnovuje každé pondělí sám. Když něco selže, GitHub v
 
 ---
 
-## Dotaz na téma
-
-**Z prohlížeče (doporučeno):** **Actions → ask → Run workflow**, do pole *Téma dotazu* napište například `ETS2 domácnosti` a volitelně změňte počet dní (výchozí 14). Za pár minut najdete výsledek na webu v sekci **Dotazy**.
-
-**Lokálně:**
-```powershell
-python -m decarbotracker ask "tepelná čerpadla"
-python -m decarbotracker ask "postoje k jádru" --days 30
-python -m decarbotracker ask "energetická chudoba" --no-deploy   # jen u vás, bez odeslání na GitHub
-```
-Výsledek se vypíše do okna a uloží do `data/briefs/`. Bez `--no-deploy` se pošle na GitHub a web se aktualizuje. Jeden dotaz stojí zhruba 0,05–0,15 USD.
-
----
 
 ## Příkazy
 
@@ -132,7 +119,7 @@ Výsledek se vypíše do okna a uloží do `data/briefs/`. Bez `--no-deploy` se 
 | `python -m decarbotracker build` | jen přegeneruje web z uložených dat |
 | `python -m decarbotracker serve` | náhled webu na <http://localhost:8000> |
 | `python -m decarbotracker serve --base-url /decarbotracker/` | náhled se stejnými cestami jako na GitHub Pages |
-| `python -m decarbotracker ask "téma"` | dotaz na téma |
+| `python -m decarbotracker notify --no-send` | náhled e-mailu se zjištěními (neodešle) |
 
 ---
 
@@ -171,7 +158,7 @@ Píšou se **bez diakritiky a jako kmeny**, protože program porovnává text be
 Modely ověřujte v dokumentaci Anthropic (*Models overview* a *Model deprecations*). Haiku 4.5 má plánované vyřazení „nejdříve 15. 10. 2026“. Když přestane fungovat, program automaticky přepne skórování na `model_scoring_fallback`.
 
 ### Prompty (`prompts/*.md`)
-Instrukce pro AI jsou v samostatných souborech `scoring.md`, `synthesis.md` a `ask.md`. Úpravy se verzují v gitu jako ostatní kód.
+Instrukce pro AI jsou v samostatných souborech `scoring.md`, `synthesis.md`, `opportunities.md` a `digest.md`. Úpravy se verzují v gitu jako ostatní kód.
 
 ---
 
@@ -184,7 +171,7 @@ Odhad z reálných dat týdne 2026-W39 (336 položek v okně, 157 po předfiltru
 | skórování (7 dávek × 25 položek) | claude-haiku-4-5 | ~27 000 vstup, ~20 000 výstup | ~0,13 USD |
 | týdenní syntéza | claude-sonnet-5-5 | ~12 000 vstup, 8 000–16 000 výstup (vč. „přemýšlení“) | ~0,10–0,18 USD |
 | **celkem za týden** | | | **~0,25–0,35 USD** (≈ 1–1,5 USD měsíčně) |
-| dotaz na téma | claude-sonnet-5-5 | | ~0,05–0,15 USD |
+| příležitosti + e-mail | claude-sonnet-5-5 | | ~0,10 USD |
 
 Skutečnou spotřebu po každém běhu najdete v logu v Actions a v `data/weeks/<týden>.json` (pole `usage`).
 
@@ -219,7 +206,7 @@ Bez platného klíče se týden stejně zveřejní, jen bez AI shrnutí, se sezn
 
 ```
 decarbotracker/
-  cli.py           příkazy (run, check-sources, build, serve, ask)
+  cli.py           příkazy (run, check-sources, build, serve, notify, check-key)
   pipeline.py      celý týdenní běh
   sources.py       stahování všech zdrojů + health report
   fetch/           http.py (timeouty, retry), feeds.py (RSS/Atom/RDF/WP JSON), scrape.py, academic.py
@@ -228,13 +215,14 @@ decarbotracker/
   filter.py        předfiltr klíčových slov
   scoring.py       LLM skórování, váhy, kvóty
   synthesis.py     týdenní syntéza, validace doložení, záložní výstup
-  ask.py           dotaz na téma
+  opportunities.py výzvy a granty (sekce Příležitosti)
+  digest.py        e-mail se 3 zjištěními + vlákno na X (mailer.py posílá přes Resend)
   llm.py           Claude API: strukturovaný výstup, stop_reason, fallbacky, ceny
   render.py        statický web (Jinja2)
 config/            sources.yaml, keywords.yaml, settings.yaml
 prompts/           instrukce pro AI
 templates/, static/  vzhled webu a logo
-data/              items/ (položky po týdnech), weeks/ (výstupy), briefs/ (dotazy), seen.json, source_health.json
+data/              items/ (položky po týdnech), weeks/ (výstupy), digests/ (e-maily), seen.json, source_health.json
 tests/             testy s uloženými ukázkami feedů a stránek (bez sítě)
 ```
 

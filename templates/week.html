@@ -34,7 +34,7 @@
         <tr>
           <td class="num">{{ loop.index }}</td>
           <td>
-            <a href="{{ it.url }}" rel="noopener" class="item-link"><strong>{{ it.title }}</strong></a>
+            <a href="{{ it.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ it.title }}</strong></a>
             {% if it.title_cs %}<br><span class="title-cs">{{ it.title_cs }}</span>{% endif %}
             <br><span class="card-meta"><span class="tag tag-{{ it.geo_focus|lower }}">{{ it.geo_focus }}</span> {{ it.source_name }}{% if it.is_opinion %} · <span class="tag tag-opinion">názor</span>{% endif %}</span>
           </td>
@@ -62,22 +62,27 @@
 
     {% if r.opportunities_cs %}
     <h3 id="prilezitosti">Příležitosti: výzvy a financování</h3>
-    <p class="hint">Výzvy vhodné pro společenskovědní výzkum (bez technologických a investičních dotací). Vybírá AI – podmínky vždy ověřte u poskytovatele.</p>
-    <div class="table-wrap">
-    <table class="opps">
-      <thead><tr><th scope="col">Výzva</th><th scope="col">Objem na projekt</th><th scope="col">Podávání</th><th scope="col">O čem je</th></tr></thead>
-      <tbody>
-      {% for o in r.opportunities_cs %}
-        <tr>
-          <td><a href="{{ o.url }}" rel="noopener" class="item-link"><strong>{{ o.title_cs }}</strong></a><br><span class="card-meta">{{ o.funder }}</span></td>
-          <td class="money">min. {{ o.amount_min }}<br>max. {{ o.amount_max }}</td>
-          <td class="when">od {{ o.open_from }}<br>do <strong>{{ o.deadline }}</strong></td>
-          <td>{{ o.summary_cs|rich }}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
+    <p class="hint">Výzvy vhodné pro společenskovědní výzkum (bez technologických a investičních dotací), seskupené podle programu. Vybírá AI – podmínky vždy ověřte u poskytovatele.</p>
+    {% for program, opps in opp_groups %}
+    <div class="opp-group">
+      <h4 class="opp-program"><span class="opp-badge">{{ program }}</span> <span class="opp-count">{{ opps|length }} {{ 'výzva' if opps|length == 1 else ('výzvy' if opps|length < 5 else 'výzev') }}</span></h4>
+      <div class="table-wrap">
+      <table class="opps">
+        <thead><tr><th scope="col">Výzva</th><th scope="col">Objem na projekt</th><th scope="col">Podávání</th><th scope="col">Stručně</th></tr></thead>
+        <tbody>
+        {% for o in opps %}
+          <tr>
+            <td><a href="{{ o.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ o.title_cs }}</strong>&nbsp;↗</a>{% if o.funder and o.funder != program %}<br><span class="card-meta">{{ o.funder }}</span>{% endif %}</td>
+            <td class="money">{% if o.amount_min == o.amount_max %}{{ o.amount_max }}{% else %}{{ o.amount_min }} – {{ o.amount_max }}{% endif %}</td>
+            <td class="when">od {{ o.open_from }}<br>do <strong>{{ o.deadline }}</strong></td>
+            <td>{{ ((o.summary_cs|first_sentence) if opps|length > 2 else o.summary_cs)|rich }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+      </div>
     </div>
+    {% endfor %}
     {% endif %}
   </section>
   {% endif %}
@@ -180,7 +185,7 @@
 
   <section aria-labelledby="podklady">
     <h2 id="podklady">Všechny podklady ({{ r.items|length }})</h2>
-    <p class="hint">Položky, se kterými syntéza pracovala. Odkazy u bodů výše vedou sem.</p>
+    <p class="hint">Položky, se kterými syntéza pracovala. Odkazy u bodů výše vedou přímo na zdroj.</p>
     <ul class="sources-list">
     {% for it in r.items %}
       <li id="i-{{ it.id }}">
@@ -193,21 +198,13 @@
   </section>
 </article>
 
-{% if is_latest and (recent|length > 1 or briefs) %}
+{% if is_latest and recent|length > 1 %}
 <aside class="more">
-  {% if recent|length > 1 %}
   <h2>Předchozí týdny</h2>
   <ul class="plain week-list">
   {% for w in recent[1:] %}<li><a href="{{ base }}tydny/{{ w.week|week_slug }}/">{{ w.week }}</a> – {{ w.headline_cs|plain }}</li>{% endfor %}
   </ul>
   <p><a href="{{ base }}archiv/">Celý archiv →</a></p>
-  {% endif %}
-  {% if briefs %}
-  <h2>Poslední dotazy</h2>
-  <ul class="plain week-list">
-  {% for b in briefs %}<li><a href="{{ base }}dotazy/{{ b.slug }}/">{{ b.topic }}</a> – {{ b.generated_at|date_cs }}</li>{% endfor %}
-  </ul>
-  {% endif %}
 </aside>
 {% endif %}
 {% endblock %}

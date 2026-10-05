@@ -16,9 +16,9 @@ from markupsafe import Markup, escape
 from pydantic import ValidationError
 
 from decarbotracker.config import CODE_ROOT, Settings, load_sources, normalize_base_url, project_root
-from decarbotracker.models import TopicBrief, WeeklyReport
+from decarbotracker.models import WeeklyReport
 from decarbotracker.sources import STATUS_LABELS, load_health
-from decarbotracker.storage import briefs_dir, read_json
+from decarbotracker.storage import read_json
 from decarbotracker.weeks import format_period_cs, week_slug
 
 log = logging.getLogger(__name__)
@@ -91,14 +91,29 @@ def load_reports() -> list[WeeklyReport]:
     return reports
 
 
-def load_briefs() -> list[TopicBrief]:
-    briefs = []
-    for path in sorted(briefs_dir().glob("*.json"), reverse=True):
-        try:
-            briefs.append(TopicBrief.model_validate(read_json(path)))
-        except (ValidationError, ValueError) as exc:
-            log.error("Dotaz %s nelze načíst: %s", path.name, exc)
-    return briefs
+# prefix identifikátoru výzvy z EU portálu → program
+EU_PROGRAMMES = {
+    "HORIZON": "Horizon Europe", "LIFE": "LIFE", "CERV": "CERV", "ERASMUS": "Erasmus+", "DIGITAL": "Digital Europe",
+    "CEF": "CEF", "EU4H": "EU4Health", "SMP": "Single Market Programme", "INTERREG": "Interreg", "EMFAF": "EMFAF",
+    "CREA": "Kreativní Evropa", "AGRIP": "AGRIP", "JUST": "Justice", "SOCPL": "Sociální politika", "ESF": "ESF+",
+    "I3": "I3 – meziregionální inovace", "EUAF": "EU Anti-Fraud", "RFCS": "Výzkumný fond pro uhlí a ocel",
+}
+
+
+def program_of(opp: Any) -> str:
+    """Program / balíček výzvy: u EU portálu podle prefixu identifikátoru, jinak poskytovatel."""
+    m = re.search(r"\(([A-Z0-9]+)-[A-Z0-9-]+\)\s*$", getattr(opp, "title", "") or "")
+    if m:
+        return EU_PROGRAMMES.get(m.group(1), m.group(1))
+    return getattr(opp, "source_name", "") or getattr(opp, "funder", "") or "Ostatní"
+
+
+def group_opportunities(opps: list[Any]) -> list[tuple[str, list[Any]]]:
+    """Skupiny podle programu; české a menší programy první, Horizon Europe na konci (bývá ho nejvíc)."""
+    groups: dict[str, list[Any]] = {}
+    for o in opps:
+        groups.setdefault(program_of(o), []).append(o)
+    return sorted(groups.items(), key=lambda kv: (kv[0] == "Horizon Europe", kv[0]))
 
 
 def make_env(base_url: str, settings: Settings) -> Environment:
@@ -163,23 +178,22 @@ def build_site(settings: Settings, out_dir: Path | None = None, base_url: str | 
     shutil.copytree(CODE_ROOT / "static", out / "static", dirs_exist_ok=True)
     env = make_env(base, settings)
     reports = load_reports()
-    briefs = load_briefs()
     health = load_health()
 
     def ctx(r: WeeklyReport) -> dict[str, Any]:
         items = {i.id: i for i in r.items}
-        return {"r": r, "items": items, "period": format_period_cs(r.period_from, r.period_to)}
+        return {"r": r, "items": items, "period": format_period_cs(r.period_from, r.period_to),
+                "opp_groups": group_opportunities(r.opportunities_cs)}
 
     week_tpl = env.get_template("week.html")
     if reports:
         latest = reports[0]
-        _write(out / "index.html", week_tpl.render(**ctx(latest), is_latest=True, page="home", recent=reports[:8],
-                                                   briefs=briefs[:3]))
+        _write(out / "index.html", week_tpl.render(**ctx(latest), is_latest=True, page="home", recent=reports[:8]))
     else:
         _write(out / "index.html", env.get_template("empty.html").render(page="home"))
     for r in reports:
         _write(out / "tydny" / week_slug(r.week) / "index.html",
-               week_tpl.render(**ctx(r), is_latest=False, page="week", recent=[], briefs=[]))
+               week_tpl.render(**ctx(r), is_latest=False, page="week", recent=[]))
     _write(out / "archiv" / "index.html", env.get_template("archive.html").render(
         reports=reports, page="archive", period_of=lambda r: format_period_cs(r.period_from, r.period_to)))
 
@@ -194,15 +208,10 @@ def build_site(settings: Settings, out_dir: Path | None = None, base_url: str | 
         manual=MANUAL_SOURCES, checked_at=(read_json(project_root() / "data" / "source_health.json", {}) or {}).get("checked_at"),
     ))
 
-    brief_tpl = env.get_template("brief.html")
-    for b in briefs:
-        _write(out / "dotazy" / b.slug / "index.html",
-               brief_tpl.render(b=b, items={i.id: i for i in b.items}, page="briefs"))
-    _write(out / "dotazy" / "index.html", env.get_template("briefs.html").render(briefs=briefs, page="briefs"))
     _write(out / "404.html", env.get_template("404.html").render(page="404"))
     _write(out / "feed.xml", env.get_template("feed.xml").render(
         reports=reports[:20], site_url=settings.site.site_url,
         period_of=lambda r: format_period_cs(r.period_from, r.period_to)))
     _write(out / ".nojekyll", "")
-    log.info("Web vygenerován do %s (base_url=%s, %d týdnů, %d dotazů)", out, base, len(reports), len(briefs))
+    log.info("Web vygenerován do %s (base_url=%s, %d týdnů)", out, base, len(reports))
     return out

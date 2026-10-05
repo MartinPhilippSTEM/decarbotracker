@@ -10,9 +10,9 @@
 {%- endmacro %}
 
 {% macro item_title(it) -%}
-<a href="{{ it.url }}" rel="noopener" class="item-link">{{ it.title }}</a>{% if it.title_cs %} <span class="title-cs">({{ it.title_cs }})</span>{% endif %}
+<a href="{{ it.url }}" target="_blank" rel="noopener" class="item-link">{{ it.title }}</a>{% if it.title_cs %} <span class="title-cs">({{ it.title_cs }})</span>{% endif %}
 {%- endmacro %}
 
 {% macro evidence(ids, items) -%}
-<span class="evidence">{% for i in ids %}{% set it = items.get(i) %}{% if it %}<a href="#i-{{ i }}" title="{{ it.title }}">{{ it.source_name }}</a>{% if not loop.last %}, {% endif %}{% endif %}{% endfor %}</span>
+<span class="evidence">{% for i in ids %}{% set it = items.get(i) %}{% if it %}<a href="{{ it.url }}" target="_blank" rel="noopener" title="{{ it.title }} (otevře zdroj v nové záložce)">{{ it.source_name }}&nbsp;↗</a>{% if not loop.last %}, {% endif %}{% endif %}{% endfor %}</span>
 {%- endmacro %}

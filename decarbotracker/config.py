@@ -119,18 +119,12 @@ class OpportunitySettings(BaseModel):
     max_tokens: int = 12000
 
 
-class AskSettings(BaseModel):
-    default_days: int = 14
-    max_items: int = 30
-
-
 class Settings(BaseModel):
     site: SiteSettings = Field(default_factory=SiteSettings)
     llm: LLMSettings = Field(default_factory=LLMSettings)
     selection: SelectionSettings = Field(default_factory=SelectionSettings)
     fetch: FetchSettings = Field(default_factory=FetchSettings)
     academic: AcademicSettings = Field(default_factory=AcademicSettings)
-    ask: AskSettings = Field(default_factory=AskSettings)
     opportunities: OpportunitySettings = Field(default_factory=OpportunitySettings)
     contact_email: str = ""
     user_agent: str = "decarbotracker/1.0 (+{repo_url}; vyzkumny agregator)"

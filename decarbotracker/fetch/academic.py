@@ -208,8 +208,7 @@ def fetch_crossref(client: httpx.Client, settings: Settings, budget: Budget, sin
     return items, f"Crossref: {done} časopisů OK, {failed} chyb"
 
 
-def fetch_academic(settings: Settings, now: datetime | None = None,
-                   extra_query: str | None = None) -> tuple[list[Item], list[SourceHealth]]:
+def fetch_academic(settings: Settings, now: datetime | None = None) -> tuple[list[Item], list[SourceHealth]]:
     """Stáhne články za posledních `lookback_days` dní. Chyby nikdy neshodí běh."""
     now = now or datetime.now(UTC)
     if not settings.academic.enabled:
@@ -224,10 +223,7 @@ def fetch_academic(settings: Settings, now: datetime | None = None,
         for name, fn in (("api-crossref", fetch_crossref), ("api-openalex", fetch_openalex)):
             started = time.monotonic()
             try:
-                if extra_query and name == "api-openalex":
-                    got, note = fetch_openalex_query(client, settings, budget, since, now, extra_query)
-                else:
-                    got, note = fn(client, settings, budget, since, now)
+                got, note = fn(client, settings, budget, since, now)
                 status = "ok" if got else "empty"
             except Exception as exc:  # noqa: BLE001 - API nesmí shodit běh
                 log.exception("Chyba akademického API %s", name)
@@ -246,24 +242,3 @@ def fetch_academic(settings: Settings, now: datetime | None = None,
             log.info("%s: %d položek (%s)", name, len(got), note)
     log.info("Akademická API: %d dotazů z rozpočtu %d", budget.used, budget.total)
     return items, healths
-
-
-def fetch_openalex_query(client: httpx.Client, settings: Settings, budget: Budget, since: datetime,
-                         now: datetime, query: str) -> tuple[list[Item], str]:
-    """Jednorázový tematický dotaz (pro příkaz ask)."""
-    key = settings.openalex_api_key
-    if not key:
-        return [], "OpenAlex: bez API klíče se tematický dotaz neprovádí"
-    if not budget.take():
-        return [], "OpenAlex: rozpočet vyčerpán"
-    journals_by_issn = {issn: j for j in settings.academic.journals for issn in j.issn}
-    try:
-        resp = get(client, OPENALEX_URL, accept=JSON_ACCEPT, headers={"Authorization": f"Bearer {key}"},
-                   params={"filter": f"from_publication_date:{since.date().isoformat()},type:article",
-                           "search": query, "per_page": 25, "select": OPENALEX_SELECT},
-                   max_retries=1, browser_fallback=False)
-    except FetchError as exc:
-        return [], f"OpenAlex: {exc}"
-    items = [i for w in (resp.json() or {}).get("results", [])
-             if (i := parse_openalex_work(w, journals_by_issn, now=now, default_topic_filter=False))]
-    return items, f"OpenAlex: tematický dotaz, {len(items)} článků"

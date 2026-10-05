@@ -20,7 +20,6 @@
     <nav class="nav" aria-label="Hlavní navigace">
       <a href="{{ base }}"{% if page == "home" %} aria-current="page"{% endif %}>Tento týden</a>
       <a href="{{ base }}archiv/"{% if page in ("archive", "week") %} aria-current="page"{% endif %}>Archiv</a>
-      <a href="{{ base }}dotazy/"{% if page == "briefs" %} aria-current="page"{% endif %}>Dotazy</a>
       <a href="{{ base }}metodika/"{% if page == "methodology" %} aria-current="page"{% endif %}>Zdroje a metodika</a>
       <a href="{{ base }}feed.xml" class="rss" title="RSS feed">RSS</a>
     </nav>
