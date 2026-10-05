@@ -1,0 +1,61 @@
+{
+  "week": "2026-W40",
+  "generated_at": "2026-10-05T08:44:34.403500Z",
+  "model": "claude-sonnet-5-5",
+  "headline_cs": "Česko se v říjnu chystá hlasovat o větrných elektrárnách, zatímco výzkum ukazuje, jak rámování zpoplatnění emisí a ekonomický tlak mění podporu klimatických opatření.",
+  "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w40/",
+  "findings": [
+    {
+      "item_id": "ec686a78f707",
+      "geo": "CZ",
+      "title_cs": "Referenda o větrnících: letos převažuje odmítnutí",
+      "text_cs": "V říjnu se v Česku uskuteční 20 místních referendů o větrných elektrárnách. Dosavadní letošní výsledky výrazně převažují na straně odmítnutí, loni byly přibližně vyrovnané. Analýza Bohumila Frantála z Ústavu geoniky AV ČR spojuje postoj se zkušeností a s tím, zda se hlasuje o konkrétním projektu.}, {",
+      "title": "V říjnu se bude v Česku rozhodovat o větrných elektrárnách",
+      "url": "https://ekolist.cz/cz/publicistika/civilizace/v-rijnu-se-bude-v-cesku-rozhodovat-o-vetrnych-elektrarnach",
+      "source_name": "Ekolist"
+    },
+    {
+      "item_id": "d2a06117fa57",
+      "geo": "CZ",
+      "title_cs": "Elektřina nejdražší od roku 2022, uhlí posiluje",
+      "text_cs": "Podle oEnergetice byla elektřina v září nejdražší od roku 2022. Výroba meziročně vzrostla o více než 1 TWh, spotřeba se prakticky nezměnila a nejvíc rostla výroba z uhlí. Ceny přitom ovlivňují, jak lidé vnímají energetickou transformaci.",
+      "title": "Elektřina byla v září nejdražší od roku 2022. České uhelné elektrárny prudce navýšily výrobu",
+      "url": "https://oenergetice.cz/energetika-v-cr/elektrina-byla-v-zari-nejdrazsi-od-roku-2022-ceske-uhelne-elektrarny-prudce-navysily-vyrobu",
+      "source_name": "oEnergetice"
+    },
+    {
+      "item_id": "1650a4c31023",
+      "geo": "EU",
+      "title_cs": "Čistší vzduch obhájí zpoplatnění emisí lépe než klima",
+      "text_cs": "Předregistrovaný experiment ve Španělsku ukázal, že podporu zpoplatnění emisí nejvíc zvýšila sdělení o čistším vzduchu a zdraví. Při zmínce nákladů drželo podporu lépe než čistě klimatické přínosy, nákladová sdělení ji naopak snížila. Je to důležité i pro přípravu ETS2.",
+      "title": "Out of breath, out of mind: Competing frames and public support for carbon taxation in Spain",
+      "url": "https://doi.org/10.1016/j.electstud.2026.103144",
+      "source_name": "Electoral Studies"
+    }
+  ],
+  "x_thread": [
+    "🧵 V říjnu se v Česku koná 20 místních referendů o větrných elektrárnách. Dosavadní letošní výsledky výrazně převažují na straně odmítnutí, loni byly přibližně vyrovnané. Přinášíme přehled týdne 2026-W40.",
+    "Ústav geoniky AV ČR (analýza Bohumila Frantála): postoj k větrníkům souvisí se zkušeností i s tím, zda se hlasuje o konkrétním projektu. Jde o vzácná tvrdá data o místních postojích.",
+    "Španělský experiment (Electoral Studies): nejvíc zvýšila podporu zpoplatnění emisí sdělení o čistším vzduchu a zdraví. Nákladová sdělení podporu snížila. Relevantní i pro ETS2. 🌬️",
+    "oEnergetice: elektřina byla v září nejdražší od roku 2022. Výroba meziročně vzrostla o více než 1 TWh a nejvíc rostla výroba z uhlí, spotřeba se prakticky nezměnila.",
+    "Celý týdenní přehled o dekarbonizaci a postojích veřejnosti najdete zde: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w40/ #klima #energetika"
+  ],
+  "notes": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 5555,
+    "output_tokens": 1020,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.02131,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 1.0,
+        "input_tokens": 5555.0,
+        "output_tokens": 1020.0,
+        "cost_usd": 0.02131
+      }
+    }
+  },
+  "sent_at": "2026-10-05T08:44:34.631461Z"
+}
