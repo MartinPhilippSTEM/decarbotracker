@@ -192,6 +192,24 @@ def cmd_notify(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_backfill_sentiment(args: argparse.Namespace) -> int:
+    """Doplní odhad nálady k hotovému přehledu (bez stahování; AI ohodnotí jen položky přehledu)."""
+    from decarbotracker.llm import ClaudeClient, UsageTracker
+    from decarbotracker.models import WeeklyReport
+    from decarbotracker.sentiment import backfill
+    from decarbotracker.storage import read_json, week_path, write_json
+
+    settings = load_settings()
+    report = WeeklyReport.model_validate(read_json(week_path(args.week)))
+    client = ClaudeClient(settings, UsageTracker(settings.llm))
+    report = backfill(report, client, settings)
+    write_json(week_path(args.week), report)
+    s = report.sentiment
+    print(f"Odhad nálady {args.week}: {s.index if s else '—'} ({s.label_cs if s else 'málo dat'}), "
+          f"cena ≈ ${client.tracker.spent:.4f}")
+    return 0
+
+
 def check_schemas(client, settings) -> int:
     """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
     import anthropic
@@ -304,6 +322,10 @@ def build_parser() -> argparse.ArgumentParser:
     n.add_argument("--regenerate", action="store_true", help="znovu vybrat zjištění (stojí ~0,02 USD)")
     n.add_argument("--force", action="store_true", help="odeslat znovu, i když už jednou odešlo")
     n.set_defaults(func=cmd_notify)
+
+    bs = sub.add_parser("backfill-sentiment", help="doplní odhad nálady k hotovému přehledu (bez stahování)")
+    bs.add_argument("--week", required=True, help="týden YYYY-Www")
+    bs.set_defaults(func=cmd_backfill_sentiment)
 
     k = sub.add_parser("check-key", help="ověří ANTHROPIC_API_KEY (hodnotu nevypisuje)")
     k.set_defaults(func=cmd_check_key)

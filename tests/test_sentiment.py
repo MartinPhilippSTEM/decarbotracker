@@ -54,3 +54,22 @@ def test_mood_section_rendered_with_soft_wording(settings, tmp_path):
     assert "Přibližná nálada diskurzu" in html and "(odhad)" in html
     assert "Orientační odhad" in html and "přibližný odhad z hodnocení AI" in html
     assert html.index('id="nalada"') < html.index('id="prehled"')
+
+
+def test_backfill_from_report_items(settings):
+    from decarbotracker.llm import UsageTracker
+    from decarbotracker.sentiment import _Rating, _RatingBatch, backfill
+
+    sel = [make_scored(make_item(i, region="CZ" if i < 5 else "EU"), relevance=7) for i in range(12)]
+    rep = synthesize("2026-W40", sel, 40, settings, None)
+
+    class Fake:
+        tracker = UsageTracker(settings.llm)
+
+        def structured(self, **kw):
+            return _RatingBatch(ratings=[_Rating(item_id=i.id, sentiment=(5 if n % 2 else -1))
+                                         for n, i in enumerate(rep.items)]), None
+
+    out = backfill(rep, Fake(), settings)
+    assert all(-2 <= i.sentiment <= 2 for i in out.items)  # 5 se ořízne na 2
+    assert out.sentiment is not None and out.sentiment.n == len(rep.items)
