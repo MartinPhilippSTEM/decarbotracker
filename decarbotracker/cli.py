@@ -56,6 +56,14 @@ def cmd_run(args: argparse.Namespace) -> int:
     settings = load_settings()
     week = args.week or last_completed_week()
     parse_week(week)
+    if args.skip_if_done:
+        from decarbotracker.storage import read_json, week_path
+
+        existing = read_json(week_path(week), default=None) or {}
+        if existing.get("status") == "ok":
+            print(f"Týden {week} už je hotový (stav ok) – běh přeskočen.")
+            github_output(week=week, status="skipped")
+            return 0
     report = run_pipeline(week, settings, dry_run=args.dry_run, reuse_items=args.reuse_items)
     out = build_site(settings)
     print(f"\nHotovo: týden {week}, stav {report.status}, {report.items_selected} položek v přehledu.")
@@ -301,6 +309,8 @@ def build_parser() -> argparse.ArgumentParser:
     r.add_argument("--dry-run", action="store_true", help="bez volání LLM, deterministický ukázkový výstup")
     r.add_argument("--no-deploy", action="store_true", help="neposílat data na GitHub (lokálně)")
     r.add_argument("--reuse-items", action="store_true", help="nestahovat znovu, použít uložené položky týdne")
+    r.add_argument("--skip-if-done", action="store_true",
+                   help="nic nedělat, pokud už je přehled týdne hotový (pro záložní plánované běhy)")
     r.set_defaults(func=cmd_run)
 
     c = sub.add_parser("check-sources", help="otestuje všechny zdroje a vypíše tabulku stavu")

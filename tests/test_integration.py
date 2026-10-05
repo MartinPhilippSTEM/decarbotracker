@@ -99,3 +99,11 @@ def test_query_patterns_handle_czech_inflection():
     text = "prodej tepelnych cerpadel klesl"
     assert all(p.search(text) for p in pats)
     assert slugify("Postoje k jádru?") == "postoje-k-jadru"
+
+
+def test_run_skip_if_done(settings, capsys):
+    from decarbotracker.storage import week_path, write_json
+
+    write_json(week_path("2026-W39"), {"week": "2026-W39", "status": "ok"})
+    assert main(["run", "--week", "2026-W39", "--skip-if-done", "--no-deploy"]) == 0
+    assert "už je hotový" in capsys.readouterr().out

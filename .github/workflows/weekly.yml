@@ -5,6 +5,10 @@ on:
     # Každé pondělí v 04:17 UTC = 06:17 letního času SELČ (od konce října do března 05:17 SEČ).
     # Cron v GitHub Actions běží vždy v UTC. Lichá minuta (ne celá hodina) snižuje riziko zpoždění ve špičce.
     - cron: '17 4 * * 1'
+    # Záložní termíny (07:47 a 11:23 UTC): GitHub plánované běhy občas vynechá (stalo se 5. 10. 2026).
+    # Když už je týden hotový, běh se přeskočí (--skip-if-done) a nic se neplatí ani neposílá podruhé.
+    - cron: '47 7 * * 1'
+    - cron: '23 11 * * 1'
   workflow_dispatch:
     inputs:
       week:
@@ -71,6 +75,7 @@ jobs:
           WEEK_INPUT: ${{ inputs.week }}
         run: |
           ARGS="--no-deploy"
+          if [ "${{ github.event_name }}" = "schedule" ]; then ARGS="$ARGS --skip-if-done"; fi
           if [ -n "$WEEK_INPUT" ]; then
             if ! [[ "$WEEK_INPUT" =~ ^[0-9]{4}-W[0-9]{2}$ ]]; then
               echo "::error::Neplatný týden '$WEEK_INPUT' (očekávám např. 2026-W39)"; exit 1
