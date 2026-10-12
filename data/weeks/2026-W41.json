@@ -1,0 +1,1344 @@
+{
+  "week": "2026-W41",
+  "period_from": "2026-10-05T00:00:00Z",
+  "period_to": "2026-10-11T23:59:59.999999Z",
+  "generated_at": "2026-10-12T06:05:54.644464Z",
+  "model": "claude-sonnet-5-5",
+  "items_considered": 367,
+  "items_selected": 40,
+  "status": "ok",
+  "notices_cs": [],
+  "cz_content_present": true,
+  "headline_cs": "Čeští voliči v referendech odmítli větrné elektrárny, zatímco EU schválila strop cen povolenek ETS 2.",
+  "executive_summary_cs": "V týdnu komunálních voleb **obce v referendech odmítly větrné elektrárny**: Horní Benešov na Bruntálsku a pět středočeských obcí, kde jsou výsledky závazné. Podle titulku Obnovitelně.cz podpořil větrníky z 21 obcí jen Dětřichov (podrobnosti ve zdroji). Členské státy EU zároveň finálně schválily **cenový strop 45 eur za tunu CO2** u ETS 2 (povolenky na emise z dopravy a vytápění budov). Akademické studie ukazují, že vnímaná spravedlnost opatření a jejich design výrazně ovlivňují podporu veřejnosti.",
+  "swot": {
+    "strengths": [
+      {
+        "text_cs": "Referenda jsou platná a pro obce závazná, takže místní rozhodování o větrných elektrárnách je jasně dané a předvídatelné. Lze na tom stavět při dialogu s obcemi.",
+        "evidence_item_ids": [
+          "a6e065ff3caa",
+          "f306a2a26df1"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Členské státy EU schválily úpravu ETS 2 s **cenovým stropem 45 eur za tunu CO2**, což snižuje obavu z prudkého zdražení vytápění a dopravy pro české domácnosti.",
+        "evidence_item_ids": [
+          "400ca4e7ddb6",
+          "dfb3f5cfa6b5"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "Podle studie z Německa (N = 371) mají domácnosti s fotovoltaikou i bateriemi podobné motivace, takže zájem o solár může podporovat i zájem o akumulaci. Přenositelnost na ČR není ověřena.",
+        "evidence_item_ids": [
+          "eb6b1c9bd1aa"
+        ],
+        "geo": "EU"
+      }
+    ],
+    "weaknesses": [
+      {
+        "text_cs": "**Místní odmítnutí větrných elektráren** v referendech: Horní Benešov a pět středočeských obcí, kde lidé odmítli i akcelerační zóny. Podle titulku Obnovitelně.cz podpořil větrníky z 21 obcí jen Dětřichov (výtah chybí, neověřeno).",
+        "evidence_item_ids": [
+          "a6e065ff3caa",
+          "f306a2a26df1",
+          "5beb99859793"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "V Horním Benešově lidé odmítli i zplyňovací jednotku odpadů, tam ale referendum závazné není. Odpor se tedy netýká jen větrných elektráren.",
+        "evidence_item_ids": [
+          "a6e065ff3caa"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Východní Evropa vykazuje vysokou „dvojí energetickou zranitelnost“ (souběh energetické a dopravní chudoby), studie pokrývá 57 regionů z 8 zemí. Z výtahu není jasné, zda je v ní ČR, proto je význam pro ČR nejistý.",
+        "evidence_item_ids": [
+          "36f49f12b95c"
+        ],
+        "geo": "EU"
+      }
+    ],
+    "opportunities": [
+      {
+        "text_cs": "Studie z Dánska (N = 1000) ukazuje, že **vyčlenění příjmů na zelené projekty** zvyšuje podporu uhlíkové daně z letenek, vyšší sazba ji naopak snižuje. Podobně lze komunikovat využití příjmů z ETS 2.",
+        "evidence_item_ids": [
+          "aedd74bd4d63"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "Podle komunitních energetických projektů v pěti zemích EU mohou družstva typu REScoops pomáhat energetickým komunitám růst. To je možná cesta k místnímu přijetí obnovitelných zdrojů.",
+        "evidence_item_ids": [
+          "b18be57dad67"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "E3G uvádí cíl předsedů COP31 pokrýt 35 % konečné spotřeby energie elektřinou do roku 2035 („35-by-35“) a nabízí měřítka pro cestu v souladu s 1,5 °C.",
+        "evidence_item_ids": [
+          "0931af1f3b09"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "Studie o veřejném vlivu na umístění infrastruktury (jaderný odpad v Kanadě) navrhuje, jak propojit účast veřejnosti s reálným rozhodováním. Bez toho hrozí formální „odškrtnutí“ a odpor.",
+        "evidence_item_ids": [
+          "976ec7d4404d"
+        ],
+        "geo": "GLOBAL"
+      }
+    ],
+    "threats": [
+      {
+        "text_cs": "Dezinformace se podle úvodní studie speciální sekce posouvají od popírání vědy k **argumentům proti politikám** (náklady, spravedlnost). Ty je těžké vyvrátit fact-checkingem.",
+        "evidence_item_ids": [
+          "b180842cfc92",
+          "0160f2a99637"
+        ],
+        "geo": "GLOBAL"
+      },
+      {
+        "text_cs": "Studie z Alberty (N = 1527) ukazuje, že politická ideologie ovlivňuje vnímání spravedlivého rozdělení nákladů transformace, což může polarizovat debatu o platbách.",
+        "evidence_item_ids": [
+          "28f4cc8e526c"
+        ],
+        "geo": "GLOBAL"
+      },
+      {
+        "text_cs": "Zdražení paliv může být vnímáno jako nespravedlivé zejména mimo města. Rozhodující je vnímaná spravedlnost, proto hrozí odpor proti ETS 2 na venkově (studie z Finska).",
+        "evidence_item_ids": [
+          "e37cd858a0e2"
+        ],
+        "geo": "GLOBAL"
+      },
+      {
+        "text_cs": "Geopolitická rozdělenost a závislost na kritických surovinách ovlivňují trhy s energií a kovy, což může transformaci zdražovat nebo zpomalovat.",
+        "evidence_item_ids": [
+          "f36b45ed917a",
+          "87e914e9b33e"
+        ],
+        "geo": "GLOBAL"
+      }
+    ]
+  },
+  "top_items": [
+    {
+      "item_id": "a6e065ff3caa",
+      "why_it_matters_cs": "Jde o přímý projev místních postojů k větrné energetice v ČR. Závazné referendum prakticky **blokuje výstavbu větrných elektráren** v obci.",
+      "key_finding_cs": "Obyvatelé Horního Benešova v referendu odmítli větrné elektrárny a referendum je platné a závazné. Neschválili ani zplyňovací jednotku odpadů, ale u ní referendum závazné není.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "f306a2a26df1",
+      "why_it_matters_cs": "Pět referend souběžně s komunálními volbami ukazuje vzorec odmítání v jednom kraji. Dotýká se i **akceleračních zón** pro obnovitelné zdroje.",
+      "key_finding_cs": "V Kačici, Petrovicích, Petroupimi, Teplýšovicích a Soběhrdech lidé odmítli větrné elektrárny i akcelerační zóny. Referenda jsou platná a závazná.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "5beb99859793",
+      "why_it_matters_cs": "Titulek naznačuje širší rozsah odmítání než jednotlivé případy. Podrobnosti je nutné ověřit ve zdroji.",
+      "key_finding_cs": "Podle titulku podpořil větrníky z 21 obcí jen Dětřichov. Další údaje nejsou k dispozici.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "400ca4e7ddb6",
+      "why_it_matters_cs": "ETS 2 se týká cen vytápění a dopravy pro české domácnosti. **Cenový strop** mění politické riziko celého systému.",
+      "key_finding_cs": "Členské státy schválily cenový strop 45 eur (1100 korun) za tunu CO2. Po jeho dosažení se uvolňují povolenky z rezervy tržní stability. Rozhodnutí vstoupí v platnost dvacátým dnem po zveřejnění v Úředním věstníku EU.",
+      "category": "decarbonization_policy"
+    },
+    {
+      "item_id": "dfb3f5cfa6b5",
+      "why_it_matters_cs": "Agenturní zpráva ČTK potvrzuje schválení úpravy ETS 2 a její hlavní parametry.",
+      "key_finding_cs": "Strop 45 eur (1100 korun) za tunu CO2, po jeho dosažení se automaticky uvolňují povolenky z MSR.",
+      "category": "energy_markets"
+    },
+    {
+      "item_id": "661ca4630d2d",
+      "why_it_matters_cs": "Téma sucha a dezertifikace je pro ČR relevantní z hlediska dopadů změny klimatu. Jde o rozhovor, ne o nová data.",
+      "key_finding_cs": "Výtah neobsahuje konkrétní zjištění ani čísla.",
+      "category": "forecast"
+    },
+    {
+      "item_id": "e37cd858a0e2",
+      "why_it_matters_cs": "Vnímaná spravedlnost je podle studie nejdůležitějším určujícím faktorem podpory klimatických opatření. To je klíčové pro debatu o cenách paliv a ETS 2.",
+      "key_finding_cs": "Studie zkoumá, jak místo bydliště, důvěra v politiky či užívání auta souvisí s vnímanou spravedlností zvýšení daní z paliv. Konkrétní čísla výtah neuvádí.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "aedd74bd4d63",
+      "why_it_matters_cs": "Ukazuje, jak design politiky mění podporu klimatické daně. Poučení lze využít u komunikace ETS 2.",
+      "key_finding_cs": "V Dánsku (preregistrovaný experiment, N = 1000) byla podpora uhlíkové daně z letenek mírná. Vyšší sazby ji snižovaly, vyčlenění příjmů na zelené iniciativy ji zvyšovalo.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "b180842cfc92",
+      "why_it_matters_cs": "Dezinformace o klimatu se přesouvají k útokům na politická opatření. Tradiční ověřování faktů nestačí.",
+      "key_finding_cs": "Šest studií ukazuje, že popírání vědy přetrvává u těch, kdo argumentují náklady a spravedlností, a že dezinformace uspějí u již naladěného publika.",
+      "category": "communication"
+    },
+    {
+      "item_id": "28f4cc8e526c",
+      "why_it_matters_cs": "Podpora transformace neznamená shodu na tom, kdo ponese náklady. To platí i pro české debaty.",
+      "key_finding_cs": "Na vzorku 1527 obyvatel Alberty má ideologie selektivní, nikoli univerzální vliv na vnímání spravedlnosti. Rozdíly jsou nejsilnější u některých politik (výtah je useknutý).",
+      "category": "just_transition"
+    },
+    {
+      "item_id": "0931af1f3b09",
+      "why_it_matters_cs": "Nabízí měřítka pro dekarbonizaci v EU, do které patří i ČR.",
+      "key_finding_cs": "Cíl předsedů COP31: 35 % konečné spotřeby energie z elektřiny do roku 2035. Jde o analýzu E3G (think tank).",
+      "category": "forecast"
+    },
+    {
+      "item_id": "54782b6756f0",
+      "why_it_matters_cs": "Střední Evropa řeší jádro jako součást dekarbonizace. Studie ukazuje roli veřejné podpory v rozhodování.",
+      "key_finding_cs": "V Polsku v letech 2015–2025 k rozhodným krokům došlo, jen když se shodly veřejná podpora, jednota vlády a vnější tlak.",
+      "category": "decarbonization_policy"
+    }
+  ],
+  "public_attitudes_cs": {
+    "summary_cs": "Nejpodstatnější nové poznatky o ČR jsou z referend: **obce větrné elektrárny odmítly** v Horním Benešově i v pěti středočeských obcích. Nejde o reprezentativní průzkum, ale o skutečná hlasování. Zahraniční studie ukazují, že podporu ovlivňuje vnímaná spravedlnost a design opatření, např. využití příjmů.",
+    "surveys": [
+      {
+        "institution": "neuvedeno",
+        "fieldwork": "neuvedeno",
+        "country": "Dánsko",
+        "sample_n": "1000",
+        "method": "preregistrovaný discrete-choice experiment s oversamplem lidí s vysokými příjmy",
+        "finding_cs": "Podpora uhlíkové daně z letenek je mírná a závisí na designu. Vyšší sazby podporu snižují, vyčlenění příjmů na zelené iniciativy ji zvyšuje.",
+        "evidence_item_ids": [
+          "aedd74bd4d63"
+        ]
+      },
+      {
+        "institution": "neuvedeno",
+        "fieldwork": "neuvedeno",
+        "country": "Kanada (Alberta)",
+        "sample_n": "1527",
+        "method": "původní průzkum a vícerozměrná regrese",
+        "finding_cs": "Ideologie ovlivňuje vnímání spravedlnosti rozdělení nákladů transformace selektivně, ne univerzálně.",
+        "evidence_item_ids": [
+          "28f4cc8e526c"
+        ]
+      },
+      {
+        "institution": "neuvedeno",
+        "fieldwork": "neuvedeno",
+        "country": "Německo",
+        "sample_n": "371",
+        "method": "průzkum domácností",
+        "finding_cs": "Domácnosti nevnímají fotovoltaiku a baterie jako zcela oddělená rozhodnutí. Oba typy uživatelů vykazují silnější motivace než neuživatelé.",
+        "evidence_item_ids": [
+          "eb6b1c9bd1aa"
+        ]
+      },
+      {
+        "institution": "neuvedeno",
+        "fieldwork": "neuvedeno",
+        "country": "Itálie",
+        "sample_n": "1259 dospělých (studie 1) a 986 rodičů (studie 2)",
+        "method": "validace škály a dotazníkové studie",
+        "finding_cs": "Studie zkoumá, jak obranné mechanismy a epistemické postoje souvisejí s ekologickou úzkostí rodičů. Konkrétní výsledky výtah neuvádí.",
+        "evidence_item_ids": [
+          "7c387ca6edce"
+        ]
+      },
+      {
+        "institution": "neuvedeno",
+        "fieldwork": "neuvedeno",
+        "country": "115 zemí",
+        "sample_n": "9199 vědců",
+        "method": "průzkum mezi vědci",
+        "finding_cs": "Technooptimismus je nejčastější u vědců v aplikovaných a přírodních vědách a u pravicově orientovaných. Technooptimističtí vědci se méně zapojují do občanských klimatických aktivit.",
+        "evidence_item_ids": [
+          "f0809b500e9d"
+        ]
+      }
+    ],
+    "communication_recommendations": [
+      {
+        "text_cs": "Při komunikaci ETS 2 zdůrazňovat **využití příjmů** na zelené projekty a spravedlivé nastavení, protože studie z Dánska ukazuje vyšší podporu při vyčlenění příjmů.",
+        "evidence_item_ids": [
+          "aedd74bd4d63",
+          "e37cd858a0e2"
+        ]
+      },
+      {
+        "text_cs": "Při plánování větrných projektů dát místním lidem skutečný vliv na rozhodování, ne jen formální konzultace, jinak hrozí odpor typu referend.",
+        "evidence_item_ids": [
+          "976ec7d4404d",
+          "a6e065ff3caa",
+          "f306a2a26df1"
+        ]
+      },
+      {
+        "text_cs": "Nespoléhat jen na vyvracení faktů. Podle speciální sekce o dezinformacích je nutné reagovat i na politické argumenty o nákladech a spravedlnosti.",
+        "evidence_item_ids": [
+          "b180842cfc92",
+          "2532b6d1035a"
+        ]
+      }
+    ]
+  },
+  "forecasts_cs": [
+    {
+      "author": "E3G (Danièle Gibney)",
+      "horizon": "2035",
+      "key_figure": "35 % konečné spotřeby energie z elektřiny do roku 2035",
+      "text_cs": "E3G předkládá měřítka pro cestu v souladu s 1,5 °C do 30. let. Cíl „35-by-35“ podle autorky přináší ekonomické a bezpečnostní přínosy, pokud je napájen čistou energií.",
+      "evidence_item_ids": [
+        "0931af1f3b09"
+      ]
+    }
+  ],
+  "by_region": {
+    "cz": "Dominují **referenda o větrných elektrárnách**: Horní Benešov a pět středočeských obcí je odmítly, referenda jsou závazná. Titulek Obnovitelně.cz uvádí, že z 21 obcí větrníky podpořil jen Dětřichov. Zároveň vyšel rozhovor o hrozbě dezertifikace.",
+    "eu": "Státy EU schválily **strop 45 eur za tunu CO2** u ETS 2 s uvolňováním povolenek z rezervy. E3G zveřejnila měřítka pro elektrifikaci do 30. let. Studie se týkají komunitní energetiky, surovin pro solár a vítr a polského jaderného programu.",
+    "us": "K USA ve vstupech nic podstatného nebylo.",
+    "global": "Akademické studie se zaměřují na klimatické dezinformace, spravedlnost nákladů a postoje vědců. Průřezovým tématem je přesun sporu od vědy k politikám."
+  },
+  "watchlist_cs": [
+    {
+      "when": "",
+      "text_cs": "Zveřejnění úpravy ETS 2 v Úředním věstníku EU. V platnost vstoupí dvacátým dnem po zveřejnění.",
+      "evidence_item_ids": [
+        "400ca4e7ddb6",
+        "dfb3f5cfa6b5"
+      ]
+    },
+    {
+      "when": "",
+      "text_cs": "Zda se odmítání větrných elektráren v referendech rozšíří do dalších obcí a jak se promítne do akceleračních zón.",
+      "evidence_item_ids": [
+        "a6e065ff3caa",
+        "f306a2a26df1",
+        "5beb99859793"
+      ]
+    },
+    {
+      "when": "",
+      "text_cs": "Vývoj ceny povolenek ETS 2 vůči stropu 45 eur za tunu CO2.",
+      "evidence_item_ids": [
+        "400ca4e7ddb6"
+      ]
+    }
+  ],
+  "opportunities_cs": [
+    {
+      "item_id": "c1fb3cf73b30",
+      "title_cs": "Program INCI: Nová příležitost pro špičkový aplikovaný výzkum v oblasti měst a infrastruktury",
+      "funder": "Švýcarský Státní sekretariát pro hospodářské záležitosti (SECO) / TA ČR",
+      "amount_min": "neuvedeno",
+      "amount_max": "neuvedeno",
+      "open_from": "neuvedeno",
+      "deadline": "neuvedeno",
+      "summary_cs": "Globální program s rozpočtem 12 milionů CHF podporuje interdisciplinární aplikovaný výzkum udržitelného rozvoje měst, infrastruktury a klimatických změn. Interdisciplinární konsorcia mohou být pro tým zajímavá jako partner se společenskovědní expertizou.",
+      "title": "Program INCI: Nová příležitost pro špičkový aplikovaný výzkum v oblasti měst a infrastruktury",
+      "url": "https://tacr.gov.cz/program-inci-nova-prilezitost-pro-spickovy-aplikovany-vyzkum-v-oblasti-mest-a-infrastruktury/",
+      "source_name": "Technologická agentura ČR (TA ČR)"
+    },
+    {
+      "item_id": "e81944282e91",
+      "title_cs": "Understanding and avoiding maladaptation to climate change (HORIZON-CL5-2027-01-D1-10)",
+      "funder": "Evropská komise (Horizon Europe)",
+      "amount_min": "5 000 000 EUR",
+      "amount_max": "6 000 000 EUR",
+      "open_from": "17. 11. 2026",
+      "deadline": "4. 3. 2027",
+      "summary_cs": "Výzva podporuje výzkum špatné adaptace na změnu klimatu, hodnotící rámce a směrnice pro adaptační strategie. Pro tým je zajímavá díky hodnocení politik a zapojení aktérů adaptace.",
+      "title": "Understanding and avoiding maladaptation to climate change (HORIZON-CL5-2027-01-D1-10)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2027-01-D1-10",
+      "source_name": "EU Funding & Tenders Portal (výzvy SSH)"
+    },
+    {
+      "item_id": "6e920ff6de9c",
+      "title_cs": "Living labs driving transformative change via knowledge integration and inclusive governance (HORIZON-CL6-2027-01-BIODIV-06)",
+      "funder": "Evropská komise (Horizon Europe)",
+      "amount_min": "7 000 000 EUR",
+      "amount_max": "7 000 000 EUR",
+      "open_from": "20. 4. 2027",
+      "deadline": "22. 9. 2027",
+      "summary_cs": "Výzva podporuje inkluzivní správu a participativní living labs pro transformaci k ekonomice příznivé přírodě a klimatickým cílům. Tým by mohl být partnerem v oblasti governance, zapojení zúčastněných stran a společenskovědního výzkumu.",
+      "title": "Living labs driving transformative change via knowledge integration and inclusive governance (HORIZON-CL6-2027-01-BIODIV-06)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL6-2027-01-BIODIV-06",
+      "source_name": "EU Funding & Tenders Portal (výzvy SSH)"
+    },
+    {
+      "item_id": "31e5f4e9e417",
+      "title_cs": "Strengthening evidence-based policies for the resilience of European agriculture and forestry and related supply chains against crises and systemic risks (HORIZON-CL6-2027-02-CLIMATE-02)",
+      "funder": "Evropská komise (Horizon Europe)",
+      "amount_min": "6 000 000 EUR",
+      "amount_max": "6 000 000 EUR",
+      "open_from": "20. 4. 2027",
+      "deadline": "23. 9. 2027",
+      "summary_cs": "Výzva podporuje analýzy systémových rizik a krizí v zemědělství a lesnictví včetně role změny klimatu a doporučení pro politiky. Tým může přispět analytickou a politickou částí jako partner konsorcia.",
+      "title": "Strengthening evidence-based policies for the resilience of European agriculture and forestry and related supply chains against crises and systemic risks (HORIZON-CL6-2027-02-CLIMATE-02)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL6-2027-02-CLIMATE-02",
+      "source_name": "EU Funding & Tenders Portal (výzvy SSH)"
+    },
+    {
+      "item_id": "ca52f1376f7c",
+      "title_cs": "Demonstrating transformative solutions to increase cross-border climate resilience (HORIZON-MISS-2027-01-CLIMA-01)",
+      "funder": "Evropská komise (Horizon Europe, Mise Adaptace na změnu klimatu)",
+      "amount_min": "10 000 000 EUR",
+      "amount_max": "15 000 000 EUR",
+      "open_from": "9. 2. 2027",
+      "deadline": "21. 9. 2027",
+      "summary_cs": "Výzva podporuje odolnost přeshraničních regionů vůči klimatickým rizikům včetně sociálních a governance řešení. Tým by mohl být partnerem pro hodnocení dopadů a zapojení místních aktérů.",
+      "title": "Demonstrating transformative solutions to increase cross-border climate resilience (HORIZON-MISS-2027-01-CLIMA-01)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-MISS-2027-01-CLIMA-01",
+      "source_name": "EU Funding & Tenders Portal (výzvy SSH)"
+    },
+    {
+      "item_id": "9ba5225edfa9",
+      "title_cs": "The impact of EU labour mobility on the Member States of the EU (HORIZON-CL2-2027-01-TRANSFO-04)",
+      "funder": "Evropská komise (Horizon Europe)",
+      "amount_min": "3 000 000 EUR",
+      "amount_max": "4 000 000 EUR",
+      "open_from": "13. 5. 2027",
+      "deadline": "23. 9. 2027",
+      "summary_cs": "Výzva podporuje společenskovědní výzkum ekonomických a sociálních dopadů pracovní mobility, včetně vlivu zelené transformace a adaptace na klimatické změny. Pro tým je zajímavá jako ekonomicko-sociologická analýza s dopady na politiky.",
+      "title": "The impact of EU labour mobility on the Member States of the EU (HORIZON-CL2-2027-01-TRANSFO-04)",
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL2-2027-01-TRANSFO-04",
+      "source_name": "EU Funding & Tenders Portal (výzvy SSH)"
+    }
+  ],
+  "sentiment": {
+    "index": 13,
+    "label_cs": "mírně příznivá",
+    "n": 237,
+    "negative": 0.206,
+    "neutral": 0.313,
+    "positive": 0.481,
+    "by_region": [
+      {
+        "region": "CZ",
+        "n": 20,
+        "negative": 0.498,
+        "neutral": 0.207,
+        "positive": 0.294,
+        "index": -19
+      },
+      {
+        "region": "EU",
+        "n": 65,
+        "negative": 0.168,
+        "neutral": 0.239,
+        "positive": 0.593,
+        "index": 23
+      },
+      {
+        "region": "US",
+        "n": 29,
+        "negative": 0.122,
+        "neutral": 0.426,
+        "positive": 0.452,
+        "index": 17
+      },
+      {
+        "region": "GLOBAL",
+        "n": 123,
+        "negative": 0.181,
+        "neutral": 0.362,
+        "positive": 0.457,
+        "index": 13
+      }
+    ],
+    "most_positive_id": "0931af1f3b09",
+    "most_negative_id": "a6e065ff3caa"
+  },
+  "data_gaps_cs": [
+    "K ČR nevyšel žádný reprezentativní průzkum veřejného mínění, jen výsledky referend.",
+    "U položky Obnovitelně.cz (5beb99859793) je k dispozici jen titulek, údaje o 21 obcích nelze ověřit.",
+    "U několika studií (6f94701ef3c5, 87e914e9b33e) chybí výtah, u řady dalších je výtah useknutý, takže chybí kompletní zjištění.",
+    "Položka o dezertifikaci (661ca4630d2d) neobsahuje konkrétní data.",
+    "Většina akademických studií neuvádí instituci ani termín sběru dat.",
+    "K USA nebyl tento týden žádný relevantní obsah."
+  ],
+  "items": [
+    {
+      "id": "661ca4630d2d",
+      "title": "Hrozí České republice desertifikace?",
+      "title_cs": "",
+      "url": "https://www.klimatickazmena.cz/hrozi-ceske-republice-desertifikace/",
+      "source_name": "CzechGlobe – klimatickazmena.cz",
+      "source_type": "research",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-10-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "forecast",
+        "study"
+      ],
+      "one_line_cs": "CzechGlobe zkoumá, zda České republice hrozí dezertifikace a jaké jsou její příčiny.",
+      "final_score": 7.59,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": -1
+    },
+    {
+      "id": "a6e065ff3caa",
+      "title": "Obyvatelé Horního Benešova na Bruntálsku odmítli stavbu větrných elektráren",
+      "title_cs": "",
+      "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/obyvatele-horniho-benesova-na-bruntalsku-odmitli-stavbu-vetrnych-elektraren",
+      "source_name": "Ekolist",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-10-11T17:18:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Obyvatelé Horního Benešova v závazném referendu odmítli stavbu větrných elektráren.",
+      "final_score": 7.28,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -2
+    },
+    {
+      "id": "f306a2a26df1",
+      "title": "Lidé z pěti středočeských obcí odmítli v referendech stavbu větrných elektráren",
+      "title_cs": "",
+      "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/lide-z-peti-stredoceskych-obci-odmitli-v-referendech-stavbu-vetrnych-elektraren",
+      "source_name": "Ekolist",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-10-11T17:41:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Lidé z pěti středočeských obcí v referendech odmítli stavbu větrných elektráren a akceleračních zón.",
+      "final_score": 7.28,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -2
+    },
+    {
+      "id": "400ca4e7ddb6",
+      "title": "Státy EU schválily omezení růstu cen povolenek pro silniční dopravu a budovy",
+      "title_cs": "",
+      "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/staty-eu-schvalily-omezeni-rustu-cen-povolenek-pro-silnicni-dopravu-a-budovy",
+      "source_name": "Ekolist",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-10-09T10:50:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "energy_markets"
+      ],
+      "one_line_cs": "Členské státy EU finálně schválily úpravu systému ETS 2 s cenovým stropem pro povolenky v dopravě a budovách.",
+      "final_score": 7.2,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "dfb3f5cfa6b5",
+      "title": "ETS 2 pod kontrolou: EU schválila mechanismus, který má držet ceny povolenek na uzdě",
+      "title_cs": "",
+      "url": "https://oenergetice.cz/emise-co2/ets-2-pod-kontrolou-eu-schvalila-mechanismus-ktery-ma-drzet-ceny-povolenek-na-uzde",
+      "source_name": "oEnergetice",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-10-09T11:47:14Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "energy_markets"
+      ],
+      "one_line_cs": "EU schválila cenový strop pro povolenky ETS 2 s cílem kontrolovat jejich růst v silniční dopravě a budovách.",
+      "final_score": 7.2,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "5beb99859793",
+      "title": "Větrníky v referendech tvrdě narazily. Z 21 obcí je podpořil jediný Dětřichov",
+      "title_cs": "",
+      "url": "https://www.obnovitelne.cz/clanek/4903/vetrniky-v-referendech-tvrde-narazily-z-21-obci-je-podporil-jediny-detrichov",
+      "source_name": "Obnovitelně.cz",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": null,
+      "date_is_first_seen": true,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Ve 21 obcích se konala referenda o větrných elektrárnách; jen Dětřichov je podporoval, ostatní odmítly.",
+      "final_score": 6.656,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -2
+    },
+    {
+      "id": "e37cd858a0e2",
+      "title": "Spatial perspective on perceived fairness of climate-related fuel tax increases",
+      "title_cs": "Prostorová perspektiva na vnímání spravedlnosti zvýšení daní na paliva související se změnou klimatu",
+      "url": "https://doi.org/10.1016/j.ecolecon.2026.109262",
+      "source_name": "Ecological Economics",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy",
+        "just_transition"
+      ],
+      "one_line_cs": "Studie zkoumá, jak různé skupiny populace (venkovské versus městské) vnímají spravedlnost uhlíkových daní v dopravě.",
+      "final_score": 9.6697,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "0931af1f3b09",
+      "title": "2030 and beyond: Benchmarks for the energy transition and clean electrification",
+      "title_cs": "2030 a dále: měřítka pro energetickou transformaci a čistou elektrifikaci",
+      "url": "https://www.e3g.org/news/2030-and-beyond-benchmarks-for-the-energy-transition-and-clean-electrification/?utm_source=rss&utm_medium=rss&utm_campaign=2030-and-beyond-benchmarks-for-the-energy-transition-and-clean-electrification",
+      "source_name": "E3G",
+      "source_type": "think_tank",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-10-09T11:18:15Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "forecast"
+      ],
+      "one_line_cs": "Analýza E3G navrhuje klimatické milníky pro cestu v souladu s cílem 1,5 °C v kontextu elektrifikace energetiky do 2030.",
+      "final_score": 8.7665,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 2
+    },
+    {
+      "id": "0160f2a99637",
+      "title": "Climate Change Disinformation| Unraveling Debunked Climate Change Disinformation and Responses to Fact-Checks: Evidence From the United States, Netherlands, and Philippines",
+      "title_cs": "Rozmotávání vyvrácené klimatické desinformace a reakce na fact-checky: důkazy ze Spojených států, Nizozemska a Filipín",
+      "url": "https://doi.org/10.65476/0x9ccw83",
+      "source_name": "International journal of communication",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Kvalitativní analýza toho, jak se klimatická desinformace šíří a jak na ni reagují fact-checky v různých zemích.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
+    },
+    {
+      "id": "28f4cc8e526c",
+      "title": "Who should pay for energy transition costs? Political ideology and distributive fairness in Alberta",
+      "title_cs": "Kdo by měl platit náklady energetické transformace? Politická ideologie a distribuční spravedlnost v Albertě",
+      "url": "https://doi.org/10.1016/j.erss.2026.105010",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-07T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "just_transition",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Studie zkoumá, jak politická ideologie ovlivňuje vnímání spravedlivého rozdělení nákladů a přínosů energetické transformace.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
+    },
+    {
+      "id": "36f49f12b95c",
+      "title": "Double energy vulnerability in Eastern Europe: quantifying and verifying regional sensitivity to the phenomenon",
+      "title_cs": "Dvojitá energetická zranitelnost ve Východní Evropě: kvantifikace a ověřování regionální citlivosti na fenomén",
+      "url": "https://doi.org/10.1016/j.erss.2026.105023",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "study",
+        "just_transition",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Studie kvantifikuje dvojitou energetickou chudobu v 57 regionech 8 východoevropských zemí.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
+    },
+    {
+      "id": "54782b6756f0",
+      "title": "Modelling the decision making in light of the energy transformation in Poland: nuclear plant construction case study",
+      "title_cs": "Modelování rozhodování v kontextu energetické transformace v Polsku: případová studie výstavby jaderné elektrárny",
+      "url": "https://doi.org/10.1080/13511610.2026.2742203",
+      "source_name": "Innovation The European Journal of Social Science Research",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Analýza faktorů ovlivňujících rozhodování o jaderné energetice v Polsku mezi lety 2015 a 2025.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
+    },
+    {
+      "id": "7ab1a4a070b1",
+      "title": "Climate Change Disinformation| Harvesting Denial: Mapping Primary and Secondary Climate Obstruction in Brazil",
+      "title_cs": "Dezinformace o změně klimatu: Mapování primární a sekundární klimatické obstrukce v Brazílii",
+      "url": "https://doi.org/10.65476/pxx29r14",
+      "source_name": "International journal of communication",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Studie mapuje klíčové aktéry, narativy a taktiky šířící klimatickou desinformaci a popírání v Brazílii.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
+    },
+    {
+      "id": "7c387ca6edce",
+      "title": "Parental responses to climate threat: Italian Validation of the Climate Self-Protection Scale and the role of eco-defenses, epistemic stances, and eco-anxiety",
+      "title_cs": "Reakce rodičů na hrozbu změny klimatu: Italská validace Škály sebeochrany před klimatem a role ekoobran, epistemických postojů a ekoanxiety",
+      "url": "https://doi.org/10.1016/j.jenvp.2026.103242",
+      "source_name": "Journal of Environmental Psychology",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "communication",
+        "study"
+      ],
+      "one_line_cs": "Italská studie zkoumá, jak se rodiče psychologicky vyrovnávají s klimatickou hrozbou a její dopad na jejich postoje.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
+    },
+    {
+      "id": "a5c1e12e6661",
+      "title": "The multidimensionality of green transition attitudes and their role in sustainable mobility uptake",
+      "title_cs": "Multidimenzionalita postojů k zelené transformaci a jejich role v přijetí udržitelné mobility",
+      "url": "https://doi.org/10.1080/15568318.2026.2742954",
+      "source_name": "International Journal of Sustainable Transportation",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-09T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Studie z Itálie zkoumá, jaké faktory ovlivňují přijetí udržitelné mobility v kontextu zelené transformace.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "aedd74bd4d63",
+      "title": "The unequal flight: Policy design and public support for carbon taxation of air travel",
+      "title_cs": "Nerovné cestování: Návrh politiky a veřejná podpora uhlíkové daně na leteckou dopravu",
+      "url": "https://doi.org/10.1016/j.erss.2026.104994",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Experiment v Dánsku zkoumá, jak návrh politiky a osobní charakteristiky ovlivňují veřejnou podporu uhlíkové daně na leteckou dopravu.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "b180842cfc92",
+      "title": "Climate Change Disinformation| Climate Change Disinformation—Introduction",
+      "title_cs": "Dezinformace o klimatu - Úvod",
+      "url": "https://doi.org/10.65476/j7edsj59",
+      "source_name": "International journal of communication",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Speciální sekce zkoumá dezinformace o klimatu, zejména jak se změnila z popírání vědy na argumenty proti klimatické politice.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
+    },
+    {
+      "id": "5f5d30d1ca12",
+      "title": "Global trends in climate change litigation: 2026 snapshot – translations",
+      "title_cs": "Globální trendy v klimatické litigaci: snímek 2026 – překlady",
+      "url": "https://www.lse.ac.uk/granthaminstitute/publication/global-trends-in-climate-change-litigation-2026-snapshot-translations/",
+      "source_name": "Grantham Institute (LSE) – publikace",
+      "source_type": "research",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-10-06T10:57:31Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Grantham Institute publikuje přehledy klimatické litigace v roce 2026 v několika jazycích.",
+      "final_score": 7.7763,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "2532b6d1035a",
+      "title": "Climate Change Disinformation| Climate Denialism as a Discursive Dynamic: Truth (and Politics) Beyond Facts",
+      "title_cs": "Klimatický skepticismus jako diskurzivní dynamika: Pravda (a politika) mimo fakta",
+      "url": "https://doi.org/10.65476/gq3wv186",
+      "source_name": "International journal of communication",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Kritická diskurzivní analýza strategií klimatických popíračů a jejich konfrontace s frameworky pro boj proti dezinformacím.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
+    },
+    {
+      "id": "38b0195ab3cd",
+      "title": "Can Beauty Save the World? A Multimethod Analysis of Regulatory Focus Appeals in Climate Change Advertising",
+      "title_cs": "Může krása zachránit svět? Víceúrovňová analýza apelů na regulační fokus v klimatické reklamě",
+      "url": "https://doi.org/10.1002/bse.71633",
+      "source_name": "Business Strategy and the Environment",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "communication",
+        "study"
+      ],
+      "one_line_cs": "Experimentální studie o účinnosti různých strategií klimatické reklamy na změnu postojů konzumentů a jejich angažovanosti.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "7966504b3cb4",
+      "title": "Framing nature‐based solutions in Norwegian public media: A critical discourse analysis of public narratives",
+      "title_cs": "Rámování přírodních řešení v norských veřejných médiích: kritická diskurzivní analýza veřejných narativů",
+      "url": "https://doi.org/10.1002/pan3.70446",
+      "source_name": "People and Nature",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Analýza toho, jak norská média konstruují narativy kolem přírodních řešení a jaké hlasy jsou zesíleny.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "eb6b1c9bd1aa",
+      "title": "Does solar interest extend to battery storage? Understanding shared and distinct motivators of adoption among German households",
+      "title_cs": "Rozšiřuje se zájem o solární energii také na bateriové úložiště? Pochopení sdílených a odlišných motivů adopce u německých domácností",
+      "url": "https://doi.org/10.1016/j.erss.2026.104996",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Studie v Německu zkoumá, proč si domácnosti pořizují bateriové úložiště ke slunečním panelům a jaké jsou jejich motivace.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "f0809b500e9d",
+      "title": "Techno-optimistic scientists take fewer climate actions",
+      "title_cs": "Techno-optimističtí vědci dělají méně kroků na ochranu klimatu",
+      "url": "https://doi.org/10.1088/1748-9326/aea4c7",
+      "source_name": "Environmental Research Letters",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-07T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "communication"
+      ],
+      "one_line_cs": "Výzkum ukazuje, že vědci s nadměrnou vírou v technologické řešení klimatické krize přijímají méně osobních opatření na ochranu klimatu.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1
+    },
+    {
+      "id": "f98a058a9976",
+      "title": "The boundaries of global concern: How socioeconomic context shapes the link between global consciousness and environmental attitudes",
+      "title_cs": "Hranice globálního zájmu: Jak socioekonomický kontext formuje spojení mezi globálním vědomím a postoji k životnímu prostředí",
+      "url": "https://doi.org/10.1111/pops.70199",
+      "source_name": "Political Psychology",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-10T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "study"
+      ],
+      "one_line_cs": "Studie zkoumá, jak globální vědomí člověka souvisí s postojem k životnímu prostředí a jak to ovlivňuje socioekonomický kontext.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
+    },
+    {
+      "id": "515ea227de7c",
+      "title": "Investigating the key drivers of carbon-free energy production: New evidence from EU countries",
+      "title_cs": "Zkoumání klíčových faktorů výroby energie bez uhlíku: Nový důkaz ze zemí EU",
+      "url": "https://doi.org/10.1007/s43937-026-00144-5",
+      "source_name": "Discover Energy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Empirická studie identifikující faktory ovlivňující produkci bezemisní energie v zemích EU pro lepší navrhování politik.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "6d48c80c8ed9",
+      "title": "Social and labour policies can unlock the climate deadlock",
+      "title_cs": "Sociální a pracovní politiky mohou rozluštit klimatickou patovou situaci",
+      "url": "https://doi.org/10.1080/09535314.2026.2733549",
+      "source_name": "Economic Systems Research",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "just_transition",
+        "study"
+      ],
+      "one_line_cs": "Rámec modelování simuluje, jak strukturální změny v sociální a pracovní politice mohou zlepšit ambice zemí v oblasti snižování emisí.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "6f94701ef3c5",
+      "title": "Challenges in the decarbonization of the UK electrical power system by 2030: A techno-economic analysis of current and alternative policies",
+      "title_cs": "Výzvy v dekarbonizaci britského elektroenergetického systému do roku 2030: Techno-ekonomická analýza současné a alternativní politiky",
+      "url": "https://doi.org/10.1016/j.enpol.2026.115633",
+      "source_name": "Energy Policy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-06T13:40:42Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "energy_markets",
+        "forecast",
+        "study"
+      ],
+      "one_line_cs": "Techno-ekonomická analýza možností britské dekarbonizace energetiky do roku 2030 a posouzení politik.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0
+    },
+    {
+      "id": "8097b1a46227",
+      "title": "Market Readiness for Advanced Aviation and Shipping Fuels in Europe",
+      "title_cs": "",
+      "url": "https://doi.org/10.5071/34theubce2026-2bo.6.4",
+      "source_name": "ETA Florence",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-07T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "study",
+        "energy_markets",
+        "technology"
+      ],
+      "one_line_cs": "Studie mapuje připravenost trhu na pokročilá paliva v letectví a námořní dopravě v pěti evropských zemích.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "87e914e9b33e",
+      "title": "From gigawatts to critical mineral demands for EU solar and wind",
+      "title_cs": "Od gigawattů k poptávce po kritických minerálech pro EU solární a větrnou energii",
+      "url": "https://doi.org/10.1038/s41560-026-02147-x",
+      "source_name": "Nature Energy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "study",
+        "energy_markets",
+        "technology"
+      ],
+      "one_line_cs": "Analýza kritických minerálů potřebných pro rozvoj solární a větrné energetiky v EU.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "b18be57dad67",
+      "title": "REScoops acting as intermediaries, influencing the scaling of energy communities; a multi-case analysis of five pilots in Europe",
+      "title_cs": "REScoopy jako zprostředkovatelé ovlivňující rozsah energetických komunit: vícepřípadová analýza pěti pilotních projektů v Evropě",
+      "url": "https://doi.org/10.1016/j.erss.2026.104995",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-10-07T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "energy_markets",
+        "study"
+      ],
+      "one_line_cs": "Studie zkoumá, jak mohou obnovitelné energetické družstva podporovat rozšíření energetických komunit v Evropě.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "c91f3f669aee",
+      "title": "The politics of baselines: A political feasibility framework for energy and climate scenarios",
+      "title_cs": "Politika základen: Rámec politické proveditelnosti pro scénáře energetiky a klimatu",
+      "url": "https://doi.org/10.1016/j.erss.2026.104981",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "forecast",
+        "study",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Metodologický výzkum zavádějící rámec pro zhodnocení politické proveditelnosti energetických a klimatických scénářů před jejich kvantifikací.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0
+    },
+    {
+      "id": "f36b45ed917a",
+      "title": "Geopolitical fragmentation and the green energy transition: systemic reconfiguration across energy and critical metal markets",
+      "title_cs": "Geopolitická fragmentace a zelená energetická transformace: systémická rekonfigurace na trzích energie a kritických kovů",
+      "url": "https://doi.org/10.1016/j.gloenvcha.2026.103241",
+      "source_name": "Global Environmental Change",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "energy_markets",
+        "study"
+      ],
+      "one_line_cs": "Studie zkoumá, jak geopolitické riziko ovlivňuje chování trhů energie a kritických surovin pro transformaci.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0
+    },
+    {
+      "id": "fc734d3fd5f4",
+      "title": "Green acceleration, uneven sectoral change: Green industrial policy mixes and China's transition to electric mobility (2000−2022)",
+      "title_cs": "Zelené zrychlení, nerovnoměrná sektorální změna: Směsi zelené průmyslové politiky a čínský přechod k elektromobilitě (2000–2022)",
+      "url": "https://doi.org/10.1016/j.erss.2026.104991",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "technology",
+        "study"
+      ],
+      "one_line_cs": "Longitudinální studie jak se vyvíjely čínské politiky v prvku elektromobility a jejich dopady na průmyslový systém.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1
+    },
+    {
+      "id": "1483e2b4baa2",
+      "title": "Climate Change Disinformation| Seeking the Truth Among Dead Crops: Carbon Footprint Victimhood, Platformed Conspiracism, and Climate Countermovement in Turkey",
+      "title_cs": "Dezinformace o klimatických změnách: Hledání pravdy mezi vyschlými plodinami: oběťství uhlíkové stopy, platformovaný konspiracionismus a klimatické protimaximálí v Turecku",
+      "url": "https://doi.org/10.65476/r93vp061",
+      "source_name": "International journal of communication",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Analýza mapuje dezinformační sítě a popírání klimatu v turecké sociální sféře po ratifikaci Pařížské dohody.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -2
+    },
+    {
+      "id": "1ca15c5f88e6",
+      "title": "A socio-technical analysis of the natural hydrogen hype: Network dynamics and institutional expectation governance",
+      "title_cs": "Sociálně-technická analýza humbuku kolem přírodního vodíku: dynamika sítě a řízení institucionálních očekávání",
+      "url": "https://doi.org/10.1016/j.erss.2026.104997",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-10T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "study",
+        "technology",
+        "communication"
+      ],
+      "one_line_cs": "Analýza, jak propagační jazyk v научных a institucích dokumentech formuje očekávání ohledně přírodního vodíku.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
+    },
+    {
+      "id": "3c6811a304bf",
+      "title": "How information format, climate attitudes, and trust shape consumer response to food carbon emission information",
+      "title_cs": "Jak formát informace, postoje ke klimatu a důvěra ovlivňují chování spotřebitele vůči informacím o uhlíkových emisích potravin",
+      "url": "https://doi.org/10.1016/j.foodqual.2026.106137",
+      "source_name": "Food Quality and Preference",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "communication"
+      ],
+      "one_line_cs": "Experiment zkoumá, jak různé způsoby prezentace údajů o emisích z potravin ovlivňují rozhodnutí spotřebitelů o jídelníčku.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
+    },
+    {
+      "id": "55ed06f4a761",
+      "title": "Communication Strategies and Effects of Public Policy Advocacy on Social Media Platforms: A Mixed-Methods Analysis of Framing, Engagement, and Policy Influence",
+      "title_cs": "Komunikační strategie a účinky veřejné politiky na sociálních sítích: smíšená metoda analýzy rámování, zapojení a vlivu na politiku",
+      "url": "https://doi.org/10.63808/pcm.v2i4.413",
+      "source_name": "Perspectives of Communication&Media",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Studie analyzuje, jak se v sociálních médiích používá rámování k prosazování veřejné politiky a jaký má vliv na občanské chování.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0
+    },
+    {
+      "id": "91b356e10c07",
+      "title": "State‐Initiated Climate Intermediaries Shaping Climate Governance–Needed Facilitators of Dialogue for Societal Transition to Net Zero?",
+      "title_cs": "Státem iniciované klimatické prostředníky formující klimatické řízení – Nezbytní facilitátoři dialogu pro společenský přechod na netu nula?",
+      "url": "https://doi.org/10.1002/eet.70153",
+      "source_name": "Environmental Policy and Governance",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "public_attitudes",
+        "communication"
+      ],
+      "one_line_cs": "Studium role státem podporovaných zprostředkovatelských organizací v usnadňování klimatické politiky a dialog mezi aktéry.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "976ec7d4404d",
+      "title": "From participation to decision-making in energy infrastructure siting: A framework for operationalizing public influence with a case study of nuclear waste in Canada",
+      "title_cs": "Od účasti k rozhodování v umístění energetické infrastruktury: Rámec pro operacionalizaci veřejného vlivu s případovou studií jaderného odpadu v Kanadě",
+      "url": "https://doi.org/10.1016/j.erss.2026.105000",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-08T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "communication",
+        "energy_markets"
+      ],
+      "one_line_cs": "Studie o tom, jak institucionální procesy přeměňují veřejnou participaci v rozhodovací vliv při výstavbě energetické infrastruktury.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    },
+    {
+      "id": "b30e602142be",
+      "title": "Food and climate change in the media: a case study of the international coverage of the Dubai COP in 2023",
+      "title_cs": "Potraviny a změna klimatu v médiích: případová studie mezinárodního pokrytí Dubajské COP 2023",
+      "url": "https://doi.org/10.1007/s10584-026-04308-z",
+      "source_name": "Climatic Change",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-10-05T08:36:58Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "study"
+      ],
+      "one_line_cs": "Analýza toho, jak mainstreamová média prezentovala témata potravinových systémů na klimatické konferenci COP28.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1
+    }
+  ],
+  "usage": {
+    "calls": 15,
+    "input_tokens": 131552,
+    "output_tokens": 60820,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.523521,
+    "by_model": {
+      "claude-haiku-4-5-20251001": {
+        "calls": 13.0,
+        "input_tokens": 84228.0,
+        "output_tokens": 52711.0,
+        "cost_usd": 0.347783
+      },
+      "claude-sonnet-5-5": {
+        "calls": 2.0,
+        "input_tokens": 47324.0,
+        "output_tokens": 8109.0,
+        "cost_usd": 0.175738
+      }
+    }
+  },
+  "validation_log": []
+}
