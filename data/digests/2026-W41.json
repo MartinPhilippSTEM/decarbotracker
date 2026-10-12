@@ -1,0 +1,63 @@
+{
+  "week": "2026-W41",
+  "generated_at": "2026-10-12T06:06:22.898448Z",
+  "model": "claude-sonnet-5-5",
+  "headline_cs": "Čeští voliči v referendech odmítli větrné elektrárny, zatímco EU schválila strop cen povolenek ETS 2.",
+  "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w41/",
+  "findings": [
+    {
+      "item_id": "a6e065ff3caa",
+      "geo": "CZ",
+      "title_cs": "Horní Benešov v referendu odmítl větrné elektrárny",
+      "text_cs": "Obyvatelé Horního Benešova na Bruntálsku v referendu odmítli stavbu větrných elektráren. Referendum je platné a závazné, takže výstavbu v obci prakticky blokuje. Jde o přímý projev místních postojů k větrné energetice v ČR.</p>",
+      "title": "Obyvatelé Horního Benešova na Bruntálsku odmítli stavbu větrných elektráren",
+      "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/obyvatele-horniho-benesova-na-bruntalsku-odmitli-stavbu-vetrnych-elektraren",
+      "source_name": "Ekolist"
+    },
+    {
+      "item_id": "f306a2a26df1",
+      "geo": "CZ",
+      "title_cs": "Pět středočeských obcí řeklo větrníkům ne",
+      "text_cs": "V Kačici, Petrovicích, Petroupimi, Teplýšovicích a Soběhrdech lidé v referendech odmítli větrné elektrárny i akcelerační zóny. Referenda jsou platná a závazná. Pět hlasování souběžně s komunálními volbami ukazuje vzorec odmítání v jednom kraji a dotýká se i akceleračních zón pro obnovitelné zdroje.",
+      "title": "Lidé z pěti středočeských obcí odmítli v referendech stavbu větrných elektráren",
+      "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/lide-z-peti-stredoceskych-obci-odmitli-v-referendech-stavbu-vetrnych-elektraren",
+      "source_name": "Ekolist"
+    },
+    {
+      "item_id": "e37cd858a0e2",
+      "geo": "GLOBAL",
+      "title_cs": "Prostorová perspektiva na vnímání spravedlnosti zvýšení daní na paliva související se změnou klimatu",
+      "text_cs": "Studie zkoumá, jak místo bydliště, důvěra v politiky či užívání auta souvisí s vnímanou spravedlností zvýšení daní z paliv. Konkrétní čísla výtah neuvádí.",
+      "title": "Spatial perspective on perceived fairness of climate-related fuel tax increases",
+      "url": "https://doi.org/10.1016/j.ecolecon.2026.109262",
+      "source_name": "Ecological Economics"
+    }
+  ],
+  "x_thread": [
+    "🧵 Čeští voliči v referendech při komunálních volbách odmítli větrné elektrárny. Zároveň EU schválila cenový strop u ETS 2. Co z toho plyne pro debatu o dekarbonizaci? Vlákno k týdnu 41.",
+    "Podle Ekolistu obyvatelé Horního Benešova na Bruntálsku v referendu odmítli větrné elektrárny. Referendum je platné a závazné, takže výstavbu v obci prakticky blokuje.",
+    "Ekolist také uvádí, že lidé z Kačice, Petrovic, Petroupimi, Teplýšovic a Soběhrd odmítli větrníky i akcelerační zóny. Referenda jsou platná a závazná.",
+    "Členské státy EU podle Ekolistu schválily strop 45 eur za tunu CO2 u ETS 2, tedy povolenek na dopravu a vytápění budov. Po jeho dosažení se uvolňují povolenky z rezervy tržní stability.",
+    "Celý týdenní přehled o dekarbonizaci a postojích veřejnosti najdete tady: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w41/ #klima #energetika"
+  ],
+  "notes": [
+    "doplněno zjištění ze světa"
+  ],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 4894,
+    "output_tokens": 960,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.019388,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 1.0,
+        "input_tokens": 4894.0,
+        "output_tokens": 960.0,
+        "cost_usd": 0.019388
+      }
+    }
+  },
+  "sent_at": "2026-10-12T06:06:23.151826Z"
+}
