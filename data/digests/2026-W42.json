@@ -1,0 +1,61 @@
+{
+  "week": "2026-W42",
+  "generated_at": "2026-10-19T04:49:00.448074Z",
+  "model": "claude-sonnet-5-5",
+  "headline_cs": "České referenda o větrnících skončila drtivou porážkou a vyvolala debatu o komunikaci, zatímco nové studie ukazují, jak politika formuje postoje ke klimatu.",
+  "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w42/",
+  "findings": [
+    {
+      "item_id": "f0a63a65cc30",
+      "geo": "CZ",
+      "title_cs": "Větrníky v referendech: uspělo jen 1 z 21",
+      "text_cs": "Z 21 referend o výstavbě větrných elektráren jen jedno výstavbu podpořilo, a to těsně. Lidé z oboru za příčiny označují dezinformace, akcelerační zóny a komunikaci vlády (jde o jejich názor). Je to první velký test místní podpory větrné energie v ČR a výsledek ovlivní plány obnovitelných zdrojů i způsob komunikace.\"}",
+      "title": "Co stojí za porážkou větrníků v referendech? Dezinformace, akcelerační zóny, ale i (ne)komunikace vlády",
+      "url": "https://oenergetice.cz/obnovitelne-zdroje/co-stoji-za-porazkou-vetrniku-v-referendech-dezinformace-akceleracni-zony-ale-i-nekomunikace-vlady",
+      "source_name": "oEnergetice"
+    },
+    {
+      "item_id": "2be6a0badc6c",
+      "geo": "CZ",
+      "title_cs": "Veřejnost může mluvit do SMR v Temelíně",
+      "text_cs": "Ministerstvo životního prostředí zveřejnilo 9. 10. 2026 dokumentaci EIA k záměru nového jaderného zdroje SMR v Temelíně. Písemné vyjádření lze zaslat do 30 dnů od zveřejnění na úřední desce Jihočeského kraje. Lidé tak mohou ovlivnit posuzování tohoto zdroje.",
+      "title": "MŽP zveřejnilo dokumentaci EIA k záměru „Nový jaderný zdroj SMR v lokalitě Temelín“ k připomínkám veřejnosti",
+      "url": "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/mzp-zverejnilo-dokumentaci-eia-k-zameru-novy-jaderny-zdroj-smr-v-lokalite-temelin-k-pripominkam",
+      "source_name": "Ministerstvo životního prostředí"
+    },
+    {
+      "item_id": "04a93909f502",
+      "geo": "GLOBAL",
+      "title_cs": "Politika ovlivňuje klima víc než počasí",
+      "text_cs": "Studie v Nature Climate Change na vzorku N = 1 451 v USA ukázala, že Demokraté věnovali emisím víc pozornosti a volili klimaticky příznivěji než Republikáni. Rozdíl nezmírnila ani objektivní zkušenost s extrémním počasím. Politické přesvědčení tedy určuje klimatické chování víc než počasí.",
+      "title": "Political affiliation impacts climate attention and choice beyond extreme weather exposure",
+      "url": "https://doi.org/10.1038/s41558-026-02765-z",
+      "source_name": "Nature Climate Change"
+    }
+  ],
+  "x_thread": [
+    "🧵 Co tento týden přinesly analýzy a průzkumy o dekarbonizaci? České referenda o větrnících skončila drtivou porážkou a vyvolala debatu o komunikaci, zatímco nové studie ukazují, jak politika formuje postoje ke klimatu.",
+    "1/ Větrníky v referendech: uspělo jen 1 z 21: Z 21 referend o výstavbě větrných elektráren jen jedno výstavbu podpořilo, a to těsně. Lidé z oboru za příčiny označují dezinformace, akcelerační zóny a komunikaci vlády (jde o jejich názor). Je to první velký test místní podpory…",
+    "2/ Veřejnost může mluvit do SMR v Temelíně: Ministerstvo životního prostředí zveřejnilo 9. 10. 2026 dokumentaci EIA k záměru nového jaderného zdroje SMR v Temelíně. Písemné vyjádření lze zaslat do 30 dnů od zveřejnění na úřední desce Jihočeského kraje. Lidé tak mohou ovlivnit…",
+    "3/ Politika ovlivňuje klima víc než počasí: Studie v Nature Climate Change na vzorku N = 1 451 v USA ukázala, že Demokraté věnovali emisím víc pozornosti a volili klimaticky příznivěji než Republikáni. Rozdíl nezmírnila ani objektivní zkušenost s extrémním počasím. Politické…",
+    "Celý týdenní přehled se SWOT a zdroji: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w42/ #klima #energetika"
+  ],
+  "notes": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 5093,
+    "output_tokens": 611,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.016296,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 1.0,
+        "input_tokens": 5093.0,
+        "output_tokens": 611.0,
+        "cost_usd": 0.016296
+      }
+    }
+  },
+  "sent_at": "2026-10-19T04:49:00.704931Z"
+}
