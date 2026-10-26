@@ -118,6 +118,44 @@ exact:
   - co2
   - smr
 
+# Širší sada jen pro sekci „Co psala česká média“: zachytí i běžný a skeptický jazyk
+# („zelené šílenství“, „ceny energií“, „topení“…). Nerelevantní články pak vyřadí AI.
+media_extra_stems:
+  # „zelen“ samotné chytá i Zelenského → jen tvary přídavného jména
+  - zelena
+  - zelene
+  - zeleny
+  - zelenych
+  - zelenou
+  - zelenym
+  - zeleni
+  - green
+  - energi
+  - elektrin
+  - elektrar
+  - plyn
+  - topen
+  - vytapen
+  # „teplo“ vynecháno: chytalo předpovědi počasí („teploty“); teplárenství pokrývá „teplarn“
+  - benzin
+  - naft
+  - pohonn hmot
+  - emisn
+  - sucho
+  - povod
+  - vedr
+  - horko
+  - extremn pocasi
+  - aktivist
+  - posledni generac
+  - brusel
+  - fialov
+  - ekolog
+  - ekoterorist
+  - zakaz spalovac
+  - spalovac motor
+  - elektroaut
+
 # Kategorie pro heuristické skórování (dry-run a záloha, když LLM není k dispozici).
 categories:
   public_attitudes: [postoj, verejn mineni, pruzkum, public opinion, attitude, survey, poll, acceptance, akceptac, podpor verejnosti, public support]

@@ -13,6 +13,10 @@
 <a href="{{ it.url }}" target="_blank" rel="noopener" class="item-link">{{ it.title }}</a>{% if it.title_cs %} <span class="title-cs">({{ it.title_cs }})</span>{% endif %}
 {%- endmacro %}
 
+{% macro media_evidence(ids, arts) -%}
+<span class="evidence">{% for i in ids %}{% set a = arts.get(i) %}{% if a %}<a href="{{ a.url }}" target="_blank" rel="noopener" title="{{ a.title }} (otevře článek v nové záložce)">{{ a.outlet }}&nbsp;↗</a>{% if not loop.last %}, {% endif %}{% endif %}{% endfor %}</span>
+{%- endmacro %}
+
 {% macro evidence(ids, items) -%}
 <span class="evidence">{% for i in ids %}{% set it = items.get(i) %}{% if it %}<a href="{{ it.url }}" target="_blank" rel="noopener" title="{{ it.title }} (otevře zdroj v nové záložce)">{{ it.source_name }}&nbsp;↗</a>{% if not loop.last %}, {% endif %}{% endif %}{% endfor %}</span>
 {%- endmacro %}

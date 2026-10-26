@@ -1,0 +1,46 @@
+name: media-collect
+
+# Každou hodinu stáhne RSS feedy českých médií a nové články uloží do větve media-collect
+# (feedy velkých portálů pokrývají jen poslední 2–4 hodiny). Bez AI, zdarma.
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: media-store
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          ref: media-collect
+          path: media-store
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Sběr článků
+        env:
+          DECARBO_MEDIA_DIR: media-store/data/media
+          DECARBO_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: python -m decarbotracker collect-media
+      - name: Uložení
+        working-directory: media-store
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/media/
+          git diff --staged --quiet && exit 0
+          git commit -q -m "média: sběr $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase -q || { git rebase --abort; git pull -q --no-rebase -X ours; }
+          git push -q

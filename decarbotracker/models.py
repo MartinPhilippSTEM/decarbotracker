@@ -57,6 +57,10 @@ class Source(BaseModel):
     protected: bool | None = None
     # vlastní limit položek na běh (např. Eurostat publikuje stovky aktualizací denně)
     max_items: int | None = None
+    # sekce „Co psala česká média“: zdroj se sbírá každou hodinu a analyzuje se celý (bez ohledu na rotaci)
+    media_monitor: bool = False
+    # jen pro mediální sekci, ne do hlavního výběru zjištění (velké zpravodajské portály)
+    media_only: bool = False
     homepage: str = ""
     scrape: ScrapeConfig | None = None
 
@@ -264,6 +268,85 @@ class SentimentSummary(BaseModel):
     most_negative_id: str | None = None
 
 
+MediaTopic = Literal[
+    "ceny_energii", "obnovitelne_zdroje", "jadro", "uhli", "teplo_a_budovy", "ets2_a_povolenky",
+    "klimaticka_politika", "pocasi_a_adaptace", "doprava", "energeticka_bezpecnost", "veda_o_klimatu", "jine",
+]
+MediaFrame = Literal[
+    "naklady_a_zatez", "ekonomicka_prilezitost", "energeticka_bezpecnost", "zdravi_a_zivotni_prostredi",
+    "spravedlnost_a_socialni_dopady", "technologie_a_inovace", "politicky_konflikt", "skepse_a_odmitani",
+    "odpovednost_a_moralka", "neutralni_informovani",
+]
+MediaGenre = Literal["zprava", "komentar", "rozhovor", "analyza", "jine"]
+
+
+class MediaClass(BaseModel):
+    """Klasifikace jednoho článku (levný model; všechna pole povinná kvůli velikosti gramatiky)."""
+
+    item_id: str
+    relevant: bool = Field(description="článek je skutečně o energetice, klimatu nebo dekarbonizaci")
+    topic: MediaTopic
+    frame: MediaFrame
+    genre: MediaGenre
+    tone: int = Field(description="vyznění vůči dekarbonizaci: -2 výrazně kritické … 0 neutrální … +2 výrazně podporující")
+
+
+class MediaClassBatch(BaseModel):
+    items: list[MediaClass]
+
+
+class MediaTheme(BaseModel):
+    title_cs: str
+    text_cs: str
+    evidence_item_ids: list[str]
+
+
+class MediaDraft(BaseModel):
+    """Komentář k mediálnímu obrazu týdne (silnější model, nad čísly spočítanými kódem)."""
+
+    headline_cs: str
+    summary_cs: str
+    themes: list[MediaTheme]
+    framing_cs: str
+    outlets_cs: str
+    notable: list[MediaTheme]
+
+
+class MediaArticleRef(BaseModel):
+    id: str
+    title: str
+    url: str
+    outlet: str
+    published_at: datetime | None = None
+    topic: str
+    frame: str
+    genre: str
+    tone: int
+
+
+class MediaOutletStat(BaseModel):
+    outlet: str
+    collected: int  # všech článků zachycených za týden
+    relevant: int   # z toho k energetice/klimatu
+
+
+class MediaReport(BaseModel):
+    """Sekce „Co psala česká média“ – čísla počítá kód, text model."""
+
+    n_collected: int
+    n_candidates: int
+    n_relevant: int
+    collection_since: datetime | None = None
+    outlets: list[MediaOutletStat] = Field(default_factory=list)
+    topics: dict[str, int] = Field(default_factory=dict)
+    frames: dict[str, int] = Field(default_factory=dict)
+    genres: dict[str, int] = Field(default_factory=dict)
+    tone_index: int = 0
+    draft: MediaDraft | None = None
+    articles: list[MediaArticleRef] = Field(default_factory=list)
+    notes: list[str] = Field(default_factory=list)
+
+
 class UsageInfo(BaseModel):
     calls: int = 0
     input_tokens: int = 0
@@ -295,6 +378,7 @@ class WeeklyReport(BaseModel):
     watchlist_cs: list[WatchItem] = Field(default_factory=list)
     opportunities_cs: list[Opportunity] = Field(default_factory=list)
     sentiment: SentimentSummary | None = None
+    media: MediaReport | None = None
     data_gaps_cs: list[str] = Field(default_factory=list)
     items: list[ReportItemRef] = Field(default_factory=list)
     usage: UsageInfo = Field(default_factory=UsageInfo)

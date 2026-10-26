@@ -55,7 +55,8 @@ def active_sources(state: dict[str, Any] | None = None) -> list[Source]:
     """Zdroje ke stažení: povolené, bez pozastavených, rezervy jen pokud jsou aktivované."""
     state = state if state is not None else load_state()
     return [s for s in load_sources()
-            if s.enabled and s.id not in state["paused"] and (not s.reserve or s.id in state["activated"])]
+            if s.enabled and not s.media_only and s.id not in state["paused"]
+            and (not s.reserve or s.id in state["activated"])]
 
 
 def record_week(state: dict[str, Any], week: str, windowed: list[Item], report: WeeklyReport,

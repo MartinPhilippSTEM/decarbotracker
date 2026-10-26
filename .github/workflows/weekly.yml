@@ -65,6 +65,13 @@ jobs:
           PY
           cat "$GITHUB_OUTPUT"
 
+      # úložiště hodinového sběru českých médií (sekce „Co psala česká média“)
+      - uses: actions/checkout@v7
+        if: steps.done.outputs.skip != 'true'
+        with:
+          ref: media-collect
+          path: media-store
+
       - uses: actions/setup-python@v7
         if: steps.done.outputs.skip != 'true'
         with:
@@ -97,6 +104,7 @@ jobs:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
           DECARBO_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          DECARBO_MEDIA_DIR: media-store/data/media
           WEEK_INPUT: ${{ inputs.week }}
         run: |
           ARGS="--no-deploy"
@@ -120,6 +128,16 @@ jobs:
           git diff --staged --quiet || git commit -m "data: týden ${WEEK} [skip ci]"
           git pull --rebase
           git push
+          # poslední sběr médií z týdenního běhu → úložiště media-collect
+          cd media-store
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/media/
+          if ! git diff --staged --quiet; then
+            git commit -q -m "média: sběr při týdenním běhu ${WEEK}"
+            git pull --rebase -q || { git rebase --abort; git pull -q --no-rebase -X ours; }
+            git push -q
+          fi
 
       - name: Sestavení webu
         if: steps.done.outputs.skip != 'true'

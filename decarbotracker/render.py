@@ -15,6 +15,7 @@ from jinja2 import Environment, FileSystemLoader, StrictUndefined, select_autoes
 from markupsafe import Markup, escape
 from pydantic import ValidationError
 
+from decarbotracker import media as media_mod
 from decarbotracker.config import CODE_ROOT, Settings, load_sources, normalize_base_url, project_root
 from decarbotracker.models import WeeklyReport
 from decarbotracker.sources import STATUS_LABELS, load_health
@@ -132,6 +133,10 @@ def make_env(base_url: str, settings: Settings) -> Environment:
         topic_labels=TOPIC_LABELS,
         status_labels=STATUS_LABELS,
         now=datetime.now(UTC),
+        media_topic_labels=media_mod.TOPIC_LABELS,
+        media_frame_labels=media_mod.FRAME_LABELS,
+        media_genre_labels=media_mod.GENRE_LABELS,
+        media_articles=lambda m: {a.id: a for a in m.articles},
     )
     env.filters["date_cs"] = date_cs
     env.filters["rich"] = rich

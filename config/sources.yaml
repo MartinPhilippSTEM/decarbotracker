@@ -247,6 +247,7 @@ sources:
     topic_filter: true
     weight: 0.8
     enabled: true
+    media_monitor: true
     notes: ""
 
   - id: irozhlas-veda
@@ -259,6 +260,7 @@ sources:
     topic_filter: true
     weight: 0.9
     enabled: true
+    media_monitor: true
     notes: ""
 
   - id: ct24-veda
@@ -271,6 +273,7 @@ sources:
     topic_filter: true
     weight: 0.9
     enabled: true
+    media_monitor: true
     notes: ""
 
   - id: respekt
@@ -283,6 +286,7 @@ sources:
     topic_filter: true
     weight: 0.9
     enabled: true
+    media_monitor: true
     notes: ""
 
   - id: hn-byznys
@@ -295,6 +299,7 @@ sources:
     topic_filter: true
     weight: 0.8
     enabled: true
+    media_monitor: true
     notes: ""
 
   - id: e15
@@ -307,6 +312,7 @@ sources:
     topic_filter: true
     weight: 0.8
     enabled: true
+    media_monitor: true
     notes: ""
 
   - id: seznam-zpravy
@@ -319,6 +325,7 @@ sources:
     topic_filter: true
     weight: 0.8
     enabled: true
+    media_monitor: true
     notes: ""
 
   - id: sme
@@ -1068,6 +1075,7 @@ sources:
     topic_filter: true
     weight: 0.9
     enabled: true
+    media_monitor: true
     reserve: true
     notes: "Náhrada (zásobník)."
 
@@ -1081,6 +1089,7 @@ sources:
     topic_filter: true
     weight: 0.9
     enabled: true
+    media_monitor: true
     reserve: true
     notes: "Náhrada (zásobník)."
 
@@ -1107,6 +1116,7 @@ sources:
     topic_filter: true
     weight: 0.8
     enabled: true
+    media_monitor: true
     reserve: true
     notes: "Náhrada (zásobník)."
 
@@ -1120,6 +1130,7 @@ sources:
     topic_filter: true
     weight: 0.7
     enabled: true
+    media_monitor: true
     reserve: true
     notes: "Náhrada (zásobník); jiný názorový pól než většina zdrojů."
 
@@ -1148,3 +1159,216 @@ sources:
     enabled: true
     reserve: true
     notes: "Náhrada (zásobník)."
+
+  # ======================================================================= ČESKÁ MÉDIA – JEN PRO SEKCI „CO PSALA ČESKÁ MÉDIA“
+  # Sbírají se každou hodinu (feedy velkých portálů pokrývají jen 2–4 h). Do hlavního výběru zjištění nevstupují.
+  # Echo24, Euro.cz a Právo veřejný RSS nemají (ověřeno 26. 10. 2026).
+  - id: novinky
+    name: Novinky.cz
+    type: rss
+    url: "https://www.novinky.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: idnes
+    name: iDNES.cz – zpravodaj
+    type: rss
+    url: "https://servis.idnes.cz/rss.aspx?c=zpravodaj"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: idnes-ekonomika
+    name: iDNES.cz – ekonomika
+    type: rss
+    url: "https://servis.idnes.cz/rss.aspx?c=ekonomikah"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: aktualne
+    name: Aktuálně.cz
+    type: rss
+    url: "https://zpravy.aktualne.cz/rss/"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: aktualne-ekonomika
+    name: Aktuálně.cz – ekonomika
+    type: rss
+    url: "https://zpravy.aktualne.cz/rss/ekonomika/"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: lidovky
+    name: Lidovky.cz
+    type: rss
+    url: "https://servis.lidovky.cz/rss.aspx?c=ln_domov"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: denik-cz
+    name: Deník.cz
+    type: rss
+    url: "https://www.denik.cz/rss/zpravy.html"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: "Regionální deníky."
+
+  - id: cnn-prima
+    name: CNN Prima News
+    type: rss
+    url: "https://cnn.iprima.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: irozhlas
+    name: iROZHLAS – všechny zprávy
+    type: rss
+    url: "https://www.irozhlas.cz/rss/irozhlas"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: ct24
+    name: ČT24 – všechny zprávy
+    type: rss
+    url: "https://ct24.ceskatelevize.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: ct24-ekonomika
+    name: ČT24 – ekonomika
+    type: rss
+    url: "https://ct24.ceskatelevize.cz/rss/ekonomika"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: hn
+    name: Hospodářské noviny
+    type: rss
+    url: "https://hn.cz/?m=rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: forum24
+    name: FORUM 24
+    type: rss
+    url: "https://www.forum24.cz/feed"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: ""
+
+  - id: blesk
+    name: Blesk.cz
+    type: rss
+    url: "https://www.blesk.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: "Bulvár – důležitý pro obraz u širší veřejnosti."
+
+  - id: parlamentni-listy
+    name: Parlamentní listy
+    type: rss
+    url: "https://www.parlamentnilisty.cz/export/rss.aspx"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    media_monitor: true
+    media_only: true
+    notes: "Alternativní/názorové médium – sledováno kvůli úplnosti mediálního obrazu, ne jako zdroj zjištění."

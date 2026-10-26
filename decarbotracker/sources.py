@@ -82,7 +82,8 @@ def fetch_source(source: Source, settings: Settings, client, now: datetime | Non
         log.exception("Neočekávaná chyba zdroje %s", source.id)
         status, detail = "parse_error", f"{type(exc).__name__}: {exc}"[:300]
 
-    cap = source.max_items or settings.fetch.max_items_per_source
+    # sledovaná média: brát vše (pro podíl prostoru, který téma dostává, je potřeba znát všechny články)
+    cap = source.max_items or (5000 if source.media_monitor else settings.fetch.max_items_per_source)
     if source.topic_filter and len(items) > cap:
         # velké feedy (např. Eurostat: stovky aktualizací denně) nejdřív profiltrovat klíčovými slovy, pak oříznout
         from decarbotracker.filter import default_matcher, item_text

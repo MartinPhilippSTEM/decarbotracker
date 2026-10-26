@@ -45,6 +45,15 @@
     {% for k, v in sel.source_type_weights.items() %}<tr><td>{{ source_type_labels.get(k, k) }}</td><td>{{ v }}</td></tr>{% endfor %}
     </tbody>
   </table>
+  <h3 id="media">Co psala česká média</h3>
+  <p>Samostatná obsahová analýza českých zpravodajských webů (Novinky, iDNES, Seznam Zprávy, ČT24, iROZHLAS, Aktuálně, HN, E15, Lidovky, Deník, CNN Prima News, Respekt, Deník N, Blesk, Parlamentní listy a další). Feedy velkých portálů obsahují jen několik posledních hodin zpráv, proto se stahují <strong>každou hodinu</strong> a články se během týdne ukládají. Z každého článku se pracuje jen s titulkem a perexem.</p>
+  <ol>
+    <li>Široký filtr klíčových slov (včetně hovorového a skeptického jazyka) vybere kandidáty – raději víc než méně.</li>
+    <li><strong>Každého kandidáta</strong> (bez vzorkování) AI zařadí: zda je skutečně o energetice/klimatu, hlavní téma, převažující mediální rámec, žánr (zpráva, komentář, rozhovor, analýza) a vyznění vůči dekarbonizaci.</li>
+    <li>Všechna čísla (počty článků podle médií, témat, rámců, žánrů, podíl prostoru, který téma v médiu dostalo) počítá program. AI napíše jen komentář nad těmito čísly a každé tvrzení musí doložit konkrétními články, jinak se vyřadí.</li>
+  </ol>
+  <p>Omezení: kódování AI není validované, RSS nemusí obsahovat vše (např. jen tištěné články nebo některé rubriky) a perex nemusí vystihnout celý text. Výsledky berte jako orientační obraz, ne jako systematickou obsahovou analýzu.</p>
+
   <h3 id="nalada">Přibližná nálada diskurzu (odhad)</h3>
   <p>Při hodnocení relevance AI orientačně odhadne u každé zprávy i její vyznění pro dekarbonizaci ČR a podporu veřejnosti na škále −2 (spíše nepříznivé) až +2 (spíše příznivé); jde o perspektivu „dobrá/špatná zpráva pro transformaci“, ne o tón jazyka. Týdenní odhad je vážený průměr přepočtený na škálu −100 až +100, kde důležitější zprávy (vyšší finální skóre) váží víc. Zahrnuje jen relevantní zprávy ohodnocené AI; při méně než 8 zprávách se nezobrazuje a regiony s méně než 3 zprávami se neodhadují.</p>
   <p>Ukazatel je jen orientační: vzorek zpráv je omezený a závisí na tom, co zdroje v daném týdnu zveřejnily, hodnocení AI může být nepřesné a výkyvy mezi týdny mohou být náhodné. Nejde o měření veřejného mínění.</p>

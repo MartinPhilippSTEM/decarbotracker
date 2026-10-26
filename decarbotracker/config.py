@@ -122,6 +122,14 @@ class OpportunitySettings(BaseModel):
     max_tokens: int = 12000
 
 
+class MediaSettings(BaseModel):
+    enabled: bool = True
+    max_classify: int = 900        # pojistka nákladů: max. kandidátů ke klasifikaci za týden
+    batch_size: int = 40
+    max_articles_for_digest: int = 160
+    min_relevant: int = 5          # pod tímto počtem relevantních článků se komentář nepíše
+
+
 class Settings(BaseModel):
     site: SiteSettings = Field(default_factory=SiteSettings)
     llm: LLMSettings = Field(default_factory=LLMSettings)
@@ -129,6 +137,7 @@ class Settings(BaseModel):
     fetch: FetchSettings = Field(default_factory=FetchSettings)
     academic: AcademicSettings = Field(default_factory=AcademicSettings)
     opportunities: OpportunitySettings = Field(default_factory=OpportunitySettings)
+    media: MediaSettings = Field(default_factory=MediaSettings)
     contact_email: str = ""
     user_agent: str = "decarbotracker/1.0 (+{repo_url}; vyzkumny agregator)"
 

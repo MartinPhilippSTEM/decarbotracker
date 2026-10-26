@@ -212,6 +212,16 @@ small { color: var(--muted); }
 .pick.pos { border-color: var(--s-line); } .pick.neg { border-color: var(--t-line); }
 @media (max-width: 720px) { .mood-row { grid-template-columns: 5rem 1fr; } .mood-rn { grid-column: 2; font-size: .8rem; } }
 
+/* Co psala česká média */
+.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: .9rem; margin: 1rem 0; }
+.hbar { display: grid; grid-template-columns: 11rem 1fr 2.2rem; gap: .5rem; align-items: center; font-size: .85rem; margin: .25rem 0; }
+.hbar-b { height: 10px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.hbar-b span { display: block; height: 100%; background: var(--accent); }
+.hbar-n { text-align: right; color: var(--muted); }
+.media-details { margin: .8rem 0; font-size: .92rem; }
+.media-details summary { cursor: pointer; color: var(--link); }
+@media (max-width: 720px) { .hbar { grid-template-columns: 8rem 1fr 2rem; } }
+
 /* skupiny Příležitostí podle programu */
 .opp-group { margin: .8rem 0 1.2rem; }
 .opp-program { margin: .6rem 0 .3rem; font-size: 1rem; display: flex; align-items: center; gap: .5rem; }

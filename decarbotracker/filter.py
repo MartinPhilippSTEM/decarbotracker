@@ -76,6 +76,16 @@ def default_matcher() -> KeywordMatcher:
     )
 
 
+@lru_cache(maxsize=1)
+def media_matcher() -> KeywordMatcher:
+    """Širší filtr pro mediální analýzu: běžná sada + media_extra_stems (i skeptický a hovorový jazyk)."""
+    kw = load_keywords()
+    stems = (list((kw.get("stems") or {}).get("cs", [])) + list((kw.get("stems") or {}).get("en", []))
+             + list(kw.get("media_extra_stems") or []))
+    return KeywordMatcher(stems=stems, exact=list(kw.get("exact") or []),
+                          exclude=list(kw.get("exclude_title_patterns") or []))
+
+
 def item_text(item: Item) -> str:
     return f"{item.title} {item.summary_raw}"
 

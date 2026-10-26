@@ -25,3 +25,7 @@ Thumbs.db
 
 # náhled e-mailu (notify --no-send)
 email-preview.html
+
+# lokální úložiště sběru médií (v CI je ve větvi media-collect)
+data/media/
+media-store/

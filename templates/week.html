@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import tags, item_date, item_title, evidence %}
+{% from "_macros.html" import tags, item_date, item_title, evidence, media_evidence %}
 {% block title %}{% if is_latest %}{{ site.title }} – týden {{ r.week }}{% else %}Týden {{ r.week }} – {{ site.title }}{% endif %}{% endblock %}
 {% block description %}{{ (r.headline_cs or site.tagline)|plain }}{% endblock %}
 {% block content %}
@@ -197,6 +197,45 @@
     {% for c in pa.communication_recommendations %}<li>{{ c.text_cs|rich }} {{ evidence(c.evidence_item_ids, items) }}</li>{% endfor %}
     </ul>
     {% endif %}
+  </section>
+  {% endif %}
+
+  {% if r.media and r.media.n_relevant %}{% set m = r.media %}{% set marts = media_articles(m) %}
+  <section aria-labelledby="media" class="media-sec">
+    <h2 id="media">Co psala česká média</h2>
+    <p class="meta">{{ m.n_relevant }} článků k energetice a klimatu z {{ m.n_collected }} zachycených ve {{ m.outlets|length }} médiích{% if m.collection_since %} · sběr každou hodinu od {{ m.collection_since|date_cs }}{% endif %}</p>
+    {% if m.draft %}
+    <p class="lead"><strong>{{ m.draft.headline_cs|plain }}</strong></p>
+    <div class="summary"><p>{{ m.draft.summary_cs|rich }}</p></div>
+    <h3>Hlavní témata a příběhy</h3>
+    <ul>{% for t in m.draft.themes %}<li><strong>{{ t.title_cs }}</strong> – {{ t.text_cs|rich }} {{ media_evidence(t.evidence_item_ids, marts) }}</li>{% endfor %}</ul>
+    {% endif %}
+    <div class="media-grid">
+      <div class="mood-card">
+        <p class="mood-k">Témata (počet článků)</p>
+        {% set tmax = m.topics.values()|max %}
+        {% for k, v in m.topics.items() %}<div class="hbar"><span class="hbar-l">{{ media_topic_labels.get(k, k) }}</span><span class="hbar-b"><span style="width: {{ (v / tmax * 100)|round(1) }}%"></span></span><span class="hbar-n">{{ v }}</span></div>{% endfor %}
+      </div>
+      <div class="mood-card">
+        <p class="mood-k">Převažující rámec (jak se o tématu psalo)</p>
+        {% set fmax = m.frames.values()|max %}
+        {% for k, v in m.frames.items() %}<div class="hbar"><span class="hbar-l">{{ media_frame_labels.get(k, k) }}</span><span class="hbar-b"><span style="width: {{ (v / fmax * 100)|round(1) }}%"></span></span><span class="hbar-n">{{ v }}</span></div>{% endfor %}
+      </div>
+    </div>
+    {% if m.draft %}
+    <h3>Rámování</h3><p>{{ m.draft.framing_cs|rich }}</p>
+    {% if m.draft.outlets_cs %}<h3>Rozdíly mezi médii</h3><p>{{ m.draft.outlets_cs|rich }}</p>{% endif %}
+    {% if m.draft.notable %}<h3>Stojí za přečtení</h3><ul>{% for t in m.draft.notable %}<li><strong>{{ t.title_cs }}</strong> – {{ t.text_cs|rich }} {{ media_evidence(t.evidence_item_ids, marts) }}</li>{% endfor %}</ul>{% endif %}
+    {% endif %}
+    <details class="media-details">
+      <summary>Kolik prostoru téma dostalo v jednotlivých médiích · žánry · vyznění</summary>
+      <div class="table-wrap"><table class="weights">
+        <thead><tr><th>Médium</th><th>K tématu</th><th>Všech článků</th><th>Podíl</th></tr></thead>
+        <tbody>{% for o in m.outlets %}{% if o.collected %}<tr><td>{{ o.outlet }}</td><td>{{ o.relevant }}</td><td>{{ o.collected }}</td><td>{{ ((o.relevant / o.collected) * 100)|round(1) }} %</td></tr>{% endif %}{% endfor %}</tbody>
+      </table></div>
+      <p>Žánry: {% for k, v in m.genres.items() %}{{ media_genre_labels.get(k, k) }} {{ v }}{% if not loop.last %} · {% endif %}{% endfor %}. Průměrné vyznění vůči dekarbonizaci ≈ {{ '%+d'|format(m.tone_index) if m.tone_index else '0' }} (−100 až +100, orientační).</p>
+    </details>
+    <p class="hint">Analýza titulků a perexů z RSS feedů ({{ m.outlets|length }} médií, sběr každou hodinu). Relevanci, téma, rámec, žánr a vyznění každého článku určuje AI, čísla počítá program. Jde o orientační obsahovou analýzu – kódování AI není validované a feedy nemusí zachytit vše (např. články jen v tištěném vydání).{% if m.notes %} Poznámky: {{ m.notes|join('; ') }}.{% endif %}</p>
   </section>
   {% endif %}
 

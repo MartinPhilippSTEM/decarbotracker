@@ -210,6 +210,15 @@ def cmd_backfill_sentiment(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_collect_media(args: argparse.Namespace) -> int:
+    """Hodinový sběr článků českých médií (bez AI, zdarma)."""
+    from decarbotracker import media
+
+    added = media.collect(load_settings())
+    print("Nové články podle týdne:", added or "žádné")
+    return 0
+
+
 def cmd_review_sources(args: argparse.Namespace) -> int:
     """Výkon zdrojů a rotace (bez stahování a bez AI)."""
     from decarbotracker import source_review
@@ -236,10 +245,19 @@ def check_schemas(client, settings) -> int:
     """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
     import anthropic
 
-    from decarbotracker.models import DigestDraft, OpportunityBatch, ReportDraft, ScoreBatch
+    from decarbotracker.models import (
+        DigestDraft,
+        MediaClassBatch,
+        MediaDraft,
+        OpportunityBatch,
+        ReportDraft,
+        ScoreBatch,
+    )
 
     status = 0
     for model_id, schema in ((settings.llm.model_scoring, ScoreBatch), (settings.llm.model_synthesis, ReportDraft),
+                             (settings.llm.model_scoring, MediaClassBatch),
+                             (settings.llm.model_synthesis, MediaDraft),
                              (settings.llm.model_synthesis, OpportunityBatch),
                              (settings.llm.model_synthesis, DigestDraft)):
         try:
@@ -344,6 +362,9 @@ def build_parser() -> argparse.ArgumentParser:
     n.add_argument("--regenerate", action="store_true", help="znovu vybrat zjištění (stojí ~0,02 USD)")
     n.add_argument("--force", action="store_true", help="odeslat znovu, i když už jednou odešlo")
     n.set_defaults(func=cmd_notify)
+
+    cm = sub.add_parser("collect-media", help="hodinový sběr článků českých médií (bez AI)")
+    cm.set_defaults(func=cmd_collect_media)
 
     rv = sub.add_parser("review-sources", help="výkon zdrojů a rotace nevýkonných za náhrady (bez stahování)")
     rv.add_argument("--rebuild", action="store_true", help="přepočítat historii z uložených týdnů")

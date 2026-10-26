@@ -103,6 +103,16 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
         log.info("Do syntézy vybráno %d položek (CZ: %d, postoje/komunikace: %d)", len(selected), n_cz, n_att)
         report = synthesize(week, selected, len(candidates), settings, client)
 
+    # Co psala česká média: poslední sběr + analýza všech zachycených článků týdne
+    if settings.media.enabled and collector is None:
+        from decarbotracker import media
+
+        try:
+            media.collect(settings, now)
+            report.media = media.analyze(week, settings, client)
+        except Exception:  # noqa: BLE001 - mediální sekce nesmí shodit přehled
+            log.exception("Mediální analýza selhala")
+
     # Orientační odhad nálady diskurzu (z hodnocení AI; bez dalšího volání)
     report.sentiment = summarize_sentiment(scored, {i.id for i in report.items})
 
