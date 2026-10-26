@@ -210,6 +210,28 @@ def cmd_backfill_sentiment(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_review_sources(args: argparse.Namespace) -> int:
+    """Výkon zdrojů a rotace (bez stahování a bez AI)."""
+    from decarbotracker import source_review
+
+    state = source_review.rebuild_from_history() if args.rebuild else source_review.load_state()
+    if args.rotate:
+        week = args.week or max(state["weeks"], default=None)
+        if week:
+            changes = source_review.rotate(state, week)
+            print("\n".join(changes) or "Žádné změny v rotaci.")
+    source_review.save_state(state)
+    from decarbotracker.config import load_sources
+
+    configured = {s.id for s in load_sources()}  # bez stovek jednotlivých časopisů z akademických API
+    perf = {k: v for k, v in source_review.performance_rows(state).items() if k in configured}
+    print(f"\n{'ZDROJ':<28} VE VÝBĚRU / PUBLIKOVÁNO (poslední 4 týdny)")
+    for sid, row in sorted(perf.items(), key=lambda kv: (kv[1]["selected"], -kv[1]["window"])):
+        flag = " (pozastaven)" if sid in state["paused"] else (" (náhrada)" if sid in state["activated"] else "")
+        print(f"{sid:<28} {row['selected']:>3} / {row['window']:<4}{flag}")
+    return 0
+
+
 def check_schemas(client, settings) -> int:
     """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
     import anthropic
@@ -322,6 +344,12 @@ def build_parser() -> argparse.ArgumentParser:
     n.add_argument("--regenerate", action="store_true", help="znovu vybrat zjištění (stojí ~0,02 USD)")
     n.add_argument("--force", action="store_true", help="odeslat znovu, i když už jednou odešlo")
     n.set_defaults(func=cmd_notify)
+
+    rv = sub.add_parser("review-sources", help="výkon zdrojů a rotace nevýkonných za náhrady (bez stahování)")
+    rv.add_argument("--rebuild", action="store_true", help="přepočítat historii z uložených týdnů")
+    rv.add_argument("--rotate", action="store_true", help="provést rotaci podle posledního týdne")
+    rv.add_argument("--week", help="týden pro rotaci (výchozí: poslední zaznamenaný)")
+    rv.set_defaults(func=cmd_review_sources)
 
     bs = sub.add_parser("backfill-sentiment", help="doplní odhad nálady k hotovému přehledu (bez stahování)")
     bs.add_argument("--week", required=True, help="týden YYYY-Www")

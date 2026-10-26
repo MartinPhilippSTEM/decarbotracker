@@ -1,0 +1,3052 @@
+{
+  "weeks": {
+    "2026-W39": {
+      "agora": [
+        1,
+        0
+      ],
+      "bnef": [
+        4,
+        1
+      ],
+      "canary-media": [
+        15,
+        0
+      ],
+      "carbon-brief": [
+        6,
+        0
+      ],
+      "clew": [
+        6,
+        0
+      ],
+      "climate-home": [
+        16,
+        0
+      ],
+      "climatexchange": [
+        1,
+        0
+      ],
+      "ct24-veda": [
+        24,
+        0
+      ],
+      "denik-referendum": [
+        2,
+        0
+      ],
+      "dg-clima": [
+        1,
+        1
+      ],
+      "dg-ener": [
+        6,
+        0
+      ],
+      "energy-monitor": [
+        4,
+        0
+      ],
+      "eru": [
+        1,
+        0
+      ],
+      "europeum": [
+        3,
+        1
+      ],
+      "fakta-o-klimatu": [
+        1,
+        1
+      ],
+      "forum-energii": [
+        1,
+        1
+      ],
+      "gem": [
+        1,
+        0
+      ],
+      "grantham-news": [
+        3,
+        2
+      ],
+      "grantham-publications": [
+        1,
+        1
+      ],
+      "grist": [
+        13,
+        0
+      ],
+      "heatmap": [
+        13,
+        0
+      ],
+      "hn-byznys": [
+        32,
+        0
+      ],
+      "hnuti-duha": [
+        3,
+        1
+      ],
+      "incien": [
+        2,
+        0
+      ],
+      "institut2050": [
+        1,
+        1
+      ],
+      "ipsos-global": [
+        11,
+        1
+      ],
+      "journal-advances-in-sciences-and-humanities": [
+        1,
+        0
+      ],
+      "journal-annals-of-the-polish-association-of-agricultural-and-agribusiness-economists": [
+        1,
+        0
+      ],
+      "journal-appetite": [
+        1,
+        0
+      ],
+      "journal-canadian-journal-of-philosophy": [
+        1,
+        0
+      ],
+      "journal-canadian-public-administration": [
+        2,
+        1
+      ],
+      "journal-carbon-balance-and-management": [
+        1,
+        0
+      ],
+      "journal-challenges-in-sustainability": [
+        1,
+        0
+      ],
+      "journal-climate-policy": [
+        2,
+        1
+      ],
+      "journal-climatic-change": [
+        5,
+        0
+      ],
+      "journal-conflict-security-and-development": [
+        1,
+        0
+      ],
+      "journal-dalat-university-journal-of-science": [
+        1,
+        0
+      ],
+      "journal-discover-environment": [
+        1,
+        0
+      ],
+      "journal-energy-conversion-and-management-x": [
+        1,
+        1
+      ],
+      "journal-energy-policy": [
+        3,
+        2
+      ],
+      "journal-energy-reports": [
+        1,
+        1
+      ],
+      "journal-energy-research-social-science": [
+        11,
+        6
+      ],
+      "journal-engineering-research-express": [
+        1,
+        0
+      ],
+      "journal-environmental-and-resource-economics": [
+        1,
+        1
+      ],
+      "journal-environmental-research-letters": [
+        3,
+        1
+      ],
+      "journal-european-politics-and-society": [
+        1,
+        0
+      ],
+      "journal-figshare": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-sustainable-food-systems": [
+        2,
+        0
+      ],
+      "journal-global-environmental-change": [
+        1,
+        0
+      ],
+      "journal-heliyon": [
+        1,
+        0
+      ],
+      "journal-humanities-and-social-sciences-communications": [
+        1,
+        1
+      ],
+      "journal-iiard-international-journal-of-geography-and-environmental-management": [
+        1,
+        0
+      ],
+      "journal-international-journal-for-multidisciplinary-research": [
+        1,
+        1
+      ],
+      "journal-international-journal-of-social-sciences-and-management-research": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-sustainable-and-integrated-studies": [
+        1,
+        0
+      ],
+      "journal-international-review-of-economics-finance": [
+        1,
+        0
+      ],
+      "journal-joule": [
+        1,
+        0
+      ],
+      "journal-journal-for-nature-conservation": [
+        1,
+        0
+      ],
+      "journal-journal-of-public-policy": [
+        1,
+        1
+      ],
+      "journal-journal-of-reproductive-and-infant-psychology": [
+        1,
+        0
+      ],
+      "journal-journal-of-strategic-marketing": [
+        1,
+        0
+      ],
+      "journal-journal-of-the-knowledge-economy": [
+        1,
+        0
+      ],
+      "journal-journal-of-youth-and-adolescence": [
+        1,
+        0
+      ],
+      "journal-jurnal-pengabdian-kesehatan-komunitas": [
+        1,
+        0
+      ],
+      "journal-natural-hazards-and-earth-system-sciences": [
+        1,
+        0
+      ],
+      "journal-nature-climate-change": [
+        2,
+        2
+      ],
+      "journal-npj-urban-sustainability": [
+        1,
+        1
+      ],
+      "journal-plant-science-today": [
+        1,
+        0
+      ],
+      "journal-plos-global-public-health": [
+        1,
+        0
+      ],
+      "journal-pnas": [
+        40,
+        0
+      ],
+      "journal-population-and-environment": [
+        1,
+        1
+      ],
+      "journal-research-journal-of-pure-science-and-technology": [
+        2,
+        0
+      ],
+      "journal-reviews-in-aquaculture": [
+        1,
+        0
+      ],
+      "journal-risk-analysis": [
+        1,
+        0
+      ],
+      "journal-scientific-reports": [
+        1,
+        0
+      ],
+      "journal-scientific-review-engineering-and-environmental-sciences-srees": [
+        1,
+        0
+      ],
+      "journal-sustainability": [
+        1,
+        0
+      ],
+      "journal-sustainability-science-practice-and-policy": [
+        1,
+        1
+      ],
+      "journal-sustainable-energy-research": [
+        1,
+        0
+      ],
+      "journal-sustainable-futures": [
+        1,
+        0
+      ],
+      "journal-teoria-polityki": [
+        1,
+        0
+      ],
+      "journal-the-open-nursing-journal": [
+        1,
+        0
+      ],
+      "journal-the-university-of-ha-il-journal-of-science-uohjs": [
+        1,
+        1
+      ],
+      "journal-transportation-research-interdisciplinary-perspectives": [
+        1,
+        0
+      ],
+      "journal-world-electric-vehicle-journal": [
+        1,
+        0
+      ],
+      "journal-world-journal-of-english-language": [
+        1,
+        1
+      ],
+      "klimatickazmena": [
+        1,
+        1
+      ],
+      "median": [
+        1,
+        0
+      ],
+      "mzp": [
+        5,
+        1
+      ],
+      "nature-climate-change": [
+        5,
+        3
+      ],
+      "nesehnuti": [
+        2,
+        0
+      ],
+      "pew": [
+        16,
+        0
+      ],
+      "politico-eu": [
+        22,
+        0
+      ],
+      "respekt": [
+        30,
+        0
+      ],
+      "rhodium": [
+        2,
+        0
+      ],
+      "rmi": [
+        7,
+        0
+      ],
+      "solarni-asociace": [
+        1,
+        0
+      ]
+    },
+    "2026-W40": {
+      "bankwatch": [
+        1,
+        0
+      ],
+      "bnef": [
+        3,
+        0
+      ],
+      "canary-media": [
+        16,
+        0
+      ],
+      "carbon-brief": [
+        2,
+        0
+      ],
+      "clew": [
+        11,
+        0
+      ],
+      "climate-home": [
+        8,
+        0
+      ],
+      "climate-outreach": [
+        2,
+        1
+      ],
+      "climatexchange": [
+        1,
+        0
+      ],
+      "ct24-veda": [
+        17,
+        0
+      ],
+      "denik-referendum": [
+        10,
+        0
+      ],
+      "dg-clima": [
+        2,
+        1
+      ],
+      "dg-ener": [
+        8,
+        0
+      ],
+      "e15": [
+        40,
+        0
+      ],
+      "e3g": [
+        4,
+        0
+      ],
+      "ekolist": [
+        18,
+        1
+      ],
+      "energy-monitor": [
+        7,
+        0
+      ],
+      "epg": [
+        3,
+        0
+      ],
+      "eru": [
+        2,
+        1
+      ],
+      "euki": [
+        1,
+        0
+      ],
+      "gem": [
+        1,
+        0
+      ],
+      "grantham-news": [
+        2,
+        0
+      ],
+      "grantham-publications": [
+        2,
+        0
+      ],
+      "greenpeace-cz": [
+        2,
+        0
+      ],
+      "grist": [
+        13,
+        0
+      ],
+      "heatmap": [
+        22,
+        0
+      ],
+      "hn-byznys": [
+        58,
+        0
+      ],
+      "hnuti-duha": [
+        2,
+        0
+      ],
+      "inside-climate-news": [
+        10,
+        0
+      ],
+      "ipsos-global": [
+        11,
+        0
+      ],
+      "irozhlas-veda": [
+        20,
+        0
+      ],
+      "journal-": [
+        1,
+        0
+      ],
+      "journal-acta-bioethica": [
+        1,
+        0
+      ],
+      "journal-agregat-jurnal-ekonomi-dan-bisnis": [
+        1,
+        0
+      ],
+      "journal-agricultural-and-food-economics": [
+        1,
+        0
+      ],
+      "journal-analyses-of-social-issues-and-public-policy": [
+        1,
+        1
+      ],
+      "journal-applied-energy": [
+        1,
+        0
+      ],
+      "journal-artificial-intelligence-for-the-earth-systems": [
+        1,
+        0
+      ],
+      "journal-au-gsb-e-journal": [
+        2,
+        0
+      ],
+      "journal-canadian-journal-of-philosophy": [
+        1,
+        0
+      ],
+      "journal-cleaner-and-responsible-consumption": [
+        1,
+        0
+      ],
+      "journal-climate-policy": [
+        1,
+        0
+      ],
+      "journal-climatic-change": [
+        5,
+        2
+      ],
+      "journal-cogent-social-sciences": [
+        1,
+        0
+      ],
+      "journal-computational-urban-science": [
+        1,
+        0
+      ],
+      "journal-computers-in-human-behavior": [
+        1,
+        1
+      ],
+      "journal-contemporary-social-science": [
+        1,
+        0
+      ],
+      "journal-current-natural-sciences-engineering": [
+        1,
+        0
+      ],
+      "journal-discover-applied-sciences": [
+        1,
+        0
+      ],
+      "journal-discover-environment": [
+        2,
+        2
+      ],
+      "journal-discover-sustainability": [
+        1,
+        0
+      ],
+      "journal-earth-s-future": [
+        1,
+        0
+      ],
+      "journal-earth-system-dynamics": [
+        1,
+        1
+      ],
+      "journal-ecohydrology-hydrobiology": [
+        1,
+        0
+      ],
+      "journal-economics-and-business-review-the-poznan-university-of-economics-review": [
+        1,
+        0
+      ],
+      "journal-electoral-studies": [
+        1,
+        1
+      ],
+      "journal-energy": [
+        1,
+        0
+      ],
+      "journal-energy-policy": [
+        12,
+        2
+      ],
+      "journal-energy-reports": [
+        1,
+        0
+      ],
+      "journal-energy-research-social-science": [
+        7,
+        6
+      ],
+      "journal-environment-and-behavior": [
+        1,
+        0
+      ],
+      "journal-environment-systems-decisions": [
+        1,
+        0
+      ],
+      "journal-environmental-policy-and-governance": [
+        1,
+        1
+      ],
+      "journal-environmental-politics": [
+        3,
+        2
+      ],
+      "journal-environmental-research-letters": [
+        1,
+        1
+      ],
+      "journal-environmental-science-policy": [
+        1,
+        1
+      ],
+      "journal-equivalent-jurnal-ilmiah-sosial-teknik": [
+        1,
+        0
+      ],
+      "journal-european-journal-of-political-research": [
+        1,
+        1
+      ],
+      "journal-european-societies": [
+        1,
+        0
+      ],
+      "journal-f1000research": [
+        1,
+        0
+      ],
+      "journal-fenerbahce-universitesi-sagl-k-bilimleri-dergisi": [
+        1,
+        0
+      ],
+      "journal-figshare": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-conservation-science": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-environmental-science": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-nutrition": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-public-health": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-sustainable-food-systems": [
+        1,
+        0
+      ],
+      "journal-fuel": [
+        1,
+        0
+      ],
+      "journal-global-environmental-change": [
+        2,
+        1
+      ],
+      "journal-gospodarka-surowcami-mineralnymi-mineral-resources-management": [
+        1,
+        0
+      ],
+      "journal-groundwater-for-sustainable-development": [
+        1,
+        0
+      ],
+      "journal-humanities-and-social-sciences-communications": [
+        1,
+        0
+      ],
+      "journal-iiard-international-journal-of-geography-and-environmental-management": [
+        1,
+        0
+      ],
+      "journal-infection-control-and-hospital-epidemiology": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-applied-science-and-mathematical-theory": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-energy-studies": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-environment-and-climate-change": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-greenhouse-gas-control": [
+        1,
+        1
+      ],
+      "journal-international-journal-of-sustainability-and-risk-control": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-sustainable-development-world-ecology": [
+        1,
+        1
+      ],
+      "journal-joule": [
+        2,
+        0
+      ],
+      "journal-journal-for-nature-conservation": [
+        1,
+        0
+      ],
+      "journal-journal-of-asian-energy-studies": [
+        1,
+        0
+      ],
+      "journal-journal-of-big-history": [
+        1,
+        0
+      ],
+      "journal-journal-of-biological-education": [
+        1,
+        0
+      ],
+      "journal-journal-of-business-and-african-economy": [
+        1,
+        0
+      ],
+      "journal-journal-of-co2-utilization": [
+        1,
+        0
+      ],
+      "journal-journal-of-construction-engineering-and-management": [
+        1,
+        0
+      ],
+      "journal-journal-of-disaster-research": [
+        1,
+        0
+      ],
+      "journal-journal-of-educational-sciences-qatar-university": [
+        1,
+        0
+      ],
+      "journal-journal-of-flood-risk-management": [
+        1,
+        0
+      ],
+      "journal-journal-of-global-social-transformation": [
+        1,
+        0
+      ],
+      "journal-journal-of-multicultural-discourses": [
+        1,
+        0
+      ],
+      "journal-journal-of-public-policy": [
+        1,
+        1
+      ],
+      "journal-journal-of-scientific-research-and-reports": [
+        1,
+        0
+      ],
+      "journal-journal-of-the-royal-society-of-new-zealand": [
+        1,
+        0
+      ],
+      "journal-journalism-practice": [
+        1,
+        1
+      ],
+      "journal-jukej-jurnal-kesehatan-jompa": [
+        1,
+        0
+      ],
+      "journal-jurnal-civics-media-kajian-kewarganegaraan": [
+        1,
+        0
+      ],
+      "journal-jurnal-ilmiah-detubuya": [
+        1,
+        0
+      ],
+      "journal-jurnal-media-dan-komunikasi-indonesia": [
+        1,
+        0
+      ],
+      "journal-land-degradation-and-development": [
+        1,
+        0
+      ],
+      "journal-modeling-earth-systems-and-environment": [
+        1,
+        0
+      ],
+      "journal-nature-cities": [
+        1,
+        0
+      ],
+      "journal-nature-environment-and-pollution-technology": [
+        1,
+        0
+      ],
+      "journal-nauka-kultura-obshestvo": [
+        1,
+        0
+      ],
+      "journal-new-energy-exploitation-and-application": [
+        1,
+        0
+      ],
+      "journal-npj-environmental-social-sciences": [
+        1,
+        1
+      ],
+      "journal-npj-sustainable-mobility-and-transport": [
+        1,
+        0
+      ],
+      "journal-pazarlama-ve-pazarlama-arast-rmalar-dergisi": [
+        1,
+        0
+      ],
+      "journal-people-and-nature": [
+        1,
+        0
+      ],
+      "journal-plos-climate": [
+        1,
+        1
+      ],
+      "journal-pnas": [
+        93,
+        1
+      ],
+      "journal-policy-design-and-practice": [
+        1,
+        0
+      ],
+      "journal-qubahan-academic-journal": [
+        1,
+        0
+      ],
+      "journal-renewable-and-sustainable-energy-reviews": [
+        1,
+        0
+      ],
+      "journal-renewable-energy-focus": [
+        1,
+        0
+      ],
+      "journal-research-journal-of-mass-communication-and-information-technology": [
+        1,
+        0
+      ],
+      "journal-revista-internacional-em-lingua-portuguesa": [
+        1,
+        0
+      ],
+      "journal-sociological-quarterly": [
+        1,
+        0
+      ],
+      "journal-solar-energy-and-sustainable-development": [
+        1,
+        0
+      ],
+      "journal-sustainable-development": [
+        1,
+        0
+      ],
+      "journal-sustainable-futures": [
+        1,
+        0
+      ],
+      "journal-sustainable-horizons": [
+        1,
+        0
+      ],
+      "journal-the-british-journal-for-the-history-of-science": [
+        1,
+        0
+      ],
+      "journal-the-foundation-review": [
+        1,
+        0
+      ],
+      "journal-the-international-journal-of-critical-cultural-studies": [
+        1,
+        0
+      ],
+      "journal-the-journal-of-almaty-technological-university": [
+        1,
+        0
+      ],
+      "journal-the-journal-of-climate-change-and-health": [
+        1,
+        0
+      ],
+      "journal-the-journal-of-population-and-sustainability": [
+        1,
+        0
+      ],
+      "journal-the-paradigm-chronicle-journal-of-academic-inquiry-and-critical-thought": [
+        1,
+        0
+      ],
+      "journal-theory-and-practice-in-language-studies": [
+        1,
+        0
+      ],
+      "journal-transnational-environmental-law": [
+        1,
+        0
+      ],
+      "journal-transportation-research-part-a-policy-and-practice": [
+        1,
+        0
+      ],
+      "journal-uluslararas-ekonomi-ve-yenilik-dergisi": [
+        1,
+        0
+      ],
+      "journal-unc-libraries": [
+        1,
+        0
+      ],
+      "journal-wellcome-open-research": [
+        1,
+        0
+      ],
+      "journal-west-science-nature-and-technology": [
+        1,
+        0
+      ],
+      "journal-world-journal-of-innovation-and-modern-technology": [
+        2,
+        0
+      ],
+      "journal-zenodo-cern-european-organization-for-nuclear-research": [
+        5,
+        1
+      ],
+      "journal-zeszyty-studenckie-nasze-studia": [
+        1,
+        1
+      ],
+      "klimaticka-koalice": [
+        1,
+        0
+      ],
+      "more-in-common-uk": [
+        1,
+        0
+      ],
+      "mzp": [
+        7,
+        1
+      ],
+      "nature-climate-change": [
+        1,
+        1
+      ],
+      "obnovitelne": [
+        3,
+        0
+      ],
+      "oenergetice": [
+        7,
+        2
+      ],
+      "pew": [
+        25,
+        0
+      ],
+      "politico-eu": [
+        19,
+        0
+      ],
+      "respekt": [
+        57,
+        0
+      ],
+      "rhodium": [
+        1,
+        0
+      ],
+      "rmi": [
+        8,
+        0
+      ],
+      "seznam-zpravy": [
+        5,
+        0
+      ],
+      "solarni-asociace": [
+        1,
+        0
+      ],
+      "tacr": [
+        4,
+        0
+      ],
+      "yale-ycc": [
+        1,
+        0
+      ]
+    },
+    "2026-W41": {
+      "agora": [
+        1,
+        0
+      ],
+      "bnef": [
+        1,
+        0
+      ],
+      "canary-media": [
+        13,
+        0
+      ],
+      "carbon-brief": [
+        1,
+        0
+      ],
+      "clew": [
+        12,
+        0
+      ],
+      "climate-home": [
+        9,
+        0
+      ],
+      "climatexchange": [
+        1,
+        0
+      ],
+      "ct24-veda": [
+        24,
+        0
+      ],
+      "denik-referendum": [
+        10,
+        0
+      ],
+      "dg-clima": [
+        2,
+        0
+      ],
+      "dg-ener": [
+        4,
+        0
+      ],
+      "e15": [
+        44,
+        0
+      ],
+      "e3g": [
+        7,
+        1
+      ],
+      "ecf": [
+        1,
+        0
+      ],
+      "eea": [
+        1,
+        0
+      ],
+      "ekolist": [
+        19,
+        3
+      ],
+      "energy-monitor": [
+        10,
+        0
+      ],
+      "eru": [
+        5,
+        0
+      ],
+      "euki": [
+        4,
+        0
+      ],
+      "forum-energii": [
+        1,
+        0
+      ],
+      "gem": [
+        1,
+        0
+      ],
+      "grantham-news": [
+        1,
+        0
+      ],
+      "grantham-publications": [
+        2,
+        1
+      ],
+      "greenpeace-cz": [
+        1,
+        0
+      ],
+      "grist": [
+        16,
+        0
+      ],
+      "heatmap": [
+        20,
+        0
+      ],
+      "hn-byznys": [
+        60,
+        0
+      ],
+      "hnuti-duha": [
+        1,
+        0
+      ],
+      "incien": [
+        2,
+        0
+      ],
+      "inside-climate-news": [
+        10,
+        0
+      ],
+      "ipsos-cz": [
+        2,
+        0
+      ],
+      "ipsos-global": [
+        8,
+        0
+      ],
+      "irozhlas-veda": [
+        20,
+        0
+      ],
+      "journal-abuad-journal-of-engineering-research-and-development-ajerd": [
+        1,
+        0
+      ],
+      "journal-academia-green-energy": [
+        2,
+        0
+      ],
+      "journal-african-journal-of-climate-and-resilience": [
+        1,
+        0
+      ],
+      "journal-african-journal-of-marine-science": [
+        1,
+        0
+      ],
+      "journal-akdeniz-spor-bilimleri-dergisi": [
+        1,
+        0
+      ],
+      "journal-american-journal-of-qualitative-research": [
+        1,
+        0
+      ],
+      "journal-annals-of-arid-zone": [
+        1,
+        0
+      ],
+      "journal-applied-and-computational-engineering": [
+        1,
+        0
+      ],
+      "journal-british-journal-of-sociology-of-education": [
+        1,
+        0
+      ],
+      "journal-business-strategy-and-the-environment": [
+        2,
+        1
+      ],
+      "journal-canadian-public-administration": [
+        1,
+        0
+      ],
+      "journal-climate-policy": [
+        1,
+        0
+      ],
+      "journal-climatic-change": [
+        9,
+        1
+      ],
+      "journal-cogent-business-management": [
+        2,
+        0
+      ],
+      "journal-conservation": [
+        1,
+        0
+      ],
+      "journal-critical-insights-in-aquaculture": [
+        1,
+        0
+      ],
+      "journal-critical-policy-studies": [
+        1,
+        0
+      ],
+      "journal-discover-energy": [
+        1,
+        1
+      ],
+      "journal-discover-food": [
+        1,
+        0
+      ],
+      "journal-discover-sustainability": [
+        1,
+        0
+      ],
+      "journal-eceee-summer-study-proceedings": [
+        1,
+        0
+      ],
+      "journal-ecological-economics": [
+        2,
+        1
+      ],
+      "journal-economic-systems-research": [
+        1,
+        1
+      ],
+      "journal-educational-review": [
+        1,
+        0
+      ],
+      "journal-energies": [
+        1,
+        0
+      ],
+      "journal-energy-360": [
+        1,
+        0
+      ],
+      "journal-energy-nexus": [
+        1,
+        0
+      ],
+      "journal-energy-policy": [
+        16,
+        1
+      ],
+      "journal-energy-reports": [
+        1,
+        0
+      ],
+      "journal-energy-research-social-science": [
+        24,
+        9
+      ],
+      "journal-environment-and-history": [
+        1,
+        0
+      ],
+      "journal-environmental-challenges": [
+        1,
+        0
+      ],
+      "journal-environmental-communication": [
+        1,
+        0
+      ],
+      "journal-environmental-education-research": [
+        1,
+        0
+      ],
+      "journal-environmental-policy-and-governance": [
+        1,
+        1
+      ],
+      "journal-environmental-research-letters": [
+        2,
+        1
+      ],
+      "journal-eta-florence": [
+        2,
+        1
+      ],
+      "journal-european-planning-studies": [
+        1,
+        0
+      ],
+      "journal-federal-university-gusau-faculty-of-education-journal": [
+        1,
+        0
+      ],
+      "journal-food-quality-and-preference": [
+        1,
+        1
+      ],
+      "journal-frontiers-in-climate": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-education": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-energy-research": [
+        2,
+        0
+      ],
+      "journal-frontiers-in-environmental-economics": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-public-health": [
+        2,
+        0
+      ],
+      "journal-frontiers-in-sustainable-food-systems": [
+        5,
+        0
+      ],
+      "journal-fuel": [
+        1,
+        0
+      ],
+      "journal-geoenergy-science-and-engineering": [
+        1,
+        0
+      ],
+      "journal-geriatrik-bilimler-dergisi": [
+        1,
+        0
+      ],
+      "journal-global-environmental-change": [
+        5,
+        1
+      ],
+      "journal-global-media-and-communication": [
+        1,
+        0
+      ],
+      "journal-humanities-and-social-sciences-communications": [
+        1,
+        0
+      ],
+      "journal-hypertension-research": [
+        1,
+        0
+      ],
+      "journal-iet-smart-energy-systems": [
+        1,
+        0
+      ],
+      "journal-information-and-computer-security": [
+        1,
+        0
+      ],
+      "journal-innovation-the-european-journal-of-social-science-research": [
+        1,
+        1
+      ],
+      "journal-international-journal-of-agriculture-and-earth-science": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-atharva": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-climate-change-strategies-and-management": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-communication": [
+        5,
+        5
+      ],
+      "journal-international-journal-of-english-language-and-communication-studies": [
+        4,
+        0
+      ],
+      "journal-international-journal-of-environment-and-climate-change": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-sustainable-transportation": [
+        1,
+        1
+      ],
+      "journal-international-research-journal-on-advanced-engineering-hub-irjaeh": [
+        1,
+        0
+      ],
+      "journal-israeli-journal-of-aquaculture-bamidgeh": [
+        1,
+        0
+      ],
+      "journal-joule": [
+        1,
+        0
+      ],
+      "journal-journal-of-advances-in-biology-biotechnology": [
+        1,
+        0
+      ],
+      "journal-journal-of-comparative-policy-analysis-research-and-practice": [
+        1,
+        0
+      ],
+      "journal-journal-of-emerging-trends-in-social-sciences-and-humanities": [
+        1,
+        0
+      ],
+      "journal-journal-of-environmental-psychology": [
+        1,
+        1
+      ],
+      "journal-journal-of-extension": [
+        1,
+        0
+      ],
+      "journal-journal-of-language-and-pop-culture": [
+        1,
+        0
+      ],
+      "journal-journal-of-multidisciplinary-science-mikailalsys": [
+        1,
+        0
+      ],
+      "journal-journal-of-occupational-and-organizational-psychology": [
+        1,
+        0
+      ],
+      "journal-journal-of-public-economics": [
+        1,
+        0
+      ],
+      "journal-journal-of-urban-health": [
+        1,
+        0
+      ],
+      "journal-journalism-and-media": [
+        1,
+        0
+      ],
+      "journal-jurnal-ilmiah-accusi": [
+        1,
+        0
+      ],
+      "journal-jurnal-pembelajaran-bimbingan-dan-pengelolaan-pendidikan": [
+        1,
+        0
+      ],
+      "journal-jurnal-penelitian-pendidikan-ipa": [
+        1,
+        0
+      ],
+      "journal-kent-akademisi": [
+        1,
+        0
+      ],
+      "journal-marine-policy": [
+        1,
+        0
+      ],
+      "journal-medicine-law-society": [
+        1,
+        0
+      ],
+      "journal-nature-energy": [
+        2,
+        1
+      ],
+      "journal-naukovi-zapiski-nacional-nogo-universitetu-ostroz-ka-akademia-seria-filologia": [
+        1,
+        0
+      ],
+      "journal-one-earth": [
+        1,
+        0
+      ],
+      "journal-open-journal-for-anthropological-studies": [
+        1,
+        0
+      ],
+      "journal-pamukkale-university-journal-of-engineering-sciences": [
+        1,
+        0
+      ],
+      "journal-people-and-nature": [
+        1,
+        1
+      ],
+      "journal-perspectives-of-communication-media": [
+        1,
+        1
+      ],
+      "journal-ph-boletin-del-instituto-andaluza-del-patrimonio-historico-ph-ph-boletin-del-instituto-andaluz-del-patrimonio-historico-boletin-informativo-instituto-andaluz-del-patrimonio-historico": [
+        1,
+        0
+      ],
+      "journal-planning-malaysia": [
+        1,
+        0
+      ],
+      "journal-plos-climate": [
+        1,
+        0
+      ],
+      "journal-plos-digital-health": [
+        1,
+        0
+      ],
+      "journal-pnas": [
+        100,
+        0
+      ],
+      "journal-political-communication": [
+        1,
+        0
+      ],
+      "journal-political-psychology": [
+        1,
+        1
+      ],
+      "journal-results-in-engineering": [
+        1,
+        0
+      ],
+      "journal-scientific-reports": [
+        1,
+        0
+      ],
+      "journal-social-science-humanities-and-sustainability-research": [
+        1,
+        0
+      ],
+      "journal-sustainability": [
+        2,
+        0
+      ],
+      "journal-sustainable-development": [
+        3,
+        0
+      ],
+      "journal-sustainable-futures": [
+        1,
+        0
+      ],
+      "journal-theoretical-and-natural-science": [
+        1,
+        0
+      ],
+      "journal-transportation-research-interdisciplinary-perspectives": [
+        1,
+        0
+      ],
+      "journal-urban-climate": [
+        1,
+        0
+      ],
+      "journal-urban-political-ecology": [
+        1,
+        0
+      ],
+      "journal-urbanization-sustainability-and-society": [
+        1,
+        0
+      ],
+      "journal-world": [
+        1,
+        0
+      ],
+      "journal-zenodo-cern-european-organization-for-nuclear-research": [
+        1,
+        0
+      ],
+      "klimatickazmena": [
+        3,
+        1
+      ],
+      "more-in-common-uk": [
+        1,
+        0
+      ],
+      "mzp": [
+        4,
+        0
+      ],
+      "nature-climate-change": [
+        2,
+        0
+      ],
+      "nesehnuti": [
+        1,
+        0
+      ],
+      "obnovitelne": [
+        12,
+        1
+      ],
+      "oenergetice": [
+        8,
+        1
+      ],
+      "pew": [
+        23,
+        0
+      ],
+      "politico-eu": [
+        16,
+        0
+      ],
+      "respekt": [
+        58,
+        0
+      ],
+      "rmi": [
+        5,
+        0
+      ],
+      "seznam-zpravy": [
+        18,
+        0
+      ],
+      "stem": [
+        2,
+        0
+      ],
+      "tacr": [
+        1,
+        0
+      ]
+    },
+    "2026-W42": {
+      "bnef": [
+        2,
+        0
+      ],
+      "canary-media": [
+        12,
+        0
+      ],
+      "carbon-brief": [
+        4,
+        0
+      ],
+      "clew": [
+        11,
+        0
+      ],
+      "climate-home": [
+        10,
+        0
+      ],
+      "climate-outreach": [
+        2,
+        1
+      ],
+      "climatexchange": [
+        1,
+        0
+      ],
+      "ct24-veda": [
+        27,
+        0
+      ],
+      "denik-referendum": [
+        10,
+        0
+      ],
+      "dg-clima": [
+        6,
+        0
+      ],
+      "dg-ener": [
+        7,
+        0
+      ],
+      "e15": [
+        45,
+        0
+      ],
+      "e3g": [
+        4,
+        0
+      ],
+      "eea": [
+        1,
+        0
+      ],
+      "ekolist": [
+        18,
+        0
+      ],
+      "energy-monitor": [
+        10,
+        0
+      ],
+      "eru": [
+        1,
+        0
+      ],
+      "euki": [
+        3,
+        0
+      ],
+      "europeum": [
+        1,
+        0
+      ],
+      "fakta-o-klimatu": [
+        1,
+        1
+      ],
+      "grantham-news": [
+        1,
+        0
+      ],
+      "grantham-publications": [
+        4,
+        0
+      ],
+      "greenpeace-cz": [
+        1,
+        0
+      ],
+      "grist": [
+        16,
+        0
+      ],
+      "heatmap": [
+        18,
+        0
+      ],
+      "hn-byznys": [
+        60,
+        0
+      ],
+      "hnuti-duha": [
+        5,
+        1
+      ],
+      "inside-climate-news": [
+        10,
+        0
+      ],
+      "ipsos-global": [
+        4,
+        1
+      ],
+      "irozhlas-veda": [
+        20,
+        0
+      ],
+      "journal-acta-polytechnica-ctu-proceedings": [
+        1,
+        1
+      ],
+      "journal-advanced-science": [
+        1,
+        0
+      ],
+      "journal-african-journal-of-climate-change-and-resource-sustainability": [
+        1,
+        0
+      ],
+      "journal-ambio": [
+        1,
+        0
+      ],
+      "journal-american-ethnologist": [
+        1,
+        0
+      ],
+      "journal-aminu-kano-academic-scholars-association-multidisciplinary-journal": [
+        1,
+        0
+      ],
+      "journal-anu-open-research-australian-national-university": [
+        2,
+        0
+      ],
+      "journal-artificial-intelligence-for-sustainable-cities": [
+        1,
+        0
+      ],
+      "journal-asian-journal-of-research-in-infectious-diseases": [
+        1,
+        0
+      ],
+      "journal-biological-conservation": [
+        1,
+        0
+      ],
+      "journal-bmc-nursing": [
+        1,
+        0
+      ],
+      "journal-carbon-management": [
+        1,
+        0
+      ],
+      "journal-carbon-neutrality": [
+        1,
+        1
+      ],
+      "journal-carbon-research": [
+        1,
+        0
+      ],
+      "journal-clean-technologies-and-environmental-policy": [
+        1,
+        0
+      ],
+      "journal-climate-policy": [
+        2,
+        1
+      ],
+      "journal-climate-resilience-and-sustainability": [
+        1,
+        0
+      ],
+      "journal-climatic-change": [
+        7,
+        1
+      ],
+      "journal-conservation-biology": [
+        1,
+        0
+      ],
+      "journal-corporate-social-responsibility-and-environmental-management": [
+        1,
+        0
+      ],
+      "journal-east-european-politics": [
+        1,
+        1
+      ],
+      "journal-education-sciences": [
+        1,
+        0
+      ],
+      "journal-energy-environment": [
+        1,
+        0
+      ],
+      "journal-energy-policy": [
+        13,
+        2
+      ],
+      "journal-energy-research-social-science": [
+        16,
+        8
+      ],
+      "journal-environment-development-and-sustainability": [
+        1,
+        0
+      ],
+      "journal-environmental-politics": [
+        2,
+        0
+      ],
+      "journal-environmental-psychology-research": [
+        1,
+        0
+      ],
+      "journal-environmental-research-energy": [
+        1,
+        0
+      ],
+      "journal-environmental-research-water": [
+        1,
+        0
+      ],
+      "journal-european-journal-for-philosophy-of-science": [
+        1,
+        0
+      ],
+      "journal-european-journal-of-education": [
+        1,
+        0
+      ],
+      "journal-figshare": [
+        1,
+        1
+      ],
+      "journal-finance-research-letters": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-environmental-science": [
+        2,
+        0
+      ],
+      "journal-frontiers-in-marine-science": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-medicine": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-psychology": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-public-health": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-sustainable-cities": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-sustainable-tourism": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-water": [
+        1,
+        0
+      ],
+      "journal-geosciences": [
+        1,
+        0
+      ],
+      "journal-global-decarbonisation": [
+        1,
+        0
+      ],
+      "journal-global-environmental-change": [
+        3,
+        0
+      ],
+      "journal-humanities-and-social-sciences-communications": [
+        4,
+        0
+      ],
+      "journal-humanities-science-current-issues": [
+        2,
+        0
+      ],
+      "journal-hydrobiologia": [
+        1,
+        0
+      ],
+      "journal-iconic-research-and-engineering-journals": [
+        1,
+        0
+      ],
+      "journal-idrim-journal": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-educational-innovation": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-engineering-and-modern-technology": [
+        8,
+        0
+      ],
+      "journal-international-journal-of-environment-and-climate-change": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-innovative-science-and-research-technology-ijisrt": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-scientific-research-in-science-and-technology": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-society-reviews": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-tourism-cities": [
+        1,
+        0
+      ],
+      "journal-international-nursing-review": [
+        1,
+        0
+      ],
+      "journal-international-research-in-geographical-and-environmental-education": [
+        1,
+        0
+      ],
+      "journal-international-review-for-spatial-planning-and-sustainable-development": [
+        1,
+        0
+      ],
+      "journal-international-social-research-nexus-isrn": [
+        1,
+        0
+      ],
+      "journal-joule": [
+        4,
+        0
+      ],
+      "journal-journal-of-agricultural-economics-environment-and-social-sciences": [
+        1,
+        0
+      ],
+      "journal-journal-of-baku-engineering-university-economics-and-administration": [
+        1,
+        0
+      ],
+      "journal-journal-of-chemical-health-risks": [
+        1,
+        0
+      ],
+      "journal-journal-of-counselor-leadership-and-advocacy": [
+        1,
+        0
+      ],
+      "journal-journal-of-hospitality-and-tourism-management": [
+        1,
+        0
+      ],
+      "journal-journal-of-humanities-and-social-policy": [
+        1,
+        0
+      ],
+      "journal-journal-of-innovation-economics-management": [
+        1,
+        1
+      ],
+      "journal-journal-of-international-relations-and-development": [
+        1,
+        0
+      ],
+      "journal-journal-of-literature-and-humanities": [
+        1,
+        0
+      ],
+      "journal-journal-of-ocean-and-coastal-economics": [
+        1,
+        0
+      ],
+      "journal-journal-of-public-policy": [
+        1,
+        0
+      ],
+      "journal-journal-of-risk-research": [
+        1,
+        1
+      ],
+      "journal-journal-of-rural-studies": [
+        1,
+        0
+      ],
+      "journal-journal-of-urban-affairs": [
+        1,
+        0
+      ],
+      "journal-journalism-and-media": [
+        1,
+        0
+      ],
+      "journal-knowledge-web-multidisciplinary-international-journal": [
+        1,
+        0
+      ],
+      "journal-loughborough-university-research-repository-loughborough-university": [
+        1,
+        0
+      ],
+      "journal-media-psychology": [
+        1,
+        0
+      ],
+      "journal-nam-perspectives": [
+        1,
+        0
+      ],
+      "journal-natural-resource-modeling": [
+        1,
+        0
+      ],
+      "journal-nature-climate-change": [
+        9,
+        4
+      ],
+      "journal-nature-communications": [
+        2,
+        1
+      ],
+      "journal-new-political-economy": [
+        1,
+        0
+      ],
+      "journal-newcastle-university-eprints-newcastle-univesity": [
+        1,
+        0
+      ],
+      "journal-npj-climate-action": [
+        2,
+        1
+      ],
+      "journal-one-earth": [
+        11,
+        0
+      ],
+      "journal-openalex": [
+        2,
+        0
+      ],
+      "journal-pakistan-journal-of-positive-psychology": [
+        1,
+        0
+      ],
+      "journal-perspectives-on-politics": [
+        1,
+        1
+      ],
+      "journal-plants-people-planet": [
+        1,
+        0
+      ],
+      "journal-plos-one": [
+        1,
+        0
+      ],
+      "journal-pnas": [
+        100,
+        0
+      ],
+      "journal-political-studies-review": [
+        1,
+        1
+      ],
+      "journal-proceedings-of-the-indian-national-science-academy": [
+        1,
+        0
+      ],
+      "journal-psychology-health-medicine": [
+        1,
+        0
+      ],
+      "journal-public-understanding-of-science": [
+        1,
+        0
+      ],
+      "journal-research-and-reviews-in-sustainability": [
+        1,
+        1
+      ],
+      "journal-research-journal-of-mass-communication-and-information-technology": [
+        1,
+        0
+      ],
+      "journal-review-of-policy-research": [
+        1,
+        0
+      ],
+      "journal-scientific-reports": [
+        1,
+        0
+      ],
+      "journal-social-sciences-humanities-open": [
+        1,
+        0
+      ],
+      "journal-technological-forecasting-and-social-change": [
+        1,
+        0
+      ],
+      "journal-the-international-journal-of-life-cycle-assessment": [
+        1,
+        0
+      ],
+      "journal-the-journal-of-environmental-education": [
+        1,
+        1
+      ],
+      "journal-transportation-letters": [
+        1,
+        0
+      ],
+      "journal-transportation-research-part-a-policy-and-practice": [
+        1,
+        0
+      ],
+      "journal-turkish-journal-of-engineering": [
+        1,
+        0
+      ],
+      "journal-turkiye-halk-sagl-g-dergisi": [
+        1,
+        0
+      ],
+      "journal-uluslararas-sosyal-bilimler-ve-egitim-dergisi": [
+        1,
+        0
+      ],
+      "journal-urban-studies": [
+        1,
+        0
+      ],
+      "journal-zenodo-cern-european-organization-for-nuclear-research": [
+        3,
+        0
+      ],
+      "median": [
+        1,
+        0
+      ],
+      "more-in-common-de": [
+        1,
+        0
+      ],
+      "mzp": [
+        7,
+        3
+      ],
+      "nature-climate-change": [
+        6,
+        2
+      ],
+      "nesehnuti": [
+        3,
+        0
+      ],
+      "obnovitelne": [
+        11,
+        0
+      ],
+      "oenergetice": [
+        8,
+        1
+      ],
+      "pew": [
+        25,
+        0
+      ],
+      "politico-eu": [
+        20,
+        0
+      ],
+      "respekt": [
+        59,
+        1
+      ],
+      "rhodium": [
+        2,
+        0
+      ],
+      "rmi": [
+        5,
+        0
+      ],
+      "seznam-zpravy": [
+        25,
+        0
+      ],
+      "tacr": [
+        4,
+        0
+      ],
+      "yale-ycc": [
+        1,
+        1
+      ]
+    },
+    "2026-W43": {
+      "bnef": [
+        4,
+        0
+      ],
+      "canary-media": [
+        14,
+        0
+      ],
+      "carbon-brief": [
+        5,
+        1
+      ],
+      "clew": [
+        10,
+        0
+      ],
+      "climate-home": [
+        10,
+        0
+      ],
+      "climatexchange": [
+        1,
+        0
+      ],
+      "ct24-veda": [
+        23,
+        0
+      ],
+      "denik-referendum": [
+        10,
+        0
+      ],
+      "dg-clima": [
+        1,
+        1
+      ],
+      "dg-ener": [
+        9,
+        0
+      ],
+      "e15": [
+        47,
+        0
+      ],
+      "e3g": [
+        1,
+        0
+      ],
+      "eea": [
+        1,
+        1
+      ],
+      "ekolist": [
+        17,
+        0
+      ],
+      "energy-monitor": [
+        8,
+        0
+      ],
+      "epg": [
+        1,
+        0
+      ],
+      "eru": [
+        1,
+        0
+      ],
+      "europeum": [
+        2,
+        1
+      ],
+      "grantham-news": [
+        4,
+        0
+      ],
+      "grantham-publications": [
+        3,
+        1
+      ],
+      "greenpeace-cz": [
+        2,
+        1
+      ],
+      "grist": [
+        14,
+        0
+      ],
+      "heatmap": [
+        20,
+        0
+      ],
+      "hn-byznys": [
+        60,
+        1
+      ],
+      "hnuti-duha": [
+        5,
+        0
+      ],
+      "incien": [
+        2,
+        0
+      ],
+      "inside-climate-news": [
+        10,
+        0
+      ],
+      "ipsos-global": [
+        10,
+        0
+      ],
+      "irozhlas-veda": [
+        20,
+        0
+      ],
+      "journal-": [
+        1,
+        0
+      ],
+      "journal-acta-medica-alanya": [
+        1,
+        0
+      ],
+      "journal-agricultural-reviews": [
+        1,
+        0
+      ],
+      "journal-akdeniz-spor-bilimleri-dergisi": [
+        1,
+        0
+      ],
+      "journal-alinea-jurnal-bahasa-sastra-dan-pengajarannya": [
+        1,
+        0
+      ],
+      "journal-american-journal-of-environmental-economics": [
+        1,
+        1
+      ],
+      "journal-analyses-of-social-issues-and-public-policy": [
+        1,
+        0
+      ],
+      "journal-animal-frontiers": [
+        1,
+        0
+      ],
+      "journal-animal-production-science": [
+        1,
+        0
+      ],
+      "journal-applied-and-computational-engineering": [
+        1,
+        0
+      ],
+      "journal-applied-geography": [
+        1,
+        0
+      ],
+      "journal-bmj": [
+        1,
+        1
+      ],
+      "journal-british-educational-research-journal": [
+        1,
+        0
+      ],
+      "journal-british-journal-of-management": [
+        1,
+        0
+      ],
+      "journal-built-environment-project-and-asset-management": [
+        1,
+        0
+      ],
+      "journal-bussecon-review-of-social-sciences-2687-2285": [
+        1,
+        0
+      ],
+      "journal-canadian-public-administration": [
+        1,
+        1
+      ],
+      "journal-ceas-aeronautical-journal": [
+        1,
+        0
+      ],
+      "journal-climatic-change": [
+        5,
+        2
+      ],
+      "journal-comillas-repository-comillas-pontifical-university": [
+        1,
+        0
+      ],
+      "journal-communication-and-theater-association-of-minnesota-journal": [
+        1,
+        0
+      ],
+      "journal-contemporary-south-asia": [
+        1,
+        0
+      ],
+      "journal-critical-insights-in-environmental-science-and-technology": [
+        1,
+        0
+      ],
+      "journal-critical-public-health": [
+        1,
+        0
+      ],
+      "journal-digitalcommons-pace-pace-university": [
+        1,
+        0
+      ],
+      "journal-disasters": [
+        1,
+        0
+      ],
+      "journal-discover-energy": [
+        1,
+        0
+      ],
+      "journal-discover-environment": [
+        1,
+        0
+      ],
+      "journal-discover-public-health": [
+        1,
+        0
+      ],
+      "journal-economic-political-weekly": [
+        1,
+        0
+      ],
+      "journal-economics-and-environment": [
+        1,
+        0
+      ],
+      "journal-energies": [
+        1,
+        0
+      ],
+      "journal-energy-policy": [
+        12,
+        2
+      ],
+      "journal-energy-reports": [
+        1,
+        0
+      ],
+      "journal-energy-research-social-science": [
+        7,
+        1
+      ],
+      "journal-energy-science-engineering": [
+        1,
+        0
+      ],
+      "journal-environment-and-behavior": [
+        1,
+        1
+      ],
+      "journal-environmental-economics-and-policy-studies": [
+        1,
+        1
+      ],
+      "journal-environmental-research-health": [
+        1,
+        0
+      ],
+      "journal-environmental-research-letters": [
+        2,
+        2
+      ],
+      "journal-environmental-sustainability": [
+        1,
+        0
+      ],
+      "journal-epra-international-journal-of-multidisciplinary-research-ijmr": [
+        1,
+        0
+      ],
+      "journal-european-journal-of-personality": [
+        1,
+        0
+      ],
+      "journal-evergreen": [
+        1,
+        0
+      ],
+      "journal-f1000research": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-aquaculture": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-bioengineering-and-biotechnology": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-climate": [
+        2,
+        0
+      ],
+      "journal-frontiers-in-energy-research": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-environmental-science": [
+        2,
+        1
+      ],
+      "journal-frontiers-in-humanities-and-social-sciences": [
+        1,
+        0
+      ],
+      "journal-frontiers-in-psychology": [
+        2,
+        0
+      ],
+      "journal-frontiers-in-sustainable-cities": [
+        1,
+        1
+      ],
+      "journal-frontiers-in-sustainable-food-systems": [
+        1,
+        0
+      ],
+      "journal-global-environmental-change": [
+        2,
+        0
+      ],
+      "journal-healthcare": [
+        1,
+        0
+      ],
+      "journal-humanities-and-social-sciences-communications": [
+        1,
+        0
+      ],
+      "journal-igee-proceedings-online": [
+        1,
+        0
+      ],
+      "journal-indoor-and-built-environment": [
+        1,
+        0
+      ],
+      "journal-insight-on-africa": [
+        1,
+        0
+      ],
+      "journal-international-business-economics-studies": [
+        1,
+        0
+      ],
+      "journal-international-journal-for-research-in-applied-science-and-engineering-technology": [
+        1,
+        1
+      ],
+      "journal-international-journal-of-accounting-finance-auditing-management-and-economics": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-business-and-management-ijbm": [
+        1,
+        1
+      ],
+      "journal-international-journal-of-economy-energy-and-environment": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-educational-studies-and-policy": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-engineering-and-management-sciences": [
+        1,
+        1
+      ],
+      "journal-international-journal-of-engineering-and-modern-technology": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-finance-economics": [
+        1,
+        1
+      ],
+      "journal-international-journal-of-research-on-multidisciplinary-studies": [
+        1,
+        0
+      ],
+      "journal-international-journal-of-sustainable-development-research": [
+        1,
+        0
+      ],
+      "journal-joule": [
+        5,
+        0
+      ],
+      "journal-journal-of-accounting-literature": [
+        1,
+        0
+      ],
+      "journal-journal-of-aging-studies": [
+        1,
+        0
+      ],
+      "journal-journal-of-documentation": [
+        1,
+        1
+      ],
+      "journal-journal-of-energy-research-and-reviews": [
+        1,
+        0
+      ],
+      "journal-journal-of-environmental-studies-and-sciences": [
+        1,
+        0
+      ],
+      "journal-journal-of-european-public-policy": [
+        1,
+        1
+      ],
+      "journal-journal-of-geodesy": [
+        1,
+        0
+      ],
+      "journal-journal-of-geophysical-research-atmospheres": [
+        1,
+        0
+      ],
+      "journal-journal-of-jurisprudence-international-law-and-contemporary-legal-issues": [
+        1,
+        0
+      ],
+      "journal-journal-of-plant-biochemistry-and-biotechnology": [
+        1,
+        0
+      ],
+      "journal-journal-of-policy-and-planning": [
+        1,
+        0
+      ],
+      "journal-journal-of-the-pan-african-thoracic-society": [
+        1,
+        0
+      ],
+      "journal-journal-of-vocational-education-studies": [
+        1,
+        0
+      ],
+      "journal-journal-of-world-languages": [
+        1,
+        0
+      ],
+      "journal-jurnal-ilmu-komputer-dan-sistem-komputer-terapan-jikstra": [
+        1,
+        0
+      ],
+      "journal-jurnal-locus-penelitian-dan-pengabdian": [
+        1,
+        0
+      ],
+      "journal-kashmir-journal-of-academic-research-and-development": [
+        1,
+        0
+      ],
+      "journal-la-medicina-del-lavoro": [
+        1,
+        0
+      ],
+      "journal-lecture-notes-in-education-psychology-and-public-media": [
+        2,
+        1
+      ],
+      "journal-life": [
+        1,
+        0
+      ],
+      "journal-media-international-australia": [
+        1,
+        0
+      ],
+      "journal-miracle-get-journal": [
+        1,
+        0
+      ],
+      "journal-nature-cities": [
+        1,
+        0
+      ],
+      "journal-nature-energy": [
+        2,
+        1
+      ],
+      "journal-npj-biodiversity": [
+        1,
+        0
+      ],
+      "journal-npj-climate-action": [
+        2,
+        1
+      ],
+      "journal-ocean-science": [
+        1,
+        0
+      ],
+      "journal-perspectives-in-social-sciences": [
+        1,
+        1
+      ],
+      "journal-plant-production-science": [
+        1,
+        0
+      ],
+      "journal-plants-people-planet": [
+        1,
+        0
+      ],
+      "journal-pnas": [
+        100,
+        1
+      ],
+      "journal-political-behavior": [
+        1,
+        0
+      ],
+      "journal-political-psychology": [
+        1,
+        1
+      ],
+      "journal-preparative-biochemistry-biotechnology": [
+        1,
+        0
+      ],
+      "journal-rajshahi-university-law-review": [
+        1,
+        0
+      ],
+      "journal-renewable-and-sustainable-energy-reviews": [
+        1,
+        0
+      ],
+      "journal-revista-ibero-americana-de-humanidades-ciencias-e-educacao": [
+        1,
+        0
+      ],
+      "journal-scientiae-radices": [
+        1,
+        0
+      ],
+      "journal-scientific-reports": [
+        1,
+        0
+      ],
+      "journal-sn-business-economics": [
+        1,
+        1
+      ],
+      "journal-strategic-entrepreneurship-journal": [
+        1,
+        0
+      ],
+      "journal-strategic-management-journal": [
+        1,
+        0
+      ],
+      "journal-studia-anglica-posnaniensia": [
+        1,
+        0
+      ],
+      "journal-sustainable-development": [
+        2,
+        1
+      ],
+      "journal-synthese": [
+        1,
+        0
+      ],
+      "journal-the-eurasia-proceedings-of-science-technology-engineering-and-mathematics": [
+        1,
+        0
+      ],
+      "journal-the-journal-of-climate-change-and-health": [
+        1,
+        0
+      ],
+      "journal-transportation-planning-and-technology": [
+        1,
+        0
+      ],
+      "journal-uluslararas-sosyal-siyasal-ve-mali-arast-rmalar-dergisi": [
+        1,
+        0
+      ],
+      "journal-urban-planning": [
+        1,
+        0
+      ],
+      "journal-water-policy": [
+        1,
+        0
+      ],
+      "journal-youth-and-globalization": [
+        1,
+        1
+      ],
+      "journal-zenodo-cern-european-organization-for-nuclear-research": [
+        5,
+        0
+      ],
+      "klimatickazmena": [
+        1,
+        1
+      ],
+      "median": [
+        1,
+        0
+      ],
+      "mzp": [
+        9,
+        0
+      ],
+      "nature-climate-change": [
+        4,
+        1
+      ],
+      "nesehnuti": [
+        2,
+        0
+      ],
+      "obnovitelne": [
+        11,
+        0
+      ],
+      "oenergetice": [
+        8,
+        2
+      ],
+      "pew": [
+        21,
+        0
+      ],
+      "politico-eu": [
+        16,
+        0
+      ],
+      "respekt": [
+        60,
+        0
+      ],
+      "rmi": [
+        3,
+        0
+      ],
+      "seznam-zpravy": [
+        28,
+        0
+      ],
+      "sme": [
+        1,
+        0
+      ],
+      "stem": [
+        3,
+        0
+      ],
+      "tacr": [
+        2,
+        0
+      ],
+      "yale-ycc": [
+        1,
+        0
+      ]
+    }
+  },
+  "paused": {
+    "e15": {
+      "since": "2026-W43",
+      "until": "2026-W47",
+      "replaced_by": "denik-n"
+    },
+    "seznam-zpravy": {
+      "since": "2026-W43",
+      "until": "2026-W47",
+      "replaced_by": "ekonom"
+    },
+    "ct24-veda": {
+      "since": "2026-W43",
+      "until": "2026-W47",
+      "replaced_by": "enviweb"
+    },
+    "irozhlas-veda": {
+      "since": "2026-W43",
+      "until": "2026-W47",
+      "replaced_by": "info-cz"
+    },
+    "heatmap": {
+      "since": "2026-W43",
+      "until": "2026-W47",
+      "replaced_by": "cleantechnica"
+    }
+  },
+  "activated": {
+    "denik-n": {
+      "since": "2026-W43",
+      "replaces": "e15"
+    },
+    "ekonom": {
+      "since": "2026-W43",
+      "replaces": "seznam-zpravy"
+    },
+    "enviweb": {
+      "since": "2026-W43",
+      "replaces": "ct24-veda"
+    },
+    "info-cz": {
+      "since": "2026-W43",
+      "replaces": "irozhlas-veda"
+    },
+    "cleantechnica": {
+      "since": "2026-W43",
+      "replaces": "heatmap"
+    }
+  },
+  "flagged": {}
+}

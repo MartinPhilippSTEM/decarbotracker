@@ -199,18 +199,46 @@ def score_items(items: list[Item], settings: Settings, client: ClaudeClient | No
 
 
 def select_for_synthesis(scored: list[ScoredItem], sel: SelectionSettings, min_relevance: int = 3) -> list[ScoredItem]:
-    """Top N podle skóre se zajištěním min. zastoupení CZ a postojů/komunikace (pokud existují)."""
+    """Top N podle skóre se zajištěním min. zastoupení CZ a postojů/komunikace (pokud existují)
+    a s pojistkami pestrosti: max. `max_per_source` položek z jednoho zdroje a média max. `max_media_share`."""
     pool = [s for s in scored if s.score.relevance >= min_relevance]
     pool.sort(key=lambda s: (-s.final_score, s.item.id))
     chosen: dict[str, ScoredItem] = {}
-    for s in [x for x in pool if x.score.geo_focus == "CZ"][: sel.min_cz]:
-        chosen[s.item.id] = s
-    for s in [x for x in pool if x.score.is_public_attitudes_or_communication][: sel.min_attitudes]:
-        chosen.setdefault(s.item.id, s)
+    per_source: dict[str, int] = {}
+    media_cap = int(sel.max_items_synthesis * sel.max_media_share)
+
+    def fits(s: ScoredItem) -> bool:
+        if per_source.get(s.item.source_id, 0) >= sel.max_per_source:
+            return False
+        n_media = sum(1 for c in chosen.values() if c.item.source_type == "media")
+        return not (s.item.source_type == "media" and n_media >= media_cap)
+
+    def add(s: ScoredItem) -> None:
+        if s.item.id not in chosen:
+            chosen[s.item.id] = s
+            per_source[s.item.source_id] = per_source.get(s.item.source_id, 0) + 1
+
+    def fill_quota(cond, n: int) -> None:
+        # kvóty (ČR, postoje) mají přednost před pestrostí: nejdřív v rámci limitů, pak i přes ně
+        for respect_caps in (True, False):
+            for x in pool:
+                if sum(1 for c in chosen.values() if cond(c)) >= n:
+                    return
+                if cond(x) and x.item.id not in chosen and (fits(x) or not respect_caps):
+                    add(x)
+
+    fill_quota(lambda x: x.score.geo_focus == "CZ", sel.min_cz)
+    fill_quota(lambda x: x.score.is_public_attitudes_or_communication, sel.min_attitudes)
     for s in pool:
         if len(chosen) >= sel.max_items_synthesis:
             break
-        chosen.setdefault(s.item.id, s)
+        if fits(s):
+            add(s)
+    # když pojistky pestrosti nechají volná místa (málo zdrojů), doplň zbytkem podle skóre
+    for s in pool:
+        if len(chosen) >= sel.max_items_synthesis:
+            break
+        add(s)
     result = list(chosen.values())[: max(sel.max_items_synthesis, sel.min_cz + sel.min_attitudes)]
     # CZ vždy první, pak podle skóre
     result.sort(key=lambda s: (REGION_ORDER.get(s.score.geo_focus, 9) != 0, -s.final_score, s.item.id))

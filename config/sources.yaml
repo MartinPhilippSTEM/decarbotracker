@@ -933,3 +933,218 @@ sources:
     weight: 1.2
     enabled: true
     notes: "RSS 1.0 / RDF."
+
+  # ======================================================================= ANALYTICKÉ ZDROJE (přidáno 26. 10. 2026)
+  - id: carbon-brief-daily
+    name: Carbon Brief – Daily Brief
+    type: rss
+    url: "https://www.carbonbrief.org/daily-brief/feed/"
+    region: GLOBAL
+    source_type: media
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: "Denní analytický přehled klimatického zpravodajství."
+
+  - id: eurostat
+    name: Eurostat – aktualizace statistik
+    type: rss
+    url: "https://ec.europa.eu/eurostat/api/dissemination/catalogue/rss/en/statistics-update.rss"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    max_items: 40
+    notes: "Feed má stovky aktualizací denně – berou se jen datové sady o energii a emisích (klíčová slova). Bloomberg Green veřejný feed nemá (ověřeno 26. 10. 2026)."
+
+  - id: ieefa
+    name: IEEFA – Institute for Energy Economics and Financial Analysis
+    type: rss
+    url: "https://ieefa.org/rss.xml"
+    region: GLOBAL
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: "Finanční a ekonomické analýzy energetické transformace."
+
+  - id: owid
+    name: Our World in Data
+    type: rss
+    url: "https://ourworldindata.org/atom.xml"
+    region: GLOBAL
+    source_type: research
+    language: en
+    topic_filter: true
+    weight: 1.1
+    enabled: true
+    notes: "Datové analýzy; jen články k energii a klimatu (klíčová slova)."
+
+  - id: carbon-tracker
+    name: Carbon Tracker Initiative
+    type: rss
+    url: "https://carbontracker.org/feed/"
+    region: GLOBAL
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: "Finanční rizika a dekarbonizace."
+
+  - id: eeb
+    name: European Environmental Bureau
+    type: rss
+    url: "https://eeb.org/feed/"
+    region: EU
+    source_type: ngo
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: ""
+
+  - id: ecologic
+    name: Ecologic Institute
+    type: rss
+    url: "https://www.ecologic.eu/rss.xml"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: ""
+
+  - id: instrat
+    name: Instrat (PL)
+    type: rss
+    url: "https://instrat.pl/en/feed/"
+    region: EU
+    source_type: think_tank
+    language: en
+    topic_filter: false
+    weight: 1.1
+    enabled: true
+    notes: "Polský think tank – energetika, klima, sociální politika."
+
+  - id: visegrad-insight
+    name: Visegrad Insight
+    type: rss
+    url: "https://visegradinsight.eu/feed/"
+    region: EU
+    source_type: media
+    language: en
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    notes: "Analýzy střední Evropy; jen klima/energie (klíčová slova)."
+
+  - id: glopolis
+    name: Glopolis
+    type: rss
+    url: "https://glopolis.org/feed/"
+    region: CZ
+    source_type: think_tank
+    language: cs
+    topic_filter: true
+    weight: 1.1
+    enabled: true
+    notes: "Český think tank."
+
+  # ======================================================================= ZÁSOBNÍK NÁHRAD (reserve: true)
+  # Stahují se, až když některý zdroj dva týdny po sobě nedodá nic do výběru (rotace, viz Metodika).
+  - id: denik-n
+    name: Deník N
+    type: rss
+    url: "https://denikn.cz/feed/"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    reserve: true
+    notes: "Náhrada (zásobník)."
+
+  - id: ekonom
+    name: Ekonom
+    type: rss
+    url: "https://ekonom.cz/?m=rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    reserve: true
+    notes: "Náhrada (zásobník)."
+
+  - id: enviweb
+    name: Enviweb
+    type: rss
+    url: "https://www.enviweb.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    reserve: true
+    notes: "Náhrada (zásobník)."
+
+  - id: info-cz
+    name: Info.cz
+    type: rss
+    url: "https://www.info.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.8
+    enabled: true
+    reserve: true
+    notes: "Náhrada (zásobník)."
+
+  - id: reflex
+    name: Reflex
+    type: rss
+    url: "https://www.reflex.cz/rss"
+    region: CZ
+    source_type: media
+    language: cs
+    topic_filter: true
+    weight: 0.7
+    enabled: true
+    reserve: true
+    notes: "Náhrada (zásobník); jiný názorový pól než většina zdrojů."
+
+  - id: iness
+    name: INESS (SK)
+    type: rss
+    url: "https://www.iness.sk/feed"
+    region: EU
+    source_type: think_tank
+    language: sk
+    topic_filter: true
+    weight: 0.9
+    enabled: true
+    reserve: true
+    notes: "Náhrada (zásobník); tržně orientovaný think tank – jiný názorový pól."
+
+  - id: cleantechnica
+    name: CleanTechnica
+    type: rss
+    url: "https://cleantechnica.com/feed/"
+    region: US
+    source_type: media
+    language: en
+    topic_filter: true
+    weight: 0.7
+    enabled: true
+    reserve: true
+    notes: "Náhrada (zásobník)."

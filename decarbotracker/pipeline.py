@@ -122,6 +122,18 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
                  u.calls, u.input_tokens, u.output_tokens, u.cache_creation_input_tokens,
                  u.cache_read_input_tokens, u.cost_usd)
 
+    if not dry_run and fetched:
+        # výkon zdrojů (kolik prošlo do výběru) a rotace nevýkonných zdrojů za náhrady ze zásobníku
+        from decarbotracker import source_review
+
+        perf = source_review.load_state()
+        source_review.record_week(perf, week, windowed, report, {i.source_id for i in fetched})
+        changes = source_review.rotate(perf, week)
+        source_review.save_state(perf)
+        if changes:
+            report.validation_log.extend(f"rotace zdrojů: {c}" for c in changes)
+            write_json(week_path(week), report)
+
     if not dry_run:
         seen.mark(windowed, week)
         for item in suppressed:

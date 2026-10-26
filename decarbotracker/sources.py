@@ -82,7 +82,14 @@ def fetch_source(source: Source, settings: Settings, client, now: datetime | Non
         log.exception("Neočekávaná chyba zdroje %s", source.id)
         status, detail = "parse_error", f"{type(exc).__name__}: {exc}"[:300]
 
-    items = items[: settings.fetch.max_items_per_source]
+    cap = source.max_items or settings.fetch.max_items_per_source
+    if source.topic_filter and len(items) > cap:
+        # velké feedy (např. Eurostat: stovky aktualizací denně) nejdřív profiltrovat klíčovými slovy, pak oříznout
+        from decarbotracker.filter import default_matcher, item_text
+
+        matcher = default_matcher()
+        items = [i for i in items if matcher.matches(item_text(i))]
+    items = items[:cap]
     dated = [i.published_at for i in items if i.published_at]
     newest = max(dated) if dated else None
     if status == "ok":
@@ -102,7 +109,11 @@ def fetch_source(source: Source, settings: Settings, client, now: datetime | Non
 
 
 def fetch_all(settings: Settings, sources: list[Source] | None = None, now: datetime | None = None) -> list[FetchResult]:
-    sources = [s for s in (sources if sources is not None else load_sources()) if s.enabled]
+    if sources is None:
+        from decarbotracker.source_review import active_sources
+
+        sources = active_sources()  # bez pozastavených, s aktivovanými náhradami ze zásobníku
+    sources = [s for s in sources if s.enabled]
     cfg = HttpConfig(user_agent=settings.ua, connect_timeout=settings.fetch.connect_timeout,
                      read_timeout=settings.fetch.read_timeout, max_retries=settings.fetch.max_retries)
     results: list[FetchResult] = []

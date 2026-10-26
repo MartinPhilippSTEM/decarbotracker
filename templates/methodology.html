@@ -29,7 +29,7 @@
     <li><strong>Předfiltr:</strong> tematicky čisté zdroje projdou vždy. Obecná média a široké feedy musí obsahovat klíčová slova (česká i anglická, kmeny kvůli skloňování).</li>
     <li><strong>Skórování (levnější model {{ llm.model_scoring }}):</strong> relevance 0–10, témata, geografický fokus a typ obsahu.</li>
     <li><strong>Finální skóre</strong> = relevance × geografická váha × váha typu zdroje × váha zdroje; +{{ (sel.bonus_attitudes * 100)|round|int }} % pro postoje veřejnosti a komunikaci, +{{ (sel.bonus_original_research * 100)|round|int }} % pro originální výzkum a data, −{{ (sel.opinion_penalty * 100)|round|int }} % pro komentáře.</li>
-    <li><strong>Výběr:</strong> max. {{ sel.max_items_synthesis }} položek do syntézy, přičemž se zajistí aspoň {{ sel.min_cz }} položek s fokusem na ČR a {{ sel.min_attitudes }} k postojům a komunikaci (pokud existují).</li>
+    <li><strong>Výběr:</strong> max. {{ sel.max_items_synthesis }} položek do syntézy, přičemž se zajistí aspoň {{ sel.min_cz }} položek s fokusem na ČR a {{ sel.min_attitudes }} k postojům a komunikaci (pokud existují). Kvůli pestrosti je z jednoho zdroje nejvýš {{ sel.max_per_source }} položek a zpravodajská média tvoří nejvýš {{ (sel.max_media_share * 100)|round|int }} % výběru.</li>
     <li><strong>Syntéza (model {{ llm.model_synthesis }})</strong> s kontrolou, že všechna citovaná ID existují. Když syntéza selže, zveřejní se týden bez SWOT jen se seznamem nejlépe hodnocených položek.</li>
   </ol>
   <h3>Váhy</h3>
@@ -56,23 +56,28 @@
 
 <section aria-labelledby="zdroje">
   <h2 id="zdroje">Sledované zdroje a jejich stav</h2>
-  <p class="hint">Stav z poslední kontroly{% if checked_at %} ({{ checked_at|date_cs }}){% endif %}. „Zastaralý“ = nejnovější položka je starší než 60 dní (u zdrojů s nízkou frekvencí publikace to je normální).</p>
+  <p class="hint">Stav z poslední kontroly{% if checked_at %} ({{ checked_at|date_cs }}){% endif %}. „Zastaralý“ = nejnovější položka je starší než 60 dní (u zdrojů s nízkou frekvencí publikace to je normální). Sloupec „Ve výběru“ = kolik položek zdroje prošlo do týdenního výběru za poslední 4 týdny (z kolika publikovaných).</p>
+  <p class="hint"><strong>Rotace zdrojů:</strong> když zdroj dva týdny po sobě publikuje, ale nic z něj neprojde do výběru, na 4 týdny se pozastaví a místo něj se zapne náhradní zdroj ze zásobníku (přednostně ze stejného regionu). Pak dostane novou šanci. Klíčové zdroje (🔒) se nepozastavují. Cílem je pestrost výběru.</p>
   <div class="table-wrap">
   <table class="sources">
-    <thead><tr><th>Zdroj</th><th>Region</th><th>Typ</th><th>Stav</th><th>Položek</th><th>Nejnovější</th></tr></thead>
+    <thead><tr><th>Zdroj</th><th>Region</th><th>Typ</th><th>Stav</th><th>Ve výběru</th><th>Nejnovější</th></tr></thead>
     <tbody>
-    {% for row in rows %}{% set s = row.s %}{% set h = row.h %}
-      <tr class="{{ 'off' if not s.enabled else '' }}">
-        <td><a href="{{ s.homepage or s.url }}" rel="noopener">{{ s.name }}</a>{% if s.notes and (not s.enabled or h.get('status') not in (None, 'ok')) %}<br><small>{{ s.notes }}</small>{% endif %}</td>
+    {% for row in rows %}{% set s = row.s %}{% set h = row.h %}{% set p = row.p %}
+      <tr class="{{ 'off' if (not s.enabled or row.rot in ('paused', 'reserve')) else '' }}">
+        <td><a href="{{ s.homepage or s.url }}" rel="noopener">{{ s.name }}</a>{% if row.protected %} <span title="klíčový zdroj – nepozastavuje se">🔒</span>{% endif %}{% if s.notes and (not s.enabled or h.get('status') not in (None, 'ok')) %}<br><small>{{ s.notes }}</small>{% endif %}</td>
         <td>{{ s.region }}</td>
         <td>{{ source_type_labels.get(s.source_type, s.source_type) }}</td>
-        <td>{% if not s.enabled %}<span class="st st-disabled">vypnutý</span>{% elif h %}<span class="st st-{{ h.get('status') }}">{{ status_labels.get(h.get('status'), h.get('status')) }}</span>{% else %}—{% endif %}</td>
-        <td>{{ h.get('count', '—') if h else '—' }}</td>
+        <td>{% if not s.enabled %}<span class="st st-disabled">vypnutý</span>
+            {% elif row.rot == 'paused' %}<span class="st st-stale">pozastaven</span><br><small>do {{ row.rot_info.get('until') }}, náhrada: {{ row.rot_info.get('replaced_by') }}</small>
+            {% elif row.rot == 'reserve' %}<span class="st st-disabled">v zásobníku</span>
+            {% elif h %}<span class="st st-{{ h.get('status') }}">{{ status_labels.get(h.get('status'), h.get('status')) }}</span>{% if row.rot == 'activated' %}<br><small>náhrada za {{ row.rot_info.get('replaces') }}</small>{% endif %}
+            {% else %}—{% endif %}</td>
+        <td>{% if p %}{{ p.selected }} z {{ p.window }}{% else %}—{% endif %}</td>
         <td>{{ (h.get('newest')|date_cs) if h and h.get('newest') else '—' }}</td>
       </tr>
     {% endfor %}
     {% for h in api_rows %}
-      <tr><td>{{ h.get('name') }}<br><small>{{ h.get('detail') }}</small></td><td>GLOBAL</td><td>odborné časopisy</td><td><span class="st st-{{ h.get('status') }}">{{ status_labels.get(h.get('status'), h.get('status')) }}</span></td><td>{{ h.get('count') }}</td><td>{{ (h.get('newest')|date_cs) if h.get('newest') else '—' }}</td></tr>
+      <tr><td>{{ h.get('name') }}<br><small>{{ h.get('detail') }}</small></td><td>GLOBAL</td><td>odborné časopisy</td><td><span class="st st-{{ h.get('status') }}">{{ status_labels.get(h.get('status'), h.get('status')) }}</span></td><td>—</td><td>{{ (h.get('newest')|date_cs) if h.get('newest') else '—' }}</td></tr>
     {% endfor %}
     </tbody>
   </table>

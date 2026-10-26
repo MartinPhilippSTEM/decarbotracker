@@ -51,6 +51,12 @@ class Source(BaseModel):
     notes: str = ""
     # true = položky ze zdroje se posuzují i jako příležitosti (výzvy, granty)
     funding: bool = False
+    # true = náhradní zdroj v zásobníku; stahuje se jen po aktivaci místo nevýkonného zdroje
+    reserve: bool = False
+    # true = nikdy se automaticky nepozastaví (klíčové zdroje); None = podle váhy/typu
+    protected: bool | None = None
+    # vlastní limit položek na běh (např. Eurostat publikuje stovky aktualizací denně)
+    max_items: int | None = None
     homepage: str = ""
     scrape: ScrapeConfig | None = None
 

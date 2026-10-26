@@ -202,11 +202,20 @@ def build_site(settings: Settings, out_dir: Path | None = None, base_url: str | 
     _write(out / "archiv" / "index.html", env.get_template("archive.html").render(
         reports=reports, page="archive", period_of=lambda r: format_period_cs(r.period_from, r.period_to)))
 
+    from decarbotracker import source_review
+
+    perf_state = source_review.load_state()
+    perf = source_review.performance_rows(perf_state)
     sources = load_sources()
     rows = []
     for s in sources:
         h = health.get(s.id, {})
-        rows.append({"s": s, "h": h})
+        status = ("paused" if s.id in perf_state["paused"] else
+                  "reserve" if s.reserve and s.id not in perf_state["activated"] else
+                  "activated" if s.id in perf_state["activated"] else "")
+        rows.append({"s": s, "h": h, "p": perf.get(s.id), "rot": status,
+                     "rot_info": perf_state["paused"].get(s.id) or perf_state["activated"].get(s.id) or {},
+                     "protected": source_review.is_protected(s)})
     api_rows = [h for k, h in health.items() if k.startswith("api-")]
     _write(out / "metodika" / "index.html", env.get_template("methodology.html").render(
         page="methodology", rows=rows, api_rows=api_rows, sel=settings.selection, llm=settings.llm,
