@@ -56,6 +56,7 @@ selection:
   max_items_synthesis: 50
   max_per_source: 3       # pestrost: z jednoho zdroje nejvýš 3 položky ve výběru
   max_media_share: 0.4    # pestrost: zpravodajská média nejvýš 40 % výběru (zbytek think tanky, výzkum, data…)
+  max_journal_share: 0.4  # pestrost: odborné časopisy nejvýš 40 % výběru (26. 10. 2026 jich bylo 28 z 50)
   min_cz: 5            # minimální zastoupení položek s fokusem na ČR (pokud existují)
   min_attitudes: 5     # minimální zastoupení položek o postojích veřejnosti / komunikaci
   geo_weights: {CZ: 1.0, EU: 0.7, US: 0.4, GLOBAL: 0.5}

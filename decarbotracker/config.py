@@ -71,6 +71,7 @@ class SelectionSettings(BaseModel):
     max_items_synthesis: int = 50
     max_per_source: int = 3          # pestrost: max. položek z jednoho zdroje ve výběru
     max_media_share: float = 0.4     # pestrost: zpravodajská média max. 40 % výběru
+    max_journal_share: float = 0.4   # pestrost: odborné časopisy max. 40 % výběru
     min_cz: int = 5
     min_attitudes: int = 5
     geo_weights: dict[str, float] = Field(

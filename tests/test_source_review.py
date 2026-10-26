@@ -82,3 +82,27 @@ def test_selection_fills_up_when_caps_leave_gaps(settings):
     sel.max_items_synthesis, sel.max_per_source = 10, 3
     only = [make_scored(make_item(i, source_id="one", source_type="think_tank"), relevance=7) for i in range(12)]
     assert len(select_for_synthesis(only, sel)) == 10  # pojistky nesmí zmenšit výběr, když nejsou alternativy
+
+
+def test_already_paused_source_not_rotated_again():
+    st = _state({
+        "2026-W42": {"e15": [40, 0], "hn-byznys": [60, 0]},
+        "2026-W43": {"e15": [47, 0], "hn-byznys": [60, 0]},
+    })
+    st["paused"]["e15"] = {"since": "2026-W43", "until": "2026-W47", "replaced_by": "denik-n"}
+    st["activated"]["denik-n"] = {"since": "2026-W43", "replaces": "e15"}
+    sr.rotate(st, "2026-W43")
+    assert st["paused"]["e15"]["replaced_by"] == "denik-n"  # nezměněno
+    assert "hn-byznys" in st["paused"]
+    assert sum(1 for v in st["activated"].values() if v["replaces"] == "e15") == 1
+
+
+def test_journal_share_cap(settings):
+    sel = settings.selection
+    sel.max_items_synthesis, sel.max_per_source, sel.max_journal_share = 10, 3, 0.4
+    journals = [make_scored(make_item(i, source_id=f"journal-{i}", source_type="journal"), relevance=9, final=100 - i)
+                for i in range(15)]
+    others = [make_scored(make_item(50 + i, source_id=f"tt{i}", source_type="think_tank"), relevance=5, final=10 - i)
+              for i in range(10)]
+    chosen = select_for_synthesis(journals + others, sel)
+    assert sum(1 for s in chosen if s.item.source_type == "journal") == 4

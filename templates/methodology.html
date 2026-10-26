@@ -29,7 +29,7 @@
     <li><strong>Předfiltr:</strong> tematicky čisté zdroje projdou vždy. Obecná média a široké feedy musí obsahovat klíčová slova (česká i anglická, kmeny kvůli skloňování).</li>
     <li><strong>Skórování (levnější model {{ llm.model_scoring }}):</strong> relevance 0–10, témata, geografický fokus a typ obsahu.</li>
     <li><strong>Finální skóre</strong> = relevance × geografická váha × váha typu zdroje × váha zdroje; +{{ (sel.bonus_attitudes * 100)|round|int }} % pro postoje veřejnosti a komunikaci, +{{ (sel.bonus_original_research * 100)|round|int }} % pro originální výzkum a data, −{{ (sel.opinion_penalty * 100)|round|int }} % pro komentáře.</li>
-    <li><strong>Výběr:</strong> max. {{ sel.max_items_synthesis }} položek do syntézy, přičemž se zajistí aspoň {{ sel.min_cz }} položek s fokusem na ČR a {{ sel.min_attitudes }} k postojům a komunikaci (pokud existují). Kvůli pestrosti je z jednoho zdroje nejvýš {{ sel.max_per_source }} položek a zpravodajská média tvoří nejvýš {{ (sel.max_media_share * 100)|round|int }} % výběru.</li>
+    <li><strong>Výběr:</strong> max. {{ sel.max_items_synthesis }} položek do syntézy, přičemž se zajistí aspoň {{ sel.min_cz }} položek s fokusem na ČR a {{ sel.min_attitudes }} k postojům a komunikaci (pokud existují). Kvůli pestrosti je z jednoho zdroje nejvýš {{ sel.max_per_source }} položek a zpravodajská média i odborné časopisy tvoří každé nejvýš {{ (sel.max_media_share * 100)|round|int }} % výběru.</li>
     <li><strong>Syntéza (model {{ llm.model_synthesis }})</strong> s kontrolou, že všechna citovaná ID existují. Když syntéza selže, zveřejní se týden bez SWOT jen se seznamem nejlépe hodnocených položek.</li>
   </ol>
   <h3>Váhy</h3>

@@ -93,7 +93,8 @@ def underperformers(state: dict[str, Any], week: str) -> list[tuple[str, int]]:
     out = []
     for sid in state["weeks"][week]:
         s = sources.get(sid)
-        if s is None or is_protected(s) or s.source_type == "funding":
+        # už pozastavené zdroje neposuzovat znovu (při opakovaném běhu téhož týdne se načtou i jejich uložené položky)
+        if s is None or is_protected(s) or s.source_type == "funding" or sid in state["paused"]:
             continue
         rows = [state["weeks"][w].get(sid) for w in weeks]
         if any(r is None for r in rows):

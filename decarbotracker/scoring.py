@@ -205,13 +205,14 @@ def select_for_synthesis(scored: list[ScoredItem], sel: SelectionSettings, min_r
     pool.sort(key=lambda s: (-s.final_score, s.item.id))
     chosen: dict[str, ScoredItem] = {}
     per_source: dict[str, int] = {}
-    media_cap = int(sel.max_items_synthesis * sel.max_media_share)
+    type_caps = {"media": int(sel.max_items_synthesis * sel.max_media_share),
+                 "journal": int(sel.max_items_synthesis * sel.max_journal_share)}
 
     def fits(s: ScoredItem) -> bool:
         if per_source.get(s.item.source_id, 0) >= sel.max_per_source:
             return False
-        n_media = sum(1 for c in chosen.values() if c.item.source_type == "media")
-        return not (s.item.source_type == "media" and n_media >= media_cap)
+        cap = type_caps.get(s.item.source_type)
+        return cap is None or sum(1 for c in chosen.values() if c.item.source_type == s.item.source_type) < cap
 
     def add(s: ScoredItem) -> None:
         if s.item.id not in chosen:

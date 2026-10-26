@@ -3159,7 +3159,7 @@
     "e15": {
       "since": "2026-W43",
       "until": "2026-W47",
-      "replaced_by": "iness"
+      "replaced_by": "denik-n"
     },
     "seznam-zpravy": {
       "since": "2026-W43",
@@ -3211,15 +3211,7 @@
     "reflex": {
       "since": "2026-W43",
       "replaces": "hn-byznys"
-    },
-    "iness": {
-      "since": "2026-W43",
-      "replaces": "e15"
     }
   },
-  "flagged": {
-    "seznam-zpravy": "2026-W43",
-    "ct24-veda": "2026-W43",
-    "irozhlas-veda": "2026-W43"
-  }
+  "flagged": {}
 }

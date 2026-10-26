@@ -58,8 +58,8 @@ def describe_key(key: str | None) -> str:
         problems.append("obsahuje '=' (nevložil se i název proměnné?)")
     if "..." in key or "…" in key:
         problems.append("obsahuje '...' (zkopírována zkrácená verze ze seznamu klíčů?)")
-    ok_prefix = key.strip().startswith("sk-ant-api")
-    return (f"délka {len(key)} znaků, začíná 'sk-ant-api': {'ano' if ok_prefix else 'NE'}"
+    ok_prefix = key.strip().startswith("sk-ant-")
+    return (f"délka {len(key)} znaků, začíná 'sk-ant-': {'ano' if ok_prefix else 'NE'}"
             + (f"; problémy: {', '.join(problems)}" if problems else "; formát vypadá v pořádku"))
 
 
