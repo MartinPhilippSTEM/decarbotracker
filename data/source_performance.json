@@ -2317,9 +2317,21 @@
       ]
     },
     "2026-W43": {
+      "agora": [
+        0,
+        0
+      ],
+      "alies": [
+        0,
+        0
+      ],
+      "bankwatch": [
+        0,
+        0
+      ],
       "bnef": [
         4,
-        0
+        1
       ],
       "canary-media": [
         14,
@@ -2327,14 +2339,34 @@
       ],
       "carbon-brief": [
         5,
-        1
+        3
+      ],
+      "carbon-brief-daily": [
+        0,
+        0
+      ],
+      "carbon-tracker": [
+        0,
+        0
+      ],
+      "cleantechnica": [
+        45,
+        0
       ],
       "clew": [
         10,
         0
       ],
+      "climate-action-tracker": [
+        0,
+        0
+      ],
       "climate-home": [
         10,
+        1
+      ],
+      "climate-outreach": [
+        0,
         0
       ],
       "climatexchange": [
@@ -2343,6 +2375,14 @@
       ],
       "ct24-veda": [
         23,
+        0
+      ],
+      "cvvm-ekologie": [
+        0,
+        0
+      ],
+      "denik-n": [
+        30,
         0
       ],
       "denik-referendum": [
@@ -2355,7 +2395,7 @@
       ],
       "dg-ener": [
         9,
-        0
+        1
       ],
       "e15": [
         47,
@@ -2365,16 +2405,36 @@
         1,
         0
       ],
+      "ecf": [
+        0,
+        0
+      ],
+      "ecologic": [
+        0,
+        0
+      ],
       "eea": [
         1,
         1
+      ],
+      "eeb": [
+        3,
+        0
       ],
       "ekolist": [
         17,
         0
       ],
+      "ekonom": [
+        12,
+        0
+      ],
       "energy-monitor": [
-        8,
+        9,
+        0
+      ],
+      "enviweb": [
+        6,
         0
       ],
       "epg": [
@@ -2383,19 +2443,51 @@
       ],
       "eru": [
         1,
+        1
+      ],
+      "eu-funding": [
+        0,
+        0
+      ],
+      "euki": [
+        0,
         0
       ],
       "europeum": [
         2,
         1
       ],
-      "grantham-news": [
-        4,
+      "eurostat": [
+        9,
         0
       ],
-      "grantham-publications": [
-        3,
+      "fakta-o-klimatu": [
+        0,
+        0
+      ],
+      "forum-energii": [
+        0,
+        0
+      ],
+      "gallup-environment": [
+        0,
+        0
+      ],
+      "gem": [
+        0,
+        0
+      ],
+      "glopolis": [
+        0,
+        0
+      ],
+      "grantham-news": [
+        4,
         1
+      ],
+      "grantham-publications": [
+        4,
+        3
       ],
       "greenpeace-cz": [
         2,
@@ -2411,18 +2503,38 @@
       ],
       "hn-byznys": [
         60,
-        1
+        0
       ],
       "hnuti-duha": [
         5,
+        2
+      ],
+      "ieefa": [
+        0,
         0
       ],
       "incien": [
         2,
         0
       ],
+      "info-cz": [
+        48,
+        0
+      ],
       "inside-climate-news": [
         10,
+        0
+      ],
+      "institut2050": [
+        0,
+        0
+      ],
+      "instrat": [
+        1,
+        1
+      ],
+      "ipsos-cz": [
+        0,
         0
       ],
       "ipsos-global": [
@@ -2499,7 +2611,7 @@
       ],
       "journal-canadian-public-administration": [
         1,
-        1
+        0
       ],
       "journal-ceas-aeronautical-journal": [
         1,
@@ -2551,7 +2663,7 @@
       ],
       "journal-economic-political-weekly": [
         1,
-        0
+        1
       ],
       "journal-economics-and-environment": [
         1,
@@ -2559,11 +2671,11 @@
       ],
       "journal-energies": [
         1,
-        0
+        1
       ],
       "journal-energy-policy": [
         12,
-        2
+        1
       ],
       "journal-energy-reports": [
         1,
@@ -2595,7 +2707,7 @@
       ],
       "journal-environmental-sustainability": [
         1,
-        0
+        1
       ],
       "journal-epra-international-journal-of-multidisciplinary-research-ijmr": [
         1,
@@ -2623,7 +2735,7 @@
       ],
       "journal-frontiers-in-climate": [
         2,
-        0
+        1
       ],
       "journal-frontiers-in-energy-research": [
         1,
@@ -2687,7 +2799,7 @@
       ],
       "journal-international-journal-of-business-and-management-ijbm": [
         1,
-        1
+        0
       ],
       "journal-international-journal-of-economy-energy-and-environment": [
         1,
@@ -2795,7 +2907,7 @@
       ],
       "journal-lecture-notes-in-education-psychology-and-public-media": [
         2,
-        1
+        0
       ],
       "journal-life": [
         1,
@@ -2813,6 +2925,10 @@
         1,
         0
       ],
+      "journal-nature-climate-change": [
+        0,
+        0
+      ],
       "journal-nature-energy": [
         2,
         1
@@ -2823,7 +2939,7 @@
       ],
       "journal-npj-climate-action": [
         2,
-        1
+        0
       ],
       "journal-ocean-science": [
         1,
@@ -2879,7 +2995,7 @@
       ],
       "journal-sn-business-economics": [
         1,
-        1
+        0
       ],
       "journal-strategic-entrepreneurship-journal": [
         1,
@@ -2915,7 +3031,7 @@
       ],
       "journal-uluslararas-sosyal-siyasal-ve-mali-arast-rmalar-dergisi": [
         1,
-        0
+        1
       ],
       "journal-urban-planning": [
         1,
@@ -2927,10 +3043,14 @@
       ],
       "journal-youth-and-globalization": [
         1,
-        1
+        0
       ],
       "journal-zenodo-cern-european-organization-for-nuclear-research": [
         5,
+        0
+      ],
+      "klimaticka-koalice": [
+        0,
         0
       ],
       "klimatickazmena": [
@@ -2939,6 +3059,14 @@
       ],
       "median": [
         1,
+        0
+      ],
+      "more-in-common-de": [
+        0,
+        0
+      ],
+      "more-in-common-uk": [
+        0,
         0
       ],
       "mzp": [
@@ -2954,12 +3082,20 @@
         0
       ],
       "obnovitelne": [
-        11,
-        0
+        14,
+        1
       ],
       "oenergetice": [
         8,
         2
+      ],
+      "owid": [
+        1,
+        0
+      ],
+      "paq-studie": [
+        0,
+        0
       ],
       "pew": [
         21,
@@ -2970,7 +3106,11 @@
         0
       ],
       "respekt": [
-        60,
+        61,
+        0
+      ],
+      "rhodium": [
+        0,
         0
       ],
       "rmi": [
@@ -2985,12 +3125,28 @@
         1,
         0
       ],
+      "solarni-asociace": [
+        0,
+        0
+      ],
       "stem": [
         3,
         0
       ],
+      "stem-klima": [
+        0,
+        0
+      ],
       "tacr": [
         2,
+        0
+      ],
+      "visegrad-insight": [
+        5,
+        0
+      ],
+      "wiseeuropa": [
+        0,
         0
       ],
       "yale-ycc": [
@@ -3003,7 +3159,7 @@
     "e15": {
       "since": "2026-W43",
       "until": "2026-W47",
-      "replaced_by": "denik-n"
+      "replaced_by": "iness"
     },
     "seznam-zpravy": {
       "since": "2026-W43",
@@ -3024,6 +3180,11 @@
       "since": "2026-W43",
       "until": "2026-W47",
       "replaced_by": "cleantechnica"
+    },
+    "hn-byznys": {
+      "since": "2026-W43",
+      "until": "2026-W47",
+      "replaced_by": "reflex"
     }
   },
   "activated": {
@@ -3046,7 +3207,19 @@
     "cleantechnica": {
       "since": "2026-W43",
       "replaces": "heatmap"
+    },
+    "reflex": {
+      "since": "2026-W43",
+      "replaces": "hn-byznys"
+    },
+    "iness": {
+      "since": "2026-W43",
+      "replaces": "e15"
     }
   },
-  "flagged": {}
+  "flagged": {
+    "seznam-zpravy": "2026-W43",
+    "ct24-veda": "2026-W43",
+    "irozhlas-veda": "2026-W43"
+  }
 }
