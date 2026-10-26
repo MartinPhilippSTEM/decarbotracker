@@ -2,8 +2,8 @@
   "week": "2026-W43",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-10-26T11:48:31.586085+00:00",
-    "collections": 1
+    "last_collection": "2026-10-26T18:44:48.618231+00:00",
+    "collections": 2
   },
   "items": [
     {
@@ -9488,6 +9488,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f0080053d0ec",
+      "title": "Ultrachytrý AI zubní kartáček s kamerou za 11 tisíc korun od slavného výrobce. Co by se mohlo pokazit...",
+      "url": "https://archiv.hn.cz/c1-67950180-ultrychytry-ai-zubni-kartacek-s-kamerou-za-11-tisic-korun-od-slavneho-vyrobce-co-by-se-mohlo-pokazit",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T15:52:00Z",
+      "first_seen": "2026-10-26T18:44:48.618231Z",
+      "summary_raw": "Je to každodenní rutinní činnost, kterou ale spousta lidí dělá velmi ledabyle. I proto se čištění zubů stalo další oblastí, kam proniká umělá inteligence. Slavný britský výrobce spotřební elektroniky Dyson, který se kdysi proslavil svým bezsáčkovým...",
+      "authors": [
+        "Michael Mareš"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "aa3d2ced4e57",
       "title": "Vláda chce překrýt volební debakl útokem na veřejnoprávní média. Ficovský režim je nadosah",
       "url": "https://www.reflex.cz/clanek/komentare/138960/vlada-chce-prekryt-volebni-debakl-utokem-na-verejnopravni-media-ficovsky-rezim-je-nadosah.html",
@@ -10444,6 +10464,26 @@
       "language": "cs",
       "published_at": "2026-10-25T07:58:00Z",
       "first_seen": "2026-10-26T11:48:31.586085Z",
+      "summary_raw": "Velké celodenní byznysové Fórum Hospodářských novin na téma Bezpečnost, odolnost a byznys se koná už v úterý 3. listopadu v Rudolfinu. Soustředíme se na aktuální témata z pohledu českých firem a celé tuzemské ekonomiky. Mezi speakery a hosty jsou...",
+      "authors": [
+        "HN"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "e26ed75a6bb3",
+      "title": "Blackout nezačíná tmou. Začíná tím, že nelze zaplatit, zavolat ani natankovat. Plus Grolich, Havlíček a český top byznys na Fóru HN",
+      "url": "https://archiv.hn.cz/c1-67950330-blackout-nezacina-tmou-zacina-tim-ze-nelze-zaplatit-zavolat-ani-natankovat-plus-grolich-havlicek-a-cesky-top-byznys-na-foru-hn",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T07:58:00Z",
+      "first_seen": "2026-10-26T18:44:48.618231Z",
       "summary_raw": "Velké celodenní byznysové Fórum Hospodářských novin na téma Bezpečnost, odolnost a byznys se koná už v úterý 3. listopadu v Rudolfinu. Soustředíme se na aktuální témata z pohledu českých firem a celé tuzemské ekonomiky. Mezi speakery a hosty jsou...",
       "authors": [
         "HN"
