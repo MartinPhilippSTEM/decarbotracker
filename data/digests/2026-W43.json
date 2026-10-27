@@ -1,61 +1,61 @@
 {
   "week": "2026-W43",
-  "generated_at": "2026-10-26T10:16:09.418334Z",
+  "generated_at": "2026-10-27T12:18:59.655345Z",
   "model": "claude-sonnet-5-5",
-  "headline_cs": "Česko řeší konec uhlí ve Chvaleticích, energetickou chudobu a metanový zákon, zatímco OSN varuje, že překmit hranice 1,5 °C je nevyhnutelný.",
+  "headline_cs": "Česko řeší kontrolu metanu, budoucnost Chvaletic i ceny energií, zatímco OSN varuje před nevyhnutelným překročením limitu 1,5 °C.",
   "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w43/",
   "findings": [
     {
-      "item_id": "e7e90fb678c9",
-      "geo": "CZ",
-      "title_cs": "ERÚ: soustava půjde provozovat i bez Chvaletic",
-      "text_cs": "Podle aktualizované analýzy Energetického regulačního úřadu půjde soustavu provozovat i bez Elektrárny Chvaletice. Sev.en přitom oznámila, že nejpozději do 31. března 2027 ukončí provoz Chvaletic, Počerad a Teplárny Kladno. Rozhodnutí ovlivní tempo odchodu od uhlí v Česku i jistotu dodávek.",
-      "title": "ERÚ avizuje obrat v řízení o zachování provozu Elektrárny Chvaletice",
-      "url": "https://eru.gov.cz/eru-avizuje-obrat-v-rizeni-o-zachovani-provozu-elektrarny-chvaletice",
-      "source_name": "Energetický regulační úřad"
-    },
-    {
       "item_id": "68fbc8da03b9",
       "geo": "CZ",
-      "title_cs": "Česko stále nemá zákon o únicích metanu",
-      "text_cs": "Nařízení EU platí déle než dva roky, ale Česko nemá zákon o kontrolách a sankcích. Bez něj nelze pravidla pro úniky metanu vynucovat. Metan přitom má v horizontu 20 let přibližně osmdesátkrát větší oteplovací účinek než CO2.",
+      "title_cs": "Česko stále nemá zákon o kontrole úniků metanu",
+      "text_cs": "Nařízení EU o metanu platí déle než dva roky, ale Česko nemá zákon o kontrolách a sankcích. Bez něj nelze evropská pravidla v ČR vymáhat. Metan má v horizontu 20 let přibližně osmdesátkrát větší oteplovací účinek než CO2.}",
       "title": "Pravidla pro úniky metanu platí. V zákulisí se ale vede boj o zákon, který zajistí jejich kontrolu a sankce",
       "url": "https://oenergetice.cz/zivotni-prostredi/pravidla-pro-uniky-metanu-plati-v-zakulisi-se-ale-vede-boj-o-zakon-ktery-zajisti-jejich-kontrolu-a-sankce",
       "source_name": "oEnergetice"
     },
     {
-      "item_id": "c2daf2d48c9d",
+      "item_id": "e7e90fb678c9",
+      "geo": "CZ",
+      "title_cs": "ERÚ: soustava zvládne provoz bez Chvaletic",
+      "text_cs": "Podle nové analýzy Energetického regulačního úřadu lze soustavu provozovat bez Elektrárny Chvaletice. Sev.en oznámil ukončení provozu Chvaletic, Počerad a Kladna nejpozději do 31. března 2027. Osud uhelných zdrojů ovlivňuje bezpečnost dodávek i tempo odchodu od uhlí.",
+      "title": "ERÚ avizuje obrat v řízení o zachování provozu Elektrárny Chvaletice",
+      "url": "https://eru.gov.cz/eru-avizuje-obrat-v-rizeni-o-zachovani-provozu-elektrarny-chvaletice",
+      "source_name": "Energetický regulační úřad"
+    },
+    {
+      "item_id": "99a97bf46aaf",
       "geo": "GLOBAL",
-      "title_cs": "UNEP: překmit 1,5 °C je nevyhnutelný",
-      "text_cs": "Podle UNEP je dočasné překročení hranice 1,5 °C po desetiletích nedostatečné akce nyní nevyhnutelné. Climate Home News uvádí potřebu snižovat emise téměř o 6 % ročně. Zpráva určuje globální rámec, ve kterém se pohybuje i česká a evropská politika.",
-      "title": "UNEP: Opportunity has ‘been lost’ to meet 1.5C warming limit without ‘overshoot’",
-      "url": "https://www.carbonbrief.org/unep-opportunity-has-been-lost-to-meet-1-5c-warming-limit-without-overshoot",
-      "source_name": "Carbon Brief"
+      "title_cs": "OSN: svět míří k oteplení o 2,8 °C",
+      "text_cs": "Zpráva UNEP uvádí, že při současné politice míří Země k oteplení až o 2,8 °C, při splnění všech závazků k 2,6 °C. Aby bylo překročení 1,5 °C omezené, musely by emise do roku 2035 klesnout o 45 % oproti roku 2025. Zpráva zmiňuje také rychlé oteplování Česka.",
+      "title": "Země směřuje k oteplení o 2,8 stupně Celsia proti předindustriálnímu období",
+      "url": "https://www.klimatickazmena.cz/zeme-smeruje-k-otepleni-o-2-8-stupne-celsia-proti-predindustrialnimu-obdobi/",
+      "source_name": "CzechGlobe – klimatickazmena.cz"
     }
   ],
   "x_thread": [
-    "🧵 Týden 43 v klimatu: OSN varuje, že dočasné překročení hranice 1,5 °C je nevyhnutelné. Zároveň se v Česku řeší konec uhlí ve Chvaleticích i chybějící zákon o únicích metanu. Co z toho plyne?",
-    "Energetický regulační úřad: podle aktualizované analýzy půjde soustavu provozovat i bez Elektrárny Chvaletice. Sev.en oznámila, že nejpozději do 31. března 2027 ukončí provoz Chvaletic, Počerad a Teplárny Kladno.",
-    "Podle portálu oEnergetice Česko stále nemá zákon o kontrolách a sankcích za úniky metanu, ačkoli nařízení EU platí déle než dva roky. Metan má v horizontu 20 let přibližně osmdesátkrát větší oteplovací účinek než CO2.",
-    "Program OSN pro životní prostředí (UNEP): po desetiletích nedostatečné akce je dočasné překročení 1,5 °C nevyhnutelné. Podle Climate Home News je potřeba snižovat emise téměř o 6 % ročně.",
-    "Celý týdenní přehled o dekarbonizaci a postojích veřejnosti najdete tady: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w43/ #klima #energetika"
+    "🧵 Zpráva OSN (UNEP): při současné politice směřuje svět k oteplení až o 2,8 °C. Dočasné překročení 1,5 °C je podle ní „nevyhnutelné“. Co z toho vyplývá a co se týden řešilo v Česku? Vlákno:",
+    "Zpráva UNEP: při splnění všech závazků by oteplení dosáhlo 2,6 °C. Aby bylo překročení 1,5 °C omezené, musely by emise do roku 2035 klesnout o 45 % oproti roku 2025. Zdroj: UNEP, přenesl CzechGlobe.",
+    "Česko stále nemá zákon o kontrolách a sankcích za úniky metanu, ač nařízení EU platí déle než dva roky. Bez zákona nelze pravidla v ČR vymáhat. Zdroj: oEnergetice.",
+    "Energetický regulační úřad avizuje, že soustavu lze provozovat bez Elektrárny Chvaletice. Sev.en oznámil ukončení provozu Chvaletic, Počerad a Kladna nejpozději do 31. března 2027. Zdroj: ERÚ.",
+    "Celý týdenní přehled o dekarbonizaci a postojích veřejnosti si přečtěte zde: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w43/ #klima #energetika"
   ],
   "notes": [],
   "usage": {
     "calls": 1,
-    "input_tokens": 4804,
-    "output_tokens": 1035,
+    "input_tokens": 4968,
+    "output_tokens": 1039,
     "cache_creation_input_tokens": 0,
     "cache_read_input_tokens": 0,
-    "cost_usd": 0.019958,
+    "cost_usd": 0.020326,
     "by_model": {
       "claude-sonnet-5-5": {
         "calls": 1.0,
-        "input_tokens": 4804.0,
-        "output_tokens": 1035.0,
-        "cost_usd": 0.019958
+        "input_tokens": 4968.0,
+        "output_tokens": 1039.0,
+        "cost_usd": 0.020326
       }
     }
   },
-  "sent_at": "2026-10-26T10:16:09.571304Z"
+  "sent_at": "2026-10-27T12:18:59.878587Z"
 }
