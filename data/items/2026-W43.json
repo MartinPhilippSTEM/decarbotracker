@@ -1,7 +1,43 @@
 {
   "week": "2026-W43",
-  "generated_at": "2026-10-26T10:06:11.502297+00:00",
+  "generated_at": "2026-10-27T12:07:24.329609+00:00",
   "items": [
+    {
+      "id": "dcefd8e3d548",
+      "title": "Jak zkrotit folotovoltaiku, aneb jak napájet dům i auto za 1000Kč měsíčně",
+      "url": "https://www.obnovitelne.cz/clanek/4934/jak-zkrotit-folotovoltaiku-aneb-jak-napajet-dum-i-auto-za-1000kc-mesicne",
+      "source_id": "obnovitelne",
+      "source_name": "Obnovitelně.cz",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": null,
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": true
+    },
+    {
+      "id": "0d436cdb7105",
+      "title": "Gigafactory skončila ve Španělsku. Studie ukazuje, v čem Česko zaostává",
+      "url": "https://www.obnovitelne.cz/clanek/4931/gigafactory-skoncila-ve-spanelsku-studie-ukazuje-v-cem-cesko-zaostava",
+      "source_id": "obnovitelne",
+      "source_name": "Obnovitelně.cz",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": null,
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": true
+    },
     {
       "id": "b6a8949a6413",
       "title": "Solární energie ušetřila Evropě téměř bilion korun za dovoz plynu",
@@ -703,6 +739,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "78669d49371c",
+      "title": "Babišův hysterický výbuch a Okamurovo noční kutilství: Koalice si vyzkoušela autokratický recept",
+      "url": "https://www.reflex.cz/clanek/komentare/138969/babisuv-hystericky-vybuch-a-okamurovo-nocni-kutilstvi-koalice-si-vyzkousela-autokraticky-recept.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T18:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Plné Staroměstské náměstí a výzva k Letné: Spolek Milion chvilek bleskově zaplnil centrum Prahy v reakci na noční schválení zrušení koncesionářských poplatků a na 15. listopadu svolává masový protest na Letenskou pláň. Autokratický recept proti nezávislosti médií: Odpor v ulicích vyvolalo brutální ohnutí sněmovních pravidel vládní koalicí a obava, že Babiš s Okamurou kopírují maďarský a slovenský model podmanění veřejnoprávní služby. Nervozita v koalici a Babišův chaos: Přestože vládní většina drží pohodlných 108 hlasů, po volebním debaklu ztrácí jistotu – marketingový klid premiéra vystřídaly chaotické výbuchy a chabá argumentace.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "77f569f3552e",
       "title": "Sílící bezmoc a chudoba. Demonstranti z Francie mluví o svých motivacích",
       "url": "https://www.seznamzpravy.cz/clanek/zahranicni-silici-bezmoc-a-chudoba-demonstranti-z-francie-mluvi-o-svych-motivech-318744",
@@ -913,6 +967,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "dbb0e14ad8d0",
+      "title": "Vařená žába se probírá. Demontáž kultury a médií Babišovou vládou překračuje kritickou mez",
+      "url": "https://www.reflex.cz/clanek/komentare/138966/varena-zaba-se-probira-demontaz-kultury-a-medii-babisovou-vladou-prekracuje-kritickou-mez.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T17:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Čas 4:36 ráno, na který bylo ohlášené hlasování o návrhu na zrušení televizních a rozhlasových poplatků, je důkaz absurdity téhle huráakce a skvělý materiál pro memy. Demontáž veřejnoprávních médií a zavedených kulturních institucí současnou vládou ale probíhá dlouhodobě a s jasně vytyčeným směrem. Jasné není jen to, kdy jde o amatérismus, kdy o naivitu, kdy o neschopnost a kdy o čirou zákeřnost.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "19a786d71b7d",
       "title": "Canada and Europe want to reshape the global order. But whose vision will prevail?",
       "url": "https://www.politico.eu/article/canada-and-europe-want-to-reshape-the-global-order-but-whose-vision-will-prevail/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
@@ -966,6 +1038,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b16057367d69",
+      "title": "„Ruce pryč od médií!“ Tisíce lidí v ulicích odmítly noční tah vlády proti ČT a ČRo",
+      "url": "https://www.reflex.cz/clanek/zpravy/138968/ruce-pryc-od-medii-tisice-lidi-v-ulicich-odmitly-nocni-tah-vlady-proti-ct-a-cro.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T16:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Tisíce lidí na zaplněném Staroměstském náměstí v Praze i v dalších městech protestovaly proti vládnímu návrhu na zrušení koncesionářských poplatků a převedení financování ČT a ČRo pod státní rozpočet. Předseda pořádajícího spolku Milion chvilek Mikuláš Minář ostře kritizoval schválení novely v prvním čtení v časných ranních hodinách, vyzval vládu ke stažení návrhu a oznámil další demonstraci na 15. listopadu na Letné. Vládní koalice i přes odpor opozice prosadila do druhého čtení zákon, který kromě změny financování veřejnoprávních médií výrazně krátí také jejich rozpočty.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -1096,6 +1186,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "d01c9fc9f0df",
+      "title": "Čtecí dílny, o dva roky delší život, lepší studijní výsledky: projekt Čti za nároďák! buduje dlouhodobou strategii",
+      "url": "https://www.reflex.cz/clanek/kultura/138955/cteci-dilny-o-dva-roky-delsi-zivot-lepsi-studijni-vysledky-projekt-cti-za-narodak-buduje-dlouhodobou-strategii.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T15:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Pilotní fáze komponovaných dní projektu Čti za nároďák! je u konce. Ve vědeckých knihovnách pěti krajů se v průběhu září a října uskutečnila setkání příznivců četby, odborníků a odbornic, nakladatelů a nakladatelek, expertů ze škol, zaměstnanců knihoven, ale samozřejmě hlavně dětí a jejich rodičů. Hovořilo se mimo jiné o přínosech čtení pro jednotlivce i společnost i o tom, jak společně podpořit rozvoj čtenářství v České republice, ale také se s vrcholovými sportovci a populárními umělci rozebíraly jejích čtenářské vášně a návyky.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -1264,6 +1372,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3382fca5019c",
+      "title": "Neznámé epizody ze života Pabla Picassa: Byl nařčen z krádeže Mony Lisy, jeho obrazy jsou ale nejkradenější",
+      "url": "https://www.reflex.cz/clanek/historie/138965/nezname-epizody-ze-zivota-pabla-picassa-byl-narcen-z-kradeze-mony-lisy-jeho-obrazy-jsou-ale-nejkradenejsi.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T13:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Před 145 lety se narodil Pablo Picasso – nejplodnější, a pravděpodobně i nejznámější malíř v dějinách moderního umění. Řada historek z jeho života je však málo známá i jeho největším obdivovatelům. Víte například, díky čemu přežil hned po porodu vlastní smrt? Proč se stal podezřelým v kauze krádeže Mony Lisy? Jakým způsobem od sebe odháněl nudné a hloupé lidi? A co je pravdy na fámě, že jisté krasavici daroval 22 neznámých obrazů výměnou za možnost namalovat její akt?",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -1626,6 +1752,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "919b50473e66",
+      "title": "Vánočních kaprů bude letos dostatek. Zaplatíme ale za ně více než loni",
+      "url": "https://www.reflex.cz/clanek/komentare/138964/vanocnich-kapru-bude-letos-dostatek-zaplatime-ale-za-ne-vice-nez-loni.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T11:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Každodenní záběry na vysychající přehrady, koryta řek a ploch rybníků navozují celkem logickou spotřebitelskou otázku – za jaké ceny bude letos možné zakoupit vánoční kapry a jak to bude s jejich dostupností. Letošní suché a velmi teplé počasí se přitom na nabídce sladkovodních ryb z tuzemské produkce výrazně negativně podepsalo.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -2169,6 +2313,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "ce9c65455aff",
+      "title": "Foldynův křik, Babišův stín a šílená deziluze. Jak zvládají poslanci generace Z první rok ve Sněmovně?",
+      "url": "https://www.reflex.cz/clanek/reportaze/138962/foldyna-kricel-jugoslavie-babis-se-linul-jako-stin-mladi-poslanci-popisuji-prvni-rok-ve-snemovne.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T07:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Generace Z poprvé v lavicích Sněmovny: Do vrcholné politiky vstoupilo přes devadesát nováčků včetně dvanácti „dvacátníků“ v čele s historicky nejmladší českou poslankyní Julií Smejkalovou. Srážka s realitou, chaosem i kily nahoře: Místo běžného života vrstevníků popisují mladí zákonodárci extrémní vyčerpání, noční jednání, ztrátu soukromí i cynismus sněmovního provozu. Foldynův křik i Babiš plížící se jako stín: Velká reportáž Reflexu odkrývá bizarní zákulisní střety mladé generace se zkušenými matadory, toxickou atmosféru v sále i boj mladých matek o důstojnost.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "e7f0ce210f3b",
       "title": "Rekordní sazby tankerů tlačí cenu ropy a paliv dále vzhůru",
       "url": "https://oenergetice.cz/ropa/za-drahou-ropou-uz-nestoji-jen-tezba-rekordni-sazby-tankeru-tlaci-ceny-vzhuru",
@@ -2325,6 +2487,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "245c093a45bb",
+      "title": "Personální restart hnutí ANO? Žádný problém, bezpáteřních přikyvovačů je v Česku stále dost",
+      "url": "https://www.reflex.cz/clanek/komentare/138961/personalni-restart-hnuti-ano-zadny-problem-bezpaternich-prikyvovacu-je-v-cesku-stale-dost.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-25T05:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Na tak drtivou a potupnou porážkou, kterou utrpělo hnutí ANO v nedávných volbách do Senátu, jeho majitel Andrej Babiš jen tak rychle nezapomene. Nezískat ani jeden jediný mandát ze 27 možných je pro politický subjekt, který dlouhodobě a s velkým náskokem vévodí průzkumům volebních preferencí, vskutku unikátní. Náladu si Babiš nespravil ani v souběžných komunálních volbách. Obhájil sice pozice v některých krajských městech, ale jejich počet se zmenšuje.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "77785d28cf53",
       "title": "Reportáž z čínské továrny: Takhle vzniká něco mnohem většího než jen postrach Volkswagenu",
       "url": "https://www.e15.cz/byznys/cesky-a-evropsky-autoprumysl/reportaz-z-cinske-tovarny-takhle-vznika-neco-mnohem-vetsiho-nez-jen-postrach-volkswagenu-1436706",
@@ -2376,6 +2556,121 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "9708ce4f53c2",
+      "title": "Conceptualising shallow trusting in international relations: the dynamism of everyday practices in global south climate governance",
+      "url": "https://doi.org/10.1057/s41268-026-00398-5",
+      "source_id": "journal-journal-of-international-relations-and-development",
+      "source_name": "Journal of International Relations and Development",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-25T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Abstract Questions of trust and mistrust have always been at the heart of the conduct of international relations, yet existing scholarship tends to assume a need to move towards an idealised endpoint of ‘deeper trust’ and largely overlooks the dynamism of everyday practices of trusting in Global South contexts characterised by complex reliance. This creates important empirical and conceptual blind spots. We develop a practice-centred account of trusting and introduce the concept of shallow trusting to capture how cooperation is sustained in relations of structural asymmetry. Drawing on 17 key informant interviews with practitioners in Malawi, we identify three co-constitutive practices of trusting: committing, identifying, and sensemaking. We show how these practices are enacted in limited ways and shaped by power relations, making collective action possible even when actors do not share intentions, identities, or understandings. Our conceptualisation challenges prevailing assumptions in climate governance and calls for a rethinking of donor-Global South interactions in addressing urgent global challenges.",
+      "authors": [
+        "E.-L. Anderson",
+        "Scott Edwards",
+        "Michael Chasukwa",
+        "Laura Considine"
+      ],
+      "doi": "10.1057/s41268-026-00398-5",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "804b9aa80bff",
+      "title": "Reimagining Climate Change through Folklore and the Uncanny in Amitav Ghosh’s Gun Island",
+      "url": "https://doi.org/10.5565/rev/indialogs.404",
+      "source_id": "journal-indialogs",
+      "source_name": "Indialogs",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-25T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Environmental crisis is currently one of the biggest worldwide challenges, and to address it, there is a pressing need to move beyond the scientific contexts to cultural forms such as literature, religion, arts, and folklore that transcend rational understanding. Amitav Ghosh, in his fictional work Gun Island, engages with it by establishing an intersection between the changing ecological scenario and the Bengali folktale of the Gun Merchant and the snake goddess Manasa Devi. The tale portrays the goddess' desire to command his devotion, which the Merchant refuses. This results in the goddess subjecting him to divine punishment, as natural disasters and poisonous creatures pursue him. This article attempts to analyse how Ghosh offers an alternative viewpoint for interpreting the legend by interweaving it with current ecological challenges. The paper explores how these Indian myths, legends and folklores are storehouses of ecological wisdom, and Ghosh, by weaving the events of the legend into the present, highlights the enduring significance of such eco-narratives.",
+      "authors": [
+        "Ayman Wani",
+        "Huma Yaqub"
+      ],
+      "doi": "10.5565/rev/indialogs.404",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "5dc6575ea36b",
+      "title": "Teaching as Activism in Higher Education: Fostering Climate Crisis Awareness through Literary Engagement: A case study",
+      "url": "https://doi.org/10.24191/vjx7ff47",
+      "source_id": "journal-journal-of-creative-practices-in-language-learning-and-teaching-cplt",
+      "source_name": "Journal of Creative Practices in Language Learning and Teaching (CPLT)",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-25T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "This paper explores the transformative potential of teaching literature as a form of activism to cultivate awareness and critical engagement with the climate crisis, aligning with the aims of the United Nations’ SDG 4 (Quality Education) and SDG 13 (Climate Action). As global environmental concerns increases, the need for educational initiatives that promote ecological literacy and enable students to become environmentally conscious citizens has been more pressing. A descriptive quantitative design was employed in a university-level poetry course, where selected works by Muhammad Haji Salleh and E-Wen Chong were integrated into the syllabus to examine students' perspectives on the use of ecocritical poetry to raise awareness of the climate crisis and to explore pedagogical approaches that effectively foster awareness of climate change and SDG goals. Data were obtained using a questionnaire that was validated by two experts to verify its content and context validity. The study revealed that the teaching of literature from the lens of activist increases students’ emotional and intellectual engagement with environmental issues and promotes sustainable thinking aligned with SDG 12 (Responsible Consumption and Production). The study also emphasises the crucial roles of educators not as knowledge transmitter, also as agents of change who educate learners to disrupt dominant narratives and foster ecological empathy through literary texts. By transforming literature classrooms into…",
+      "authors": [
+        "Erda Wati Bakar",
+        "Kamarul Ariffin Ahmad"
+      ],
+      "doi": "10.24191/vjx7ff47",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3b642c731e5d",
+      "title": "From Root Causes to Revolutionary Remedies: Reimagining Climate Action Through Environmental Humanities and Ecocritical Literature",
+      "url": "https://doi.org/10.5281/zenodo.23641363",
+      "source_id": "journal-zenodo-cern-european-organization-for-nuclear-research",
+      "source_name": "Zenodo (CERN European Organization for Nuclear Research)",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-25T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "In the 21st century, climate change is one of the significant factors affecting the ecosystems, economics and human well- being. Scientific innovation and environmental policies became important in addressing climate related issues thereby the role of literature and the environmental humanities have gained increasing attention in promoting ecological awareness. This paper emphasizes how ecocritical literature contributes to understanding the root causes of climate change and encourages sustainable solutions through environmental consciousness. By illustrating the principles of ecocriticism and environmental humanities, the study explores about literary texts challenge anthropocentric perspectives, reveals environmental exploitation, and encourage ethical relationships between humans and nature. The paper deals with the transformation of storytelling, indigenous ecological knowledge and climate fiction in fostering climate literacy and sustainable thinking. It also demonstrates the relevance of literary studies in achieving the United Nations Sustainable Development Goals, notedly SDG 13 (Climate change), SDG 15 (Life on land) and SDG 17 (Partnerships for the goals). The study concludes that literature is not only a reflection of environmental crises but also an influential force capable of shaping public attitudes, promoting ecological responsibility, and encouraging collective action toward sustainable development. The research employs an interdisciplinary approach by…",
+      "authors": [
+        "Dr. N. Alagu Meenal"
+      ],
+      "doi": "10.5281/zenodo.23641363",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "03b492873d81",
+      "title": "Setting Sweden’s route to Paris: designing policy instruments for climate mitigation in forestry",
+      "url": "https://doi.org/10.1007/s10784-026-09743-y",
+      "source_id": "journal-international-environmental-agreements-politics-law-and-economics",
+      "source_name": "International Environmental Agreements Politics Law and Economics",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-25T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Abstract The role of forest ecosystems in mitigating climate change has gained increasing prominence in international climate negotiations, particularly within the Paris Agreement and in the strategies and regulations of the European Union. This paper aims to enhance ongoing policy discussions on how Swedish forests can support climate mitigation goals by identifying which policy instruments, incentives, and climate strategies forest stakeholders prioritize, while advancing social science understandings of governance, stakeholder participation, and the socio-political conditions shaping forest management. Specifically, we examined the acceptance of, and perceived need for, alternative policy instruments designed to accelerate the climate transition through three novel mitigation scenarios for Swedish forestry. These scenarios explore the allocation of responsibility for achieving climate targets – whether it rests primarily with the state, the market, or individual landowners. Our findings draw on two participatory workshops involving 27 stakeholders and rightsholders engaged in Swedish forest management. The results reveal significant challenges in management and policy, particularly regarding responsibility for climate mitigation, justice claims, and power sharing. Furthermore, they underscore the need for stronger policy integration across sectors and administrative levels, as well as innovative policy instruments to facilitate the implementation of forest-climate…",
+      "authors": [
+        "Johanna Johansson",
+        "Jimmy Jönsson",
+        "Auvikki de Boon",
+        "Andreas Eriksson",
+        "Tomas Lundmark",
+        "Karin M. Ekström",
+        "L. Móller",
+        "Janina Priebe",
+        "Malin von Essen",
+        "Per‐Erik Wikberg",
+        "Camilla Sandström"
+      ],
+      "doi": "10.1007/s10784-026-09743-y",
+      "topic_filter": true,
+      "source_weight": 1.1,
       "date_is_first_seen": false
     },
     {
@@ -2836,6 +3131,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "aa3d2ced4e57",
+      "title": "Vláda chce překrýt volební debakl útokem na veřejnoprávní média. Ficovský režim je nadosah",
+      "url": "https://www.reflex.cz/clanek/komentare/138960/vlada-chce-prekryt-volebni-debakl-utokem-na-verejnopravni-media-ficovsky-rezim-je-nadosah.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T16:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Způsob, jakým vládní koalice prosazuje zestátnění České televize a Českého rozhlasu, nemá s demokracií nic společného. Babiš, Okamura a Macinka bourají parlamentní pravidla a chtějí odvést pozornost od volebního fiaska.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "0c93c806f770",
       "title": "Ultrychytrý AI zubní kartáček s kamerou za 11 tisíc korun od slavného výrobce. Co by se mohlo pokazit...",
       "url": "https://byznys.hn.cz/c1-67950180-ultrychytry-ai-zubni-kartacek-s-kamerou-za-11-tisic-korun-od-slavneho-vyrobce-co-by-se-mohlo-pokazit",
@@ -2992,6 +3305,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "4afce547a11f",
+      "title": "Víc chápat, míň drancovat. Dramakomická série Tam dole dává přírodě místo čelistí chapadla",
+      "url": "https://www.reflex.cz/clanek/kultura/138958/vic-chapat-min-drancovat-dramakomicka-serie-tam-dole-dava-prirode-misto-celisti-chapadla.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T14:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Čelisti, ale s chapadly. Kanadská série Tam dole na Netflixu míchá horor, černou komedii i rodinné drama a ukazuje, že skutečná příšera nemusí číhat v moři. Příroda versus člověk. Zatímco obyvatelé novofundlandské osady čelí tajemnému hlavonožci, developeři si brousí zuby na zdejší naleziště vzácných surovin. Netvor, nebo oběť? Šestidílná série s Joshem Hartnettem obrací naruby strach z mořských monster a servíruje ekologický apel, který míří až k Donaldu Trumpovi.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "2dcb42ed9f5f",
       "title": "Coal subsidies and long-term contract pricing: a perspective from factor marketization reforms",
       "url": "https://doi.org/10.1016/j.enpol.2026.115678",
@@ -3115,6 +3446,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "bb142c402b00",
+      "title": "Dopis poslanci Ševčíkovi: Mirku, omluvte se a nebuďte srab",
+      "url": "https://www.reflex.cz/clanek/komentare/138959/osobni-dopis-poslanci-miroslavu-sevcikovi-mirku-nebudte-zbabely-omluvte-se-a-prestante-prasecit.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T13:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Poslanec SPD Miroslav Ševčík vulgárně zaútočil na šéfku poslanců STAN Michaelu Šebelovou, namísto omluvy však předvádí jen zbabělé kličkování a plané řeči. Pokrytectví normalizačního komunisty: Bývalý ředitel Liberálního institutu dnes z lavic populistické SPD káže o morálce a peskuje Petra Pavla, ačkoliv sám v roce 1984 vstoupil do totalitní KSČ. Novinář Viliam Buchert posílá Ševčíkovi otevřený dopis: nebuďte srab, zahoďte trapné rýmovačky, kupte poslankyni kytici a přestaňte prasečit.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "0856953b1588",
       "title": "V jihokorejském Pusanu úspěšně vyvedli žraloka z vodního kanálu, kde uvízl",
       "url": "https://ekolist.cz/cz/zpravodajstvi/zpravy/v-jihokorejskem-pusanu-uspesne-vyvedli-zraloka-z-vodniho-kanalu-kde-uvizl",
@@ -3188,6 +3537,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "14f921ec1869",
+      "title": "Druhá světová válka neskončila v roce 1945. Mír přišel až po šesti letech",
+      "url": "https://www.reflex.cz/clanek/historie/138957/druha-svetova-valka-neskoncila-v-roce-1945-mir-prisel-az-po-sesti-letech.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T12:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Druhá světová válka neskončila v květnu ani v září 1945. Mocnosti Osy sice podepsaly bezpodmínečnou kapitulaci, k formálnímu ukončení válečného stavu došlo až v roce 1951. Na ratifikaci některých úmluv si musel poválečný svět počkat skoro půl století a některé dokonce nebyly podepsány dodnes.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -3268,6 +3635,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "97d9750f43cc",
+      "title": "Válka o veřejnoprávní média začala. Okamura si prosadil svou, Babiš ale riskuje",
+      "url": "https://www.reflex.cz/clanek/komentare/138956/valka-o-verejnopravni-media-zacala-okamura-si-prosadil-svou-babis-ale-riskuje.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T10:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Vláda jde po veřejnoprávních médiích. Návrh na zrušení koncesionářských poplatků protlačila Sněmovnou prvním čtením, a to za cenu bezprecedentně vyhroceného jednání. Babiš hraje riskantní hru. Zatímco nejvíc bodů sbírá Okamurova SPD, premiér riskuje ztrátu umírněných voličů i další oslabení politického citu . Opozice chystá obstrukce, pracovníci médií protesty a občanská společnost se mobilizuje. Právě její síla může vládní plány ještě zkomplikovat.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -3523,6 +3908,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "2a59515126fc",
+      "title": "Změna času 2026: Kdy začíná zimní čas a proč se rušení změny času opět odkládá?",
+      "url": "https://www.reflex.cz/zmena-casu-letni-zimni",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T08:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Při přechodu na zimní čas 2026 se v noci na neděli 25. října ve 3:00 letního času hodiny posunou zpět na 2:00, čímž začíná zimní (standardní) čas a získáme hodinu spánku navíc. Hurá! Kdy bude konec střídání času? Zatím není rozhodnuto. Členské státy Evropské unie se na jednotném zrušení střídání času dosud nedohodly. Česká vláda schválila nařízení, kterým střídání letního a zimního času oficiálně pokračuje na dalších pět let.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "200b899d5631",
       "title": "Dětská obezita způsobuje komplikace už v raném věku",
       "url": "https://ct24.ceskatelevize.cz/clanek/svet/detska-obezita-zpusobuje-komplikace-uz-v-ranem-veku-378953",
@@ -3538,6 +3941,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "09322318703b",
+      "title": "Vladimír Mertlík: Morálka nemá dno. Babiš rozlišuje „dvě Konečné“ a buduje s komunisty novou Evropu",
+      "url": "https://www.reflex.cz/clanek/komentare/138951/vladimir-mertlik-moralka-nema-dno-babis-rozlisuje-dve-konecne-a-buduje-s-komunisty-novou-evropu.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T08:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Europoslankyně Kateřina Konečná vstoupila do frakce Patrioti pro Evropu, což zástupci hnutí ANO zdůvodňují shodou na tématech, jako je odpor ke Green dealu či nelegální migraci. Andrej Babiš odmítá spojování s komunistickou stranou a prohlásil, že v minulosti ji dokázal dostat mimo sněmovnu. Alena Schillerová obhajovala návrh státního rozpočtu slovy, že za ním stojí s hlavou vztyčenou, přičemž odmítla kritiku spojující její výrok s posledním dopisem Milady Horákové.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -3891,6 +4312,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "fcc027d68fe1",
+      "title": "Trump, Putin a Si u jednoho stolu. Amerika může přijít o to nejcennější, co má",
+      "url": "https://www.reflex.cz/clanek/komentare/138947/trump-putin-a-si-u-jednoho-stolu-amerika-muze-prijit-o-to-nejcennejsi-co-ma.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-24T04:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Donald Trump chce jednat s Vladimirem Putinem a Si Ťin-pchingem o jaderném zbrojení. Schůzka by se mohla konat příští měsíc v Číně. Za posledních několik týdnů Washington zásadně změnil kurz vůči Rusku. Zároveň už delší dobu omezuje závazky vůči spojencům v Evropě i Asii. Mezinárodní řád, který vznikl po roce 1945, tak ztrácí svého hlavního garanta.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "67e20bdf290c",
       "title": "To si nedovolil ani obávaný šéf Nissanu. Volkswagen chce šetřit i na úspěšné Škodovce",
       "url": "https://www.e15.cz/nazory-a-analyzy/to-si-nedovolil-ani-obavany-sef-nissanu-volkswagen-chce-setrit-i-na-uspesne-skodovce-1436810",
@@ -4130,6 +4569,47 @@
       "date_is_first_seen": false
     },
     {
+      "id": "cad70e63a6b0",
+      "title": "How energy transmission infrastructure affects production strategy? Evidence from China’s UHV projects",
+      "url": "https://doi.org/10.1016/j.trd.2026.105704",
+      "source_id": "journal-transportation-research-part-d-transport-and-environment",
+      "source_name": "Transportation Research Part D Transport and Environment",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-24T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "",
+      "authors": [
+        "Boqiang Lin",
+        "Jie Xu"
+      ],
+      "doi": "10.1016/j.trd.2026.105704",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "c770782f3776",
+      "title": "STRUCTURAL DRIVERS OF LIVELIHOOD EMPOWERMENT IN BAMBOO CARPENTRY: ANALYSIS OF ASSAM AND TRIPURA UNDER ATMANIRBHAR BHARAT",
+      "url": "https://doi.org/10.29121/shodhprabandhan.v3.i3.2026.140",
+      "source_id": "journal-shodhprabandhan-journal-of-management-studies",
+      "source_name": "ShodhPrabandhan Journal of Management Studies",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-24T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "This policy research paper examines transformative potential of bamboo carpentry as a vehicle for sustainable rural occupation empowerment in the Indian states of Assam and Tripura, which are allied in India’s Atma Nirbhar Bharat vision. Bamboo cultivation in those states are high as compared with other states. There is progressive policy frameworks such as the National Bamboo Mission in Central level and state-specific bamboo policies. However, the sector stays mostly unorganized, with the artisans facing structural blocks that include infrastructural deficits, middlemen exploitation, financial exclusion and technological gaps. In this context, this study has been undertaken with the aim of identifying and assessing the key determinants of socio-economic empowerment among bamboo artisans in states of Assam and Tripura with a sample of 321 artisan selected based on the snow-ball sampling method. This study employs the Partial Least Squares Structural Equation Modelling framework to evaluate the impact of three exogenous latent variables such as Policy Support (PS), Infrastructure Access (IA) and Market Connectivity (MC). The results indicates that Infrastructure Access is the primary predictor of empowerment and Digital Literacy significantly mediates the relationship between Market Connectivity and Livelihood Empowerment. We strongly recommend that the transition from a unorganized bamboo sector to a value-added industry and it requires targeted policy interventions focused…",
+      "authors": [
+        "Baba Gnanakumar P"
+      ],
+      "doi": "10.29121/shodhprabandhan.v3.i3.2026.140",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c26b4e28c466",
       "title": "The Impact of Heatwave Exposure and Climate Change on Maternal Health and Pregnancy Outcomes: A Public Health Review",
       "url": "https://doi.org/10.69855/mgj.v3i3.887",
@@ -4167,6 +4647,27 @@
         "Claudia Landwehr"
       ],
       "doi": "10.1007/s11109-026-10221-z",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "9cda10a0e151",
+      "title": "More Immigrants, Less Welfare? Comparative Data Questions Common Narratives",
+      "url": "https://doi.org/10.37513/curj.v5i1.817",
+      "source_id": "journal-cornell-undergraduate-research-journal",
+      "source_name": "Cornell Undergraduate Research Journal",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-24T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Over the past century, immigration and the welfare state have developed in tandem, yet a question remains: Can welfare systems built on shared citizenship hold in increasingly diverse societies? Many observers are skeptical. We shed light on the hypothesis that immigration undermines the welfare state by analyzing historical trends across the advanced democracies. To examine the longstanding relationship between increased immigration and public support for redistributive welfare among citizens, we focus on data from twenty-two Global North countries from 1875 to present, as these nations have historically maintained robust welfare regimes and attracted substantial immigration. While some countries show an inverse relationship between patterns of immigration and welfare state generosity, others show a significant positive relationship. We discuss the implications of this finding, underscoring the importance of examining contextual factors and overcoming data availability constraints.",
+      "authors": [
+        "Alexa Phan",
+        "Julia Xiao"
+      ],
+      "doi": "10.37513/curj.v5i1.817",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -4272,6 +4773,30 @@
       "date_is_first_seen": false
     },
     {
+      "id": "736270446945",
+      "title": "Framework-informed analysis of practice: A qualitative study on climate resilience in primary care in Austria",
+      "url": "https://doi.org/10.1016/j.joclim.2026.100763",
+      "source_id": "journal-the-journal-of-climate-change-and-health",
+      "source_name": "The Journal of Climate Change and Health",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-24T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Introduction The World Health Organization’s (WHO) 2023 Operational framework for building climate resilient and low carbon health systems supports health systems in climate-sensitive capacity building but offers limited guidance for primary care (PC). This qualitative study uses WHO’s framework as conceptual scaffold to map measures, needs and gaps in Austrian PC through a multiprofessional perspective, thereby enriching the research scope by local-level climate resilience strategies. Methods Online focus groups and individual interviews were conducted with 21 Austrian primary care professionals (PCPs). Qualitative content analysis was guided by the structure of components grouped into building blocks as defined in WHO's framework. Results Participants focused primarily on the WHO building blocks “Health workforce” and “Essential medical products and technology”. They demonstrated awareness of climate-related health impacts, especially heat, and addressed needs for profession-specific training as well as barriers to implementing climate-sensitive health counseling. Infrastructural adaptations were limited by structural constraints, yet air conditioning was deemed indispensable in practice settings, despite being maladaptive. The need for process adjustments, especially in mobile work settings, became apparent. Climate-related emergency preparedness seems underdeveloped. Severe gaps were identified especially concerning building blocks “Health information systems”, “Service…",
+      "authors": [
+        "Johanna Schauer-Berg",
+        "Andrea Stitzel",
+        "Willi Haas",
+        "Maria Flamm",
+        "Katharina Brugger"
+      ],
+      "doi": "10.1016/j.joclim.2026.100763",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "51594767802d",
       "title": "Understanding public support for carbon capture, utilization and storage: The role of fairness perception",
       "url": "https://doi.org/10.1016/j.erss.2026.105028",
@@ -4323,6 +4848,56 @@
       "date_is_first_seen": false
     },
     {
+      "id": "3d8067079fd6",
+      "title": "Evaluating regression models and machine learning for long-term energy demand forecasting – Germany",
+      "url": "https://doi.org/10.1016/j.egyr.2026.109799",
+      "source_id": "journal-energy-reports",
+      "source_name": "Energy Reports",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-24T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Reliable long-term energy demand forecasting underpins energy-system planning and decarbonization policy design, yet most established methods are calibrated for short horizons and may not capture structural change. This study compares four forecasting models: multiple linear regression (MLR), a vector error correction model (VECM), support vector regression (SVR), and an artificial neural network (ANN). Germany’s final energy consumption (FEC) is projected to 2050 from annual data spanning 1992–2021. The SVR and ANN were tuned using particle swarm optimization and Bayesian optimization. Accuracy is assessed using mean absolute error (MAE), mean squared error (MSE), and the coefficient of determination (R²). The SVR achieves the highest test accuracy (MAE = 9.19, R² = 0.974), but its long-term projections substantially exceed the historical range, suggesting extrapolation instability. The ANN attains comparable test accuracy (MAE = 10.05, R² = 0.965) with stronger generalization and more plausible projections, and is therefore adopted for the base-case and scenario analyses. MLR is transparent but less accurate, whereas VECM forecasts are sensitive to the assumed cointegration rank in the small-sample setting. The ANN base-case indicates an approximately 12% decline in FEC by 2050 relative to 2008, driven primarily by fuel substitution and efficiency improvements. Across five decarbonization scenarios, projected 2050 FEC ranges from 1476 to 2195 TWh, demonstrating that…",
+      "authors": [
+        "Munzer Osman",
+        "Maria Mercedes Movsessian"
+      ],
+      "doi": "10.1016/j.egyr.2026.109799",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3a98761c7f76",
+      "title": "Measuring circular engagement and transition readiness: development and validation of the attitudes towards circularity questionnaire (ATCQ)",
+      "url": "https://doi.org/10.1016/j.sftr.2026.102252",
+      "source_id": "journal-sustainable-futures",
+      "source_name": "Sustainable Futures",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-24T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "While circular economy research has made major advances in technological and material system innovation, the behavioural foundations of circular transitions remain poorly understood and insufficiently measured. This study develops and validates the Attitudes Towards Circularity Questionnaire (ATCQ), a multidimensional instrument designed to assess circular engagement across cognitive, normative, and behavioural domains. Following a structured instrument development process, expert-based content validation, exploratory and confirmatory factor analyses, and structural equation modelling were combined. Data were collected through a stratified telephone survey among adult residents in Bucharest, Romania (n = 868). Exploratory factor analysis identified an initial five-factor structure, which was subsequently refined through confirmatory factor analysis into a six-factor model comprising circular behaviours, perceived circularity knowledge and competence, environmental concern, normative commitment and institutional trust, personal circular involvement, and professional circularity integration. The instrument demonstrated strong internal consistency and acceptable model fit. Structural modelling showed that normative commitment and institutional trust were strongly associated with circular behaviour, while perceived knowledge was mainly associated indirectly through personal and professional involvement. These findings highlight the importance of social and normative drivers in…",
+      "authors": [
+        "Jeroen Dikken",
+        "Rengin Aslanoğlu",
+        "Qingnan Li",
+        "Nuri Cihan Kayaçetin",
+        "Gabriele Masera",
+        "Carlo Andrea Biraghi",
+        "Francesco Pittau",
+        "Chiara Piccardo",
+        "Joost van Hoof",
+        "Liat Ayalon"
+      ],
+      "doi": "10.1016/j.sftr.2026.102252",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "347170bc9f2f",
       "title": "Social and psychological factors shaping public views of unconventional climate advocates",
       "url": "https://doi.org/10.1007/s10584-026-04321-2",
@@ -4361,6 +4936,26 @@
         "Anayawa Nyambe"
       ],
       "doi": "10.1007/s13412-026-01156-2",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "281e57ea3ffc",
+      "title": "INTERNATIONAL ENVIRONMENTAL LAW: STATE OBLIGATIONS IN THE FACE OF GLOBAL CLIMATE CHANGE",
+      "url": "https://doi.org/10.52832/jesh.v5i1.790",
+      "source_id": "journal-journal-of-education-science-and-health",
+      "source_name": "Journal of Education Science and Health",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-24T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Climate change represents one of the greatest contemporary challenges facing the international community, requiring coordinated responses that transcend national borders. International Environmental Law emerges as the principal legal instrument for regulation and cooperation, establishing obligations for States in confronting this global crisis. This article aims to analyze the nature and effectiveness of these obligations, considering both the historical evolution of international treaties and current dilemmas related to sovereignty and cooperation among countries. The temporal scope extends from the Stockholm Conference (1972) to the most recent developments arising from the Paris Agreement (2015), with particular emphasis on the principles of precaution, prevention, and common but differentiated responsibilities. Methodologically, the study is based on qualitative, bibliographic, and documentary research, with emphasis on legal-dogmatic interpretation and the critical analysis of international treaties and reports. The results indicate that, although international legal instruments have expanded recognition of collective responsibility for climate-change mitigation and adaptation, tensions persist concerning the asymmetry of responsibilities between developed and developing countries. It is concluded that the effectiveness of environmental obligations depends not only on formal adherence to treaties but, above all, on the capacity for practical implementation, effective…",
+      "authors": [
+        "Gabriel Del Zamar Moreira de Oliveira"
+      ],
+      "doi": "10.52832/jesh.v5i1.790",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -5121,6 +5716,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "858859114c2d",
+      "title": "Dovolená v Abú Dhabí: Sokol pronáší mrtvolu do letadla, dcera je sjetá ománskou drogou",
+      "url": "https://www.reflex.cz/clanek/blondyna-v-arabii/138948/dovolena-v-abu-dhabi-sokol-pronasi-mrtvolu-do-letadla-dcera-je-sjeta-omanskou-drogou.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T17:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Po čtrnácti letech života v Abú Dhabí už člověk potřebuje návštěvu, aby se podíval, za čím sem ostatní vlastně jezdí. Z Britské Kolumbie v Kanadě přilétá moje dcera Brittany, a tak na pár dní odkládám běžný život a začínám obdivovat atrakce. Máme za sebou i pět společných let v Saúdské Arábii, takže náš práh úžasu se posouvá někam mezi velblouda na korbě a kabelku za cenu garsonky.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "ff4d62bc15ea",
       "title": "Webinar Recap | Reimagining Transportation: State Policy Tools for Strengthening Transit Systems",
       "url": "https://climate-xchange.org/2026/10/webinar-recap-reimagining-transportation-state-policy-tools-for-strengthening-transit-systems/",
@@ -5233,6 +5846,24 @@
       "authors": [
         "Carolyn Fortuna"
       ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a0c63275ec47",
+      "title": "Žije ještě velký vůdce KLDR? Kim Čong-un zase jednou zemřel, svět spekuluje o možném nástupci",
+      "url": "https://www.reflex.cz/clanek/analyza/138946/zije-jeste-velky-vudce-kldr-kim-cong-un-zase-jednou-zemrel-svet-spekuluje-o-moznem-nastupci.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T16:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Vůdce Korejské lidově demokratické republiky (KLDR) Kim Čong-un je mrtvý. Tedy alespoň podle další z řady spekulací, které se kolem severokorejského diktátora pravidelně vynořují. Zatímco se objevují nové snímky vůdce, v pozadí visí otázka, kdo by po něm zdědil moc. Jeho dcera, nebo ambiciózní sestra? Kim Jo-čong mezitím zostřuje výhrůžky Jižní Koreji. A tak zatímco svět řeší, zda Kim vůbec žije, na Korejském poloostrově přituhuje.",
+      "authors": [],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
@@ -5416,6 +6047,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "0e94e066d233",
+      "title": "Diplomatické divadlo před americkými volbami: Putin nechce jednat, chce ničit",
+      "url": "https://www.reflex.cz/clanek/komentare/138949/diplomaticke-divadlo-pred-americkymi-volbami-putin-nechce-jednat-chce-nicit.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T15:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Mírová jednání ze strany USA jsou zbytečná, protože Vladimir Putin nemá v úmyslu válku ukončit a hodlá zničit celou Ukrajinu. Volodymyr Zelenskyj se snaží vyjednáváním získat čas do klíčových amerických voleb, aniž by si jednáním s USA poškodil pozici. Ukrajinci podporují odpor proti agresorovi, jelikož si uvědomují, že kapitulace by znamenala konec jejich národa, nezávislosti a svobody.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "f8a21fbd0c1a",
       "title": "Francii žene do občanské války nebezpečné propojení radikální levice s islámem",
       "url": "https://www.info.cz/podcasty/zlamany-topol/podcast-zlamany-topol-francie-melenchon-macron",
@@ -5433,6 +6082,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "05a42196c7f1",
+      "title": "Why a deal between France and Germany won’t rescue Europe’s auto industry",
+      "url": "https://www.politico.eu/article/franco-german-deal-wont-rescue-europes-auto-industry/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+      "source_id": "politico-eu",
+      "source_name": "Politico Europe – Energy",
+      "region": "EU",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-10-23T14:49:51Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "The agreement risks angering trade partners and further undercutting the competitiveness of European automakers.",
+      "authors": [
+        "Jordyn Dahl, Giorgio Leali"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -5479,6 +6148,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "2636ecc44d46",
+      "title": "Novinářská vzpoura proti rušení poplatků: ČT a Rozhlas jdou do stávky",
+      "url": "https://www.reflex.cz/clanek/zpravy/138953/novinarska-vzpoura-proti-ruseni-poplatku-ct-a-rozhlas-jdou-do-stavky.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T14:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Celodenní protest v úterý 3. listopadu: Zaměstnanci České televize a Českého rozhlasu vyhlásili stávku proti vládnímu plánu na zrušení televizních i rozhlasových poplatků a varují před ohrožením nezávislosti veřejné služby. Miliardový škrt v rozpočtech médií: Vládní koalice ANO, SPD a Motoristů prosazuje převod financování na státní kasu, což pro ČT a ČRo znamená propad příjmů o 1,4 miliardy korun. Drtivá většina zaměstnanců v odporu: Pod výzvu iniciativy Veřejnoprávně se podepsaly tři čtvrtiny pracovníků obou institucí a vedení ČT označuje vládní návrh za likvidační.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -5537,6 +6224,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.2,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "7dc727ec0c13",
+      "title": "Až milion diváků a 350 filmů: Festival Ji.hlava zažívá boom",
+      "url": "https://www.reflex.cz/clanek/zpravy/138950/az-milion-divaku-a-350-filmu-festival-ji-hlava-zaziva-boom.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T14:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Jubilejní 30. ročník v Jihlavě: Mezinárodní festival dokumentárních filmů Ji.hlava 2026 nabízí přes 350 snímků z celého světa, protiválečnou znělku od Naomi Kawase i ocenění pro Helenu Třeštíkovou. To nejlepší ze světového i českého dokumentu: Soutěžní sekce Opus Bonum a Česká radost přinášejí novinky renomovaných tvůrců i odvážné debuty reflektující ekologii, politiku i osobní paměť. Diskusní fórum poprvé bez akreditace: Řada debat Big Talks v rámci Inspiračního fóra poprvé otevírá přednášky světových filozofů a vědců i pro širokou veřejnost bez vstupenek na filmy.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -5635,6 +6340,42 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "ee510f83f696",
+      "title": "Zrada v řadách KSČM. Konečná si padla do náruče s Babišem a dorazila zanikající komunisty",
+      "url": "https://www.reflex.cz/clanek/komentare/138945/zrada-v-radach-kscm-konecna-si-padla-do-naruce-s-babisem-a-dorazila-zanikajici-komunisty.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T13:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Europoslankyně Kateřina Konečná opustila skomírající KSČM a přešla do unijní frakce Patrioti pro Evropu, což vyvolalo ostrý nesouhlas a rozruch mezi jejími stranickými kolegy. Strana KSČM se po předchozích neúspěších potýká s drtivým debaklem v nedávných komunálních volbách i nulovým ziskem v Senátu, což naznačuje její postupný politický konec. Andrej Babiš přestup Konečné přivítal s prohlášením, že komunistickou stranu již v politickém systému nikdo nepotřebuje, jelikož její voliče převzalo hnutí ANO.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b4c5760a9e57",
+      "title": "Návrhy cenových výměrů - elektroenergetika",
+      "url": "https://eru.gov.cz/navrhy-cenovych-vymeru-elektroenergetika",
+      "source_id": "eru",
+      "source_name": "Energetický regulační úřad",
+      "region": "CZ",
+      "source_type": "government",
+      "language": "cs",
+      "published_at": "2026-10-23T12:56:52Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Návrhy cenových výměrů - elektroenergetika jitka.kodesova… Pá, 10/23/2026 - 14:56 Návrh ERÚ Pravidla konzultačního procesu Připomínky Vypořádání připomínek Návrh ERÚ ERÚ zahajuje v souladu s energetickým zákonem (§ 17e) veřejný konzultační proces k návrhu cenového výměru, kterým se stanovují ceny za související službu v elektroenergetice a ostatní regulované ceny, a cenového výměru, kterým se stanovují ceny za související službu v elektroenergetice odběratelům ze sítí nízkého napětí, s účinností od 01.01.2027. ERÚ v případě stanovení cen uvedených v těchto cenových výměrech postupuje podle pravidel uvedených v Metodice cenové regulace pro regulační období 2026‑2030 pro odvětví elektroenergetiky, plynárenství, pro činnosti operátora trhu v elektroenergetice a plynárenství, pro elektroenergetické datové centrum, povinně vykupující a dodavatele poslední instance. Cenové výměry nově zavádí na hladinách VVN a VN cenu za rezervovaný příkon a cenu za maximální odebraný výkon, cena za rezervovanou kapacitu zaniká. Změna byla provedena v souladu s dlouhodobě komunikovaným projektem inovace tarifní struktury v elektroenergetice . Detailní popis stanovení jednotlivých regulovaných cen je obsažen v odůvodnění návrhů cenových výměrů. Konzultovaný dokument - Návrh cenového výměru, kterým se stanovují ceny za související službu v elektroenergetice a ostatní regulované ceny Typ: pdf Velikost: 2.18 MB Aktualizováno: 27.10.2026 Stáhnout Konzultovaný dokument - Návrh cenového výměru, kterým se…",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.0,
       "date_is_first_seen": false
     },
     {
@@ -5794,6 +6535,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "50a7eeffeaff",
+      "title": "Orion: Rap je postavený dost na fejku. Někdo se přetvařuje a dělá to jen pro prachy. I to je v pořádku",
+      "url": "https://www.reflex.cz/clanek/prostor-x/138917/orion-rap-je-postaveny-dost-na-fejku-nekdo-se-pretvaruje-a-dela-to-jen-pro-prachy-i-to-je-v-poradku.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T12:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "„Všichni si myslí, že jsou real, a přitom nejsou.“ Orion mluvil v Prostoru X o tom, jak dnes vnímá český rap, u jehož začátků sám stál. „Rap je vlastně dost postavený na nějakým fejku,“ uvedl. Zároveň ale zdůraznil, že ho těší, kam se scéna za desítky let posunula. Výhrady má hlavně k nedostatku kreativity, opakování stejných postupů a častému používání autotunu, který podle něj někdy „zakrývá to, že ty lidi to prostě moc neuměj“.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "bacca6c4ee80",
       "title": "Konec desetileté éry. Americký fond opouští Vohánkův Eurowag. S diskontem prodal akcie za miliardy",
       "url": "https://www.e15.cz/byznys/burzy-a-trhy/konec-desetilete-ery-americky-fond-opousti-vohankuv-eurowag-s-diskontem-prodal-akcie-za-miliardy-1436800",
@@ -5907,6 +6666,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a7176bb66253",
+      "title": "Ve Francii poprvé zemřel pacient s virem Shamonda. Hrozí nákaza i v Česku?",
+      "url": "https://www.reflex.cz/clanek/zpravy/138944/ve-francii-poprve-zemrel-pacient-s-virem-shamonda-hrozi-nakaza-i-v-cesku.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-23T11:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "První případ nákazy u člověka: Ve Francii byl poprvé v historii zjištěn zvířecí virus Shamonda u pacienta s těžce oslabenou imunitou, který následně zemřel; souvislost úmrtí s virem se stále vyšetřuje. Přenos pouze bodavým hmyzem: Infekci nešíří běžní komáři ani jídlo, ale krev sající tiplíci parazitující na skotu. Přenos z člověka na člověka podle WHO nehrozí. Riziko pro Česko je minimální: Tuzemské ministerstvo zdravotnictví uklidňuje veřejnost. Lidem pracujícím u chovů dobytka doporučuje základní prevenci v podobě repelentů.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -7150,6 +7927,27 @@
       "date_is_first_seen": false
     },
     {
+      "id": "c61772963964",
+      "title": "Factors Affecting the Attitude of School Students Towards English Learning: A Structural Equation Modelling Approach",
+      "url": "https://ejournals.ncert.gov.in/index.php/ier/article/view/5691",
+      "source_id": "journal-journal-of-medicinal-plants",
+      "source_name": "Journal of Medicinal Plants",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-23T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Students’ attitudes toward learning English are influenced by a variety of factors including the learning environment, teachers’ teaching methods, available teaching-learning materials, parental influence, community involvement, and peer groups. This study investigated how these factors interact and determine attitudes of high school students of Assam towards English learning. The sample size of the study was 355. Partial Least Squares Structural Equation Modelling (PLS-SEM) was used as an analytical approach with SmartPLS 4.0. The results confirmed that the model is reliable and valid. Teachers’ teaching methods, teaching-learning materials, and peer influence were found to greatly affect the students’ attitudes toward learning English positively; whereas the learning environment, parental, and community influence did not have a significant direct effect. Learning environment and teaching-learning materials were positive predictors of teaching methods. The teaching methods, in turn, mediated the effect of teaching-learning materials and the learning environment on students’ attitudes. The findings underscore that effective pedagogy and sufficient learning resources are central to enhancing students’ engagement and attitudes toward English. Strengthening classroom practices and facilitating access to quality material may go a long way toward addressing learning constraints in schools. In future studies, long-term effects and other contextual variables might be considered…",
+      "authors": [
+        "Ujjal Tripura",
+        "Sashapra Chakrawarty"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c2f5558542d9",
       "title": "From Climate Risk Awareness to Climate-Conscious Investment Behavior: the roles of climate disclosure quality, trust, and greenwashing risk",
       "url": "https://doi.org/10.3389/fclim.2026.1984092",
@@ -7364,6 +8162,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "723bc901ba46",
+      "title": "Impact of El Niño on the Indian Industrial Economy: Challenges, Opportunities and Resilience",
+      "url": "https://doi.org/10.64880/pcjaict.v1i6.13",
+      "source_id": "journal-the-paradigm-chronicle-journal-of-academic-inquiry-and-critical-thought",
+      "source_name": "The Paradigm Chronicle Journal of Academic Inquiry and Critical Thought",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-23T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Changes in monsoon rainfall, temperature, agricultural production, and water availability can have an impact on India's industrial sector. El Niño is a major climate phenomenon that affects global weather patterns. El Niño-related climate disruptions may result in both new industrial opportunities and economic disruptions due to the interconnection of consumer demand, manufacturing, energy, transportation, and agriculture. The theoretical relationship between El Niño and the Indian industrial economy is examined in this article, with a focus on growing climate-adaptive businesses, supply-chain disruptions, inflationary pressures, sectoral vulnerability, and financial consequences. Based on secondary literature, theories of climatic variability, environmental economics, and frameworks for industrial adaptation, the study takes a qualitative and analytical approach. According to the report, amid unfavorable weather circumstances, industries that depend on agriculture, food processing, textiles, and water-intensive manufacturing may be more vulnerable to operational and input-cost hazards. On the other hand, there might be more demand for sectors including cooling technology, irrigation equipment, water management, renewable energy storage, healthcare, and climate-resilient infrastructure. The paper goes on to describe how business profitability, investment choices, credit risk, and financial-market expectations can all be impacted by climate-related industrial disruptions. It…",
+      "authors": [
+        "Dr. P. Uma Rajitha"
+      ],
+      "doi": "10.64880/pcjaict.v1i6.13",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "7011ccfb2212",
       "title": "The Next Generation of Power-grid Resilience: Long-horizon AI Planning under Deep Climate Uncertainty",
       "url": "https://doi.org/10.9734/jenrr/2026/v18i11551",
@@ -7438,6 +8256,29 @@
       "date_is_first_seen": false
     },
     {
+      "id": "4bf941f5b2ee",
+      "title": "Retention forestry practices in India for biodiversity conservation, climate resilience, and sustainable forest management across diverse forest zones",
+      "url": "https://doi.org/10.1007/s44274-026-01065-9",
+      "source_id": "journal-discover-environment",
+      "source_name": "Discover Environment",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-23T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Retention forestry is an ecologically informed forest management approach in which selected trees, deadwood, habitat patches, keystone species, old-growth individuals, riparian corridors, and microhabitats are deliberately retained during forest management interventions to maintain biodiversity, ecological continuity, and ecosystem services. Although widely developed in boreal and temperate forests of Europe, North America, and Australia, its relevance is highly significant in India, where forestry traditionally emphasizes ecological security, biodiversity conservation, and community dependence. India’s diverse ecosystems, including Himalayan alpine forests, tropical evergreen forests, mangroves, dry deciduous forests, scrublands, and island ecosystems, support high endemism, climate-sensitive habitats, and culturally important species. This review synthesizes the concept of retention forestry within Indian forestry systems and evaluates its applicability across major agroclimatic zones and forest types. It examines policy frameworks such as the National Forest Policy (1988), National Working Plan Code (2014 and 2023), Joint Forest Management, Forest Rights Act (2006), CAMPA mechanisms, and the Biological Diversity Act (2002). Region-specific examples from the Himalayas, Western and Eastern Ghats, Northeastern forests, arid ecosystems, Sundarbans mangroves, and Andaman and Nicobar Islands are also discussed. The review concludes that India already possesses strong ecological…",
+      "authors": [
+        "Maneesh S. Bhandari",
+        "Pawan Kumar Thakur",
+        "Rajendra Kumar Meena",
+        "Kazuyo Nagahama"
+      ],
+      "doi": "10.1007/s44274-026-01065-9",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "469845afd382",
       "title": "Negotiating urban energy transitions in Greater Maputo: Street-level politics and infrastructural heterogeneity",
       "url": "https://doi.org/10.1016/j.erss.2026.105048",
@@ -7457,6 +8298,49 @@
       "doi": "10.1016/j.erss.2026.105048",
       "topic_filter": false,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3194e0614c23",
+      "title": "From Alarmed to Disengaged: Profiles of Climate-Related Psychosocial Orientations and Climate Literacy Among Adolescents",
+      "url": "https://doi.org/10.3390/educsci16111789",
+      "source_id": "journal-education-sciences",
+      "source_name": "Education Sciences",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-23T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Climate change education (CCE) addresses a conceptually complex, emotionally charged, and politically contested issue. To design effective instruction, it is important to understand the prerequisites with which students engage in climate-related learning. These prerequisites extend beyond prior knowledge to include climate-related psychosocial orientations. However, previous profiling studies have typically considered only a limited set of such orientations and have rarely examined their relation to cognitive climate literacy as a central educational outcome. This study examined whether meaningful profiles of adolescents’ climate-related psychosocial orientations can be identified and how these profiles differ in cognitive climate literacy, climate-related behavior, and policy support. Questionnaire and test data from 632 ninth-grade students in Baden-Württemberg, Germany were analyzed using latent profile analysis. Indicators included climate change beliefs, worry, personal and external responsibility attributions, individual and collective efficacy beliefs, and trust in society and politics. Five profiles were identified: Alarmed (11%), Pragmatic (25%), Distanced (29%), Ambivalent (21%), and Disengaged (14%). The profiles differed systematically not only in their psychosocial orientations but also in all outcome measures. The findings reveal substantial heterogeneity in adolescents’ climate-learning prerequisites. They suggest that CCE may benefit from adaptive…",
+      "authors": [
+        "Magdalena Stadler",
+        "Monika Martin",
+        "Werner Rieß",
+        "Josef Künsting"
+      ],
+      "doi": "10.3390/educsci16111789",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "298e05f3693d",
+      "title": "National Heat Risk Commision respond to research confirming that over 50,000 people are estimated to have died in urban areas during Europe’s sweltering summer",
+      "url": "https://www.lse.ac.uk/granthaminstitute/news/national-heat-risk-commision-respond-to-research-confirming-that-over-50000-people-are-estimated-to-have-died-in-urban-areas-during-europes-sweltering-summer/",
+      "source_id": "grantham-news",
+      "source_name": "Grantham Institute (LSE) – news",
+      "region": "EU",
+      "source_type": "research",
+      "language": "en",
+      "published_at": "2026-10-23T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Responding to research confirming that over 50,000 people are estimated to have died in urban areas during Europe’s sweltering summer,...",
+      "authors": [
+        "Liam Collins"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.0,
       "date_is_first_seen": false
     },
     {
@@ -9210,6 +10094,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "a9e3573b4e0f",
+      "title": "Návrh cenového výměru - plynárenství",
+      "url": "https://eru.gov.cz/navrh-cenoveho-vymeru-plynarenstvi-0",
+      "source_id": "eru",
+      "source_name": "Energetický regulační úřad",
+      "region": "CZ",
+      "source_type": "government",
+      "language": "cs",
+      "published_at": "2026-10-22T11:43:10Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Návrh cenového výměru - plynárenství andrea.zlatusk… Čt, 10/22/2026 - 13:43 Návrh ERÚ Pravidla konzultačního procesu Připomínky Vypořádání připomínek Návrh ERÚ ERÚ zahajuje v souladu s energetickým zákonem (§ 17e) veřejný konzultační proces k návrhu cenového výměru, kterým se stanovují regulované ceny související s dodávkou plynu, s účinností od 01.01.2027. ERÚ v případě stanovení cen uvedených v tomto cenovém výměru postupuje podle pravidel uvedených v Metodice cenové regulace pro regulační období 2026‑2030 pro odvětví elektroenergetiky, plynárenství, pro činnosti operátora trhu v elektroenergetice a plynárenství, pro elektroenergetické datové centrum, povinně vykupující a dodavatele poslední instance. Detailnější popis stanovení jednotlivých regulovaných cen je obsažen v odůvodnění návrhu cenového výměru. Konzultovaný dokument - Návrh cenového výměru, kterým se stanovují regulované ceny související s dodávkou plynu Typ: pdf Velikost: 1.3 MB Aktualizováno: 27.10.2026 Stáhnout Pravidla konzultačního procesu Lhůta pro podání připomínek je do 11.11.2026 včetně. Připomínkami podanými po termínu nebo připomínkami nesplňujícími formu podání podle pravidel VKP se ERÚ není povinen zabývat. Připomínky může uplatnit každý, jehož oprávněné zájmy mohou být návrhem přímo dotčeny. Připomínkami, které uplatní osoba, jejíž oprávněné zájmy nemohou být návrhem přímo dotčeny, se ERÚ není povinen zabývat. Jediný možný prostředek pro podání připomínek je prostřednictvím e‑mailové adresy…",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
       "id": "72344049e5cf",
       "title": "Google Bets Big on Virtual Power Plants With 1 Gigawatt Voltus Deal",
       "url": "https://heatmap.news/climate-tech/google-virtual-power-plant-voltus",
@@ -10389,6 +11291,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "e4b8c2930f6d",
+      "title": "Introduction to Degrees of Displacement: The Climate Crisis and the Future of Migration",
+      "url": "https://digitalcommons.pace.edu/pelr/vol44/iss1/1",
+      "source_id": "journal-digitalcommons-pace-pace-university",
+      "source_name": "DigitalCommons@Pace (Pace University)",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-22T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "The Introduction to the 2026 Pace Environmental Law Review and Pace International Law Review Symposium, Degrees of Displacement: The Climate Crisis and the Future of Migration",
+      "authors": [
+        "Ryan York"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c612ee8642f7",
       "title": "Citizenship at Sea: A Comparative Perspective on Blue Justice in the Andaman Sea and the Mediterranean in the Context of Climate Change",
       "url": "https://digitalcommons.pace.edu/pelr/vol44/iss1/4",
@@ -10582,6 +11504,30 @@
       "date_is_first_seen": false
     },
     {
+      "id": "719bdcfb5210",
+      "title": "Wild Silks in a Changing World: Biodiversity, Climate Resilience and Sustainable Futures for Tasar, Eri and Muga Sericulture",
+      "url": "https://doi.org/10.9734/ijecc/2026/v16i105744",
+      "source_id": "journal-international-journal-of-environment-and-climate-change",
+      "source_name": "International Journal of Environment and Climate Change",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-22T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Tasar, eri and muga silks occupy distinctive ecological and cultural positions within Asian sericulture, yet they are frequently grouped under an undifferentiated label of “wild” or “sustainable” silk. Such terminology obscures differences in domestication, host-plant dependency, exposure to climatic extremes, landscape governance, cocoon processing and livelihood organisation. This critical narrative review examines evidence concerning the tropical tasar moth Antheraea mylitta, eri moth Samia ricini and muga moth Antheraea assamensis, with particular attention to India and relevant comparative evidence. Scholarly literature, verified primary research, methodological reviews and institutional records available through 10 August 2026 were considered, using a thematic appraisal of study design, ecological scale, causal inference and transferability. Evidence indicates that host-plant quality, rearing season and local insect–environment interactions materially influence production, whereas genetic studies caution against equating named tasar ecoraces with discrete, independently adapted evolutionary lineages. Heat-stress experiments establish physiological responses in particular tissues or larval stages but cannot by themselves predict farm-level survival under combined heat, rainfall and disease exposure. Climatic distribution models identify plausible areas of changing environmental suitability for muga and its hosts, although projected suitability is not an observed…",
+      "authors": [
+        "Rubi Sut",
+        "Toko Naan",
+        "Bhaswati Saikia",
+        "Pulak Rabha",
+        "Priyangana Chetia"
+      ],
+      "doi": "10.9734/ijecc/2026/v16i105744",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "6f17d7df67bf",
       "title": "Beyond degrees Celsius: Mapping competing justice scenarios in Australia's energy transition",
       "url": "https://doi.org/10.1016/j.erss.2026.105040",
@@ -10710,6 +11656,28 @@
       ],
       "doi": "10.1007/s10584-026-04322-1",
       "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "2967a86bd5dd",
+      "title": "A Survey on Sodium-Ion Batteries: Perspectives from Indian Researchers and Professionals",
+      "url": "https://doi.org/10.29195/dsss.09.01.126",
+      "source_id": "journal-openalex",
+      "source_name": "OpenAlex",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-22T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "India’s transition toward a renewable-intensive energy system has incentivized the need for alternative energy storage technologies that are cost-effective, safe, and compatible with national resource availability. In this context, Sodium-Ion Batteries (SIBs) have emerged as a strategically relevant option, particularly for stationary and grid-scale applications. However, a consolidated assessment of India’s readiness for SIB development, encompassing scientific progress, industrial capability, and policy support, remains limited. This study attempts to address the gap through an India-centric, perception-based survey designed to evaluate challenges and priorities associated with SIB research and deployment. An online questionnaire was administered across India, yielding responses from 102 Indian participants actively engaged in sodium ion battery research who have already published work in the field. The survey integrated Likert-scale perception statements, multiple-choice priority questions, and open-ended responses. Quantitative data were analyzed using percentage-based distributions, while qualitative inputs were examined through thematic analysis to identify recurring expert perspectives. The findings indicate cautious optimism regarding India’s progress in SIB research, alongside clear recognition of persistent bottlenecks, particularly low energy density, limited cycle life, and electrode–electrolyte instability. Application-level insights point toward stationary and…",
+      "authors": [
+        "Peeyush Phogat",
+        "Arvind Meena",
+        "Meher Wan"
+      ],
+      "doi": "10.29195/dsss.09.01.126",
+      "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
     },
@@ -12767,6 +13735,346 @@
       "date_is_first_seen": false
     },
     {
+      "id": "d277fe445960",
+      "title": "Dnešní děti mají strach z budoucnosti a mnohem víc se bojí o své blízké",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/dnesni-deti-maji-strach-z-budoucnosti-a-mnohem-vic-se-boji-o-sve-blizke",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "S ředitelkou organizace Nevypusť duši Barborou Pšenicovou o tom, jak mluvit s dětmi, proč na ně neklepat každých dvacet minut a jak v nich budovat odolnost",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "cb29b8098d84",
+      "title": "Máte pocit, že ztrácíte své děti? Vezměte je na oběd, nikdy není pozdě",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/mate-pocit-ze-ztracite-sve-deti-vezmete-je-na-obed-nikdy-neni-pozde",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "S kanadským psychologem a autorem Gordonem Neufeldem o tom, proč je v době sociálních sítí víc než dřív potřeba nenechat své děti na pochybách, že jsme tu pro ně",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "c2c48d5fe8ee",
+      "title": "„Kdo na základce neuměl fotbal, ten to měl blbý.“",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/kdo-na-zakladce-neumel-fotbal-ten-to-mel-blby",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Jak Češi sdílejí jednu ze svých univerzálních zkušeností: hodinu tělocviku",
+      "authors": [
+        "Silvie Lauder"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b830ade94a14",
+      "title": "Pravidla pro bezpečnější sítě už existují, jen je musíme umět vymáhat",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/pravidla-pro-bezpecnejsi-site-uz-existuji-jen-je-musime-umet-vymahat",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "S dětským ombudsmanem Martinem Benešem o rychlých a líbivých řešeních, roztříštěné ochraně ohrožených dětí a o tom, proč nebude obhajovat mandát",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a9568dd18a87",
+      "title": "Samy, nebo za ručičku?",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/samy-nebo-za-rucicku",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Děti se potřebují toulat a rodiče se potřebují nebát. Zpráva o jednom z dilemat 21. století",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "622bfaf48e8e",
+      "title": "Ztraceni ve vakuu",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/ztraceni-ve-vakuu",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Mají plné pokoje hraček, diáře nabité kroužky a v kapse přístroj s nekonečným přísunem zábavy. Přesto se podle dat dnešní děti nudí více než dřív",
+      "authors": [
+        "Clara Zanga"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "555b2b7f167a",
+      "title": "Půl hodiny u počítače, půl hodiny u ping-pongu. Jak vést děti ke zdraví",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/pul-hodiny-u-pocitace-pul-hodiny-u-ping-pongu-jak-vest-deti-ke-zdravi",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "S výzkumníky Michalem Kalmanem a Petrem Baďurou o tom, co dětem a dospívajícím nejvíc škodí, proč nepijí vodu a jak jim jít příkladem",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "4b339ef093d4",
+      "title": "Milé děti, vystupte z tramvaje – a vzhůru do divočiny",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/mile-deti-vystupte-z-tramvaje-a-vzhuru-do-divociny",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Živly a nebezpečí čekají na malé městské dobrodruhy na každém kroku",
+      "authors": [
+        "Tomáš Brolík"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "41e91c391fde",
+      "title": "Sexuální výchova po česku: učebnice chybí a vzory nejsou",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/sexualni-vychova-po-cesku-ucebnice-chybi-a-vzory-nejsou",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Podoba výuky na českých základních školách stojí a padá s osobní odvahou konkrétních učitelů. Jak učí děti o těle, hranicích či vztazích a jak čelí obavám i odporu části rodičů?",
+      "authors": [
+        "Kristýna Jelínková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3aa7ec086e2e",
+      "title": "Pokud byste měli moc zařídit jednu věc, která by podle vás pomohla zlepšit život českých dětí a dospívajících, co by to bylo?",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/pokud-byste-meli-moc-zaridit-jednu-vec-ktera-by-podle-vas-pomohla-zlepsit-zivot-ceskych-deti-a-dospivajicich-co-by-to-bylo",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "336be7a1532b",
+      "title": "Mnohdy jediná věc, jež jim dává smysl",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/mnohdy-jedina-vec-jez-jim-dava-smysl",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Odpočinout si ve světě, který není hrozný",
+      "authors": [
+        "Magdalena Fajtová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "328d5d4b658c",
+      "title": "Co si myslíte o chystaném zákazu mobilů ve školách? A jak se bez telefonu obejdete?",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/co-si-myslite-o-chystanem-zakazu-mobilu-ve-skolach-a-jak-se-bez-telefonu-obejdete",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "2cf494b55678",
+      "title": "Editorial: Děti z říše za displejem",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/editorial-deti-z-rise-za-displejem",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Proč se dnes děti více nudí? Jak spolu mluvit a dopřát jim více svobody? Proč může být generace alfa ta nejchytřejší? Jak vidí svět? A mnoho dalšího v novém Respekt Speciálu",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "2a9d9222c2a8",
+      "title": "Snažíme se, aby platila stará zásada, že dítě vychovává celá vesnice",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/snazime-se-aby-platila-stara-zasada-ze-dite-vychovava-cela-vesnice",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Středočeské Zákolany na úspěšné cestě k venkovské pospolitosti",
+      "authors": [
+        "Marek Švehla"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "28f0297871ff",
+      "title": "Jak si vybíráte knihy, které čtete? Ať už jsou to ty do školy, nebo ty, které čtete ve volném čase. A jaké knihy to nejčastěji jsou?",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/jak-si-vybirate-knihy-ktere-ctete-at-uz-jsou-to-ty-do-skoly-nebo-ty-ktere-ctete-ve-volnem-case-a-jake-knihy-to-nejcasteji-jsou",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "26f040278d96",
+      "title": "Co dělá vrásky generaci Alfa",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/co-dela-vrasky-generaci-alfa",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Bojí se stárnutí ještě dřív, než se dostanou do puberty. Novým statusovým symbolem není značková mikina, ale péče o pleť a drahá séra",
+      "authors": [
+        "Clara Zanga, Zuzana Machálková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "205a39204308",
+      "title": "Feministická výchova dívek v Čechách",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/feministicka-vychova-divek-v-cechach",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Co by měla umět moje dcera, aby mohla žít ve spravedlivějším světě než já?",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "1fff0c8e65dd",
       "title": "Povinně doporučeno",
       "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/povinne-doporuceno",
@@ -12780,6 +14088,26 @@
       "summary_raw": "Školní četba a deníky jako klíč ke čtenářské gramotnosti",
       "authors": [
         "Kateřina Čopjaková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "1c49ac05dd28",
+      "title": "Zapomeňte na osnovy. Prostě nechte děti být",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/zapomente-na-osnovy-proste-nechte-deti-byt",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "S Janou Nováčkovou o tom, proč je škola násilí na dětské duši – a i když tam nepřestanou chodit, jak jim dát okusit trochu svobody v učení",
+      "authors": [
+        "Tomáš Brolík"
       ],
       "doi": null,
       "topic_filter": true,
@@ -12807,6 +14135,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "11e5871c2f25",
+      "title": "Mobil tu nikomu nechybí, problém je latrína a na noční bojovce se nesmí strašit",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/mobil-tu-nikomu-nechybi-problem-je-latrina-a-na-nocni-bojovce-se-nesmi-strasit",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Výprava do lesů za roudnickými skauty ukazuje, že generace Alfa táboří trochu jinak – ale v podstatě stejně jako kdysi",
+      "authors": [
+        "Petr Horký"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "053feae89bae",
       "title": "„Vždyť už to není dítě.“ Do puberty dnes vstupují i sedmileté dívky",
       "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/vzdyt-uz-to-neni-dite-do-puberty-dnes-vstupuji-i-sedmilete-divky",
@@ -12820,6 +14168,26 @@
       "summary_raw": "Věk začátku pohlavního dospívání z neznámých důvodů neustále klesá. Především u děvčat může mít vážný vliv na psychiku",
       "authors": [
         "Martin Uhlíř"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "02023d5847df",
+      "title": "Babičce jsem musela vysvětlit, co je to cringe",
+      "url": "https://www.respekt.cz/special/2026/deti-z-rise-za-displejem/babicce-jsem-musela-vysvetlit-co-je-to-cringe",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T10:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Děti divně žonglují s neviditelnými míčky a říkají slova, jimž dospělí nerozumějí. Čeština je ke generaci Alfa a jejich slangu vstřícná, je otevřená novým slovům. Ve své podstatě jde ale v každé generaci o totéž: najít jazyk, který umožní sebevyjádření.",
+      "authors": [
+        "Eva Soukeníková"
       ],
       "doi": null,
       "topic_filter": true,
@@ -12982,6 +14350,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "12a86e0dea00",
+      "title": "V Opavě obešli vítězné ANO, které chválil Havlíček. Město povede OK Změna pro Opavu",
+      "url": "https://www.respekt.cz/informacni-servis/v-opave-obesli-vitezne-ano-ktere-chvalil-havlicek-mesto-povede-ok-zmena-pro-opavu-2026-10-21-11-43",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T09:40:23Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Opavský magistrát povede koalice uskupení OK Změna pro Opavu, ODS a Zelená pro Opavu. Vítězné ANO současného primátora Tomáše Navrátila tak skončí v opozici. Primátorem má být lídr OK Změny pro Opavu,...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -13283,6 +14671,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f9c7abf93c74",
+      "title": "Ministr Zůna je nedostupný v letadle, náměstci nemají prověrku. Kdo by v Česku rozhodl o sestřelení dronu?",
+      "url": "https://www.respekt.cz/cesko/ministr-zuna-je-nedostupny-v-letadle-namestci-nemaji-proverku-kdo-by-v-cesku-rozhodl-o-sestreleni-dronu",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T07:27:23Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Bezpečnostní rizika rostou, ministerstvo obrany tají, jak jim chce čelit",
+      "authors": [
+        "Ondřej Kundra, Kristýna Jelínková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "3c6f55134a72",
       "title": "Úspory na Kavčích horách. ČT pozastavila modernizaci budovy zpravodajství, výrobu pořadů chce ale zachovat",
       "url": "https://byznys.hn.cz/c1-67948350-uspory-na-kavcich-horach-ct-pozastavila-modernizaci-budovy-zpravodajstvi-vyrobu-poradu-chce-ale-zachovat",
@@ -13381,6 +14789,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "19d8b4e8d2b5",
+      "title": "Martin M. Šimečka: Jak se idealisté mění v monstra",
+      "url": "https://www.respekt.cz/komentare/martin-m-simecka-jak-se-idealiste-meni-v-monstra",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T06:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Setkání nad knihami vyrovnávajících se s tím, že vznešené cíle, které byly hnacím motorem úspěchu, vytlačila patologická touha po moci a penězích",
+      "authors": [
+        "Martin M. Šimečka, Denník N"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "2ced65545739",
       "title": "Ojeté elektromobily nabírají na síle. Jejich dovoz poprvé překonal registrace nových vozů",
       "url": "https://www.enviweb.cz/134714?utm_source=rss&utm_medium=rss&utm_campaign=rss_clanky",
@@ -13441,6 +14869,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "b83943ed10f3",
+      "title": "Poslance čeká první čtení rozpočtu na příští rok",
+      "url": "https://www.respekt.cz/informacni-servis/poslance-ceka-prvni-cteni-rozpoctu-na-pristi-rok-2026-10-21-06-30",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T05:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Poslance ve středu čeká úvodní kolo debaty nad návrhem státního rozpočtu na příští rok. V prvním čtení budou schvalovat základní parametry rozpočtu, tedy jeho příjmy, výdaje, schodek a způsob jeho vy...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "6f0489e8b3d1",
       "title": "Praskne AI bublina? MMF varuje před globálními otřesy, investoři skupují pojištění proti pádu AI gigantů",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/komentar-ai-investicni-bublina-trhy",
@@ -13458,6 +14906,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "40175905b204",
+      "title": "Sobectví nade vše",
+      "url": "https://www.respekt.cz/ranni-postreh/sobectvi-nade-vse",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-21T05:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Rozpad spojeneckých vazeb a mezistátních vztahů stavěných na principu spolupráce jsou jedním z největších geopolitických rizik současnosti",
+      "authors": [
+        "Ivan Pilip"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -13872,6 +15340,37 @@
       "date_is_first_seen": false
     },
     {
+      "id": "bd3c4471248e",
+      "title": "Plant-based meat alternatives can support reductions in agricultural land expansion and greenhouse gas emissions but entail micronutrient trade-offs",
+      "url": "https://doi.org/10.1038/s43016-026-01447-5",
+      "source_id": "journal-nature-food",
+      "source_name": "Nature Food",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-21T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "",
+      "authors": [
+        "Junqi Xiong",
+        "Zhaowu Yu",
+        "Yi Gong",
+        "Lei Feng",
+        "Minghao Zhuang",
+        "Dingrong Kang",
+        "Yang Ou",
+        "Wenjuan Ma",
+        "Yuxia Hu",
+        "Wenjun Yang",
+        "Yujia Zhang",
+        "Drew T. Shindell"
+      ],
+      "doi": "10.1038/s43016-026-01447-5",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "ac025b6fb5db",
       "title": "Prioritizing extreme climate indices for grain production risk monitoring in arid agroecosystems: evidence from Xinjiang, China",
       "url": "https://doi.org/10.1007/s10584-026-04312-3",
@@ -14029,6 +15528,56 @@
       "date_is_first_seen": false
     },
     {
+      "id": "583ed24506cc",
+      "title": "Powering sustainable skies: a review and roadmap to future green building architecture with advanced photovoltaic products",
+      "url": "https://doi.org/10.1080/14786451.2026.2750782",
+      "source_id": "journal-international-journal-of-sustainable-energy",
+      "source_name": "International Journal of Sustainable Energy",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-21T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Sustainable buildings increasingly incorporate energy-efficient outer structures and on-site renewable generation solutions to lower their energy consumption and environmental impact. This review describes the most advanced PV technologies and products and builds on the technology-to-product-to-architecture framework for 2025–2050. Its contribution is an integrated assessment of PV technology evolution, building performance, architectural compatibility, techno-economics, sustainability, and implemented BIPV applications. Technologies are evaluated using efficiency, service life, levelised cost of energy, lifecycle greenhouse-gas emissions, and BIPV applicability. Monocrystalline silicon systems have about 22%–24% efficiency, CdTe has 18%–19.9%, CIGS has 18%–20% efficiency, and laboratory perovskite solar cells can achieve up to 26.9% efficiency, while the LOCE varies with configuration, financing, technology, and location. Solar windows, façades, roof tiles, and bifacial systems can expand the functional use of building surfaces. The roadmap links near-term BIPV improvements with medium-term tandem and digital energy management and long-term reliability, recycling, circularity, and climate-adaptive integration.",
+      "authors": [
+        "Mohammad Khairul Basher",
+        "M. Khalid Hossain",
+        "Md Samiul Islam",
+        "Mohammad Aminul Islam",
+        "Md. Rokonuzzaman",
+        "Norsuzlin Mohd Sahar",
+        "Mohammad Tariqul Islam",
+        "Mohammad Nur‐E‐Alam"
+      ],
+      "doi": "10.1080/14786451.2026.2750782",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "508d5c615d0f",
+      "title": "Strategi Pedagogi PAI Berbasis Moderasi Beragama untuk Mencegah Infiltrasi Radikalisme di Lembaga Pendidikan",
+      "url": "https://doi.org/10.59689/iera.v7i3.2198",
+      "source_id": "journal-islamic-education-and-research-academy",
+      "source_name": "Islamic Education and Research Academy.",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-21T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "This article analyzes pedagogical strategies in Islamic Religious Education (PAI) that integrate religious moderation to prevent the infiltration of radical narratives into educational institutions. It uses qualitative library research by examining policy documents, curriculum regulations, and relevant scholarly literature, with content analysis organized around policy support, classroom pedagogy, school culture, and theoretical foundations. The analysis identifies three mutually reinforcing strategies: critical dialogic learning, contextual and inclusive narrative learning, and the strengthening of the hidden curriculum through teacher role modelling and a non-discriminatory school climate. These strategies draw on critical pedagogy, social constructivism, and the ethical principles of wasathiyah Islam. The article argues that policy documents provide an institutional framework, but they do not automatically ensure inclusive learning. Implementation depends on teachers’ interpretive competence, opportunities for reasoned dialogue, safe social interaction, and consistent school practices. Because this study relies on literature rather than field observations or experimental evaluation, the proposed strategies should be understood as a conceptual framework requiring empirical testing in different educational settings.",
+      "authors": [
+        "David Riyan",
+        "Nelson",
+        "Sutarto",
+        "Mirzon Daheri"
+      ],
+      "doi": "10.59689/iera.v7i3.2198",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "3d22f1018035",
       "title": "Joining the dots: why more and accurate media coverage of climate change matters",
       "url": "https://doi.org/10.1136/bmj-2026-101050",
@@ -14088,6 +15637,28 @@
         "Azzam Abu-Rayash"
       ],
       "doi": "10.1038/s41598-026-71931-2",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "28aff41bb54a",
+      "title": "Architecture of the Malay House in Melaka: Cultural Heritage and Local Adaptation",
+      "url": "https://doi.org/10.6007/ijarbss/v16-i10/28858",
+      "source_id": "journal-international-journal-of-academic-research-in-business-and-social-sciences",
+      "source_name": "International Journal of Academic Research in Business and Social Sciences",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-21T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "The traditional Malay house in Melaka is an important example of Malaysia’s rich cultural heritage. It combines local design with outside influences that have developed over centuries of trade, migration, and colonization. These structures show both aesthetic and functional values, and they adapt well to the local climate and environment. However, rapid urban growth and modernization put these traditional houses at risk. This study looks at the architectural features of the Melaka Malay house, examines the social, cultural, and environmental factors that affect its design, and identifies current challenges in preserving this heritage. The research uses a qualitative approach, including literature review and visual analysis, to explore the form, layout, materials, and decorative elements of the Melaka house. Data is analyzed to uncover the meanings and adaptive strategies within its architecture. The findings emphasize that these houses represent cultural identity and sustainable design principles, like passive ventilation and the use of local materials. They also show a growing gap between efforts to conserve heritage and current architectural trends. The study concludes that maintaining the Melaka Malay house requires a more connected approach involving policy support, community involvement, and education. It also suggests integrating traditional architectural values into modern design to preserve cultural identity while meeting present-day needs. This research adds to…",
+      "authors": [
+        "Noor Hafiza Ismail",
+        "Nadia Nasir",
+        "Mohd Fauzan Mat Sari"
+      ],
+      "doi": "10.6007/ijarbss/v16-i10/28858",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -14160,6 +15731,27 @@
       "doi": null,
       "topic_filter": false,
       "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "0477b81e6328",
+      "title": "Climate Change and Agricultural Production in Zimbabwe The Case of Zaka Rural District in Masvingo Province of Zimbabwe",
+      "url": "https://doi.org/10.71458/bqm6eg18",
+      "source_id": "journal-ngenani-the-zimbabwe-ezekiel-guti-journal-of-community-engagement-and-societal-transformations",
+      "source_name": "Ngenani The Zimbabwe Ezekiel Guti Journal of Community Engagement and Societal Transformations",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-21T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Climate change is a major global challenge and is fast becoming an existential crisis for the universe and the greatest issue confronting humanity today. The impact of climate change on rural livelihoods in developing countries is a growing concern, particularly in sub-Saharan Africa, where most of the population relies on agriculture for food and income security. Extreme weather events, including heat waves, droughts, torrential rains that cause flash floods, high winds and hailstorms, are becoming more frequent in Zimbabwe, which is vulnerable to these variations in temperature and precipitation. The changing climate poses a serious threat to communities in rural areas where they rely mainly on farming, fishing and other traditional livelihoods. Climate change threatens agricultural productivity in Zimbabwe's food-insecure regions, particularly in regions IV and V. Global climate change has been attributed to several sources, including natural and human-caused events. It was clear that the effects of climate change on Zaka District's agricultural and rural people were having an impact on the security of food and income. Communities in rural Zimbabwe like Zaka in Masvingo Province, where people depend mostly on farming and other traditional livelihoods, are seriously threatened by the changing environment. Climate change affects different areas of life including the agriculture sector, therefore it has become a concern for development which requires collective action from…",
+      "authors": [
+        "Irony Mazuruse",
+        "Judith Chokumanyara"
+      ],
+      "doi": "10.71458/bqm6eg18",
+      "topic_filter": true,
+      "source_weight": 1.1,
       "date_is_first_seen": false
     },
     {
@@ -15374,6 +16966,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "c52c3914c6de",
+      "title": "EU mění přístup k Arktidě: Nová strategie reaguje na hrozby ze strany Ruska i zájmy Číny",
+      "url": "https://www.respekt.cz/informacni-servis/eu-meni-pristup-k-arktide-nova-strategie-reaguje-na-hrozby-ze-strany-ruska-i-zajmy-ciny-2026-10-20-16-02",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T16:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Rusko podle předsedkyně Evropské komise Ursuly von der Leyen obnovuje svou vojenskou přítomnost v Arktidě, uplatňuje vůči sousedům hybridní strategie a mění bezpečnostní situaci v regionu, což má dopa...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "3402de292cc5",
       "title": "Umělá inteligence prakticky. Jak ji naplno využít, když jsem začátečník",
       "url": "https://ekonom.cz/c1-67948130-zapisnik-zacinajiciho-pasaka-ai-agentu-kde-zacit-co-to-umi-a-kolik-to-stoji",
@@ -15510,6 +17122,66 @@
       "date_is_first_seen": false
     },
     {
+      "id": "754c46931caf",
+      "title": "Nevděčná doprava i ženy, které se umějí domluvit. Kdo povede Prahu, Brno a Ostravu?",
+      "url": "https://www.respekt.cz/vytah-respektu/nevdecna-doprava-i-zeny-ktere-se-umeji-domluvit-kdo-povede-prahu-brno-a-ostravu",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T15:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Výtah Respektu: Souhrn dne a rozhovor s Filipem Zelenkou a Kristýnou Jelínkovou",
+      "authors": [
+        "Eva Soukeníková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "2526475a8116",
+      "title": "Na stalinismus nám nesahejte",
+      "url": "https://www.respekt.cz/historie/na-stalinismus-nam-nesahejte",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T15:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Výročí maďarské revoluce: V roce 1956 mělo Československo šanci zbavit se socialismu ruského typu a jít svojí cestou. Nevyužilo ji",
+      "authors": [
+        "Marek Švehla"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "41f08d4450d0",
+      "title": "Rubio: USA Ukrajině nic záměrně neupírají, Trumpa tato obvinění frustrují",
+      "url": "https://www.respekt.cz/informacni-servis/rubio-usa-ukrajine-nic-zamerne-neupiraji-trumpa-tato-obvineni-frustruji-2026-10-20-15-56",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T14:50:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Není nic, co by Spojené státy Ukrajině záměrně upíraly, uvedl americký ministr zahraničí Marco Rubio během své návštěvy v Indii. Také řekl, že prezident USA Donald Trump je z obvinění, že Kyjevu záměr...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "a4c59c296127",
       "title": "Q&A: Why a pivotal IPCC meeting in Ethiopia ended in ‘profound disappointment’",
       "url": "https://www.carbonbrief.org/qa-why-a-pivotal-ipcc-meeting-in-ethiopia-ended-in-profound-disappointment",
@@ -15527,6 +17199,46 @@
       "doi": null,
       "topic_filter": false,
       "source_weight": 1.3,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "f0c0348c1278",
+      "title": "Bolsonaro, nebo Lula? V Brazílii přibývá lidí hledajících ve volbách souboj Boha s ďáblem",
+      "url": "https://www.respekt.cz/podcasty/bolsonaro-nebo-lula-v-brazilii-pribyva-lidi-hledajicich-ve-volbach-souboj-boha-s-dablem",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T14:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "S Radkem Bubnem o prezidentských volbách v Brazílii, nástupu pravice v Jižní Americe a zájmech Donalda Trumpa i Evropy v regionu",
+      "authors": [
+        "Štěpán Sedláček"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "d68c7afc33a0",
+      "title": "Praha sobě nabízí Starostům: Udělejme koalici s Piráty, dostanete většinu v radě a post primátora",
+      "url": "https://www.respekt.cz/informacni-servis/praha-sobe-nabizi-starostum-udelejme-koalici-s-piraty-dostanete-vetsinu-v-rade-a-post-primatora-2026-10-20-16-17",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T14:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Praha sobě nabídla vítěznému STAN většinu šesti míst v radě hlavního města a pozici primátora v případné společné koalici s Piráty. Na facebooku to uvedl její předseda Adam Scheinherr. V jedenáctičle...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -15583,6 +17295,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "644fad92c763",
+      "title": "Rozpočet na příští rok je podle opozice sestavený tak, jako by byla krize",
+      "url": "https://www.respekt.cz/informacni-servis/rozpocet-na-pristi-rok-je-podle-opozice-sestaveny-tak-jako-by-byla-krize-2026-10-20-14-13",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T13:25:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Návrh státního rozpočtu na příští rok je podle opozičních stran sestavený jako pro krizový rok, i když není krize. Předseda Pirátů Zdeněk Hřib na tiskové konferenci ve Sněmovně řekl, že deficit 386 mi...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -15684,6 +17416,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "e6a7f2bc1115",
+      "title": "Europoslanci podpořili lepší ochranu práv cestujících v EU",
+      "url": "https://www.respekt.cz/informacni-servis/europoslanci-podporili-lepsi-ochranu-prav-cestujicich-v-eu-2026-10-20-14-12",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T12:12:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Poslanci v konečném hlasování podpořili lepší prosazování práv cestujících v Evropské unii. Cílem je zlepšit ochranu cestujících a informace, které dostanou v případě, že dojde k narušení jejich cesty...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "0386c6039237",
       "title": "Medvědí služba Bruselu. Český premiér popudil Brity cynickým výrokem o brexitu",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/zpravy-britanie-eu-babis-penize",
@@ -15740,6 +17492,26 @@
       ],
       "doi": null,
       "topic_filter": false,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "899e792ba43d",
+      "title": "Bulhaři jdou volit v atmosféře nejasných útoků na lodě v Černém moři",
+      "url": "https://www.respekt.cz/newsletter-clanky/bulhari-jdou-volit-v-atmosfere-nejasnych-utoku-na-lode-v-cernem-mori",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T12:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Garrigue: Příští hlava státu se v tandemu s premiérem musí rozhodnout, jaký bude vztah Bulharska s Moskvou",
+      "authors": [
+        "Markéta Lomičková"
+      ],
+      "doi": null,
+      "topic_filter": true,
       "source_weight": 0.9,
       "date_is_first_seen": false
     },
@@ -15801,6 +17573,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "46405509cee3",
+      "title": "Šéf TOP 09 z odchodu jihomoravských spolustraníků k lidovcům nařkl Grolicha",
+      "url": "https://www.respekt.cz/informacni-servis/sef-top-09-z-odchodu-jihomoravskych-spolustraniku-k-lidovcum-narkl-grolicha-2026-10-20-12-52",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T11:15:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Předseda TOP 09 Matěj Ondřej Havel vidí za odchodem části jihomoravských členů TOP 09 k lidovcům koordinovanou akci předsedy KDU-ČSL Jana Grolicha. Jde to proti snaze opozice spojit se proti ANO, uved...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -15977,6 +17769,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "cfa501b670d3",
+      "title": "Vrchní soud potvrdil mladíkovi souzenému v kauze brněnské synagogy devět let",
+      "url": "https://www.respekt.cz/informacni-servis/vrchni-soud-potvrdil-mladikovi-souzenemu-v-kauze-brnenske-synagogy-devet-let-2026-10-20-11-50",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T10:10:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Vrchní soud v Olomouci potvrdil mladíkovi souzenému za pokus o teroristický útok v Brně a další trestné činy devět let vězení. Do vězení půjde za pokus o zapálení brněnské synagogy, pokus o vraždu bez...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "036c137f3bcd",
       "title": "Skills shortage key hurdle for German energy transition and infrastructure modernisation – report",
       "url": "https://www.cleanenergywire.org/news/skills-shortage-key-hurdle-german-energy-transition-and-infrastructure-modernisation-report",
@@ -16028,6 +17840,26 @@
       "summary_raw": "Power sector reforms and government support are driving increased investment in Brazil's renewable technologies.",
       "authors": [
         "GlobalData Energy"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "9a7c2f96d177",
+      "title": "Linn Strømsborg: Chci hájit právo mít děti – i právo nechat na pokoji ty, kdo je nechtějí",
+      "url": "https://www.respekt.cz/literatura/linn-stromsborg-chci-hajit-pravo-mit-deti-i-pravo-nechat-na-pokoji-ty-kdo-je-nechteji",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T09:45:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "S norskou spisovatelkou o dobrovolné bezdětnosti, nerovnoměrně rozdělené péči i o tom, proč je potřeba přestat obracet vztek proti sobě",
+      "authors": [
+        "Barbora Voříšková"
       ],
       "doi": null,
       "topic_filter": true,
@@ -16093,6 +17925,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "13d1fac3fa11",
+      "title": "Zákaz nočního vycházení zajistil ve Francii klid, uvedl premiér",
+      "url": "https://www.respekt.cz/informacni-servis/zakaz-nocniho-vychazeni-zajistil-ve-francii-klid-uvedl-premier-2026-10-20-11-36",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T09:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Zákaz nočního vycházení, který po několika dnech násilných demonstrací francouzské úřady vyhlásily v částech Paříže i v jiných městech, pomohl v noci na úterý zajistit klid. Na sociální síti X to naps...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c54f50489dc1",
       "title": "Trump vowed to stop an ‘energy emergency.’ Then he created a real one.",
       "url": "https://grist.org/energy/trump-energy-emergency-declaration-prices-oil-coal-gasoline-diesel/",
@@ -16130,6 +17982,46 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "0867220ff9d9",
+      "title": "OpenAI právě podnikla kobercový nálet na matematiku",
+      "url": "https://www.respekt.cz/zahranici/open-ai-prave-podnikla-kobercovy-nalet-na-matematiku",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T08:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Pokud matematici ztratí motivaci zkoumat tajemství svého oboru, začne se náš svět propadat do nejistoty",
+      "authors": [
+        "Konstantin Kakaes, The Atlantic"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "83260f69795f",
+      "title": "Ruské útoky zabily u Kyjeva sedm lidí",
+      "url": "https://www.respekt.cz/informacni-servis/ruske-utoky-zabily-u-kyjeva-sedm-lidi-2026-10-20-10-53",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T08:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Nejméně tři lidi připravil o život a dalších šest osob zranil ruský útok během noci na úterý na výrobní závod a sklad u města Obuchiv v Kyjevské oblasti, informovali záchranáři z ukrajinské služby pro...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -16213,6 +18105,66 @@
       "date_is_first_seen": false
     },
     {
+      "id": "d037c5a6f5b4",
+      "title": "Štěpán Javůrek: AI jednou možná bude psát dobré knihy. Ale lidstvo bez tvoření vymře",
+      "url": "https://www.respekt.cz/spolecnost/stepan-javurek-ai-jednou-mozna-bude-psat-dobre-knihy-ale-lidstvo-bez-tvoreni-vymre",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T07:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Spisovatel a cestovatel o nové knize Ve stínu jeřabiny, historickém strachu v Sudetech, kouzlu Krušných hor, stavu občanské společnosti a radosti z prvního dítěte",
+      "authors": [
+        "Barbora Kroužková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "24fdc854017c",
+      "title": "Trumpovi zmocněnci mají v Oslu jednat se Zelenským",
+      "url": "https://www.respekt.cz/informacni-servis/trumpovi-zmocnenci-maji-v-oslu-jednat-se-zelenskym-2026-10-20-10-56",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T07:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Zvláštní zmocněnci amerického prezidenta Donalda Trumpa Steve Witkoff a Jared Kushner budou v úterý v Oslu jednat o možnostech ukončení ruské války proti Ukrajině, oznámila norská vláda. Do metropole ...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "32c14fdb79f0",
+      "title": "Bezpečnostní rada státu za účasti Pavla projedná armádní koncepci",
+      "url": "https://www.respekt.cz/informacni-servis/bezpecnostni-rada-statu-za-ucasti-pavla-projedna-armadni-koncepci-2026-10-20-00-14",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T06:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Novou armádní koncepci a aktuální bezpečnostní hrozby v úterý projedná za účasti prezidenta Petra Pavla Bezpečnostní rada státu. Premiér Andrej Babiš (ANO) před měsícem také uvedl, že na dnešním jedná...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "1c6b861cd884",
       "title": "Strategic policy can drive a clean and competitive European industry",
       "url": "https://www.eea.europa.eu/en/newsroom/news/strategic-policy-can-drive-a-clean-and-competitive-european-industry",
@@ -16230,6 +18182,66 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "37c2a6de942e",
+      "title": "Voliči v Albertě odmítli zahájit proces odtržení od Kanady, pro byla čtvrtina",
+      "url": "https://www.respekt.cz/informacni-servis/volici-v-alberte-odmitli-zahajit-proces-odtrzeni-od-kanady-pro-byla-ctvrtina-2026-10-20-11-04",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T05:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Voliči v kanadské provincii Alberta v pondělním referendu odmítli zahájit proces odtržení od Kanady, proti bylo asi 76 procent hlasujících. Podle AFP jde o úspěch pro premiéra Marka Carneyho v době ob...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "f96d8ace0825",
+      "title": "Šárka Homfray: Šetřit na státu znamená šetřit i na právní jistotě",
+      "url": "https://www.respekt.cz/ranni-postreh/sarka-homfray-setrit-na-statu-znamena-setrit-i-na-pravni-jistote",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T05:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Aby se nestávalo, že lidé dostávají rozdílné instrukce a odpovědi na úřadech proto, že bydlí o pár okresů dál, musí stát investovat do odbornosti, vzdělávání, srozumitelných metodik a technologií úředníků",
+      "authors": [
+        "Šárka Homfray"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "9e9a03155540",
+      "title": "Podle Trumpa je načase, aby za Ukrajinu místo Zelenského vyjednával někdo jiný",
+      "url": "https://www.respekt.cz/informacni-servis/podle-trumpa-je-nacase-aby-za-ukrajinu-misto-zelenskeho-vyjednaval-nekdo-jiny-2026-10-20-00-12",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-20T05:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Americký prezident Donald Trump v poznámce o ukrajinském prezidentovi Volodomyru Zelenském uvedl, že je načase, aby za Ukrajinu vyjednával někdo jiný. K možnosti trostranné schůzky s čínským preziden...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -16566,6 +18578,27 @@
       "date_is_first_seen": false
     },
     {
+      "id": "b0e72ca62c6e",
+      "title": "Principals’ Management Strategies and Organisational Climate in Public Senior Secondary Schools in Abia State, Nigeria",
+      "url": "https://journals.researchparks.org/index.php/IJIE/article/view/5843",
+      "source_id": "journal-international-journal-on-integrated-education",
+      "source_name": "International Journal on Integrated Education",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-20T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "This study investigated principals’ management strategies and organisational climate in public senior secondary schools in Abia state, Nigeria. The study was guided by four research questions and three hypotheses. The study employed a descriptive correlational research design. The population of the study was made up of 15,957 Teachers. The sample size of 377 teachers was used. This was determined using the Krejcie and Morgan sample size determination table. Data were gathered using Principals’ Management Strategies and Organisational Climate Questionnaire (PMSOCQ) and was validated by the experts in the field of Educational Administration and Planning. The validated copy was subjected to a reliability test, and the reliability index stood at 0.76 using Cronbach Alpha. Data collected were analysed using frequency counts, mean and standard deviation for research questions and Pearson Product Moment Correlation Analysis (r) at a 0.05 significance level for the null hypotheses. Findings indicated that Principals’ Conflict management, Stakeholder engagement and Resource management strategies enhanced school-community relations; and the extent of the organizational climate health was to a very high extent in public senior secondary schools in Abia State, Nigeria. Also, there was a significant relationship between principals’ management strategies and organisational climate in senior secondary schools in Abia State, Nigeria. Based on the findings, it was recommended among others…",
+      "authors": [
+        "M. S. Dada",
+        "N. C. Uba"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "8b93616a7fe0",
       "title": "Water Consumption and Hydration Status in Children Living in Hot Climate Conditions",
       "url": "https://doi.org/10.30565/medalanya.1919868",
@@ -16602,6 +18635,28 @@
         "周震秒"
       ],
       "doi": "10.54254/2755-2721/2026.38009",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "7d809023f796",
+      "title": "Parasites as environmental bioindicators and climate-sensitive sentinels in arid ecosystems: a one health synthesis with a focus on Saudi Arabia",
+      "url": "https://doi.org/10.3389/fvets.2026.1978111",
+      "source_id": "journal-frontiers-in-veterinary-science",
+      "source_name": "Frontiers in Veterinary Science",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-20T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Parasites integrate environmental conditions across trophic levels and may therefore provide sensitive, mechanistically interpretable signals of ecosystem change. This narrative synthesis evaluates the potential of parasites and parasite communities as environmental bioindicators and climate-sensitive sentinels, with particular emphasis on arid ecosystems and Saudi Arabia. We integrate evidence from terrestrial, aquatic, marine, and zoonotic systems to examine how warming, drought, hydrological change, salinity, pollution, land-use transformation, and host-mediated vector movement influence parasite occurrence, transmission, phenology, community composition, and contaminant accumulation. The evidence supports two complementary bioindicator functions: accumulation indicators, in which parasites concentrate environmental contaminants, and effect indicators, in which parasite prevalence, phenology, richness, or community structure responds to environmental disturbance. Saudi marine systems provide particularly strong examples, including trace-metal accumulation by acanthocephalans and nematodes, community-level changes associated with habitat degradation, and seasonal transmission of Kudoa sp. in Priacanthus tayenus . Terrestrial and waterborne systems provide additional candidate signals through tick phenology and the distribution of Cryptosporidium and Giardia. However, the current evidence base is dominated by cross-sectional studies, heterogeneous diagnostic methods, and…",
+      "authors": [
+        "Hanadi B. A. Baghdadi",
+        "Mohamed Abdelsalam",
+        "Mohamed Abdo Rizk"
+      ],
+      "doi": "10.3389/fvets.2026.1978111",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -16726,6 +18781,26 @@
         "Chen Pinmo"
       ],
       "doi": "10.54254/2753-7048/2026.jo37915",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "45486e905ca8",
+      "title": "The nexus of carbon tax, carbon tax revenue, and renewable energy consumption",
+      "url": "https://doi.org/10.28986/jtaken.v12i2.2685",
+      "source_id": "journal-jurnal-tata-kelola-dan-akuntabilitas-keuangan-negara",
+      "source_name": "Jurnal Tata Kelola dan Akuntabilitas Keuangan Negara",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-10-20T00:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Global energy consumption is currently dominated by environmentally unfriendly fossil fuels, with only 14.8% of the world’s energy sources coming from renewable energy sources. To reduce dependence on fossil fuels, many countries have established carbon tax policies that impose a cost for each unit of CO2 emitted. This study investigates the impact of carbon taxes and carbon tax revenues on renewable energy consumption in countries that have implemented these policies, focusing on 19 mostly high-income countries, covering the eight-year period from 2017 to 2024. Using the Generalized Method of Moments approach, the results show that while carbon taxes increase renewable energy consumption, carbon tax revenues have the opposite effect. If a carbon tax is increased by 1%, renewable energy consumption grows by 0.082%, but if carbon tax revenue increases by 1%, renewable energy consumption declines by 0.048%. This indicates a policy gap between fiscal instruments and budget allocations. This study offers new insights for developing countries by showing that carbon tax policies are effective in increasing renewable energy consumption as long as the government taxes carbon emissions at a reasonable rate and allocates the revenues generated from those taxes to renewable energy investments appropriately.",
+      "authors": [
+        "Siswantoro"
+      ],
+      "doi": "10.28986/jtaken.v12i2.2685",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -17458,6 +19533,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "997e84a9616c",
+      "title": "V některých francouzských městech včetně Paříže platí po násilnostech noční zákazy vycházení",
+      "url": "https://www.respekt.cz/informacni-servis/v-nekterych-francouzskych-mestech-vcetne-parize-plati-po-nasilnostech-nocni-zakazy-vychazeni-2026-10-19-20-37",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T18:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Po víkendových nepokojích a násilnostech v některých francouzských městech vyhlásily v pondělí s místní úřady někde noční zákazy vycházení. Premiér Sébastien Lecornu uvedl, že požádal prefekty, aby z...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "e9cb3e28790e",
       "title": "Americans’ Use of Internet, Broadband in 2026",
       "url": "https://www.pewresearch.org/internet/fact-sheet/internet-broadband/",
@@ -17578,6 +19673,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f727838612d5",
+      "title": "Zástupci vlády, odborů a zaměstnavatelů se shodli na změně nastavení platů",
+      "url": "https://www.respekt.cz/informacni-servis/zastupci-vlady-odboru-a-zamestnavatelu-se-shodli-na-zmene-nastaveni-platu-2026-10-19-20-20",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T17:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Zástupci vlády, odborů a zaměstnavatelů se dnes dohodli na změně odměňování ve veřejných a státních službách od ledna. Většině pracovníků se v nových platových tabulkách příští rok tarify zvýší, nikom...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "45c5b6e73b9e",
       "title": "Jančura není spokojený se svými vagony. Dává do nich 1,5 miliardy korun, nejnižší třída Low cost úplně skončí",
       "url": "https://archiv.hn.cz/c1-67947410-jancura-neni-spokojeny-se-svymi-vagony-dava-do-nich-1-5-miliardy-korun-nejnizsi-trida-lowcost-uplne-skonci",
@@ -17676,6 +19791,66 @@
       "date_is_first_seen": false
     },
     {
+      "id": "d33149892e8d",
+      "title": "Francie v plamenech. Od krys ve školách až k vyhrocenému prezidentskému souboji",
+      "url": "https://www.respekt.cz/podcasty/francie-v-plamenech-od-krys-ve-skolach-az-k-vyhrocenemu-prezidentskemu-souboji",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T15:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Výtah Respektu: Souhrn dne a rozhovor s redaktorkou Magdalénou Fajtovou",
+      "authors": [
+        "Eva Soukeníková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "5d9420ab12cd",
+      "title": "Každý telefon se dá odložit, nikdo mě nemusí slyšet mluvit ukrajinsky",
+      "url": "https://www.respekt.cz/zahranici/kazdy-telefon-se-da-odlozit-nikdo-me-nemusi-slyset-mluvit-ukrajinsky",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T15:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Nechuť k východním sousedům nabírá na síle. Jak se Ukrajincům žije v Polsku",
+      "authors": [
+        "Tomáš Brolík"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "410e86abc683",
+      "title": "Opozice chce vrátit rozpočet vládě a snížit schodek na nejvýše 290 miliard",
+      "url": "https://www.respekt.cz/informacni-servis/opozice-chce-vratit-rozpocet-vlade-a-snizit-schodek-na-nejvyse-290-miliard-2026-10-19-16-29",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T14:50:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Sněmovní opozice navrhne, aby Sněmovna vrátila vládě k přepracování návrh státního rozpočtu na příští rok. Bude požadovat, aby vláda snížila schodek nejvýše na 290 miliard korun z nyní navrhovaných 3...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "baf4c1aebe89",
       "title": "Rakovina mozku nemusí začínat bolestí hlavy, upozorňuje lékařka",
       "url": "https://ct24.ceskatelevize.cz/clanek/veda/rakovina-mozku-nemusi-zacinat-bolesti-hlavy-upozornuje-lekarka-378788",
@@ -17688,6 +19863,26 @@
       "first_seen": "2026-10-26T04:44:57.094542Z",
       "summary_raw": "Rakovinou mozku sice v Česku onemocní ročně „jen“ několik stovek lidí, ale je to přes pokrok v medicíně stále velmi ničivá diagnóza. Pomáhají nejen nové léky, ale také lepší diagnostika a také práce s pacienty.",
       "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "d1ef5b62a975",
+      "title": "Na členství v komisi pro výběr šéfa Národní galerie rezignovali dva členové",
+      "url": "https://www.respekt.cz/informacni-servis/na-clenstvi-v-komisi-pro-vyber-sefa-narodni-galerie-rezignovali-dva-clenove-2026-10-19-15-33",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T14:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Fotograf Lukáš Jasanský a jeho žena grafička a ilustrátorka Lenka Jasanská rezignovali minulý týden na členství v komisi ministerstva kultury pro výběr nového generálního ředitele nebo ředitelky Národ...",
+      "authors": [
+        "Respekt"
+      ],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
@@ -17712,6 +19907,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "7e128ad2044f",
+      "title": "Ján Markoš: Vybrali byste si modrou, nebo červenou pilulku?",
+      "url": "https://www.respekt.cz/filozoficke-otazky/jan-markos-vybrali-byste-si-modrou-nebo-cervenou-pilulku",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T13:21:59Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Co by většina lidí upřednostnila – realitu před příjemnou fikcí?",
+      "authors": [
+        "Ján Markoš, Denník N"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "0a293fa1b9c0",
       "title": "Banky spustily poskytování bezúročných půjček na zelené rekonstrukce domů i bytů. Lidé mohou žádat o miliony",
       "url": "https://archiv.hn.cz/c1-67947260-banky-spustily-poskytovani-bezurocnych-pujcek-na-zelene-rekonstrukce-domu-i-bytu-lide-mohou-zadat-o-miliony",
@@ -17729,6 +19944,46 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "50f9a73e82b7",
+      "title": "Vláda schválila změnu financování a profesionalizaci asistentů pedagoga",
+      "url": "https://www.respekt.cz/informacni-servis/vlada-schvalila-zmenu-financovani-a-profesionalizaci-asistentu-pedagoga-2026-10-19-15-27",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T13:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Novelu o financování a profesionalizaci asistentů pedagoga v základních školách schválila vláda, oznámil novinářům po jednání ministr školství Robert Plaga (za ANO). Kvůli výhradám koaličních partnerů...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3e6375fd15ec",
+      "title": "O nás bez nás, stěžují si mladí poradci ombudsmana na chystaný zákaz mobilů",
+      "url": "https://www.respekt.cz/newsletter-clanky/o-nas-bez-nas-stezuji-si-mladi-poradci-ombudsmana-na-chystany-zakaz-mobilu",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T13:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Děti se v debatě cítí opomíjené, potvrzuje nedávno zvolený Martin Beneš",
+      "authors": [
+        "Markéta Plíhalová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -17790,6 +20045,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "be9340a2c6e0",
+      "title": "Debata o migraci na summitu byla vyhrocená, velmi silná slova pronesl Babiš",
+      "url": "https://www.respekt.cz/informacni-servis/debata-o-migraci-na-summitu-byla-vyhrocena-velmi-silna-slova-pronesl-babis-2026-10-19-15-30",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T12:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Páteční debata na summitu EU, která se týkala migrační politiky, byla podle diplomatických zdrojů, které citoval server Politico, vyhrocená, nepříjemná a nedůstojná úrovně Evropské rady. Velmi silná s...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "3e752fd78cf1",
       "title": "Industry transition and resilient energy system among core growth areas in Germany – business initiative",
       "url": "https://www.cleanenergywire.org/news/industry-transition-and-resilient-energy-system-among-core-growth-areas-germany-business-initiative",
@@ -17846,6 +20121,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "804d600f0ea0",
+      "title": "Okamura: Předlohu k neziskovým organizacím by mohla dostat koalice ještě v říjnu",
+      "url": "https://www.respekt.cz/informacni-servis/okamura-predlohu-k-neziskovym-organizacim-by-mohla-dostat-koalice-jeste-v-rijnu-2026-10-19-12-25",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T11:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Návrh zákona k průhlednějšímu financování neziskových organizací by mohla koalice dostat ještě v říjnu. Po jednání koaliční rady to řekl novinářům předseda Sněmovny a hnutí SPD Tomio Okamura. Brzy by ...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "9b785c4467c5",
       "title": "tvbeat and Ipsos partner to advance Total TV audience measurement for TVNZ and Sky in New Zealand",
       "url": "https://www.ipsos.com/en/tvbeat-and-ipsos-partner-advance-total-tv-audience-measurement-tvnz-and-sky-new-zealand",
@@ -17863,6 +20158,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "7b091dae8afe",
+      "title": "Demonstranti v Paříži blokují muzeum Louvre, vedení Marseille zakázalo protesty",
+      "url": "https://www.respekt.cz/informacni-servis/demonstranti-v-parizi-blokuji-muzeum-louvre-vedeni-marseille-zakazalo-protesty-2026-10-19-12-22",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T10:08:31Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Demonstranti podporující francouzské studenty v pondělí zablokovali vchod do pařížského muzea Louvre, které je tak pro veřejnost zavřené, uvedla instituce na svých stránkách. Vedení druhého největšího...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -17903,6 +20218,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "2d9ca2d1d0a3",
+      "title": "Opice přivázané u kůlů, bomby plné neštovic. Jak se v SSSR a Rusku vyvíjely biologické zbraně",
+      "url": "https://www.respekt.cz/historie/opice-privazane-u-kulu-bomby-plne-nestovic-jak-se-v-sssr-a-rusku-vyvijely-biologicke-zbrane",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T10:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Výsledkem pečlivě utajovaných sovětských programů byly minimálně desítky mrtvých a zřejmě i jedna pandemie chřipky",
+      "authors": [
+        "Jan Adamec"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -18002,6 +20337,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "be1a3210212a",
+      "title": "Česko nepodpořilo omezení víz pro Rusy do EU, má vlastní pravidla",
+      "url": "https://www.respekt.cz/informacni-servis/cesko-nepodporilo-omezeni-viz-pro-rusy-do-eu-ma-vlastni-pravidla-2026-10-19-12-07",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T09:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Česko nepodpořilo finský návrh na omezení vstupu Rusů do Evropské unie, podle serveru Seznam Zprávy o tom rozhodl ministr zahraničí Petr Macinka (Motoristé). Česko podobné omezení samo uplatňuje, Ruso...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c7931a4ccefa",
       "title": "The world is crumbling in ‘The History of Concrete’",
       "url": "https://grist.org/culture/john-wilson-history-of-concrete-climate/",
@@ -18039,6 +20394,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "d681d39aa109",
+      "title": "Putin navrhl Trumpovi americko-čínsko-ruský summit o Ukrajině, píše WSJ",
+      "url": "https://www.respekt.cz/informacni-servis/putin-navrhl-trumpovi-americko-cinsko-rusky-summit-o-ukrajine-pise-wsj-2026-10-19-10-11",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T08:10:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Ruský prezident Vladimir Putin navrhl uspořádat příští měsíc summit s americkým prezidentem Donaldem Trumpem a čínským vůdcem Si Ťin-pchingem, jehož cílem by bylo vyjednat ukončení více než čtyři roky...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -18178,6 +20553,46 @@
       "date_is_first_seen": false
     },
     {
+      "id": "04e5654e180f",
+      "title": "Zelenskyj obvinil Trumpa, že vyvíjí tlak na Kyjev, aby se vzdal Rusku",
+      "url": "https://www.respekt.cz/informacni-servis/zelenskyj-obvinil-trumpa-ze-vyviji-tlak-na-kyjev-aby-se-vzdal-rusku-2026-10-19-10-10",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T07:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Ukrajinský prezident Volodymyr Zelenskyj v rozhovoru s agenturou Bloomberg tvrdí, že se jeho americký protějšek Donald Trump snaží vyvinout tlak na Ukrajinu, aby se vzdala Rusku. Zelenskyj tím podle a...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "15c55e4d8a8e",
+      "title": "Macron slíbil tvrdě zakročit proti násilí v ulicích, oznámil jednání se studenty",
+      "url": "https://www.respekt.cz/informacni-servis/macron-slibil-tvrde-zakrocit-proti-nasili-v-ulicich-oznamil-jednani-se-studenty-2026-10-19-10-06",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T05:30:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Francouzský prezident Emmanuel Macron slíbil tvrdě zasáhnout proti lidem, kteří se účastnili v sobotu střetů v ulicích. Za škody zaplatí a budou pykat, řekl v nedělním televizním projevu. Za střety po...",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "96b2758aba4e",
       "title": "Ivan Gabal: Globální souvislosti české lokální energetiky",
       "url": "https://www.respekt.cz/ranni-postreh/ivan-gabal-globalni-souvislosti-ceske-lokalni-energetiky",
@@ -18210,6 +20625,26 @@
       "first_seen": "2026-10-26T04:44:57.094542Z",
       "summary_raw": "Fakultní nemocnice Plzeň oznámila světové prvenství v onkologické diagnostice. Začala kombinovat radiofarmakum 68Ga-Trivehexin s vyšetřením PET/MRI, které spojuje pozitronovou emisní tomografii a magnetickou rezonanci. Nový postup umožňuje přesněji zobrazit nádor a odlišit ho od okolní zánětlivé tkáně.",
       "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "01d05366e35c",
+      "title": "Zemřel herec, moderátor a dabér Otakar Jirák",
+      "url": "https://www.respekt.cz/informacni-servis/zemrel-herec-moderator-a-daber-otakar-jirak-2026-10-18-22-13",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T05:00:00Z",
+      "first_seen": "2026-10-27T12:07:24.329609Z",
+      "summary_raw": "Ve věku 77 let v sobotu zemřel herec, moderátor a výtvarník Otakar Jirák. Ztvárnil desítky rolí ve filmech i seriálech. Svým charismatickým hlasem se proslavil rovněž jako dabér. Namlouval například c...",
+      "authors": [
+        "Respekt"
+      ],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
