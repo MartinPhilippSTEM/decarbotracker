@@ -57,6 +57,8 @@ def format_items_for_synthesis(selected: list[ScoredItem], chars: int) -> str:
             flags.append("originální výzkum/data")
         if sc.is_public_attitudes_or_communication:
             flags.append("postoje/komunikace")
+        if sc.is_event:
+            flags.append("UDÁLOST/POZVÁNKA – jen do watchlist_cs, nikdy do top_items")
         authors = f" | autoři: {', '.join(it.authors[:4])}" if it.authors else ""
         blocks.append(
             f"### [ID: {it.id}]\n"
@@ -213,6 +215,29 @@ def mock_draft(selected: list[ScoredItem]) -> ReportDraft:
 # --------------------------------------------------------------------------- hlavní funkce
 
 
+def move_events_out_of_top(draft: ReportDraft, selected: list[ScoredItem], logs: list[str]) -> ReportDraft:
+    """Pevné pravidlo: pozvánky/akce nesmí být mezi nejdůležitějšími položkami – přesunou se do Událostí."""
+    events = {s.item.id: s for s in selected if s.score.is_event}
+    if not events:
+        return draft
+    kept = []
+    for t in draft.top_items:
+        if t.item_id not in events:
+            kept.append(t)
+            continue
+        s = events[t.item_id]
+        logs.append(f"top_items: akce „{s.item.title[:60]}“ přesunuta do Událostí")
+        if not any(t.item_id in w.evidence_item_ids and w.when for w in draft.watchlist_cs):
+            draft.watchlist_cs.insert(0, WatchItem(
+                when="termín ve zdroji",
+                text_cs=f"{s.score.title_cs or s.item.title} ({s.item.source_name})",
+                evidence_item_ids=[s.item.id],
+            ))
+    draft.top_items = kept
+    # i v ostatních sekcích by akce neměly vystupovat jako zjištění – jen se zaloguje
+    return draft
+
+
 def item_refs(selected: list[ScoredItem]) -> list[ReportItemRef]:
     return [
         ReportItemRef(
@@ -221,7 +246,7 @@ def item_refs(selected: list[ScoredItem]) -> list[ReportItemRef]:
             geo_focus=s.score.geo_focus, published_at=s.item.published_at,
             date_is_first_seen=s.item.published_at is None, topics=list(s.score.topics),
             one_line_cs=s.score.one_line_cs, final_score=s.final_score, is_opinion=s.score.is_opinion,
-            sentiment=s.score.sentiment,
+            sentiment=s.score.sentiment, is_event=s.score.is_event,
             is_public_attitudes_or_communication=s.score.is_public_attitudes_or_communication,
         )
         for s in selected
@@ -299,6 +324,7 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
     if client is None:
         try:
             draft, vlog = validate_draft(mock_draft(selected), valid, geo_of)
+            draft = move_events_out_of_top(draft, selected, vlog)
         except HardValidationError as exc:
             return fallback_report(week, selected, considered, settings, f"dry-run: {exc}", status="dry_run")
         status, model = "dry_run", "mock (dry-run)"
@@ -327,6 +353,7 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
                     server_fallback=llm.server_side_fallback,
                 )
                 draft, vlog = validate_draft(raw, valid, geo_of)
+                draft = move_events_out_of_top(draft, selected, vlog)
                 validation_log.extend(vlog)
                 break
             except LLMMaxTokens as exc:

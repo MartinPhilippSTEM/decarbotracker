@@ -38,6 +38,7 @@ Zahraniční zjištění zařaď do SWOT jen tehdy, když mají zjevný význam 
 - `headline_cs`: jedna věta, hlavní poselství týdne.
 - `executive_summary_cs`: 3–5 vět.
 - `swot`: viz výše.
+- Položky označené **UDÁLOST/POZVÁNKA** (debaty, konference, webináře…) nejsou zjištění: nikdy je nedávej do `top_items`, SWOT ani mezi průzkumy – patří do `watchlist_cs` (s termínem, pokud ho zdroj uvádí). Čísla v jejich perexu nepřebírej jako zjištění týdne.
 - `top_items`: 8–12 nejdůležitějších položek seřazených podle důležitosti, české položky a položky o ČR nahoře. Prvních 5 se zobrazí v přehledové tabulce na začátku stránky – ať jsou to skutečně nejpodstatnější analýzy, studie a průzkumy týdne (ne pozvánky ani drobné zprávy). U každé:
   - `why_it_matters_cs`: 2–3 věty, proč je důležitá pro ČR a veřejnost.
   - `key_finding_cs`: konkrétní zjištění, jen s čísly ze vstupu. Pokud výtah konkrétní zjištění neobsahuje, napiš to.

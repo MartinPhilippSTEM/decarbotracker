@@ -22,6 +22,7 @@ Dostaneš seznam položek (titulek, zdroj, typ zdroje, region zdroje, datum, kr�
 - `is_original_research`: `true` jen pro nová data, vlastní průzkum, studii nebo modelování. Zpráva o cizí studii v médiu = `false`.
 - `relevant_to_cz_eu`: `true`, pokud má globální nebo americký text zjevné dopady nebo poučení pro ČR/EU.
 - `is_opinion`: `true` pro komentář, op-ed, stanovisko NGO, průmyslové asociace nebo politika.
+- `is_event`: `true`, pokud je položka **pozvánkou nebo oznámením akce** – debata, veřejná debata, konference, webinář, seminář, workshop, kulatý stůl, prezentace, křest knihy, výstava („Veřejná debata | …“, „Zveme vás…“, „Webinar: …“). Platí to i tehdy, když perex zmiňuje číslo nebo téma – obsahem pozvánky je akce, ne nové zjištění. Zpráva o *výsledcích* proběhlé konference (např. „Summit se dohodl na…“) není `is_event`. U akcí nastav `is_original_research` = `false` a `is_public_attitudes_or_communication` = `false`; relevance odpovídá důležitosti akce, typicky 2–5.
 - `title_cs`: pokud titulek není česky, přelož ho věrně do češtiny. U českých titulků vrať prázdný řetězec.
 - `one_line_cs`: jedna věcná česká věta (max. ~200 znaků), co položka přináší. Žádná čísla, která nejsou ve vstupu.
 - `sentiment` (celé číslo −2 až +2): **vyznění zprávy pro dekarbonizaci ČR a podporu veřejnosti** – zda jde spíše o dobrou, nebo špatnou zprávu pro transformaci, ne o tón jazyka.

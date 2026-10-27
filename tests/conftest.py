@@ -69,11 +69,11 @@ def make_item(n: int, *, title: str | None = None, region: str = "EU", source_ty
 
 
 def make_scored(item: Item, *, relevance: int = 7, geo: str | None = None, attitudes: bool = False,
-                topics: list[str] | None = None, final: float | None = None, sentiment: int = 0,
+                topics: list[str] | None = None, final: float | None = None, sentiment: int = 0, is_event: bool = False,
                 scored_by: str = "llm") -> ScoredItem:
     s = ItemScore(item_id=item.id, relevance=relevance, topics=topics or ["decarbonization_policy"],
                   geo_focus=geo or item.region, is_public_attitudes_or_communication=attitudes,
                   is_original_research=False, relevant_to_cz_eu=True, is_opinion=False, title_cs="",
-                  one_line_cs="Věta.", sentiment=sentiment)
+                  one_line_cs="Věta.", sentiment=sentiment, is_event=is_event)
     return ScoredItem(item=item, score=s, final_score=final if final is not None else float(relevance),
                       scored_by=scored_by)

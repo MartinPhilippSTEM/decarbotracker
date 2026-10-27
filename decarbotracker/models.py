@@ -102,6 +102,8 @@ class ItemScore(BaseModel):
     is_original_research: bool = Field(description="originální výzkum / nová data / průzkum, ne komentář")
     relevant_to_cz_eu: bool
     is_opinion: bool = Field(description="op-ed, stanovisko NGO/průmyslu, komentář")
+    is_event: bool = Field(description="pozvánka nebo oznámení akce (debata, konference, webinář, seminář, "
+                                       "workshop, kulatý stůl), ne obsah se zjištěními")
     title_cs: str = Field(description="český překlad názvu, pokud je název anglický; jinak prázdný řetězec")
     one_line_cs: str
     sentiment: int = Field(description="vyznění pro dekarbonizaci ČR a podporu veřejnosti: -2 výrazně nepříznivé, "
@@ -243,6 +245,7 @@ class ReportItemRef(BaseModel):
     is_opinion: bool = False
     is_public_attitudes_or_communication: bool = False
     sentiment: int = 0
+    is_event: bool = False
 
 
 class RegionSentiment(BaseModel):

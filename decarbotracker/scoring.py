@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from collections.abc import Iterable
 
 from decarbotracker.config import SelectionSettings, Settings, prompt_path
@@ -26,12 +27,29 @@ EST_OUTPUT_TOKENS_PER_ITEM = 130
 # --------------------------------------------------------------------------- finální skóre
 
 
+# Záloha, kdyby AI pozvánku přehlédla: titulky, které ZAČÍNAJÍ typickým označením akce
+# („Veřejná debata | …“, „Webinář: …“, „Zveme vás…“). Zprávy o výsledcích akcí takto nezačínají.
+EVENT_TITLE_RE = re.compile(
+    r"^\s*(veřejná debata|debata|diskuse|panelová diskuse|konference|webinář|webinar|seminář|seminar|workshop|"
+    r"kulatý stůl|round ?table|pozvánka|zveme vás|invitation|join us|event|save the date|křest|přednáška|"
+    r"online debata|live debate|public debate|conference)\b",
+    re.IGNORECASE,
+)
+
+
+def looks_like_event(item: Item) -> bool:
+    return bool(EVENT_TITLE_RE.search(item.title))
+
+
 def final_score(item: Item, score: ItemScore, sel: SelectionSettings) -> float:
-    """relevance × geo váha × váha typu zdroje × váha zdroje, s bonusy (+30 % postoje, +15 % výzkum)."""
+    """relevance × geo váha × váha typu zdroje × váha zdroje, s bonusy (+30 % postoje, +15 % výzkum).
+    Akce (pozvánky) bonusy nedostávají a mají sníženou váhu – patří do Událostí, ne mezi zjištění."""
     geo = sel.geo_weights.get(score.geo_focus, 0.5)
     if score.geo_focus == "GLOBAL" and score.relevant_to_cz_eu:
         geo += sel.global_relevance_bonus
     value = score.relevance * geo * sel.source_type_weights.get(item.source_type, 1.0) * item.source_weight
+    if score.is_event:
+        return round(value * sel.event_penalty, 4)
     if score.is_public_attitudes_or_communication:
         value *= 1 + sel.bonus_attitudes
     if score.is_original_research:
@@ -71,15 +89,17 @@ def heuristic_score(item: Item, matcher: KeywordMatcher | None = None) -> ItemSc
     norm = " " + normalize_text(text) + " "
     if geo != "CZ" and any(m in norm for m in _CZ_MARKERS):
         geo = "CZ"
+    event = looks_like_event(item)
     return ItemScore(
         item_id=item.id,
         relevance=max(0, min(10, base)),
         topics=list(dict.fromkeys(topics))[:4],  # type: ignore[arg-type]
         geo_focus=geo,
-        is_public_attitudes_or_communication=attitudes,
-        is_original_research=item.source_type in ("research", "polling", "journal"),
+        is_public_attitudes_or_communication=attitudes and not event,
+        is_original_research=item.source_type in ("research", "polling", "journal") and not event,
         relevant_to_cz_eu=item.region in ("CZ", "EU"),
         is_opinion=False,
+        is_event=event,
         title_cs="",
         one_line_cs=(item.summary_raw[:180] + "…") if len(item.summary_raw) > 180 else item.summary_raw or item.title,
         sentiment=0,
@@ -114,6 +134,11 @@ def _sanitize(score: ItemScore, item: Item) -> ItemScore:
     score.topics = list(dict.fromkeys(score.topics))
     if item.language == "cs":
         score.title_cs = ""
+    # pozvánka/akce: rozpozná AI, nebo záložně titulek; akce nedostávají bonusy za postoje ani výzkum
+    score.is_event = bool(score.is_event or looks_like_event(item))
+    if score.is_event:
+        score.is_public_attitudes_or_communication = False
+        score.is_original_research = False
     return score
 
 

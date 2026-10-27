@@ -82,6 +82,7 @@ class SelectionSettings(BaseModel):
     bonus_attitudes: float = 0.30
     bonus_original_research: float = 0.15
     opinion_penalty: float = 0.10
+    event_penalty: float = 0.6       # pozvánky/akce: nižší váha a žádné bonusy (patří do Událostí)
     fuzzy_title_threshold: int = 90
     undated_first_run_cap: int = 3
     seen_retention_weeks: int = 30

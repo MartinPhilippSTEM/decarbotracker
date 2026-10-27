@@ -74,6 +74,7 @@ selection:
   bonus_attitudes: 0.30          # +30 % pro postoje veřejnosti / komunikaci
   bonus_original_research: 0.15  # +15 % pro originální výzkum / data
   opinion_penalty: 0.10          # −10 % pro komentáře a stanoviska
+  event_penalty: 0.6           # pozvánky/akce (debaty, konference…): bez bonusů a s nižší váhou – patří do Událostí
   fuzzy_title_threshold: 90      # rapidfuzz token_set_ratio pro duplicitní titulky
   undated_first_run_cap: 3       # u nedatovaných položek při prvním stažení zdroje vezmi max. N nejnovějších
   seen_retention_weeks: 30
