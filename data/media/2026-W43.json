@@ -2,8 +2,8 @@
   "week": "2026-W43",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-10-27T12:07:24.329609+00:00",
-    "collections": 6
+    "last_collection": "2026-10-27T14:42:35.918500+00:00",
+    "collections": 7
   },
   "items": [
     {
@@ -512,6 +512,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "12bd6ca5285b",
+      "title": "PŘEHLEDNĚ: Skládání koalic v městských částech Prahy",
+      "url": "https://www.novinky.cz/clanek/volby-komunalni-prehledne-skladani-koalic-v-mestskych-castech-prahy-40603661",
+      "source_id": "novinky",
+      "source_name": "Novinky.cz",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T13:24:29Z",
+      "first_seen": "2026-10-27T14:42:35.918500Z",
+      "summary_raw": "Ve 22 obvodech Prahy začalo hned po komunálních volbách vyjednávání o nových koaličních vládách na radnicích. Někde už jsou strany a hnutí domluvené, jinde ještě stále není jasno. Novinky přinášejí přehledný a průběžně aktualizovaný souhrn, jak jednání pokračují.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
