@@ -2,8 +2,8 @@
   "week": "2026-W43",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-10-28T13:16:38.679986+00:00",
-    "collections": 11
+    "last_collection": "2026-10-28T18:57:50.635913+00:00",
+    "collections": 12
   },
   "items": [
     {
@@ -5543,6 +5543,26 @@
       "language": "cs",
       "published_at": "2026-10-22T17:24:00Z",
       "first_seen": "2026-10-26T11:48:31.586085Z",
+      "summary_raw": "Pro první nedopalky si Hugo Repáň dojel vlakem. Ze Žiaru nad Hronom zamířil do nedalekého Zvolena. Měl důvod, proč se do sběru nepustit v domovském městě. „Nechtěl jsem, aby mě kamarádi a rodina viděli, jak celý den sbírám nedopalky ze...",
+      "authors": [
+        "Viktor Votruba"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "e6e4b2057e6a",
+      "title": "První vajgly sbíral sám, chtěl je použít při výrobě asfaltu. Teď s Philip Morris rozjel vlastní recyklační linku",
+      "url": "https://archiv.hn.cz/c1-67949290-prvni-vajgly-sbiral-sam-chtel-je-pouzit-pri-vyrobe-asfaltu-ted-s-philip-morris-rozjel-vlastni-recyklacni-linku",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-22T17:24:00Z",
+      "first_seen": "2026-10-28T18:57:50.635913Z",
       "summary_raw": "Pro první nedopalky si Hugo Repáň dojel vlakem. Ze Žiaru nad Hronom zamířil do nedalekého Zvolena. Měl důvod, proč se do sběru nepustit v domovském městě. „Nechtěl jsem, aby mě kamarádi a rodina viděli, jak celý den sbírám nedopalky ze...",
       "authors": [
         "Viktor Votruba"
