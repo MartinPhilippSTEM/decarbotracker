@@ -2,8 +2,8 @@
   "week": "2026-W43",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-10-28T18:57:50.635913+00:00",
-    "collections": 12
+    "last_collection": "2026-10-28T23:21:45.389037+00:00",
+    "collections": 13
   },
   "items": [
     {
@@ -688,6 +688,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "0f38336f8383",
+      "title": "Skryté náklady stresu: Proč je zdraví zaměstnanců zásadní pro firemní byznys",
+      "url": "https://ekonom.cz/c1-67947540-skryte-naklady-stresu-proc-je-zdravi-zamestnancu-zasadni-pro-firemni-byznys",
+      "source_id": "ekonom",
+      "source_name": "Ekonom",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T15:04:00Z",
+      "first_seen": "2026-10-28T23:21:45.389037Z",
+      "summary_raw": "Stres není jen zátěží pro zaměstnance, ale také ekonomickým rizikem pro firmy. Nová studie mezinárodního poskytovatele zdravotní péče Mavie ukazuje, jak výrazně ovlivňuje produktivitu zaměstnaných v Česku. Pro firmy tak vyvstává otázka, jak včas...",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
