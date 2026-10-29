@@ -2,8 +2,8 @@
   "week": "2026-W44",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-10-28T23:21:45.389037+00:00",
-    "collections": 13
+    "last_collection": "2026-10-29T02:37:37.975950+00:00",
+    "collections": 14
   },
   "items": [
     {
@@ -42186,6 +42186,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "b90343d7365f",
+      "title": "Mussoliniho pravnuk poprvé skóroval v lize. Pravačku měl v ofsajdu, vtipkují fanoušci",
+      "url": "https://cnn.iprima.cz/pravnuk-mussoliniho-poprve-skoroval-v-lize-pravacku-mel-v-ofsajdu-smeji-se-fanousci-525675",
+      "source_id": "cnn-prima",
+      "source_name": "CNN Prima News",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-28T22:01:46Z",
+      "first_seen": "2026-10-29T02:37:37.975950Z",
+      "summary_raw": "Italský fotbalista Romano Floriani Mussolini",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "dc6c51e2911b",
       "title": "Pavel dal výběrem oceněných najevo signál společnosti. Zeman měl přijít, míní politolog",
       "url": "https://www.idnes.cz/zpravy/domaci/prezident-petr-pavel-statni-vyznamenani-predavani-28-rijna-statni-svatek-rozhovor-politolog.A261028_180420_domaci_linh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
@@ -42695,6 +42713,42 @@
       "published_at": "2026-10-28T23:10:00Z",
       "first_seen": "2026-10-28T23:21:45.389037Z",
       "summary_raw": "Jak si premiéři Česka a Slovenska připomínají vznik společného státu? Jaké jsou vztahy obou zemí? A co symbolizuje čerstvě odhalená socha česko-slovenského přátelství? „Kdyby člověk odhlédl od aktuálního politického a geopolitického kontextu, tak je to moc hezké a logické, že dva premiéři, dříve dvou států, které tvořily jeden stát, že se sejdou v Praze, popovídají si, poklepou po ramenou,“ říká šéfredaktor deníku Právo Petr Šabata.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "5ddc19d1dd64",
+      "title": "Instagram pomohl zabít mou dceru. Změnilo se toho málo, říká otec roky po její smrti",
+      "url": "https://www.novinky.cz/clanek/internet-a-pc-ai-instagram-pomohl-zabit-mou-dceru-zmenilo-se-toho-malo-rika-otec-roky-po-jeji-smrti-40601686",
+      "source_id": "novinky",
+      "source_name": "Novinky.cz",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-29T00:07:00Z",
+      "first_seen": "2026-10-29T02:37:37.975950Z",
+      "summary_raw": "Vliv sociálních sítí na mladé lidi je třaskavým tématem, které rezonuje všemi oblastmi, film nevyjímaje. Počátkem října vstoupil do zahraničních kin snímek s názvem Social Reckoning (V zajetí sítí) o Marku Zuckerbergovi a společnosti Meta. Před počátkem filmu byla v britských kinech vysílána reklama, v níž se otec mladé dívky svěřuje, jak Instagram, který pod Metu spadá, pomohl zabít jeho dceru.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "f827b661d042",
+      "title": "V Moldavsku se po rozsáhlém kyberútoku sejde Národní bezpečnostní rada",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/v-moldavsku-se-po-rozsahlem-kyberutoku-sejde-narodni-bezpecnostni-rada-379093",
+      "source_id": "ct24",
+      "source_name": "ČT24 – všechny zprávy",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-29T02:03:21Z",
+      "first_seen": "2026-10-29T02:37:37.975950Z",
+      "summary_raw": "Moldavská Národní bezpečnostní rada se v nejbližších dnech sejde kvůli rozsáhlému kyberútoku na vládní informační systémy. S odkazem na středeční oznámení prezidentské kanceláře o tom informovala v noci na čtvrtek agentura AFP. Útok se podle moldavské Agentury pro elektronickou veřejnou správu (AGE) odehrál v období od 19. do 23. října.",
       "authors": [],
       "doi": null,
       "topic_filter": true,
