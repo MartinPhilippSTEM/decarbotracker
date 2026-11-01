@@ -2,10 +2,30 @@
   "week": "2026-W43",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-11-01T09:30:39.132981+00:00",
-    "collections": 28
+    "last_collection": "2026-11-01T16:51:57.193059+00:00",
+    "collections": 29
   },
   "items": [
+    {
+      "id": "f0a36a411546",
+      "title": "Český fenomén popírá biologii. Kocumová ohromuje svět a odhaluje, co za tím je",
+      "url": "https://sport.aktualne.cz/ostatni-sporty/popreni-biologie-svet-v-udivu-kocumova-je-sampionkou-26-let-po-konci-kariery/r~aaa29dc1fd77f14c12ab172513ae6c9c/",
+      "source_id": "aktualne",
+      "source_name": "Aktuálně.cz",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-19T04:17:00Z",
+      "first_seen": "2026-11-01T16:51:57.193059Z",
+      "summary_raw": "Někdejší vycházející hvězda českého lyžování musela profesionální sportovní kariéru uložit k ledu už ve svých 21 letech, příčinou byla genetická vada imunity. O šestadvacet let později Zuzana Kocumová ohromuje svět překážkových závodů Spartan Race, kde poráží i mnohé dvakrát mladší soupeřky. V rozmezí pouhých osmi dnů dokázala Češka ovládnout evropský šampionát i mistrovství světa ve sprintu.",
+      "authors": [
+        "Aleš Vávra"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
     {
       "id": "01d05366e35c",
       "title": "Zemřel herec, moderátor a dabér Otakar Jirák",
