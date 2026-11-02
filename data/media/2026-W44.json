@@ -2,8 +2,8 @@
   "week": "2026-W44",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-11-02T07:48:15.236974+00:00",
-    "collections": 33
+    "last_collection": "2026-11-02T18:35:36.148765+00:00",
+    "collections": 34
   },
   "items": [
     {
@@ -85696,6 +85696,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "09b2fc14cfcc",
+      "title": "ANKETA: Ovlivňuje vaše rozhodování, jakou profesi si v budoucnu vybrat, nástup AI, která mnohé obory nahrazuje?",
+      "url": "https://www.respekt.cz/tydenik/2026/45/anketa-ovlivnuje-vase-rozhodovani-jakou-profesi-si-v-budoucnu-vybrat-nastup-ai-ktera-mnohe-obory-nahrazuje",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-01T11:00:00Z",
+      "first_seen": "2026-11-02T18:35:36.148765Z",
+      "summary_raw": "A museli jste už kvůli tomu „zahodit“ své sny či ambice?",
+      "authors": [
+        "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "0ddf9affdc11",
       "title": "Pět českých zpráv",
       "url": "https://www.respekt.cz/tydenik/2026/45/pet-ceskych-zprav",
@@ -90942,6 +90962,26 @@
       "first_seen": "2026-11-01T21:16:47.548139Z",
       "summary_raw": "Policisté hledají svědky nehody, k níž došlo v sobotu v podvečer v Teplicích. Řidič jedoucí směrem na Sobědruhy srazil na přechodu pro chodce nezletilého chlapce a od nehody odjel. Chlapce odvezli záchranáři do nemocnice.",
       "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "d5efa9a8c4e9",
+      "title": "Dodělám to o víkendu. Zaměstnanci mají neděli jako šestý pracovní den, kdy to začíná být problém?",
+      "url": "https://archiv.hn.cz/c1-67953250-dodelam-to-o-vikendu-zamestnanci-maji-nedeli-jako-sesty-pracovni-den-kdy-to-zacina-byt-problem",
+      "source_id": "hn",
+      "source_name": "Hospodářské noviny",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-01T20:27:00Z",
+      "first_seen": "2026-11-02T18:35:36.148765Z",
+      "summary_raw": "Je sice neděle, přesto si zaměstnanec sedne za pracovní počítač. Projde si maily, dožene resty z uplynulého týdne, nebo si dokonce přidá celý pracovní den. Data ukazují, že takto vypadá realita stále větší části kancelářských pracovníků. Sen o tom,...",
+      "authors": [
+        "Kristýna Matějková"
+      ],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
