@@ -1,0 +1,61 @@
+{
+  "week": "2026-W44",
+  "generated_at": "2026-11-02T06:15:42.354197Z",
+  "model": "claude-sonnet-5-5",
+  "headline_cs": "České veřejné mínění je příznivé jádru a více se cítí informované o Zelené dohodě, ale Dukovany zasáhl krach jednání o stavebních pracích a podpora komunitní energetiky klesla.",
+  "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w44/",
+  "findings": [
+    {
+      "item_id": "1fef14dc03a8",
+      "geo": "CZ",
+      "title_cs": "Jádro podporuje 78 % Čechů",
+      "text_cs": "Podle červencového šetření CVVM na Panelu Naše společnost je pro využívání jádra 78 % dotázaných, z toho 42 % rozhodně pro a 20 % pro. Data přicházejí v době, kdy se komplikuje projekt v Dukovanech, a poslouží jako východisko pro debatu o energetické strategii.</br>",
+      "title": "Veřejnost o jaderné energetice",
+      "url": "https://cvvm.soc.cas.cz/cz/tiskove-zpravy/ostatni/ekologie/6265-verejnost-o-jaderne-energetice-3",
+      "source_name": "CVVM – Ekologie"
+    },
+    {
+      "item_id": "b152350fcf41",
+      "geo": "CZ",
+      "title_cs": "Podpora komunitní energetiky klesla z miliardy na 100 milionů",
+      "text_cs": "Podle titulku Obnovitelně.cz stát snížil podporu komunitní energetiky z miliardy na 100 milionů korun a rozjeté projekty mohou přijít vniveč. Podrobnosti výtah neobsahuje, takže jde o zjištění z titulku. Komunitní energetika zapojuje lidi do transformace a může zvyšovat její přijetí.",
+      "title": "Stát seškrtal podporu komunitní energetiky z miliardy na 100 milionů. Rozjeté projekty mohou přijít vniveč",
+      "url": "https://www.obnovitelne.cz/clanek/4936/stat-seskrtal-podporu-komunitni-energetiky-z-miliardy-na-100-milionu-rozjete-projekty-mohou-prijit-vnivec",
+      "source_name": "Obnovitelně.cz"
+    },
+    {
+      "item_id": "89e31beaf310",
+      "geo": "EU",
+      "title_cs": "Extrémní horka posilují obavy o klima i Zelené",
+      "text_cs": "Studie v PNAS na datech European Social Survey 2012–2022 z 25 zemí ukazuje, že každý stupeň nadprůměrné teploty zvyšuje pravděpodobnost obav o 4,0 procentního bodu. Hlasování pro Zelené roste o 2,8 p. b. Vysvětluje, jak zkušenost s horkem mění postoje i volební chování v Evropě.",
+      "title": "Heterogeneous impacts of temperature extremes on climate attitudes and Green voting",
+      "url": "https://doi.org/10.1073/pnas.2321153122",
+      "source_name": "PNAS"
+    }
+  ],
+  "x_thread": [
+    "🧵 Týden 44 v dekarbonizaci: podle CVVM podporuje jadernou energii 78 % Čechů. Zároveň Dukovany provázejí potíže a klesla podpora komunitní energetiky. Co z týdne stojí za pozornost?",
+    "Podle červencového šetření CVVM je pro využívání jádra 78 % dotázaných: 42 % rozhodně pro a 20 % pro. Data přicházejí v době, kdy se komplikuje projekt v Dukovanech.",
+    "Podle titulku Obnovitelně.cz stát snížil podporu komunitní energetiky z miliardy na 100 milionů korun. Rozjeté projekty tak mohou přijít vniveč. Podrobnosti zdroj v našem výtahu neuvádí.",
+    "Studie v časopise PNAS (European Social Survey 2012–2022, 25 zemí): každý stupeň nadprůměrné teploty zvyšuje pravděpodobnost obav o klima o 4,0 procentního bodu a hlasování pro Zelené o 2,8 p. b.",
+    "Celý týdenní přehled o dekarbonizaci a postojích veřejnosti najdete tady: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w44/ #klima #energetika"
+  ],
+  "notes": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 4918,
+    "output_tokens": 1010,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.019936,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 1.0,
+        "input_tokens": 4918.0,
+        "output_tokens": 1010.0,
+        "cost_usd": 0.019936
+      }
+    }
+  },
+  "sent_at": "2026-11-02T06:15:42.590067Z"
+}
