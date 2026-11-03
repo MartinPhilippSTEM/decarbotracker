@@ -2,8 +2,8 @@
   "week": "2026-W44",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-11-03T09:45:11.082927+00:00",
-    "collections": 36
+    "last_collection": "2026-11-03T17:56:21.438812+00:00",
+    "collections": 37
   },
   "items": [
     {
@@ -91813,6 +91813,24 @@
       "authors": [
         "red"
       ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "790382897348",
+      "title": "Firmám pomáhá předvídatelná cena energií i přehled o spotřebě",
+      "url": "https://www.e15.cz/prezentace-klienta/firmam-pomaha-predvidatelna-cena-energii-i-prehled-o-spotrebe-1436964",
+      "source_id": "e15",
+      "source_name": "E15",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-01T23:00:00Z",
+      "first_seen": "2026-11-03T17:56:21.438812Z",
+      "summary_raw": "Správně nastavený produkt a přehled o spotřebě mohou firmám zefektivnit provoz a snížit náklady. Elektřina a plyn mohou firemní hospodaření ovlivnit výrazněji, než podnikatel mnohdy očekává. V dnešním dynamickém podnikatelském prostředí čelí živnostníci i malé a střední firmy řadě výzev, od výkyvů poptávky až po měnící se dodavatelské řetězce.",
+      "authors": [],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
