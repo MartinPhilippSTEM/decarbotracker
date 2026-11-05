@@ -2,8 +2,8 @@
   "week": "2026-W44",
   "meta": {
     "first_collection": "2026-10-26T11:48:31.586085+00:00",
-    "last_collection": "2026-11-05T11:15:10.889142+00:00",
-    "collections": 43
+    "last_collection": "2026-11-05T18:51:12.717183+00:00",
+    "collections": 44
   },
   "items": [
     {
@@ -48834,6 +48834,26 @@
       "language": "cs",
       "published_at": "2026-10-29T11:20:00Z",
       "first_seen": "2026-10-29T16:59:55.125148Z",
+      "summary_raw": "Kdo zatouží po švýcarských luxusních hodinkách značky Rolex, jejichž průměrná maloobchodní cena dosahuje 14 tisíc franků (skoro 370 tisíc korun), musí mít nejenom dost peněz, ale také se vyzbrojit trpělivostí. Nezřídka se – zvláště u některých...",
+      "authors": [
+        "Václav Lavička"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "bdddf898f983",
+      "title": "Tvrdý souboj švýcarských výrobců hodinek. Vyhrává pár luxusních značek, ostatní strádají, či dokonce potřebují státní pomoc",
+      "url": "https://archiv.hn.cz/c1-67951230-tvrdy-souboj-svycarskych-vyrobcu-hodinek-vyhrava-par-luxusnich-znacek-ostatni-stradaji-ci-dokonce-potrebuji-statni-pomoc",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-10-29T11:20:00Z",
+      "first_seen": "2026-11-05T18:51:12.717183Z",
       "summary_raw": "Kdo zatouží po švýcarských luxusních hodinkách značky Rolex, jejichž průměrná maloobchodní cena dosahuje 14 tisíc franků (skoro 370 tisíc korun), musí mít nejenom dost peněz, ale také se vyzbrojit trpělivostí. Nezřídka se – zvláště u některých...",
       "authors": [
         "Václav Lavička"
