@@ -2,8 +2,8 @@
   "week": "2026-W45",
   "meta": {
     "first_collection": "2026-11-02T06:00:15.147445+00:00",
-    "last_collection": "2026-11-09T06:23:56.145333+00:00",
-    "collections": 28
+    "last_collection": "2026-11-09T11:52:43.358348+00:00",
+    "collections": 29
   },
   "items": [
     {
@@ -71123,6 +71123,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "e8bb195982f8",
+      "title": "Nový CEO Aramarku Milan Pech: Pro firmy chceme být strategickým partnerem",
+      "url": "https://www.e15.cz/radce/novy-ceo-aramarku-milan-pech-pro-firmy-chceme-byt-strategickym-partnerem-1437108",
+      "source_id": "e15",
+      "source_name": "E15",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-06T19:48:00Z",
+      "first_seen": "2026-11-09T11:52:43.358348Z",
+      "summary_raw": "Jeho děda jako ředitel sklárny neváhal obléknout montérky. Milan Pech dnes s podobnou filozofií vede Aramark. S rozšířeným managementem a silným globálním zázemím mění pohled na firemní stravování v Česku. Moderní gastronomií, wellbeingem či inovacemi.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "d853084214d6",
       "title": "Prezident Pavel se objevil v další reklamě. Vývoj situace nabral rychlý spád",
       "url": "https://zpravy.aktualne.cz/domaci/pavel-se-objevil-v-dalsi-reklame-k-nicemu-jsme-souhlas-nedali-rekl-hrad/r~aaa290a4ff19f4171d95cc2e3d8e0537/",
@@ -76744,6 +76762,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "eec01266addd",
+      "title": "Za pět let investoval stát do digitalizace přes 50 miliard",
+      "url": "https://www.reflex.cz/clanek/extra/139222/za-pet-let-investoval-stat-do-digitalizace-pres-50-miliard.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-07T12:00:00Z",
+      "first_seen": "2026-11-09T11:52:43.358348Z",
+      "summary_raw": "Podle Digitální informační agentury (DIA) investovala Česká republika do projektů rozvoje digitalizace veřejné správy za posledních pět let více než 50 miliard korun. Přesto se k dnešku podařilo plně převést jen přibližně pětinu agendových služeb státu.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
@@ -92476,6 +92512,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "ace6a18249ce",
+      "title": "Peníze po ruce, když je zrovna potřebujete. V čem se úvěrový rámec liší od klasické půjčky?",
+      "url": "https://www.blesk.cz/clanek/radce/852163/penize-po-ruce-kdyz-je-zrovna-potrebujete-v-cem-se-uverovy-ramec-lisi-od-klasicke-pujcky.html",
+      "source_id": "blesk",
+      "source_name": "Blesk.cz",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-08T23:00:00Z",
+      "first_seen": "2026-11-09T11:52:43.358348Z",
+      "summary_raw": "Každý podnikatel se čas od času dostane do situace, kdy potřebuje zajistit peníze na nové výdaje nebo investice. Zatímco klasická půjčka poskytne celou částku najednou, úvěrový rámec umožňuje čerpat peníze postupně podle aktuální potřeby. V čem spočívá jeho výhoda a komu se vyplatí?",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
