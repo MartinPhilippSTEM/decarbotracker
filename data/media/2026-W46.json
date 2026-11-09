@@ -1,0 +1,28 @@
+{
+  "week": "2026-W46",
+  "meta": {
+    "first_collection": "2026-11-09T02:46:35.495192+00:00",
+    "last_collection": "2026-11-09T02:46:35.495192+00:00",
+    "collections": 1
+  },
+  "items": [
+    {
+      "id": "7e429edc10c5",
+      "title": "Papež v Argentině vyzval k ochraně demokracie a boji proti korupci",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/papez-v-argentine-vyzval-k-ochrane-demokracie-a-boji-proti-korupci-379410",
+      "source_id": "ct24",
+      "source_name": "ČT24 – všechny zprávy",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-09T00:25:38Z",
+      "first_seen": "2026-11-09T02:46:35.495192Z",
+      "summary_raw": "Papež Lev XIV. během návštěvy Argentiny vyzval politické představitele Latinské Ameriky k boji proti korupci, ochraně demokracie a větší ohleduplnosti vůči chudým. Ve svém projevu v Buenos Aires, kterému přihlížel i argentinský prezident Javier Milei, zdůraznil, že představitelé moci musí znát hranice svých pravomocí a jednat ve prospěch celé společnosti. Papežova návštěva je první cestou hlavy katolické církve do Argentiny od roku 1987.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    }
+  ]
+}
