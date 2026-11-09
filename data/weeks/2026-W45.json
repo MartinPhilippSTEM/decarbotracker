@@ -1,0 +1,4303 @@
+{
+  "week": "2026-W45",
+  "period_from": "2026-11-02T00:00:00Z",
+  "period_to": "2026-11-08T23:59:59.999999Z",
+  "generated_at": "2026-11-09T06:34:27.669365Z",
+  "model": "claude-sonnet-5-5",
+  "items_considered": 335,
+  "items_selected": 50,
+  "status": "ok",
+  "notices_cs": [],
+  "cz_content_present": true,
+  "headline_cs": "Rostoucí ceny plynu a elektřiny nutí českou vládu připravit nouzový plán s cenovými stropy, zatímco veřejnou debatu o dekarbonizaci doplňují nové studie o důvěře a přijetí obnovitelných zdrojů.",
+  "executive_summary_cs": "Do českého debaty o energetice se vrací **strach z nové cenové vlny**: ministr Havlíček podle ČTK oznámil, že vláda v pondělí projedná nouzový plán se sníženými regulovanými cenami a stropy u výrobců, a Reflex varuje před inflací kolem 4 procent v únoru. Plán je politicky sporný a podrobnosti zatím ve zdrojích chybí. Zahraniční studie přitom ukazují, že **důvěra v instituce a struktura domácností** rozhodují o přijetí obnovitelných zdrojů víc než samotné postoje. Zajímavý je i evropský odborný pohled: cenové šoky nutí vlády k plošné pomoci, později ale k cílenější. Z Brazílie přišla první globální „roadmapa“ odchodu od fosilních paliv.",
+  "swot": {
+    "strengths": [
+      {
+        "text_cs": "Výzkum v ČR (VÚK, ČVUT FEL) zkoumá cíleně pěstovanou biomasu jako zdroj pro energetiku v době sucha, takže existuje domácí vědecká opora pro **plánování zdrojů**.",
+        "evidence_item_ids": [
+          "f0016f2bc404"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Podle komentáře na oEnergetice by **elektrifikace** mohla snížit náklady na chlazení i vytápění, pokud bude založená na obnovitelné elektřině, sítích a akumulaci (jde o názor, ne o data).",
+        "evidence_item_ids": [
+          "34e15518ca83"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Česko vstupuje do skupiny CESEC (středo- a jihovýchodoevropská energetická spolupráce), což může usnadnit propojení sítí a společný postup při vysokých cenách.",
+        "evidence_item_ids": [
+          "1c63d9034d48"
+        ],
+        "geo": "EU"
+      }
+    ],
+    "weaknesses": [
+      {
+        "text_cs": "Vláda reaguje na ceny **nouzovým plánem se stropy**; Reflex upozorňuje na riziko žalob, odchodu firem z trhu a vysoké zátěže státního rozpočtu (neověřeno nezávisle).",
+        "evidence_item_ids": [
+          "4aa99c868bd2",
+          "1394ef80921e"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Hnutí DUHA ve svém stanovisku tvrdí, že plyn je rekordně drahý a **podpora zateplování rekordně nízká**; podrobnosti jsou ve zdroji.",
+        "evidence_item_ids": [
+          "003049f5d2fd"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Místní odpor se projevuje i konkrétně: obec Břidličná odmítla větrníky, přestože tamní fabrika bojuje o levnou energii (podrobnosti ve zdroji).",
+        "evidence_item_ids": [
+          "a663722f2b19"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Sucho a teplo omezují zásoby lesních těžebních zbytků pro energetiku, což je pro biomasu **domácí bariéra**.",
+        "evidence_item_ids": [
+          "f0016f2bc404"
+        ],
+        "geo": "CZ"
+      }
+    ],
+    "opportunities": [
+      {
+        "text_cs": "Studie z EU ukazuje, že pro instalaci obnovitelných zdrojů v domácnostech rozhodují spíš **vlastnictví bydlení a kapitálová omezení** než postoje, takže se vyplatí cílit podporu na tyto bariéry.",
+        "evidence_item_ids": [
+          "b702227afc6a"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "Švýcarská studie zjistila, že **spotřebitelé reagují silněji na uhlíkovou daň** než na tržní cenu, což je poučení pro nastavení cenových signálů v ČR.",
+        "evidence_item_ids": [
+          "4d5cdf79cbd5"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "Komise uvádí, že integrace trhů s elektřinou postupuje, ale zůstávají nevyužité přínosy. Pro ČR to znamená prostor pro levnější a stabilnější dodávky.",
+        "evidence_item_ids": [
+          "a9a395843d28"
+        ],
+        "geo": "EU"
+      }
+    ],
+    "threats": [
+      {
+        "text_cs": "Konflikt na Blízkém východě a chystaný zákaz ruských dodávek plynu podle Reflexu **tlačí ceny nahoru** a mohou zvýšit inflaci.",
+        "evidence_item_ids": [
+          "1394ef80921e"
+        ],
+        "geo": "CZ"
+      },
+      {
+        "text_cs": "Přehled z 18 zemí EU ukazuje, že vlády po šoku z let 2021–2023 nejprve sahaly po plošných opatřeních a později po **cílenější pomoci**; ČR se tomuto dilematu nevyhne.",
+        "evidence_item_ids": [
+          "0ab3b0fcd82d"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "Podle EEA extrémní vedra, sucha a bouře letos narušily dopravu, energetiku a vodu v Evropě, takže roste tlak na **odolnost infrastruktury**.",
+        "evidence_item_ids": [
+          "1329283c6f4d"
+        ],
+        "geo": "EU"
+      },
+      {
+        "text_cs": "Přehledová studie varuje, že **nízká politická důvěra** brzdí energetické projekty; je to riziko i pro české větrné a další projekty.",
+        "evidence_item_ids": [
+          "387ebff0a68d"
+        ],
+        "geo": "GLOBAL"
+      }
+    ]
+  },
+  "top_items": [
+    {
+      "item_id": "4aa99c868bd2",
+      "why_it_matters_cs": "Vláda chce řešit možný další růst cen energií přímo zásahy do cen. Dopadne to na domácnosti, živnostníky i veřejnou podporu klimatických opatření.",
+      "key_finding_cs": "Podle ministra Havlíčka plán počítá se **snížením regulovaných cen** pro domácnosti a živnostníky a se zastropováním cen u výrobců; vláda ho má projednat v pondělí.",
+      "category": "energy_markets"
+    },
+    {
+      "item_id": "1394ef80921e",
+      "why_it_matters_cs": "Ukazuje, jak může cenový šok ovlivnit inflaci a rozpočet. Pomáhá chápat, proč se energetická politika posouvá k okamžitým zásahům.",
+      "key_finding_cs": "Reflex píše, že dodavatelé v čele s ČEZ zvedají ceníky a inflace může v únoru dosáhnout **4 procent**. Stropy podle něj hrozí žalobami a vysokou zátěží rozpočtu.",
+      "category": "energy_markets"
+    },
+    {
+      "item_id": "f0016f2bc404",
+      "why_it_matters_cs": "Biomasa je důležitá pro české teplárenství. Studie se zabývá tím, odkud ji brát při suchu a ubývání lesních zbytků.",
+      "key_finding_cs": "Studie v Energy Reports hledá odpověď mimo jiné v **cíleně pěstované biomase**; konkrétní čísla výtah neuvádí.",
+      "category": "study"
+    },
+    {
+      "item_id": "0fdc4d728e58",
+      "why_it_matters_cs": "Podle titulku jde o rozbor překážek české energetiky, které jsou důležitější než dotace.",
+      "key_finding_cs": "Výtah konkrétní zjištění neobsahuje; titulek naznačuje, že **peníze nejsou jedinou brzdou**.",
+      "category": "decarbonization_policy"
+    },
+    {
+      "item_id": "a663722f2b19",
+      "why_it_matters_cs": "Konkrétní příklad lokálního odporu proti větrné energetice a napětí mezi místními zájmy a cenou energie.",
+      "key_finding_cs": "Obec **Břidličná odmítla větrníky**, přestože místní továrna bojuje o přežití a levnou energii; další údaje ve zdroji.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "b702227afc6a",
+      "why_it_matters_cs": "Ukazuje, proč lidé se zájmem o obnovitelné zdroje často nedokážou investovat. To je klíčové i pro české dotační programy.",
+      "key_finding_cs": "Na datech Flash Eurobarometru (N ≈ 23 000, 27 zemí EU) studie zjistila, že **strukturální faktory a kapitálová omezení** převažují nad psychologickou připraveností.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "387ebff0a68d",
+      "why_it_matters_cs": "Důvěra v instituce rozhoduje o úspěchu energetických projektů. U českých kontroverzí kolem větrníků je to přímo použitelné.",
+      "key_finding_cs": "Přehled a analýza 15 případových studií identifikuje klíčové dvojice důvěry (např. vláda a komunita); **politická důvěra** ovlivňuje průběh i výsledek projektů.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "4d5cdf79cbd5",
+      "why_it_matters_cs": "Dává empirický podklad pro diskusi o zpoplatnění emisí z vytápění, která se v ČR i EU vede.",
+      "key_finding_cs": "Švýcarská uhlíková daň vedla k průměrnému ročnímu snížení emisí CO2 z vytápění o **6,5 %** v letech 2008–2021.",
+      "category": "study"
+    },
+    {
+      "item_id": "0ab3b0fcd82d",
+      "why_it_matters_cs": "Poučení z minulé krize pro návrh pomoci domácnostem, o kterou se vláda nyní chystá usilovat.",
+      "key_finding_cs": "Analýza **229 opatření v 18 státech EU**: vlády se posunuly od plošné k cílenější pomoci.",
+      "category": "energy_markets"
+    },
+    {
+      "item_id": "2378e0da0eab",
+      "why_it_matters_cs": "Souvisí s tím, jak získat souhlas majitelů pozemků a místních obyvatel s větrnými elektrárnami.",
+      "key_finding_cs": "Finský průzkum mezi **2 103 respondenty** ukázal, že majitelé lesa i ostatní mají jiné postoje; nevlastníci lesa byli větrné energii příznivější.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "c0b22eba80d0",
+      "why_it_matters_cs": "Vysvětluje, proč lidé obecně podporující větrnou energii mohou odmítnout konkrétní projekt u sebe.",
+      "key_finding_cs": "V italské experimentální studii (N = 491) **vazba na místo snížila přijetí** větrné farmy, obecná podpora větrné energie se však nelišila.",
+      "category": "public_attitudes"
+    },
+    {
+      "item_id": "ecf4e78583c9",
+      "why_it_matters_cs": "Globální plán odchodu od fosilních paliv ovlivní rámec, v němž se pohybuje i česká politika.",
+      "key_finding_cs": "Brazilská roadmapa označuje odklon od fosilních paliv za **„urgent, inevitable and, yet, possible“**; další detaily ve zdroji.",
+      "category": "decarbonization_policy"
+    }
+  ],
+  "public_attitudes_cs": {
+    "summary_cs": "K ČR vyšly jen dílčí signály: **odmítnutí větrníků v Břidličné** a stanovisko DUHY k zateplování; výtahy jsou ale bez podrobností. Zahraniční studie ukazují, že **přijetí obnovitelných zdrojů** závisí na důvěře, místní vazbě a strukturálních podmínkách domácností více než na obecných postojích.",
+    "surveys": [
+      {
+        "institution": "neuvedeno (Flash Eurobarometer; analýza Huňady a Stachová)",
+        "fieldwork": "neuvedeno",
+        "country": "27 zemí EU",
+        "sample_n": "přibližně 23 000",
+        "method": "mikrodata Flash Eurobarometru, logistická regrese a strojové učení",
+        "finding_cs": "Existuje významná mezera mezi postoji a chováním; kapitálová omezení a vlastnictví bydlení mají větší váhu než psychologická připravenost.",
+        "evidence_item_ids": [
+          "b702227afc6a"
+        ]
+      },
+      {
+        "institution": "neuvedeno (autoři Höysniemi et al.)",
+        "fieldwork": "neuvedeno",
+        "country": "Finsko",
+        "sample_n": "2 103",
+        "method": "průzkum, modelování strukturálními rovnicemi a regrese",
+        "finding_cs": "Lidé, kteří nevlastní les, měli příznivější postoje k větrné energii.",
+        "evidence_item_ids": [
+          "2378e0da0eab"
+        ]
+      },
+      {
+        "institution": "neuvedeno (autoři Zemo a Termansen)",
+        "fieldwork": "neuvedeno",
+        "country": "Dánsko",
+        "sample_n": "981",
+        "method": "randomizovaný průzkumný experiment",
+        "finding_cs": "94–97 % farmářů očekávalo dopady daně až třikrát větší, než odhadují experti; expertní odhad rozdíl snížil.",
+        "evidence_item_ids": [
+          "74c7f525955b"
+        ]
+      },
+      {
+        "institution": "neuvedeno (autoři Milani a Mura)",
+        "fieldwork": "neuvedeno",
+        "country": "Itálie",
+        "sample_n": "491 (studie 1)",
+        "method": "experimentální studie",
+        "finding_cs": "Zdůraznění vazby na místo snížilo přijatelnost větrné farmy.",
+        "evidence_item_ids": [
+          "c0b22eba80d0"
+        ]
+      },
+      {
+        "institution": "Afrobarometer (autoři Tanko et al.)",
+        "fieldwork": "2024 (kolo 10)",
+        "country": "Ghana",
+        "sample_n": "2 400",
+        "method": "reprezentativní průzkum, modelování strukturálními rovnicemi",
+        "finding_cs": "Vnímání klimatické hrozby zvyšuje potravinovou nejistotu, ta následně zvyšuje podporu environmentálních politik.",
+        "evidence_item_ids": [
+          "113c68aad59c"
+        ]
+      },
+      {
+        "institution": "neuvedeno (autoři Kolhep et al.)",
+        "fieldwork": "neuvedeno",
+        "country": "Německo",
+        "sample_n": "249",
+        "method": "průzkum klimatických vědců",
+        "finding_cs": "Identifikováno pět profilů; tradiční akademici, kteří se straní společenského zapojení, tvoří malou menšinu.",
+        "evidence_item_ids": [
+          "8389704e4a28"
+        ]
+      }
+    ],
+    "communication_recommendations": [
+      {
+        "text_cs": "U lokálních větrných projektů pracovat s vazbou lidí na místo a s důvěrou, ne jen s argumenty o obecném přínosu.",
+        "evidence_item_ids": [
+          "c0b22eba80d0",
+          "387ebff0a68d"
+        ]
+      },
+      {
+        "text_cs": "Při komunikaci dopadů klimatických daní předkládat odhady expertů, protože u dánských farmářů zmenšily rozdíl mezi očekáváním a realitou.",
+        "evidence_item_ids": [
+          "74c7f525955b"
+        ]
+      },
+      {
+        "text_cs": "Nespoléhat na informační kampaně samotné: přehled 92 studií uvádí, že desetiletí informačně zaměřené komunikace nevedlo k široké trvalé akci.",
+        "evidence_item_ids": [
+          "b98d0987f384"
+        ]
+      },
+      {
+        "text_cs": "Při podpoře domácností řešit kapitálové a vlastnické překážky, ne jen zájem o obnovitelné zdroje.",
+        "evidence_item_ids": [
+          "b702227afc6a"
+        ]
+      }
+    ]
+  },
+  "forecasts_cs": [
+    {
+      "author": "Zeke Hausfather (Carbon Brief)",
+      "horizon": "rok 2026",
+      "key_figure": "neuvedeno",
+      "text_cs": "Rok 2026 bude téměř jistě nejteplejší nebo druhý nejteplejší v historii měření; podle titulku se může vyrovnat roku 2024.",
+      "evidence_item_ids": [
+        "6d3ac5bf58c3"
+      ]
+    },
+    {
+      "author": "Rhodium Group (Maggie Young)",
+      "horizon": "neuvedeno",
+      "key_figure": "neuvedeno",
+      "text_cs": "Publikace Rhodium Climate Outlook 2026 nabízí pravděpodobnostní globální projekce emisí a energetiky; výtah neobsahuje čísla.",
+      "evidence_item_ids": [
+        "1860eee182b8"
+      ]
+    },
+    {
+      "author": "Brazilské předsednictví COP30",
+      "horizon": "od roku 2031 pro dodávky ropy a plynu",
+      "key_figure": "2031",
+      "text_cs": "Dobrovolný harmonogram žádá země, aby nejdříve plánovaly a pak budovaly čistou energii; k ropě a plynu se podle něj obrací až od roku 2031.",
+      "evidence_item_ids": [
+        "3da4933702f6"
+      ]
+    },
+    {
+      "author": "Reflex",
+      "horizon": "únor",
+      "key_figure": "4 procenta",
+      "text_cs": "Inflace může v únoru vzrůst ke 4 procentům, pokud ceny energií dál porostou.",
+      "evidence_item_ids": [
+        "1394ef80921e"
+      ]
+    }
+  ],
+  "by_region": {
+    "cz": "Hlavním tématem jsou **nouzový plán proti cenám energií** a spor o cenové stropy. Podle ČTK ho vláda projedná v pondělí, Reflex varuje před riziky. Doplňují to stanovisko DUHY k zateplování, komentář k elektrifikaci a studie o energetické biomase. K českým průzkumům veřejného mínění tento týden nic podstatného nevyšlo.",
+    "eu": "Komise uvádí pokrok v integraci trhů s elektřinou a Česko vstoupilo do skupiny CESEC. Eurostat hlásí cenu elektřiny pro nedomácnosti v první polovině 2026 na **0,18 € za kWh**. Akademické studie řeší přijetí větrné energie a politiku proti energetické krizi.",
+    "us": "Rhodium Group zveřejnila svůj Climate Outlook 2026. Pew Research Center vyhodnotil přesnost předvolebních průzkumů, což je spíše metodologická zajímavost. RMI nabízí desetibodový přehled opatření pro dostupné energetické systémy.",
+    "global": "Brazilské předsednictví COP30 představilo **globální roadmapu odchodu od fosilních paliv** i plán proti odlesňování. Carbon Brief očekává rok 2026 mezi dvěma nejteplejšími v historii."
+  },
+  "watchlist_cs": [
+    {
+      "when": "v pondělí",
+      "text_cs": "Vláda má projednat plán pro případný další růst cen energií se sníženými regulovanými cenami a stropy; stojí za sledování kvůli dopadu na domácnosti i rozpočet.",
+      "evidence_item_ids": [
+        "4aa99c868bd2"
+      ]
+    },
+    {
+      "when": "",
+      "text_cs": "Sledovat, zda nouzový plán skutečně vstoupí v platnost a zda se potvrdí obavy z žalob a odchodu firem z trhu.",
+      "evidence_item_ids": [
+        "1394ef80921e"
+      ]
+    },
+    {
+      "when": "",
+      "text_cs": "Sledovat zákaz ruských dodávek plynu v EU a jeho vliv na ceny v ČR.",
+      "evidence_item_ids": [
+        "1394ef80921e"
+      ]
+    },
+    {
+      "when": "",
+      "text_cs": "Sledovat jednání o mechanismu spravedlivé transformace na COP31, který by mohl dát dotčeným komunitám hlas.",
+      "evidence_item_ids": [
+        "8c2c3828b97d"
+      ]
+    },
+    {
+      "when": "",
+      "text_cs": "Sledovat, jak se státy postaví k brazilské dobrovolné roadmapě odchodu od fosilních paliv.",
+      "evidence_item_ids": [
+        "3da4933702f6",
+        "ecf4e78583c9"
+      ]
+    }
+  ],
+  "opportunities_cs": [],
+  "sentiment": {
+    "index": 24,
+    "label_cs": "mírně příznivá",
+    "n": 239,
+    "negative": 0.113,
+    "neutral": 0.32,
+    "positive": 0.567,
+    "by_region": [
+      {
+        "region": "CZ",
+        "n": 20,
+        "negative": 0.171,
+        "neutral": 0.379,
+        "positive": 0.45,
+        "index": 19
+      },
+      {
+        "region": "EU",
+        "n": 56,
+        "negative": 0.102,
+        "neutral": 0.254,
+        "positive": 0.644,
+        "index": 28
+      },
+      {
+        "region": "US",
+        "n": 43,
+        "negative": 0.168,
+        "neutral": 0.253,
+        "positive": 0.579,
+        "index": 24
+      },
+      {
+        "region": "GLOBAL",
+        "n": 120,
+        "negative": 0.101,
+        "neutral": 0.358,
+        "positive": 0.541,
+        "index": 22
+      }
+    ],
+    "most_positive_id": "4d5cdf79cbd5",
+    "most_negative_id": "8245b31cbb35"
+  },
+  "media": {
+    "n_collected": 5010,
+    "n_candidates": 562,
+    "n_relevant": 226,
+    "collection_since": "2026-11-02T06:00:15.147445Z",
+    "outlets": [
+      {
+        "outlet": "Novinky.cz",
+        "collected": 505,
+        "relevant": 21
+      },
+      {
+        "outlet": "iDNES.cz – zpravodaj",
+        "collected": 433,
+        "relevant": 21
+      },
+      {
+        "outlet": "Seznam Zprávy",
+        "collected": 397,
+        "relevant": 21
+      },
+      {
+        "outlet": "Parlamentní listy",
+        "collected": 280,
+        "relevant": 19
+      },
+      {
+        "outlet": "E15",
+        "collected": 127,
+        "relevant": 15
+      },
+      {
+        "outlet": "iROZHLAS – všechny zprávy",
+        "collected": 332,
+        "relevant": 14
+      },
+      {
+        "outlet": "Aktuálně.cz",
+        "collected": 314,
+        "relevant": 14
+      },
+      {
+        "outlet": "Deník.cz",
+        "collected": 449,
+        "relevant": 13
+      },
+      {
+        "outlet": "Blesk.cz",
+        "collected": 473,
+        "relevant": 12
+      },
+      {
+        "outlet": "Hospodářské noviny",
+        "collected": 153,
+        "relevant": 12
+      },
+      {
+        "outlet": "ČT24 – všechny zprávy",
+        "collected": 180,
+        "relevant": 10
+      },
+      {
+        "outlet": "Hospodářské noviny – Byznys",
+        "collected": 79,
+        "relevant": 10
+      },
+      {
+        "outlet": "iDNES.cz – ekonomika",
+        "collected": 49,
+        "relevant": 9
+      },
+      {
+        "outlet": "FORUM 24",
+        "collected": 251,
+        "relevant": 7
+      },
+      {
+        "outlet": "Lidovky.cz",
+        "collected": 93,
+        "relevant": 5
+      },
+      {
+        "outlet": "Deník N",
+        "collected": 162,
+        "relevant": 3
+      },
+      {
+        "outlet": "Deník Referendum",
+        "collected": 32,
+        "relevant": 3
+      },
+      {
+        "outlet": "ČT24 – Věda",
+        "collected": 16,
+        "relevant": 3
+      },
+      {
+        "outlet": "Aktuálně.cz – ekonomika",
+        "collected": 13,
+        "relevant": 3
+      },
+      {
+        "outlet": "CNN Prima News",
+        "collected": 358,
+        "relevant": 2
+      },
+      {
+        "outlet": "Respekt",
+        "collected": 121,
+        "relevant": 2
+      },
+      {
+        "outlet": "Info.cz",
+        "collected": 67,
+        "relevant": 2
+      },
+      {
+        "outlet": "iROZHLAS – Věda a technologie",
+        "collected": 30,
+        "relevant": 2
+      },
+      {
+        "outlet": "Ekonom",
+        "collected": 16,
+        "relevant": 2
+      },
+      {
+        "outlet": "Reflex",
+        "collected": 79,
+        "relevant": 1
+      },
+      {
+        "outlet": "ČT24 – ekonomika",
+        "collected": 1,
+        "relevant": 0
+      }
+    ],
+    "topics": {
+      "energeticka_bezpecnost": 60,
+      "ceny_energii": 40,
+      "pocasi_a_adaptace": 29,
+      "obnovitelne_zdroje": 29,
+      "klimaticka_politika": 16,
+      "doprava": 14,
+      "jine": 9,
+      "jadro": 9,
+      "veda_o_klimatu": 7,
+      "ets2_a_povolenky": 5,
+      "teplo_a_budovy": 4,
+      "uhli": 4
+    },
+    "frames": {
+      "naklady_a_zatez": 45,
+      "ekonomicka_prilezitost": 43,
+      "energeticka_bezpecnost": 42,
+      "zdravi_a_zivotni_prostredi": 40,
+      "politicky_konflikt": 29,
+      "neutralni_informovani": 15,
+      "skepse_a_odmitani": 5,
+      "technologie_a_inovace": 5,
+      "odpovednost_a_moralka": 1,
+      "spravedlnost_a_socialni_dopady": 1
+    },
+    "genres": {
+      "zprava": 185,
+      "analyza": 34,
+      "komentar": 5,
+      "rozhovor": 1,
+      "jine": 1
+    },
+    "tone_index": -6,
+    "draft": {
+      "headline_cs": "Média v týdnu W45 řešila hlavně energetickou bezpečnost: blackout v Praze, ruské útoky na ukrajinskou síť a plánovaný zásah proti dražším energiím.",
+      "summary_cs": "Z 5010 zachycených článků bylo 226 relevantních k energetice a klimatu. Nejvíc se psalo o **energetické bezpečnosti** (60 článků) a o **cenách energií** (40). Silně zněla i témata sucha a větrných elektráren. Průměrné vyznění vůči dekarbonizaci bylo mírně záporné (-6).",
+      "themes": [
+        {
+          "title_cs": "Výpadek proudu v Praze",
+          "text_cs": "Výpadek elektřiny postihl **část Prahy** a přerušil jednání Sněmovny. Zpravodajství popisovalo dopady na tramvaje a nemocnice, komentáře otevřely otázku odolnosti sítě.",
+          "evidence_item_ids": [
+            "8ef2c174c88c",
+            "2eaf819fae3f",
+            "68511355c7da",
+            "7c2d3a0e5c9f",
+            "686af875bb47",
+            "c9eefc64dcce"
+          ]
+        },
+        {
+          "title_cs": "Zdražování energií a plán vlády",
+          "text_cs": "Média informovala, že Havlíček předloží plán se **zastropováním cen** pro případ dalšího zdražení. Do toho se promítl i růst sazeb ČNB a obavy z inflace.",
+          "evidence_item_ids": [
+            "8cd1b069aa98",
+            "0a539af0418d",
+            "b76ccd65c729",
+            "6531d2cf769a",
+            "eb87c1ed4d07",
+            "1394ef80921e"
+          ]
+        },
+        {
+          "title_cs": "Ruské útoky na ukrajinskou energetiku",
+          "text_cs": "Zpravodajství sledovalo útoky na **energetickou síť** Ukrajiny a spor Zelenského s Kličkem o krizi v Kyjevě.",
+          "evidence_item_ids": [
+            "4a85e1bf969b",
+            "f00b651408eb",
+            "b8824ea9626a",
+            "3af81188809e",
+            "4d31c742ac8d"
+          ]
+        },
+        {
+          "title_cs": "Větrné elektrárny a referenda",
+          "text_cs": "Referendum v Úpici o větrných elektrárnách nebylo platné pro **nízkou účast**. Komentáře a analýzy téma zasadily do širšího sporu o roli větru v energetickém mixu.",
+          "evidence_item_ids": [
+            "d97fbd0204e5",
+            "8ff09bcbc706",
+            "977721c25105",
+            "d550d748a065",
+            "8a63d0c7cb86"
+          ]
+        },
+        {
+          "title_cs": "Sucho a jeho dopady",
+          "text_cs": "Psalo se o **rekordně nízkých průtocích** řek, vodních elektrárnách, plavbě na Labi a ztrátách zemědělců.",
+          "evidence_item_ids": [
+            "c714653e96e8",
+            "00e5abd90496",
+            "66f0b03ab897",
+            "b97e5800cba2",
+            "0f1280a9e50e"
+          ]
+        }
+      ],
+      "framing_cs": "Nejčastější byly rámce náklady a zátěž (45), ekonomická příležitost (43), energetická bezpečnost (42) a zdraví a životní prostředí (40). Náklady dominovaly u cen energií a sucha, bezpečnost u útoků na Ukrajině a výpadku v Praze. Politický konflikt (29) se objevil u větrníků a ETS2.",
+      "outlets_cs": "V zachycených článcích mělo nejvíc relevantních textů Novinky.cz, iDNES.cz a Seznam Zprávy (po 21). Komentářů bylo jen 5, například v Parlamentních listech a Deníku Referendum. Ekonomická média (E15, Hospodářské noviny) častěji psala analýzy o investicích a cenách plynu.",
+      "notable": [
+        {
+          "title_cs": "Komentář o kritice ETS2 a Křetínského",
+          "text_cs": "Deník Referendum kriticky psal o roli Křetínského v povolenkách. Jde o jeden z mála výrazně skeptických komentářů.",
+          "evidence_item_ids": [
+            "bbd3c543c063"
+          ]
+        },
+        {
+          "title_cs": "Macinka a klimatická krize",
+          "text_cs": "Ministr Macinka krizi dál odmítá, přestože jeho resort varuje před zrychlujícím oteplováním.",
+          "evidence_item_ids": [
+            "0832da7c3604",
+            "eb5d09f4f5ac"
+          ]
+        }
+      ]
+    },
+    "articles": [
+      {
+        "id": "205f7fc6b5cb",
+        "title": "Ferrari se na rozdíl od jiných značek daří. Na své modely má objednávky na více než rok dopředu, obrovský zájem je o elektromobil Luce",
+        "url": "https://archiv.hn.cz/c1-67955450-ferrari-se-na-rozdil-od-jinych-znacek-dari-na-sve-modely-ma-objednavky-na-vice-nez-rok-dopredu-obrovsky-zajem-je-o-elektromobil-luce",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-08T23:00:00Z",
+        "topic": "doprava",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "83f46a0be8a3",
+        "title": "Ropná krize zasáhla české firmy. Kdo může, zdražuje, zemědělci jsou na dně",
+        "url": "https://www.idnes.cz/ekonomika/domaci/ropna-krize-ceske-firmy-drazsi-energie-nafta-zemedelstvi.A261108_194432_ekonomika_jans#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-08T23:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "6a029c6c901d",
+        "title": "Moldavsko už nekupuje žádný plyn z Ruska, oznámila prezidentka",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-moldavsko-uz-nekupuje-zadny-plyn-z-ruska-oznamila-prezidentka-320005",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-08T20:05:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "5be0ef5408ac",
+        "title": "Slovensku hrozí nejsušší rok za 145 let. Nepomohly ani říjnové deště",
+        "url": "https://www.novinky.cz/clanek/pocasi-slovensku-hrozi-nejsussi-rok-za-145-let-nepomohly-ani-rijnove-deste-40607281",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-08T20:02:56Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "bf671c0ce6fb",
+        "title": "Rusku se nevede na bojišti, tak se snaží zničit Ukrajinu ekonomicky",
+        "url": "https://www.novinky.cz/clanek/valka-na-ukrajine-rusku-se-nevede-na-bojisti-tak-se-snazi-znicit-ukrajinu-ekonomicky-40607403",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-08T18:20:28Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "a432190d7d80",
+        "title": "Německé automobilky válcuje zájem o jejich elektromobily. Marže klesají",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-nemecke-automobilky-valcuje-zajem-o-jejich-elektromobily-marze-klesaji-319798",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-08T18:05:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "3ff4a7484d45",
+        "title": "ČEZ: 47 elektroaut přibylo do flotily",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/CEZ-47-elektroaut-pribylo-do-flotily-799223",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-08T18:01:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "8ff09bcbc706",
+        "title": "Chtěli referendum, odmítali větrné elektrárny. V Úpicích ale nepřišlo dost lidí, stavba může pokračovat",
+        "url": "https://www.irozhlas.cz/zpravy-domov/chteli-referendum-odmitali-vetrne-elektrarny-v-upicich-ale-neprislo-dost-lidi_2611081901_brz",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-08T18:01:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "3681c9ac11f7",
+        "title": "Fotky: Jedno z největších tureckých solných jezer mizí",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-fotky-jedno-z-nejvetsich-tureckych-solnych-jezer-mizi-318884",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-08T17:30:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "6f90733cbeab",
+        "title": "Babiš ho kvůli gigafactory nazval aktivistou, teď je v Dolní Lutyni místostarostou",
+        "url": "https://www.novinky.cz/clanek/volby-komunalni-babis-ho-kvuli-gigafactory-nazval-aktivistou-ted-je-v-dolni-lutyni-mistostarostou-40607432",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-08T16:25:23Z",
+        "topic": "jine",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "68269519aa02",
+        "title": "Chystáme plán kvůli zdražování energií, vzkázal Havlíček. Ušetřit mají domácnosti",
+        "url": "https://www.blesk.cz/clanek/zpravy-politika/852269/chystame-plan-kvuli-zdrazovani-energii-vzkazal-havlicek-usetrit-maji-domacnosti.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-08T15:08:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "d97fbd0204e5",
+        "title": "V Úpici na Trutnovsku hlasovali o větrných elektrárnách. K urnám však nedorazilo dost voličů",
+        "url": "https://www.novinky.cz/clanek/domaci-zpravy-kralovehradecky-kraj-v-upici-na-trutnovsku-hlasovali-o-vetrnych-elektrarnach-k-urnam-vsak-nedorazilo-dost-volicu-40607400",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-08T13:53:32Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "b76ccd65c729",
+        "title": "Vláda chystá při dalším zdražování energií zastropování jejich cen",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-vlada-chysta-pri-dalsim-zdrazovani-energii-zastropovani-jejich-cen-319986",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-08T12:35:40Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "6531d2cf769a",
+        "title": "Havlíček plánuje zastropovat ceny elektřiny, pokud bude dále zdražovat. Konkrétní nebyl",
+        "url": "https://cnn.iprima.cz/havlicek-planuje-zastropovat-ceny-elektriny-pokud-bude-dale-zdrazovat-konkretni-nebyl-526559",
+        "outlet": "CNN Prima News",
+        "published_at": "2026-11-08T12:31:29Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "8cd1b069aa98",
+        "title": "Havlíček v pondělí předloží vládě plán pro případ dalšího zdražení energií. Měl by snížit koncové ceny",
+        "url": "https://www.irozhlas.cz/ekonomika/havlicek-v-pondeli-predlozi-vlade-plan-pro-pripad-dalsiho-zdrazeni-energii-chce_2611081320_jkd",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-08T12:20:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "0a539af0418d",
+        "title": "Havlíček předloží plán pro případ dalšího zdražení energií",
+        "url": "https://www.novinky.cz/clanek/ekonomika-havlicek-predlozi-plan-pro-pripad-dalsiho-zdrazeni-energii-40607416",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-08T12:18:40Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "ef917a12cf17",
+        "title": "Havlíček předloží vládě plán pro případ dalšího zdražení energií",
+        "url": "https://ct24.ceskatelevize.cz/clanek/domaci/nedelni-debata-o-vyhrocene-situaci-ve-spolecnosti-379393",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-08T10:30:46Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "4a85e1bf969b",
+        "title": "Statisíce domácností bez proudu. Rusko udeřilo na ukrajinskou energetickou síť",
+        "url": "https://www.idnes.cz/zpravy/zahranicni/domacnosti-bez-proudu-rusko-utoky-ukrajina-energie-telegram.A261108_091309_zahranicni_fohl#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-08T08:37:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "d3a5b26c3f34",
+        "title": "Referendum o větrných elektrárnách v Úpici není platné. Přišlo málo voličů",
+        "url": "https://www.lidovky.cz/domov/vetrne-elektrarny-upice-trutnov-cez-referendum.A261108_092851_ln_domov_lsva#utm_source=rss&utm_medium=feed&utm_campaign=ln_domov&utm_content=main",
+        "outlet": "Lidovky.cz",
+        "published_at": "2026-11-08T08:28:51Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "7baab8d41765",
+        "title": "Referendum o větrných elektrárnách v Úpici není platné. Přišlo málo voličů",
+        "url": "https://www.idnes.cz/hradec-kralove/zpravy/vetrne-elektrarny-upice-trutnov-cez-referendum.A261108_091005_hradec-zpravy_aya#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-08T08:27:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "f00b651408eb",
+        "title": "ONLINE: Na Ukrajině je bez proudu přes 600 tisíc domácností. Nemocnice jsou napájeny z generátorů",
+        "url": "https://www.irozhlas.cz/zpravy-svet/online-na-ukrajine-je-bez-proudu-pres-600-000-domacnosti-nemocnice-jsou-napajeny_2611080920_vsn",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-08T08:20:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "a077ec2af156",
+        "title": "Po ruských útocích je bez proudu 600 tisíc domácností v Dněpropetrovské oblasti",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-po-ruskych-utocich-je-bez-proudu-600-tisic-domacnosti-v-dnepropetrovske-oblasti-319973",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-08T08:07:34Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "ffeebe98241c",
+        "title": "Vrchol čínského luxusu. BYD představila limuzínu Yangwang Altior",
+        "url": "https://www.novinky.cz/clanek/auto-vrchol-cinskeho-luxusu-byd-predstavila-limuzinu-yangwang-altior-40607394",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-08T07:47:48Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "1af38c0234c3",
+        "title": "V Dukovanech odstavili blok kvůli netěsnosti. Po týdnu opět vyrábí elektřinu",
+        "url": "https://www.idnes.cz/ekonomika/domaci/treti-dukovansky-blok-po-odstavce-opet-vyrabi-elektrinu.A261108_082904_ekonomika_lupr#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-08T07:35:00Z",
+        "topic": "jadro",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "59e327d26e88",
+        "title": "Jak se nezbláznit ze světa plného krizí? Psychiatr prozradil tři hlavní pilíře psychické odolnosti",
+        "url": "https://zpravy.aktualne.cz/domaci/jak-se-nezblaznit-ze-sveta-plneho-krizi-psychiatr-prozradil-tri-hlavni-pilire-psychicke-odolnosti/r~aaa29b0b52f3ec719113c005ac60323f/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-08T04:30:00Z",
+        "topic": "veda_o_klimatu",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "006e7413b1a8",
+        "title": "V NATO nemá Francie co dělat, řekl Mélenchon. Představil program pro volby",
+        "url": "https://www.idnes.cz/zpravy/zahranicni/francie-prezidentske-volby-jean-luc-melenchon-marine-le-penova.A261107_195108_zahranicni_linh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-07T18:51:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "fc3ab6a324b9",
+        "title": "Motory ze starých letadel začínají pohánět datová centra. Ekologové se bouří",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/letadlo-motor-datova-centra-zivotni-prostredi.A261104_114633_eko-zahranicni_elsy#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-07T18:00:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "fd08f5fbf016",
+        "title": "Rusko nás chce uvrhnout do blackoutu, napsal Zelenskyj. Spoléhá na podporu USA",
+        "url": "https://www.idnes.cz/zpravy/zahranicni/zelenskyj-rusko-ukrajina-blackout-podpora-usa.A261107_105348_zahranicni_lupr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-07T14:48:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "8fc17ecd8664",
+        "title": "Motoristé chtějí znovu probrat zdražení poplatků za čerpání podzemních vod",
+        "url": "https://zpravy.aktualne.cz/domaci/motoriste-chteji-znovu-probrat-zdrazeni-poplatku-za-cerpani-podzemnich-vod/r~aaa2934709c04e0781612be15d74974a/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-07T14:00:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "c8a97d1887fe",
+        "title": "Až 1500 korun platí lidé za kilo cukroví. Drahé je kvůli ceně energií a surovin, vyplatí se nakupovat u učňů",
+        "url": "https://www.irozhlas.cz/zpravy-domov/az-1500-korun-plati-lide-za-kilo-cukrovi-drahe-je-kvuli-cene-energii-a-surovin_2611070600_zfr",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-07T13:01:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "013d0b99cd8d",
+        "title": "Expert: Sněmovna bez proudu a Česko vyváží půlku roční spotřeby elektřiny. Bude hůř?",
+        "url": "https://www.parlamentnilisty.cz/arena/monitor/Expert-Snemovna-bez-proudu-a-Cesko-vyvazi-pulku-rocni-spotreby-elektriny-Bude-hur-799227",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-07T12:27:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "d33c673e76ba",
+        "title": "Na jihozápadě USA se kvůli záplavám a dešťům hroutí pouštní památky",
+        "url": "https://ct24.ceskatelevize.cz/clanek/svet/na-jihozapade-usa-se-kvuli-zaplavam-a-destum-hrouti-poustni-pamatky-379378",
+        "outlet": "ČT24 – Věda",
+        "published_at": "2026-11-07T12:12:04Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "c9eefc64dcce",
+        "title": "Hynek Beran: Sněmovní blackout? Máme se ještě na co těšit",
+        "url": "https://www.parlamentnilisty.cz/arena/nazory-a-petice/Hynek-Beran-Snemovni-blackout-Mame-se-jeste-na-co-tesit-799220",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-07T10:38:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "komentar",
+        "tone": -1
+      },
+      {
+        "id": "af98bb41f0b7",
+        "title": "Zelenskyj: Rusko chce Ukrajinu uvrhnout do blackoutu, podpora USA je klíčová",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-zelenskyj-rusko-chce-ukrajinu-uvrhnout-do-blackoutu-podpora-usa-je-klicova-319942",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-07T10:08:14Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "2cdaa8ef7e84",
+        "title": "Argentina láká technologické giganty. Datová centra mají vyrůst mezi ovcemi",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/argentina-datova-centra-investice-javier-milei-ai-patagonie.A261103_075610_eko-zahranicni_jla#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-07T10:00:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "a02f53202178",
+        "title": "Ruský útok na Kyjev zabil jednoho člověka, zasažena byla i mateřská škola",
+        "url": "https://www.forum24.cz/rusky-utok-na-kyjev-zabil-jednoho-cloveka-a-ponicil-energetiku-hlasi-vojenska-sprava",
+        "outlet": "FORUM 24",
+        "published_at": "2026-11-07T09:10:11Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "5f16c6c44894",
+        "title": "Rusko v noci udeřilo na Kyjev balistickými raketami. Poničilo důležitý most",
+        "url": "https://www.idnes.cz/zpravy/zahranicni/nocni-rusky-utok-na-kyjev-balisticke-rakety-pet-mrtvych.A261107_073556_zahranicni_lupr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-07T08:22:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "3487e6665357",
+        "title": "Vytřídit popel z černé popelnice? Šluknov zvažuje novinku a zjišťuje zájem lidí",
+        "url": "https://www.idnes.cz/usti/zpravy/sluknov-zvazuje-zavedeni-samostatneho-svozu-popela-z-uhli.A261106_113450_usti-zpravy_imst#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-07T07:50:00Z",
+        "topic": "uhli",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "cd42733d4860",
+        "title": "Záloha pro Plzeň je Mže. Na Radbuzu nesázejme, tvrdí dispečer povodí",
+        "url": "https://www.idnes.cz/plzen/zpravy/sucho-plzensko-hracholusky-zdroj-voda-radbuza-mze-povodi.A261105_103650_plzen-zpravy_vb#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-07T07:36:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "951180074623",
+        "title": "Týdeník iROZHLASu: ‚toxické‘ hnutí ANO v komunálu, Macinkův konec klimatické krize neplatí a stávka",
+        "url": "https://www.irozhlas.cz/zpravy-domov/tydenik-rozhlascz-co-se-delo-tento-tyden_2611070800_tec",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-07T07:00:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "b8824ea9626a",
+        "title": "Rozsáhlý ruský útok na Kyjev a okolí zabil člověka, zasáhl školku či energetiku",
+        "url": "https://ct24.ceskatelevize.cz/clanek/svet/rozsahly-rusky-utok-na-kyjev-zranil-pet-lidi-zasahl-skolku-ci-energetiku-379374",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-07T06:57:47Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "31e9cd299439",
+        "title": "ONLINE: Rusko v noci zaútočilo na Kyjev balistickými raketami. Útok poškodil energetická zařízení i domy",
+        "url": "https://www.irozhlas.cz/zpravy-svet/online-rusko-v-noci-zautocilo-na-kyjev-balistickymi-raketami-utok-poskodil_2611070748_lhv",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-07T06:48:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "33ef21602d5e",
+        "title": "Noční ruský útok na Kyjevskou oblasti si podle místních úřadů vyžádal jednu oběť",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-rusko-zahajilo-raketovy-utok-na-kyjev-poskozen-byl-obytny-dum-319933",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-07T06:13:48Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "16bb00ab24e4",
+        "title": "Americká past na Evropu. Plyn je v USA dvanáctkrát levnější, drahota má Brusel dotlačit zpět k Putinovi",
+        "url": "https://www.e15.cz/byznys/prumysl-a-energetika/americka-past-na-evropu-plyn-je-v-usa-dvanactkrat-levnejsi-drahota-ma-brusel-dotlacit-zpet-k-putinovi-1437150",
+        "outlet": "E15",
+        "published_at": "2026-11-07T04:30:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "f3863ceefedf",
+        "title": "Obnovitelné zdroje ve světě zrychlují. Evropa ale zaostává, varuje Mezinárodní energetická agentura",
+        "url": "https://www.forum24.cz/obnovitelne-zdroje-ve-svete-zrychluji-evropa-ale-zaostava-varuje-mezinarodni-energeticka-agentura",
+        "outlet": "FORUM 24",
+        "published_at": "2026-11-07T04:00:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "c714653e96e8",
+        "title": "Sucho se prohlubuje. Řeky mají historicky nejnižší průtoky, říká šéf hydrometeorologického ústavu",
+        "url": "https://www.irozhlas.cz/veda-technologie/priroda/sucho-se-prohlubuje-reky-maji-historicky-nejnizsi-prutoky-rika-sef_2611070010_jos",
+        "outlet": "iROZHLAS – Věda a technologie",
+        "published_at": "2026-11-06T23:10:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "87d0a8642eb7",
+        "title": "Zelenskyj varoval před ruskými vzdušnými údery na mosty přes Dněpr",
+        "url": "https://www.novinky.cz/clanek/valka-na-ukrajine-zelenskyj-varoval-pred-ruskymi-vzdusnymi-udery-na-mosty-pres-dnepr-40607328",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-06T20:21:31Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "57696134c014",
+        "title": "Zelenskyj ve sporu s Kličkem: Vláda ničí Kyjev, udeřil starosta na prezidenta",
+        "url": "https://www.blesk.cz/clanek/zpravy-valka-na-ukrajine/852221/zelenskyj-ve-sporu-s-klickem-vlada-nici-kyjev-uderil-starosta-na-prezidenta.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-06T20:19:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "3af81188809e",
+        "title": "Zelenskyj a Kličko si vjeli do vlasů kvůli energetické krizi v Kyjevě",
+        "url": "https://www.novinky.cz/clanek/valka-na-ukrajine-zelenskyj-a-klicko-si-vjeli-do-vlasu-kvuli-energeticke-krizi-v-kyjeve-40607324",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-06T19:26:22Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "86640fadf6a4",
+        "title": "Zelenskyj a Kličko se vzájemně zkritizovali kvůli situaci v Kyjevě",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-zelenskyj-a-klicko-se-vzajemne-zkritizovali-kvuli-situaci-v-kyjeve-319925",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-06T18:29:53Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "068507d54fee",
+        "title": "Hladina Lipna kvůli suchu výrazně klesla. Povodí přesto povolilo zasněžovat sjezdovky",
+        "url": "https://ct24.ceskatelevize.cz/clanek/regiony/hladina-lipna-kvuli-suchu-vyrazne-klesla-povodi-presto-povolilo-zasnezovat-sjezdovky-379357",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-06T17:34:48Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "7886e9069030",
+        "title": "Až 2 miliony bez úroků i zástavy. Raiffeisen stavební spořitelna spouští úvěry k Nové zelené úsporám",
+        "url": "https://www.e15.cz/finexpert/banky-a-ucty/az-2-miliony-bez-uroku-i-zastavy-raiffeisen-stavebni-sporitelna-spousti-uvery-k-nove-zelene-usporam-1437120",
+        "outlet": "E15",
+        "published_at": "2026-11-06T17:07:00Z",
+        "topic": "teplo_a_budovy",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "eb5d09f4f5ac",
+        "title": "Pitomosti skončily, trvá na svém Macinka. Ministerstvo životního prostředí má špatnou zprávu",
+        "url": "https://www.forum24.cz/pitomosti-skoncily-trva-na-svem-macinka-ministerstvo-zivotniho-prostredi-ma-spatnou-zpravu",
+        "outlet": "FORUM 24",
+        "published_at": "2026-11-06T16:13:11Z",
+        "topic": "klimaticka_politika",
+        "frame": "skepse_a_odmitani",
+        "genre": "zprava",
+        "tone": -2
+      },
+      {
+        "id": "8a63d0c7cb86",
+        "title": "Stoupenec Motoristů z ministerstva překroutil mapky pro větrníky a vychvaloval Turka. Po dotazu příspěvek smazal",
+        "url": "https://denikn.cz/2248538/stoupenec-motoristu-z-ministerstva-prekroutil-mapky-pro-vetrniky-a-vychvaloval-turka-po-dotazu-prispevek-smazal/",
+        "outlet": "Deník N",
+        "published_at": "2026-11-06T15:40:26Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "8ef2c174c88c",
+        "title": "70 tisíc Pražanů bez elektřiny: Výpadek proudu na 45 minut ochromil levý břeh Vltavy i velké nemocnice",
+        "url": "https://www.blesk.cz/clanek/regiony-praha/852159/praha-bez-elektriny-vypadek-proudu-ochromil-levy-breh-vltavy-i-velke-nemocnice.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-06T14:18:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "1dc55efac600",
+        "title": "Energetická transformace ani AI boom nekončí. Výprodej akcií v USA je příležitostí k nákupům, říká manažer fondu J&T Energy",
+        "url": "https://byznys.hn.cz/c1-67956030-energeticka-transformace-ani-ai-boom-nekonci-vyprodej-akcii-v-usa-je-prilezitosti-k-nakupum-rika-manazer-fondu-j-t-energy",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-06T14:15:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "d4e2cf17700c",
+        "title": "Richterová (Piráti): Urychlíte revizi krizových plánů?",
+        "url": "https://www.parlamentnilisty.cz/politika/politici-volicum/Richterova-Pirati-Urychlite-revizi-krizovych-planu-799190",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-06T14:14:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "0ee9c6835652",
+        "title": "Češi považují za hlavní výhodu energetické transformace nezávislost. Předběhli Evropu",
+        "url": "https://ct24.ceskatelevize.cz/clanek/veda/cesi-povazuji-za-hlavni-vyhodu-energeticke-transformace-nezavislost-predbehli-evropu-379304",
+        "outlet": "ČT24 – Věda",
+        "published_at": "2026-11-06T13:06:11Z",
+        "topic": "klimaticka_politika",
+        "frame": "energeticka_bezpecnost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "ddca6ce554b7",
+        "title": "Elektřina bez nabíjení, benzín bez plýtvání. Volkswagen představil nové hybridy",
+        "url": "https://www.denik.cz/automagazin/elektrina-bez-nabijeni-benzin-bez-plytvani-volkswagen-predstavil-nove-hybridy/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=automagazin",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-06T13:03:00Z",
+        "topic": "doprava",
+        "frame": "technologie_a_inovace",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "4fc622a21c65",
+        "title": "Ministerstvo financí: Růst inflace příští rok ovlivní dražší energie. HDP letos vzroste o 1,7 %",
+        "url": "https://www.blesk.cz/clanek/zpravy-politika/852167/ministertvo-financi-rust-inflace-pristi-rok-ovlivni-drazsi-energie-hdp-letos-vzroste-o-1-7.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-06T12:20:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "d13d02df8375",
+        "title": "ČEZ zůstává nejdůvěryhodnějším dodavatelem energií",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/CEZ-zustava-nejduveryhodnejsim-dodavatelem-energii-799183",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-06T11:56:00Z",
+        "topic": "ceny_energii",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "2fe2f1dc0ab9",
+        "title": "Státy EU schválily roční odklad pravidel pro metanové emise u ropy a plynu",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-staty-eu-schvalily-rocni-odklad-pravidel-pro-metanove-emise-u-ropy-a-plynu-319882",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-06T11:49:04Z",
+        "topic": "ets2_a_povolenky",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "450acc18dd06",
+        "title": "Elektromobil se po nehodě prodraží. Přesná čísla ukazují o kolik",
+        "url": "https://zpravy.aktualne.cz/ekonomika/auto/pro-ridice/elektromobil-se-po-nehode-prodrazi-presna-cisla-ukazuji-o-kolik/r~aaa294391e8f089c52064b560c4a19df/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-06T11:49:00Z",
+        "topic": "doprava",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "26e3dba0f87f",
+        "title": "Tady vládne ČEZ. Nová investigativní série odhaluje systém „dobrých vztahů“",
+        "url": "https://www.seznamzpravy.cz/clanek/domaci-kauzy-sachta-tady-vladne-cez-nova-investigativni-serie-odhaluje-system-dobrych-vztahu-319832",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-06T11:40:00Z",
+        "topic": "uhli",
+        "frame": "politicky_konflikt",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "a483ca13f5a8",
+        "title": "Státy EU schválily roční odklad pravidel pro metanové emise u ropy a plynu",
+        "url": "https://www.idnes.cz/ekonomika/domaci/pravidla-pro-emise-metanu-u-ropy-a-plynu-se-odkladaji-o-rok-shodly-se-staty-eu.A261106_115635_ekonomika_hyk#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-06T11:27:00Z",
+        "topic": "ets2_a_povolenky",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "686af875bb47",
+        "title": "Tma ve Sněmovně. Výpadek proudu v Praze ochromil poslance, fungovalo jen nouzové světlo",
+        "url": "https://www.e15.cz/domaci/tma-ve-snemovne-vypadek-proudu-v-praze-ochromil-poslance-fungovalo-jen-nouzove-svetlo-1437154",
+        "outlet": "E15",
+        "published_at": "2026-11-06T11:22:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "17b7604d01bf",
+        "title": "Jurečka (KDU-ČSL): Jak vláda dokáže domácnostem pomoci?",
+        "url": "https://www.parlamentnilisty.cz/politika/politici-volicum/Jurecka-KDU-CSL-Jak-vlada-dokaze-domacnostem-pomoci-799179",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-06T11:12:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "jine",
+        "tone": -1
+      },
+      {
+        "id": "68511355c7da",
+        "title": "Výpadek elektřiny ve Sněmovně: Poslanci museli přerušit jednání",
+        "url": "https://www.blesk.cz/clanek/zpravy-politika/852153/vypadek-elektriny-ve-snemovne-poslanci-museli-prerusit-jednani.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-06T11:00:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "0c2c8e052abd",
+        "title": "Říjen byl historicky nejteplejší, změřila služba Copernicus",
+        "url": "https://www.denik.cz/pocasi/rijen-byl-historicky-nejteplejsi-zmerila-sluzba-copernicus/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=pocasi",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-06T10:56:39Z",
+        "topic": "veda_o_klimatu",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "7c2d3a0e5c9f",
+        "title": "Část Prahy postihl výpadek elektřiny. PRE vyloučila kybernetický útok",
+        "url": "https://www.lidovky.cz/domov/cast-prahy-postihl-vypadek-elektriny.A261106_095721_ln_domov_rkj#utm_source=rss&utm_medium=feed&utm_campaign=ln_domov&utm_content=main",
+        "outlet": "Lidovky.cz",
+        "published_at": "2026-11-06T10:12:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "fbff5f41644d",
+        "title": "Nejlevnější naftová auta podle typu karosérie. Vybírejte rychle, brzy nebudou",
+        "url": "https://www.denik.cz/zivot-ridice/nejlevnejsi-naftova-auta-podle-typu-karoserie-vybirejte-rychle-brzy-nebudou/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=zivot-ridice",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-06T10:02:00Z",
+        "topic": "doprava",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "35265ea8d3a1",
+        "title": "Jestřáb Michl preventivně léčí inflaci. Babiš se Schillerovou už zuří",
+        "url": "https://www.info.cz/zpravodajstvi-a-komentare/komentar-zlamalova-cnb-sazby-michl-babis-inflace",
+        "outlet": "Info.cz",
+        "published_at": "2026-11-06T09:30:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "komentar",
+        "tone": 0
+      },
+      {
+        "id": "eb87c1ed4d07",
+        "title": "Michlův preventivní úder. ČNB zvedla sazby na čtyři procenta a rozpoutala novou bitvu s Babišem",
+        "url": "https://www.e15.cz/nazory-a-analyzy/michluv-preventivni-uder-cnb-zvedla-sazby-na-ctyri-procenta-a-rozpoutala-novou-bitvu-s-babisem-1437148",
+        "outlet": "E15",
+        "published_at": "2026-11-06T09:30:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "bbd3c543c063",
+        "title": "Křetínského pijavice vysaje z Němců desítky miliard. Chystá se i na nás",
+        "url": "https://denikreferendum.cz/clanek/239565-kretinskeho-pijavice-vysaje-z-nemcu-desitky-miliard-chysta-se-i-na-nas",
+        "outlet": "Deník Referendum",
+        "published_at": "2026-11-06T09:23:35Z",
+        "topic": "ets2_a_povolenky",
+        "frame": "skepse_a_odmitani",
+        "genre": "komentar",
+        "tone": -2
+      },
+      {
+        "id": "ace24b6af6d2",
+        "title": "Růst průmyslu byl v září nejvyšší za čtyři roky",
+        "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/prumyslova-vyroba-v-zari-zrychlila-na-62-procenta-nejvice-za-ctyri-roky-379342",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-06T09:15:36Z",
+        "topic": "jine",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "2eaf819fae3f",
+        "title": "Velká část Prahy byla bez proudu. Blackout zastavil tramvaje, přerušil i jednání sněmovny",
+        "url": "https://zpravy.aktualne.cz/domaci/cast-prahy-postihl-blackout-nejezdi-tramvaje-jednani-kvuli-elektrine-prerusila-i-snemovna/r~aaa2910800ae061dfd3ead7a97bc3f88/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-06T09:06:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "7bf76460d280",
+        "title": "Rusko a Ukrajina si vyměnily útoky. Cílily na průmysl i loď",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-rusko-a-ukrajina-si-vymenily-utoky-cilily-na-prumysl-i-lod-319842",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-06T07:46:03Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "8298ab2ad71e",
+        "title": "Spalovna odpadu za 6,6 miliardy se má v Čeperce začít stavět v únoru, místní ji odmítli v referendu",
+        "url": "https://www.irozhlas.cz/zpravy-domov/spalovna-odpadu-v-ceperce-vyjde-kretinskeho-firmu-na-temer-66-miliardy-mistni-ji_2611060600_mkm",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-06T06:55:00Z",
+        "topic": "jine",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "cc1340a8a4da",
+        "title": "Stoniš ekologický dopad Pavlovy cesty k volbám přirovnal k okresnímu městu. Je to nesmysl",
+        "url": "https://www.novinky.cz/clanek/podcasty-retezak-stonis-ekologicky-dopad-pavlovy-cesty-k-volbam-prirovnal-k-okresnimu-mestu-je-to-nesmysl-40605555",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-06T06:45:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "skepse_a_odmitani",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "f4fecd14a475",
+        "title": "Věčné chemikálie v téměř všech vzorcích z povodí Ohře. U dravých ryb vědci zjistili zvýšený obsah rtuti",
+        "url": "https://www.irozhlas.cz/veda-technologie/veda/vecne-chemikalie-v-temer-vsech-vzorcich-z-povodi-ohre-u-dravych-ryb-vedci_2611060705_zfr",
+        "outlet": "iROZHLAS – Věda a technologie",
+        "published_at": "2026-11-06T06:05:00Z",
+        "topic": "jine",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "e7aa2d03f73d",
+        "title": "Konec jedné automobilové éry. V roce 2026 se loučí desítka známých modelů",
+        "url": "https://www.denik.cz/automagazin/konec-jedne-automobilove-ery-v-roce-2026-se-louci-desitka-znamych-modelu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=automagazin",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-06T06:04:00Z",
+        "topic": "doprava",
+        "frame": "technologie_a_inovace",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "f123c3a07c38",
+        "title": "Podzemní voda zdraží více než trojnásobně. Které domácnosti si kvůli tomu připlatí?",
+        "url": "https://denikn.cz/2247073/podzemni-voda-zdrazi-vice-nez-trojnasobne-ktere-domacnosti-si-kvuli-tomu-priplati/",
+        "outlet": "Deník N",
+        "published_at": "2026-11-06T05:04:28Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "naklady_a_zatez",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "1394ef80921e",
+        "title": "Energetická bouře na obzoru: Zdražení plynu roztočí inflaci. Havlíček chystá tvrdé stropy cen",
+        "url": "https://www.reflex.cz/clanek/komentare/139217/energeticka-boure-na-obzoru-zdrazeni-plynu-roztoci-inflaci-havlicek-chysta-tvrde-stropy-cen.html",
+        "outlet": "Reflex",
+        "published_at": "2026-11-06T05:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "1c30012f64e6",
+        "title": "O jednu povodňovou školu méně. Ta v Písečné prošla rekonstrukcí, před dvěma lety ji poničily záplavy",
+        "url": "https://www.irozhlas.cz/zpravy-domov/o-jednu-povodnovou-skolu-mene-ta-v-pisecne-prosla-rekonstrukci-pred-dvema-lety_2611060600_brz",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-06T04:35:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "00e5abd90496",
+        "title": "Rekordní sucho trápí vodní elektrárny. Některé už nevyrábějí",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-sucho-skrti-vyrobu-ve-vodnich-elektrarnach-majitele-je-odstavuji-i-prodavaji-319810",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-06T04:30:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "0832da7c3604",
+        "title": "Macinka krizi dál odmítá, ale... Oteplování v Česku zrychluje, varuje ministerstvo pod vládou Motoristů",
+        "url": "https://www.blesk.cz/clanek/zpravy-politika/852107/macinka-krizi-dal-odmita-ale-oteplovani-v-cesku-zrychluje-varuje-ministerstvo-pod-vladou-motoristu.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-06T04:00:00Z",
+        "topic": "veda_o_klimatu",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "ccda0d0357a2",
+        "title": "Babiš na bezpečnostním fóru: Evropa se šílenou politikou nemůže být konkurenceschopná",
+        "url": "https://www.parlamentnilisty.cz/arena/monitor/Babis-na-bezpecnostnim-foru-Evropa-se-silenou-politikou-nemuze-byt-konkurenceschopna-799167",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-06T03:36:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "c78ac7ed63ff",
+        "title": "Klimatické extrémy ohrožují téměř 90 milionů vysídlených lidí, varuje OSN",
+        "url": "https://ct24.ceskatelevize.cz/clanek/svet/klimaticke-extremy-ohrozuji-temer-90-milionu-lidi-na-uteku-varuje-osn-379336",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-06T01:48:33Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "5807c7ab740b",
+        "title": "DR reporter wins global award for reporting on the fossil fuel oligarchy",
+        "url": "https://denikreferendum.cz/clanek/239560-dr-reporter-wins-global-award-for-reporting-on-the-fossil-fuel-oligarchy",
+        "outlet": "Deník Referendum",
+        "published_at": "2026-11-05T22:34:46Z",
+        "topic": "veda_o_klimatu",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "cef39b9724eb",
+        "title": "Miliardy za poškozené klima? Die Linke chce, aby Německo platilo rozvojovému světu reparace",
+        "url": "https://www.novinky.cz/clanek/zahranicni-evropa-miliardy-za-poskozene-klima-die-linke-chce-aby-nemecko-platilo-rozvojovemu-svetu-reparace-40607067",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-05T20:20:22Z",
+        "topic": "klimaticka_politika",
+        "frame": "spravedlnost_a_socialni_dopady",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "cd3bafc885e2",
+        "title": "Žádný návrat k ruskému plynu ani mírnější sankce. Diplomati EU odmítají plán USA a Moskvy",
+        "url": "https://www.forum24.cz/zadny-navrat-k-ruskemu-plynu-ani-mirnejsi-sankce-diplomati-eu-odmitaji-plan-usa-a-moskvy",
+        "outlet": "FORUM 24",
+        "published_at": "2026-11-05T19:24:03Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "b8d2f8197973",
+        "title": "Křetínského spalovna odpadů vyjde na 6,6 miliardy, většinu má pokrýt dotace",
+        "url": "https://www.e15.cz/byznys/prumysl-a-energetika/kretinskeho-spalovna-odpadu-vyjde-na-6-6-miliardy-vetsinu-ma-pokryt-dotace-1437138",
+        "outlet": "E15",
+        "published_at": "2026-11-05T16:44:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "3d549f7ed21c",
+        "title": "Potřebujeme konkrétní pomoc, zní z Agrární komory. Letošní rok zemědělci hodnotí jako jeden z nejhorších",
+        "url": "https://www.irozhlas.cz/zpravy-domov/potrebujeme-konkretni-pomoc-zni-z-agrarni-komory-letosni-rok-zemedelci-hodnoti_2611051743_elev",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-05T16:43:00Z",
+        "topic": "jine",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "4ee009f23c0f",
+        "title": "Havlíčkův plynový kontrakt se Spojenými státy je o krok blíž realitě. Stát přichystal pro obchodníka záruky",
+        "url": "https://archiv.hn.cz/c1-67955470-havlickuv-plynovy-kontrakt-se-spojenymi-staty-je-o-krok-bliz-realite-stat-prichystal-pro-obchodnika-zaruky-za-rizikovy-deal",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-05T16:25:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "28ef0f20d953",
+        "title": "Evropa otáčí a snaží se zachránit produkci pohonných hmot. Česko neví, co chce",
+        "url": "https://www.e15.cz/byznys/prumysl-a-energetika/evropa-otaci-a-snazi-se-zachranit-produkci-pohonnych-hmot-cesko-nevi-co-chce-1437083",
+        "outlet": "E15",
+        "published_at": "2026-11-05T15:00:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "d745f0e95b7e",
+        "title": "Ceny plynu a elektřiny si říkají o pozornost",
+        "url": "https://archiv.hn.cz/c1-67955480-ceny-plynu-a-elektriny-si-rikaji-o-pozornost",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-05T14:48:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "0f1280a9e50e",
+        "title": "Polovina farmářů hodnotí letošek jako jeden z nejhorších, omezují investice",
+        "url": "https://zpravy.aktualne.cz/ekonomika/polovina-farmaru-hodnoti-letosek-jako-jeden-z-nejhorsich-omezuji-investice/r~aaa29607974eb6aefb44f7bd50ced639/",
+        "outlet": "Aktuálně.cz – ekonomika",
+        "published_at": "2026-11-05T14:10:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "b55c929dee65",
+        "title": "Lodě s ruskou naftou se odklonily od cesty do USA, Moskva to popřela",
+        "url": "https://www.respekt.cz/informacni-servis/lode-s-ruskou-naftou-se-odklonily-od-cesty-do-usa-moskva-to-poprela-2026-11-05-16-31",
+        "outlet": "Respekt",
+        "published_at": "2026-11-05T13:44:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "96f21531f7b1",
+        "title": "Nafta i benzín dál zlevňují. Ministerstvo chystá další snížení stropů",
+        "url": "https://zpravy.aktualne.cz/ekonomika/nafta-i-benzin-dal-zlevnuji-ministerstvo-chysta-dalsi-snizeni-stropu/r~aaa29579b61770d0a8f67e8805562f94/",
+        "outlet": "Aktuálně.cz – ekonomika",
+        "published_at": "2026-11-05T13:35:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "4728125fe9ec",
+        "title": "ČNB podle očekávání zvýšila základní úrokovou sazbu",
+        "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/cnb-podle-ocekavani-zvysila-zakladni-urokovou-sazbu-na-ctyri-procenta-379316",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-05T13:34:27Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "2b37479bc1c3",
+        "title": "Ceny vánočních stromků vzrostly. Za zdražením je mráz, sucho i drahá doprava",
+        "url": "https://www.denik.cz/ekonomika/vanoce-cena-vanocnich-stromku-zdrazeni/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=ekonomika",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-05T13:10:07Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "a12e5f8fbaa4",
+        "title": "Střecha světa pod panely. Solární boom přináší Tibeťanům peníze i problémy",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/strecha-sveta-pod-panely-solarni-boom-prinasi-tibetanum-penize-i-problemy.A261105_105554_eko-zahranicni_ven#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-05T12:59:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "0958afe415f1",
+        "title": "První pumpaři už reagují na výrazný pokles cen ropy. Zlevňují naftu o korunu a další pokles může ještě přijít",
+        "url": "https://archiv.hn.cz/c1-67955410-prvni-pumpari-uz-reaguji-na-vyrazny-pokles-cen-ropy-zlevnuji-naftu-o-korunu-a-dalsi-pokles-muze-jeste-prijit",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-05T12:50:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "b97e5800cba2",
+        "title": "Poslední „kapky“ pitné vody, zápach a propady tržeb. Co když bude sucho i na jaře? ptají se na Slapech a Orlíku",
+        "url": "https://vikend.hn.cz/c1-67951490-boj-o-vodu-i-penize-rekordni-ubytek-vody-na-vltavske-kaskade-trapi-okolni-obce-i-podnikatele",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-05T12:30:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "6922038c7363",
+        "title": "Polární vír se začíná rozpadat. Mapy ukazují, jaký to bude mít vliv na zimu",
+        "url": "https://www.lidovky.cz/domov/polarni-vir-se-zacina-rozpadat-mapy-ukazuji-jaky-to-bude-mit-vliv-na-zimu.A261105_132610_ln_domov_rkj#utm_source=rss&utm_medium=feed&utm_campaign=ln_domov&utm_content=main",
+        "outlet": "Lidovky.cz",
+        "published_at": "2026-11-05T12:26:10Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "3ab3661343a7",
+        "title": "Tankery s ruskou naftou mířící do USA změnily směr. Kupce si najdou, říká Moskva",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/financial-times-dva-tankery-prevazejici-ruskou-naftu-do-usa-zmenily-smer.A261105_130256_eko-zahranicni_ven#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-05T12:17:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "1c58664d5028",
+        "title": "Havlíček pojede jednat na Ukrajinu, doprovodí ho delegace českých firem",
+        "url": "https://www.lidovky.cz/domov/havlicek-zamiri-na-ukrajinu-doprovodi-ho-delegace-desitek-ceskych-firem.A261105_130714_ln_domov_rkj#utm_source=rss&utm_medium=feed&utm_campaign=ln_domov&utm_content=main",
+        "outlet": "Lidovky.cz",
+        "published_at": "2026-11-05T12:07:14Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "8d64aae281e4",
+        "title": "Úrokové sazby se zvýší? Experti varují před dalším zdražováním energií i potravin",
+        "url": "https://www.blesk.cz/clanek/zpravy-politika/852093/urokove-sazby-se-zvysi-experti-varuji-pred-dalsim-zdrazovanim-energii-i-potravin.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-05T12:03:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "57921800e734",
+        "title": "Lodě s ruskou naftou se dle Financial Times odklonily od USA, Moskva to popřela",
+        "url": "https://ct24.ceskatelevize.cz/clanek/svet/dva-tankery-prevazejici-ruskou-naftu-do-usa-zmenily-smer-pisi-ft-379309",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-05T11:17:32Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "17801392f729",
+        "title": "Obviněný politik v Brně dostal od vedení města post v miliardových teplárnách",
+        "url": "https://www.seznamzpravy.cz/clanek/domaci-politika-obvineny-politik-v-brne-dostal-od-vedeni-mesta-post-v-miliardovych-teplarnach-319781",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-05T11:14:13Z",
+        "topic": "teplo_a_budovy",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "0ac52ba72570",
+        "title": "ČEZ: Při cestě z práce ušetřili téměř tunu CO2",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/CEZ-Pri-ceste-z-prace-usetrili-temer-tunu-CO2-799128",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-05T10:54:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "1bbc679047db",
+        "title": "Přežili válku, hospodářské krize i pandemii. Výrobce toaleťáku v rolích, teď nemá ani na výplaty",
+        "url": "https://www.blesk.cz/clanek/radce/852083/prezili-valku-hospodarske-krize-i-pandemii-vyrobce-toaletaku-v-rolich-ted-nema-ani-na-vyplaty.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-05T10:50:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "19bb5094a774",
+        "title": "Summit V4 řeší podporu Ukrajiny či rozšiřování EU. Dorazila i von der Leyenová",
+        "url": "https://www.idnes.cz/zpravy/zahranicni/summit-v4-trencin-ursula-von-der-leyen-ukrajina-energetika.A261105_105601_zahranicni_onbu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-05T10:41:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "186072f68a76",
+        "title": "Prezident V4 jednají na summitu v Trenčíně se šéfkou Evropské komise Leyenovou",
+        "url": "https://zpravy.aktualne.cz/zahranici/na-summitu-v4-v-trencine-jednaji-prezidenti-se-sefkou-evropske-komise-leyenovou/r~aaa29a39b20a3ee2f63122553c765730/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-05T10:31:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "6953c0ae363a",
+        "title": "Čeká nás energetická krize jako v roce 2022?",
+        "url": "https://www.respekt.cz/ekonomika/ceka-nas-energeticka-krize-jako-v-roce-2022",
+        "outlet": "Respekt",
+        "published_at": "2026-11-05T10:30:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "naklady_a_zatez",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "688de5ee06be",
+        "title": "Ruské tankery otáčí od amerických břehů. Sázka na naftu od Putina Trumpovi nevyšla",
+        "url": "https://zpravy.aktualne.cz/zahranici/ruske-tankery-otaci-od-americkych-brehu-sazka-na-naftu-od-putina-trumpovi-nevysla/r~aaa2915b0a951a02a09b863f73d17baf/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-05T10:29:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "86ebb76543da",
+        "title": "Dva tankery s ruskou naftou změnily směr. Trumpova dohoda s Putinem se hroutí",
+        "url": "https://www.novinky.cz/clanek/zahranicni-amerika-dva-tankery-s-ruskou-naftou-zmenily-smer-trumpova-dohoda-s-putinem-se-hrouti-40606857",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-05T10:10:55Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "959bb55d0e45",
+        "title": "Futuristická Kia PV5 dostala obytnou vestavbu pro víkendové cestování",
+        "url": "https://www.novinky.cz/clanek/auto-futuristicka-kia-pv5-dostala-obytnou-vestavbu-pro-vikendove-cestovani-40606863",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-05T09:47:19Z",
+        "topic": "doprava",
+        "frame": "technologie_a_inovace",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "6775d5f7d4f5",
+        "title": "Prezident Pavel na summitu V4: Jazz v synagoze, hrkavá CASA a Ukrajina na stole",
+        "url": "https://www.blesk.cz/clanek/zpravy-politika/852047/prezident-pavel-na-summitu-v4-jazz-v-synagoze-hrkava-casa-a-ukrajina-na-stole.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-05T09:41:00Z",
+        "topic": "ceny_energii",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "36cd84244166",
+        "title": "Energie zdražují. Rychlý návrat levného plynu nečekejte, varují distributoři",
+        "url": "https://www.idnes.cz/ekonomika/domaci/ceny-energii-idnes-lounge-milan-duba-mnd-energie-e-on-energie-jan-zapotocny-egu-michal-macenauer.A261103_110558_ekonomika_vov#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-05T09:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "0e1ad51ed2bd",
+        "title": "Premiér Babiš: Zásadně odmítáme emisní povolenky ETS2",
+        "url": "https://www.parlamentnilisty.cz/politika/politici-volicum/Premier-Babis-Zasadne-odmitame-emisni-povolenky-ETS2-799114",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-05T07:19:00Z",
+        "topic": "ets2_a_povolenky",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "37b9a7801a09",
+        "title": "Psi z Černobylu získali genetické výhody. Zvyšují odolnost vůči rakovině",
+        "url": "https://www.denik.cz/veda/psi-cernobyl-geny-rakovina/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=veda",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-05T04:20:00Z",
+        "topic": "jadro",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "6ee6a53076c0",
+        "title": "Polární vír rekordně slábne. Změna může ovlivnit i počasí v Česku",
+        "url": "https://www.denik.cz/pocasi/arkticky-polarni-vir-slabne-pocasi-cesko/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=pocasi",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-05T03:30:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "66f0b03ab897",
+        "title": "Labe bylo splavné jen tři týdny. Pokračující sucho by vyhnalo dopravu i z Vltavy",
+        "url": "https://www.idnes.cz/ekonomika/doprava/lodni-voda-pocasi-doprava.A261104_170210_eko-doprava_cfr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-04T23:00:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "ff122252045b",
+        "title": "Lidstvo překazilo příchod nové doby ledové, naznačuje studie",
+        "url": "https://www.novinky.cz/clanek/veda-skoly-lidstvo-prekazilo-prichod-nove-doby-ledove-naznacuje-studie-40606757",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-04T19:03:00Z",
+        "topic": "veda_o_klimatu",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "32e7fb97f11c",
+        "title": "AI žene spotřebu elektřiny vzhůru. Z hlediska klimatu je to katastrofa, varují někteří",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/umela-inteligence-datova-centra-plynove-elektrarny-emise.A261103_103826_eko-zahranicni_rie#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-04T19:00:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "456140fdbac9",
+        "title": "„Jako sovětská hospodyňka.“ Rusové otevírají složenky a nevěří vlastním očím",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-jako-sovetska-hospodynka-rusove-oteviraji-slozenky-a-neveri-vlastnim-ocim-319728",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-04T18:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "34e53184d184",
+        "title": "Letos si lidé za teplo ze dřeva připlatí. Kvůli dražší naftě zdražila jeho doprava i zpracování",
+        "url": "https://www.irozhlas.cz/zpravy-domov/letos-si-lide-za-teplo-ze-dreva-priplati-kvuli-drazsi-nafte-zdrazila-jeho_2611041853_ntu",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-04T17:53:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "4d31c742ac8d",
+        "title": "Vývoj bojů (1714. den): Válka o města má vážné následky ještě před zimou, bez elektřiny byl Kyjev i Krym",
+        "url": "https://denikn.cz/2245497/vyvoj-boju-1714-den-valka-o-mesta-ma-vazne-nasledky-jeste-pred-zimou-bez-elektriny-byl-kyjev-i-krym/",
+        "outlet": "Deník N",
+        "published_at": "2026-11-04T17:43:43Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "48091b216e8a",
+        "title": "Jak se nezbláznit ze světa plného krizí? Uznávaný psychiatr prozradil tři hlavní pilíře psychické odolnosti",
+        "url": "https://ekonom.cz/c1-67954430-jak-se-nezblaznit-ze-sveta-plneho-krizi-uznavany-psychiatr-prozradil-tri-hlavni-pilire-psychicke-odolnosti",
+        "outlet": "Ekonom",
+        "published_at": "2026-11-04T17:00:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "odpovednost_a_moralka",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "24aefc54f31b",
+        "title": "Všechno běží podle plánu, ujišťuje šéf KHNP po krachu jednání s klíčovým dodavatelem pro Dukovany. Ten předložil novou nabídku",
+        "url": "https://archiv.hn.cz/c1-67955100-vsechno-bezi-podle-planu-ujistuje-sef-khnp-po-krachu-jednani-s-klicovym-dodavatelem-pro-dukovany-ten-predlozil-novou-nabidku",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-04T16:56:00Z",
+        "topic": "jadro",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "e9dcff5113cf",
+        "title": "ČEZ: Studenti získávali zkušenosti přímo v provozu",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/CEZ-Studenti-ziskavali-zkusenosti-primo-v-provozu-799096",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-04T16:54:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "bcc376be745b",
+        "title": "Výhra pro evropské automobilky, europoslanci podpořili mírnější emisní cíle",
+        "url": "https://zpravy.aktualne.cz/zahranici/vyhra-pro-evropske-automobilky-europoslanci-podporili-mirnejsi-emisni-cile/r~aaa291c1a111ff4a2a723388844c4166/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-04T16:24:00Z",
+        "topic": "doprava",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "b79ea53a712d",
+        "title": "Nervozita v Česku kvůli superzakázce. Korejci začali ujišťovat, že se nic neděje",
+        "url": "https://zpravy.aktualne.cz/domaci/nervozita-v-cesku-kvuli-superzakazce-korejci-zacali-ujistovat-ze-se-nic-nedeje/r~aaa29b1d7965c944fcf18f54b32ec219/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-04T15:09:00Z",
+        "topic": "jadro",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "2f77690a65fa",
+        "title": "Jste našimi nejoblíbenějšími sousedy, řekl Tusk po jednání s Babišem",
+        "url": "https://www.idnes.cz/zpravy/domaci/babis-varsava-jednani-polsky-premier-donald-tusk-cesko-polske-vztahy.A261103_211056_domaci_jira#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-04T15:03:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "7250d764a58e",
+        "title": "Jste našimi nejoblíbenějšími sousedy, řekl Tusk po jednání s Babišem",
+        "url": "https://www.lidovky.cz/domov/babis-varsava-jednani-polsky-premier-donald-tusk-cesko-polske-vztahy.A261104_093754_ln_domov_lvot#utm_source=rss&utm_medium=feed&utm_campaign=ln_domov&utm_content=main",
+        "outlet": "Lidovky.cz",
+        "published_at": "2026-11-04T15:03:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "62f951574da6",
+        "title": "Polární vír kolabuje. Tak brzy se to ještě nikdy nestalo",
+        "url": "https://www.novinky.cz/clanek/pocasi-polarni-vir-kolabuje-tak-brzy-se-to-jeste-nikdy-nestalo-40606707",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-04T14:23:33Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "770c6c6a1822",
+        "title": "Westinghouse si otestuje schopnosti Škody JS. Když se osvědčí, zapojí ji do jaderných projektů",
+        "url": "https://www.e15.cz/byznys/prumysl-a-energetika/westinghouse-si-otestuje-schopnosti-skody-js-kdyz-se-osvedci-zapoji-ji-do-jadernych-projektu-1437090",
+        "outlet": "E15",
+        "published_at": "2026-11-04T14:15:00Z",
+        "topic": "jadro",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "bf6501611daa",
+        "title": "Vedra mohou ochromit africké ekonomiky. Škody půjdou do bilionů",
+        "url": "https://www.novinky.cz/clanek/ekonomika-vedra-mohou-ochromit-africke-ekonomiky-skody-pujdou-do-bilionu-40606635",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-04T14:01:23Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "fb98624757c5",
+        "title": "Trumpa čeká období ‚chromého kačera‘. Ceny paliva byly pro mnohé Američany ‚poslední kapkou‘",
+        "url": "https://www.irozhlas.cz/zpravy-svet/trumpa-ceka-obdobi-chromeho-kacera-ceny-paliva-byly-pro-mnohe-americany-posledni_2611041448_vdv",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-04T13:48:00Z",
+        "topic": "ceny_energii",
+        "frame": "politicky_konflikt",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "10d988203e73",
+        "title": "Masivní výpadky na Krymu. Ukrajinský útok zastavil elektřinu, vodu i dopravu",
+        "url": "https://www.seznamzpravy.cz/clanek/zahranicni-masivni-vypadky-na-krymu-ukrajinsky-utok-zastavil-elektrinu-vodu-i-dopravu-319718",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-04T13:47:20Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "225d19875223",
+        "title": "Generální ředitel KHNP pro HN: Držíme slovo, příprava nových Dukovan pokračuje",
+        "url": "https://archiv.hn.cz/c1-67955030-generalni-reditel-khnp-pro-hn-drzime-slovo-priprava-novych-dukovan-pokracuje",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-04T13:45:00Z",
+        "topic": "jadro",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "9127ce5283fa",
+        "title": "Westinghouse testuje českou Škodu JS. Pokud plzeňský výrobce uspěje, může se zapojit do dodávek pro reaktor nové generace",
+        "url": "https://byznys.hn.cz/c1-67955000-westinghouse-testuje-ceskou-skodu-js-pokud-plzensky-vyrobce-uspeje-muze-se-zapojit-do-dodavek-pro-reaktor-nove-generace",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-04T13:42:00Z",
+        "topic": "jadro",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "736a7a2f9077",
+        "title": "Bez volantu a pedálů: Tesla Cybercab vyráží na silnice, úřady chtějí záruky",
+        "url": "https://www.denik.cz/automagazin/tesla-cybercab-bez-volantu-pedalu/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=automagazin",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-04T13:00:00Z",
+        "topic": "doprava",
+        "frame": "technologie_a_inovace",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "19a9225deaa1",
+        "title": "Ukrajinské údery ochromují ruský ropný průmysl. Bez něj Putin nemůže ve válce pokračovat, říká analytik",
+        "url": "https://www.forum24.cz/ukrajinske-udery-ochromuji-rusky-ropny-prumysl-bez-nej-putin-nemuze-ve-valce-pokracovat-rika-analytik",
+        "outlet": "FORUM 24",
+        "published_at": "2026-11-04T12:41:06Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "0646017a3666",
+        "title": "Prevence je levnější. A platí to i v měnové politice",
+        "url": "https://archiv.hn.cz/c1-67954910-prevence-je-levnejsi-a-plati-to-i-v-menove-politice",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-04T12:39:00Z",
+        "topic": "ceny_energii",
+        "frame": "neutralni_informovani",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "37274a31ae5b",
+        "title": "Prevence je levnější. A platí to i v měnové politice",
+        "url": "https://nazory.hn.cz/c1-67954910-prevence-je-levnejsi-a-plati-to-i-v-menove-politice",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-04T12:39:00Z",
+        "topic": "ceny_energii",
+        "frame": "neutralni_informovani",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "a43199ecc773",
+        "title": "Přírodní náhrada rašeliny je zadarmo. Možná ji máte právě teď na zahradě",
+        "url": "https://www.denik.cz/zahrada/listovka-kompost-nahrada-raseliny/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=zahrada",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-04T12:21:43Z",
+        "topic": "klimaticka_politika",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "952434712749",
+        "title": "Energetika si žádá nové zdroje i flexibilitu, ušetří miliardy, shodli se experti",
+        "url": "https://www.idnes.cz/ekonomika/domaci/energetika-si-zada-nove-zdroje-i-flexibilitu-usetri-miliardy-shodli-se-experti.A261104_093941_ekonomika_hyk#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-04T11:41:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "bdd318ebcbd7",
+        "title": "Inflace v eurozóně vzrostla na čtyři procenta, je nejvýše za tři roky",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-inflace-v-eurozone-vzrostla-na-ctyri-procenta-je-nejvyse-za-tri-roky-319683",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-04T11:25:20Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "22767c7fb009",
+        "title": "Evropská města čekají miliardové náklady kvůli elektromobilům. Do nabíječek budou muset masivně investovat",
+        "url": "https://zpravy.aktualne.cz/ekonomika/evropska-mesta-cekaji-miliardove-naklady-kvuli-elektromobilum-do-nabijecek-budou-muset-masivne-investovat/r~aaa29f875cce151c60b5dd3832a8334f/",
+        "outlet": "Aktuálně.cz – ekonomika",
+        "published_at": "2026-11-04T09:16:00Z",
+        "topic": "doprava",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "4672d1575817",
+        "title": "Kritická předpověď. Miliony lidí v Africe i Asii přijdou kvůli horku o práci",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/studie-horko-muze-do-roku-2040-pripravit-o-praci-miliony-lidi-v-africe-a-asii.A261104_072959_zahranicni_onbu#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-04T07:34:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "0325d36ed665",
+        "title": "Horko může připravit o práci miliony lidí. Ohroženy jsou hlavně dva kontinenty",
+        "url": "https://zpravy.aktualne.cz/ekonomika/horko-muze-pripravit-o-praci-miliony-lidi-ohrozeny-jsou-hlavne-dva-kontinenty/r~aaa29bc47ddfb6473842b624e155fc58/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-04T06:27:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "c932b0567a09",
+        "title": "V Bratislavě budou jednat prezidenti zemí V4, pozvaná je i von der Leyenová",
+        "url": "https://www.idnes.cz/zpravy/zahranicni/na-slovensku-zacina-dvoudenni-summit-prezidentu-v4-zucastni-se-ho-i-sefka-ek.A261104_063827_zahranicni_onbu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-04T06:21:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "83d99eed8ca5",
+        "title": "Elektromobil potřebuje správné zimní obutí. Špatné pneumatiky mohou přijít draho",
+        "url": "https://www.denik.cz/zivot-ridice/elektromobil-potrebuje-spravne-zimni-obuti-spatne-pneumatiky-mohou-prijit-draho/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=zivot-ridice",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-04T06:03:00Z",
+        "topic": "doprava",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "74056257439a",
+        "title": "ONLINE: Ukrajinská energetika prožívá jedno z nejtěžších období od začátku ruské agrese",
+        "url": "https://www.irozhlas.cz/zpravy-svet/online-ukrajinska-energetika-proziva-jedno-z-nejtezsich-obdobi-od-zacatku-ruske_2611040628_eml",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-04T05:28:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "8fb8e0c0e1ee",
+        "title": "Babišovi se hroutí další slib. Čechům místo levnějších hypoték hrozí nová vlna zdražování",
+        "url": "https://www.e15.cz/ekonomika/babisovi-se-hrouti-dalsi-slib-cechum-misto-levnejsich-hypotek-hrozi-nova-vlna-zdrazovani-1437054",
+        "outlet": "E15",
+        "published_at": "2026-11-04T05:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "258db27cca07",
+        "title": "Soláry jsou jako auto. Zákazníci shánějí dodavatele, který má jejich díly",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-solary-jsou-jako-auto-zakaznici-shaneji-dodavatele-ktery-ma-jejich-dily-319538",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-04T04:30:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "0443b7d60193",
+        "title": "Proč na Floridě spadlo letadlo? Český expert na extrémní počasí popsal důvody tragédie",
+        "url": "https://www.blesk.cz/clanek/zpravy-krimi/851873/proc-na-floride-spadlo-letadlo-cesky-expert-na-extremni-pocasi-popsal-duvody-tragedie.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-04T04:00:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "1670baf9d78e",
+        "title": "Před 60 lety se Florencií přehnala smrtící vlna. Brala domy, umění i životy",
+        "url": "https://www.denik.cz/historie/florencie-niciva-povoden-v-roce-1966/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=historie",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-04T04:00:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "9727f2a5ab22",
+        "title": "Kreml si zahrává s jadernou katastrofou. Putinovy drony zaútočily na kritickou infrastrukturu",
+        "url": "https://www.forum24.cz/kreml-si-zahrava-s-jadernou-katastrofou-putinovy-drony-zautocily-na-kritickou-infrastrukturu",
+        "outlet": "FORUM 24",
+        "published_at": "2026-11-04T04:00:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "b5aa60911d04",
+        "title": "Firmám pomáhá předvídatelná cena energií i přehled o spotřebě",
+        "url": "https://archiv.hn.cz/c1-67954440-firmam-pomaha-predvidatelna-cena-energii-i-prehled-o-spotrebe",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-03T23:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "f92228c550dc",
+        "title": "Evropa potřebuje norský plyn. Nevadí, že se v budoucnu začne těžit i v Arktidě",
+        "url": "https://www.idnes.cz/ekonomika/domaci/norsko-plyn-equinor-evropska-komise.A261103_153245_ekonomika_hyk#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-03T23:00:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "e7762484aad1",
+        "title": "Česku se podařilo odložit unijní nesmysl. Jde o plyn",
+        "url": "https://www.parlamentnilisty.cz/arena/monitor/Cesku-se-podarilo-odlozit-unijni-nesmysl-Jde-o-plyn-799008",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-03T20:30:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "b6ca27c39e22",
+        "title": "Čipy vydělaly přes 85 procent, zelená energie skoro nic. Jak si správně vybrat ETF a nespálit se na módních trendech",
+        "url": "https://ekonom.cz/c1-67954540-cipy-vydelaly-pres-85-procent-zelena-energie-skoro-nic-jak-si-spravne-vybrat-etf-a-nespalit-se-na-modnich-trendech",
+        "outlet": "Ekonom",
+        "published_at": "2026-11-03T19:14:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "1c25341d995b",
+        "title": "Křetínského firma postaví v Německu sedm plynových elektráren, nahradí část uhelných",
+        "url": "https://www.e15.cz/byznys/prumysl-a-energetika/kretinskeho-firma-postavi-v-nemecku-sedm-plynovych-elektraren-nahradi-cast-uhelnych-1437060",
+        "outlet": "E15",
+        "published_at": "2026-11-03T17:03:00Z",
+        "topic": "uhli",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "8315a00e4fd0",
+        "title": "Velký Křetínského byznys. Jeho LEAG má v Německu postavit 7 plynových elektráren",
+        "url": "https://byznys.hn.cz/c1-67954450-velky-kretinskeho-byznys-jeho-leag-ma-v-nemecku-postavit-7-plynovych-elektraren",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-03T16:44:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "d53f2b293237",
+        "title": "Křetínský a Tkáč uspěli v německých aukcích. Postaví sedm elektráren",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-nejbohatsi-lide-kretinsky-a-tkac-uspeli-v-nemeckych-aukcich-postavi-sedm-elektraren-319493",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-03T14:15:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "dd67a74bb31b",
+        "title": "Jako hospodyňky za časů SSSR, zoufají si Rusové. Přestávají zvládat rostoucí ceny energií",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/rusko-ekonomika-domacnosti-energie-teplo-elektrina-voda.A261103_121844_eko-zahranicni_jla#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-03T14:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -2
+      },
+      {
+        "id": "d4688c804419",
+        "title": "Test Volkswagen ID.3 Neo: Vydařená náprava skoro všech chyb",
+        "url": "https://www.denik.cz/auto-testy/test-volkswagen-id3-neo-vydarena-naprava-skoro-vsech-chyb/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=auto-testy",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-03T13:03:00Z",
+        "topic": "doprava",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "25cdbcc46f57",
+        "title": "Potřebujete, co vyrábíme, hrozí Čína konkurentům. Boj se Západem je pro zemi priorita",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/potrebujete-co-vyrabime-hrozi-cina-konkurentum-boj-se-zapadem-je-pro-zemi-priorita.A261103_105830_eko-zahranicni_jadv#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-03T12:10:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "95ed98fd4c42",
+        "title": "ČEZ: 60 let provozu Elektrárny Ledvice",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/CEZ-60-let-provozu-Elektrarny-Ledvice-799022",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-03T10:52:00Z",
+        "topic": "jadro",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "95b4c02e9535",
+        "title": "Další evropská země chce snížit rychlost na dálnicích. Řidičům povolí 80 km/h",
+        "url": "https://www.denik.cz/automagazin/svycarsko-rychlost-dalnice-paliva/?utm_source=rss&utm_medium=feed-vse&utm_campaign=www.denik.cz&utm_content=automagazin",
+        "outlet": "Deník.cz",
+        "published_at": "2026-11-03T10:00:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "c936c01f5b89",
+        "title": "Evropa má nízké zásoby plynu, riziko pro ceny přetrvá i příští rok",
+        "url": "https://www.novinky.cz/clanek/ekonomika-evropa-ma-nizke-zasoby-plynu-riziko-pro-ceny-pretrva-i-pristi-rok-40606271",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-03T09:34:21Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "63de4248fa55",
+        "title": "Výrobce autodílů Schaeffler plánuje propouštění, Čech se to zatím nedotkne",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-firmy-vyrobce-autodilu-schaeffler-planuje-propousteni-cech-se-to-zatim-nedotkne-319398",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-03T09:15:30Z",
+        "topic": "doprava",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "8070859099d8",
+        "title": "Unikát z Choťovic. Odolná farma má tři pilíře, popisují zemědělec Karel Horák a expert Generali České pojišťovny Martin Flajšar",
+        "url": "https://www.e15.cz/podcasty/trendy-v-udrzitelnosti/unikat-z-chotovic-odolna-farma-ma-tri-pilire-popisuji-zemedelec-karel-horak-a-expert-generali-ceske-pojistovny-martin-flajsar-1437024",
+        "outlet": "E15",
+        "published_at": "2026-11-03T09:00:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "rozhovor",
+        "tone": 1
+      },
+      {
+        "id": "c5409f8ca033",
+        "title": "Čipy vydělaly přes 85 procent, zelená energie skoro nic. Jak si správně vybrat ETF a nespálit se na módních trendech",
+        "url": "https://byznys.hn.cz/c1-67952570-cipy-vydelaly-pres-85-procent-zelena-energie-skoro-nic-jak-si-spravne-vybrat-etf-a-nespalit-se-na-modnich-trendech",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-03T08:51:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "2b165de4f1c8",
+        "title": "Investují do katastrof. Boháči mají z klimatické krize prospěch, varuje charita",
+        "url": "https://www.idnes.cz/zpravy/zahranicni/investuji-do-katastrof-bohaci-maji-z-klimaticke-krize-prospech-varuje-charita.A261027_135129_zahranicni_dvou#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-03T08:40:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "92dec32dcf9f",
+        "title": "Nová střecha otevírá cestu pro nové bydlení",
+        "url": "https://www.novinky.cz/clanek/bydleni-nova-strecha-otevira-cestu-pro-nove-bydleni-40602959",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-03T08:03:00Z",
+        "topic": "teplo_a_budovy",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "9ba9a42d234e",
+        "title": "České firmy přestávají čekat na lepší časy. Aktivně hledají nové trhy, investice ale mění směr",
+        "url": "https://archiv.hn.cz/c1-67953980-ceske-firmy-prestavaji-cekat-na-lepsi-casy-aktivne-hledaji-nove-trhy-investice-ale-meni-smer",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-03T07:01:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "e1a6f192fb93",
+        "title": "Rusko pokračuje v masivních úderech na energetiku, Ukrajinci zasáhli další rafinerii",
+        "url": "https://zpravy.aktualne.cz/zahranici/rusko-pokracuje-v-masivnich-uderech-na-energetiku-ukrajinci-zasahli-dalsi-rafinerii/r~aaa29b2cde35a5d874f05eb4642d76ee/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-03T06:54:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "01ee9a3045fd",
+        "title": "EU Inc. má po osekání zelenou od členských států. Další kompromisy by návrh ale pohřbily",
+        "url": "https://archiv.hn.cz/c1-67953340-eu-inc-ma-po-osekani-zelenou-od-clenskych-statu-dalsi-kompromisy-by-navrh-ale-pohrbily",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-03T06:47:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "14048e09996e",
+        "title": "Chtějí vypnout noc a prodávat sluneční světlo. Ambiciózní plán Američanů vyvolává mezi vědci obavy",
+        "url": "https://magazin.aktualne.cz/chteji-vypnout-noc-a-prodavat-slunecni-svetlo-ambiciozni-plan-americanu-vyvolava-mezi-vedci-obavy/r~aaa29ceb14602ee656085b2cddbc23c5/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-03T04:59:00Z",
+        "topic": "veda_o_klimatu",
+        "frame": "technologie_a_inovace",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "331c34542bee",
+        "title": "Po solárních panelech zdražují i baterie. Čína mění pravidla hry",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-po-solarnich-panelech-zdrazuji-i-baterie-cina-meni-pravidla-hry-319202",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-03T04:30:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "44bc3d4c9da9",
+        "title": "Evropa krvácí, Amerika kasíruje. Trump vyvolal válkou plynovou krizi jen v cizině",
+        "url": "https://www.e15.cz/byznys/prumysl-a-energetika/evropa-krvaci-amerika-kasiruje-trump-vyvolal-valkou-plynovou-krizi-jen-v-cizine-1437015",
+        "outlet": "E15",
+        "published_at": "2026-11-03T04:00:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "3fe974218986",
+        "title": "Závislost na jediném zdroji energie je past. Dříve nebo později investora dožene",
+        "url": "https://archiv.hn.cz/c1-67951820-zavislost-na-jedinem-zdroji-energie-je-past-drive-nebo-pozdeji-investora-dozene",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-02T23:00:00Z",
+        "topic": "jine",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "b77163e8e3d0",
+        "title": "Kanáry zasáhly silné bouřky. Statisíce lidí bez elektřiny, na Teide sníh",
+        "url": "https://www.novinky.cz/clanek/pocasi-kanary-zasahly-silne-bourky-statisice-bez-elektriny-na-teide-snih-40606180",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-02T21:13:27Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "0c3bd76ca472",
+        "title": "Rusko chystá rozsáhlý vzdušný útok na Ukrajinu, uvedl Zelenskyj",
+        "url": "https://www.novinky.cz/clanek/valka-na-ukrajine-rusko-chysta-rozsahly-vzdusny-utok-na-ukrajinu-uvedl-zelenskyj-40606224",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-02T21:08:56Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "64c918d9c28d",
+        "title": "Hospodářská komora: Od ledna začnou platit nové tarify elektřiny",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/Hospodarska-komora-Od-ledna-zacnou-platit-nove-tarify-elektriny-799001",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-02T21:03:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "144ff4ffcce5",
+        "title": "Zničí vrtule památky UNESCO? Boj na Hané nabírá obrátky",
+        "url": "https://www.parlamentnilisty.cz/arena/rozhovory/Znici-vrtule-pamatky-UNESCO-Boj-na-Hane-nabira-obratky-798994",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-02T20:00:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "skepse_a_odmitani",
+        "genre": "zprava",
+        "tone": -2
+      },
+      {
+        "id": "04bfcc8b43db",
+        "title": "Ceny energií stoupají. Lidé si připlatí za plyn, elektřinu i topné dřevo",
+        "url": "https://ct24.ceskatelevize.cz/clanek/ekonomika/ceny-energii-stoupaji-lide-si-priplati-za-plyn-elektrinu-i-topne-drevo-379245",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-02T19:20:23Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "d550d748a065",
+        "title": "David (SPD): Stát prý chce větrníky, ale referenda je odmítají",
+        "url": "https://www.parlamentnilisty.cz/politika/politici-volicum/David-SPD-Stat-pry-chce-vetrniky-ale-referenda-je-odmitaji-799004",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-02T19:07:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "skepse_a_odmitani",
+        "genre": "komentar",
+        "tone": -1
+      },
+      {
+        "id": "7ff8eae5afa2",
+        "title": "Dostavba Dukovan může být v ohrožení. Korejská firma žádá o pomoc vládu",
+        "url": "https://www.idnes.cz/ekonomika/domaci/dostavba-dukovan-muze-byt-v-ohrozeni-korejska-firma-zada-o-pomoc-vladu.A261102_102848_ekonomika_hyk#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-02T19:00:00Z",
+        "topic": "jadro",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "9c26cef0c679",
+        "title": "Bouře Agneta zasáhla Řecko. Lidé před záplavami utíkali na střechy",
+        "url": "https://www.novinky.cz/clanek/pocasi-boure-agneta-zasahla-recko-lide-pred-zaplavami-utikali-na-strechy-40606069",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-02T16:41:54Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "a65a3b54b750",
+        "title": "Bývalý šéf hasičů Vlček má novou pozici. Bude součástí celoevropské poradní skupiny pro katastrofy",
+        "url": "https://www.irozhlas.cz/zpravy-domov/byvaly-sef-hasicu-vlcek-ma-novou-pozici-bude-soucasti-celoevropske-poradni_2611021710_vdv",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-02T16:10:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "4da407071775",
+        "title": "Elektřina zdraží. Domácnosti si připlatí i několik tisíc",
+        "url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-elektrina-zdrazi-domacnosti-si-priplati-i-nekolik-tisic-319315",
+        "outlet": "Seznam Zprávy",
+        "published_at": "2026-11-02T15:15:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "68e578a6eb79",
+        "title": "Zásobení lidí je priorita. Odtok z Vranovské přehrady omezili na mimořádné minimum",
+        "url": "https://www.idnes.cz/brno/zpravy/sucho-vranovska-prehrada-odtok-vody-minimum-povodi-moravy.A261102_155432_brno-zpravy_zubr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj&utm_content=main",
+        "outlet": "iDNES.cz – zpravodaj",
+        "published_at": "2026-11-02T15:12:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "260a4818e8b7",
+        "title": "Extrémní sucho na Vranovské přehradě: Chtějí ochránit vodu, snižují odtok",
+        "url": "https://www.blesk.cz/clanek/regiony-brno-brno-zpravy/851808/extremni-sucho-na-vranovske-prehrade-chteji-ochranit-vodu-snizuji-odtok.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-02T14:30:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "fd7df82cae2c",
+        "title": "Závislost na jediném zdroji energie je past. Dříve nebo později investora dožene",
+        "url": "https://video.aktualne.cz/aktualne-pro-byznys/zavislost-na-jedinem-zdroji-energie-je-past-drive-nebo-pozdeji-investora-dozene/r~aaa295ef03be508029b62f90c8812e17/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-02T14:00:00Z",
+        "topic": "jine",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 0
+      },
+      {
+        "id": "a551d9cd97f2",
+        "title": "Stačí trocha snahy a přijde šokující spotřeba. Za kolik umí jezdit nová škodovka",
+        "url": "https://zpravy.aktualne.cz/ekonomika/auto/elektromobilita/staci-trocha-snahy-a-prijde-sokujici-spotreba-za-kolik-umi-jezdit-nova-skodovka/r~aaa29abc61545b4962b48571f2bf9fc8/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-02T13:43:00Z",
+        "topic": "doprava",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "a30c9707f62f",
+        "title": "Osud uhlí je zpečetěn, říká miliardář a obchodník s komoditami Petr Paukner. Na jaké odvětví do budoucna sází?",
+        "url": "https://archiv.hn.cz/c1-67953540-osud-uhli-je-zpeceten-rika-miliardar-a-obchodnik-s-komoditami-petr-paukner-na-jake-odvetvi-do-budoucna-sazi",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-02T13:39:00Z",
+        "topic": "uhli",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "deb38601f78b",
+        "title": "Německo má poloprázdné zásobníky plynu, do zimy vstupuje bez plánované rezervy",
+        "url": "https://www.idnes.cz/ekonomika/zahranicni/nemecko-ma-poloprazdne-zasobniky-plynu-do-zimy-vstupuje-bez-planovane-rezervy.A261102_093542_eko-zahranicni_ven#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-02T13:25:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "27e15dc84ec7",
+        "title": "Otavova MTX se snaží odolat asijské konkurenci. Řešením mají být vlastní elektrárny pro továrny, jenže naráží na NIMBY",
+        "url": "https://archiv.hn.cz/c1-67952590-otavova-mtx-se-snazi-odolat-asijske-konkurenci-resenim-maji-byt-vlastni-elektrarny-pro-tovarny-jenze-narazi-na-nimby",
+        "outlet": "Hospodářské noviny – Byznys",
+        "published_at": "2026-11-02T13:03:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "763d8d7e363c",
+        "title": "Skleníkové plyny dosáhly rekordu. Nejbohatší znečišťují víc než miliardy chudých",
+        "url": "https://denikreferendum.cz/clanek/239535-sklenikove-plyny-dosahly-rekordu-nejbohatsi-znecistuji-vic-nez-miliardy-chudych",
+        "outlet": "Deník Referendum",
+        "published_at": "2026-11-02T12:04:37Z",
+        "topic": "klimaticka_politika",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "7c8aab719fa0",
+        "title": "Firmy v Česku vznikají, ale nerostou. Nový index ukázal, kde tuzemská ekonomika zaostává",
+        "url": "https://www.e15.cz/byznys/firmy-v-cesku-vznikaji-ale-nerostou-novy-index-ukazal-kde-tuzemska-ekonomika-zaostava-1437007",
+        "outlet": "E15",
+        "published_at": "2026-11-02T12:00:00Z",
+        "topic": "ceny_energii",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "924ad99090a7",
+        "title": "Lidmi způsobená změna klimatu zastavila nástup nové doby ledové, naznačuje výzkum",
+        "url": "https://ct24.ceskatelevize.cz/clanek/veda/lidmi-zpusobena-zmena-klimatu-zastavila-nastup-nove-doby-ledove-naznacuje-vyzkum-379214",
+        "outlet": "ČT24 – Věda",
+        "published_at": "2026-11-02T12:00:00Z",
+        "topic": "veda_o_klimatu",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "607d4f139cc1",
+        "title": "USA navrhly obnovu prodeje ruského plynu do EU. Podle Moskvy to zatím není možné",
+        "url": "https://ct24.ceskatelevize.cz/clanek/svet/usa-navrhly-obnovu-prodeje-ruskeho-plynu-do-eu-podle-moskvy-to-zatim-neni-mozne-379226",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-02T11:41:22Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "90ebf3fb315f",
+        "title": "Odbory v Hyundai žádají vyšší mzdy i třicetitisícový bonus. Výroba aut však dál klesá",
+        "url": "https://www.idnes.cz/ostrava/zpravy/hyundai-nosovice-odbory-mzdy-bonus-vyroba-aut-klesa.A261102_113242_ostrava-zpravy_dmk#utm_source=rss&utm_medium=feed&utm_campaign=ekonomikah&utm_content=main",
+        "outlet": "iDNES.cz – ekonomika",
+        "published_at": "2026-11-02T11:20:00Z",
+        "topic": "doprava",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "72719e307400",
+        "title": "Ráj českých turistů pod vodou! Rhodos zasáhly prudké lijáky, zaplavily domy i silnice",
+        "url": "https://www.blesk.cz/clanek/zpravy-svet/851767/raj-ceskych-turistu-pod-vodou-rhodos-zasahly-prudke-lijaky-zaplavily-domy-i-silnice.html",
+        "outlet": "Blesk.cz",
+        "published_at": "2026-11-02T09:55:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "790385ef8579",
+        "title": "Až 16 200 korun zpět na účet. Innogy a UniCredit Bank spustily nový bonusový program",
+        "url": "https://www.e15.cz/finexpert/banky-a-ucty/az-16-200-korun-zpet-na-ucet-innogy-a-unicredit-bank-spustily-novy-bonusovy-program-1437002",
+        "outlet": "E15",
+        "published_at": "2026-11-02T09:48:00Z",
+        "topic": "ceny_energii",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "5cb86226eeca",
+        "title": "44. týden na trhu pohonných hmot ČMKB",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/44-tyden-na-trhu-pohonnych-hmot-CMKB-798973",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-02T09:47:00Z",
+        "topic": "ceny_energii",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "4de7b929d50a",
+        "title": "„Trvá to, ale dotáhneme to.“ Babiš oslovil netrpělivé voliče",
+        "url": "https://www.parlamentnilisty.cz/arena/monitor/-Trva-to-ale-dotahneme-to-Babis-oslovil-netrpelive-volice-798970",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-02T09:17:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "naklady_a_zatez",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "d86c23b28bfb",
+        "title": "44. týden na Energetické burze ČMKB",
+        "url": "https://www.parlamentnilisty.cz/zpravy/tiskovezpravy/44-tyden-na-Energeticke-burze-CMKB-798966",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-02T08:47:00Z",
+        "topic": "ceny_energii",
+        "frame": "neutralni_informovani",
+        "genre": "zprava",
+        "tone": 0
+      },
+      {
+        "id": "373722163a2e",
+        "title": "Předpokládaný růst úrokových sazeb dál zhorší dostupnost bydlení. Politici hrozí bankám, žádné řešení ale nemají",
+        "url": "https://archiv.hn.cz/c1-67953220-predpokladany-rust-urokovych-sazeb-dal-zhorsi-dostupnost-bydleni-politici-hrozi-bankam-zadne-reseni-ale-nemaji",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-02T08:32:00Z",
+        "topic": "klimaticka_politika",
+        "frame": "naklady_a_zatez",
+        "genre": "analyza",
+        "tone": -1
+      },
+      {
+        "id": "2b518e58aafb",
+        "title": "Z evropských peněz se v Česku často platí i zbytečné projekty, upozorňuje NKÚ. Jako příklad zmínil zaostávání v rozvoji elektromobility",
+        "url": "https://domaci.hn.cz/c1-67953360-z-evropskych-penez-se-v-cesku-casto-plati-i-zbytecne-projekty-upozornuje-nku-jako-priklad-zminil-zaostavani-v-rozvoji-elektromobility",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-02T08:08:00Z",
+        "topic": "jine",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "977721c25105",
+        "title": "Dvacet z jedenadvaceti referend zablokovalo větrné farmy. Vítr ale v energetickém mixu potřebujeme",
+        "url": "https://archiv.hn.cz/c1-67951040-dvacet-z-jedenadvaceti-referend-zablokovalo-vetrne-farmy-vitr-ale-v-energetickem-mixu-potrebujeme",
+        "outlet": "Hospodářské noviny",
+        "published_at": "2026-11-02T07:46:00Z",
+        "topic": "obnovitelne_zdroje",
+        "frame": "politicky_konflikt",
+        "genre": "analyza",
+        "tone": 1
+      },
+      {
+        "id": "d97dcfb9f44c",
+        "title": "Ruský plyn do Evropy. USA to zařídí. A už je zle",
+        "url": "https://www.parlamentnilisty.cz/arena/monitor/Rusky-plyn-do-Evropy-USA-to-zaridi-A-uz-je-zle-798964",
+        "outlet": "Parlamentní listy",
+        "published_at": "2026-11-02T07:43:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "komentar",
+        "tone": -2
+      },
+      {
+        "id": "14d1705fc802",
+        "title": "USA nabídly Putinovi návrat na evropský trh s plynem. Ve hře je i Nord Stream",
+        "url": "https://www.e15.cz/zahranicni/usa-nabidly-putinovi-navrat-na-evropsky-trh-s-plynem-ve-hre-je-i-nord-stream-1436995",
+        "outlet": "E15",
+        "published_at": "2026-11-02T07:15:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "3725693cca99",
+        "title": "Dětská hřiště, chodníky nikam a stohy metodik. NKÚ varuje před plýtváním evropskými penězi",
+        "url": "https://www.e15.cz/domaci/detska-hriste-chodniky-nikam-a-stohy-metodik-nku-varuje-pred-plytvanim-evropskymi-penezi-1436994",
+        "outlet": "E15",
+        "published_at": "2026-11-02T06:50:00Z",
+        "topic": "jine",
+        "frame": "ekonomicka_prilezitost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "7ed4fc2a9871",
+        "title": "Odstraňování léčiv i hospodaření s deštěm. Resort posoudí nové požadavky na čištění odpadních vod",
+        "url": "https://ct24.ceskatelevize.cz/clanek/domaci/odstranovani-leciv-i-hospodareni-s-destem-resort-posoudi-nove-pozadavky-na-cisteni-odpadnich-vod-379210",
+        "outlet": "ČT24 – všechny zprávy",
+        "published_at": "2026-11-02T06:34:21Z",
+        "topic": "teplo_a_budovy",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": 1
+      },
+      {
+        "id": "b0113b2f4a3d",
+        "title": "Letošní suché počasí zasáhlo úrodu brambor, která je o pětinu nižší. Projevit by se to mohlo i na cenách",
+        "url": "https://www.irozhlas.cz/ekonomika/letosni-suche-pocasi-zasahlo-urodu-brambor-ktera-je-o-petinu-nizsi-projevit-se_2611020644_adn",
+        "outlet": "iROZHLAS – všechny zprávy",
+        "published_at": "2026-11-02T05:44:00Z",
+        "topic": "pocasi_a_adaptace",
+        "frame": "zdravi_a_zivotni_prostredi",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "eeefc6ca6d40",
+        "title": "Američané navrhli obnovit dodávky ruské ropy do EU. Výnosy by plynuly na speciální účet",
+        "url": "https://cnn.iprima.cz/spojene-staty-navrhly-navrat-ruske-ropy-do-eu-vynosy-by-plynuly-na-specialni-ucet-525951",
+        "outlet": "CNN Prima News",
+        "published_at": "2026-11-02T05:41:18Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "b816ae22dca2",
+        "title": "Pobídka pro Putina? Trumpovi emisaři navrhli prodej ruského plynu do EU",
+        "url": "https://zpravy.aktualne.cz/zahranici/pobidka-pro-putina-trumpovi-emisari-navrhli-prodej-ruskeho-plynu-do-eu/r~aaa2956e65eec05ce79fe28ff6094d6e/",
+        "outlet": "Aktuálně.cz",
+        "published_at": "2026-11-02T05:31:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "0b0222314b28",
+        "title": "Trumpovi vyjednavači navrhli návrat ruského plynu do Evropy. Dodávky by vedly přes Ukrajinu",
+        "url": "https://www.forum24.cz/trumpovi-vyjednavaci-navrhli-navrat-ruskeho-plynu-do-evropy-dodavky-by-vedly-pres-ukrajinu",
+        "outlet": "FORUM 24",
+        "published_at": "2026-11-02T05:18:30Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "fe02d5fbb955",
+        "title": "USA navrhly obnovit prodeje ruského plynu do EU přes Ukrajinu",
+        "url": "https://www.novinky.cz/clanek/valka-na-ukrajine-usa-navrhly-obnovit-prodej-ruskeho-plynu-do-evropy-pres-ukrajinu-40606000",
+        "outlet": "Novinky.cz",
+        "published_at": "2026-11-02T05:05:00Z",
+        "topic": "energeticka_bezpecnost",
+        "frame": "energeticka_bezpecnost",
+        "genre": "zprava",
+        "tone": -1
+      },
+      {
+        "id": "649da371dd27",
+        "title": "Za zavřenými dveřmi: Jak se vyjednává v Evropě a proč se přeme o povolenky",
+        "url": "https://www.info.cz/podcasty/matador-benjaminek/evropska-unie-rozpocet-povolenky",
+        "outlet": "Info.cz",
+        "published_at": "2026-11-02T05:00:00Z",
+        "topic": "ets2_a_povolenky",
+        "frame": "politicky_konflikt",
+        "genre": "zprava",
+        "tone": 0
+      }
+    ],
+    "notes": []
+  },
+  "data_gaps_cs": [
+    "K českým průzkumům veřejného mínění o dekarbonizaci tento týden nevyšlo nic nového.",
+    "U několika českých položek (Břidličná, Obnovitelně.cz o brzdách energetiky, DUHA o zateplování) je k dispozici jen titulek, takže nelze ověřit jejich zjištění.",
+    "U většiny zahraničních průzkumů chybí termín sběru dat a instituce.",
+    "Výtahy u studií Rhodium, Grantham, RMI a několika dalších neobsahují konkrétní čísla.",
+    "Ceny a inflace v Reflexu nejsou podloženy zdrojovými daty ve výtahu.",
+    "Plán vlády je znám jen z vyjádření ministra a médií; konkrétní parametry nejsou k dispozici."
+  ],
+  "items": [
+    {
+      "id": "f0016f2bc404",
+      "title": "Energetická biomasa v době sucha",
+      "title_cs": "",
+      "url": "https://www.enviweb.cz/134595?utm_source=rss&utm_medium=rss&utm_campaign=rss_clanky",
+      "source_name": "Enviweb",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-11-04T08:47:16Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "study",
+        "technology",
+        "forecast"
+      ],
+      "one_line_cs": "Nová studie VÚK a ČVUT zkoumá, jak zajistit dostatek biomasy pro energetiku v podmínkách rostoucího sucha a změny klimatu v Česku.",
+      "final_score": 5.152,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "34e15518ca83",
+      "title": "Komentář: Chladnější léta, teplejší zimy a nižší účty. Proč by Česko mělo vsadit na elektrifikaci",
+      "title_cs": "",
+      "url": "https://oenergetice.cz/elektrina/komentar-chladnejsi-leta-teplejsi-zimy-a-nizsi-ucty-proc-by-cesko-melo-vsadit-na-elektrifikaci",
+      "source_name": "oEnergetice",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-11-07T07:20:50Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "technology",
+        "energy_markets"
+      ],
+      "one_line_cs": "Komentář zdůvodňuje, proč by měla Česká republika vsadit na elektrifikaci energetického systému podporovanou obnovitelnou energií a moderní infrastrukturou.",
+      "final_score": 5.04,
+      "is_opinion": true,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "a663722f2b19",
+      "title": "Břidličná odmítla větrníky. Místní fabrika přitom bojuje o přežití a levnou energii",
+      "title_cs": "",
+      "url": "https://www.obnovitelne.cz/clanek/4961/bridlicna-odmitla-vetrniky-mistni-fabrika-pritom-bojuje-o-preziti-a-levnou-energii",
+      "source_name": "Obnovitelně.cz",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": null,
+      "date_is_first_seen": true,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Obec Břidličná odmítla větrníky navzdory tomu, že místní průmysl potřebuje levnou energii pro přežití.",
+      "final_score": 4.992,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": -1,
+      "is_event": false
+    },
+    {
+      "id": "4aa99c868bd2",
+      "title": "Energetický šok může přijít znovu. Vláda chystá nouzový plán",
+      "title_cs": "",
+      "url": "https://oenergetice.cz/technologie/elektroenergetika/energeticky-sok-muze-prijit-znovu-vlada-chysta-nouzovy-plan",
+      "source_name": "oEnergetice",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-11-08T12:59:11Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "energy_markets"
+      ],
+      "one_line_cs": "Česká vláda připravuje nouzový plán na řešení případného dalšího růstu cen energií.",
+      "final_score": 4.8,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "1394ef80921e",
+      "title": "Energetická bouře na obzoru: Zdražení plynu roztočí inflaci. Havlíček chystá tvrdé stropy cen",
+      "title_cs": "",
+      "url": "https://www.reflex.cz/clanek/komentare/139217/energeticka-boure-na-obzoru-zdrazeni-plynu-roztoci-inflaci-havlicek-chysta-tvrde-stropy-cen.html",
+      "source_name": "Reflex",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-11-06T05:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "energy_markets",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Analýza zdražování plynu a elektřiny v ČR s dopadem na inflaci a vládních plánech na cenové stropy.",
+      "final_score": 4.48,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "0fdc4d728e58",
+      "title": "Českou energetiku nebrzdí jen peníze. Odborníci ukázali, co by pomohlo více než dotace",
+      "title_cs": "",
+      "url": "https://www.obnovitelne.cz/clanek/4960/ceskou-energetiku-nebrzdi-jen-penize-odbornici-ukazali-co-by-pomohlo-vice-nez-dotace",
+      "source_name": "Obnovitelně.cz",
+      "source_type": "media",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": null,
+      "date_is_first_seen": true,
+      "topics": [
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Expertní analýza příčin zpomalení české energetické transformace s důrazem na překážky mimo financování.",
+      "final_score": 4.416,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "003049f5d2fd",
+      "title": "Plyn je rekordně drahý a podpora zateplování domů rekordně nízká. Vláda musí rozhýbat Novou zelenou úsporám",
+      "title_cs": "",
+      "url": "https://hnutiduha.cz/aktualne/plyn-je-rekordne-drahy-a-podpora-zateplovani-domu-rekordne-nizka-vlada-musi-rozhybat-novou-zelenou-usporam/",
+      "source_name": "Hnutí DUHA",
+      "source_type": "ngo",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": null,
+      "date_is_first_seen": true,
+      "topics": [
+        "decarbonization_policy",
+        "just_transition"
+      ],
+      "one_line_cs": "Hnutí DUHA upozorňuje na vysoké ceny plynu a nízkou podporu zateplování domů, vyzývá vládu k akci.",
+      "final_score": 4.374,
+      "is_opinion": true,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": -1,
+      "is_event": false
+    },
+    {
+      "id": "df31cb5820e1",
+      "title": "Proč mohou ranní mrazíky v těchto dnech ohrozit některé rostliny?",
+      "title_cs": "",
+      "url": "https://www.klimatickazmena.cz/proc-mohou-ranni-mraziky-v-techto-dnech-ohrozit-nektere-rostliny/",
+      "source_name": "CzechGlobe – klimatickazmena.cz",
+      "source_type": "research",
+      "region": "CZ",
+      "geo_focus": "CZ",
+      "published_at": "2026-11-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "forecast"
+      ],
+      "one_line_cs": "Klimatická změna mění fenologii rostlin – ranní mrazíky hrozí předčasně vyrašeným rostlinám.",
+      "final_score": 4.3642,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "b702227afc6a",
+      "title": "Public attitudes and actions towards renewable energy in the EU countries: A micro-level analysis during the energy crisis",
+      "title_cs": "Postoje veřejnosti a akce směrem k obnovitelné energii v zemích EU: mikro-úroveňová analýza během energetické krize",
+      "url": "https://doi.org/10.6084/m9.figshare.34937254",
+      "source_name": "Figshare",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "study"
+      ],
+      "one_line_cs": "Studie analýzou dat 23 tisíc respondentů z 27 zemí EU zkoumá faktory ovlivňující přijetí obnovitelné energie během energetické krize.",
+      "final_score": 9.6697,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "387ebff0a68d",
+      "title": "The critical role of political trust in the energy transition",
+      "title_cs": "Rozhodující úloha politické důvěry v energetické transformaci",
+      "url": "https://doi.org/10.1111/pops.70218",
+      "source_name": "Political Psychology",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-03T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Multidisciplinární přehled zkoumá, jak se různé formy důvěry – zvláště důvěra v politické aktéry – podílí na energetické transformaci.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "8389704e4a28",
+      "title": "Navigating the science-policy interface: climate scientists' role conceptions and engagement practices",
+      "title_cs": "Navigace na rozhraní vědy a politiky: představy rolí klimatologů a jejich praktiky zapojení",
+      "url": "https://doi.org/10.22323/171720260815152417",
+      "source_name": "Journal of Science Communication",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-02T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Studie německých klimatologů mapuje rozdílné přístupy vědců k interakci se politikou a veřejností v klimatické problematice.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "911d5f0b7842",
+      "title": "Digital innovation and public acceptance of nuclear energy in the green transition",
+      "title_cs": "Digitální inovace a veřejné přijetí jaderné energie v zelené transformaci",
+      "url": "https://doi.org/10.1088/2753-3751/aebcf3",
+      "source_name": "Environmental Research Energy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-03T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "technology",
+        "communication"
+      ],
+      "one_line_cs": "Topical review zkoumající, jak mohou digitální inovace (digitální dvojčata, AI) zlepšit přijatelnost jaderné energie veřejností.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "b98d0987f384",
+      "title": "A scoping review of psychosocial factors of climate change inaction: Implications for climate change communication and education",
+      "title_cs": "Přehled psychosociálních faktorů nečinnosti v oblasti klimatické změny: Důsledky pro komunikaci a vzdělání v oblasti klimatické změny",
+      "url": "https://doi.org/10.1088/1748-9326/aebcfd",
+      "source_name": "Environmental Research Letters",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-03T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "communication"
+      ],
+      "one_line_cs": "Scoping review psychosociálních překážek klimatické akce se zprávou pro komunikaci a vzdělávání.",
+      "final_score": 8.461,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "2378e0da0eab",
+      "title": "Wind energy acceptance and forest owners’ land-leasing intentions: The role of beliefs and attitudes",
+      "title_cs": "Přijetí větrné energie a záměry vlastníků lesů pronajímat půdu: úloha přesvědčení a postojů",
+      "url": "https://doi.org/10.1016/j.enpol.2026.115674",
+      "source_name": "Energy Policy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-02T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "technology",
+        "study"
+      ],
+      "one_line_cs": "Studie zkoumá přesvědčení a postoje vlastníků půdy a ostatních osob vůči větrné energii v Evropě.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "74c7f525955b",
+      "title": "Farmers’ beliefs about the impacts of a CO2e tax on agriculture and their acceptance of the tax: A randomized survey experiment",
+      "title_cs": "Přesvědčení zemědělců o dopadech daně CO2e na zemědělství a jejich přijetí daně: randomizovaný průzkum experiment",
+      "url": "https://doi.org/10.1016/j.foodpol.2026.103214",
+      "source_name": "Food Policy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-03T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Experimentální studie zkoumá, jak se měníí názory zemědělců na uhlíkovou daň, když obdrží informace od odborníků.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "76e7bcbb334e",
+      "title": "The role of distance and type of location in the local acceptability of wind parks: A case study in the Netherlands",
+      "title_cs": "",
+      "url": "https://doi.org/10.1016/j.erss.2026.105060",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-02T10:49:08Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Případová studie z Nizozemska zkoumá místní přijatelnost větrných parků v závislosti na vzdálenosti a typu umístění.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "c0b22eba80d0",
+      "title": "A place-based perspective on local wind energy acceptance: the role of place attachment, motivations, and social norms",
+      "title_cs": "Místně zakotvená perspektiva na přijatelnost větrné energie: role místní vazby, motivací a sociálních norem",
+      "url": "https://doi.org/10.1016/j.newideapsych.2026.101317",
+      "source_name": "New Ideas in Psychology",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-02T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes"
+      ],
+      "one_line_cs": "Experimentální studie zkoumající sociální přijatelnost větrné energie prostřednictvím místa, vazby k místu a motivací v Itálii.",
+      "final_score": 7.2522,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "1860eee182b8",
+      "title": "Rhodium Climate Outlook 2026: Probabilistic Global Emissions and Energy Baseline Projections",
+      "title_cs": "Rhodium Climate Outlook 2026: Probabilistické globální projekce emisí a energetických baseline scénářů",
+      "url": "https://rhg.com/research/rhodium-climate-outlook-2026/",
+      "source_name": "Rhodium Group – publikace",
+      "source_type": "research",
+      "region": "US",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-05T05:01:15Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "forecast",
+        "study"
+      ],
+      "one_line_cs": "Publikace Rhodium Group obsahující probabilistické prognózy globálních emisí a energetických scénářů pro rok 2026.",
+      "final_score": 7.1283,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "040094e7398d",
+      "title": "The Carbon at Risk measure for managing carbon removal risk and guiding portfolio construction",
+      "title_cs": "Míra uhlíku v ohrožení pro řízení rizika odstranění uhlíku a vedení konstrukce portfolia",
+      "url": "https://www.lse.ac.uk/granthaminstitute/publication/the-carbon-at-risk-measure-for-managing-carbon-removal-risk-and-guiding-portfolio-construction/",
+      "source_name": "Grantham Institute (LSE) – publikace",
+      "source_type": "research",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-06T11:04:45Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology",
+        "forecast"
+      ],
+      "one_line_cs": "Nový finanční nástroj pro hodnocení rizika dlouhodobého skladování uhlíku v průmyslu odstraňování oxidu uhličitého.",
+      "final_score": 6.6654,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "9d13275dbed7",
+      "title": "Early Climate Impact Assessments Targeted 2025—How Did They Perform for Global Water Resources?",
+      "title_cs": "Časné posouzení dopadů klimatu zaměřené na rok 2025 – Jak se mu vedlo u globálních vodních zdrojů?",
+      "url": "https://www.lse.ac.uk/granthaminstitute/publication/early-climate-impact-assessments-targeted-2025-how-did-they-perform-for-global-water-resources/",
+      "source_name": "Grantham Institute (LSE) – publikace",
+      "source_type": "research",
+      "region": "EU",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-02T12:30:56Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "forecast",
+        "study"
+      ],
+      "one_line_cs": "Grantham Institut LSE hodnotí přesnost prvních globálních posouzení vodních zdrojů a prognóz IPCC z roku 2001.",
+      "final_score": 6.6654,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "0ab3b0fcd82d",
+      "title": "Fiscal responses to the European energy crisis: Trade-offs in targeting household relief measures",
+      "title_cs": "Fiskální odpovědi na evropskou energetickou krizi: kompromisy v zaměření opatření na pomoc domácnostem",
+      "url": "https://doi.org/10.1177/09589287261503896",
+      "source_name": "Journal of European Social Policy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-04T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Srovnávací analýza, jak 18 zemí EU řešilo rozpor mezi pomocí domácnostem, kontrolou inflace a zachováním motivace k úspoře.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "46b4e87a4b61",
+      "title": "How to foster a resilient, efficient and clean hydrogen ramp-up – A comparative assessment of EU and US support systems",
+      "title_cs": "Jak podpořit odolný, efektivní a čistý rozvoj vodíku – srovnávací hodnocení podporních systémů EU a USA",
+      "url": "https://doi.org/10.1016/j.egyr.2026.109778",
+      "source_name": "Energy Reports",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-03T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology",
+        "decarbonization_policy",
+        "energy_markets",
+        "study"
+      ],
+      "one_line_cs": "Srovnávací analýza veřejných podporních systémů pro vodík v EU a USA s fokusem na dekarbonizaci.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "4d5cdf79cbd5",
+      "title": "The impact of the Swiss CO2 levy on residential heating emissions and energy demand",
+      "title_cs": "Dopad švýcarské daně CO2 na emise z vytápění a poptávku po energiích",
+      "url": "https://doi.org/10.1016/j.enpol.2026.115696",
+      "source_name": "Energy Policy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "study",
+        "energy_markets",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Empirická studie vyhodnocující účinnost švýcarské daně CO2 na snížení emisí z domácího vytápění v období 2008–2021.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 2,
+      "is_event": false
+    },
+    {
+      "id": "71f47d0d40ea",
+      "title": "Coupled Geophysical and Technoeconomic Industrial Growth Constraints on Geological Carbon Storage Scale-Up: Application to UK Offshore Resources",
+      "title_cs": "Spojené geogeografické a technoekonomické omezení průmyslového růstu na geologické skladování uhlíku: aplikace na britské zdroje v moři",
+      "url": "https://doi.org/10.1021/acs.est.6c10305",
+      "source_name": "Environmental Science & Technology",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-02T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology",
+        "study"
+      ],
+      "one_line_cs": "Nová studie modeluje, jak fyzika podzemí a ekonomika průmyslu omezují rozsah nasazení skladování CO2 v off-shore prostředí.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "8a5dce3d083c",
+      "title": "(In)consistency on the route to Paris: EU and Swedish climate and forest-related policy mixes towards the fulfilment of the Paris Agreement",
+      "title_cs": "Nestálost na cestě do Paříže: politické kombinace EU a Švédska týkající se klimatu a lesů ke splnění Pařížské dohody",
+      "url": "https://doi.org/10.1080/1523908x.2026.2758110",
+      "source_name": "Journal of Environmental Policy & Planning",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "Analýza konzistence klimatické a lesní politiky EU a Švédska při plnění Pařížské dohody.",
+      "final_score": 6.5084,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "e4af89a6e675",
+      "title": "Managing risk in carbon portfolios",
+      "title_cs": "Řízení rizika v portfoliích uhlíku",
+      "url": "https://www.nature.com/articles/s41558-026-02786-8",
+      "source_name": "Nature Climate Change",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-06T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology",
+        "study"
+      ],
+      "one_line_cs": "Studie poskytuje metodiku pro srovnávání rizik různých metod trvalého zadržování CO2 v atmosféře.",
+      "final_score": 6.0858,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "113c68aad59c",
+      "title": "Testing protection motivation theory in climate–hunger nexus: food insecurity, climate perceptions, and environmental policy support in Ghana with urban–rural inequalities",
+      "title_cs": "",
+      "url": "https://doi.org/10.1016/j.sftr.2026.102280",
+      "source_name": "Sustainable Futures",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-03T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "study"
+      ],
+      "one_line_cs": "Studium vysvětluje, jak vnímání klimatických rizik a potravinová nejistota ovlivňují podporu environmen­tální politiky v Ghaně.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "1a08f1032bc7",
+      "title": "Room to steer, space to participate: How transition teams govern urban energy mission arenas in Roeselare, Belgium",
+      "title_cs": "Prostor pro řízení, místo pro participaci: Jak transition teams ovládají urbánní energetické mise v Roeselaře, Belgie",
+      "url": "https://doi.org/10.1016/j.erss.2026.105058",
+      "source_name": "Energy Research & Social Science",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-03T13:21:50Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Studie účasti a řízení v urbánní energetické transformaci v belgickém městě.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "a993f45e4493",
+      "title": "Quantitative analysis of public perception regarding nuclear waste in Türkiye: Knowledge level, risk perception, and trust indicators",
+      "title_cs": "Kvantitativní analýza veřejného vnímání nukleárního odpadu v Turecku: Úroveň znalostí, vnímání rizika a indikátory důvěry",
+      "url": "https://doi.org/10.1016/j.enpol.2026.115690",
+      "source_name": "Energy Policy",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-05T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "study"
+      ],
+      "one_line_cs": "Průzkum postojů a znalostí tureckých občanů k jaderným odpadům zaměřený na důvěru a vnímání rizik.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "bb2d517d6bdd",
+      "title": "Early childhood students perspective on climate change education and sustainability through the lens of critical and sustainability pedagogies",
+      "title_cs": "Perspektiva studentů raného dětství na vzdělávání v oblasti klimatické změny a udržitelnosti skrze kritickou a udržitelnou pedagogiku",
+      "url": "https://doi.org/10.37291/jces.924",
+      "source_name": "Journal of Childhood Education & Society",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-02T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "communication",
+        "public_attitudes"
+      ],
+      "one_line_cs": "Porovnávací studie postojů britských a maďarských studentů pedagogiky na temu klimatického vzdělávání a udržitelnosti.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "c8193a930ccf",
+      "title": "Evolving response of a community to offshore wind energy development – an evaluation of human adaptation to transition",
+      "title_cs": "",
+      "url": "https://doi.org/10.1080/09640568.2026.2748440",
+      "source_name": "Journal of Environmental Planning and Management",
+      "source_type": "journal",
+      "region": "GLOBAL",
+      "geo_focus": "EU",
+      "published_at": "2026-11-04T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes",
+        "technology"
+      ],
+      "one_line_cs": "Longitudinální studie ukazuje, jak místní komunity přijímají větrné farmy v průběhu jejich vývoje.",
+      "final_score": 6.0435,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "8245b31cbb35",
+      "title": "Investor-state dispute settlement (ISDS) mechanisms are threatening economic, energy and security priorities",
+      "title_cs": "Mechanismy řešení sporů mezi investory a státy (ISDS) ohrožují hospodářské, energetické a bezpečnostní priority",
+      "url": "https://www.e3g.org/news/investor-state-dispute-settlement-isds-mechanisms-are-threatening-economic-energy-and-security-priorities/?utm_source=rss&utm_medium=rss&utm_campaign=investor-state-dispute-settlement-isds-mechanisms-are-threatening-economic-energy-and-security-priorities",
+      "source_name": "E3G",
+      "source_type": "think_tank",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-04T19:14:43Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "just_transition"
+      ],
+      "one_line_cs": "Klauzule ISDS v mezinárodních dohodách mohou bránit vládám v přijímání politik zeleného prechodu a průmyslové politiky.",
+      "final_score": 5.929,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": -1,
+      "is_event": false
+    },
+    {
+      "id": "9af856efc909",
+      "title": "Locking in Prosperity",
+      "title_cs": "",
+      "url": "https://rmi.org/resources/locking-in-prosperity/",
+      "source_name": "RMI",
+      "source_type": "think_tank",
+      "region": "US",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-08T22:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "study"
+      ],
+      "one_line_cs": "RMI vydala deset praktických, vědecky podložených akcí pro dostupné, spolehlivé a bezpečné energetické systémy.",
+      "final_score": 5.8443,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "9eaf13b03294",
+      "title": "A First Look at Polling Performance in 2026",
+      "title_cs": "",
+      "url": "https://www.pewresearch.org/short-reads/2026/11/06/a-first-look-at-polling-performance-in-2026/",
+      "source_name": "Pew Research Center",
+      "source_type": "polling",
+      "region": "US",
+      "geo_focus": "US",
+      "published_at": "2026-11-06T18:58:34Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "public_attitudes"
+      ],
+      "one_line_cs": "Preelection polls captured the direction of this year’s election, while generally understating the size of Democrats’ advantage.",
+      "final_score": 5.1667,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "8c2c3828b97d",
+      "title": "When the oil companies leave, who pays?",
+      "title_cs": "Když si ropné společnosti odejdou, kdo zaplatí?",
+      "url": "https://www.climatechangenews.com/2026/11/05/when-the-oil-companies-leave-who-pays/",
+      "source_name": "Climate Home News",
+      "source_type": "media",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-05T16:22:25Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "just_transition",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Komunity postižené útlumem fosilních paliv vyžadují spravedlivou transformaci a hlas v rozhodování; COP31 by mohl posílit právní mechanismy.",
+      "final_score": 5.096,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "23a86e60a354",
+      "title": "New guide charts path to modern grids across the world",
+      "title_cs": "",
+      "url": "https://www.agora-energiewende.org/news-events/new-guide-charts-path-to-modern-grids-across-the-world",
+      "source_name": "Agora Energiewende",
+      "source_type": "think_tank",
+      "region": "EU",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-02T00:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Nová příručka poskytuje návod pro modernizaci elektrizačních sítí na celém světě.",
+      "final_score": 5.082,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "31ed03644ad5",
+      "title": "From Molecules to Markets",
+      "title_cs": "Od molekul k trhům",
+      "url": "https://rmi.org/resources/from-molecules-to-markets/",
+      "source_name": "RMI",
+      "source_type": "think_tank",
+      "region": "US",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-03T13:31:16Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "technology",
+        "energy_markets",
+        "forecast"
+      ],
+      "one_line_cs": "RMI představuje mechanismus pro transformaci poptávky po zeleném palivu na smluvní a tržní potenciál.",
+      "final_score": 5.082,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "54396de6ee49",
+      "title": "From the Pacific to COP31: How MDBs can unlock private finance for locally led adaptation",
+      "title_cs": "Od Tichého oceánu k COP31: Jak si MDB mohou odemknout soukromé financování pro místně vedené adaptace",
+      "url": "https://www.e3g.org/news/from-the-pacific-to-cop31-how-mdbs-can-unlock-private-finance-for-locally-led-adaptation/?utm_source=rss&utm_medium=rss&utm_campaign=from-the-pacific-to-cop31-how-mdbs-can-unlock-private-finance-for-locally-led-adaptation",
+      "source_name": "E3G",
+      "source_type": "think_tank",
+      "region": "EU",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-06T10:08:39Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "just_transition"
+      ],
+      "one_line_cs": "Politická analýza think tanku E3G o přístupu malých a nejrozvinutějších zemí k veřejnému a soukromému klimatickému financování.",
+      "final_score": 5.082,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "0e4227a9753a",
+      "title": "Business, finance and environmental groups call on the UK government to honour transition plan pledge",
+      "title_cs": "",
+      "url": "https://www.e3g.org/news/business-finance-and-environmental-groups-call-on-the-uk-government-to-honour-transition-plan-pledge/?utm_source=rss&utm_medium=rss&utm_campaign=business-finance-and-environmental-groups-call-on-the-uk-government-to-honour-transition-plan-pledge",
+      "source_name": "E3G",
+      "source_type": "think_tank",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-05T01:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "communication"
+      ],
+      "one_line_cs": "Podnikatelé, finanční instituce a environmentální skupiny vyzývají britskou vládu k dodržení přislíbené regulace klimatických plánů.",
+      "final_score": 4.955,
+      "is_opinion": true,
+      "is_public_attitudes_or_communication": true,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "a9a395843d28",
+      "title": "EU electricity market integration progresses but significant benefits remain untapped",
+      "title_cs": "",
+      "url": "https://www.acer.europa.eu/news/eu-electricity-market-integration-progresses-significant-benefits-remain-untapped",
+      "source_name": "Evropská komise – DG ENER",
+      "source_type": "government",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-03T23:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "energy_markets",
+        "decarbonization_policy"
+      ],
+      "one_line_cs": "Zpráva Evropské komise o pokroku v integraci elektroenergetických trhů v EU a zbývajícím potenciálu.",
+      "final_score": 4.9,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "1329283c6f4d",
+      "title": "What climate extremes of 2026 teach Europe about resilient infrastructure",
+      "title_cs": "",
+      "url": "https://www.eea.europa.eu/en/newsroom/news/what-2026s-climate-extremes-teach-europe-about-resilient-infrastructure",
+      "source_name": "Evropská agentura pro životní prostředí (EEA)",
+      "source_type": "government",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-03T07:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "forecast",
+        "study"
+      ],
+      "one_line_cs": "Zpráva EEA o extrémních klimatických jevech v Evropě v roce 2026 a lekce pro odolnou infrastrukturu.",
+      "final_score": 4.62,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "1ef5d229d05a",
+      "title": "Fossil fuel subsidies after 2025: missed deadlines and new coalitions",
+      "title_cs": "Dotace na fosilní paliva po roce 2025: zmařené termíny a nové koalice",
+      "url": "https://www.lse.ac.uk/granthaminstitute/news/fossil-fuel-subsidies-after-2025-missed-deadlines-and-new-coalitions/",
+      "source_name": "Grantham Institute (LSE) – news",
+      "source_type": "research",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-05T14:15:51Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "energy_markets"
+      ],
+      "one_line_cs": "Komentář na příkladu COFFIS iniciativy zaměřené na zrušení subvencí fosilních paliv po energetické krizi.",
+      "final_score": 4.347,
+      "is_opinion": true,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "6d3ac5bf58c3",
+      "title": "State of the climate: 2026 likely to tie with 2024 as the warmest year on record",
+      "title_cs": "Stav klimatu: rok 2026 se pravděpodobně bude rovnat roku 2024 jako nejteplejší rok v historii",
+      "url": "https://www.carbonbrief.org/state-of-the-climate-2026-likely-to-tie-with-2024-as-the-warmest-year-on-record",
+      "source_name": "Carbon Brief – Daily Brief",
+      "source_type": "media",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-03T13:48:04Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "forecast"
+      ],
+      "one_line_cs": "Prognóza, že rok 2026 bude jedním z nejteplejších let v historii měření, s širokými dopady na klimatickou politiku.",
+      "final_score": 4.312,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": -1,
+      "is_event": false
+    },
+    {
+      "id": "a2f1c3e1e175",
+      "title": "Q&A: What is the Brazil-led ‘deforestation roadmap’?",
+      "title_cs": "Otázky a odpovědi: Co je brazilský \"plán boje proti odlesňování\"?",
+      "url": "https://www.carbonbrief.org/qa-what-is-the-brazil-led-deforestation-roadmap",
+      "source_name": "Carbon Brief – Daily Brief",
+      "source_type": "media",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-04T15:39:10Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "forecast"
+      ],
+      "one_line_cs": "Brazílie na COP30 představila dlouho očekávaný plán na ukončení odlesňování.",
+      "final_score": 4.312,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "ecf4e78583c9",
+      "title": "Q&A: What is in the global ‘roadmap’ for transitioning away from fossil fuels?",
+      "title_cs": "Otázka a odpověď: Co obsahuje globální plán na přechod od fosilních paliv?",
+      "url": "https://www.carbonbrief.org/qa-what-is-in-the-global-roadmap-for-transitioning-away-from-fossil-fuels",
+      "source_name": "Carbon Brief – Daily Brief",
+      "source_type": "media",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-04T15:23:07Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "forecast"
+      ],
+      "one_line_cs": "Vysvětlení globálního plánu na transformaci energetiky mimo fosilní paliva vypracovaného Brazílií.",
+      "final_score": 4.312,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 2,
+      "is_event": false
+    },
+    {
+      "id": "37bfbf2403df",
+      "title": "Amory Lovins on \"Energy Strategy: The Road Not Taken\" 50 Years Later",
+      "title_cs": "",
+      "url": "https://rmi.org/resources/amory-lovins-on-energy-strategy-the-road-not-taken-50-years-later/",
+      "source_name": "RMI",
+      "source_type": "think_tank",
+      "region": "US",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-04T14:16:14Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "forecast"
+      ],
+      "one_line_cs": "Amory Lovins reflektuje na svůj klíčový článek z roku 1976 o energetické strategii a jeho relevanci padesát let později.",
+      "final_score": 4.235,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 0,
+      "is_event": false
+    },
+    {
+      "id": "1c63d9034d48",
+      "title": "CESEC Ministerial takes stock of cross-border energy infrastructure and prices and welcomes Czechia and Poland to the group",
+      "title_cs": "Ministerská schůzka CESEC se zabývá přeshraniční energetickou infrastrukturou a cenami a vítá Česko a Polsko ve skupině",
+      "url": "https://energy.ec.europa.eu/news/cesec-ministerial-takes-stock-cross-border-energy-infrastructure-and-prices-and-welcomes-czechia-and-2026-11-06_en",
+      "source_name": "Evropská komise – DG ENER",
+      "source_type": "government",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-05T23:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "energy_markets"
+      ],
+      "one_line_cs": "Schůzka ministrů skupiny CESEC v Záhřebu se zaměřila na přeshraniční energetickou infrastrukturu, elektrifikaci a řešení vysokých cen energie v Evropě.",
+      "final_score": 4.2,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "2934cc6a11f1",
+      "title": "Eurostat: Non-household electricity prices fall further in 2026",
+      "title_cs": "",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20261104-1",
+      "source_name": "Evropská komise – DG ENER",
+      "source_type": "government",
+      "region": "EU",
+      "geo_focus": "EU",
+      "published_at": "2026-11-03T23:00:00Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "energy_markets"
+      ],
+      "one_line_cs": "Eurostatt hlásí pokles cen elektrické energie pro průmyslové spotřebitele v EU v první polovině 2026.",
+      "final_score": 4.2,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "75df15b397bc",
+      "title": "Inclusive climate adaptation through intersectional co-production: gender- and disability-disaggregated evidence from southern Africa",
+      "title_cs": "Inkluzivní adaptace na klimatické změny skrze intersekční spoluprodukcí: genderově a zdravotně-postižením rozprostřená evidence z jižní Afriky",
+      "url": "https://www.lse.ac.uk/granthaminstitute/publication/inclusive-climate-adaptation-through-intersectional-co-production-gender-and-disability-disaggregated-evidence-from-southern-africa/",
+      "source_name": "Grantham Institute (LSE) – publikace",
+      "source_type": "research",
+      "region": "EU",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-05T13:45:45Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "just_transition",
+        "study"
+      ],
+      "one_line_cs": "Výzkum zkoumá zlepšení klimatických informačních služeb pro ženy a osoby se zdravotním postižením v jižní Africe.",
+      "final_score": 3.9675,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    },
+    {
+      "id": "3da4933702f6",
+      "title": "Brazil’s fossil fuel roadmap sketches out first global timetable",
+      "title_cs": "",
+      "url": "https://www.climatechangenews.com/2026/11/03/brazils-fossil-fuel-roadmap-sketches-out-first-global-timetable/",
+      "source_name": "Climate Home News",
+      "source_type": "media",
+      "region": "GLOBAL",
+      "geo_focus": "GLOBAL",
+      "published_at": "2026-11-03T18:37:22Z",
+      "date_is_first_seen": false,
+      "topics": [
+        "decarbonization_policy",
+        "forecast"
+      ],
+      "one_line_cs": "Brazilský fosilní plán nabízí první globální plán na vyřazení uhlí a plynu; výstavba čistých zdrojů do roku 2031.",
+      "final_score": 3.92,
+      "is_opinion": false,
+      "is_public_attitudes_or_communication": false,
+      "sentiment": 1,
+      "is_event": false
+    }
+  ],
+  "usage": {
+    "calls": 31,
+    "input_tokens": 265077,
+    "output_tokens": 90506,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.818439,
+    "by_model": {
+      "claude-haiku-4-5-20251001": {
+        "calls": 28.0,
+        "input_tokens": 207445.0,
+        "output_tokens": 81866.0,
+        "cost_usd": 0.616775
+      },
+      "claude-sonnet-5-5": {
+        "calls": 3.0,
+        "input_tokens": 57632.0,
+        "output_tokens": 8640.0,
+        "cost_usd": 0.201664
+      }
+    }
+  },
+  "validation_log": []
+}
