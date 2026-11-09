@@ -2,8 +2,8 @@
   "week": "2026-W45",
   "meta": {
     "first_collection": "2026-11-02T06:00:15.147445+00:00",
-    "last_collection": "2026-11-09T02:46:35.495192+00:00",
-    "collections": 27
+    "last_collection": "2026-11-09T06:23:56.145333+00:00",
+    "collections": 28
   },
   "items": [
     {
@@ -89870,6 +89870,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "394be3a0ae76",
+      "title": "Tragická srážka vlaků u Káhiry. Na místě jsou mrtví a desítky zraněných",
+      "url": "https://cnn.iprima.cz/hororova-nehoda-na-zeleznici-zemrelo-nekolik-lidi-526571",
+      "source_id": "cnn-prima",
+      "source_name": "CNN Prima News",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-08T16:17:53Z",
+      "first_seen": "2026-11-09T06:23:56.145333Z",
+      "summary_raw": "U Káhiry se srazily dva vlaky.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
