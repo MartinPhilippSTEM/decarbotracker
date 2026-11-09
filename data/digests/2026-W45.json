@@ -1,0 +1,61 @@
+{
+  "week": "2026-W45",
+  "generated_at": "2026-11-09T06:39:50.971312Z",
+  "model": "claude-sonnet-5-5",
+  "headline_cs": "Rostoucí ceny plynu a elektřiny nutí českou vládu připravit nouzový plán s cenovými stropy, zatímco veřejnou debatu o dekarbonizaci doplňují nové studie o důvěře a přijetí obnovitelných zdrojů.",
+  "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w45/",
+  "findings": [
+    {
+      "item_id": "4aa99c868bd2",
+      "geo": "CZ",
+      "title_cs": "Vláda chystá nouzový plán proti růstu cen energií",
+      "text_cs": "Podle ministra Havlíčka počítá plán se snížením regulovaných cen pro domácnosti a živnostníky a se zastropováním cen u výrobců. Vláda ho má projednat v pondělí. Podrobnosti zatím ve zdrojích chybí, ale zásah se dotkne domácností i podpory klimatických opatření.",
+      "title": "Energetický šok může přijít znovu. Vláda chystá nouzový plán",
+      "url": "https://oenergetice.cz/technologie/elektroenergetika/energeticky-sok-muze-prijit-znovu-vlada-chysta-nouzovy-plan",
+      "source_name": "oEnergetice"
+    },
+    {
+      "item_id": "b702227afc6a",
+      "geo": "EU",
+      "title_cs": "Zájem o obnovitelné zdroje často brzdí peníze, ne postoje",
+      "text_cs": "Studie na datech Flash Eurobarometru (N ≈ 23 000, 27 zemí EU) zjistila, že strukturální faktory a kapitálová omezení převažují nad psychologickou připraveností. Lidé, kteří o obnovitelné zdroje stojí, tak často nemohou investovat. Je to důležité i pro podobu českých dotačních programů.",
+      "title": "Public attitudes and actions towards renewable energy in the EU countries: A micro-level analysis during the energy crisis",
+      "url": "https://doi.org/10.6084/m9.figshare.34937254",
+      "source_name": "Figshare"
+    },
+    {
+      "item_id": "387ebff0a68d",
+      "geo": "GLOBAL",
+      "title_cs": "Politická důvěra rozhoduje o úspěchu energetické transformace",
+      "text_cs": "Analýza 15 případových studií ukázala, že politická důvěra ovlivňuje průběh i výsledek energetických projektů. Klíčové jsou dvojice důvěry, například vláda a komunita. Poznatek je použitelný i pro české spory kolem větrníků.",
+      "title": "The critical role of political trust in the energy transition",
+      "url": "https://doi.org/10.1111/pops.70218",
+      "source_name": "Political Psychology"
+    }
+  ],
+  "x_thread": [
+    "🧵 Rostoucí ceny plynu a elektřiny vracejí do české debaty strach z nové cenové vlny. Zároveň nové studie ukazují, co rozhoduje o přijetí obnovitelných zdrojů. Shrnutí týdne 👇",
+    "Podle ČTK ministr Havlíček oznámil, že vláda v pondělí projedná nouzový plán: nižší regulované ceny pro domácnosti a živnostníky a stropy cen u výrobců. Podrobnosti zatím chybí.",
+    "Flash Eurobarometr (N ≈ 23 000, 27 zemí EU): strukturální faktory a kapitálová omezení převažují nad psychologickou připraveností. Zájem o obnovitelné zdroje tedy často narazí na peníze.",
+    "Politická důvěra ovlivňuje průběh i výsledek energetických projektů. Vyplývá to z analýzy 15 případových studií v časopise Political Psychology. Důležitá je třeba důvěra mezi vládou a komunitou.",
+    "Celý týdenní přehled o dekarbonizaci a postojích veřejnosti najdete tady: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w45/ #klima #energetika"
+  ],
+  "notes": [],
+  "usage": {
+    "calls": 1,
+    "input_tokens": 4949,
+    "output_tokens": 959,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.019488,
+    "by_model": {
+      "claude-sonnet-5-5": {
+        "calls": 1.0,
+        "input_tokens": 4949.0,
+        "output_tokens": 959.0,
+        "cost_usd": 0.019488
+      }
+    }
+  },
+  "sent_at": "2026-11-09T06:39:51.166159Z"
+}
