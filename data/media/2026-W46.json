@@ -2,8 +2,8 @@
   "week": "2026-W46",
   "meta": {
     "first_collection": "2026-11-09T02:46:35.495192+00:00",
-    "last_collection": "2026-11-16T08:06:01.907656+00:00",
-    "collections": 28
+    "last_collection": "2026-11-16T18:42:32.450746+00:00",
+    "collections": 29
   },
   "items": [
     {
@@ -94069,6 +94069,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "1cf9afc500af",
+      "title": "Život ve městě, které se přesouvá pod zem",
+      "url": "https://www.reflex.cz/clanek/prezentace-klienta/139374/zivot-ve-meste-ktere-se-presouva-pod-zem.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-16T18:42:32.450746Z",
+      "summary_raw": "Neustálé nebezpečí nutí obyvatele Charkivu hledat útočiště pod zemí. Ve městě dnes funguje deset podzemních škol, které umožňují dětem pokračovat ve vzdělávání a zároveň je chrání před ruskými útoky. Dvě takové školy a vůbec první zcela nově vybudovanou podzemní školku na Ukrajině plánuje vybavit Charita Česká republika díky darům z veřejné sbírky.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
       "id": "2fe5b65468ef",
       "title": "Kogenerace drží městům i firmám náklady na energie pod kontrolou",
       "url": "https://archiv.hn.cz/c1-67959790-kogenerace-drzi-mestum-i-firmam-naklady-na-energie-pod-kontrolou",
@@ -94218,6 +94236,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "4d1d210c2320",
+      "title": "Vlajkové fotomobily s portrétním objektivem ZEISS vracejí portrétu jeho váhu",
+      "url": "https://www.reflex.cz/clanek/prezentace-klienta/139245/vlajkove-fotomobily-s-portretnim-objektivem-zeiss-vraceji-portretu-jeho-vahu.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-16T18:42:32.450746Z",
+      "summary_raw": "Portrét patří k nejstarším a nejosobnějším žánrům fotografie. Nová řada vivo X500 Pro a X500 Pro Max, která právě vstupuje do prodeje, mu přináší teleobjektiv s certifikací ZEISS APO a ohniskem 85 mm, tedy ohniskem, které portrétisté volí po generace.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
       "date_is_first_seen": false
     },
     {
