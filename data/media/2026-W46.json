@@ -2,8 +2,8 @@
   "week": "2026-W46",
   "meta": {
     "first_collection": "2026-11-09T02:46:35.495192+00:00",
-    "last_collection": "2026-11-17T02:32:02.526265+00:00",
-    "collections": 30
+    "last_collection": "2026-11-17T12:08:40.009182+00:00",
+    "collections": 31
   },
   "items": [
     {
@@ -94522,6 +94522,26 @@
       "summary_raw": "Blíží se jeden z největších burzovních debutů všech dob. Už tento čtvrtek by se na americké burze Nasdaq měly začít obchodovat akcie technologické společnosti Anthropic, která stojí za populárním modelem Claude.",
       "authors": [
         "Patrik Salát"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b5efcbf76785",
+      "title": "Od proplácení faktur k hodnocení výsledků. Nová kapitola evropské dotační politiky přinese zásadní změny",
+      "url": "https://archiv.hn.cz/c1-67958980-od-proplaceni-faktur-k-hodnoceni-vysledku-nova-kapitola-evropske-dotacni-politiky-prinese-zasadni-zmeny",
+      "source_id": "hn",
+      "source_name": "Hospodářské noviny",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-17T12:08:40.009182Z",
+      "summary_raw": "Dotace z Evropské unie chce Česko na dopravu, zdravotnictví, výzkum a inovace, energetické úspory, kyberbezpečnost, dostupné bydlení i rozvoj regionů. Už teď je ale jasné, že po roce 2027 bude systém podpory úplně jiný a že si na evropské peníze...",
+      "authors": [
+        "Anežka Hesová"
       ],
       "doi": null,
       "topic_filter": true,
