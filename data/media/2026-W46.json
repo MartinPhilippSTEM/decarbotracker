@@ -2,8 +2,8 @@
   "week": "2026-W46",
   "meta": {
     "first_collection": "2026-11-09T02:46:35.495192+00:00",
-    "last_collection": "2026-11-18T02:58:32.135876+00:00",
-    "collections": 33
+    "last_collection": "2026-11-18T11:58:32.631031+00:00",
+    "collections": 34
   },
   "items": [
     {
@@ -87543,6 +87543,26 @@
       "summary_raw": "",
       "authors": [
         "Respekt"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b3ca8f3bed57",
+      "title": "Návrat Johnnyho Deppa na výsluní. Jak Hollywood odpouští provinilcům",
+      "url": "https://www.respekt.cz/tydenik/2026/47/navrat-johnnyho-deppa-na-vysluni-jak-hollywood-odpousti-provinilcum",
+      "source_id": "respekt",
+      "source_name": "Respekt",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T11:00:00Z",
+      "first_seen": "2026-11-18T11:58:32.631031Z",
+      "summary_raw": "Herec zkouší comeback a data říkají, že jsou z toho nadšené hlavně ženy",
+      "authors": [
+        "Jindřiška Bláhová"
       ],
       "doi": null,
       "topic_filter": true,
