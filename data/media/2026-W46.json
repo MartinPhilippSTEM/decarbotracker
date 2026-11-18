@@ -2,8 +2,8 @@
   "week": "2026-W46",
   "meta": {
     "first_collection": "2026-11-09T02:46:35.495192+00:00",
-    "last_collection": "2026-11-18T11:58:32.631031+00:00",
-    "collections": 34
+    "last_collection": "2026-11-18T20:44:38.736159+00:00",
+    "collections": 35
   },
   "items": [
     {
@@ -61058,6 +61058,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "842d1e725fda",
+      "title": "Grand Theft Auto VI: Jak největší hra všech dob utržila miliardu dolarů, přestože vyjde až 19. listopadu",
+      "url": "https://archiv.hn.cz/c1-67958930-grand-theft-auto-vi-jak-nejvetsi-hra-vsech-dob-utrzila-miliardu-dolaru-prestoze-vyjde-az-19-listopadu",
+      "source_id": "hn",
+      "source_name": "Hospodářské noviny",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T05:41:00Z",
+      "first_seen": "2026-11-18T20:44:38.736159Z",
+      "summary_raw": "Ve čtvrtek 19. listopadu miliony lidí „onemocní“ nebo si vyberou dovolenou, aby si mohli naplno užít videohru. O půlnoci ze středy na čtvrtek Rockstar Games vydá Grand Theft Auto VI. Pokračování hry, jíž se dosud prodalo 235 milionů...",
+      "authors": [
+        "Otakar Schön"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "8b6972528e9d",
       "title": "KOMENTÁŘ: ODS kouká, jak ji STAN zadupává do země. Mezitím dál zkouší trpělivost svých voličů",
       "url": "https://cnn.iprima.cz/komentar-ods-kouka-jak-ji-stan-zadupava-do-zeme-mezitim-dal-zkousi-trpelivost-svych-volicu-526970",
@@ -81280,6 +81300,26 @@
       "first_seen": "2026-11-14T20:48:45.949937Z",
       "summary_raw": "Letadlo společnosti British Airways dvakrát narazilo ocasní částí do ranveje, než se mu podařilo na letišti v Heathrow napodruhé přistát (ilustrační obrázek)",
       "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "99928afc49cb",
+      "title": "Manželka, která vydělávala víc, kult osobnosti a 24 stejných triček. Kniha odhaluje skrytou tvář Jensena Huanga",
+      "url": "https://archiv.hn.cz/c1-67959590-kniha-ukazuje-skrytou-tvar-jensena-huanga-manzelka-co-vydelavala-vic-pes-sushi-kult-osobnosti-a-24-stejnych-tricek",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T16:37:00Z",
+      "first_seen": "2026-11-18T20:44:38.736159Z",
+      "summary_raw": "Jensen Huang od začátku svou kariéru založil na vztazích. Na ženě, která mu dovolila riskovat, na dvou hádavých spoluzakladatelích, kteří nevěřili nikomu jinému, a na lidech, kteří se ho bojí. A na tom, že sám sebe nepodrobuje niterným otázkám. Na...",
+      "authors": [
+        "Michael Mareš"
+      ],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
