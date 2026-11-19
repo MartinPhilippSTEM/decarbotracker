@@ -53,7 +53,8 @@ def test_mood_section_rendered_with_soft_wording(settings, tmp_path):
     html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
     assert "Přibližná nálada diskurzu" in html and "(odhad)" in html
     assert "Orientační odhad" in html and "přibližný odhad z hodnocení AI" in html
-    assert html.index('id="nalada"') < html.index('id="prehled"')
+    # od 23. 11. 2026 je odhad nálady ve sbalené části pro analytiky (nevalidovaný ukazatel nemá být první)
+    assert html.index('id="analytici"') < html.index("Přibližná nálada diskurzu")
 
 
 def test_backfill_from_report_items(settings):

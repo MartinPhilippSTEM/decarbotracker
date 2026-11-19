@@ -1,4 +1,5 @@
-"""Týdenní syntéza silnějším modelem, validace doložení (evidence_item_ids) a záložní výstup."""
+"""Týdenní syntéza silnějším modelem, validace doložení (evidence_item_ids), pravidlo „jedna zpráva = jedno
+místo“ a záložní výstup."""
 
 from __future__ import annotations
 
@@ -15,8 +16,8 @@ from decarbotracker.llm import (
 )
 from decarbotracker.models import (
     REGION_ORDER,
-    ByRegion,
-    Forecast,
+    KeyFinding,
+    NewsItem,
     PublicAttitudes,
     Recommendation,
     ReportDraft,
@@ -25,7 +26,6 @@ from decarbotracker.models import (
     Survey,
     Swot,
     SwotPoint,
-    TopItem,
     WatchItem,
     WeeklyReport,
 )
@@ -36,6 +36,7 @@ log = logging.getLogger(__name__)
 NO_CZ_NOTICE = ("Tento týden k České republice v monitorovaných zdrojích nevyšlo nic podstatného. "
                 "Přehled proto vychází jen ze zahraničních zdrojů – to neznamená, že se v ČR nic neděje.")
 QUADRANTS = ("strengths", "weaknesses", "opportunities", "threats")
+MAX_CZ_ITEMS, MAX_WORLD_ITEMS, MAX_WATCH = 7, 6, 10
 
 
 class HardValidationError(Exception):
@@ -45,12 +46,15 @@ class HardValidationError(Exception):
 # --------------------------------------------------------------------------- vstup pro model
 
 
-def format_items_for_synthesis(selected: list[ScoredItem], chars: int) -> str:
+def format_items_for_synthesis(selected: list[ScoredItem], chars: int, media_ids: set[str] | None = None) -> str:
+    media_ids = media_ids or set()
     blocks = []
     for s in selected:
         it, sc = s.item, s.score
         date = it.published_at.date().isoformat() if it.published_at else f"{it.first_seen.date().isoformat()} (datum spatření)"
         flags = []
+        if it.id in media_ids:
+            flags.append("ČESKÁ MÉDIA – článek z hodinového sběru")
         if sc.is_opinion:
             flags.append("KOMENTÁŘ/STANOVISKO")
         if sc.is_original_research:
@@ -58,12 +62,15 @@ def format_items_for_synthesis(selected: list[ScoredItem], chars: int) -> str:
         if sc.is_public_attitudes_or_communication:
             flags.append("postoje/komunikace")
         if sc.is_event:
-            flags.append("UDÁLOST/POZVÁNKA – jen do watchlist_cs, nikdy do top_items")
+            flags.append("UDÁLOST/POZVÁNKA – jen do watchlist_cs")
+        if not it.summary_raw.strip():
+            flags.append("BEZ VÝTAHU – nesmí být zdrojem key_findings")
         authors = f" | autoři: {', '.join(it.authors[:4])}" if it.authors else ""
         blocks.append(
             f"### [ID: {it.id}]\n"
             f"Titulek: {it.title}\n"
-            f"Zdroj: {it.source_name} | typ: {it.source_type} | region zdroje: {it.region} | fokus: {sc.geo_focus} | datum: {date}{authors}\n"
+            f"Zdroj: {it.source_name} | typ: {it.source_type} | region zdroje: {it.region} | fokus: {sc.geo_focus} | "
+            f"dopad ČR: {sc.cz_impact}/3 | dopad EU: {sc.eu_impact}/3 | datum: {date}{authors}\n"
             f"Témata: {', '.join(sc.topics)} | relevance: {sc.relevance}/10{(' | ' + ', '.join(flags)) if flags else ''}\n"
             f"Výtah: {it.summary_raw[:chars] or '(bez výtahu – jen titulek)'}\n"
         )
@@ -71,7 +78,8 @@ def format_items_for_synthesis(selected: list[ScoredItem], chars: int) -> str:
 
 
 def build_user_prompt(week: str, selected: list[ScoredItem], chars: int, cz_present: bool,
-                      error_feedback: str | None = None) -> str:
+                      error_feedback: str | None = None, media_context: str = "",
+                      media_ids: set[str] | None = None) -> str:
     start, end = week_bounds(week)
     head = (
         f"Týden: {week} ({start.date().isoformat()} – {end.date().isoformat()})\n"
@@ -79,7 +87,9 @@ def build_user_prompt(week: str, selected: list[ScoredItem], chars: int, cz_pres
     )
     if not cz_present:
         head += "UPOZORNĚNÍ: mezi položkami není žádná s fokusem na ČR. Řekni to výslovně.\n"
-    prompt = head + "\n## Položky\n\n" + format_items_for_synthesis(selected, chars)
+    if media_context:
+        head += f"\n## Co tento týden psala česká média (spočítal program)\n{media_context}\n"
+    prompt = head + "\n## Položky\n\n" + format_items_for_synthesis(selected, chars, media_ids)
     if error_feedback:
         prompt += (
             "\n\n## Oprava předchozího pokusu\nPředchozí výstup neprošel kontrolou:\n"
@@ -95,63 +105,205 @@ def _valid_ids(ids: list[str], valid: set[str]) -> list[str]:
     return list(dict.fromkeys(i.strip() for i in ids if i and i.strip() in valid))
 
 
+def _keep_points(points: list, label: str, valid: set[str], logs: list[str]) -> list:
+    kept = []
+    for p in points:
+        before = list(p.evidence_item_ids)
+        p.evidence_item_ids = _valid_ids(before, valid)
+        if len(p.evidence_item_ids) < len(before):
+            logs.append(f"{label}: odstraněna neplatná ID {sorted(set(before) - set(p.evidence_item_ids))}")
+        if not p.evidence_item_ids:
+            logs.append(f"{label}: vyřazen bod bez platného doložení: {getattr(p, 'text_cs', '')[:80]}")
+            continue
+        kept.append(p)
+    return kept
+
+
+def _keep_news(items: list[NewsItem], label: str, valid: set[str], logs: list[str]) -> list[NewsItem]:
+    kept, seen = [], set()
+    for n in items:
+        n.item_id = n.item_id.strip()
+        if n.item_id not in valid:
+            logs.append(f"{label}: vyřazena neexistující položka {n.item_id}")
+            continue
+        if n.item_id not in seen:
+            seen.add(n.item_id)
+            kept.append(n)
+    return kept
+
+
 def validate_draft(draft: ReportDraft, valid: set[str], geo_of: dict[str, str]) -> tuple[ReportDraft, list[str]]:
-    """Vyřadí body bez platného doložení, seřadí CZ první; vyhodí HardValidationError, když výsledek nedává smysl."""
+    """Vyřadí body bez platného doložení; vyhodí HardValidationError, když výsledek nedává smysl."""
     logs: list[str] = []
-
-    def keep_points(points: list, label: str) -> list:
-        kept = []
-        for p in points:
-            before = list(p.evidence_item_ids)
-            p.evidence_item_ids = _valid_ids(before, valid)
-            if len(p.evidence_item_ids) < len(before):
-                logs.append(f"{label}: odstraněna neplatná ID {sorted(set(before) - set(p.evidence_item_ids))}")
-            if not p.evidence_item_ids:
-                logs.append(f"{label}: vyřazen bod bez platného doložení: {getattr(p, 'text_cs', '')[:80]}")
-                continue
-            kept.append(p)
-        return kept
-
     for q in QUADRANTS:
-        pts = keep_points(getattr(draft.swot, q), f"SWOT/{q}")
+        pts = _keep_points(getattr(draft.swot, q), f"SWOT/{q}", valid, logs)
         pts.sort(key=lambda p: REGION_ORDER.get(p.geo, 9))
-        if len(pts) > 6:
-            logs.append(f"SWOT/{q}: zkráceno z {len(pts)} na 6 bodů")
-            pts = pts[:6]
-        setattr(draft.swot, q, pts)
+        setattr(draft.swot, q, pts[:6])
 
-    tops, seen = [], set()
-    for t in draft.top_items:
-        tid = t.item_id.strip()
-        if tid not in valid:
-            logs.append(f"top_items: vyřazena neexistující položka {tid}")
-            continue
-        if tid in seen:
-            continue
-        seen.add(tid)
-        t.item_id = tid
-        tops.append(t)
-    tops.sort(key=lambda t: REGION_ORDER.get(geo_of.get(t.item_id, "GLOBAL"), 9) != 0)
-    draft.top_items = tops[:12]
-
+    draft.cz_items = _keep_news(draft.cz_items, "Česko", valid, logs)[:MAX_CZ_ITEMS]
+    draft.world_items = _keep_news(draft.world_items, "EU a svět", valid, logs)[:MAX_WORLD_ITEMS]
     pa = draft.public_attitudes_cs
-    pa.surveys = keep_points(pa.surveys, "průzkumy")
-    pa.communication_recommendations = keep_points(pa.communication_recommendations, "doporučení")
-    draft.forecasts_cs = keep_points(draft.forecasts_cs, "prognózy")
-    draft.watchlist_cs = keep_points(draft.watchlist_cs, "watchlist/události")[:10]
+    pa.surveys = _keep_points(pa.surveys, "průzkumy", valid, logs)
+    pa.communication_recommendations = _keep_points(pa.communication_recommendations, "doporučení", valid, logs)
+    draft.watchlist_cs = _keep_points(draft.watchlist_cs, "co sledovat", valid, logs)[:MAX_WATCH]
+    findings, seen = [], set()
+    for f in draft.key_findings:
+        f.item_id = f.item_id.strip()
+        if f.item_id in valid and f.item_id not in seen:
+            seen.add(f.item_id)
+            findings.append(f)
+        elif f.item_id not in valid:
+            logs.append(f"zjištění týdne: vyřazeno neexistující ID {f.item_id}")
+    draft.key_findings = findings[:3]
 
-    problems = [f"kvadrant SWOT '{q}' je po kontrole prázdný" for q in QUADRANTS if not getattr(draft.swot, q)]
-    if len(draft.top_items) < 3:
-        problems.append(f"top_items má jen {len(draft.top_items)} platných položek (očekávám 8–12)")
-    if not draft.headline_cs.strip() or not draft.executive_summary_cs.strip():
-        problems.append("chybí headline_cs nebo executive_summary_cs")
+    problems = []
+    if not draft.headline_cs.strip():
+        problems.append("chybí headline_cs")
+    if len(draft.cz_items) + len(draft.world_items) < 3:
+        problems.append(f"cz_items + world_items mají jen {len(draft.cz_items) + len(draft.world_items)} "
+                        "platných položek (očekávám 7–11)")
+    if not draft.key_findings:
+        problems.append("chybí key_findings (3 zjištění týdne)")
     for q in QUADRANTS:
-        n = len(getattr(draft.swot, q))
-        if 0 < n < 3:
-            logs.append(f"SWOT/{q}: jen {n} bodů (doporučeno 3–6)")
+        if not getattr(draft.swot, q):
+            logs.append(f"SWOT/{q}: po kontrole prázdný")
     if problems:
         raise HardValidationError("; ".join(problems))
     return draft, logs
+
+
+def enforce_single_place(draft: ReportDraft, logs: list[str]) -> ReportDraft:
+    """Pravidlo „jedna zpráva = jedno místo“ v hlavní části (Česko → EU a svět → postoje → co sledovat).
+    Zjištění týdne smí odkazovat na položky z oddílů pod sebou; SWOT je ve sbalené části a smí je použít.
+    Datované body v Co sledovat (termín) jsou nová informace, a proto se ponechají."""
+    used: set[str] = set()
+
+    def news(items: list[NewsItem], label: str) -> list[NewsItem]:
+        kept = []
+        for n in items:
+            if n.item_id in used:
+                logs.append(f"{label}: položka {n.item_id} už je v jiném oddílu – vynechána")
+                continue
+            used.add(n.item_id)
+            kept.append(n)
+        return kept
+
+    def points(pts: list, label: str, keep_dated: bool = False) -> list:
+        kept = []
+        for p in pts:
+            if keep_dated and getattr(p, "when", ""):
+                kept.append(p)
+                continue
+            rest = [i for i in p.evidence_item_ids if i not in used]
+            if not rest:
+                logs.append(f"{label}: bod opakuje položku z jiného oddílu – vynechán: {getattr(p, 'text_cs', '')[:60]}")
+                continue
+            p.evidence_item_ids = rest
+            used.update(rest)
+            kept.append(p)
+        return kept
+
+    draft.cz_items = news(draft.cz_items, "Česko")
+    draft.world_items = news(draft.world_items, "EU a svět")
+    pa = draft.public_attitudes_cs
+    pa.surveys = points(pa.surveys, "průzkumy")
+    pa.communication_recommendations = points(pa.communication_recommendations, "doporučení")
+    draft.watchlist_cs = points(draft.watchlist_cs, "co sledovat", keep_dated=True)
+    return draft
+
+
+def main_section_ids(draft: ReportDraft) -> list[str]:
+    """Všechna ID použitá v hlavní části (oddíly 2–5) – pro kontrolu duplicit."""
+    pa = draft.public_attitudes_cs
+    ids = [n.item_id for n in draft.cz_items] + [n.item_id for n in draft.world_items]
+    for p in [*pa.surveys, *pa.communication_recommendations, *(w for w in draft.watchlist_cs if not w.when)]:
+        ids += p.evidence_item_ids
+    return ids
+
+
+def move_events_out(draft: ReportDraft, selected: list[ScoredItem], logs: list[str]) -> ReportDraft:
+    """Pevné pravidlo: pozvánky/akce nejsou zjištění – nesmí být v zjištěních týdne, zprávách, SWOT ani
+    v postojích. Kód je odtud vyřadí a přesune do Co sledovat."""
+    events = {s.item.id: s for s in selected if s.score.is_event}
+    if not events:
+        return draft
+    moved: list[str] = []
+
+    def drop_news(items: list, label: str) -> list:
+        kept = []
+        for n in items:
+            if n.item_id in events:
+                moved.append(n.item_id)
+                logs.append(f"{label}: akce „{events[n.item_id].item.title[:60]}“ přesunuta do Co sledovat")
+            else:
+                kept.append(n)
+        return kept
+
+    def drop_points(pts: list, label: str) -> list:
+        kept = []
+        for p in pts:
+            ev = [i for i in p.evidence_item_ids if i in events]
+            if not ev:
+                kept.append(p)
+                continue
+            moved.extend(ev)
+            rest = [i for i in p.evidence_item_ids if i not in events]
+            logs.append(f"{label}: odkaz na akci odstraněn ({', '.join(ev)})")
+            if rest:
+                p.evidence_item_ids = rest
+                kept.append(p)
+        return kept
+
+    draft.key_findings = drop_news(draft.key_findings, "zjištění týdne")
+    draft.cz_items = drop_news(draft.cz_items, "Česko")
+    draft.world_items = drop_news(draft.world_items, "EU a svět")
+    for q in QUADRANTS:
+        setattr(draft.swot, q, drop_points(getattr(draft.swot, q), f"SWOT/{q}"))
+    pa = draft.public_attitudes_cs
+    pa.surveys = drop_points(pa.surveys, "průzkumy")
+    pa.communication_recommendations = drop_points(pa.communication_recommendations, "doporučení")
+    for eid in dict.fromkeys(moved):
+        if not any(eid in w.evidence_item_ids for w in draft.watchlist_cs):
+            s = events[eid]
+            draft.watchlist_cs.append(WatchItem(when="termín ve zdroji",
+                                                text_cs=f"{s.score.title_cs or s.item.title} ({s.item.source_name})",
+                                                evidence_item_ids=[eid]))
+    draft.watchlist_cs = draft.watchlist_cs[:MAX_WATCH]
+    return draft
+
+
+def drop_title_only_findings(draft: ReportDraft, selected: list[ScoredItem], logs: list[str]) -> ReportDraft:
+    """Zjištění týdne (a e-mail) se nesmí opírat o položku bez výtahu – jen o titulek nejde ručit."""
+    no_summary = {s.item.id for s in selected if not s.item.summary_raw.strip()}
+    kept = []
+    for f in draft.key_findings:
+        if f.item_id in no_summary:
+            logs.append(f"zjištění týdne: položka {f.item_id} nemá výtah (jen titulek) – vyřazena")
+        else:
+            kept.append(f)
+    draft.key_findings = kept
+    return draft
+
+
+def _fill_findings(draft: ReportDraft, selected: list[ScoredItem], logs: list[str]) -> ReportDraft:
+    """Když po kontrolách zbude méně než 3 zjištění, doplní je z oddílů Česko / EU a svět (jen položky s výtahem)."""
+    ok = {s.item.id for s in selected if s.item.summary_raw.strip() and not s.score.is_event}
+    have = {f.item_id for f in draft.key_findings}
+    for n in [*draft.cz_items, *draft.world_items]:
+        if len(draft.key_findings) >= 3:
+            break
+        if n.item_id in ok and n.item_id not in have:
+            draft.key_findings.append(KeyFinding(item_id=n.item_id, title_cs=n.title_cs, text_cs=n.text_cs))
+            have.add(n.item_id)
+            logs.append(f"zjištění týdne: doplněno z oddílu zpráv ({n.item_id})")
+    return draft
+
+
+def postprocess(draft: ReportDraft, selected: list[ScoredItem], logs: list[str]) -> ReportDraft:
+    draft = move_events_out(draft, selected, logs)
+    draft = drop_title_only_findings(draft, selected, logs)
+    draft = enforce_single_place(draft, logs)
+    return _fill_findings(draft, selected, logs)
 
 
 # --------------------------------------------------------------------------- mock (dry-run)
@@ -159,7 +311,6 @@ def validate_draft(draft: ReportDraft, valid: set[str], geo_of: dict[str, str]) 
 
 def mock_draft(selected: list[ScoredItem]) -> ReportDraft:
     """Deterministický ukázkový výstup bez volání LLM (pro --dry-run a testy)."""
-    ids = [s.item.id for s in selected]
     geo = {s.item.id: s.score.geo_focus for s in selected}
 
     def pt(i: int, prefix: str) -> SwotPoint:
@@ -167,47 +318,33 @@ def mock_draft(selected: list[ScoredItem]) -> ReportDraft:
         return SwotPoint(text_cs=f"[Ukázka – dry-run] {prefix}: {s.item.title}", evidence_item_ids=[s.item.id],
                          geo=geo[s.item.id])
 
-    swot = Swot(
-        strengths=[pt(i, "Opora") for i in range(0, 3)],
-        weaknesses=[pt(i, "Bariéra") for i in range(3, 6)],
-        opportunities=[pt(i, "Příležitost") for i in range(6, 9)],
-        threats=[pt(i, "Hrozba") for i in range(9, 12)],
-    )
-    tops = [
-        TopItem(item_id=s.item.id,
-                why_it_matters_cs=f"[Ukázka – dry-run] **{s.item.source_name}**: {s.score.one_line_cs}",
-                key_finding_cs="Ukázkový výstup bez volání AI – konkrétní zjištění ověřte u zdroje.",
-                category=s.score.topics[0])
-        for s in selected[:10]
-    ]
-    att = [s for s in selected if s.score.is_public_attitudes_or_communication]
-    surveys = [
-        Survey(institution=s.item.source_name, fieldwork="neuvedeno", country=s.score.geo_focus, sample_n="neuvedeno",
-               method="neuvedeno", finding_cs=f"[Ukázka – dry-run] {s.item.title}", evidence_item_ids=[s.item.id])
-        for s in att[:3]
-    ]
-    recs = [Recommendation(text_cs=f"[Ukázka – dry-run] Doporučení odvozené z: {s.item.title}",
-                           evidence_item_ids=[s.item.id]) for s in att[:2]]
-    fc = [s for s in selected if "forecast" in s.score.topics][:3]
-    forecasts = [Forecast(author=s.item.source_name, horizon="neuvedeno", key_figure="neuvedeno",
-                          text_cs=f"[Ukázka – dry-run] {s.item.title}", evidence_item_ids=[s.item.id]) for s in fc]
+    def news(s: ScoredItem) -> NewsItem:
+        return NewsItem(item_id=s.item.id, title_cs=s.score.title_cs or s.item.title,
+                        text_cs=f"[Ukázka – dry-run] **{s.item.source_name}**: {s.score.one_line_cs}", key_figure="")
+
     cz = [s for s in selected if s.score.geo_focus == "CZ"]
+    world = [s for s in selected if s.score.geo_focus != "CZ"]
+    att = [s for s in selected if s.score.is_public_attitudes_or_communication]
     return ReportDraft(
         headline_cs="[Ukázka – dry-run] Týdenní přehled vygenerovaný bez volání AI.",
-        executive_summary_cs=(
-            f"Toto je **deterministický ukázkový výstup** režimu --dry-run nad {len(ids)} vybranými položkami. "
-            "Slouží k otestování celé pipeline a webu bez API klíče. Texty nejsou analytické shrnutí."
-        ),
-        swot=swot,
-        top_items=tops,
+        key_findings=[KeyFinding(item_id=s.item.id, title_cs=s.score.title_cs or s.item.title,
+                                 text_cs="[Ukázka – dry-run] Ukázkové zjištění bez volání AI.")
+                      for s in (cz[:2] + world[:1] or selected[:3])],
+        cz_items=[news(s) for s in cz[:6]],
+        world_items=[news(s) for s in world[:5]] or [news(s) for s in selected[:3]],
         public_attitudes_cs=PublicAttitudes(
             summary_cs="[Ukázka – dry-run] Přehled položek označených jako postoje veřejnosti a komunikace.",
-            surveys=surveys, communication_recommendations=recs),
-        forecasts_cs=forecasts,
-        by_region=ByRegion(cz=f"[Ukázka] {len(cz)} položek s fokusem na ČR.", eu="[Ukázka] EU.", us="[Ukázka] USA.",
-                           **{"global": ""}),
+            surveys=[Survey(institution=s.item.source_name, fieldwork="neuvedeno", country=s.score.geo_focus,
+                            sample_n="neuvedeno", method="neuvedeno", finding_cs=f"[Ukázka – dry-run] {s.item.title}",
+                            evidence_item_ids=[s.item.id]) for s in att[:3]],
+            communication_recommendations=[Recommendation(text_cs=f"[Ukázka – dry-run] Doporučení z: {s.item.title}",
+                                                          evidence_item_ids=[s.item.id]) for s in att[3:5]]),
         watchlist_cs=[WatchItem(when="6. 10. 2026", text_cs=f"[Ukázka – dry-run] {selected[0].item.title}",
                                 evidence_item_ids=[selected[0].item.id])],
+        swot=Swot(strengths=[pt(i, "Opora") for i in range(0, 3)],
+                  weaknesses=[pt(i, "Bariéra") for i in range(3, 6)],
+                  opportunities=[pt(i, "Příležitost") for i in range(6, 9)],
+                  threats=[pt(i, "Hrozba") for i in range(9, 12)]),
         data_gaps_cs=["Režim dry-run: bez skutečné syntézy AI."],
     )
 
@@ -215,30 +352,8 @@ def mock_draft(selected: list[ScoredItem]) -> ReportDraft:
 # --------------------------------------------------------------------------- hlavní funkce
 
 
-def move_events_out_of_top(draft: ReportDraft, selected: list[ScoredItem], logs: list[str]) -> ReportDraft:
-    """Pevné pravidlo: pozvánky/akce nesmí být mezi nejdůležitějšími položkami – přesunou se do Událostí."""
-    events = {s.item.id: s for s in selected if s.score.is_event}
-    if not events:
-        return draft
-    kept = []
-    for t in draft.top_items:
-        if t.item_id not in events:
-            kept.append(t)
-            continue
-        s = events[t.item_id]
-        logs.append(f"top_items: akce „{s.item.title[:60]}“ přesunuta do Událostí")
-        if not any(t.item_id in w.evidence_item_ids and w.when for w in draft.watchlist_cs):
-            draft.watchlist_cs.insert(0, WatchItem(
-                when="termín ve zdroji",
-                text_cs=f"{s.score.title_cs or s.item.title} ({s.item.source_name})",
-                evidence_item_ids=[s.item.id],
-            ))
-    draft.top_items = kept
-    # i v ostatních sekcích by akce neměly vystupovat jako zjištění – jen se zaloguje
-    return draft
-
-
-def item_refs(selected: list[ScoredItem]) -> list[ReportItemRef]:
+def item_refs(selected: list[ScoredItem], media_ids: set[str] | None = None) -> list[ReportItemRef]:
+    media_ids = media_ids or set()
     return [
         ReportItemRef(
             id=s.item.id, title=s.item.title, title_cs=s.score.title_cs, url=s.item.url,
@@ -248,20 +363,22 @@ def item_refs(selected: list[ScoredItem]) -> list[ReportItemRef]:
             one_line_cs=s.score.one_line_cs, final_score=s.final_score, is_opinion=s.score.is_opinion,
             sentiment=s.score.sentiment, is_event=s.score.is_event,
             is_public_attitudes_or_communication=s.score.is_public_attitudes_or_communication,
+            has_summary=bool(s.item.summary_raw.strip()), from_media=s.item.id in media_ids,
         )
         for s in selected
     ]
 
 
 def _fit_budget(client: ClaudeClient, settings: Settings, model: str, system: str, week: str,
-                selected: list[ScoredItem], cz_present: bool) -> tuple[list[ScoredItem], int, list[str]]:
+                selected: list[ScoredItem], cz_present: bool, media_context: str,
+                media_ids: set[str]) -> tuple[list[ScoredItem], int, list[str]]:
     """Zkrátí vstup, pokud by odhad nákladů (count_tokens) překročil zbývající rozpočet."""
     llm = settings.llm
     notes: list[str] = []
     chars = llm.synthesis_summary_chars
     items = list(selected)
     for _ in range(12):
-        user = build_user_prompt(week, items, chars, cz_present)
+        user = build_user_prompt(week, items, chars, cz_present, media_context=media_context, media_ids=media_ids)
         tokens = client.count_tokens(model=model, system=system, user=user, schema=ReportDraft)
         est = client.tracker.cost(model, tokens, llm.expected_synthesis_output_tokens)
         remaining = llm.max_cost_usd - client.tracker.spent
@@ -293,22 +410,28 @@ def fallback_report(week: str, scored: list[ScoredItem], considered: int, settin
                "položky bez SWOT analýzy."]
     if not cz:
         notices.append(NO_CZ_NOTICE)
+
+    def news(s: ScoredItem) -> NewsItem:
+        return NewsItem(item_id=s.item.id, title_cs=s.score.title_cs or s.item.title,
+                        text_cs=s.score.one_line_cs or "Bez AI syntézy – ověřte u zdroje.", key_figure="")
+
     return WeeklyReport(
         week=week, period_from=start, period_to=end, generated_at=datetime.now(UTC), model="—",
         items_considered=considered, items_selected=len(top), status=status, notices_cs=notices,  # type: ignore[arg-type]
         cz_content_present=cz,
         headline_cs="Přehled bez AI syntézy – nejlépe hodnocené položky týdne",
-        top_items=[TopItem(item_id=s.item.id, why_it_matters_cs=s.score.one_line_cs or s.item.title,
-                           key_finding_cs="Bez AI syntézy – ověřte u zdroje.", category=s.score.topics[0])
-                   for s in top],
+        cz_items=[news(s) for s in top if s.score.geo_focus == "CZ"][:MAX_CZ_ITEMS],
+        world_items=[news(s) for s in top if s.score.geo_focus != "CZ"][:MAX_WORLD_ITEMS],
         items=item_refs(top),
         data_gaps_cs=[reason],
     )
 
 
 def synthesize(week: str, selected: list[ScoredItem], considered: int, settings: Settings,
-               client: ClaudeClient | None) -> WeeklyReport:
+               client: ClaudeClient | None, media_context: str = "",
+               media_ids: set[str] | None = None) -> WeeklyReport:
     """Vytvoří WeeklyReport. Nikdy nevyhazuje výjimku – při selhání vrátí záložní report."""
+    media_ids = media_ids or set()
     start, end = week_bounds(week)
     if not selected:
         rep = fallback_report(week, selected, considered, settings, "tento týden nebyly nalezeny žádné relevantní položky")
@@ -324,7 +447,7 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
     if client is None:
         try:
             draft, vlog = validate_draft(mock_draft(selected), valid, geo_of)
-            draft = move_events_out_of_top(draft, selected, vlog)
+            draft = postprocess(draft, selected, vlog)
         except HardValidationError as exc:
             return fallback_report(week, selected, considered, settings, f"dry-run: {exc}", status="dry_run")
         status, model = "dry_run", "mock (dry-run)"
@@ -334,7 +457,8 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
         system = prompt_path("synthesis.md").read_text(encoding="utf-8")
         model = llm.model_synthesis
         try:
-            selected, chars, budget_notes = _fit_budget(client, settings, model, system, week, selected, cz_present)
+            selected, chars, budget_notes = _fit_budget(client, settings, model, system, week, selected, cz_present,
+                                                        media_context, media_ids)
         except LLMError as exc:
             return fallback_report(week, selected, considered, settings, str(exc))
         notices.extend(budget_notes)
@@ -345,7 +469,7 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
         validation_retry_used = refusal_fallback_used = max_tokens_retry_used = False
         status = "ok"
         for _attempt in range(5):
-            user = build_user_prompt(week, selected, chars, cz_present, feedback)
+            user = build_user_prompt(week, selected, chars, cz_present, feedback, media_context, media_ids)
             try:
                 raw, _msg = client.structured(
                     model=model, system=system, user=user, schema=ReportDraft, max_tokens=max_tokens,
@@ -353,7 +477,7 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
                     server_fallback=llm.server_side_fallback,
                 )
                 draft, vlog = validate_draft(raw, valid, geo_of)
-                draft = move_events_out_of_top(draft, selected, vlog)
+                draft = postprocess(draft, selected, vlog)
                 validation_log.extend(vlog)
                 break
             except LLMMaxTokens as exc:
@@ -384,16 +508,14 @@ def synthesize(week: str, selected: list[ScoredItem], considered: int, settings:
 
     if not cz_present:
         notices.insert(0, NO_CZ_NOTICE)
-        if "nevyšlo" not in draft.by_region.cz and "nic" not in draft.by_region.cz:
-            draft.by_region.cz = NO_CZ_NOTICE + (" " + draft.by_region.cz if draft.by_region.cz else "")
     report = WeeklyReport(
         week=week, period_from=start, period_to=end, generated_at=datetime.now(UTC), model=model,
         items_considered=considered, items_selected=len(selected), status=status,  # type: ignore[arg-type]
         notices_cs=notices, cz_content_present=cz_present,
-        headline_cs=draft.headline_cs, executive_summary_cs=draft.executive_summary_cs, swot=draft.swot,
-        top_items=draft.top_items, public_attitudes_cs=draft.public_attitudes_cs, forecasts_cs=draft.forecasts_cs,
-        by_region=draft.by_region, watchlist_cs=draft.watchlist_cs, data_gaps_cs=draft.data_gaps_cs,
-        items=item_refs(selected), validation_log=validation_log,
+        headline_cs=draft.headline_cs, key_findings=draft.key_findings, cz_items=draft.cz_items,
+        world_items=draft.world_items, swot=draft.swot, public_attitudes_cs=draft.public_attitudes_cs,
+        watchlist_cs=draft.watchlist_cs, data_gaps_cs=draft.data_gaps_cs[:3],
+        items=item_refs(selected, media_ids), validation_log=validation_log,
     )
     if client is not None:
         report.usage = client.tracker.info

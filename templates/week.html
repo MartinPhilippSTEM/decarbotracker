@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 {% from "_macros.html" import tags, item_date, item_title, evidence, media_evidence %}
+{# Hutná struktura od 23. 11. 2026: zjištění → Česko → EU a svět → postoje → co sledovat; zbytek sbalený pro analytiky.
+   Starší týdny se vykreslují šablonou week_legacy.html. #}
+{% macro news_list(list_, show_geo) -%}
+<ol class="news">
+{% for n in list_ %}{% set it = items.get(n.item_id) %}{% if it %}
+  <li>
+    <p class="news-title"><a href="{{ it.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ n.title_cs|plain }}</strong>&nbsp;↗</a>{% if n.key_figure and n.key_figure != 'neuvedeno' %} <span class="fig">{{ n.key_figure }}</span>{% endif %}</p>
+    <p>{{ n.text_cs|rich }}</p>
+    <p class="card-meta">{% if show_geo %}<span class="tag tag-{{ it.geo_focus|lower }}">{{ it.geo_focus }}</span> {% endif %}<span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}{% if it.is_opinion %} · <span class="tag tag-opinion">názor</span>{% endif %}{% if it.from_media %} · <span class="tag tag-type">česká média</span>{% endif %}</p>
+  </li>
+{% endif %}{% endfor %}
+</ol>
+{%- endmacro %}
 {% block title %}{% if is_latest %}{{ site.title }} – týden {{ r.week }}{% else %}Týden {{ r.week }} – {{ site.title }}{% endif %}{% endblock %}
 {% block description %}{{ (r.headline_cs or site.tagline)|plain }}{% endblock %}
 {% block content %}
@@ -8,171 +21,30 @@
     <p class="kicker">{% if is_latest %}Nejnovější přehled · {% endif %}Týden {{ r.week }} · {{ period }}</p>
     {% if r.headline_cs %}<h1>{{ r.headline_cs|plain }}</h1>{% else %}<h1>Týden {{ r.week }}</h1>{% endif %}
     {% for n in r.notices_cs %}<p class="notice{% if r.status == 'fallback' %} notice-warn{% endif %}">{{ n }}</p>{% endfor %}
-    {% if r.executive_summary_cs %}
+    {% if r.key_findings %}
     <div class="summary">
-      <p class="summary-label">Shrnutí týdne</p>
-      <p>{{ r.executive_summary_cs|rich }}</p>
+      <p class="summary-label">Tři zjištění týdne</p>
+      <ol class="findings">
+      {% for f in r.key_findings %}{% set it = items.get(f.item_id) %}
+        <li><strong>{{ f.title_cs|plain }}</strong> – {{ f.text_cs|rich }}{% if it %} {{ evidence([f.item_id], items) }}{% endif %}</li>
+      {% endfor %}
+      </ol>
     </div>
     {% endif %}
     <p class="meta">Posouzeno {{ r.items_considered }} položek, do přehledu vybráno {{ r.items_selected }} · model: {{ r.model }} · vygenerováno {{ r.generated_at|date_cs }}</p>
   </header>
 
-  {% if r.sentiment %}{% set s = r.sentiment %}
-  {% set tone = 'neg' if s.index <= -10 else ('pos' if s.index >= 10 else 'neu') %}
-  <section aria-labelledby="nalada" class="mood">
-    <h2 id="nalada">Přibližná nálada diskurzu <span class="mood-est">(odhad)</span></h2>
-    <div class="mood-grid">
-      <div class="mood-card">
-        <p class="mood-k">Orientační odhad vyznění zpráv pro dekarbonizaci ČR a podporu veřejnosti</p>
-        <p class="mood-v mood-{{ tone }}"><span class="mood-num">{{ '%+d'|format(s.index) if s.index else '≈ 0' }}</span> <span class="mood-label">{{ s.label_cs }}</span></p>
-        <div class="mood-scale" role="img" aria-label="Odhad {{ s.index }} na škále −100 až +100">
-          <span class="mood-needle" style="left: {{ ((s.index + 100) / 2)|round(1) }}%"></span>
-        </div>
-        <div class="mood-ends"><span>−100 spíše nepříznivé</span><span>0</span><span>+100 spíše příznivé</span></div>
-        <p class="mood-note">Vychází z {{ s.n }} hodnocených zpráv{% if prev_index is not none %} · předchozí týden přibližně {{ '%+d'|format(prev_index) if prev_index else '0' }}{% endif %}</p>
-      </div>
-      {% if trend|length >= 2 %}
-      {% set w = 260 %}{% set step = w / (trend|length - 1) %}
-      <div class="mood-card">
-        <p class="mood-k">Vývoj odhadu (posledních {{ trend|length }} týdnů)</p>
-        <svg viewBox="0 0 {{ w + 20 }} 80" width="100%" height="80" role="img" aria-label="Trend odhadu nálady">
-          <line x1="10" y1="40" x2="{{ w + 10 }}" y2="40" class="mood-zero"/>
-          <polyline class="mood-line" points="{% for wk, v in trend %}{{ (10 + loop.index0 * step)|round(1) }},{{ (40 - v * 0.36)|round(1) }} {% endfor %}"/>
-          {% for wk, v in trend %}<circle cx="{{ (10 + loop.index0 * step)|round(1) }}" cy="{{ (40 - v * 0.36)|round(1) }}" r="{{ 4 if loop.last else 2.5 }}" class="mood-dot"><title>{{ wk }}: {{ v }}</title></circle>{% endfor %}
-        </svg>
-        <p class="mood-note">{{ trend[0][0] }} – {{ trend[-1][0] }}</p>
-      </div>
-      {% endif %}
-    </div>
-    <div class="mood-regions">
-      {% for g in s.by_region %}
-      <div class="mood-row">
-        <span class="mood-reg">{{ region_labels.get(g.region, g.region) }}</span>
-        {% if g.n >= 3 %}
-        <span class="mood-bar" title="nepříznivé {{ (g.negative*100)|round|int }} %, neutrální {{ (g.neutral*100)|round|int }} %, příznivé {{ (g.positive*100)|round|int }} %">
-          <span class="seg neg" style="width: {{ (g.negative*100)|round(1) }}%"></span><span class="seg neu" style="width: {{ (g.neutral*100)|round(1) }}%"></span><span class="seg pos" style="width: {{ (g.positive*100)|round(1) }}%"></span>
-        </span>
-        <span class="mood-rn">≈ {{ '%+d'|format(g.index) if g.index else '0' }} <small>(n = {{ g.n }})</small></span>
-        {% else %}
-        <span class="mood-few">příliš málo zpráv pro odhad (n = {{ g.n }})</span>
-        {% endif %}
-      </div>
-      {% endfor %}
-      <p class="mood-legend"><span class="sw neg"></span> spíše nepříznivé <span class="sw neu"></span> neutrální / smíšené <span class="sw pos"></span> spíše příznivé <span class="mood-hint">· podíly vážené důležitostí zprávy</span></p>
-    </div>
-    {% set mp = items.get(s.most_positive_id) if s.most_positive_id else none %}{% set mn = items.get(s.most_negative_id) if s.most_negative_id else none %}
-    {% if mp or mn %}
-    <div class="mood-picks">
-      {% if mp %}<p class="pick pos"><span>Příklad spíše příznivé zprávy</span><a href="{{ mp.url }}" target="_blank" rel="noopener">{{ mp.title_cs or mp.title }}&nbsp;↗</a></p>{% endif %}
-      {% if mn %}<p class="pick neg"><span>Příklad spíše nepříznivé zprávy</span><a href="{{ mn.url }}" target="_blank" rel="noopener">{{ mn.title_cs or mn.title }}&nbsp;↗</a></p>{% endif %}
-    </div>
-    {% endif %}
-    <p class="hint">Jde o přibližný odhad z hodnocení AI na omezeném vzorku zpráv, ne o měření veřejného mínění. Vyznění se posuzuje z perspektivy dekarbonizace ČR (stejně jako SWOT); výkyvy mezi týdny mohou být náhodné. <a href="{{ base }}metodika/#nalada">Jak odhad vzniká</a>.</p>
+  {% if r.cz_items %}
+  <section aria-labelledby="cesko">
+    <h2 id="cesko"><span class="tag tag-cz">CZ</span> Česko tento týden</h2>
+    {{ news_list(r.cz_items, false) }}
   </section>
   {% endif %}
 
-  {% set top5 = r.top_items[:5] %}
-  {# události = položky watchlistu s konkrétním termínem; ostatní jdou do sekce Co dál sledovat #}
-  {% set events = r.watchlist_cs|selectattr('when')|rejectattr('when', 'in', ['neuvedeno', 'termín neuveden', '-', '—'])|list %}
-  {% set watch = r.watchlist_cs|reject('in', events)|list %}
-  {% if top5 or events or r.opportunities_cs %}
-  <section aria-labelledby="prehled" class="glance">
-    <h2 id="prehled">Na první pohled</h2>
-    {% if top5 %}
-    <h3>Pět nejdůležitějších analýz a článků</h3>
-    <div class="table-wrap">
-    <table class="top5">
-      <thead><tr><th scope="col">#</th><th scope="col">Co vyšlo</th><th scope="col">Proč je to důležité</th></tr></thead>
-      <tbody>
-      {% for t in top5 %}{% set it = items.get(t.item_id) %}{% if it %}
-        <tr>
-          <td class="num">{{ loop.index }}</td>
-          <td>
-            <a href="{{ it.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ it.title }}</strong></a>
-            {% if it.title_cs %}<br><span class="title-cs">{{ it.title_cs }}</span>{% endif %}
-            <br><span class="card-meta"><span class="tag tag-{{ it.geo_focus|lower }}">{{ it.geo_focus }}</span> {{ it.source_name }}{% if it.is_opinion %} · <span class="tag tag-opinion">názor</span>{% endif %}</span>
-          </td>
-          <td>{{ (t.why_it_matters_cs|first_sentence or it.one_line_cs)|rich }}</td>
-        </tr>
-      {% endif %}{% endfor %}
-      </tbody>
-    </table>
-    </div>
-    {% endif %}
-
-    {% if events %}
-    <h3>Události a termíny</h3>
-    <div class="table-wrap">
-    <table class="events">
-      <thead><tr><th scope="col">Kdy</th><th scope="col">Co se děje</th><th scope="col">Zdroj</th></tr></thead>
-      <tbody>
-      {% for e in events %}
-        <tr><td class="when">{{ e.when }}</td><td>{{ e.text_cs|rich }}</td><td>{{ evidence(e.evidence_item_ids, items) }}</td></tr>
-      {% endfor %}
-      </tbody>
-    </table>
-    </div>
-    {% endif %}
-
-    {% if r.opportunities_cs %}
-    <h3 id="prilezitosti">Příležitosti: výzvy a financování</h3>
-    <p class="hint">Výzvy vhodné pro společenskovědní výzkum (bez technologických a investičních dotací), seskupené podle programu. Vybírá AI – podmínky vždy ověřte u poskytovatele.</p>
-    {% for program, opps in opp_groups %}
-    <div class="opp-group">
-      <h4 class="opp-program"><span class="opp-badge">{{ program }}</span> <span class="opp-count">{{ opps|length }} {{ 'výzva' if opps|length == 1 else ('výzvy' if opps|length < 5 else 'výzev') }}</span></h4>
-      <div class="table-wrap">
-      <table class="opps">
-        <thead><tr><th scope="col">Výzva</th><th scope="col">Objem na projekt</th><th scope="col">Podávání</th><th scope="col">Stručně</th></tr></thead>
-        <tbody>
-        {% for o in opps %}
-          <tr>
-            <td><a href="{{ o.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ o.title_cs }}</strong>&nbsp;↗</a>{% if o.funder and o.funder != program %}<br><span class="card-meta">{{ o.funder }}</span>{% endif %}</td>
-            <td class="money">{% if o.amount_min == o.amount_max %}{{ o.amount_max }}{% else %}{{ o.amount_min }} – {{ o.amount_max }}{% endif %}</td>
-            <td class="when">od {{ o.open_from }}<br>do <strong>{{ o.deadline }}</strong></td>
-            <td>{{ ((o.summary_cs|first_sentence) if opps|length > 2 else o.summary_cs)|rich }}</td>
-          </tr>
-        {% endfor %}
-        </tbody>
-      </table>
-      </div>
-    </div>
-    {% endfor %}
-    {% endif %}
-  </section>
-  {% endif %}
-
-  {% if r.swot %}
-  <section aria-labelledby="swot">
-    <h2 id="swot">SWOT: dekarbonizace ČR a podpora veřejnosti</h2>
-    <p class="hint">Perspektiva je pevně daná: S = příznivé skutečnosti a trendy v ČR, W = vnitřní slabiny a bariéry v ČR, O = vnější příležitosti, T = vnější hrozby. <a href="{{ base }}metodika/#swot">Více v metodice</a>.</p>
-    <div class="swot">
-      {% for key, label, letter in [("strengths", "Silné stránky", "S"), ("weaknesses", "Slabé stránky", "W"), ("opportunities", "Příležitosti", "O"), ("threats", "Hrozby", "T")] %}
-      <div class="swot-q swot-{{ key }}">
-        <h3><span class="swot-letter" aria-hidden="true">{{ letter }}</span> {{ label }}</h3>
-        <ul>
-        {% for p in r.swot[key] %}
-          <li><span class="tag tag-{{ p.geo|lower }}">{{ p.geo }}</span> {{ p.text_cs|rich }} {{ evidence(p.evidence_item_ids, items) }}</li>
-        {% endfor %}
-        </ul>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-  {% endif %}
-
-  {% if r.top_items %}
-  <section aria-labelledby="top">
-    <h2 id="top">Nejdůležitější položky podrobněji</h2>
-    <ol class="cards">
-    {% for t in r.top_items %}{% set it = items.get(t.item_id) %}{% if it %}
-      <li class="card">
-        <p class="card-meta">{{ tags(it) }} <span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}</p>
-        <h3>{{ item_title(it) }}</h3>
-        {% if t.key_finding_cs %}<p><strong>Zjištění:</strong> {{ t.key_finding_cs|rich }}</p>{% endif %}
-        <p class="why">{{ t.why_it_matters_cs|rich }}</p>
-      </li>
-    {% endif %}{% endfor %}
-    </ol>
+  {% if r.world_items %}
+  <section aria-labelledby="svet">
+    <h2 id="svet">EU a svět – co to znamená pro Česko</h2>
+    {{ news_list(r.world_items, true) }}
   </section>
   {% endif %}
 
@@ -181,18 +53,17 @@
     <h2 id="postoje">Postoje veřejnosti a komunikace</h2>
     <p>{{ pa.summary_cs|rich }}</p>
     {% if pa.surveys %}
-    <h3>Nové průzkumy</h3>
     <ul class="plain">
     {% for s in pa.surveys %}
       <li class="survey">
         <p>{{ s.finding_cs|rich }} {{ evidence(s.evidence_item_ids, items) }}</p>
-        <dl class="facts"><dt>Kdo</dt><dd>{{ s.institution }}</dd><dt>Kdy</dt><dd>{{ s.fieldwork }}</dd><dt>Kde</dt><dd>{{ s.country }}</dd><dt>N</dt><dd>{{ s.sample_n }}</dd><dt>Metoda</dt><dd>{{ s.method }}</dd></dl>
+        <p class="facts-line">{{ s.institution }} · {{ s.country }} · sběr: {{ s.fieldwork }} · N = {{ s.sample_n }} · {{ s.method }}</p>
       </li>
     {% endfor %}
     </ul>
     {% endif %}
     {% if pa.communication_recommendations %}
-    <h3>Komunikační doporučení</h3>
+    <h3>Pro komunikaci</h3>
     <ul>
     {% for c in pa.communication_recommendations %}<li>{{ c.text_cs|rich }} {{ evidence(c.evidence_item_ids, items) }}</li>{% endfor %}
     </ul>
@@ -200,94 +71,125 @@
   </section>
   {% endif %}
 
-  {% if r.media and r.media.n_relevant %}{% set m = r.media %}{% set marts = media_articles(m) %}
-  <section aria-labelledby="media" class="media-sec">
-    <h2 id="media">Co psala česká média</h2>
-    <p class="meta">{{ m.n_relevant }} článků k energetice a klimatu z {{ m.n_collected }} zachycených ve {{ m.outlets|length }} médiích{% if m.collection_since %} · sběr každou hodinu od {{ m.collection_since|date_cs }}{% endif %}</p>
-    {% if m.draft %}
-    <p class="lead"><strong>{{ m.draft.headline_cs|plain }}</strong></p>
-    <div class="summary"><p>{{ m.draft.summary_cs|rich }}</p></div>
-    <h3>Hlavní témata a příběhy</h3>
-    <ul>{% for t in m.draft.themes %}<li><strong>{{ t.title_cs }}</strong> – {{ t.text_cs|rich }} {{ media_evidence(t.evidence_item_ids, marts) }}</li>{% endfor %}</ul>
-    {% endif %}
-    <div class="media-grid">
-      <div class="mood-card">
-        <p class="mood-k">Témata (počet článků)</p>
-        {% set tmax = m.topics.values()|max %}
-        {% for k, v in m.topics.items() %}<div class="hbar"><span class="hbar-l">{{ media_topic_labels.get(k, k) }}</span><span class="hbar-b"><span style="width: {{ (v / tmax * 100)|round(1) }}%"></span></span><span class="hbar-n">{{ v }}</span></div>{% endfor %}
+  {% if r.watchlist_cs %}
+  <section aria-labelledby="sledovat">
+    <h2 id="sledovat">Co sledovat</h2>
+    <ul class="watch">
+    {% for w in r.watchlist_cs %}
+      <li>{% if w.when and w.when not in ['neuvedeno', 'termín neuveden', '-', '—'] %}<span class="when-chip">{{ w.when }}</span> {% endif %}{{ w.text_cs|rich }} {{ evidence(w.evidence_item_ids, items) }}</li>
+    {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section aria-labelledby="analytici" class="analyst">
+    <h2 id="analytici">Pro analytiky</h2>
+    <p class="hint">Podrobnosti jsou sbalené – klikněte na název oddílu.</p>
+
+    {% if r.swot %}
+    <details class="fold">
+      <summary>SWOT: dekarbonizace ČR a podpora veřejnosti</summary>
+      <p class="hint">S = příznivé skutečnosti a trendy v ČR, W = vnitřní slabiny a bariéry v ČR, O = vnější příležitosti, T = vnější hrozby. <a href="{{ base }}metodika/#swot">Více v metodice</a>.</p>
+      <div class="swot">
+        {% for key, label, letter in [("strengths", "Silné stránky", "S"), ("weaknesses", "Slabé stránky", "W"), ("opportunities", "Příležitosti", "O"), ("threats", "Hrozby", "T")] %}
+        <div class="swot-q swot-{{ key }}">
+          <h3><span class="swot-letter" aria-hidden="true">{{ letter }}</span> {{ label }}</h3>
+          <ul>
+          {% for p in r.swot[key] %}
+            <li><span class="tag tag-{{ p.geo|lower }}">{{ p.geo }}</span> {{ p.text_cs|rich }} {{ evidence(p.evidence_item_ids, items) }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
       </div>
-      <div class="mood-card">
-        <p class="mood-k">Převažující rámec (jak se o tématu psalo)</p>
-        {% set fmax = m.frames.values()|max %}
-        {% for k, v in m.frames.items() %}<div class="hbar"><span class="hbar-l">{{ media_frame_labels.get(k, k) }}</span><span class="hbar-b"><span style="width: {{ (v / fmax * 100)|round(1) }}%"></span></span><span class="hbar-n">{{ v }}</span></div>{% endfor %}
-      </div>
-    </div>
-    {% if m.draft %}
-    <h3>Rámování</h3><p>{{ m.draft.framing_cs|rich }}</p>
-    {% if m.draft.outlets_cs %}<h3>Rozdíly mezi médii</h3><p>{{ m.draft.outlets_cs|rich }}</p>{% endif %}
-    {% if m.draft.notable %}<h3>Stojí za přečtení</h3><ul>{% for t in m.draft.notable %}<li><strong>{{ t.title_cs }}</strong> – {{ t.text_cs|rich }} {{ media_evidence(t.evidence_item_ids, marts) }}</li>{% endfor %}</ul>{% endif %}
+    </details>
     {% endif %}
-    <details class="media-details">
-      <summary>Kolik prostoru téma dostalo v jednotlivých médiích · žánry · vyznění</summary>
+
+    {% if r.media and r.media.n_relevant %}{% set m = r.media %}{% set marts = media_articles(m) %}
+    <details class="fold media-sec">
+      <summary>Co psala česká média <span class="fold-n">{{ m.n_relevant }} článků</span></summary>
+      <p class="meta">{{ m.n_relevant }} článků k energetice a klimatu z {{ m.n_collected }} zachycených ve {{ m.outlets|length }} médiích · nejčastější témata: {% for k, v in m.topics.items() %}{% if loop.index <= 3 %}{{ media_topic_labels.get(k, k) }} ({{ v }}){% if loop.index < 3 and not loop.last %}, {% endif %}{% endif %}{% endfor %}</p>
+      {% if m.draft %}
+      <p class="lead"><strong>{{ m.draft.headline_cs|plain }}</strong></p>
+      <p>{{ m.draft.summary_cs|rich }}</p>
+      <h3>Hlavní témata a příběhy</h3>
+      <ul>{% for t in m.draft.themes %}<li><strong>{{ t.title_cs }}</strong> – {{ t.text_cs|rich }} {{ media_evidence(t.evidence_item_ids, marts) }}</li>{% endfor %}</ul>
+      <h3>Rámování</h3><p>{{ m.draft.framing_cs|rich }}</p>
+      {% if m.draft.outlets_cs %}<h3>Rozdíly mezi médii</h3><p>{{ m.draft.outlets_cs|rich }}</p>{% endif %}
+      {% endif %}
+      <div class="media-grid">
+        <div class="mood-card">
+          <p class="mood-k">Témata (počet článků)</p>
+          {% set tmax = m.topics.values()|max %}
+          {% for k, v in m.topics.items() %}<div class="hbar"><span class="hbar-l">{{ media_topic_labels.get(k, k) }}</span><span class="hbar-b"><span style="width: {{ (v / tmax * 100)|round(1) }}%"></span></span><span class="hbar-n">{{ v }}</span></div>{% endfor %}
+        </div>
+        <div class="mood-card">
+          <p class="mood-k">Převažující rámec</p>
+          {% set fmax = m.frames.values()|max %}
+          {% for k, v in m.frames.items() %}<div class="hbar"><span class="hbar-l">{{ media_frame_labels.get(k, k) }}</span><span class="hbar-b"><span style="width: {{ (v / fmax * 100)|round(1) }}%"></span></span><span class="hbar-n">{{ v }}</span></div>{% endfor %}
+        </div>
+      </div>
       <div class="table-wrap"><table class="weights">
         <thead><tr><th>Médium</th><th>K tématu</th><th>Všech článků</th><th>Podíl</th></tr></thead>
         <tbody>{% for o in m.outlets %}{% if o.collected %}<tr><td>{{ o.outlet }}</td><td>{{ o.relevant }}</td><td>{{ o.collected }}</td><td>{{ ((o.relevant / o.collected) * 100)|round(1) }} %</td></tr>{% endif %}{% endfor %}</tbody>
       </table></div>
-      <p>Žánry: {% for k, v in m.genres.items() %}{{ media_genre_labels.get(k, k) }} {{ v }}{% if not loop.last %} · {% endif %}{% endfor %}. Průměrné vyznění vůči dekarbonizaci ≈ {{ '%+d'|format(m.tone_index) if m.tone_index else '0' }} (−100 až +100, orientační).</p>
+      <p class="hint">Analýza titulků a perexů z RSS feedů (sběr každou hodinu). Relevanci, téma, rámec, žánr a vyznění určuje AI, čísla počítá program. Kódování AI není validované. Průměrné vyznění ≈ {{ '%+d'|format(m.tone_index) if m.tone_index else '0' }} (−100 až +100, orientační).{% if m.notes %} Poznámky: {{ m.notes|join('; ') }}.{% endif %}</p>
     </details>
-    <p class="hint">Analýza titulků a perexů z RSS feedů ({{ m.outlets|length }} médií, sběr každou hodinu). Relevanci, téma, rámec, žánr a vyznění každého článku určuje AI, čísla počítá program. Jde o orientační obsahovou analýzu – kódování AI není validované a feedy nemusí zachytit vše (např. články jen v tištěném vydání).{% if m.notes %} Poznámky: {{ m.notes|join('; ') }}.{% endif %}</p>
-  </section>
-  {% endif %}
+    {% endif %}
 
-  {% if r.forecasts_cs %}
-  <section aria-labelledby="prognozy">
-    <h2 id="prognozy">Prognózy a scénáře</h2>
-    <ul>
-    {% for f in r.forecasts_cs %}
-      <li><strong>{{ f.author }}</strong> (horizont: {{ f.horizon }}; klíčové číslo: {{ f.key_figure }}) – {{ f.text_cs|rich }} {{ evidence(f.evidence_item_ids, items) }}</li>
-    {% endfor %}
-    </ul>
-  </section>
-  {% endif %}
+    {% if r.opportunities_cs %}
+    <details class="fold">
+      <summary>Příležitosti: výzvy a financování <span class="fold-n">{{ r.opportunities_cs|length }}</span></summary>
+      <p class="hint">Výzvy vhodné pro společenskovědní výzkum (bez technologických a investičních dotací). Vybírá AI – podmínky vždy ověřte u poskytovatele.</p>
+      {% for program, opps in opp_groups %}
+      <h4 class="opp-program"><span class="opp-badge">{{ program }}</span></h4>
+      <ul>
+      {% for o in opps %}
+        <li><a href="{{ o.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ o.title_cs }}</strong>&nbsp;↗</a> – {% if o.amount_min == o.amount_max %}{{ o.amount_max }}{% else %}{{ o.amount_min }} – {{ o.amount_max }}{% endif %} · uzávěrka <strong>{{ o.deadline }}</strong>. {{ o.summary_cs|first_sentence|rich }}</li>
+      {% endfor %}
+      </ul>
+      {% endfor %}
+    </details>
+    {% endif %}
 
-  {% if r.by_region %}
-  <section aria-labelledby="regiony">
-    <h2 id="regiony">Podle regionů</h2>
-    <dl class="regions">
-      <dt><span class="tag tag-cz">CZ</span> Česko</dt><dd>{{ r.by_region.cz|rich }}</dd>
-      <dt><span class="tag tag-eu">EU</span> Evropa</dt><dd>{{ r.by_region.eu|rich }}</dd>
-      <dt><span class="tag tag-us">US</span> USA</dt><dd>{{ r.by_region.us|rich }}</dd>
-      {% if r.by_region.global_ %}<dt><span class="tag tag-global">GLOBAL</span> Svět</dt><dd>{{ r.by_region.global_|rich }}</dd>{% endif %}
-    </dl>
-  </section>
-  {% endif %}
+    {% if r.sentiment %}{% set s = r.sentiment %}
+    <details class="fold">
+      <summary>Přibližná nálada diskurzu (odhad) <span class="fold-n">{{ '%+d'|format(s.index) if s.index else '≈ 0' }}</span></summary>
+      <p>Orientační odhad vyznění {{ s.n }} hodnocených zpráv pro dekarbonizaci ČR na škále −100 až +100: <strong>{{ '%+d'|format(s.index) if s.index else '≈ 0' }} ({{ s.label_cs }})</strong>{% if prev_index is not none %}; předchozí týden přibližně {{ '%+d'|format(prev_index) if prev_index else '0' }}{% endif %}.</p>
+      <div class="mood-regions">
+        {% for g in s.by_region %}
+        <div class="mood-row">
+          <span class="mood-reg">{{ region_labels.get(g.region, g.region) }}</span>
+          {% if g.n >= 3 %}
+          <span class="mood-bar"><span class="seg neg" style="width: {{ (g.negative*100)|round(1) }}%"></span><span class="seg neu" style="width: {{ (g.neutral*100)|round(1) }}%"></span><span class="seg pos" style="width: {{ (g.positive*100)|round(1) }}%"></span></span>
+          <span class="mood-rn">≈ {{ '%+d'|format(g.index) if g.index else '0' }} <small>(n = {{ g.n }})</small></span>
+          {% else %}<span class="mood-few">příliš málo zpráv (n = {{ g.n }})</span>{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+      <p class="hint">Jde o přibližný odhad z hodnocení AI, ne o měření veřejného mínění; není validovaný a výkyvy mezi týdny mohou být náhodné. <a href="{{ base }}metodika/#nalada">Jak odhad vzniká</a>.</p>
+    </details>
+    {% endif %}
 
-  {% if watch %}
-  <section aria-labelledby="sledovat">
-    <h2 id="sledovat">Co dál sledovat</h2>
-    <ul>{% for w in watch %}<li>{{ w.text_cs|rich }} {{ evidence(w.evidence_item_ids, items) }}</li>{% endfor %}</ul>
-  </section>
-  {% endif %}
+    {% if r.data_gaps_cs %}
+    <details class="fold">
+      <summary>Co chybělo nebo nešlo ověřit</summary>
+      <ul class="gaps">{% for g in r.data_gaps_cs %}<li>{{ g|rich }}</li>{% endfor %}</ul>
+    </details>
+    {% endif %}
 
-  {% if r.data_gaps_cs %}
-  <section aria-labelledby="mezery">
-    <h2 id="mezery">Co chybělo nebo nešlo ověřit</h2>
-    <ul class="gaps">{% for g in r.data_gaps_cs %}<li>{{ g|rich }}</li>{% endfor %}</ul>
-  </section>
-  {% endif %}
-
-  <section aria-labelledby="podklady">
-    <h2 id="podklady">Všechny podklady ({{ r.items|length }})</h2>
-    <p class="hint">Položky, se kterými syntéza pracovala. Odkazy u bodů výše vedou přímo na zdroj.</p>
-    <ul class="sources-list">
-    {% for it in r.items %}
-      <li id="i-{{ it.id }}">
-        <p class="card-meta">{{ tags(it) }} <span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}</p>
-        <p class="item-title">{{ item_title(it) }}</p>
-        {% if it.one_line_cs %}<p class="one-line">{{ it.one_line_cs }}</p>{% endif %}
-      </li>
-    {% endfor %}
-    </ul>
+    <details class="fold">
+      <summary>Všechny podklady <span class="fold-n">{{ r.items|length }}</span></summary>
+      <ul class="sources-list">
+      {% for it in r.items %}
+        <li id="i-{{ it.id }}">
+          <p class="card-meta">{{ tags(it) }} <span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}</p>
+          <p class="item-title">{{ item_title(it) }}</p>
+          {% if it.one_line_cs %}<p class="one-line">{{ it.one_line_cs }}</p>{% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </details>
   </section>
 </article>
 

@@ -10,7 +10,8 @@ from decarbotracker.synthesis import synthesize
 
 @pytest.fixture
 def report(settings):
-    sel = [make_scored(make_item(i, region="CZ" if i < 3 else "EU"), relevance=7) for i in range(12)]
+    sel = [make_scored(make_item(i, region="CZ" if i < 3 else "EU", summary="Výtah článku."), relevance=7)
+           for i in range(12)]
     return synthesize("2026-W39", sel, 40, settings, None)
 
 
@@ -66,7 +67,28 @@ def test_llm_digest_link_placeholder_replaced(settings, report):
         x_thread=["🧵 Háček", "1/ jedna", "Celý přehled: {ODKAZ} #klima"])
     d = build_digest(report, settings, FakeClient(settings, draft))
     assert d.x_thread[-1].startswith("Celý přehled: https://") and "{ODKAZ}" not in "".join(d.x_thread)
+    # e-mail nese stejná 3 zjištění jako stránka (AI tu píše jen vlákno)
+    assert [f.item_id for f in d.findings] == [f.item_id for f in report.key_findings]
+
+
+def test_legacy_report_uses_llm_findings(settings, report):
+    ids = [i.id for i in report.items]
+    report.key_findings = []
+    draft = DigestDraft(
+        findings=[DigestFinding(item_id=ids[0], geo="CZ", title_cs="Česko", text_cs="A."),
+                  DigestFinding(item_id=ids[5], geo="EU", title_cs="Evropa", text_cs="B."),
+                  DigestFinding(item_id=ids[6], geo="EU", title_cs="Další", text_cs="C.")],
+        x_thread=["🧵 Háček", "{ODKAZ}"])
+    d = build_digest(report, settings, FakeClient(settings, draft))
     assert [f.title_cs for f in d.findings] == ["Česko", "Evropa", "Další"]
+
+
+def test_title_only_items_never_in_email(settings, report):
+    for it in report.items:
+        it.has_summary = it.geo_focus != "CZ" or it.id == report.items[2].id
+    report.key_findings = []
+    d = build_digest(report, settings, None)
+    assert all(next(i for i in report.items if i.id == f.item_id).has_summary for f in d.findings)
 
 
 def test_render_email_contains_findings_and_thread(settings, report):
@@ -119,4 +141,5 @@ def test_digest_retries_on_max_tokens(settings, report):
     client = Flaky(settings, ok)
     d = build_digest(report, settings, client)
     assert client.calls == [12000, 24000]
-    assert d.model == settings.llm.model_synthesis and [f.title_cs for f in d.findings] == ["A", "B", "C"]
+    assert d.model == settings.llm.model_synthesis
+    assert [f.item_id for f in d.findings] == [f.item_id for f in report.key_findings]

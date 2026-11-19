@@ -8,6 +8,7 @@
 sources:
   # ======================================================================= ČESKO – RSS
   - id: cvvm-ekologie
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
     name: CVVM – Ekologie
     type: rss
     url: "https://cvvm.soc.cas.cz/cz/tiskove-zpravy/ostatni/ekologie?format=feed&type=rss"
@@ -15,11 +16,13 @@ sources:
     source_type: polling
     language: cs
     topic_filter: false
-    weight: 1.5
+    weight: 1.0   # vlastní/partnerský zdroj bez zvýhodnění (od 23. 11. 2026)
     enabled: true
     notes: "Průzkumy CVVM k ekologii a klimatu."
 
   - id: stem
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
+    organization: stem
     name: STEM
     type: rss
     url: "https://www.stem.cz/feed/"
@@ -27,11 +30,13 @@ sources:
     source_type: polling
     language: cs
     topic_filter: true
-    weight: 1.3
+    weight: 1.0   # vlastní/partnerský zdroj bez zvýhodnění (od 23. 11. 2026)
     enabled: true
     notes: ""
 
   - id: stem-klima
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
+    organization: stem
     name: STEM – změna klimatu
     type: rss
     url: "https://www.stem.cz/tag/zmena-klimatu/feed/"
@@ -39,7 +44,7 @@ sources:
     source_type: polling
     language: cs
     topic_filter: false
-    weight: 1.4
+    weight: 1.0   # vlastní/partnerský zdroj bez zvýhodnění (od 23. 11. 2026)
     enabled: true
     notes: ""
 
@@ -251,6 +256,8 @@ sources:
     notes: ""
 
   - id: irozhlas-veda
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
+    organization: irozhlas
     name: iROZHLAS – Věda a technologie
     type: rss
     url: "https://www.irozhlas.cz/rss/irozhlas/section/veda-technologie"
@@ -264,6 +271,7 @@ sources:
     notes: ""
 
   - id: ct24-veda
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
     name: ČT24 – Věda
     type: rss
     url: "https://ct24.ceskatelevize.cz/rss/veda"
@@ -290,6 +298,7 @@ sources:
     notes: ""
 
   - id: hn-byznys
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
     name: Hospodářské noviny – Byznys
     type: rss
     url: "https://byznys.hn.cz/?m=rss"
@@ -303,6 +312,7 @@ sources:
     notes: ""
 
   - id: e15
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
     name: E15
     type: rss
     url: "https://www.e15.cz/rss"
@@ -316,6 +326,7 @@ sources:
     notes: ""
 
   - id: seznam-zpravy
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
     name: Seznam Zprávy
     type: rss
     url: "https://www.seznamzpravy.cz/rss"
@@ -355,6 +366,7 @@ sources:
     scrape: {item: "div.item-inner", title: "h3 a", date: "span.date"}
 
   - id: ipsos-cz
+    organization: ipsos
     name: Ipsos Česko
     type: scrape
     url: "https://www.ipsos.com/cs-cz/news-hub"
@@ -368,6 +380,7 @@ sources:
     scrape: {item: "div.insights-block, div.list-item", title: "h3 a", date: "time", date_attr: datetime, summary: "div.list-item__teaser, div.insights-block__description"}
 
   - id: irozhlas-klima
+    organization: irozhlas
     name: iROZHLAS – tag klimatická změna
     type: scrape
     url: "https://www.irozhlas.cz/zpravy-tag/klimaticka-zmena"
@@ -498,6 +511,7 @@ sources:
 
   # ======================================================================= EU / EVROPA – RSS
   - id: carbon-brief
+    organization: carbon-brief
     name: Carbon Brief
     type: rss
     url: "https://www.carbonbrief.org/feed/"
@@ -558,6 +572,7 @@ sources:
     notes: "Klimatická komunikace."
 
   - id: more-in-common-de
+    organization: more-in-common
     name: More in Common Deutschland
     type: rss
     url: "https://www.moreincommon.de/feed/"
@@ -570,6 +585,7 @@ sources:
     notes: ""
 
   - id: more-in-common-uk
+    organization: more-in-common
     name: More in Common UK
     type: rss
     url: "https://www.moreincommon.org.uk/feed/"
@@ -582,6 +598,7 @@ sources:
     notes: ""
 
   - id: grantham-news
+    organization: grantham
     name: Grantham Institute (LSE) – news
     type: rss
     url: "https://www.lse.ac.uk/granthaminstitute/feed/?post_type=news"
@@ -594,6 +611,7 @@ sources:
     notes: ""
 
   - id: grantham-publications
+    organization: grantham
     name: Grantham Institute (LSE) – publikace
     type: rss
     url: "https://www.lse.ac.uk/granthaminstitute/feed/?post_type=publication"
@@ -606,6 +624,7 @@ sources:
     notes: ""
 
   - id: dg-clima
+    organization: evropska-komise
     name: Evropská komise – DG CLIMA
     type: rss
     url: "https://climate.ec.europa.eu/node/2/rss_en"
@@ -618,6 +637,7 @@ sources:
     notes: ""
 
   - id: dg-ener
+    organization: evropska-komise
     name: Evropská komise – DG ENER
     type: rss
     url: "https://energy.ec.europa.eu/node/2/rss_en"
@@ -654,6 +674,7 @@ sources:
     notes: ""
 
   - id: ipsos-global
+    organization: ipsos
     name: Ipsos (global)
     type: rss
     url: "https://www.ipsos.com/en/rss.xml"
@@ -716,6 +737,7 @@ sources:
     scrape: {item: "a.card", title: ".cardtitle", date: ".carddate"}
 
   - id: iea-news
+    organization: iea
     name: IEA – news a commentaries
     type: scrape
     url: "https://www.iea.org/news"
@@ -729,6 +751,7 @@ sources:
     scrape: {item: "div.m-news-detailed-listing", title: ".m-news-detailed-listing__title", link: "a.m-news-detailed-listing__link", date: ".m-news-detailed-listing__date"}
 
   - id: iea-reports
+    organization: iea
     name: IEA – reports
     type: scrape
     url: "https://www.iea.org/reports"
@@ -943,6 +966,7 @@ sources:
 
   # ======================================================================= ANALYTICKÉ ZDROJE (přidáno 26. 10. 2026)
   - id: carbon-brief-daily
+    organization: carbon-brief
     name: Carbon Brief – Daily Brief
     type: rss
     url: "https://www.carbonbrief.org/daily-brief/feed/"
@@ -1066,6 +1090,7 @@ sources:
   # ======================================================================= ZÁSOBNÍK NÁHRAD (reserve: true)
   # Stahují se, až když některý zdroj dva týdny po sobě nedodá nic do výběru (rotace, viz Metodika).
   - id: denik-n
+    protected: true   # klíčový zdroj – nepozastavuje se rotací
     name: Deník N
     type: rss
     url: "https://denikn.cz/feed/"

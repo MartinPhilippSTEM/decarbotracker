@@ -5549,43 +5549,7 @@
       ]
     }
   },
-  "paused": {
-    "e15": {
-      "since": "2026-W43",
-      "until": "2026-W47",
-      "replaced_by": "denik-n"
-    },
-    "seznam-zpravy": {
-      "since": "2026-W43",
-      "until": "2026-W47",
-      "replaced_by": "ekonom"
-    },
-    "ct24-veda": {
-      "since": "2026-W43",
-      "until": "2026-W47",
-      "replaced_by": "enviweb"
-    },
-    "irozhlas-veda": {
-      "since": "2026-W43",
-      "until": "2026-W47",
-      "replaced_by": "info-cz"
-    },
-    "heatmap": {
-      "since": "2026-W43",
-      "until": "2026-W47",
-      "replaced_by": "cleantechnica"
-    },
-    "hn-byznys": {
-      "since": "2026-W43",
-      "until": "2026-W47",
-      "replaced_by": "reflex"
-    },
-    "ekolist": {
-      "since": "2026-W43",
-      "until": "2026-W47",
-      "replaced_by": "iness"
-    }
-  },
+  "paused": {},
   "activated": {
     "denik-n": {
       "since": "2026-W43",
@@ -5624,7 +5588,6 @@
     "respekt": "2026-W44",
     "info-cz": "2026-W44",
     "cleantechnica": "2026-W44",
-    "denik-n": "2026-W44",
     "reflex": "2026-W44",
     "ekonom": "2026-W46"
   }

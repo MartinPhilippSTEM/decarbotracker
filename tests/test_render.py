@@ -10,7 +10,8 @@ from decarbotracker.synthesis import synthesize
 
 @pytest.fixture
 def with_report(settings):
-    sel = [make_scored(make_item(i, region="CZ" if i < 4 else "EU"), relevance=7, attitudes=i % 3 == 0)
+    sel = [make_scored(make_item(i, region="CZ" if i < 4 else "EU", summary="Výtah článku."), relevance=7,
+                       attitudes=i % 3 == 0)
            for i in range(14)]
     rep = synthesize("2026-W39", sel, 40, settings, None)
     write_json(week_path("2026-W39"), rep)
@@ -98,11 +99,13 @@ def test_rich_filter_escapes_html_and_renders_bold():
 def test_glance_tables_rendered(settings, with_report, tmp_path):
     out = build_site(settings, out_dir=tmp_path / "site")
     html = (out / "index.html").read_text(encoding="utf-8")
-    assert "Pět nejdůležitějších analýz a článků" in html
-    assert "Události a termíny" in html
-    assert html.index("Na první pohled") < html.index('id="swot"')
-    assert "<strong>deterministický ukázkový výstup</strong>" in html
-    assert "**" not in html
+    order = ["Tři zjištění týdne", 'id="cesko"', 'id="svet"', 'id="postoje"', 'id="sledovat"', 'id="analytici"']
+    pos = [html.index(x) for x in order]
+    assert pos == sorted(pos)
+    # SWOT, podklady a další podrobnosti jsou sbalené až pod hlavní částí
+    assert html.index("SWOT: dekarbonizace") > html.index('id="analytici"')
+    assert "<details class=\"fold\">" in html and "<details class=\"fold\" open" not in html
+    assert "**" not in html and "<strong>" in html
 
 
 def test_opportunities_table_and_back_to_top(settings, with_report, tmp_path):
@@ -118,5 +121,5 @@ def test_opportunities_table_and_back_to_top(settings, with_report, tmp_path):
     html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
     assert "Příležitosti: výzvy a financování" in html
     assert "1 mil. Kč – 10 mil. Kč" in html and "15. 12. 2026" in html
-    assert html.index("Události a termíny") < html.index("Příležitosti: výzvy") < html.index('id="swot"')
+    assert html.index('id="analytici"') < html.index("Příležitosti: výzvy")
     assert 'href="#nahoru"' in html and 'id="nahoru"' in html

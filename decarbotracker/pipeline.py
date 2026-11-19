@@ -14,13 +14,47 @@ from decarbotracker.filter import prefilter
 from decarbotracker.llm import ClaudeClient, LLMError, UsageTracker
 from decarbotracker.models import Item, WeeklyReport
 from decarbotracker.opportunities import find_opportunities
-from decarbotracker.scoring import score_items, select_for_synthesis
+from decarbotracker.scoring import is_cz, score_items, select_for_synthesis
 from decarbotracker.sentiment import summarize as summarize_sentiment
 from decarbotracker.sources import SourceHealth, disabled_health, fetch_all, save_health
 from decarbotracker.storage import items_path, read_json, week_path, write_json
 from decarbotracker.synthesis import fallback_report, synthesize
 
 log = logging.getLogger(__name__)
+
+
+def prompt_version(name: str) -> str:
+    """Verze promptu z hlavičky <!-- prompt: … | verze X | datum -->."""
+    import re
+
+    from decarbotracker.config import prompt_path
+
+    head = prompt_path(name).read_text(encoding="utf-8").splitlines()[0]
+    m = re.search(r"verze\s+([\w.]+)", head)
+    return m.group(1) if m else "?"
+
+
+def scores_path(week: str):
+    from decarbotracker.config import data_dir
+
+    return data_dir() / "scores" / f"{week}.json"
+
+
+def save_scores(week: str, scored: list, selected_ids: set[str], settings: Settings) -> None:
+    """Skóre VŠECH hodnocených kandidátů (vybraných i nevybraných) – aby šel výběr zpětně ověřit."""
+    write_json(scores_path(week), {
+        "week": week,
+        "generated_at": datetime.now(UTC).isoformat(),
+        "model_scoring": settings.llm.model_scoring,
+        "prompt_scoring": prompt_version("scoring.md"),
+        "selection": settings.selection.model_dump(),
+        "items": [{
+            "id": s.item.id, "title": s.item.title, "url": s.item.url, "source_id": s.item.source_id,
+            "source_type": s.item.source_type, "has_summary": bool(s.item.summary_raw.strip()),
+            "scored_by": s.scored_by, "final_score": s.final_score, "selected": s.item.id in selected_ids,
+            "score": s.score.model_dump(),
+        } for s in scored],
+    })
 
 Collector = Callable[[Settings, datetime], tuple[list[Item], list[SourceHealth]]]
 
@@ -91,27 +125,43 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
         except LLMError as exc:
             log.error("%s – pokračuji bez LLM (záložní přehled)", exc)
 
-    if not dry_run and client is None:
-        scored = score_items(candidates, settings, None)
-        report = fallback_report(week, select_for_synthesis(scored, settings.selection), len(candidates), settings,
-                                 "chybí nebo je neplatný ANTHROPIC_API_KEY")
-    else:
-        scored = score_items(candidates, settings, client)
-        selected = select_for_synthesis(scored, settings.selection)
-        n_cz = sum(1 for s in selected if s.score.geo_focus == "CZ")
-        n_att = sum(1 for s in selected if s.score.is_public_attitudes_or_communication)
-        log.info("Do syntézy vybráno %d položek (CZ: %d, postoje/komunikace: %d)", len(selected), n_cz, n_att)
-        report = synthesize(week, selected, len(candidates), settings, client)
+    org_of = {s.id: s.organization or s.id for s in load_sources()}
 
-    # Co psala česká média: poslední sběr + analýza všech zachycených článků týdne
+    # Co psala česká média: poslední sběr + analýza všech zachycených článků týdne (před syntézou,
+    # aby hlavní přehled věděl, co česká média řešila)
+    media_report = None
     if settings.media.enabled and collector is None:
         from decarbotracker import media
 
         try:
             media.collect(settings, now)
-            report.media = media.analyze(week, settings, client)
+            media_report = media.analyze(week, settings, client)
         except Exception:  # noqa: BLE001 - mediální sekce nesmí shodit přehled
             log.exception("Mediální analýza selhala")
+
+    if not dry_run and client is None:
+        scored = score_items(candidates, settings, None)
+        report = fallback_report(week, select_for_synthesis(scored, settings.selection, org_of=org_of),
+                                 len(candidates), settings, "chybí nebo je neplatný ANTHROPIC_API_KEY")
+        selected = []
+    else:
+        scored = score_items(candidates, settings, client)
+        selected = select_for_synthesis(scored, settings.selection, org_of=org_of)
+        media_context, media_items = "", []
+        if media_report is not None:
+            from decarbotracker import media
+            from decarbotracker.normalize import normalize_url
+
+            media_context, media_items = media.synthesis_inputs(
+                media_report, week, settings, {normalize_url(s.item.url) for s in selected})
+        n_cz = sum(1 for s in selected if is_cz(s))
+        n_att = sum(1 for s in selected if s.score.is_public_attitudes_or_communication)
+        log.info("Do syntézy vybráno %d položek (ČR: %d, postoje/komunikace: %d) + %d článků českých médií",
+                 len(selected), n_cz, n_att, len(media_items))
+        report = synthesize(week, selected + media_items, len(candidates), settings, client,
+                            media_context=media_context, media_ids={s.item.id for s in media_items})
+    report.media = media_report
+    save_scores(week, scored, {i.id for i in report.items}, settings)
 
     # Orientační odhad nálady diskurzu (z hodnocení AI; bez dalšího volání)
     report.sentiment = summarize_sentiment(scored, {i.id for i in report.items})
@@ -137,7 +187,7 @@ def run_pipeline(week: str, settings: Settings, *, dry_run: bool = False, reuse_
         from decarbotracker import source_review
 
         perf = source_review.load_state()
-        source_review.record_week(perf, week, windowed, report, {i.source_id for i in fetched})
+        source_review.record_week(perf, week, windowed, report, {i.source_id for i in fetched}, candidates)
         changes = source_review.rotate(perf, week)
         source_review.save_state(perf)
         if changes:

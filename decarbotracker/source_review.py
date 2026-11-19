@@ -1,8 +1,12 @@
-"""Hlídání výkonu zdrojů a rotace: zdroj, který dva týdny po sobě publikuje, ale nic z něj neprojde
-do výběru, se dočasně pozastaví a místo něj se aktivuje náhradní zdroj ze zásobníku (reserve: true).
+"""Hlídání výkonu zdrojů a rotace: zdroj, ze kterého 4 týdny po sobě neprojde tematickým předfiltrem
+ani jedna položka (píše mimo téma, nebo je technicky nefunkční), se dočasně pozastaví a místo něj se
+aktivuje náhradní zdroj ze zásobníku (reserve: true).
+
+Od 23. 11. 2026 už nestačí „nic nebylo vybráno do přehledu“ – samotný výběr může být zkreslený
+(nezávislé hodnocení ukázalo, že tak z rotace vypadla kvalitní česká média).
 
 Stav je v data/source_performance.json:
-  weeks:     {týden: {zdroj: [položek v okně, položek ve výběru]}}
+  weeks:     {týden: {zdroj: [položek v okně, položek ve výběru, položek po předfiltru]}}
   paused:    {zdroj: {since, until, replaced_by}}       – pozastavené (po `until` se vrací)
   activated: {náhrada: {since, replaces}}               – aktivované náhrady ze zásobníku
   flagged:   {zdroj: týden}                             – nevýkonné, ale chybí náhrada
@@ -21,7 +25,7 @@ from decarbotracker.weeks import week_bounds, week_of
 
 log = logging.getLogger(__name__)
 
-UNDERPERFORM_WEEKS = 2      # kolik týdnů po sobě bez jediné položky ve výběru
+UNDERPERFORM_WEEKS = 4      # kolik týdnů po sobě bez jediné položky, která projde tematickým předfiltrem
 PAUSE_WEEKS = 4             # na jak dlouho se pozastaví (pak dostane novou šanci)
 MAX_ROTATIONS_PER_RUN = 5   # nejvýš tolik výměn za jeden běh (aby se soubor zdrojů neměnil skokově)
 
@@ -60,15 +64,19 @@ def active_sources(state: dict[str, Any] | None = None) -> list[Source]:
 
 
 def record_week(state: dict[str, Any], week: str, windowed: list[Item], report: WeeklyReport,
-                fetched_source_ids: set[str]) -> None:
-    """Uloží, kolik položek měl každý stažený zdroj v okně týdne a kolik z nich prošlo do výběru."""
+                fetched_source_ids: set[str], candidates: list[Item] | None = None) -> None:
+    """Uloží, kolik položek měl každý stažený zdroj v okně týdne, kolik z nich prošlo do výběru
+    a kolik prošlo tematickým předfiltrem."""
     selected = {i.id for i in report.items}
-    stats: dict[str, list[int]] = {sid: [0, 0] for sid in fetched_source_ids}
+    passed = {i.id for i in (candidates if candidates is not None else windowed)}
+    stats: dict[str, list[int]] = {sid: [0, 0, 0] for sid in fetched_source_ids}
     for it in windowed:
-        row = stats.setdefault(it.source_id, [0, 0])
+        row = stats.setdefault(it.source_id, [0, 0, 0])
         row[0] += 1
         if it.id in selected:
             row[1] += 1
+        if it.id in passed:
+            row[2] += 1
     state["weeks"][week] = dict(sorted(stats.items()))
 
 
@@ -83,8 +91,8 @@ def _plus_weeks(week: str, n: int) -> str:
 
 
 def underperformers(state: dict[str, Any], week: str) -> list[tuple[str, int]]:
-    """Zdroje, které v posledních UNDERPERFORM_WEEKS týdnech neměly nic ve výběru, i když publikovaly.
-    Vrací (id, počet položek v okně za ty týdny), seřazené od nejvíc publikujících."""
+    """Zdroje, ze kterých v posledních UNDERPERFORM_WEEKS týdnech neprošla tematickým předfiltrem ani jedna
+    položka (mimo téma nebo nefunkční). Vrací (id, počet položek v okně za ty týdny)."""
     weeks = [week]
     for _ in range(UNDERPERFORM_WEEKS - 1):
         weeks.append(_previous_week(weeks[-1]))
@@ -98,10 +106,10 @@ def underperformers(state: dict[str, Any], week: str) -> list[tuple[str, int]]:
         if s is None or is_protected(s) or s.source_type == "funding" or sid in state["paused"]:
             continue
         rows = [state["weeks"][w].get(sid) for w in weeks]
-        if any(r is None for r in rows):
-            continue  # zdroj v některém týdnu nestahován (nový / byl pozastaven)
+        if any(r is None or len(r) < 3 for r in rows):
+            continue  # zdroj v některém týdnu nestahován, nebo chybí údaj o předfiltru (záznamy před 23. 11. 2026)
         published = sum(r[0] for r in rows)
-        if published > 0 and all(r[1] == 0 for r in rows):
+        if all(r[2] == 0 for r in rows):
             out.append((sid, published))
     return sorted(out, key=lambda x: -x[1])
 
@@ -123,14 +131,14 @@ def rotate(state: dict[str, Any], week: str) -> list[str]:
         if pick is None:
             if sid not in state["flagged"]:
                 state["flagged"][sid] = week
-                changes.append(f"{sid}: {UNDERPERFORM_WEEKS} týdny nic ve výběru ({published} položek), "
+                changes.append(f"{sid}: {UNDERPERFORM_WEEKS} týdny nic k tématu ({published} položek), "
                                "náhrada v zásobníku chybí – zůstává aktivní")
             continue
         reserves.remove(pick)
         state["paused"][sid] = {"since": week, "until": _plus_weeks(week, PAUSE_WEEKS), "replaced_by": pick.id}
         state["activated"][pick.id] = {"since": week, "replaces": sid}
         state["flagged"].pop(sid, None)
-        changes.append(f"{sid}: {UNDERPERFORM_WEEKS} týdny nic ve výběru ({published} položek) → pozastaveno do "
+        changes.append(f"{sid}: {UNDERPERFORM_WEEKS} týdny nic k tématu ({published} položek) → pozastaveno do "
                        f"{state['paused'][sid]['until']}, náhrada: {pick.id}")
     for line in changes:
         log.info("Rotace zdrojů: %s", line)
@@ -142,7 +150,7 @@ def performance_rows(state: dict[str, Any], last_n: int = 4) -> dict[str, dict[s
     weeks = sorted(state["weeks"])[-last_n:]
     out: dict[str, dict[str, int]] = {}
     for w in weeks:
-        for sid, (n_win, n_sel) in state["weeks"][w].items():
+        for sid, (n_win, n_sel, *_rest) in state["weeks"][w].items():
             row = out.setdefault(sid, {"window": 0, "selected": 0, "weeks": 0})
             row["window"] += n_win
             row["selected"] += n_sel

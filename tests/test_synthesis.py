@@ -3,13 +3,13 @@ from conftest import make_item, make_scored
 
 from decarbotracker.llm import LLMMaxTokens, LLMRefusal, LLMValidationError, UsageTracker
 from decarbotracker.models import (
-    ByRegion,
+    KeyFinding,
+    NewsItem,
     PublicAttitudes,
     Recommendation,
     ReportDraft,
     Swot,
     SwotPoint,
-    TopItem,
     WatchItem,
     WeeklyReport,
 )
@@ -33,16 +33,19 @@ def _draft(ids, bad="neexistuje123"):
     sw = Swot(strengths=pts("S"), weaknesses=pts("W"), opportunities=pts("O"), threats=pts("T"))
     sw.strengths.append(SwotPoint(text_cs="Vymyšlený bod", evidence_item_ids=[bad], geo="CZ"))
     sw.threats[0].evidence_item_ids.append(bad)
+    def news(i):
+        return NewsItem(item_id=i, title_cs="Titulek", text_cs="Proto.", key_figure="")
+
     return ReportDraft(
-        headline_cs="Hlavní poselství.", executive_summary_cs="Shrnutí.",
+        headline_cs="Hlavní poselství.",
+        key_findings=[KeyFinding(item_id=i, title_cs="Zjištění", text_cs="Text.") for i in (ids[0], ids[4], bad)],
+        cz_items=[news(i) for i in ids[:3]] + [news(bad)],
+        world_items=[news(i) for i in ids[3:8]],
         swot=sw,
-        top_items=[TopItem(item_id=i, why_it_matters_cs="Proto.", key_finding_cs="Zjištění.", category="study")
-                   for i in ids[:9]] + [TopItem(item_id=bad, why_it_matters_cs="x", key_finding_cs="x", category="study")],
         public_attitudes_cs=PublicAttitudes(summary_cs="Nic nového.", surveys=[], communication_recommendations=[
             Recommendation(text_cs="Mluvte o úsporách.", evidence_item_ids=[ids[0]]),
             Recommendation(text_cs="Bez doložení.", evidence_item_ids=[bad]),
         ]),
-        forecasts_cs=[], by_region=ByRegion(cz="CZ text", eu="EU", us="US", **{"global": ""}),
         watchlist_cs=[WatchItem(when="6. 10. 2026", text_cs="Zveřejnění dat", evidence_item_ids=[ids[1]]),
                       WatchItem(when="", text_cs="Vymyšlená akce", evidence_item_ids=[bad])],
         data_gaps_cs=[],
@@ -56,20 +59,18 @@ def test_validate_removes_invalid_evidence_ids():
     draft, logs = validate_draft(_draft(ids), set(ids), geo)
     assert all(t != "Vymyšlený bod" for t in (p.text_cs for p in draft.swot.strengths))
     assert draft.swot.threats[0].evidence_item_ids == [ids[0]]
-    assert all(t.item_id in ids for t in draft.top_items)
+    assert all(n.item_id in ids for n in draft.cz_items + draft.world_items)
+    assert [f.item_id for f in draft.key_findings] == [ids[0], ids[4]]
     assert len(draft.public_attitudes_cs.communication_recommendations) == 1
     assert [e.text_cs for e in draft.watchlist_cs] == ["Zveřejnění dat"]
     assert any("neplatná ID" in line or "bez platného doložení" in line for line in logs)
-    # CZ položky v top_items první
-    assert geo[draft.top_items[0].item_id] == "CZ"
 
 
-def test_validate_hard_error_when_quadrant_empty():
+def test_validate_hard_error_when_no_news():
     sel = _selected()
     ids = [s.item.id for s in sel]
     d = _draft(ids)
-    for p in d.swot.opportunities:
-        p.evidence_item_ids = ["nic"]
+    d.cz_items, d.world_items = [], []
     with pytest.raises(HardValidationError):
         validate_draft(d, set(ids), {})
 
@@ -78,7 +79,7 @@ def test_mock_draft_passes_validation():
     sel = _selected()
     ids = {s.item.id for s in sel}
     draft, _ = validate_draft(mock_draft(sel), ids, {s.item.id: s.score.geo_focus for s in sel})
-    assert draft.swot.strengths and draft.top_items
+    assert draft.swot.strengths and draft.cz_items and draft.key_findings
 
 
 class FakeClient:
@@ -131,7 +132,7 @@ def test_synthesize_refusal_uses_fallback_model_then_fallback_report(settings):
     rep = synthesize(WEEK, sel, 50, settings, client)
     assert client.calls[1]["model"] == settings.llm.model_synthesis_fallback
     assert rep.status == "fallback"
-    assert rep.swot is None and rep.top_items
+    assert rep.swot is None and (rep.cz_items or rep.world_items)
     assert "Syntézu AI se tento týden nepodařilo vytvořit" in rep.notices_cs[0]
 
 

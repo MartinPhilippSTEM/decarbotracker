@@ -241,6 +241,31 @@ def cmd_review_sources(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_export_validation(args: argparse.Namespace) -> int:
+    """Vzorek pro lidskou validaci hodnocení AI (bez AI, zdarma)."""
+    from pathlib import Path
+
+    from decarbotracker.validation import export_sample
+
+    out = Path(args.out or f"validace-{args.week}.csv")
+    export_sample(args.week, args.n, out)
+    print(f"Vzorek pro kodéry: {out} (skóre AI zvlášť v {out.stem}_ai.csv – kodérům ho nedávejte)")
+    return 0
+
+
+def cmd_validation_agreement(args: argparse.Namespace) -> int:
+    """Shoda kodérů a AI (Cohenovo kappa) z vyplněného CSV."""
+    from pathlib import Path
+
+    from decarbotracker.validation import agreement
+
+    res = agreement(Path(args.csv))
+    for k, v in res.items():
+        print(f"{k:<24} {v if v is not None else '—'}")
+    print("Orientačně: kappa ≥ 0,6 = dobrá shoda, 0,4–0,6 = střední, < 0,4 = slabá.")
+    return 0
+
+
 def check_schemas(client, settings) -> int:
     """Levná zkouška (max_tokens=16), že API přijme schémata strukturovaného výstupu (gramatika není moc velká)."""
     import anthropic
@@ -375,6 +400,16 @@ def build_parser() -> argparse.ArgumentParser:
     bs = sub.add_parser("backfill-sentiment", help="doplní odhad nálady k hotovému přehledu (bez stahování)")
     bs.add_argument("--week", required=True, help="týden YYYY-Www")
     bs.set_defaults(func=cmd_backfill_sentiment)
+
+    ev = sub.add_parser("export-validation", help="vzorek pro lidskou validaci hodnocení AI (CSV pro 2 kodéry)")
+    ev.add_argument("--week", required=True, help="týden YYYY-Www (musí mít uložená skóre v data/scores)")
+    ev.add_argument("--n", type=int, default=100, help="velikost vzorku (polovina vybraných, polovina nevybraných)")
+    ev.add_argument("--out", help="výstupní CSV (výchozí validace-<týden>.csv)")
+    ev.set_defaults(func=cmd_export_validation)
+
+    va = sub.add_parser("validation-agreement", help="shoda kodérů a AI (Cohenovo kappa) z vyplněného CSV")
+    va.add_argument("csv", help="vyplněné CSV z export-validation")
+    va.set_defaults(func=cmd_validation_agreement)
 
     k = sub.add_parser("check-key", help="ověří ANTHROPIC_API_KEY (hodnotu nevypisuje)")
     k.set_defaults(func=cmd_check_key)

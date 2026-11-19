@@ -27,24 +27,27 @@
     <li><strong>Sběr:</strong> RSS/Atom feedy, WordPress API, konfigurovatelný scraping výpisů (s respektem k robots.txt) a odborné časopisy přes Crossref a OpenAlex. Bere se okno jednoho ISO týdne (pondělí–neděle, UTC). Položky bez data se řadí podle data prvního spatření.</li>
     <li><strong>Deduplikace:</strong> podle normalizované URL, DOI a podobnosti titulků. U duplicit má přednost primární zdroj (think tank, výzkum) před médiem.</li>
     <li><strong>Předfiltr:</strong> tematicky čisté zdroje projdou vždy. Obecná média a široké feedy musí obsahovat klíčová slova (česká i anglická, kmeny kvůli skloňování).</li>
-    <li><strong>Skórování (levnější model {{ llm.model_scoring }}):</strong> relevance 0–10, témata, geografický fokus a typ obsahu.</li>
-    <li><strong>Finální skóre</strong> = relevance × geografická váha × váha typu zdroje × váha zdroje; +{{ (sel.bonus_attitudes * 100)|round|int }} % pro postoje veřejnosti a komunikaci, +{{ (sel.bonus_original_research * 100)|round|int }} % pro originální výzkum a data, −{{ (sel.opinion_penalty * 100)|round|int }} % pro komentáře.</li>
-    <li><strong>Výběr:</strong> max. {{ sel.max_items_synthesis }} položek do syntézy, přičemž se zajistí aspoň {{ sel.min_cz }} položek s fokusem na ČR a {{ sel.min_attitudes }} k postojům a komunikaci (pokud existují). Kvůli pestrosti je z jednoho zdroje nejvýš {{ sel.max_per_source }} položek a zpravodajská média i odborné časopisy tvoří každé nejvýš {{ (sel.max_media_share * 100)|round|int }} % výběru.</li>
-    <li><strong>Syntéza (model {{ llm.model_synthesis }})</strong> s kontrolou, že všechna citovaná ID existují. Když syntéza selže, zveřejní se týden bez SWOT jen se seznamem nejlépe hodnocených položek.</li>
+    <li><strong>Skórování (levnější model {{ llm.model_scoring }}):</strong> relevance 0–10, témata, geografický fokus, <strong>dopad na ČR (0–3) a dopad na EU (0–3)</strong>, typ obsahu (postoje veřejnosti, vlastní výzkum, komentář, pozvánka na akci). Zadání obsahuje i negativní příklady (např. metodika volebních průzkumů, zdraví bez vazby na klima, počasí, spotřebiče), které mají dostat nízkou relevanci.</li>
+    <li><strong>Finální skóre</strong> se od 23. 11. 2026 <strong>sčítá</strong> (dřív se násobilo šest vah, což zvýhodňovalo zahraniční odborné studie): relevance + {{ sel.cz_impact_points }} × dopad na ČR + {{ sel.eu_impact_points }} × dopad na EU + body za region, typ zdroje a obsahu (tabulka níže). Pozvánky na akce dostanou {{ sel.event_points }} bodu a žádné body za postoje ani výzkum.</li>
+    <li><strong>Výběr:</strong> {{ sel.max_items_synthesis }} položek do syntézy. Zajistí se aspoň {{ sel.min_cz }} položek s fokusem nebo jasným dopadem na ČR a {{ sel.min_attitudes }} k postojům a komunikaci (pokud existují). Pestrost: od jedné organizace nejvýš {{ sel.max_per_source }} položky (např. dva kanály téhož institutu se počítají dohromady), zpravodajská média nejvýš {{ (sel.max_media_share * 100)|round|int }} %, odborné časopisy nejvýš {{ (sel.max_journal_share * 100)|round|int }} % výběru, z jednoho tématu (shluku podobných titulků) nejvýš {{ sel.max_per_topic }} položky a stejné DOI nebo adresa jen jednou. Při shodném skóre rozhoduje dopad na ČR, pak datum. K výběru se přidá až {{ sel.media_items }} relevantních článků z hodinového sběru českých médií, aby přehled odrážel i to, co česká média řešila.</li>
+    <li><strong>Syntéza (model {{ llm.model_synthesis }})</strong> s kontrolou, že všechna citovaná ID existují. Program dál vynucuje, aby se <strong>každá zpráva v hlavní části objevila jen jednou</strong>, aby pozvánky na akce byly jen v oddílu Co sledovat a aby se zjištění týdne (a e-mail) neopírala o položky, u kterých je k dispozici jen titulek. Když syntéza selže, zveřejní se týden jen se seznamem nejlépe hodnocených položek.</li>
+    <li><strong>Ověřitelnost:</strong> skóre všech hodnocených kandidátů (vybraných i nevybraných) se ukládá spolu s verzí zadání a modelem (data/scores). Hodnocení AI zatím <strong>nebylo ověřeno lidskými kodéry</strong>; program umí připravit vzorek k nezávislému kódování dvěma lidmi a spočítat shodu (Cohenovo kappa).</li>
   </ol>
-  <h3>Váhy</h3>
+  <h3>Body ke skóre</h3>
   <table class="weights">
-    <thead><tr><th>Region</th><th>Váha</th></tr></thead>
+    <thead><tr><th>Kritérium</th><th>Body</th></tr></thead>
     <tbody>
-    {% for k, v in sel.geo_weights.items() %}<tr><td>{{ region_labels.get(k, k) }} ({{ k }})</td><td>{{ v }}{% if k == "GLOBAL" %} (+{{ sel.global_relevance_bonus }} při zjevné relevanci pro ČR/EU){% endif %}</td></tr>{% endfor %}
+    <tr><td>Dopad na ČR (0–3)</td><td>× {{ sel.cz_impact_points }}</td></tr>
+    <tr><td>Dopad na EU (0–3)</td><td>× {{ sel.eu_impact_points }}</td></tr>
+    {% for k, v in sel.geo_points.items() %}<tr><td>Fokus {{ region_labels.get(k, k) }} ({{ k }})</td><td>{{ '%+.1f'|format(v) }}</td></tr>{% endfor %}
+    <tr><td>Postoje veřejnosti / komunikace</td><td>{{ '%+.1f'|format(sel.attitudes_points) }}</td></tr>
+    <tr><td>Originální výzkum / data</td><td>{{ '%+.1f'|format(sel.research_points) }}</td></tr>
+    <tr><td>Komentář / stanovisko</td><td>{{ '%+.1f'|format(sel.opinion_points) }}</td></tr>
+    {% for k, v in sel.source_type_points.items() %}<tr><td>Typ zdroje: {{ source_type_labels.get(k, k) }}</td><td>{{ '%+.1f'|format(v) }}</td></tr>{% endfor %}
     </tbody>
   </table>
-  <table class="weights">
-    <thead><tr><th>Typ zdroje</th><th>Váha</th></tr></thead>
-    <tbody>
-    {% for k, v in sel.source_type_weights.items() %}<tr><td>{{ source_type_labels.get(k, k) }}</td><td>{{ v }}</td></tr>{% endfor %}
-    </tbody>
-  </table>
+  <h3 id="struktura">Struktura přehledu</h3>
+  <p>Od 23. 11. 2026: tři zjištění týdne (stejná jako v e-mailu) → Česko tento týden → EU a svět s dopadem na ČR → postoje veřejnosti a komunikace → Co sledovat (akce s termínem i obecné věci, seřazené podle důležitosti). SWOT, Co psala česká média, příležitosti, odhad nálady, mezery v podkladech a seznam všech podkladů jsou ve sbalené části „Pro analytiky“. Starší týdny si ponechávají původní podobu.</p>
   <h3 id="media">Co psala česká média</h3>
   <p>Samostatná obsahová analýza českých zpravodajských webů (Novinky, iDNES, Seznam Zprávy, ČT24, iROZHLAS, Aktuálně, HN, E15, Lidovky, Deník, CNN Prima News, Respekt, Deník N, Blesk, Parlamentní listy a další). Feedy velkých portálů obsahují jen několik posledních hodin zpráv, proto se stahují <strong>každou hodinu</strong> a články se během týdne ukládají. Z každého článku se pracuje jen s titulkem a perexem.</p>
   <ol>
@@ -66,7 +69,7 @@
 <section aria-labelledby="zdroje">
   <h2 id="zdroje">Sledované zdroje a jejich stav</h2>
   <p class="hint">Stav z poslední kontroly{% if checked_at %} ({{ checked_at|date_cs }}){% endif %}. „Zastaralý“ = nejnovější položka je starší než 60 dní (u zdrojů s nízkou frekvencí publikace to je normální). Sloupec „Ve výběru“ = kolik položek zdroje prošlo do týdenního výběru za poslední 4 týdny (z kolika publikovaných).</p>
-  <p class="hint"><strong>Rotace zdrojů:</strong> když zdroj dva týdny po sobě publikuje, ale nic z něj neprojde do výběru, na 4 týdny se pozastaví a místo něj se zapne náhradní zdroj ze zásobníku (přednostně ze stejného regionu). Pak dostane novou šanci. Klíčové zdroje (🔒) se nepozastavují. Cílem je pestrost výběru.</p>
+  <p class="hint"><strong>Rotace zdrojů (od 23. 11. 2026):</strong> zdroj se pozastaví jen tehdy, když 4 týdny po sobě nemá ani jednu položku, která by prošla tematickým předfiltrem (píše mimo téma), nebo když je technicky nefunkční. To, že ho AI nevybrala, už k pozastavení nestačí – výběr sám může být zkreslený. Na místo pozastaveného zdroje se zapne náhrada ze zásobníku (přednostně ze stejného regionu). Klíčové zdroje (🔒, např. veřejnoprávní a hlavní česká média) se nepozastavují.</p>
   <div class="table-wrap">
   <table class="sources">
     <thead><tr><th>Zdroj</th><th>Region</th><th>Typ</th><th>Stav</th><th>Ve výběru</th><th>Nejnovější</th></tr></thead>

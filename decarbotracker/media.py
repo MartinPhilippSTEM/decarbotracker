@@ -28,6 +28,7 @@ from decarbotracker.models import (
     MediaDraft,
     MediaOutletStat,
     MediaReport,
+    ScoredItem,
     Source,
 )
 from decarbotracker.storage import read_json, write_json
@@ -186,6 +187,46 @@ def _validate_draft(draft: MediaDraft, valid: set[str], notes: list[str]) -> Med
             kept.append(t)
         setattr(draft, lst_name, kept)
     return draft
+
+
+_TOPIC_TO_MAIN = {"ceny_energii": "energy_markets", "energeticka_bezpecnost": "energy_markets",
+                  "obnovitelne_zdroje": "technology", "jadro": "technology", "teplo_a_budovy": "decarbonization_policy"}
+
+
+def synthesis_inputs(rep: MediaReport | None, week: str, settings: Settings,
+                     exclude_urls: set[str]) -> tuple[str, list[ScoredItem]]:
+    """Propojení s hlavním přehledem: krátký souhrn čísel pro syntézu + několik relevantních článků
+    z nejčastějších témat českých médií (každý z jiného média, přednostně analýzy a komentáře s perexem)."""
+    from decarbotracker.models import ItemScore
+    from decarbotracker.normalize import normalize_url
+    from decarbotracker.scoring import final_score
+
+    if rep is None or not rep.n_relevant:
+        return "", []
+    top_topics = list(rep.topics)[:3]
+    context = (f"{rep.n_relevant} článků k energetice a klimatu v {sum(1 for o in rep.outlets if o.relevant)} médiích. "
+               "Nejčastější témata: " + ", ".join(f"{TOPIC_LABELS.get(t, t)} ({rep.topics[t]} článků)" for t in top_topics)
+               + (f". Převažující rámec: {FRAME_LABELS.get(next(iter(rep.frames)), '')}." if rep.frames else "."))
+    store, _ = load_store(week)
+    chosen: list[ScoredItem] = []
+    outlets: set[str] = set()
+    genre_rank = {"analyza": 0, "komentar": 1, "rozhovor": 2, "zprava": 3, "jine": 4}
+    ordered = sorted(rep.articles, key=lambda a: (top_topics.index(a.topic) if a.topic in top_topics else 9,
+                                                   genre_rank.get(a.genre, 9), -(a.published_at.timestamp()
+                                                                                 if a.published_at else 0)))
+    for a in ordered:
+        if len(chosen) >= settings.selection.media_items:
+            break
+        it = store.get(a.id)
+        if it is None or a.outlet in outlets or normalize_url(it.url) in exclude_urls or not it.summary_raw.strip():
+            continue
+        score = ItemScore(item_id=it.id, relevance=6, topics=[_TOPIC_TO_MAIN.get(a.topic, "decarbonization_policy")],
+                          geo_focus="CZ", is_public_attitudes_or_communication=False, is_original_research=False,
+                          relevant_to_cz_eu=True, cz_impact=3, eu_impact=1, is_opinion=a.genre == "komentar",
+                          is_event=False, title_cs="", one_line_cs=it.summary_raw[:180], sentiment=a.tone)
+        chosen.append(ScoredItem(item=it, score=score, final_score=final_score(it, score, settings.selection)))
+        outlets.add(a.outlet)
+    return context, chosen
 
 
 def analyze(week: str, settings: Settings, client: ClaudeClient | None) -> MediaReport | None:

@@ -22,15 +22,17 @@ llm:
   #  - claude-haiku-4-5: aktivní, vyřazení nejdříve 15. 10. 2026 (zatím bez oznámení, platí 60denní výpověď)
   #  - claude-sonnet-5-5: aktivní, vyřazení nejdříve 28. 9. 2027
   # Pokud levný model přestane existovat (404), použije se automaticky model_scoring_fallback.
-  model_scoring: claude-haiku-4-5
-  model_scoring_fallback: claude-sonnet-5-5
+  # Od 23. 11. 2026 třídí Claude Haiku 5.5 (novější a ~10× levnější než Haiku 4.5: $0,10 / $0,50 za 1M tokenů).
+  # Když by nebyl dostupný (404), použije se model_scoring_fallback.
+  model_scoring: claude-haiku-5-5
+  model_scoring_fallback: claude-haiku-4-5
   model_synthesis: claude-sonnet-5-5
   # Použije se, když syntézu model odmítne (stop_reason = refusal) i po serverovém fallbacku.
   model_synthesis_fallback: claude-opus-5-5
   # Serverový fallback Claude API (beta server-side-fallback-2026-07-01, fallbacks="default").
   server_side_fallback: true
   # Modely, které přijímají output_config.effort (Haiku 4.5 ho nepodporuje).
-  effort_models: [claude-sonnet-5-5, claude-opus-5-5, claude-sonnet-5, claude-opus-5]
+  effort_models: [claude-sonnet-5-5, claude-opus-5-5, claude-sonnet-5, claude-opus-5, claude-haiku-5-5]
   synthesis_effort: medium
   scoring_effort: low
   synthesis_max_tokens: 16000        # thinking tokeny se počítají do limitu
@@ -47,34 +49,43 @@ llm:
   max_retries: 4
   # Ceny v USD za 1 milion tokenů (ověřeno 30. 9. 2026). Cache write = 1,25× vstup, cache read = 0,1× vstup.
   pricing:
+    claude-haiku-5-5:  {input: 0.10, output: 0.50, cache_write: 0.125, cache_read: 0.01}
     claude-haiku-4-5:  {input: 1.0, output: 5.0,  cache_write: 1.25, cache_read: 0.10}
     claude-sonnet-5-5: {input: 2.0, output: 10.0, cache_write: 2.50, cache_read: 0.20}
     claude-sonnet-5:   {input: 2.0, output: 10.0, cache_write: 2.50, cache_read: 0.20}
     claude-opus-5-5:   {input: 4.0, output: 20.0, cache_write: 5.00, cache_read: 0.20}
 
 selection:
-  max_items_synthesis: 50
-  max_per_source: 3       # pestrost: z jednoho zdroje nejvýš 3 položky ve výběru
-  max_media_share: 0.4    # pestrost: zpravodajská média nejvýš 40 % výběru (zbytek think tanky, výzkum, data…)
-  max_journal_share: 0.4  # pestrost: odborné časopisy nejvýš 40 % výběru (26. 10. 2026 jich bylo 28 z 50)
-  min_cz: 5            # minimální zastoupení položek s fokusem na ČR (pokud existují)
+  # Od 23. 11. 2026 (podle nezávislého hodnocení): do syntézy 35 položek, skóre se SČÍTÁ (dřív násobilo
+  # šest vah, což zvýhodňovalo zahraniční časopisy), pevná kvóta pro ČR, strop časopisů 25 %.
+  max_items_synthesis: 35
+  max_per_source: 3       # pestrost: od jedné organizace (pole organization v sources.yaml) nejvýš 3 položky
+  max_media_share: 0.4    # pestrost: zpravodajská média nejvýš 40 % výběru
+  max_journal_share: 0.25 # pestrost: odborné časopisy nejvýš 25 % výběru (dřív 40 %, vždy se vyčerpalo)
+  max_per_topic: 2        # nejvýš 2 položky se skoro stejným tématem (shluk podobných titulků)
+  topic_cluster_threshold: 70
+  min_cz: 12           # minimální zastoupení položek s fokusem nebo dopadem na ČR (pokud existují)
   min_attitudes: 5     # minimální zastoupení položek o postojích veřejnosti / komunikaci
-  geo_weights: {CZ: 1.0, EU: 0.7, US: 0.4, GLOBAL: 0.5}
-  global_relevance_bonus: 0.2   # přičte se ke GLOBAL, pokud má položka zjevnou relevanci pro ČR/EU
-  source_type_weights:
-    polling: 1.2
-    research: 1.15
-    think_tank: 1.1
-    journal: 1.05
-    government: 1.0
-    ngo: 0.9
-    industry: 0.85
-    media: 0.8
-    funding: 0.8
-  bonus_attitudes: 0.30          # +30 % pro postoje veřejnosti / komunikaci
-  bonus_original_research: 0.15  # +15 % pro originální výzkum / data
-  opinion_penalty: 0.10          # −10 % pro komentáře a stanoviska
-  event_penalty: 0.6           # pozvánky/akce (debaty, konference…): bez bonusů a s nižší váhou – patří do Událostí
+  media_items: 6       # relevantní články z hodinového sběru českých médií přidané do syntézy
+  # final_score = relevance (0–10) + body níže
+  cz_impact_points: 1.5   # × dopad na ČR (0–3) → až +4,5
+  eu_impact_points: 0.8   # × dopad na EU (0–3) → až +2,4
+  geo_points: {CZ: 1.0, EU: 0.5, US: -0.5, GLOBAL: 0.0}
+  attitudes_points: 1.5   # postoje veřejnosti / komunikace
+  research_points: 0.8    # originální výzkum / nová data
+  opinion_points: -0.8    # komentáře a stanoviska
+  event_points: -4.0      # pozvánky/akce: bez bodů za postoje a výzkum, patří do Co sledovat
+  source_type_points:
+    polling: 0.6
+    research: 0.5
+    think_tank: 0.4
+    government: 0.3
+    journal: 0.2
+    ngo: 0.0
+    media: 0.0
+    industry: -0.3
+    funding: -0.5
+  source_weight_points: 2.0   # × (váha zdroje − 1), tj. váha 1,2 → +0,4
   fuzzy_title_threshold: 90      # rapidfuzz token_set_ratio pro duplicitní titulky
   undated_first_run_cap: 3       # u nedatovaných položek při prvním stažení zdroje vezmi max. N nejnovějších
   seen_retention_weeks: 30

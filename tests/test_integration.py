@@ -48,7 +48,7 @@ def test_dry_run_pipeline_produces_complete_site(settings, tmp_path):
     for q in ("strengths", "weaknesses", "opportunities", "threats"):
         for p in getattr(saved.swot, q):
             assert p.evidence_item_ids and set(p.evidence_item_ids) <= valid
-    assert all(t.item_id in valid for t in saved.top_items)
+    assert all(n.item_id in valid for n in saved.cz_items + saved.world_items)
     # dry-run nemění seen.json
     assert not seen_path().exists()
     out = build_site(settings, out_dir=tmp_path / "site")
@@ -65,7 +65,7 @@ def test_rerun_same_week_same_input(settings):
 def test_run_without_api_key_publishes_fallback(settings):
     rep = run_pipeline(WEEK, settings, dry_run=False, now=NOW, collector=fixture_collector)
     assert rep.status == "fallback"
-    assert rep.top_items
+    assert rep.cz_items or rep.world_items
     assert seen_path().exists()
 
 

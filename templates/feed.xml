@@ -13,7 +13,7 @@
     <link>{{ site_url }}tydny/{{ r.week|week_slug }}/</link>
     <guid isPermaLink="true">{{ site_url }}tydny/{{ r.week|week_slug }}/</guid>
     <pubDate>{{ r.generated_at|rfc822 }}</pubDate>
-    <description>{{ period_of(r) }}. {{ r.executive_summary_cs|plain }}</description>
+    <description>{{ period_of(r) }}. {% if r.key_findings %}{% for f in r.key_findings %}{{ f.title_cs|plain }}. {% endfor %}{% else %}{{ r.executive_summary_cs|plain }}{% endif %}</description>
   </item>
 {% endfor %}
 </channel>

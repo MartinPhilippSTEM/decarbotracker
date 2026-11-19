@@ -149,13 +149,16 @@ Každý zdroj je blok, například:
 Píšou se **bez diakritiky a jako kmeny**, protože program porovnává text bez háčků a čárek a musí zachytit i skloňování. Příklady: `tepeln cerpad` zachytí „tepelná čerpadla“ i „tepelných čerpadel“, `energetick chudob` zachytí „energetické chudoby“. Pozor na vkladné e (čerpadlo → čerpadel): kmen proto musí končit před ním. Zkratky (ETS, CBAM, OZE) patří do seznamu `exact`, kde se hledají jako celé slovo.
 
 ### Váhy, modely a limity (`config/settings.yaml`)
-- `selection.geo_weights`: váhy regionů (CZ 1.0, EU 0.7, US 0.4, GLOBAL 0.5),
-- `selection.source_type_weights`, `bonus_attitudes` (+30 %), `bonus_original_research` (+15 %),
-- `selection.max_items_synthesis` (40), `min_cz` (5), `min_attitudes` (5),
-- `llm.model_scoring` (`claude-haiku-4-5`), `llm.model_synthesis` (`claude-sonnet-5-5`) a jejich zálohy,
+- skóre se od 23. 11. 2026 **sčítá**: relevance + `cz_impact_points` × dopad na ČR + `eu_impact_points` × dopad na EU + `geo_points`, `source_type_points`, `attitudes_points`, `research_points`, `opinion_points`, `event_points`,
+- `selection.max_items_synthesis` (35), `min_cz` (12), `min_attitudes` (5), `max_journal_share` (0,25), `max_per_topic` (2), `media_items` (6),
+- `llm.model_scoring` (`claude-haiku-5-5`), `llm.model_synthesis` (`claude-sonnet-5-5`) a jejich zálohy,
 - `llm.max_cost_usd`: **tvrdý limit nákladů na jeden běh** (výchozí 1 USD).
 
-Modely ověřujte v dokumentaci Anthropic (*Models overview* a *Model deprecations*). Haiku 4.5 má plánované vyřazení „nejdříve 15. 10. 2026“. Když přestane fungovat, program automaticky přepne skórování na `model_scoring_fallback`.
+Modely ověřujte v dokumentaci Anthropic (*Models overview* a *Model deprecations*). Když skórovací model přestane fungovat, program automaticky přepne skórování na `model_scoring_fallback`.
+
+### Lidská kontrola hodnocení AI
+- `python -m decarbotracker export-validation --week 2026-W48 --n 100` připraví CSV pro dva kodéry (vybrané i nevybrané položky, bez skóre AI; skóre AI je zvlášť v `*_ai.csv`).
+- Po vyplnění sloupců `A_relevantni`/`B_relevantni` (ano/ne) a `A_geo`/`B_geo` spočítá `python -m decarbotracker validation-agreement validace-2026-W48.csv` shodu (Cohenovo kappa) mezi kodéry a mezi kodéry a AI.
 
 ### Prompty (`prompts/*.md`)
 Instrukce pro AI jsou v samostatných souborech `scoring.md`, `synthesis.md`, `opportunities.md` a `digest.md`. Úpravy se verzují v gitu jako ostatní kód.

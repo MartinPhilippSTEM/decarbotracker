@@ -61,6 +61,8 @@ class Source(BaseModel):
     media_monitor: bool = False
     # jen pro mediální sekci, ne do hlavního výběru zjištění (velké zpravodajské portály)
     media_only: bool = False
+    # organizace za zdrojem (strop položek na zdroj se počítá po organizaci); prázdné = id zdroje
+    organization: str = ""
     homepage: str = ""
     scrape: ScrapeConfig | None = None
 
@@ -101,6 +103,8 @@ class ItemScore(BaseModel):
     is_public_attitudes_or_communication: bool
     is_original_research: bool = Field(description="originální výzkum / nová data / průzkum, ne komentář")
     relevant_to_cz_eu: bool
+    cz_impact: int = Field(description="0–3, dopad nebo poučení pro Českou republiku")
+    eu_impact: int = Field(description="0–3, dopad nebo poučení pro EU a Evropu")
     is_opinion: bool = Field(description="op-ed, stanovisko NGO/průmyslu, komentář")
     is_event: bool = Field(description="pozvánka nebo oznámení akce (debata, konference, webinář, seminář, "
                                        "workshop, kulatý stůl), ne obsah se zjištěními")
@@ -189,17 +193,31 @@ class WatchItem(BaseModel):
     evidence_item_ids: list[str]
 
 
+class KeyFinding(BaseModel):
+    item_id: str
+    title_cs: str = Field(description="krátký úderný titulek zjištění, max. ~10 slov")
+    text_cs: str = Field(description="1–2 věty; čísla jen doslova ze vstupu")
+
+
+class NewsItem(BaseModel):
+    """Jedna zpráva v oddílech „Česko tento týden“ a „EU a svět“ (každá položka jen jednou)."""
+
+    item_id: str
+    title_cs: str = Field(description="krátký český titulek zprávy")
+    text_cs: str = Field(description="2–3 věty: co se stalo a proč je to důležité; u EU a světa i co to znamená pro ČR")
+    key_figure: str = Field(description="klíčové číslo doslova ze vstupu s jednotkou; jinak prázdný řetězec")
+
+
 class ReportDraft(BaseModel):
-    """Část týdenního reportu generovaná modelem."""
+    """Část týdenního reportu generovaná modelem (struktura od 23. 11. 2026)."""
 
     headline_cs: str
-    executive_summary_cs: str
-    swot: Swot
-    top_items: list[TopItem]
+    key_findings: list[KeyFinding]
+    cz_items: list[NewsItem]
+    world_items: list[NewsItem]
     public_attitudes_cs: PublicAttitudes
-    forecasts_cs: list[Forecast]
-    by_region: ByRegion
     watchlist_cs: list[WatchItem]
+    swot: Swot
     data_gaps_cs: list[str]
 
 
@@ -246,6 +264,8 @@ class ReportItemRef(BaseModel):
     is_public_attitudes_or_communication: bool = False
     sentiment: int = 0
     is_event: bool = False
+    has_summary: bool = True
+    from_media: bool = False  # článek z hodinového sběru českých médií
 
 
 class RegionSentiment(BaseModel):
@@ -372,6 +392,10 @@ class WeeklyReport(BaseModel):
     notices_cs: list[str] = Field(default_factory=list)
     cz_content_present: bool = True
     headline_cs: str = ""
+    # nová struktura (od 23. 11. 2026); starší týdny mají executive_summary_cs, top_items, by_region, forecasts_cs
+    key_findings: list[KeyFinding] = Field(default_factory=list)
+    cz_items: list[NewsItem] = Field(default_factory=list)
+    world_items: list[NewsItem] = Field(default_factory=list)
     executive_summary_cs: str = ""
     swot: Swot | None = None
     top_items: list[TopItem] = Field(default_factory=list)

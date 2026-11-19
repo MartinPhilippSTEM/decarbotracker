@@ -40,8 +40,16 @@ def report_url(settings: Settings, week: str) -> str:
 
 def _input_text(report: WeeklyReport) -> str:
     items = {i.id: i for i in report.items}
-    lines = [f"Týden: {report.week}", f"Hlavní poselství: {report.headline_cs}",
-             f"Shrnutí: {report.executive_summary_cs}", "", "## Nejdůležitější položky"]
+    lines = [f"Týden: {report.week}", f"Hlavní poselství: {report.headline_cs}"]
+    if report.key_findings:
+        lines += ["", "## Zjištění týdne (z přehledu – použij je beze změny ID)"]
+        for f in report.key_findings:
+            it = items.get(f.item_id)
+            if it:
+                lines.append(f"[ID: {it.id}] geo={it.geo_focus} | {it.source_name} | {f.title_cs}\n  {f.text_cs}")
+        return "\n".join(lines)
+    # starší přehledy (do 16. 11. 2026)
+    lines += [f"Shrnutí: {report.executive_summary_cs}", "", "## Nejdůležitější položky"]
     for t in report.top_items:
         it = items.get(t.item_id)
         if not it:
@@ -55,26 +63,36 @@ def _input_text(report: WeeklyReport) -> str:
     return "\n".join(lines)
 
 
+def _candidates(report: WeeklyReport) -> list[tuple[str, str, str]]:
+    """(item_id, titulek, text) v pořadí důležitosti: zjištění týdne, Česko, EU a svět; u starších přehledů Top."""
+    out = [(f.item_id, f.title_cs, f.text_cs) for f in report.key_findings]
+    out += [(n.item_id, n.title_cs, n.text_cs) for n in [*report.cz_items, *report.world_items]]
+    out += [(t.item_id, "", t.key_finding_cs or t.why_it_matters_cs) for t in report.top_items]
+    return out
+
+
 def _deterministic(report: WeeklyReport) -> list[DigestFinding]:
-    """Záloha bez AI: první CZ položka, první ze světa a další nejlépe hodnocená."""
+    """Záloha bez AI: první CZ položka, první ze světa a další nejlépe hodnocená (jen položky s výtahem)."""
     items = {i.id: i for i in report.items}
-    tops = [(t, items[t.item_id]) for t in report.top_items if t.item_id in items]
-    cz = next(((t, i) for t, i in tops if i.geo_focus == "CZ"), None)
-    world = next(((t, i) for t, i in tops if i.geo_focus != "CZ"), None)
+    tops = [(iid, title, text, items[iid]) for iid, title, text in _candidates(report)
+            if iid in items and items[iid].has_summary and not items[iid].is_event]
+    cz = next((x for x in tops if x[3].geo_focus == "CZ"), None)
+    world = next((x for x in tops if x[3].geo_focus != "CZ"), None)
     chosen = [x for x in (cz, world) if x]
     for x in tops:
         if len(chosen) >= 3:
             break
-        if x not in chosen:
+        if all(x[0] != c[0] for c in chosen):
             chosen.append(x)
-    return [DigestFinding(item_id=i.id, geo=i.geo_focus, title_cs=i.title_cs or i.title,
-                          text_cs=(t.key_finding_cs or t.why_it_matters_cs).replace("**", ""))
-            for t, i in chosen[:3]]
+    return [DigestFinding(item_id=i.id, geo=i.geo_focus, title_cs=title or i.title_cs or i.title,
+                          text_cs=text.replace("**", ""))
+            for _iid, title, text, i in chosen[:3]]
 
 
 def _enforce_mix(findings: list[DigestFinding], report: WeeklyReport, notes: list[str]) -> list[DigestFinding]:
     """Zajistí min. 1 CZ a min. 1 svět (pokud v přehledu existují), jinak doplní deterministicky."""
-    valid = {i.id: i for i in report.items}
+    # do e-mailu jen položky s výtahem, žádné pozvánky (o samotný titulek nejde opřít zjištění)
+    valid = {i.id: i for i in report.items if i.has_summary and not i.is_event}
     out, seen = [], set()
     for f in findings:
         if f.item_id in valid and f.item_id not in seen:
@@ -127,7 +145,7 @@ def build_digest(report: WeeklyReport, settings: Settings, client: ClaudeClient 
     findings: list[DigestFinding] = []
     thread: list[str] = []
     model = "deterministicky (bez AI)"
-    if client is not None and report.top_items:
+    if client is not None and (report.key_findings or report.cz_items or report.world_items or report.top_items):
         # do max_tokens se počítá i „přemýšlení“ modelu – limit s rezervou, při uříznutí jeden pokus s vyšším
         for max_tokens in (12000, 24000):
             try:
@@ -145,6 +163,10 @@ def build_digest(report: WeeklyReport, settings: Settings, client: ClaudeClient 
                 break
         else:
             notes.append("AI výběr byl uříznut na limitu délky; použita záloha")
+    if report.key_findings:
+        # e-mail nese stejná 3 zjištění jako začátek stránky; AI tu píše jen vlákno na X
+        findings = [DigestFinding(item_id=f.item_id, geo="GLOBAL", title_cs=f.title_cs,
+                                  text_cs=f.text_cs.replace("**", "")) for f in report.key_findings]
     if not findings:
         findings = _deterministic(report)
     findings = _enforce_mix(findings, report, notes)

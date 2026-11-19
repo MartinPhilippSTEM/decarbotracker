@@ -33,6 +33,8 @@ def settings():
 
     s = load_settings()
     s.anthropic_api_key = None
+    # testovací titulky se liší jen číslem – shlukování podobných témat se testuje zvlášť
+    s.selection.max_per_topic = 1000
     return s
 
 
@@ -70,10 +72,11 @@ def make_item(n: int, *, title: str | None = None, region: str = "EU", source_ty
 
 def make_scored(item: Item, *, relevance: int = 7, geo: str | None = None, attitudes: bool = False,
                 topics: list[str] | None = None, final: float | None = None, sentiment: int = 0, is_event: bool = False,
-                scored_by: str = "llm") -> ScoredItem:
+                scored_by: str = "llm", cz_impact: int | None = None) -> ScoredItem:
     s = ItemScore(item_id=item.id, relevance=relevance, topics=topics or ["decarbonization_policy"],
                   geo_focus=geo or item.region, is_public_attitudes_or_communication=attitudes,
                   is_original_research=False, relevant_to_cz_eu=True, is_opinion=False, title_cs="",
+                  cz_impact=cz_impact if cz_impact is not None else (3 if (geo or item.region) == "CZ" else 0), eu_impact=1,
                   one_line_cs="Věta.", sentiment=sentiment, is_event=is_event)
     return ScoredItem(item=item, score=s, final_score=final if final is not None else float(relevance),
                       scored_by=scored_by)

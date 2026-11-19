@@ -82,6 +82,11 @@ def plain(value: Any) -> str:
     return str(value or "").replace("**", "")
 
 
+def template_for(r: WeeklyReport) -> str:
+    """Přehledy od 23. 11. 2026 mají hutnou strukturu; starší (top_items, by_region…) původní šablonu."""
+    return "week.html" if (r.key_findings or r.cz_items or r.world_items) else "week_legacy.html"
+
+
 def load_reports() -> list[WeeklyReport]:
     reports = []
     for path in sorted((project_root() / "data" / "weeks").glob("*.json"), reverse=True):
@@ -195,15 +200,18 @@ def build_site(settings: Settings, out_dir: Path | None = None, base_url: str | 
         return {"r": r, "items": items, "period": format_period_cs(r.period_from, r.period_to),
                 "opp_groups": group_opportunities(r.opportunities_cs), "trend": trend, "prev_index": prev}
 
-    week_tpl = env.get_template("week.html")
+    def week_tpl(r: WeeklyReport):
+        return env.get_template(template_for(r))
+
     if reports:
         latest = reports[0]
-        _write(out / "index.html", week_tpl.render(**ctx(latest), is_latest=True, page="home", recent=reports[:8]))
+        _write(out / "index.html", week_tpl(latest).render(**ctx(latest), is_latest=True, page="home",
+                                                           recent=reports[:8]))
     else:
         _write(out / "index.html", env.get_template("empty.html").render(page="home"))
     for r in reports:
         _write(out / "tydny" / week_slug(r.week) / "index.html",
-               week_tpl.render(**ctx(r), is_latest=False, page="week", recent=[]))
+               week_tpl(r).render(**ctx(r), is_latest=False, page="week", recent=[]))
     _write(out / "archiv" / "index.html", env.get_template("archive.html").render(
         reports=reports, page="archive", period_of=lambda r: format_period_cs(r.period_from, r.period_to)))
 

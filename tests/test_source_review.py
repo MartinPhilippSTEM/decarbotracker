@@ -19,24 +19,35 @@ def test_reserves_not_active_until_activated():
     assert "denik-n" in ids and "seznam-zpravy" not in ids
 
 
-def test_underperformer_two_weeks_rotated_with_same_region_reserve():
-    st = _state({
-        "2026-W42": {"seznam-zpravy": [30, 0], "ekolist": [10, 2], "cvvm-ekologie": [3, 0]},
-        "2026-W43": {"seznam-zpravy": [25, 0], "ekolist": [12, 0], "cvvm-ekologie": [2, 0]},
-    })
+def _weeks(rows_by_source):
+    weeks = ["2026-W40", "2026-W41", "2026-W42", "2026-W43"]
+    return {w: {sid: rows[i] for sid, rows in rows_by_source.items()} for i, w in enumerate(weeks)}
+
+
+def test_off_topic_source_rotated_after_four_weeks():
+    """Od 23. 11. 2026: pozastavuje se jen zdroj, ze kterého 4 týdny nic neprojde předfiltrem –
+    to, že ho AI nevybrala, nestačí."""
+    st = _state(_weeks({
+        "respekt": [[30, 0, 0]] * 4,                                   # píše mimo téma
+        "oenergetice": [[10, 0, 4], [12, 0, 3], [9, 0, 5], [11, 0, 2]],  # k tématu, jen nevybráno
+        "seznam-zpravy": [[30, 0, 0]] * 4,                              # chráněný
+    }))
     changes = sr.rotate(st, "2026-W43")
-    assert "seznam-zpravy" in st["paused"]  # 2 týdny publikoval, nic neprošlo
-    assert "ekolist" not in st["paused"]  # v W42 něco prošlo
-    assert "cvvm-ekologie" not in st["paused"]  # chráněný (váha 1,5)
-    repl = st["paused"]["seznam-zpravy"]["replaced_by"]
+    assert "respekt" in st["paused"]
+    assert "oenergetice" not in st["paused"]
+    assert "seznam-zpravy" not in st["paused"]
+    repl = st["paused"]["respekt"]["replaced_by"]
     regions = {s.id: s.region for s in load_sources()}
     assert regions[repl] == "CZ" and repl in st["activated"]
-    assert st["paused"]["seznam-zpravy"]["until"] == "2026-W47"
     assert changes
 
 
+def test_old_two_value_rows_never_rotate():
+    st = _state(_weeks({"respekt": [[30, 0]] * 4}))
+    assert sr.rotate(st, "2026-W43") == [] and not st["paused"]
+
 def test_not_enough_history_no_rotation():
-    st = _state({"2026-W43": {"seznam-zpravy": [25, 0]}})
+    st = _state({"2026-W43": {"respekt": [25, 0, 0]}})
     assert sr.rotate(st, "2026-W43") == [] and not st["paused"]
 
 
@@ -56,10 +67,10 @@ def test_record_week_counts_window_and_selected(settings):
     sel = [make_scored(a)] + [make_scored(make_item(i, source_id="x")) for i in range(10, 22)]
     rep = synthesize("2026-W43", sel, 20, settings, None)
     st = _state({})
-    sr.record_week(st, "2026-W43", [a, b, c], rep, {"ekolist", "e15", "idle"})
-    assert st["weeks"]["2026-W43"]["ekolist"] == [2, 1]
-    assert st["weeks"]["2026-W43"]["e15"] == [1, 0]
-    assert st["weeks"]["2026-W43"]["idle"] == [0, 0]
+    sr.record_week(st, "2026-W43", [a, b, c], rep, {"ekolist", "e15", "idle"}, candidates=[a, c])
+    assert st["weeks"]["2026-W43"]["ekolist"] == [2, 1, 1]
+    assert st["weeks"]["2026-W43"]["e15"] == [1, 0, 1]
+    assert st["weeks"]["2026-W43"]["idle"] == [0, 0, 0]
 
 
 def test_selection_caps_per_source_and_media(settings):
@@ -85,21 +96,16 @@ def test_selection_fills_up_when_caps_leave_gaps(settings):
 
 
 def test_already_paused_source_not_rotated_again():
-    st = _state({
-        "2026-W42": {"e15": [40, 0], "hn-byznys": [60, 0]},
-        "2026-W43": {"e15": [47, 0], "hn-byznys": [60, 0]},
-    })
-    st["paused"]["e15"] = {"since": "2026-W43", "until": "2026-W47", "replaced_by": "denik-n"}
-    st["activated"]["denik-n"] = {"since": "2026-W43", "replaces": "e15"}
+    st = _state(_weeks({"respekt": [[40, 0, 0]] * 4, "sme": [[60, 0, 0]] * 4}))
+    st["paused"]["respekt"] = {"since": "2026-W43", "until": "2026-W47", "replaced_by": "iness"}
+    st["activated"]["iness"] = {"since": "2026-W43", "replaces": "respekt"}
     sr.rotate(st, "2026-W43")
-    assert st["paused"]["e15"]["replaced_by"] == "denik-n"  # nezměněno
-    assert "hn-byznys" in st["paused"]
-    assert sum(1 for v in st["activated"].values() if v["replaces"] == "e15") == 1
-
+    assert st["paused"]["respekt"]["replaced_by"] == "iness"  # nezměněno
+    assert sum(1 for v in st["activated"].values() if v["replaces"] == "respekt") == 1
 
 def test_journal_share_cap(settings):
     sel = settings.selection
-    sel.max_items_synthesis, sel.max_per_source, sel.max_journal_share = 10, 3, 0.4
+    sel.max_items_synthesis, sel.max_per_source, sel.max_journal_share, sel.min_cz = 10, 3, 0.4, 5
     journals = [make_scored(make_item(i, source_id=f"journal-{i}", source_type="journal"), relevance=9, final=100 - i)
                 for i in range(15)]
     others = [make_scored(make_item(50 + i, source_id=f"tt{i}", source_type="think_tank"), relevance=5, final=10 - i)

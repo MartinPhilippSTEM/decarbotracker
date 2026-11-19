@@ -254,3 +254,22 @@ html { scroll-behavior: smooth; }
   .site-header nav, .skip { display: none; }
   .swot-q { break-inside: avoid; }
 }
+
+/* hutná struktura od 23. 11. 2026 */
+.findings { margin: .3rem 0 0; padding-left: 1.3rem; }
+.findings li { margin: .35rem 0; font-size: 1.05rem; line-height: 1.55; }
+.news { list-style: none; padding: 0; margin: 0; }
+.news li { padding: .6rem 0 .7rem; border-bottom: 1px solid var(--line); }
+.news li:last-child { border-bottom: 0; }
+.news p { margin: .2rem 0; }
+.news-title { font-size: 1.05rem; }
+.fig { display: inline-block; font-size: .85rem; font-weight: 600; padding: 0 .45rem; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.facts-line { font-size: .85rem; color: var(--muted); margin-top: -.2rem; }
+.watch { padding-left: 1.2rem; }
+.watch li { margin: .35rem 0; }
+.when-chip { display: inline-block; font-size: .82rem; font-weight: 700; padding: 0 .45rem; border-radius: 4px; border: 1px solid var(--accent); color: var(--accent); white-space: nowrap; }
+.analyst { margin-top: 2rem; }
+.fold { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: .1rem .9rem; margin: .5rem 0; }
+.fold > summary { cursor: pointer; font-weight: 600; padding: .55rem 0; color: var(--text); }
+.fold[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: .5rem; }
+.fold-n { font-weight: 400; color: var(--muted); font-size: .88rem; margin-left: .3rem; }

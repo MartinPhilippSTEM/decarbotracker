@@ -68,21 +68,25 @@ class LLMSettings(BaseModel):
 
 
 class SelectionSettings(BaseModel):
-    max_items_synthesis: int = 50
-    max_per_source: int = 3          # pestrost: max. položek z jednoho zdroje ve výběru
+    max_items_synthesis: int = 35
+    max_per_source: int = 3          # pestrost: max. položek od jedné organizace ve výběru
     max_media_share: float = 0.4     # pestrost: zpravodajská média max. 40 % výběru
-    max_journal_share: float = 0.4   # pestrost: odborné časopisy max. 40 % výběru
-    min_cz: int = 5
+    max_journal_share: float = 0.25  # pestrost: odborné časopisy max. 25 % výběru
+    max_per_topic: int = 2           # max. položek z jednoho shluku podobných titulků (téma)
+    topic_cluster_threshold: int = 70  # rapidfuzz token_set_ratio pro „stejné téma“
+    min_cz: int = 12                 # min. položek s fokusem nebo dopadem na ČR (pokud existují)
     min_attitudes: int = 5
-    geo_weights: dict[str, float] = Field(
-        default_factory=lambda: {"CZ": 1.0, "EU": 0.7, "US": 0.4, "GLOBAL": 0.5}
-    )
-    global_relevance_bonus: float = 0.2
-    source_type_weights: dict[str, float] = Field(default_factory=dict)
-    bonus_attitudes: float = 0.30
-    bonus_original_research: float = 0.15
-    opinion_penalty: float = 0.10
-    event_penalty: float = 0.6       # pozvánky/akce: nižší váha a žádné bonusy (patří do Událostí)
+    media_items: int = 6             # kolik relevantních článků z hodinového sběru českých médií přidat
+    # aditivní skóre: relevance (0–10) + body za dopad a typ obsahu (bez řetězení násobků)
+    cz_impact_points: float = 1.5    # × cz_impact (0–3)
+    eu_impact_points: float = 0.8    # × eu_impact (0–3)
+    geo_points: dict[str, float] = Field(default_factory=lambda: {"CZ": 1.0, "EU": 0.5, "US": -0.5, "GLOBAL": 0.0})
+    attitudes_points: float = 1.5
+    research_points: float = 0.8
+    opinion_points: float = -0.8
+    event_points: float = -4.0       # pozvánky/akce: bez bodů za postoje a výzkum (patří do Co sledovat)
+    source_type_points: dict[str, float] = Field(default_factory=dict)
+    source_weight_points: float = 2.0  # × (váha zdroje − 1)
     fuzzy_title_threshold: int = 90
     undated_first_run_cap: int = 3
     seen_retention_weeks: int = 30

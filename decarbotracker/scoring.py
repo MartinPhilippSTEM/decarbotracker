@@ -21,7 +21,7 @@ from decarbotracker.models import REGION_ORDER, Item, ItemScore, ScoreBatch, Sco
 
 log = logging.getLogger(__name__)
 
-EST_OUTPUT_TOKENS_PER_ITEM = 130
+EST_OUTPUT_TOKENS_PER_ITEM = 160  # vč. přemýšlení modelu při effort=low
 
 
 # --------------------------------------------------------------------------- finální skóre
@@ -42,21 +42,34 @@ def looks_like_event(item: Item) -> bool:
 
 
 def final_score(item: Item, score: ItemScore, sel: SelectionSettings) -> float:
-    """relevance × geo váha × váha typu zdroje × váha zdroje, s bonusy (+30 % postoje, +15 % výzkum).
-    Akce (pozvánky) bonusy nedostávají a mají sníženou váhu – patří do Událostí, ne mezi zjištění."""
-    geo = sel.geo_weights.get(score.geo_focus, 0.5)
-    if score.geo_focus == "GLOBAL" and score.relevant_to_cz_eu:
-        geo += sel.global_relevance_bonus
-    value = score.relevance * geo * sel.source_type_weights.get(item.source_type, 1.0) * item.source_weight
+    """Aditivní skóre: relevance (0–10) + body za dopad na ČR a EU, region, typ obsahu a zdroje.
+    Sčítání (místo řetězení násobků) brání tomu, aby zahraniční studie přeskočily českou politiku jen díky
+    několika bonusům. Akce (pozvánky) body za postoje a výzkum nedostávají – patří do Co sledovat."""
+    value = (score.relevance
+             + sel.cz_impact_points * score.cz_impact
+             + sel.eu_impact_points * score.eu_impact
+             + sel.geo_points.get(score.geo_focus, 0.0)
+             + sel.source_type_points.get(item.source_type, 0.0)
+             + sel.source_weight_points * (item.source_weight - 1.0))
     if score.is_event:
-        return round(value * sel.event_penalty, 4)
+        return round(value + sel.event_points, 4)
     if score.is_public_attitudes_or_communication:
-        value *= 1 + sel.bonus_attitudes
+        value += sel.attitudes_points
     if score.is_original_research:
-        value *= 1 + sel.bonus_original_research
+        value += sel.research_points
     if score.is_opinion:
-        value *= 1 - sel.opinion_penalty
+        value += sel.opinion_points
     return round(value, 4)
+
+
+def is_cz(s: ScoredItem) -> bool:
+    """Položka s fokusem na ČR nebo s jasným dopadem na ČR (pro kvótu)."""
+    return s.score.geo_focus == "CZ" or s.score.cz_impact >= 2
+
+
+def rank_key(s: ScoredItem) -> tuple:
+    """Pořadí: skóre, při shodě dopad na ČR, pak novější, pak id (deterministicky, ne hashem)."""
+    return (-s.final_score, -s.score.cz_impact, -s.item.effective_date.timestamp(), s.item.id)
 
 
 # --------------------------------------------------------------------------- heuristika (dry-run / záloha)
@@ -98,6 +111,8 @@ def heuristic_score(item: Item, matcher: KeywordMatcher | None = None) -> ItemSc
         is_public_attitudes_or_communication=attitudes and not event,
         is_original_research=item.source_type in ("research", "polling", "journal") and not event,
         relevant_to_cz_eu=item.region in ("CZ", "EU"),
+        cz_impact=2 if geo == "CZ" else 0,
+        eu_impact=2 if geo in ("CZ", "EU") else 0,
         is_opinion=False,
         is_event=event,
         title_cs="",
@@ -129,6 +144,8 @@ def _sanitize(score: ItemScore, item: Item) -> ItemScore:
     score.item_id = item.id
     score.relevance = max(0, min(10, int(score.relevance)))
     score.sentiment = max(-2, min(2, int(score.sentiment)))
+    score.cz_impact = max(0, min(3, int(score.cz_impact)))
+    score.eu_impact = max(0, min(3, int(score.eu_impact)))
     if not score.topics:
         score.topics = ["decarbonization_policy"]
     score.topics = list(dict.fromkeys(score.topics))
@@ -214,7 +231,7 @@ def score_items(items: list[Item], settings: Settings, client: ClaudeClient | No
             continue
         s = heuristic_score(item, matcher)
         results[item.id] = ScoredItem(item=item, score=s, final_score=final_score(item, s, sel), scored_by="heuristic")
-    scored = sorted(results.values(), key=lambda s: (-s.final_score, s.item.id))
+    scored = sorted(results.values(), key=rank_key)
     n_llm = sum(1 for s in scored if s.scored_by == "llm")
     log.info("Skórováno %d položek (%d LLM, %d heuristicky)", len(scored), n_llm, len(scored) - n_llm)
     return scored
@@ -223,49 +240,98 @@ def score_items(items: list[Item], settings: Settings, client: ClaudeClient | No
 # --------------------------------------------------------------------------- výběr s kvótami
 
 
-def select_for_synthesis(scored: list[ScoredItem], sel: SelectionSettings, min_relevance: int = 3) -> list[ScoredItem]:
-    """Top N podle skóre se zajištěním min. zastoupení CZ a postojů/komunikace (pokud existují)
-    a s pojistkami pestrosti: max. `max_per_source` položek z jednoho zdroje a média max. `max_media_share`."""
+def _norm(text: str) -> str:
+    return re.sub(r"[^a-z0-9 ]+", " ", normalize_text(text)).strip()
+
+
+def topic_clusters(items: list[ScoredItem], threshold: int) -> dict[str, int]:
+    """Přiřadí položkám číslo shluku: stejné DOI / URL, nebo podobný titulek (rapidfuzz token_set_ratio).
+    Položky se procházejí od nejlepší, každá se přidá k prvnímu podobnému shluku."""
+    from rapidfuzz import fuzz
+
+    from decarbotracker.normalize import normalize_url
+
+    heads: list[tuple[int, str, str, str]] = []  # (cluster, norm. titulek, doi, url)
+    out: dict[str, int] = {}
+    for s in items:
+        title = _norm(s.score.title_cs or s.item.title)
+        doi, url = (s.item.doi or "").lower(), normalize_url(s.item.url)
+        cid = None
+        for c, t, d, u in heads:
+            if (doi and doi == d) or url == u or (len(title) >= 15 and fuzz.token_set_ratio(title, t) >= threshold):
+                cid = c
+                break
+        if cid is None:
+            cid = len(heads)
+        heads.append((cid, title, doi, url))
+        out[s.item.id] = cid
+    return out
+
+
+def select_for_synthesis(scored: list[ScoredItem], sel: SelectionSettings, min_relevance: int = 3,
+                         org_of: dict[str, str] | None = None) -> list[ScoredItem]:
+    """Top N podle skóre se zajištěním min. zastoupení ČR a postojů/komunikace (pokud existují)
+    a s pojistkami pestrosti: max. `max_per_source` položek od jedné organizace, média max. `max_media_share`,
+    časopisy max. `max_journal_share`, max. `max_per_topic` položek z jednoho tématu (shluku) a jen jedna
+    položka se stejným DOI/URL."""
+    org_of = org_of or {}
     pool = [s for s in scored if s.score.relevance >= min_relevance]
-    pool.sort(key=lambda s: (-s.final_score, s.item.id))
+    pool.sort(key=rank_key)
+    cluster = topic_clusters(pool, sel.topic_cluster_threshold)
     chosen: dict[str, ScoredItem] = {}
-    per_source: dict[str, int] = {}
+    per_org: dict[str, int] = {}
+    per_cluster: dict[int, int] = {}
     type_caps = {"media": int(sel.max_items_synthesis * sel.max_media_share),
                  "journal": int(sel.max_items_synthesis * sel.max_journal_share)}
 
+    def org(s: ScoredItem) -> str:
+        return org_of.get(s.item.source_id) or s.item.source_id
+
     def fits(s: ScoredItem) -> bool:
-        if per_source.get(s.item.source_id, 0) >= sel.max_per_source:
+        if per_org.get(org(s), 0) >= sel.max_per_source:
+            return False
+        if per_cluster.get(cluster[s.item.id], 0) >= sel.max_per_topic:
             return False
         cap = type_caps.get(s.item.source_type)
         return cap is None or sum(1 for c in chosen.values() if c.item.source_type == s.item.source_type) < cap
 
+    def duplicate(s: ScoredItem) -> bool:
+        from decarbotracker.normalize import normalize_url
+
+        doi, url = (s.item.doi or "").lower(), normalize_url(s.item.url)
+        return any((doi and doi == (c.item.doi or "").lower()) or url == normalize_url(c.item.url)
+                   for c in chosen.values())
+
     def add(s: ScoredItem) -> None:
-        if s.item.id not in chosen:
+        if s.item.id not in chosen and not duplicate(s):
             chosen[s.item.id] = s
-            per_source[s.item.source_id] = per_source.get(s.item.source_id, 0) + 1
+            per_org[org(s)] = per_org.get(org(s), 0) + 1
+            per_cluster[cluster[s.item.id]] = per_cluster.get(cluster[s.item.id], 0) + 1
 
     def fill_quota(cond, n: int) -> None:
-        # kvóty (ČR, postoje) mají přednost před pestrostí: nejdřív v rámci limitů, pak i přes ně
+        # kvóty (ČR, postoje) mají přednost před pestrostí typů zdrojů, ne před stropem na téma
         for respect_caps in (True, False):
             for x in pool:
                 if sum(1 for c in chosen.values() if cond(c)) >= n:
                     return
-                if cond(x) and x.item.id not in chosen and (fits(x) or not respect_caps):
+                topic_ok = per_cluster.get(cluster[x.item.id], 0) < sel.max_per_topic
+                if cond(x) and x.item.id not in chosen and topic_ok and (fits(x) or not respect_caps):
                     add(x)
 
-    fill_quota(lambda x: x.score.geo_focus == "CZ", sel.min_cz)
+    fill_quota(is_cz, sel.min_cz)
     fill_quota(lambda x: x.score.is_public_attitudes_or_communication, sel.min_attitudes)
     for s in pool:
         if len(chosen) >= sel.max_items_synthesis:
             break
         if fits(s):
             add(s)
-    # když pojistky pestrosti nechají volná místa (málo zdrojů), doplň zbytkem podle skóre
+    # když pojistky pestrosti nechají volná místa (málo zdrojů), doplň zbytkem podle skóre (stále bez duplicit)
     for s in pool:
         if len(chosen) >= sel.max_items_synthesis:
             break
-        add(s)
+        if per_cluster.get(cluster[s.item.id], 0) < sel.max_per_topic:
+            add(s)
     result = list(chosen.values())[: max(sel.max_items_synthesis, sel.min_cz + sel.min_attitudes)]
     # CZ vždy první, pak podle skóre
-    result.sort(key=lambda s: (REGION_ORDER.get(s.score.geo_focus, 9) != 0, -s.final_score, s.item.id))
+    result.sort(key=lambda s: (REGION_ORDER.get(s.score.geo_focus, 9) != 0, *rank_key(s)))
     return result
