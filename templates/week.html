@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% from "_macros.html" import tags, item_date, item_title, evidence, media_evidence %}
-{# Hutná struktura od 23. 11. 2026: zjištění → Česko → EU a svět → postoje → co sledovat; zbytek sbalený pro analytiky.
+{# Hutná struktura od 23. 11. 2026: zjištění → SWOT → Česko → EU a svět → postoje → co sledovat; zbytek sbalený pro analytiky.
    Starší týdny se vykreslují šablonou week_legacy.html. #}
 {% macro news_list(list_, show_geo) -%}
 <ol class="news">
@@ -33,6 +33,25 @@
     {% endif %}
     <p class="meta">Posouzeno {{ r.items_considered }} položek, do přehledu vybráno {{ r.items_selected }} · model: {{ r.model }} · vygenerováno {{ r.generated_at|date_cs }}</p>
   </header>
+
+  {% if r.swot %}
+  <section aria-labelledby="swot">
+    <h2 id="swot">SWOT: dekarbonizace ČR a podpora veřejnosti</h2>
+    <p class="hint">S = příznivé skutečnosti a trendy v ČR, W = vnitřní slabiny a bariéry v ČR, O = vnější příležitosti, T = vnější hrozby. <a href="{{ base }}metodika/#swot">Více v metodice</a>.</p>
+    <div class="swot">
+      {% for key, label, letter in [("strengths", "Silné stránky", "S"), ("weaknesses", "Slabé stránky", "W"), ("opportunities", "Příležitosti", "O"), ("threats", "Hrozby", "T")] %}
+      <div class="swot-q swot-{{ key }}">
+        <h3><span class="swot-letter" aria-hidden="true">{{ letter }}</span> {{ label }}</h3>
+        <ul>
+        {% for p in r.swot[key] %}
+          <li><span class="tag tag-{{ p.geo|lower }}">{{ p.geo }}</span> {{ p.text_cs|rich }} {{ evidence(p.evidence_item_ids, items) }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   {% if r.cz_items %}
   <section aria-labelledby="cesko">
@@ -85,25 +104,6 @@
   <section aria-labelledby="analytici" class="analyst">
     <h2 id="analytici">Pro analytiky</h2>
     <p class="hint">Podrobnosti jsou sbalené – klikněte na název oddílu.</p>
-
-    {% if r.swot %}
-    <details class="fold">
-      <summary>SWOT: dekarbonizace ČR a podpora veřejnosti</summary>
-      <p class="hint">S = příznivé skutečnosti a trendy v ČR, W = vnitřní slabiny a bariéry v ČR, O = vnější příležitosti, T = vnější hrozby. <a href="{{ base }}metodika/#swot">Více v metodice</a>.</p>
-      <div class="swot">
-        {% for key, label, letter in [("strengths", "Silné stránky", "S"), ("weaknesses", "Slabé stránky", "W"), ("opportunities", "Příležitosti", "O"), ("threats", "Hrozby", "T")] %}
-        <div class="swot-q swot-{{ key }}">
-          <h3><span class="swot-letter" aria-hidden="true">{{ letter }}</span> {{ label }}</h3>
-          <ul>
-          {% for p in r.swot[key] %}
-            <li><span class="tag tag-{{ p.geo|lower }}">{{ p.geo }}</span> {{ p.text_cs|rich }} {{ evidence(p.evidence_item_ids, items) }}</li>
-          {% endfor %}
-          </ul>
-        </div>
-        {% endfor %}
-      </div>
-    </details>
-    {% endif %}
 
     {% if r.media and r.media.n_relevant %}{% set m = r.media %}{% set marts = media_articles(m) %}
     <details class="fold media-sec">

@@ -99,11 +99,11 @@ def test_rich_filter_escapes_html_and_renders_bold():
 def test_glance_tables_rendered(settings, with_report, tmp_path):
     out = build_site(settings, out_dir=tmp_path / "site")
     html = (out / "index.html").read_text(encoding="utf-8")
-    order = ["Tři zjištění týdne", 'id="cesko"', 'id="svet"', 'id="postoje"', 'id="sledovat"', 'id="analytici"']
+    order = ["Tři zjištění týdne", 'id="swot"', 'id="cesko"', 'id="svet"', 'id="postoje"', 'id="sledovat"', 'id="analytici"']
     pos = [html.index(x) for x in order]
     assert pos == sorted(pos)
-    # SWOT, podklady a další podrobnosti jsou sbalené až pod hlavní částí
-    assert html.index("SWOT: dekarbonizace") > html.index('id="analytici"')
+    # SWOT je na stránce hned pod zjištěními; podklady a další podrobnosti jsou sbalené pod hlavní částí
+    assert html.index("SWOT: dekarbonizace") < html.index('id="analytici"') < html.index("Všechny podklady")
     assert "<details class=\"fold\">" in html and "<details class=\"fold\" open" not in html
     assert "**" not in html and "<strong>" in html
 
