@@ -232,11 +232,11 @@
 
 {% if is_latest and recent|length > 1 %}
 <aside class="more">
-  <h2>Předchozí týdny</h2>
+  <h2>Minulý týden</h2>
   <ul class="plain week-list">
-  {% for w in recent[1:] %}<li><a href="{{ base }}tydny/{{ w.week|week_slug }}/">{{ w.week }}</a> – {{ w.headline_cs|plain }}</li>{% endfor %}
+  {% for w in recent[1:2] %}<li><a href="{{ base }}tydny/{{ w.week|week_slug }}/">{{ w.week }}</a> – {{ w.headline_cs|plain }}</li>{% endfor %}
   </ul>
-  <p><a href="{{ base }}archiv/">Celý archiv →</a></p>
+  <p><a href="{{ base }}archiv/">Předchozí týdny →</a></p>
 </aside>
 {% endif %}
 {% endblock %}
