@@ -1,6 +1,6 @@
 {
   "week": "2026-W46",
-  "generated_at": "2026-11-19T10:23:43.694327+00:00",
+  "generated_at": "2026-11-19T13:52:51.282879+00:00",
   "items": [
     {
       "id": "98c2cd21d407",
@@ -2097,6 +2097,225 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f80c29097311",
+      "title": "Economic Viability of Small Farms in Mountain Areas in Bulgaria",
+      "url": "https://doi.org/10.15835/buasvmcn-hort:2025.0030",
+      "source_id": "journal-bulletin-of-university-of-agricultural-sciences-and-veterinary-medicine-cluj-napoca-horticulture",
+      "source_name": "Bulletin of University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca Horticulture",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Economic viability has become a central concept in agricultural economics, particularly in the context of small farms operating under natural constraints. Despite its importance, there is no unified definition, and empirical evidence remains limited for mountain regions in Bulgaria. The aim of this paper is to assess the economic viability of small farms located in mountainous less-favored areas in Bulgaria. Economic viability is evaluated using Net Farm Income (FNI) per farm, adjusted for opportunity costs of unpaid labor, land, and capital. An economic viability factor (FEV) was calculated, and differences between farm groups were tested using analysis of variance (ANOVA). The analysis was based on data from the Farm Accountancy Data Network (FADN) for the period 2007–2020. The results indicate that economic viability of small farms remained relatively stable over the analyzed period, with a slight upward trend after 2013. Farms located in mountainous disadvantaged areas (LFA1) exhibit significantly lower average viability (FEV ≈ 0.6) compared to farms in submountain areas (LFA2) (FEV ≈ 0.9). Pasture-based farms are the most vulnerable, showing the highest dependence on subsidies, while dairy farms demonstrate comparatively higher viability. Current subsidies, including agri-environmental and less-favored area payments, play a crucial role in stabilizing farm income and sustaining economic viability. These findings highlight the structural vulnerability of small farms in…",
+      "authors": [
+        "Bozhura Fidanska"
+      ],
+      "doi": "10.15835/buasvmcn-hort:2025.0030",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "f4d21c2f112b",
+      "title": "Dynamics and Adaptability in the Normative Framework of De Minimis Support Schemes in the Romanian Vegetable Sector",
+      "url": "https://doi.org/10.15835/buasvmcn-hort:2016.0012",
+      "source_id": "journal-bulletin-of-university-of-agricultural-sciences-and-veterinary-medicine-cluj-napoca-horticulture",
+      "source_name": "Bulletin of University of Agricultural Sciences and Veterinary Medicine Cluj-Napoca Horticulture",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Evaluating the economic viability and policy dependence of horticultural and field crops is essential for farm sustainability under rising operational costs. This paper analyzes the economic dynamics and policy adaptability of de minimis support schemes across three representative Romanian crops: solarium tomatoes (1,000 m2), open-field ware potatoes (1 ha), and open-field garlic (1 ha). Based on standard framework budgets, two scenarios were evaluated: a baseline case without public support and a policy-supported case incorporating national subsidies. Relevant financial indicators were calculated, including Gross Margin, Net Income, Net Profit Rate, and Economic Efficiency. Results reveal substantial differences in calculated profitability and reliance on public support across the three production systems. Under the representative budget assumptions employed, public support substantially increases calculated net income for protected tomatoes and garlic, while its contribution to potato profitability is more limited. These results indicate heterogeneous accounting dependence on public support across production systems; however, longitudinal farm-level data would be required to establish causal effects on resilience, competitiveness, and long-term viability.",
+      "authors": [
+        "Ancuța Marin",
+        "Ruxandra-Eugenia Pop",
+        "Steliana Rodino",
+        "Vili Dragomir",
+        "Diana Maria Ilie",
+        "Rozi Liliana Berevoianu"
+      ],
+      "doi": "10.15835/buasvmcn-hort:2016.0012",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "ed17bc7ba589",
+      "title": "Determinants of farmers’ intention to adopt good agricultural practices under climate change: evidence from the Chebika community, governorate of Kairouan, Tunisia",
+      "url": "https://doi.org/10.3389/fsufs.2026.2008966",
+      "source_id": "journal-frontiers-in-sustainable-food-systems",
+      "source_name": "Frontiers in Sustainable Food Systems",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Against the backdrop of the growing impacts of climate change on agricultural systems, this study investigates the factors influencing farmers’ intention to adopt Good Agricultural Practices (GAP) in the Kairouan Governorate of central Tunisia. The study aims to generate evidence to inform more effective agricultural extension approaches and support policies that can foster the adoption of climate-resilient and sustainable farming practices. A field survey was carried out among 53 farmers in the delegation of Chebika, combining a descriptive characterization of farms and farmers with two complementary approaches grounded in the Theory of Planned Behavior (TPB): an ordered probit model and Partial Least Squares Structural Equation Modeling (PLS-SEM). The ordered probit results indicate that the three core TPB dimensions are significantly associated with farmers’ intention to adopt GAP, alongside selected socioeconomic and institutional characteristics. These findings highlight the relevance of both behavioral factors and farmers’ socioeconomic context in explaining GAP adoption intentions. The PLS-SEM analysis confirms the direct and significant effect of the three TPB constructs on adoption intention and shows that subjective norms exert the strongest influence, followed by perceived behavioral control and attitude. The exploratory findings show that attitudes, subjective norms and perceived behavioral control are all linked to farmers’ intention to adopt practices. These…",
+      "authors": [
+        "Chaima Zouaoui",
+        "Hassen Abdelhafidh",
+        "Houda Mazhoud",
+        "Fraj Chemak"
+      ],
+      "doi": "10.3389/fsufs.2026.2008966",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "e8067d405508",
+      "title": "Perceptions and Attitudes Towards Climate Change and Their Association with Preventive and Adaptive Health Behaviors among Residents of Ilorin Metropolis, Nigeria",
+      "url": "https://alhikmahuniversity.edu.ng/AJOHS/index.php/journal/article/view/166",
+      "source_id": "journal-al-hikmah-journal-of-health-sciences-ajohs",
+      "source_name": "AL-HIKMAH JOURNAL OF HEALTH SCIENCES (AJOHS)",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Background: Climate change poses significant public health challenges, requiring effective community responses to reduce health risks. This study assessed perceptions and attitudes towards climate change and their association with preventive and adaptive health behaviors among residents of Ilorin Metropolis, Nigeria. Methods: A community-based analytical cross-sectional study was conducted among adults selected through multistage sampling. Data were collected using a structured interviewer-administered questionnaire. A total of 427 questionnaires administered while 363 were correctly completed and analyzed using SPSS version 27. Descriptive statistics summarized the data, while Chi-square tests assessed associations between categorized perceptions, attitudes, and preventive and adaptive health behaviors at p < 0.05. Results: Positive perceptions were reported by 304 (83.7%) respondents, good attitudes by 291 (80.2%), and good preventive and adaptive health behaviors by 247 (68.0%). Positive perceptions (χ² = 23.178, p < 0.001) and good attitudes (χ² = 28.416, p < 0.001) were significantly associated with preventive and adaptive health behaviors. Conclusion: Residents demonstrated generally positive perceptions and favorable attitudes towards climate change, which were significantly associated with preventive and adaptive health behaviors. However, the smaller final sample and categorical scoring approach should be considered when interpreting the findings.",
+      "authors": [
+        "Qudrat Abiola Abdulrahman",
+        "Walliyy Olakunle Sarumi",
+        "L. O. Oladimeji"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "e0dde0e99222",
+      "title": "Education As An Agent Of Political Socialization: A Psychological Study Of Youth Attitudes In Pakistan",
+      "url": "https://doi.org/10.5281/zenodo.24246992",
+      "source_id": "journal-perspectives-in-social-sciences",
+      "source_name": "Perspectives in Social Sciences",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Political socialization is a serious process whereby individuals get to acquire political values, attitudes and orientations and education is one of the most significant institutional agents in this process. In Pakistan where there is a lack of political stability, ideological rivalry and curriculum controversies, it is especially important to know the psychology of political education. This paper discusses the role of educational institutions in the political socialization of young people in Pakistan in terms of political-psychological dimension. Qualitative interpretivist research design, the study relies on the in-depth semi-structured interviews with the university and college students of different educational, gender, and socio-geographic groups aged between 18-29. Political Socialization Theory, the Social Learning Theory, and some of the major findings in the field of political psychology direct the analysis. The thematic analysis was performed under the framework of Braun and Clarke in order to analyze data. The research results show that education influences youth political attitudes not only in its formal programs but also in ways that teachers behave, the organizational culture, peer instruction, and the unofficial curriculum. The psychological processes including the formation of political identity, emotional reaction to political stories, cognitive framing, and trust or mistrust to political institutions can be regarded as some key mechanisms of political…",
+      "authors": [
+        "Iram Tahira, Sumaira Nazir, Ghulam Yaseen, Dr. Imtiaz Ahmad",
+        "Sumaira Nazir",
+        "Ghulam Yaseen",
+        "Imtiaz Ahmad"
+      ],
+      "doi": "10.5281/zenodo.24246992",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b9254d06bf4b",
+      "title": "From plant blindness to plant awareness",
+      "url": "https://doi.org/10.35513/botlit.2026.3.2",
+      "source_id": "journal-botanica",
+      "source_name": "Botanica",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "A tendency to pay limited attention to plants, often described as “plant blindness”, can lead to failing to recognise their biological, ecological and societal importance. This opinion paper argues that botanical education should be an integral part of environmental education and sustainable development, not a narrowly specialised branch of biology. The paper proposes that plant education should connect botanical knowledge with biodiversity conservation, climate resilience, human health, the food system and responsible decision-making. This should be achieved through age-appropriate, experiential approaches in both formal and informal education settings. Integrating botany into school curricula, higher education, and community-based learning can strengthen the connection between plant knowledge and biological, ecological, health, and environmental contexts, thereby fostering ecological literacy. Plant education is not a nostalgic return to classical botany; rather, it develops the knowledge and competencies needed to understand biodiversity, use biological resources responsibly, and respond to environmental and climate challenges. Recognising and teaching the ecological and societal value of plants is essential for fostering an informed attitude towards biodiversity and encouraging responsible environmental action. In conclusion, to envision the future, we must first learn to appreciate the value of plants.",
+      "authors": [
+        "Ольга Михайленко"
+      ],
+      "doi": "10.35513/botlit.2026.3.2",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "69bb472ad8c6",
+      "title": "SUSTAINABILITY MANAGEMENT IN CHALLENGING TIMES: REBRANDING, GREENHUSHING, AND CLIMATE SEVERITY",
+      "url": "https://doi.org/10.24818/beman/2026.s.i.6-14",
+      "source_id": "journal-business-excellence-and-management",
+      "source_name": "BUSINESS EXCELLENCE AND MANAGEMENT",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This article examines the hypothesis that the central concepts of the climate debate and corporate responsibility, such as “social responsibility”, “sustainability”, “ESG” and “global warming”, evolve according to a logic of conceptual branding and rebranding. In a context of geopolitical tensions, regulatory uncertainty, and pressure on compliance costs, this process has direct consequences for the management of communication and organizational legitimacy. The analysis rests on an integrative review and a triangulation of secondary sources (research interest, frequency of terms in business reports, news coverage, and physical climate indicators), compared and interpreted descriptively in light of Downs’s issue-attention cycle, media agenda-setting and framing, and institutional isomorphism. Four arenas are compared: the United States, the European Union, China, and Global South countries in the UN negotiations. Documented findings are kept apart from interpretation, and no causal claims are made. Five conclusions emerge. First, the transition from “social responsibility” to “sustainability” and then to “ESG” reveals acceleration followed by semantic wear, with no synchrony across jurisdictions. Second, Anglophone climate discourse follows a similar path, from “global warming” to “climate crisis”. Third, the Global South developed its own cycle, from “climate debt” to “loss and damage”, shaped by the North’s resistance to legal accountability. Fourth, China has built a…",
+      "authors": [
+        "José Tiago de SOUSA"
+      ],
+      "doi": "10.24818/beman/2026.s.i.6-14",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "333cbb2eff28",
+      "title": "Attitude of Hinduism Towards Environmental Conservation",
+      "url": "https://doi.org/10.3329/pp.v75i1.93257",
+      "source_id": "journal-philosophy-and-progress",
+      "source_name": "Philosophy and Progress",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Religion shapes society by enforcing moral standards and values. Hinduism, like other religions, has influenced Hindus’ behavior throughout history. Hinduism has significantly influenced the structure, function, and culture of Hindu societies.This article explores the attitudes of Hinduism towards environmental conservation, highlighting the religion’s intrinsic connection to nature and ecological sustainability. Rooted in ancient texts and philosophical traditions, Hinduism promotes a worldview that emphasizes the interconnectedness of all living beings and the sacredness of the Earth. The study examines key concepts such as dharma (duty), ahims̅ a(non-violence), and the reverence for natural elements, illustrating how these principles inform practices that encourage environmental stewardship. Additionally, the article addresses contemporary issues, showcasing how Hindu teachings can contribute to modern conservation efforts and environmental ethics. By integrating spiritual beliefs with ecological awareness, Hinduism offers valuable insights for addressing current environmental challenges, advocating for a harmonious coexistence between humanity and the natural world. Philosophy and Progress, Vol#77-78; No#1-2; Jan-Dec 2025 P 221-241",
+      "authors": [
+        "Eva Sadia Saad",
+        "Shikha Rani Das"
+      ],
+      "doi": "10.3329/pp.v75i1.93257",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "23fc5908db91",
+      "title": "From principle to practice: ethical framing and participatory governance in local climate policy",
+      "url": "https://doi.org/10.1080/13549839.2026.2763668",
+      "source_id": "journal-local-environment",
+      "source_name": "Local Environment",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This study examines how municipalities operationalise ethical, justice-oriented, and participatory principles in local climate governance. Using a qualitative, interpretivist, comparative multiple-case study design, it examines Copenhagen, Curitiba, Cape Town, and Portland. Documentary data published between 2013 and 2025, including municipal plans, policy documents, institutional reports, peer-reviewed scholarship, and civil-society sources, were analysed thematically. Four interconnected themes were identified: ethical and justice-oriented framing, participatory engagement and civic empowerment, institutional integration and cross-scale governance, and local innovation. The findings indicate broad convergence around equity, intergenerational responsibility, civic engagement, and context-sensitive governance, alongside differences in institutional arrangements, participation mechanisms, policy traditions, and governance capacities. The study shows that ethical principles become more practically meaningful when connected to participation and institutional arrangements capable of translating normative commitments into policy practice. The findings are interpretive and illustrative rather than causal.",
+      "authors": [
+        "Raed Atef"
+      ],
+      "doi": "10.1080/13549839.2026.2763668",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "1c643f3ea93d",
+      "title": "Wikipedia and Grokipedia: A Comparison of Human and Generative Encyclopedias",
+      "url": "https://doi.org/10.1145/3840301",
+      "source_id": "journal-acm-transactions-on-the-web",
+      "source_name": "ACM Transactions on the Web",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-15T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "We present a comparative analysis of Wikipedia and Grokipedia to examine how generative mediation alters content selection, textual rewriting, narrative structure, and evaluative framing in encyclopedic content. Not all Wikipedia pages appear in Grokipedia. We model which pages are included as a function of Wikipedia page popularity, density of reference, and recent editorial activity. Inclusion is non-uniform: pages with higher visibility and greater editorial conflict in Wikipedia are more likely to appear in Grokipedia. For included pages, we distinguish between verbatim reproduction and generative rewriting. Rewriting is more frequent for pages with higher reference density and recent controversy, while highly popular pages are more often reproduced without modification. We compare editing activity across the two platforms and estimate page complexity using a fitness-complexity framework to assess whether generative mediation alters patterns of editorial participation. To assess narrative organization, we construct actor-relation networks from article texts using abstract meaning representation. Across multiple topical domains, including U.S. Politics, Geopolitics, and Conspiracy-related narratives, narrative structure remains largely consistent between the two sources. Analysis of lead sections shows broadly correlated framing, with localized shifts in laudatory and conflict-oriented language for some topics in Grokipedia. Overall, generative systems preserve the main…",
+      "authors": [
+        "Ortal Hadad",
+        "Edoardo Loru",
+        "Jacopo Nudo",
+        "Anita Bonetti",
+        "Matteo Cinelli",
+        "Walter Quattrociocchi"
+      ],
+      "doi": "10.1145/3840301",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "f47c2624e44b",
       "title": "Vesmírná loď Starship se vrátila na Zemi, přistála do záchytných ramen",
       "url": "https://ct24.ceskatelevize.cz/clanek/svet/vesmirna-lod-starship-se-vratila-na-zemi-pristala-do-zachytnych-ramen-379626",
@@ -3236,6 +3455,235 @@
       "date_is_first_seen": false
     },
     {
+      "id": "eb998d5e508f",
+      "title": "A multiscale framework for the design and analysis of energy systems in Bolivia",
+      "url": "https://doi.org/10.1007/s12667-026-00849-5",
+      "source_id": "journal-energy-systems",
+      "source_name": "Energy Systems",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Abstract Large-scale technology transitions entail the simultaneous adoption of technologies and dependent resources, as well as a shift in policy and human capital. Systems often consist of multiple interdependent processes, allowing decisions to propagate through subsystems. Moreover, systems operate under uncertainty and are influenced by phenomena occurring at different temporal and spatial scales. To​ this end,​ a ​multiscale​ and​ multi-product​ analytical framework is required for informed decision-making. Such a framework is presented to analyze transition scenarios for Bolivia. The presented work​ explores the impact of replacing natural gas technologies on energy security and cost-effectiveness of Bolivia. Using a Mixed-Integer Linear Programming optimization model, we evaluate various energy scenarios wherein the system is given the option to adopt alternative technologies, viz. biomass, hydropower, oil, and variable renewable energy (VRE) sources such as solar and wind. Our analysis identifies hydropower and biomass as the most viable alternatives. Notably, VREs are burdened by the need for a high capital investment resulting from limited resource and technology availability. The study provides valuable insight into Bolivia’s energy challenges, offering a user-adaptable model for future energy planning and policy decisions aimed at building more sustainable and resilient energy systems. The proposed methodology is adaptable to other countries, offering a…",
+      "authors": [
+        "Betsie Montano Flores",
+        "Funda Iseri",
+        "Halil Iseri",
+        "Rahul Kakodkar",
+        "Walter Oscar Serrate Cuellar",
+        "Gaston Mejia Brown",
+        "Marcelo Lazo Duabyakosky",
+        "Konstantinos Pappas",
+        "Efstratios N. Pistikopoulos"
+      ],
+      "doi": "10.1007/s12667-026-00849-5",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "cc90f27231fd",
+      "title": "Preparing for Natural Hazards Events in Small Island Communities: The Role of Social Vulnerability",
+      "url": "https://doi.org/10.24043/001c.173240",
+      "source_id": "journal-island-studies-journal",
+      "source_name": "Island Studies Journal",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Small island communities in large archipelagos are often underrepresented in disaster and climate change studies. While they share similar features of Small Island Developing States (SIDS), such as remoteness and economic isolation, they remain distinct from SIDS as they tend to lack political priority and sovereignty in allocating resources to manage risk and social vulnerabilities. This can further compromise their preparedness for climate shocks and disasters. This study proposes a comprehensive framework for assessing community preparedness that can be applied to multiple hazards in a small island community setting through two steps: (1) an individual’s capacity within a household to prepare for a disaster, followed by (2) an evaluation of the collective community’s preparedness at the village level. The researcher administered a 48-question survey among 782 respondents in a small island of North Moluccas province that aimed to understand how respondents leveraged their resources, knowledge, and social networks in their disaster preparedness, measured by four key parameters, namely knowledge and attitude (KA), emergency response plan (EP), early warning system (WS), and community capacity (CC). The findings suggest that the knowledge, attitude and the warning system at the household level mainly shape individual preparedness. At the community level, the availability of evacuation maps and signs, evacuation drills, and sharing information via social media shape the…",
+      "authors": [
+        "Mohammad Ridwan Lessy",
+        "Jonatan Anderias Lassa",
+        "Kerstin Katharina Zander"
+      ],
+      "doi": "10.24043/001c.173240",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b9e28493d114",
+      "title": "Data-driven analysis of barriers to net zero practices in the UK construction sector: a multidisciplinary approach using clustering and topic modelling",
+      "url": "https://doi.org/10.1080/23789689.2026.2763213",
+      "source_id": "journal-sustainable-and-resilient-infrastructure",
+      "source_name": "Sustainable and Resilient Infrastructure",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "The construction industry is falling behind in achieving the net-zero targets established under the Paris Agreement. As such, this study investigates barriers to net-zero adoption from the perspectives of interdisciplinary construction professionals. An exploratory qualitative research approach was adopted, using semi-structured interviews to collect data. Interview transcripts were analysed through thematic analysis, supported by K-means clustering and Latent-Dirichlet-Allocation topic modelling. The analysis identified five barrier themes: financial and economic constraints; technological and expertise challenges; regulatory and policy limitations; industry practices and cultural resistance; and supply chain and operational difficulties. The findings reveal that net-zero construction is widely perceived as costly, highlighting the need for government financial support and incentives to encourage adoption. The study provides insights into challenges hindering net-zero implementation and offers practical implications for policymakers and industry stakeholders in developing targeted interventions, supportive policies, and an enabling environment to accelerate the construction industry’s transition towards net-zero emissions.",
+      "authors": [
+        "Jamiu Adetayo Dauda",
+        "Amelia Tutt",
+        "Saheed O. Ajayi",
+        "Waris A. Adebisi",
+        "Abdullahi Babatunde Saka",
+        "Olayiwola Oladiran",
+        "Adekunle Sabitu Oyegoke",
+        "Zainab Toyin Jagun"
+      ],
+      "doi": "10.1080/23789689.2026.2763213",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b1aaa193bc42",
+      "title": "How can restorative justice narratives inform social design practice?",
+      "url": "https://doi.org/10.1080/17448727.2026.2762250",
+      "source_id": "journal-sikh-formations",
+      "source_name": "Sikh Formations",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This paper explores how restorative justice narratives can inform social design practice. Drawing on the documentary Impossible Conversations, it examines how dialogue and relational empathy can be cultivated in contexts shaped by incarceration, displacement and marginalisation. Through examples including Makeright, we show how design processes can foster perspective-taking, dignity and trust by encouraging prison participants to consider the needs of others. Drawing on the Decolonising Fashion and Textiles project, we discuss how participatory fashion practices can support belonging, challenge narratives about displaced people, and support refugees' resilience. We conclude by proposing a typology of storytelling for reconnection, dialogue and repair.",
+      "authors": [
+        "Lorraine Gamman",
+        "Francesco Mazzarella"
+      ],
+      "doi": "10.1080/17448727.2026.2762250",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a7fcd8d1e49f",
+      "title": "Impact of the Revenue Sharing Program on the Protection Of High Conservation Values (HCV) of Rwanda: A Case Study of Nyungwe National Park, Kitabi Sector, Nyamagabe District, Rwanda",
+      "url": "https://doi.org/10.37284/eajenr.9.4.6279",
+      "source_id": "journal-east-african-journal-of-environment-and-natural-resources",
+      "source_name": "East African Journal of Environment and Natural Resources",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Despite the implementation of Rwanda’s Revenue Sharing Program (RSP) around Nyungwe National Park, concerns have persisted regarding whether tourism-derived benefits effectively contribute to the protection of High Conservation Values (HCV), including biodiversity conservation, forest cover, ecosystem integrity, and reduction of illegal resource use. Limited empirical evidence existed on how community participation, transparency, awareness, and policy support influence conservation outcomes in Kitabi Sector. This study therefore examined the impact of the Revenue Sharing Program on HCV protection in Nyungwe National Park using a mixed-methods approach. Data were collected from 374 household respondents, supported by key informant interviews and secondary institutional records. Quantitative data were analysed using descriptive statistics, correlation, and multiple regression analysis in SPSS version 28, while qualitative data were analysed thematically. Findings revealed that the Revenue Sharing Program is widely implemented and positively associated with conservation outcomes. Community awareness, transparency in fund distribution, revenue allocation, and funded community projects significantly contributed to improvements in biodiversity protection, forest cover, ecosystem health, and reduction of illegal activities such as poaching and logging. The regression model showed that RSP indicators explain 31.9% of the variation in HCV protection, confirming a statistically…",
+      "authors": [
+        "Innocent Rusharaza",
+        "Martin Vincent Nsanzumukiza"
+      ],
+      "doi": "10.37284/eajenr.9.4.6279",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "9c9bdd141775",
+      "title": "Digital economy, fiscal policy and renewable energy investments: a G7 environmental perspective under the SDG-9 framework",
+      "url": "https://doi.org/10.1057/s41599-026-09288-0",
+      "source_id": "journal-humanities-and-social-sciences-communications",
+      "source_name": "Humanities and Social Sciences Communications",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "The emergence of fourth industrial revolution means that global economies must confront the challenge of fostering social and economic developments while confronting if digital-real economic integration can help fulfill net-zero emissions commitments. The current study explores the dynamic impact of digital economy, fiscal policies and energy transition on renewable energy investments in industrial economies. In consideration of the complex challenges in evaluating energy scenarios in industrial economies, we use extensive econometric approach to reveal that digital economy, taxation revenues, energy transition and financial market developments positively correlate with renewable energy investments whereas, governmental expenditures and urbanization report opposite association. The current study further provides comparative econometric evidence within G7 economies to report novel policy framework aimed at improving the scope of sustainable development frameworks.",
+      "authors": [
+        "Muhammad Farhan Bashir",
+        "Fouad Jamaani",
+        "Hafiz Muhammad Naveed"
+      ],
+      "doi": "10.1057/s41599-026-09288-0",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "9b834debbd10",
+      "title": "Knowledge and attitude toward energy and environmental sustainability in Islamic schools around Indonesia’s capital",
+      "url": "https://doi.org/10.1007/s44217-026-02435-4",
+      "source_id": "journal-discover-education",
+      "source_name": "Discover Education",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This study investigates Islamic junior high school students’ perceptions and attitudes toward energy and environmental sustainability in the buffer regions surrounding Indonesia’s new capital city. While the new capital is envisioned as a sustainable forest city, limited research has examined how students in these areas understand and respond to energy and environmental challenges within an Islamic educational context aligned with the Sustainable Development Goals (SDGs). A quantitative descriptive-correlational design was employed, involving 925 students from ten Islamic junior high schools. Data were collected using a validated questionnaire measuring three perception dimensions (conceptual understanding, knowledge, and issue awareness) and three attitude dimensions (affective, certainty, and behavioral). Descriptive statistics and Pearson correlation analysis were applied. Findings indicate that students’ perceptions and attitudes are predominantly at a moderate level. Conceptual understanding was relatively strong, whereas awareness of real environmental issues was weaker. Students’ attitudes across affective, certainty, and behavioral domains were also moderate. A positive but weakly significant correlation (r = 0.175) was found between perception and attitude, suggesting that cognitive understanding alone does not sufficiently shape pro-environmental attitudes. These findings highlight the need for environmental education in Islamic schools that integrates real-world…",
+      "authors": [
+        "Atin Nuryadin",
+        "Lambang Subagiyo",
+        "Pramudya Dwi Aristya Putra",
+        "M A H Bunyamin",
+        "Nurul Fitriyah Sulaeman"
+      ],
+      "doi": "10.1007/s44217-026-02435-4",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "846933bd70f1",
+      "title": "Competing attention and linked emotions coexist in Reddit climate and pandemic discussions",
+      "url": "https://doi.org/10.1038/s43247-026-04213-4",
+      "source_id": "journal-communications-earth-environment",
+      "source_name": "Communications Earth & Environment",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "The temporal overlap between the COVID-19 pandemic and the climate crisis provides a real-world setting for examining how public attention and emotional expression shift when societies face multiple concurrent threats. Here we examine public discourse during overlapping global crises using nearly 26 million Reddit comments posted in 2020-2021. Higher COVID-19 mortality was associated with a modest reduction in climate-focused comment volume, consistent with aggregate attention displacement. Dynamic models revealed selective short- and long-run emotional-language associations, concentrated mainly in negative sentiment and observed more often in the COVID-19-to-climate orientation. Comments mentioning both crises connected them through competing attention, shared root causes, expert knowledge, governance, inequality, and expectations of social change. These findings show that reduced visibility for climate discussion can coexist with selective cross-topic emotional coupling during overlapping societal crises. Climate discussions received less attention during peaks in pandemic mortality while emotional responses remained linked across topics, according to analyses of 26 million Reddit comments.",
+      "authors": [
+        "Rong‐Gang Cong",
+        "Xing Chen",
+        "Peng Wang",
+        "Yi‐Ming Wei"
+      ],
+      "doi": "10.1038/s43247-026-04213-4",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "7a99c3aa47a1",
+      "title": "GREEN ENTREPRENEURSHIP: A PATH TOWARDS SUSTAINABLE DEVELOPMENT",
+      "url": "https://doi.org/10.67851/ijcmth.vol.1.issue.3.008",
+      "source_id": "journal-international-journal-on-commerce-management-tourism-and-home-science",
+      "source_name": "International Journal on Commerce Management Tourism and Home Science",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Green entrepreneurship has emerged as an important approach for addressing environmental challenges while creating economic and social value. This paper explores the concept of green entrepreneurship and examines its role in promoting sustainable development. The study adopts a qualitative research approach based on a review of selected secondary literature on green entrepreneurship, green innovation, environmental responsibility, eco tourism, young entrepreneurs, policy support and sustainable business practices. The reviewed literature indicates that green entrepreneurship integrates entrepreneurial opportunities with environmental responsibility and can contribute to economic growth, environmental protection and social well-being. The study identifies sustainability orientation, education, self-efficacy, social and family support, government support, market demand and environmental regulations as important drivers of green entrepreneurship. At the same time, limited finance, regulatory challenges, lack of awareness and knowledge, weak institutional support and difficulties in identifying target markets remain significant barriers. The review further highlights the role of green innovation and environmentally responsible business practices in improving market opportunities, stakeholder engagement and business performance. The study concludes that strengthening institutional support, financing, education, policy frameworks and green innovation can encourage the development…",
+      "authors": [
+        "Sebin M Roy"
+      ],
+      "doi": "10.67851/ijcmth.vol.1.issue.3.008",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "764b8bed1e60",
+      "title": "Predicting farmers' readiness to adopt decentralized renewable energy under climate shocks and power outages",
+      "url": "https://doi.org/10.1016/j.rineng.2026.114186",
+      "source_id": "journal-results-in-engineering",
+      "source_name": "Results in Engineering",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "The increasing vulnerability of agricultural systems to climate variability and infrastructural shocks has severely affected the security of base resources, particularly at the critical water-energy-food nexus. This study aimed to predict and analyze farmers' readiness to adopt decentralized renewable energy under climate shocks and power outages in Kermanshah Province. The theoretical framework of the study is based on the integration of Protection Motivation Theory (PMT) and Diffusion of Innovations Theory (DOI). Data were collected through a survey method using a researcher-made questionnaire with 50 items. The sample size was determined as 384 using Cochran's formula and selected through stratified random sampling. Data analysis was conducted using Partial Least Squares Structural Equation Modeling (PLS-SEM). The results showed that power outage shocks (β = 0.386, p < 0.001), perceived drought vulnerability (β = 0.352, p < 0.001), and perceived relative advantage (β = 0.324, p < 0.001) were positively and significantly associated with readiness to adopt decentralized renewable energy, explaining 47% of the variance (R² = 0.47). Perceived risks were negatively and significantly associated with readiness to adopt (β = -0.156, p = 0.005). Perceived relative advantage played a partial mediating role in the relationship between power outage shocks/drought vulnerability and adoption readiness (β = 0.136, p < 0.001; β = 0.089, p = 0.003), while perceived risks played an…",
+      "authors": [
+        "Masoumeh Thaghibaygi",
+        "Amirhossein Alibaygi"
+      ],
+      "doi": "10.1016/j.rineng.2026.114186",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "73bda34cfcfe",
       "title": "Enhancing technical capacity for scaling climate smart agriculture in Ethiopia",
       "url": "https://doi.org/10.1007/s43621-026-05232-z",
@@ -3252,6 +3700,78 @@
         "Fekadie Bazie Enyew"
       ],
       "doi": "10.1007/s43621-026-05232-z",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "67f4c122c0d1",
+      "title": "Towards an Updated National Hydrogen Strategy: Spatially and Temporally Resolved Hydrogen Demand Estimation in Japan",
+      "url": "https://doi.org/10.1016/j.ijhydene.2026.158543",
+      "source_id": "journal-international-journal-of-hydrogen-energy",
+      "source_name": "International Journal of Hydrogen Energy",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Governments worldwide have adopted hydrogen strategies to decarbonize hard-to-abate sectors, yet Japan lacks a comprehensive assessment of domestic hydrogen demand. This study estimates hydrogen demand and associated carbon requirements in industry and transportation using a stoichiometric approach and analyses their spatial and temporal distributions. Estimated hydrogen demand reaches 42.4–47.0 Mt-H 2 yr −1 for industry and 12.2–24.8 Mt-H 2 yr −1 for transportation. The results reveal pronounced spatial mismatches between hydrogen production potential, demand, and carbon capture opportunities, highlighting challenges for infrastructure planning. Moreover, Japan's current national hydrogen strategy would satisfy only 42.6–47.2% of the estimated industrial hydrogen demand in 2050. These findings highlight the importance of revising Japan's national hydrogen strategy based on quantitative spatial and temporal demand assessments to support hydrogen infrastructure planning and improve energy security.",
+      "authors": [
+        "Ryoga Ono",
+        "Yume YAMASHITA",
+        "Atsushi Hirose",
+        "Rémi Delage",
+        "Toshihiko Nakata",
+        "Hiroki Sakuraba",
+        "Masaru Higashitani"
+      ],
+      "doi": "10.1016/j.ijhydene.2026.158543",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "48363244ddfa",
+      "title": "Green Transport Transition: A Comparative Analysis of Kerala with Other Selected States",
+      "url": "https://doi.org/10.54536/ijsrd.v3i2.4135",
+      "source_id": "journal-international-journal-of-sustainable-rural-development",
+      "source_name": "International journal of sustainable rural development.",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "The transportation sector in India is a significant contributor to environmental pollution, primarily due to its reliance on fossil fuels. With growing awareness of climate change, the adoption of green transportation has emerged as a vital strategy for reducing carbon emissions. This research paper based on secondary data, investigates the penetration of green transport in greenery state, Kerala relative to other Indian states. It analyses key factors such as green vehicle registration trends, the development of charging infrastructure, government policies, and green initiatives in public transport. The study also explores the adoption of green vehicles, the policy measures driving the shift, and the challenges hindering the transition. This study reveals that while Kerala has achieved relatively good annual growth in green transport, it still lags behind some of the larger states. It found that limited charging infrastructure, low consumer green awareness and modest government incentives are hampering green transition. So there may be some room for more policies, incentives and support for the EV ecosystem. The findings offer valuable insights into Kerala’s comparative performance in promoting sustainable transportation, highlighting best practices and areas for improvement.",
+      "authors": [
+        "M. Praveen",
+        "T. Vineethan",
+        "KC. Muhammed Salim"
+      ],
+      "doi": "10.54536/ijsrd.v3i2.4135",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "39fbace86955",
+      "title": "FARMERS’ AWARENESS AND KNOWLEDGE OF CLIMATE SMART AGRICULTURAL PRACTICES AMONG SORGHUM FARMERS IN NORTHWESTERN NIGERIA",
+      "url": "https://doi.org/10.33003/japes.2026.v2i3.315-325",
+      "source_id": "journal-fudma-journal-of-animal-production-and-environmental-science",
+      "source_name": "FUDMA Journal of Animal Production and Environmental Science",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "The study analyzed farmers’ awareness and knowledge of climate smart agricultural practices on Sorghum production in Northwestern Nigeria. A total of 334 sorghum farmers were sampled using a multi-stage sampling procedure. Primary data were collected using structured questionnaires. Data were analyzed using descriptive statistics, CSAP awareness index, and CSAP knowledge scale. The results of the socio-economic characteristics revealed that the mean age of sorghum farmers was 50 years; male dominated (71.9%) Most of the respondents had household sizes of 10-17 persons (34.4.0%) and farming experience ranging from 4 to 21 years (58.3%). The Awareness of CSA practices was generally higher for basic practices than for technical ones with (58.7%) fall within the moderate awareness (40-69), 36.5% with high awareness (70-100) and only 4.8% exhibit low awareness (1-39). Knowledge level of sorghum farmers revealed that farmers are knowledgeable on CSA practices such as noticing any changes in weather patterns over the past years (82.63), how organic manure or compost can be used to improve Sorghum production (80.54), how mulching can improve soil moisture (79.94), aware of improved post-harvest storage methods that reduce losses (76.95) and have you heard about climate-smart agricultural practices (75.75). The overall knowledge score of the sorghum farmers reveals that only 6.7% (75) of the farmers had adequate knowledge of CSA practices, while 93.3% (259) scored below the 80%…",
+      "authors": [
+        "U. Ibrahim",
+        "A.K. Abdullahi",
+        "R.T. Abu",
+        "S. Ibrahim",
+        "M. Ibrahim"
+      ],
+      "doi": "10.33003/japes.2026.v2i3.315-325",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -3277,6 +3797,26 @@
         "Nuala Flood"
       ],
       "doi": "10.1007/s44217-026-02391-z",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "18dcffdad05c",
+      "title": "Geographical Indications As A Catalyst For Sustainable Traditional Crafts: A Case Study Of Gujarat’s Artisanal Heritage",
+      "url": "https://doi.org/10.70556/hpnlu-jedm-v6-i1-2025-10",
+      "source_id": "journal-hpnlu-journal-of-environment-disaster-management",
+      "source_name": "HPNLU Journal of Environment & Disaster Management",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-14T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Geographical Indications (GI) serve as a powerful tool for protecting traditional arts and crafts while promoting sustainability. In Gujarat, a state known for its rich cultural heritage, GI certification has played a crucial role in preserving artisanal crafts, ensuring economic stability for artisans, and fostering environmental sustainability. This paper examines how GI certification benefits traditional crafts such as Kutch Embroidery, Patan Patola, Surat Zari, Ajrakh Block Printing, and Tangaliya Shawls by enhancing market recognition, preventing cultural appropriation, and supporting eco-friendly production methods. The study explores three key dimensions of sustainability: economic, environmental, and socio cultural. Economically, GI certification boosts rural livelihoods by securing fair prices and reducing the dominance of mass-produced imitations. Environmentally, many GI-tagged crafts in Gujarat use natural dyes, organic fabrics, and traditional handloom techniques, which have a lower carbon footprint than mechanized alternatives. Socio-culturally, GI protection ensures the intergenerational transmission of skills, preventing the decline of traditional craftsmanship in the face of modernization. Despite these advantages, challenges persist, including a lack of awareness among artisans, market accessibility issues, and threats from mechanized imitations. Through case studies and policy analysis, this paper assesses the extent to which GI certification contributes…",
+      "authors": [
+        "Arunav Bhattacharjya"
+      ],
+      "doi": "10.70556/hpnlu-jedm-v6-i1-2025-10",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -5872,6 +6412,30 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f72956041692",
+      "title": "Pai's Teachers Strategies in Shaping the Attitude of Tolerance of Junior High School Students in Barru City",
+      "url": "https://doi.org/10.55324/enrichment.v4i8.800",
+      "source_id": "journal-enrichment-journal-of-multidisciplinary-research-and-development",
+      "source_name": "Enrichment Journal of Multidisciplinary Research and Development",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This study aimed to analyze the strategies employed by Islamic Religious Education (Pendidikan Agama Islam, PAI) teachers to foster tolerance among students at SMP Negeri 1 Barru and SMP Negeri 2 Barru, examine the integration of tolerance values into Islamic Religious Education instruction, identify supporting and inhibiting factors, and explore students' perceptions of these strategies. The research was motivated by the ethnic, cultural, and religious diversity of Barru Regency, which presented potential challenges related to social segregation, friendship preferences based on shared backgrounds, and limited empathy across different social groups. The study employed a descriptive qualitative research design with a phenomenological approach. Data were collected through in-depth interviews, observations, and document analysis involving school principals, PAI teachers, and students. Data were analyzed using Miles and Huberman's interactive model of qualitative data analysis and systematic coding techniques. Trustworthiness was established through data triangulation, member checking, and prolonged observation. The theoretical framework incorporated Joyce and Weil's (2003) models of teaching and the theories of attitude formation associated with Allport, Fishbein, and Ajzen. The findings revealed that PAI teachers fostered tolerance through instructional lectures, habituation practices, mentoring, perspective-taking activities, group discussions, guidance, and role modeling…",
+      "authors": [
+        "Rosdaeni Rosdaeni",
+        "Sitti Jamilah Amin",
+        "Muhiddin Bakri",
+        "Siti Aminah",
+        "Siti Nurhayati"
+      ],
+      "doi": "10.55324/enrichment.v4i8.800",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "f5bd71ed6d25",
       "title": "Building the hydrogen future: Why announced projects fail to reach investment",
       "url": "https://doi.org/10.1016/j.erss.2026.105072",
@@ -5890,28 +6454,6 @@
       ],
       "doi": "10.1016/j.erss.2026.105072",
       "topic_filter": false,
-      "source_weight": 1.1,
-      "date_is_first_seen": false
-    },
-    {
-      "id": "f079811cbc23",
-      "title": "A AMAZÔNIA NO TELEGRAM: UM DASHBOARD BASEADO EM MODELAGEM DE TÓPICOS BERT",
-      "url": "https://enancib.ancib.org/index/article/view/2668",
-      "source_id": "journal-enancib",
-      "source_name": "Enancib",
-      "region": "GLOBAL",
-      "source_type": "journal",
-      "language": "pt",
-      "published_at": "2026-11-13T00:00:00Z",
-      "first_seen": "2026-11-16T06:25:32.705462Z",
-      "summary_raw": "The Amazon occupies a central position in contemporary disputes over climate, sovereignty, conservation, and development, which makes it fertile ground for disinformation narratives. This study presents a methodological strategy for exploring large volumes of text, applied to messages about the Amazon posted by public Telegram channels in a multilingual corpus (Portuguese, Spanish, and English). Building on a previous study, the research advances the application of BERT-based topic modeling, coupled with the construction of an interactive dashboard. The aim is to discuss how semantic representations, thematic clusters, and exploratory visualizations can support the interpretation of extensive and heterogeneous textual data. The dashboard makes it possible to observe topic evolution over time, hierarchical structures, inter-topic distances, and distribution across channels. We argue that combining machine learning, visualization, and qualitative analysis contributes to research in Information Science and climate disinformation, taking the Amazon as an empirical case study and offering a replicable workflow for other thematic corpora.",
-      "authors": [
-        "Giulia Tucci",
-        "Bia Carneiro",
-        "Giosuè Ruscica"
-      ],
-      "doi": null,
-      "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
     },
@@ -5962,6 +6504,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "d119a3393212",
+      "title": "Environmental Performance and Renewable Resources: The Impact on Economic Growth in the Emerging and Developing Economies",
+      "url": "https://doi.org/10.53941/gssd.2026.100029",
+      "source_id": "journal-global-south-sustainable-development",
+      "source_name": "Global South & Sustainable Development",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This study investigates the impacts of environmental performance measured by CO2 emission from industrial processes and renewable capacity measured by electricity production from renewable sources excluding hydroelectric on economic growth in emerging and developing economies. The analysis uses time-series data over the period 2000–2025 and three World Bank aggregates based on historical series of income levels (low, lower-middle, and upper-middle). Foreign direct investment inflows, trade openness, urbanization, and in an original way, the country policy and institutional assessment (CPIA) index—as a proxy for the quality of the institutional and business environment—were included as control variables. The results show that the growth effects of environmental performance, renewable capacity, and institutional quality differ markedly across income levels. Growth persistence emerges only in upper-middle-income economies, whereas in low- and lower-middle-income aggregates growth does not depend significantly on its previous levels. Carbon intensity from industrial processes is positively and significantly associated with growth only in the lower-middle-income group, indicating that carbon-based industrial production still fuels expansion at intermediate development stages. Renewable capacity does not exert significant growth effects in any group. Trade openness promotes growth in lower-middle- and upper-middle-income economies but not in low-income ones, foreign direct…",
+      "authors": [
+        "Francesco Scalamonti"
+      ],
+      "doi": "10.53941/gssd.2026.100029",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c8cad5417f67",
       "title": "Predicting termite risk to North Korean wooden architectural heritage using climate data",
       "url": "https://doi.org/10.1038/s40494-026-03109-y",
@@ -5983,6 +6545,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "c8799a039ac9",
+      "title": "When Knowledge Institutions Pollute: Cultivated Meat, Science Communication, and Public Policy",
+      "url": "https://doi.org/10.1080/21550085.2026.2762368",
+      "source_id": "journal-ethics-policy-environment",
+      "source_name": "Ethics Policy & Environment",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Using a press release on cultivated meat’s climate impact as a case study, this paper argues for reforming universities’ media policies. Drawing on a dataset of 491 media items across 2023–2025, it traces how the press release triggered a cascade of ‘churnalism,’ propelling the preprint into mainstream and international media, embedding its most extreme claims into background knowledge, and contributing to policy actions restricting a potentially promising alternative protein. Misinformation in this case did not originate from overt industry manipulation, but from an epistemically polluted ecosystem that blends the different vested interests of academics, press officers, universities, and journalists.",
+      "authors": [
+        "Craig Callender"
+      ],
+      "doi": "10.1080/21550085.2026.2762368",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c7f529d885ad",
       "title": "Development of Distributed Energy Resource Control Technology to Alleviate Congestion in Power Grids",
       "url": "https://doi.org/10.1002/tee.70461",
@@ -5999,6 +6581,28 @@
         "Jumpei Baba"
       ],
       "doi": "10.1002/tee.70461",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "c66ee161c09d",
+      "title": "The emotional mechanism of motivated reasoning: How arousal response to fake news shapes political attitudes",
+      "url": "https://doi.org/10.34044/j.kjss.2026.47.4.24",
+      "source_id": "journal-kasetsart-journal-of-social-sciences",
+      "source_name": "Kasetsart Journal of Social Sciences",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Using the framework of the motivated reasoning theory, this studyexamined the role of emotional responses to news in understanding thelink between partisanship and political attitudes (e.g., Support forgovernment policies). Specifically, it aimed to show whether theassociation of partisanship and support for government policies would bemediated by voters’ perceived valence and arousal of fake and real news.A total of 200 Indonesians who voted either “Joko Widodo – Ma’arufAmin” or “Prabowo Subianto – Sandiaga Uno” in the 2019 PresidentialElection of the Republic of Indonesia were asked to read and rate the valence and arousal levels of fake and real news conveying anti-government framing. Then, they indicated how much they supported government policies led by Joko Widodo – Ma’aruf Amin. Resultsshowed that voters of the election winner had a higher support forgovernment policies. In comparison, voters of the election loser hadlower support, indicating the presence of partisanship-based motivatedreasoning. This association of partisanship and political support wasmediated only by the arousal response to the anti-government fake news.Neither the mediation effect of the valence response to the fake news northe valence and arousal responses to real news was significant. Hence,these findings suggest that arousal response activates motivated reasoningto defend or reinforce prior beliefs based on partisanship. The findingsalso imply that motivated reasoning is closely related to…",
+      "authors": [
+        "Vinaya Untoro",
+        "Agnes Sianipar",
+        "Hamdi Muluk"
+      ],
+      "doi": "10.34044/j.kjss.2026.47.4.24",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -6027,22 +6631,23 @@
       "date_is_first_seen": false
     },
     {
-      "id": "bcc82e7995d0",
-      "title": "ONDAS DE CONSPIRAÇÃO: DESINFORMAÇÃO CLIMÁTICA DURANTE AS ENCHENTES DE 2024",
-      "url": "https://enancib.ancib.org/index/article/view/2666",
-      "source_id": "journal-enancib",
-      "source_name": "Enancib",
+      "id": "b6c00f857320",
+      "title": "Climate-Responsive Financing, Climate-Smart Agriculture, and Productivity and Income among Smallholder Rice Farmers: A Systematic Evidence Review with a Tanzania Core",
+      "url": "https://doi.org/10.52589/ajafs-npbigm",
+      "source_id": "journal-african-journal-of-agriculture-and-food-science",
+      "source_name": "African Journal of Agriculture and Food Science",
       "region": "GLOBAL",
       "source_type": "journal",
-      "language": "pt",
+      "language": "en",
       "published_at": "2026-11-13T00:00:00Z",
-      "first_seen": "2026-11-16T06:25:32.705462Z",
-      "summary_raw": "In 2024, devastating floods struck Rio Grande do Sul and, during the tragedy, online content circulated attributing the rains to a research program allegedly operated as a climate weapon. Conspiracy narratives recurrently associate the program with the manipulation of natural disasters. Climate Disinformation prevents climate action and collective mobilization while, in general, incorporates ideological repertoires, cultural values, and local beliefs. Drawing on contributions from Information Science to the study of climate disinformation, this study investigates the construction and dissemination of this narrative on social media. The corpus comprises data collected from Telegram, YouTube, and Instagram, and the analysis methodology combines thematic classification and timeline mapping. Results indicate the cross-platform activation of a global conspiratorial repertoire, thematic co-occurrences suggesting the employment of technopolitical explanation for the catastrophe, and distinct circulation patterns across platforms. The study contributes to the understanding of informational disputes surrounding extreme climate events and the epistemic displacement produced by conspiratorial narratives.",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Background: Climate variability constrains smallholder rice production through liquidity shortages, input-risk exposure, insurance gaps and delayed investment. Climate-responsive financing (CRF) is promoted as a bridge between financial access and climate-smart agriculture (CSA), yet empirical studies often combine climate-specific finance with ordinary agricultural credit. Objective: To determine what empirical evidence exists on the effects of CRF on rice productivity and net farm income among smallholder farmers in Tanzania, and whether CSA has been demonstrated, rather than assumed, to mediate those effects. Methods: The review follows PRISMA 2020, PRISMA-S and the Synthesis Without Meta-analysis (SWiM) guideline. Eligibility was defined with a PECO framework and explicit operational definitions of smallholder farmers, CRF, rice-specific outcomes and net farm income. Studies were classified as core CRF evidence, adjacent agricultural-finance evidence or comparative mechanism evidence using pre-specified decision rules. Risk of bias was assessed with RoB 2 and ROBINS-I, and certainty with GRADE. Mediation evidence was classified using a single three-category scheme. The original database exports could not be reconstructed; the earlier project search log is therefore disclosed as a limitation and is not reported as audited PRISMA flow statistics. Results: Nine empirical studies, each checked against its publisher record during manuscript preparation, were synthesised: six…",
       "authors": [
-        "Giulia Tucci",
-        "Fábio Castro Gouveia"
+        "Nyabundege Frank Mugeta",
+        "Ernest Pascal Kihanga",
+        "Joseph Simon Kiria"
       ],
-      "doi": null,
+      "doi": "10.52589/ajafs-npbigm",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -6135,6 +6740,46 @@
       "date_is_first_seen": false
     },
     {
+      "id": "9f1211a29229",
+      "title": "Comparing conjuncturally, part I: Framing conjunctural analysis",
+      "url": "https://doi.org/10.1177/26349825261494315",
+      "source_id": "journal-environment-and-planning-f",
+      "source_name": "Environment and Planning F",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Conjunctural analysis is associated with a distinctive (if rather weakly codified) methodology. As an epistemological and political orientation, it holds significant implications for conceptualization, research design, casing, and for the practice and purpose of comparison, even though it does not come with fixed rules or a ready-made toolkit. Conjunctural analyses are concerned to confront complex, multiple, intersecting causation in politically salient, contested, and open situations; to explore conditions of existence, (re)combination, and possibility; to problematize received constructs, concepts, and categories, as well as hegemonic norms and commonsense meanings; and to mobilize reflexive strategies for casing, theorizing, and research practice. This two-part paper explores conjunctural approaches to comparative research design and practice as a methodological challenge and opportunity, but also as a distinctive response to enduring concerns in human geography, with the interplays between generalized processes and particular outcomes, the structural and the contingent, the “global” and the “local,” and other such persistent but problematic binaries. This first part of the paper engages the conjunctural and conjunctural analysis from a spatial perspective, opening up the question of comparison. The second part of the paper is an exploratory discussion of conjunctural approaches to comparison.",
+      "authors": [
+        "Jamie Peck"
+      ],
+      "doi": "10.1177/26349825261494315",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "9c88733aca9b",
+      "title": "THE ROLE OF ORGANIZATIONAL PSYCHOLOGY IN FORMING AND MANAGING A POSITIVE PSYCHOLOGICAL CLIMATE IN PRESCHOOL EDUCATION ORGANIZATIONS",
+      "url": "https://neojournals.com/index.php/nspj/article/view/603",
+      "source_id": "journal-neo-scientific-peer-reviewed-journal",
+      "source_name": "Neo Scientific Peer Reviewed Journal",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This article analyzes the potential of organizational psychology for forming and managing a positive psychological climate within the staff of preschool education organizations (PEOs). Organizational culture, psychological safety, leadership style, motivation, and burnout are examined in their interrelation. The author proposes criteria for assessing the psychological climate in a PEO, a system of management measures, and a step-by-step practical model. The article is based on theoretical analysis, and directions requiring empirical verification are identified.",
+      "authors": [
+        "Umarova Shakhnoza Shukrullayevna"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "9c2ab5d0b00e",
       "title": "RenovaBio, environmental efficiency scores, and the cost of debt: evidence from Brazilian biofuel firms",
       "url": "https://doi.org/10.1108/rae-09-2026-0424",
@@ -6152,6 +6797,28 @@
         "Luiz Gustavo Antônio de Souza"
       ],
       "doi": "10.1108/rae-09-2026-0424",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "97a9bea4ce1d",
+      "title": "A AMAZÔNIA NO TELEGRAM: UM DASHBOARD BASEADO EM MODELAGEM DE TÓPICOS BERT",
+      "url": "https://doi.org/10.59289/8fa98712",
+      "source_id": "journal-enancib",
+      "source_name": "Enancib",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "pt",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "The Amazon occupies a central position in contemporary disputes over climate, sovereignty, conservation, and development, which makes it fertile ground for disinformation narratives. This study presents a methodological strategy for exploring large volumes of text, applied to messages about the Amazon posted by public Telegram channels in a multilingual corpus (Portuguese, Spanish, and English). Building on a previous study, the research advances the application of BERT-based topic modeling, coupled with the construction of an interactive dashboard. The aim is to discuss how semantic representations, thematic clusters, and exploratory visualizations can support the interpretation of extensive and heterogeneous textual data. The dashboard makes it possible to observe topic evolution over time, hierarchical structures, inter-topic distances, and distribution across channels. We argue that combining machine learning, visualization, and qualitative analysis contributes to research in Information Science and climate disinformation, taking the Amazon as an empirical case study and offering a replicable workflow for other thematic corpora.",
+      "authors": [
+        "Giulia Tucci",
+        "Bia Carneiro",
+        "Giosuè Ruscica"
+      ],
+      "doi": "10.59289/8fa98712",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -6193,6 +6860,27 @@
         "Alejandro M. Estévez"
       ],
       "doi": "10.1111/lamp.70086",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "87f26d11e2cf",
+      "title": "Ageing in a warming world: Eco-anxiety, vulnerability and adjustment in older adults",
+      "url": "https://doi.org/10.1177/03080226261497608",
+      "source_id": "journal-british-journal-of-occupational-therapy",
+      "source_name": "British Journal of Occupational Therapy",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Background: As the global climate crisis intensifies, older adults – among the most vulnerable populations – may experience heightened eco-anxiety, perceived vulnerability to illness and challenges in psychological adjustment. Aim: To examine the relationship between eco-anxiety, environmental attitudes, perceived vulnerability and psychological adjustment in older adults. Methods: A cross-sectional study was conducted with 109 participants aged 65+ in Türkiye, using the Standardised Mini-Mental Test, Eco-Anxiety Scale, Sustainable Environment Attitude Scale, Perceived Vulnerability to Illness Scale and Brief Psychological Adjustment Scale. Results: Eco-anxiety was positively correlated with environmental attitudes ( r = 0.373, p < 0.001) and negatively correlated with psychological adjustment ( r = −0.322, p < 0.001) and perceived vulnerability to illness ( r = −0.883, p < 0.001). Conclusions: Emotional and cognitive responses to environmental threats are closely linked to resilience and health perceptions in older adults. Occupational therapy can proactively address these issues through nature-based engagement, adaptive coping strategies and eco-occupational approaches.",
+      "authors": [
+        "Mürüvvet Aydemir",
+        "Onur Altuntaş"
+      ],
+      "doi": "10.1177/03080226261497608",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -6286,6 +6974,28 @@
       "date_is_first_seen": false
     },
     {
+      "id": "727d84d6089a",
+      "title": "Climate change perceptions and risk awareness: causes, consequences and responses",
+      "url": "https://doi.org/10.51381/adrs.v7i1-2.937",
+      "source_id": "journal-annals-of-disaster-risk-sciences",
+      "source_name": "Annals of Disaster Risk Sciences",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Climate change is one of the major challenges of modern society, affecting the environment, human health, the economy, and social stability. In addition to examining its causes and consequences, understanding how citizens perceive climate change is important for developing effective approaches to climate risk management. This study aimed to examine citizens’ attitudes towards the causes and consequences of climate change, their trust in different sources of information, and their perceptions of the actions taken by individuals and institutions to address climate-related risks.The research was conducted using a quantitative method, based on an anonymous online questionnaire comprising 38 questions. The survey included demographic characteristics and statements concerning climate change, which respondents evaluated using a five-point Likert scale. The results indicate a high level of awareness of climate change and its consequences. Most respondents (88.1%) identified human activities as the main cause of climate change, while the most frequently recognized risks included the increasing frequency of extreme weather events (89.2%), the extinction of plant and animal species (78%), and threats to global food security (77.8%). However, the findings also revealed a considerable lack of trust in information sources, with 42.7% of respondents expressing distrust in the media, scientific community, and government institutions. Furthermore, 78.9% considered the measures taken by…",
+      "authors": [
+        "Domagoj Jagić",
+        "Petra Balenović",
+        "Nives Jovičić"
+      ],
+      "doi": "10.51381/adrs.v7i1-2.937",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "71dd078c5f91",
       "title": "Between hope and exhaustion: the emotional impacts of COP participation on young climate delegates",
       "url": "https://doi.org/10.1186/s42055-026-00133-5",
@@ -6370,6 +7080,47 @@
       "date_is_first_seen": false
     },
     {
+      "id": "601ecdcfd57d",
+      "title": "Human Resource Management and Pro-Environmental Behaviour of Young People in the Context of Industry 5.0",
+      "url": "https://doi.org/10.69889/ra0czh38",
+      "source_id": "journal-economic-sciences",
+      "source_name": "Economic Sciences.",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Industry 5.0 shifts the focus of enterprise transformation towards sustainability and human-centricity. This places new demands on human resource management (HRM), which needs to understand the pro-environmental values and behaviour of young people as the future workforce. The aim of the paper is to identify how young people in Slovakia experience climate change, to what extent their pro-environmental attitudes are reflected in their economic decisions and what this implies for HRM. The empirical basis is an online questionnaire survey of 427 young adults aged 18 to 30 in Slovakia in 2026. Climate change experience is measured by the Climate Change Anxiety Scale, and economic decision-making by willingness to pay more for green products and services, saving for green investments and limiting expenditures due to climate change. Descriptive statistics are used. Young people experience climate change mainly through behavioural engagement in everyday sustainable practices, whereas cognitive-emotional and functional impairment are rare. When saving for green investments, economic motives, particularly reducing household costs and gaining energy independence, prevail over environmental ones, and decisions requiring financial resources are made only by a minority. The pro-environmental economic decisions of the future workforce thus follow primarily an economic logic. For HRM, this implies connecting sustainability initiatives with tangible employee benefits, such as support for…",
+      "authors": [
+        "Ivana Kuráková Andrea Seberíni"
+      ],
+      "doi": "10.69889/ra0czh38",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "59c67b13acb6",
+      "title": "Interdependence of Green Investment, Circular Economy, and Environmental Policy in Achieving Sustainable Development and Emission Reduction in OECD Nations",
+      "url": "https://doi.org/10.1002/sd.71908",
+      "source_id": "journal-sustainable-development",
+      "source_name": "Sustainable Development",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "ABSTRACT OECD economies have committed to net‐zero targets, yet their emissions still depend on growth, finance and resource extraction. This study examines how green investment, renewable energy consumption, circular economy practices, environmental policy stringency, economic growth, financial development and mineral rents interact with CO 2 emissions in 38 OECD countries over 1998–2021. A panel vector autoregression estimated by GMM serves as the primary model, with a two‐lag system as the main specification and a one‐lag system as a robustness check. Fixed‐effects IV‐2SLS with Driscoll‐Kraay standard errors addresses endogeneity and cross‐sectional dependence, and system GMM and split‐sample panel VARs test whether resource dependence changes the results. Emissions are persistent. Renewable energy, circular economy practices and stricter environmental policy reduce emissions in both specifications: one standard deviation more of each lowers emissions by about 13%, 12% and 7%, respectively, over 2 years. Green investment cuts emissions in the following year, but the effect fades after 2 years. Economic growth raises emissions, consistent with the rising segment of the Environmental Kuznets Curve, and private credit and mineral rents also add to emissions; in split‐sample estimates, the mineral rent effect appears only in high‐rent countries. Policy stringency itself responds to green investment, mineral rents and circularity, which confirms two‐way links within the…",
+      "authors": [
+        "Dalia Ayme Opoko Apendi",
+        "Kaodui Li"
+      ],
+      "doi": "10.1002/sd.71908",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "538058e7c0d3",
       "title": "An expert-derived content blueprint for ocean, climate, and biodiversity education in Mexico",
       "url": "https://doi.org/10.1038/s44183-026-00253-7",
@@ -6427,6 +7178,51 @@
       "date_is_first_seen": false
     },
     {
+      "id": "2f4b7d4894f2",
+      "title": "Hantavirus at the Climate–Rodent–Human Interface: Integrating Immunopathogenesis, Ecological Drivers, and Health Inequities in the Americas",
+      "url": "https://doi.org/10.3390/microorganisms14112641",
+      "source_id": "journal-microorganisms",
+      "source_name": "Microorganisms",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "New World orthohantaviruses cause hantavirus cardiopulmonary syndrome (HCPS) within heterogeneous ecological and healthcare settings across the Americas. This selective critical narrative review integrates rodent reservoir ecology, environmental and occupational exposure, immunopathogenesis, and structural determinants of detection and care. Evidence is unevenly distributed, with detailed investigations concentrated in the United States, Panama, Chile, Argentina, and Brazil. Climate variability, land-use change, housing, and occupational conditions are associated with context-dependent exposure opportunities, not a uniform continental risk gradient. Protocadherin-1-dependent entry is experimentally supported for Andes virus (ANDV) and Sin Nombre virus (SNV). Endothelial barrier dysfunction is central to severe HCPS, whereas associations involving inflammatory cytokines, natural killer-cell phenotypes, and antibody Fc-effector functions have not established causation or validated prognostic utility. Geographic remoteness, diagnostic turnaround, and critical-care access are plausible modifiers of observed outcomes, although direct comparative estimates of their contributions to mortality disparities are limited. Findings in distinct Indigenous communities reflect heterogeneous ecological and structural contexts and do not demonstrate intrinsic biological susceptibility. We propose a testable mechanism-to-population One Health framework linking reservoir circulation, human…",
+      "authors": [
+        "Alison Simancas-Racines",
+        "Claudia Reytor-González",
+        "Jaime Angamarca-Iguago",
+        "Juan Marcos Parise-Vasco",
+        "Jaen Cagua-Ordoñez",
+        "Daniel Simancas-Racines"
+      ],
+      "doi": "10.3390/microorganisms14112641",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "248721144946",
+      "title": "Planetary health integration into the medical curriculum: a pilot evaluation of pretest–posttest changes in awareness and attitudes among preclinical students",
+      "url": "https://doi.org/10.3389/fpubh.2026.2019673",
+      "source_id": "journal-frontiers-in-public-health",
+      "source_name": "Frontiers in Public Health",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Background This pilot study aimed to describe changes in self-reported planetary health awareness and attitude scores of medical students before and after a structured Planetary Health education program, in order to provide preliminary data for integrating planetary health into the medical curriculum, and to examine variables associated with post-test scores. Methods This quasi-experimental, single-group pretest–posttest study included 217 first-, second-, and third-year students from one medical school. Participants received a structured Planetary Health education program consisting of two sessions (2 × 45 min). The researcher-developed Planetary Health Awareness and Attitude Questionnaire was administered immediately before the first session and immediately after the second session. In addition, the New Ecological Paradigm (NEP) Scale and the Environmental Health Literacy Scale (EHLS) were administered before the education. Results Post-intervention scores were higher than pre-intervention scores (pretest median 42.0 [36.0–46.0]; posttest median 47.0 [41.0–51.0]; Wilcoxon p < 0.001). The descriptive standardized mean difference was dz = 0.93, and scores increased in 82.9% of participants. The uncontrolled design precludes causal attribution. Conclusion In this pilot evaluation, self-reported awareness and attitude scores measured after the two-session structured Planetary Health education were higher than pre-test scores. Because there was no control group, this increase…",
+      "authors": [
+        "Hacer Paşaoğlu"
+      ],
+      "doi": "10.3389/fpubh.2026.2019673",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "23901cc0e80d",
       "title": "Global insights and feasibility evaluation of incineration approach for sustainable waste-to-energy conversion",
       "url": "https://doi.org/10.1016/j.egyr.2026.109933",
@@ -6446,6 +7242,27 @@
         "Md Mahbubur Rahman"
       ],
       "doi": "10.1016/j.egyr.2026.109933",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "1e124eb957b9",
+      "title": "ONDAS DE CONSPIRAÇÃO: DESINFORMAÇÃO CLIMÁTICA DURANTE AS ENCHENTES DE 2024",
+      "url": "https://doi.org/10.59289/r1xt4w20",
+      "source_id": "journal-enancib",
+      "source_name": "Enancib",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "pt",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "In 2024, devastating floods struck Rio Grande do Sul and, during the tragedy, online content circulated attributing the rains to a research program allegedly operated as a climate weapon. Conspiracy narratives recurrently associate the program with the manipulation of natural disasters. Climate Disinformation prevents climate action and collective mobilization while, in general, incorporates ideological repertoires, cultural values, and local beliefs. Drawing on contributions from Information Science to the study of climate disinformation, this study investigates the construction and dissemination of this narrative on social media. The corpus comprises data collected from Telegram, YouTube, and Instagram, and the analysis methodology combines thematic classification and timeline mapping. Results indicate the cross-platform activation of a global conspiratorial repertoire, thematic co-occurrences suggesting the employment of technopolitical explanation for the catastrophe, and distinct circulation patterns across platforms. The study contributes to the understanding of informational disputes surrounding extreme climate events and the epistemic displacement produced by conspiratorial narratives.",
+      "authors": [
+        "Giulia Tucci",
+        "Fábio Castro Gouveia"
+      ],
+      "doi": "10.59289/r1xt4w20",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -6474,6 +7291,54 @@
         "Steffen Abele"
       ],
       "doi": "10.1038/s41598-026-80702-y",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "197f3665c781",
+      "title": "Agriculture in a Changing Climate: Mitigating Stress through the Power of the Plant Microbiome: Agriculture in a Changing Climate",
+      "url": "https://doi.org/10.22034/japb.2026.253",
+      "source_id": "journal-journal-of-applied-plant-biology",
+      "source_name": "Journal of Applied Plant Biology",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Agricultural production is increasingly challenged by soil degradation, climate change, drought, abiotic stress, and the ecological and environmental costs associated with intensive agrochemical use. Plant-associated microbiomes offer a promising biological strategy for improving crop productivity, nutrient acquisition, disease resistance, and resilience under changing environmental conditions. This paper reviews recent advances in the use of beneficial microorganisms and synthetic microbial communities in sustainable agriculture, with emphasis on plant growth-promoting bacteria, arbuscular mycorrhizal fungi, rhizosphere interactions, and microbiome-mediated tolerance to drought and other abiotic stresses. The mechanisms underlying these benefits include biological nitrogen fixation, phosphorus and micronutrient mobilization, phytohormone modulation, production of siderophores and antimicrobial metabolites, regulation of root architecture, improvement of plant water relations, and induction of systemic resistance. Synthetic communities provide an additional opportunity to combine complementary microbial functions and improve the consistency of single-strain inoculants. However, translation from laboratory and greenhouse experiments to reliable field performance remains limited by soil heterogeneity, environmental variability, competition with resident microbiota, inconsistent root colonization, formulation instability, and insufficiently standardized regulatory frameworks…",
+      "authors": [
+        "Alireza Ramandi",
+        "Maryam Mohebi Nasab"
+      ],
+      "doi": "10.22034/japb.2026.253",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "14e7c85ff72c",
+      "title": "Expanding the Boundaries of Climate Adaptation: Evidence from a Participatory Case Study in an Italian Military Prison",
+      "url": "https://doi.org/10.12688/f1000research.184631.1",
+      "source_id": "journal-f1000research",
+      "source_name": "F1000Research",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-13T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Background Climate change is intensifying existing social and environmental inequalities, disproportionately affecting populations with limited access to resources, decision-making processes, and adaptive capacity. While climate adaptation governance emphasizes inclusive approaches, prison populations remain systematically excluded, despite their structural dependence on total institutions and heightened exposure to climate risks. Moving beyond a purely educational framework, the study explores two central research questions: how does the condition of confinement, characterized by near-zero environmental agency, shape the perception of global climate risks? And what can carceral facilities teach us about limits and possibilities of inclusive adaptation? Methods Building up on the Adaptation AGORA approach the study was conducted through an informal guided discussion, and a qualitative survey with twelve incarcerated participants explored the condition of confinement in relation to climate change perception. Results The research reveals that climate change is perceived as an immediate, physical threat, mediated by infrastructural rigidity and institutional dependency. Findings indicate that participants act as “territorial witnesses”, leveraging memories of environmental degradation from their regions of origin to validate climate data. Notably, their responses highlight a profound link between social dignity and climate engagement, where the desire for “institutional…",
+      "authors": [
+        "Mattea Tampone",
+        "Madeline Baldelli",
+        "Elisabetta Dall’Ò",
+        "Antonella Mele",
+        "Alfredo Reder",
+        "Arianna Acierno",
+        "Marta Ellena",
+        "Paola Mercogliano"
+      ],
+      "doi": "10.12688/f1000research.184631.1",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -8906,6 +9771,32 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f7c2564831f4",
+      "title": "Economic feasibility of forest landscape restoration in Ethiopia: Evidence from a multi-scale cost-benefit analysis of institutional and farmer-led systems",
+      "url": "https://doi.org/10.1016/j.landusepol.2026.108417",
+      "source_id": "journal-land-use-policy",
+      "source_name": "Land Use Policy",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Forest landscape restoration (FLR) is central to addressing land degradation, climate change, and rural livelihoods, yet large-scale implementation remains constrained by uncertainty about financial feasibility amid competing land-uses. Existing literature often underrepresents context-specific opportunity costs and cross-scale benefits, limiting the targeting of effective restoration incentives and investments. This study evaluates the financial feasibility of institutional restoration systems (82 forest plantations and 51 Assisted Natural Regeneration (ANR) sites) and farmer-led restoration systems (555 woodlots and 725 agroforestry sites) in Ethiopia, examining how opportunity costs and value-creation options (VCOs) shape economic land-use decisions. We apply a Benefit-Cost Analysis framework to assess four VCOs: technical efficiency improvement, low-interest credit, societal non-market benefits, and carbon credits on financial feasibility. The analysis integrates financial survey data, tree inventories, and contingent valuation per restoration options. Results show that opportunity costs fundamentally shape restoration financial viability and strategy choice. Agroforestry and short-rotation woodlots remain financially viable across contexts, whereas ANR, forest plantations, and mid- to long-rotation woodlots, become non-viable under high opportunity costs. Farm- and communal-level VCOs improve profitability but are generally insufficient to offset delayed returns in…",
+      "authors": [
+        "Vianny Ahimbisibwe",
+        "Matthias Dieter",
+        "Alfred Aleeje",
+        "Eliza Zhunusova",
+        "Habtemariam Kassa",
+        "Peter Elsasser",
+        "Sven Günter"
+      ],
+      "doi": "10.1016/j.landusepol.2026.108417",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "ebacdffc1cde",
       "title": "Assessing The Extent of Passive Energy Strategy Integration into Construction Project Management Practices in Lagos, Nigeria",
       "url": "https://doi.org/10.64388/ire1725059",
@@ -9051,6 +9942,47 @@
         "Shahnaz Aziz"
       ],
       "doi": "10.1108/edi-02-2026-0123",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "cb9b118d7331",
+      "title": "AI-empowered UAV-assisted backscatter localization and ISAC for zero-energy IoT: A comprehensive survey",
+      "url": "https://doi.org/10.1016/j.phycom.2026.103450",
+      "source_id": "journal-physical-communication",
+      "source_name": "Physical Communication",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Zero-energy Internet of Things (IoT) is emerging as a sustainable paradigm in which passive or near-passive devices operate using harvested energy instead of conventional batteries. Backscatter communication (BackCom) supports this paradigm by enabling passive tags to convey information by modulating and reflecting incident radio-frequency (RF) signals. However, weak reflections, cascaded path loss, direct-link interference, limited coverage, and dependence on external RF sources constrain deployment. Unmanned aerial vehicles (UAVs) can alleviate these limitations by acting as mobile RF illuminators, collectors, relays, anchors, sensing platforms, or edge-intelligence nodes, while integrated sensing and communication (ISAC) and artificial intelligence (AI) support joint sensing, localization, communication, and adaptive control. This article presents a structured survey of UAV-assisted BackCom and passive localization for RF-powered zero-energy IoT, with ISAC and AI treated as enabling extensions. A PRISMA-informed search updated through October 5, 2026, yields a curated corpus of 75 references classified as direct integrated, adjacent system-specific, or foundational and transferable evidence. A four-dimensional taxonomy organizes network architectures and UAV roles; BackCom modes and RF sources; localization, sensing, and communication functions; and AI techniques and performance metrics. The survey analyzes channel and energy models, UAV trajectory and resource…",
+      "authors": [
+        "Ruhul Amin Khalil"
+      ],
+      "doi": "10.1016/j.phycom.2026.103450",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "c2bafde69690",
+      "title": "Linking personality to COVID-19 attitudes, concerns and biosafety behaviors: meta-analytic foundations for future pandemic preparedness",
+      "url": "https://doi.org/10.3389/fpsyg.2026.1802699",
+      "source_id": "journal-frontiers-in-psychology",
+      "source_name": "Frontiers in Psychology",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Knowledge of behavioral reactions to the COVID-19 pandemic can help manage future reactions and biosafety behaviors, potentially altering the course of future epidemics and pandemics. Personality traits play a role in creating safe environments. We examined the Big Five and Dark Triad personality trait families' associations with biosafety behaviors during the COVID-19 pandemic, a period characterized by strong situational pressures. We also examined personality's associations with COVID-19 concerns and attitudes. Associations with biosafety behaviors, including hygiene, social distancing, self-quarantining, avoiding exposures, and preparatory behaviors, were examined in 92 independent samples comprising 973 effect sizes from over 50 countries. Different traits served different functions: conscientiousness and agreeableness predicted prosocial protective behaviors such as social distancing and hygiene, neuroticism was strongly associated with pandemic-related concerns but not behaviors, and extraversion and openness were linked to adaptation to new safety protocols. Dark Triad traits showed negative associations with collective biosafety behaviors but positive associations with preparatory behaviors, a finding consistent with pandemic responses motivated by self-interest rather than collective welfare. Despite strong situational constraints, personality maintained meaningful associations with behavior. Meta-analytic evidence indicates COVID-19 attitudes, concerns, and…",
+      "authors": [
+        "Jeeho Sohn",
+        "Deniz S. Öneş"
+      ],
+      "doi": "10.3389/fpsyg.2026.1802699",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -9287,6 +10219,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "93978475a63d",
+      "title": "Eco-anxiety and psychological resilience among youth in climate-vulnerable regions: an integrative review with implications for Ghana",
+      "url": "https://doi.org/10.1108/jpmh-04-2026-0070",
+      "source_id": "journal-journal-of-public-mental-health",
+      "source_name": "Journal of Public Mental Health",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "Purpose This review aims to examine youth eco-anxiety, its expression in climate-vulnerable settings and its implications for public mental health in Ghana. Design/methodology/approach Following Whittemore and Knafl’s five-stage framework, PubMed was searched and Google Scholar was used as a supplementary scholarly search engine through 20 October 2026; backward and forward citation searching supplemented retrieval. English-language peer-reviewed conceptual, review and empirical publications addressing youth climate emotions or relevant Ghanaian climate-mental-health evidence were eligible. Thirty-nine publications were evaluated and synthesised narratively. Findings Youth climate distress includes anxiety, grief, anger, helplessness and perceived institutional betrayal. Exposure, developmental stage, livelihood insecurity, low adaptive capacity and political distrust can intensify distress; efficacy, social support, credible information and meaningful collective action can be protective. Ghanaian evidence is concentrated among adult farming and coastal populations, but shows how food insecurity, ecological loss, displacement and weak preparedness translate environmental disruption into psychological strain. Research limitations/implications Heterogeneous measures precluded meta-analysis. Limited direct Ghanaian youth evidence requires cautious inference from adult and international studies. Practical implications Ghana should integrate youth-sensitive psychosocial support…",
+      "authors": [
+        "Godwin Abugatwin Abugbilla"
+      ],
+      "doi": "10.1108/jpmh-04-2026-0070",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "8f95fdd89e81",
       "title": "Creating “PEACH Clips: Empowering Sustainable Health Care Through Knowledge and Action”: A Case for the Use of Digital Story Telling in Climate Action Communication Strategies",
       "url": "https://doi.org/10.1080/10810730.2026.2616643",
@@ -9441,6 +10393,28 @@
       "date_is_first_seen": false
     },
     {
+      "id": "5e31c8a8802e",
+      "title": "SENTIMENT ANALYSIS OF PUBLIC PERSPECTIVES ON PM2.5 POLLUTION IN BANGKOK AND METROPOLITAN AREAS",
+      "url": "https://ph03.tci-thaijo.org/index.php/trusci/article/view/4536",
+      "source_id": "journal-journal-of-science-and-technology-thonburi-university",
+      "source_name": "Journal of Science and Technology Thonburi University",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This study analyzes public opinions on PM2.5 pollution in Bangkok and its surrounding metropolitan areas using data collected from the Thai-language online discussion platform Pantip.com. A total of 390 user-generated comments were collected and processed using Natural Language Processing (NLP) techniques, including Thai word tokenization, text vectorization, and word embedding. Three machine learning algorithms—Naïve Bayes, Logistic Regression, and Support Vector Machine (SVM)—were trained and evaluated for sentiment classification into positive, negative, and neutral categories. Among the evaluated models, SVM achieved the best overall performance, with an accuracy of 88% and an F1-score of 0.86. The sentiment distribution reported in this study was generated using the SVM model. Of the 390 collected comments, 52.1% were classified as negative, 30.0% as positive, and 17.9% as neutral. These results represent the model predictions on the collected dataset and should be interpreted within the scope of this study. The findings suggest that sentiment analysis of social media data can provide timely insights into public perceptions of PM2.5 pollution. Such information may serve as preliminary evidence to support the improvement of environmental communication strategies and assist policymakers in developing more responsive environmental policies.",
+      "authors": [
+        "Chonnikarn Luangpituksa",
+        "Pornsiri Chatpreecha",
+        "Chutitanrat Uttamasiriseni"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "3812322d4f5b",
       "title": "Predictors of climate anxiety and climate policy support in a British public",
       "url": "https://doi.org/10.1080/13669877.2026.2738119",
@@ -9456,6 +10430,28 @@
         "Nick Smith"
       ],
       "doi": "10.1080/13669877.2026.2738119",
+      "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "32c43ca62678",
+      "title": "PERAN GURU PENDIDIKAN AGAMA ISLAM DALAM MEMBANGUN SIKAP TOLERANSI DAN HARMONISASI BERAGAMA DI SMPN 03 PALEMBANG",
+      "url": "https://doi.org/10.36989/didaktik.v12i4.20014",
+      "source_id": "journal-didaktik-jurnal-ilmiah-pgsd-stkip-subang",
+      "source_name": "Didaktik Jurnal Ilmiah PGSD STKIP Subang",
+      "region": "GLOBAL",
+      "source_type": "journal",
+      "language": "en",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T13:52:51.282879Z",
+      "summary_raw": "This study aims to analyze the role of Islamic Religious Education (IRE) teachers in fostering students' attitudes of tolerance and religious harmony at SMP Negeri 03 Palembang. This research is based on the importance of strengthening students' character in responding to religious diversity within the school environment. A descriptive qualitative approach with a phenomenological design was employed. Data were collected through observations, in-depth interviews, and documentation involving the principal, Islamic Religious Education teachers, and students. The data were analyzed using the interactive model of Miles, Huberman, and Saldana, consisting of data condensation, data display, and conclusion drawing/verification. The findings reveal that IRE teachers play significant roles as educators, mentors, role models, motivators, and supervisors in developing students' attitudes of tolerance and religious harmony. The strategies implemented include integrating tolerance values into classroom learning, providing exemplary behavior, conducting habituation activities, and organizing religious programs that encourage mutual respect among students from different religious backgrounds. Supporting factors include school regulations, teachers' exemplary conduct, religious facilities, and a positive school climate, while inhibiting factors involve the large number of students and external influences from families, communities, and social media. The study concludes that the active role…",
+      "authors": [
+        "Rafika Agustiana",
+        "Baldi Anggara",
+        "Sri Maryati"
+      ],
+      "doi": "10.36989/didaktik.v12i4.20014",
       "topic_filter": true,
       "source_weight": 1.1,
       "date_is_first_seen": false
