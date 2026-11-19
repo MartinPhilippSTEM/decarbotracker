@@ -82,6 +82,32 @@ def plain(value: Any) -> str:
     return str(value or "").replace("**", "")
 
 
+def top_topic(r: WeeklyReport) -> str:
+    """Nejčastější téma týdne: z analýzy českých médií (od W44), jinak nejčastější téma vybraných zpráv."""
+    if r.media and r.media.topics:
+        k, v = max(r.media.topics.items(), key=lambda kv: kv[1])
+        return f"{media_mod.TOPIC_LABELS.get(k, k)} ({v} článků v českých médiích)"
+    counts: dict[str, int] = {}
+    for it in r.items:
+        for t in it.topics[:1]:
+            counts[t] = counts.get(t, 0) + 1
+    if not counts:
+        return ""
+    k, v = max(counts.items(), key=lambda kv: kv[1])
+    return f"{TOPIC_LABELS.get(k, k)} ({v} zpráv)"
+
+
+def cz_mood_point(r: WeeklyReport) -> dict[str, Any] | None:
+    """Odhad nálady jen pro zprávy o Česku (pro vývoj v čase); None, když je zpráv o ČR méně než 3."""
+    if not r.sentiment:
+        return None
+    cz = next((g for g in r.sentiment.by_region if g.region == "CZ"), None)
+    if cz is None or cz.n < 3:
+        return None
+    return {"week": r.week, "index": cz.index, "n": cz.n, "negative": cz.negative, "neutral": cz.neutral,
+            "positive": cz.positive, "topic": top_topic(r)}
+
+
 def template_for(r: WeeklyReport) -> str:
     """Přehledy od 23. 11. 2026 mají hutnou strukturu; starší (top_items, by_region…) původní šablonu."""
     return "week.html" if (r.key_findings or r.cz_items or r.world_items) else "week_legacy.html"
@@ -191,14 +217,17 @@ def build_site(settings: Settings, out_dir: Path | None = None, base_url: str | 
     health = load_health()
 
     chronological = sorted((x for x in reports if x.sentiment), key=lambda x: x.week)
+    cz_points = [p for p in (cz_mood_point(x) for x in chronological) if p]
 
     def ctx(r: WeeklyReport) -> dict[str, Any]:
         items = {i.id: i for i in r.items}
         # trend odhadu nálady: posledních až 8 týdnů do tohoto týdne včetně
         trend = [(x.week, x.sentiment.index) for x in chronological if x.week <= r.week][-8:]
         prev = trend[-2][1] if len(trend) >= 2 and trend[-1][0] == r.week else None
+        cz_trend = [p for p in cz_points if p["week"] <= r.week][-12:]
         return {"r": r, "items": items, "period": format_period_cs(r.period_from, r.period_to),
-                "opp_groups": group_opportunities(r.opportunities_cs), "trend": trend, "prev_index": prev}
+                "opp_groups": group_opportunities(r.opportunities_cs), "trend": trend, "prev_index": prev,
+                "cz_trend": cz_trend}
 
     def week_tpl(r: WeeklyReport):
         return env.get_template(template_for(r))

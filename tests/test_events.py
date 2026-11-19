@@ -106,7 +106,8 @@ def test_one_item_one_place_in_main_part():
     assert len(used) == len(set(used))
     assert [n.item_id for n in d.world_items] == [ids[2]]
     assert [r.text_cs for r in d.public_attitudes_cs.communication_recommendations] == ["nové"]
-    assert [w.text_cs for w in d.watchlist_cs] == ["termín k již uvedené zprávě", "nový trend"]
+    # Co sledovat se nekrátí – dívá se dopředu a smí navázat na zprávu výše
+    assert len(d.watchlist_cs) == 3
     assert d.swot.strengths  # SWOT (sbalená část) smí položky z hlavní části použít
     assert logs
 

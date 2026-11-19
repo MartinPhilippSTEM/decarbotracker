@@ -51,10 +51,25 @@ def test_mood_section_rendered_with_soft_wording(settings, tmp_path):
     rep.sentiment = summarize(sel, {i.id for i in rep.items})
     write_json(week_path("2026-W39"), rep)
     html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
-    assert "Přibližná nálada diskurzu" in html and "(odhad)" in html
-    assert "Orientační odhad" in html and "přibližný odhad z hodnocení AI" in html
-    # od 23. 11. 2026 je odhad nálady ve sbalené části pro analytiky (nevalidovaný ukazatel nemá být první)
-    assert html.index('id="analytici"') < html.index("Přibližná nálada diskurzu")
+    assert "Přibližná nálada diskurzu o Česku" in html and "(odhad)" in html
+    assert "Přibližný odhad z hodnocení AI" in html and "nejčastější téma" in html
+    # od 19. 11. 2026: jen Česko, pod Co sledovat (nad sbalenou částí), bez řádků EU/svět
+    assert html.index('id="nalada"') < html.index('id="analytici"')
+    assert "EU/Evropa" not in html[html.index('id="nalada"'):html.index('id="analytici"')]
+
+
+def test_cz_mood_trend_with_topic_tooltip(settings, tmp_path):
+    for n, week in enumerate(["2026-W45", "2026-W46"]):
+        sel = [make_scored(make_item(100 * n + i, region="CZ" if i < 6 else "EU"), relevance=7,
+                           sentiment=(1 if n else -1), topics=["energy_markets"]) for i in range(14)]
+        rep = synthesize(week, sel, 40, settings, None)
+        rep.sentiment = summarize(sel, {i.id for i in rep.items})
+        write_json(week_path(week), rep)
+    html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
+    sec = html[html.index('id="nalada"'):html.index('id="analytici"')]
+    assert sec.count('class="mood-pt') == 2 and "<svg" in sec
+    assert "2026-W45:" in sec and "nejčastější téma: energetické trhy" in sec
+    assert "předchozí týden" in sec
 
 
 def test_backfill_from_report_items(settings):

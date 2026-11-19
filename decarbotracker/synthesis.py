@@ -173,9 +173,9 @@ def validate_draft(draft: ReportDraft, valid: set[str], geo_of: dict[str, str]) 
 
 
 def enforce_single_place(draft: ReportDraft, logs: list[str]) -> ReportDraft:
-    """Pravidlo „jedna zpráva = jedno místo“ v hlavní části (Česko → EU a svět → postoje → co sledovat).
-    Zjištění týdne smí odkazovat na položky z oddílů pod sebou; SWOT je ve sbalené části a smí je použít.
-    Datované body v Co sledovat (termín) jsou nová informace, a proto se ponechají."""
+    """Pravidlo „jedna zpráva = jedno místo“ v hlavní části (Česko → EU a svět → postoje).
+    Zjištění týdne a SWOT smí odkazovat na položky ze zpráv. Co sledovat se nekrátí: dívá se dopředu
+    (co se stane, co rozhodnout) a smí navazovat i na zprávu z oddílů výše – prompt žádá neopakovat její text."""
     used: set[str] = set()
 
     def news(items: list[NewsItem], label: str) -> list[NewsItem]:
@@ -208,7 +208,6 @@ def enforce_single_place(draft: ReportDraft, logs: list[str]) -> ReportDraft:
     pa = draft.public_attitudes_cs
     pa.surveys = points(pa.surveys, "průzkumy")
     pa.communication_recommendations = points(pa.communication_recommendations, "doporučení")
-    draft.watchlist_cs = points(draft.watchlist_cs, "co sledovat", keep_dated=True)
     return draft
 
 
@@ -216,7 +215,7 @@ def main_section_ids(draft: ReportDraft) -> list[str]:
     """Všechna ID použitá v hlavní části (oddíly 2–5) – pro kontrolu duplicit."""
     pa = draft.public_attitudes_cs
     ids = [n.item_id for n in draft.cz_items] + [n.item_id for n in draft.world_items]
-    for p in [*pa.surveys, *pa.communication_recommendations, *(w for w in draft.watchlist_cs if not w.when)]:
+    for p in [*pa.surveys, *pa.communication_recommendations]:
         ids += p.evidence_item_ids
     return ids
 

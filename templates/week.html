@@ -101,6 +101,42 @@
   </section>
   {% endif %}
 
+  {% set cur = cz_trend[-1] if cz_trend and cz_trend[-1].week == r.week else none %}
+  {% if cur %}
+  <section aria-labelledby="nalada" class="mood">
+    <h2 id="nalada">Přibližná nálada diskurzu o Česku <span class="mood-est">(odhad)</span></h2>
+    {% set prev = cz_trend[-2] if cz_trend|length >= 2 else none %}
+    {% set tone = 'neg' if cur.index <= -10 else ('pos' if cur.index >= 10 else 'neu') %}
+    <p class="mood-now">Tento týden <span class="mood-num mood-{{ tone }}">{{ '%+d'|format(cur.index) if cur.index else '≈ 0' }}</span>
+      {% if prev %}<span class="mood-delta">(předchozí týden {{ '%+d'|format(prev.index) if prev.index else '≈ 0' }}, změna {{ '%+d'|format(cur.index - prev.index) }})</span>{% endif %}
+      · z {{ cur.n }} zpráv o Česku · nejčastější téma: <strong>{{ cur.topic }}</strong></p>
+    {% if cz_trend|length >= 2 %}
+    {% set W, H, PAD = 640, 170, 34 %}
+    {% set lim = [25, ((cz_trend|map(attribute='index')|map('abs')|max) / 25)|round(0, 'ceil')|int * 25]|max %}
+    {% set step = (W - 2 * PAD) / (cz_trend|length - 1) %}
+    <div class="mood-chart">
+      <svg viewBox="0 0 {{ W }} {{ H }}" width="100%" role="img" aria-label="Vývoj odhadu nálady diskurzu o Česku po týdnech">
+        <line x1="{{ PAD }}" y1="{{ H / 2 - 10 }}" x2="{{ W - PAD }}" y2="{{ H / 2 - 10 }}" class="mood-zero"/>
+        <text x="{{ PAD - 6 }}" y="{{ 18 }}" class="mood-axis" text-anchor="end">+{{ lim }}</text>
+        <text x="{{ PAD - 6 }}" y="{{ H / 2 - 6 }}" class="mood-axis" text-anchor="end">0</text>
+        <text x="{{ PAD - 6 }}" y="{{ H - 26 }}" class="mood-axis" text-anchor="end">−{{ lim }}</text>
+        <polyline class="mood-line" points="{% for p in cz_trend %}{{ (PAD + loop.index0 * step)|round(1) }},{{ (H / 2 - 10 - p.index / lim * (H / 2 - 24))|round(1) }} {% endfor %}"/>
+        {% for p in cz_trend %}{% set x = (PAD + loop.index0 * step)|round(1) %}{% set y = (H / 2 - 10 - p.index / lim * (H / 2 - 24))|round(1) %}
+        <g class="mood-pt{% if loop.last %} last{% endif %}" tabindex="0">
+          <title>{{ p.week }}: {{ '%+d'|format(p.index) if p.index else '0' }} (n = {{ p.n }}) · nejčastější téma: {{ p.topic }}</title>
+          <circle cx="{{ x }}" cy="{{ y }}" r="14" class="mood-hit"/>
+          <circle cx="{{ x }}" cy="{{ y }}" r="{{ 6 if loop.last else 4.5 }}" class="mood-dot"/>
+          <text x="{{ x }}" y="{{ H - 6 }}" class="mood-axis" text-anchor="middle">{{ p.week[-3:] }}</text>
+        </g>
+        {% endfor %}
+      </svg>
+      <p class="hint">Najeďte myší na bod: hodnota a nejčastější téma daného týdne.</p>
+    </div>
+    {% endif %}
+    <p class="hint">Přibližný odhad z hodnocení AI (vyznění zpráv o Česku pro dekarbonizaci, −100 až +100), ne měření veřejného mínění. Není validovaný a výkyvy mezi týdny mohou být náhodné. <a href="{{ base }}metodika/#nalada">Jak odhad vzniká</a>.</p>
+  </section>
+  {% endif %}
+
   <section aria-labelledby="analytici" class="analyst">
     <h2 id="analytici">Pro analytiky</h2>
     <p class="hint">Podrobnosti jsou sbalené – klikněte na název oddílu.</p>
@@ -152,24 +188,6 @@
     </details>
     {% endif %}
 
-    {% if r.sentiment %}{% set s = r.sentiment %}
-    <details class="fold">
-      <summary>Přibližná nálada diskurzu (odhad) <span class="fold-n">{{ '%+d'|format(s.index) if s.index else '≈ 0' }}</span></summary>
-      <p>Orientační odhad vyznění {{ s.n }} hodnocených zpráv pro dekarbonizaci ČR na škále −100 až +100: <strong>{{ '%+d'|format(s.index) if s.index else '≈ 0' }} ({{ s.label_cs }})</strong>{% if prev_index is not none %}; předchozí týden přibližně {{ '%+d'|format(prev_index) if prev_index else '0' }}{% endif %}.</p>
-      <div class="mood-regions">
-        {% for g in s.by_region %}
-        <div class="mood-row">
-          <span class="mood-reg">{{ region_labels.get(g.region, g.region) }}</span>
-          {% if g.n >= 3 %}
-          <span class="mood-bar"><span class="seg neg" style="width: {{ (g.negative*100)|round(1) }}%"></span><span class="seg neu" style="width: {{ (g.neutral*100)|round(1) }}%"></span><span class="seg pos" style="width: {{ (g.positive*100)|round(1) }}%"></span></span>
-          <span class="mood-rn">≈ {{ '%+d'|format(g.index) if g.index else '0' }} <small>(n = {{ g.n }})</small></span>
-          {% else %}<span class="mood-few">příliš málo zpráv (n = {{ g.n }})</span>{% endif %}
-        </div>
-        {% endfor %}
-      </div>
-      <p class="hint">Jde o přibližný odhad z hodnocení AI, ne o měření veřejného mínění; není validovaný a výkyvy mezi týdny mohou být náhodné. <a href="{{ base }}metodika/#nalada">Jak odhad vzniká</a>.</p>
-    </details>
-    {% endif %}
 
     {% if r.data_gaps_cs %}
     <details class="fold">

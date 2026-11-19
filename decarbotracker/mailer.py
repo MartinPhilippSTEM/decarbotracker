@@ -28,13 +28,16 @@ def render_email(digest: Digest) -> tuple[str, str, str]:
     from decarbotracker.digest import x_length
 
     html = env.get_template("email.html").render(d=digest, x_length=x_length)
-    lines = [f"decarbotracker – týden {digest.week}", digest.headline_cs, "", "TŘI NEJZAJÍMAVĚJŠÍ ZJIŠTĚNÍ", ""]
+    lines = [f"decarbotracker – týden {digest.week}", f"Stránka je aktualizovaná: {digest.report_url}", "",
+             digest.headline_cs, "", "TŘI ZJIŠTĚNÍ TÝDNE", ""]
     for n, f in enumerate(digest.findings, 1):
         lines += [f"{n}. [{f.geo}] {f.title_cs}", f"   {f.text_cs}", f"   Zdroj: {f.source_name} – {f.url}", ""]
-    lines += [f"Celý přehled: {digest.report_url}", "", "NÁVRH VLÁKNA NA X (zkopírujte po příspěvcích)", ""]
+    lines += [f"Celý přehled: {digest.report_url}", ""]
+    if digest.x_thread:
+        lines += ["NÁVRH VLÁKNA NA X (zkopírujte po příspěvcích)", ""]
     for n, p in enumerate(digest.x_thread, 1):
         lines += [f"--- {n}/{len(digest.x_thread)} ({x_length(p)} znaků) ---", p, ""]
-    subject = f"decarbotracker {digest.week}: {digest.headline_cs}"[:150]
+    subject = f"decarbotracker {digest.week} – stránka aktualizována: {digest.headline_cs}"[:150]
     return subject, html, "\n".join(lines)
 
 

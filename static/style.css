@@ -273,3 +273,19 @@ html { scroll-behavior: smooth; }
 .fold > summary { cursor: pointer; font-weight: 600; padding: .55rem 0; color: var(--text); }
 .fold[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: .5rem; }
 .fold-n { font-weight: 400; color: var(--muted); font-size: .88rem; margin-left: .3rem; }
+
+/* větší nadpisy oddílů na střed (od 19. 11. 2026) */
+.report > section > h2 { font-size: 1.65rem; text-align: center; margin: 2.4rem 0 1.1rem; padding-bottom: .5rem; border-bottom: 2px solid var(--accent-soft); }
+.report > section > h2 .tag { vertical-align: middle; font-size: .9rem; }
+/* nálada o Česku: aktuální hodnota + vývoj v čase s popiskem při najetí myší */
+.mood-now { text-align: center; font-size: 1.05rem; }
+.mood-now .mood-num { font-size: 1.6rem; font-weight: 700; margin: 0 .2rem; }
+.mood-delta { color: var(--muted); font-size: .92rem; }
+.mood-chart { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: .6rem .8rem .2rem; margin: .8rem 0; }
+.mood-chart .mood-axis { font-size: 11px; fill: var(--muted); }
+.mood-chart .mood-line { fill: none; stroke: var(--accent); stroke-width: 2.5; }
+.mood-chart .mood-zero { stroke: var(--line); stroke-dasharray: 4 4; }
+.mood-chart .mood-dot { fill: var(--surface); stroke: var(--accent); stroke-width: 2.5; }
+.mood-chart .last .mood-dot { fill: var(--accent); }
+.mood-chart .mood-hit { fill: transparent; cursor: help; }
+.mood-chart .mood-pt:hover .mood-dot, .mood-chart .mood-pt:focus .mood-dot { fill: var(--accent); stroke-width: 3.5; }

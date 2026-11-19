@@ -19,7 +19,7 @@ Dostaneš vybrané položky z uplynulého týdne. Každá má ID, titulek, zdroj
 4. Rozlišuj zjištění od názoru. Komentář nebo stanovisko výslovně označ („podle stanoviska…“, „(komentář)“).
 5. U průzkumů uveď instituci, termín sběru, N a metodu jen tehdy, když jsou ve zdroji. Jinak „neuvedeno“.
 6. Každá zpráva, zjištění, bod SWOT, průzkum, doporučení i položka „co sledovat“ musí odkazovat na konkrétní ID ze vstupu. Používej jen ID, která ve vstupu skutečně jsou.
-7. **Jedna zpráva = jedno místo.** Každou položku (ID) použij ve zprávách a dalších oddílech (`cz_items`, `world_items`, `public_attitudes_cs`, `watchlist_cs`) **jen jednou**. Zjištění týdne (`key_findings`) smí vybrat to nejdůležitější z těchto oddílů. SWOT (zobrazuje se hned pod zjištěními, nad zprávami) smí odkazovat na položky ze zpráv, ale každý bod musí přinést **souvislost nebo hodnocení** (co to znamená pro dekarbonizaci ČR), ne opakovat text zprávy. Duplicity program stejně odstraní.
+7. **Jedna zpráva = jedno místo.** Každou položku (ID) použij ve zprávách a postojích (`cz_items`, `world_items`, `public_attitudes_cs`) **jen jednou**; „Co sledovat“ smí na ně navázat pohledem dopředu. Zjištění týdne (`key_findings`) smí vybrat to nejdůležitější z těchto oddílů. SWOT (zobrazuje se hned pod zjištěními, nad zprávami) smí odkazovat na položky ze zpráv, ale každý bod musí přinést **souvislost nebo hodnocení** (co to znamená pro dekarbonizaci ČR), ne opakovat text zprávy. Duplicity program stejně odstraní.
 8. Položky označené **UDÁLOST/POZVÁNKA** (debaty, konference, webináře…) nejsou zjištění: patří **jen** do `watchlist_cs`. Čísla z jejich perexu nepřebírej.
 9. Položky označené **BEZ VÝTAHU** nesmí být zdrojem `key_findings` (o samotný titulek nejde opřít zjištění).
 10. Český obsah a obsah o ČR má vždy přednost. Pokud k ČR nic podstatného nevyšlo, řekni to výslovně (v `data_gaps_cs`).
@@ -35,10 +35,10 @@ Dostaneš vybrané položky z uplynulého týdne. Každá má ID, titulek, zdroj
   - `summary_cs`: 1–3 věty o nových poznatcích o postojích veřejnosti. Když nic nového nevyšlo, napiš to jednou větou.
   - `surveys`: nové průzkumy (instituce, termín sběru, země, N, metoda, zjištění). Chybějící údaje = „neuvedeno“. Seznam může být prázdný.
   - `communication_recommendations`: 0–3 praktická komunikační doporučení opřená o vstupy.
-- `watchlist_cs`: **5–10** položek „Co sledovat“ seřazených **podle důležitosti** (nejdůležitější první):
-  - **akce a termíny** (konference, debaty, zveřejnění dat, hlasování, legislativní termíny, uzávěrky výzev): do `when` napiš termín doslova ze vstupu (např. „6. 10. 2026“, „březen 2027“),
-  - **obecné věci ke sledování** (trendy, očekávaná rozhodnutí bez data, otevřené otázky): `when` = prázdný řetězec.
-  Každá položka jedna věta: co, kdo a proč to stojí za pozornost. Nic si nevymýšlej.
+- `watchlist_cs`: **5–10** položek „Co sledovat“ seřazených **podle důležitosti** (nejdůležitější první). Pro čtenáře je to **jeden z nejcennějších oddílů** – věnuj mu péči. Projdi všechny vstupy a hledej, co se v příštích týdnech a měsících stane nebo rozhodne:
+  - **akce a termíny** (konference, debaty, zveřejnění dat nebo průzkumů, hlasování ve Sněmovně a v Radě EU, konzultace a připomínková řízení, účinnost zákonů, uzávěrky výzev): do `when` napiš termín doslova ze vstupu (např. „6. 10. 2026“, „březen 2027“),
+  - **obecné věci ke sledování** (očekávaná rozhodnutí bez data, rozběhnuté spory, trendy, otevřené otázky): `when` = prázdný řetězec.
+  Každá položka 1–2 věty: **co se má stát, kdo rozhoduje nebo pořádá a proč na tom záleží pro dekarbonizaci ČR nebo postoje veřejnosti** (případně pro práci výzkumného týmu). Dívej se dopředu – smíš navázat i na zprávu z oddílů výše, ale neopakuj její text, napiš, co z ní plyne dál a na co čekat. Přednost mají české a evropské termíny. Nic si nevymýšlej; termín uváděj jen ze vstupu.
 - `swot`: SWOT **dekarbonizace ČR a podpory veřejnosti pro ni** (zobrazí se hned pod zjištěními týdne, nad zprávami – má dát rychlý obraz týdne): S = příznivé skutečnosti a trendy v ČR, W = vnitřní slabiny a bariéry v ČR, O = vnější příležitosti, T = vnější hrozby. Každý kvadrant 2–4 body po jedné větě; `geo` = region dokladu. Bod musí přinést souvislost, ne zopakovat zprávu.
 - `data_gaps_cs`: **nejvýš 3** krátké body: co tento týden chybělo nebo nešlo ověřit. Netvrď, že něco „chybí“, pokud to ve vstupu je.
 

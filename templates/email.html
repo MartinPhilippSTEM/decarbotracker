@@ -7,11 +7,12 @@
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px;background:#ffffff;border-radius:8px;">
   <tr><td style="padding:22px 24px 8px 24px;">
     <p style="margin:0;color:#1d5c57;font-weight:700;font-size:15px;">decarbotracker · týden {{ d.week }}</p>
-    <h1 style="margin:8px 0 6px 0;font-size:21px;line-height:1.3;">{{ d.headline_cs }}</h1>
+    <p style="margin:10px 0 0 0;font-size:15px;">Stránka s týdenním přehledem je aktualizovaná: <a href="{{ d.report_url }}" style="color:#17605a;font-weight:600;">{{ d.report_url }}</a></p>
+    <h1 style="margin:10px 0 6px 0;font-size:21px;line-height:1.3;">{{ d.headline_cs }}</h1>
   </td></tr>
 
   <tr><td style="padding:8px 24px 0 24px;">
-    <h2 style="margin:12px 0 10px 0;font-size:16px;text-transform:uppercase;letter-spacing:.04em;color:#1d5c57;">Tři nejzajímavější zjištění</h2>
+    <h2 style="margin:12px 0 10px 0;font-size:16px;text-transform:uppercase;letter-spacing:.04em;color:#1d5c57;">Tři zjištění týdne</h2>
     {% for f in d.findings %}
     <div style="border-left:4px solid {{ '#1d5c57' if f.geo == 'CZ' else '#2c4f8a' }};background:#f7faf9;padding:10px 14px;margin:0 0 12px 0;border-radius:4px;">
       <p style="margin:0 0 4px 0;font-size:12px;font-weight:700;color:{{ '#1d5c57' if f.geo == 'CZ' else '#2c4f8a' }};">{{ loop.index }} · {{ {'CZ': 'ČESKO', 'EU': 'EVROPA', 'US': 'USA', 'GLOBAL': 'SVĚT'}[f.geo] }}</p>
@@ -23,6 +24,7 @@
     <p style="margin:14px 0 6px 0;"><a href="{{ d.report_url }}" style="display:inline-block;background:#1d5c57;color:#ffffff;text-decoration:none;font-weight:600;padding:9px 16px;border-radius:6px;">Celý přehled týdne →</a></p>
   </td></tr>
 
+  {% if d.x_thread %}
   <tr><td style="padding:10px 24px 4px 24px;">
     <h2 style="margin:18px 0 6px 0;font-size:16px;text-transform:uppercase;letter-spacing:.04em;color:#1d5c57;">Návrh vlákna na X</h2>
     <p style="margin:0 0 10px 0;font-size:13px;color:#56615f;">Jen návrh – nic se nezveřejňuje automaticky. Příspěvky zkopírujte postupně (limit X je 280 znaků; odkaz se počítá jako 23).</p>
@@ -33,9 +35,10 @@
     </div>
     {% endfor %}
   </td></tr>
+  {% endif %}
 
   <tr><td style="padding:14px 24px 22px 24px;font-size:12px;color:#56615f;line-height:1.5;">
-    Text generuje AI ({{ d.model }}) z týdenního přehledu – zjištění ověřte u zdroje před dalším použitím.
+    Zjištění jsou převzatá z přehledu, který generuje AI – zjištění ověřte u zdroje před dalším použitím.
     {% if d.notes %}<br>Poznámky: {{ d.notes|join('; ') }}{% endif %}
   </td></tr>
 </table>

@@ -145,7 +145,11 @@ def build_digest(report: WeeklyReport, settings: Settings, client: ClaudeClient 
     findings: list[DigestFinding] = []
     thread: list[str] = []
     model = "deterministicky (bez AI)"
-    if client is not None and (report.key_findings or report.cz_items or report.world_items or report.top_items):
+    if report.key_findings:
+        # od 23. 11. 2026: e-mail jen oznamuje aktualizaci stránky a nese její 3 zjištění – bez AI, bez vlákna na X
+        client = None
+        model = "bez AI (zjištění z přehledu)"
+    if client is not None and (report.cz_items or report.world_items or report.top_items):
         # do max_tokens se počítá i „přemýšlení“ modelu – limit s rezervou, při uříznutí jeden pokus s vyšším
         for max_tokens in (12000, 24000):
             try:
@@ -173,10 +177,10 @@ def build_digest(report: WeeklyReport, settings: Settings, client: ClaudeClient 
     items = {i.id: i for i in report.items}
     out = [DigestFindingOut(**f.model_dump(), title=items[f.item_id].title, url=items[f.item_id].url,
                             source_name=items[f.item_id].source_name) for f in findings]
-    if not thread:
+    if not thread and not report.key_findings:  # starší přehledy: návrh vlákna na X jako dřív
         thread = _default_thread(out, report.headline_cs.replace("**", ""))
     thread = [fit_x(p.replace("**", "").replace("{ODKAZ}", url)) for p in thread][:6]
-    if not any(url in p for p in thread):
+    if thread and not any(url in p for p in thread):
         thread.append(fit_x(f"Celý přehled: {url}"))
     digest = Digest(week=report.week, generated_at=datetime.now(UTC), model=model,
                     headline_cs=report.headline_cs.replace("**", ""), report_url=url, findings=out,

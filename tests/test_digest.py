@@ -29,8 +29,7 @@ def test_deterministic_digest_has_cz_and_world(settings, report):
     geos = [f.geo for f in d.findings]
     assert "CZ" in geos and any(g != "CZ" for g in geos)
     assert geos[0] == "CZ"
-    assert all(x_length(p) <= 280 for p in d.x_thread)
-    assert any(d.report_url in p for p in d.x_thread)
+    assert d.x_thread == []  # od 19. 11. 2026 bez návrhu vlákna na X
 
 
 def test_enforce_mix_adds_missing_world(report):
@@ -65,8 +64,10 @@ def test_llm_digest_link_placeholder_replaced(settings, report):
                   DigestFinding(item_id=ids[5], geo="EU", title_cs="Evropa", text_cs="B."),
                   DigestFinding(item_id=ids[6], geo="EU", title_cs="Další", text_cs="C.")],
         x_thread=["🧵 Háček", "1/ jedna", "Celý přehled: {ODKAZ} #klima"])
-    d = build_digest(report, settings, FakeClient(settings, draft))
-    assert d.x_thread[-1].startswith("Celý přehled: https://") and "{ODKAZ}" not in "".join(d.x_thread)
+    client = FakeClient(settings, draft)
+    client.structured = lambda **kw: (_ for _ in ()).throw(AssertionError("AI se nemá volat"))
+    d = build_digest(report, settings, client)
+    assert d.x_thread == [] and d.usage.calls == 0
     # e-mail nese stejná 3 zjištění jako stránka (AI tu píše jen vlákno)
     assert [f.item_id for f in d.findings] == [f.item_id for f in report.key_findings]
 
@@ -81,6 +82,7 @@ def test_legacy_report_uses_llm_findings(settings, report):
         x_thread=["🧵 Háček", "{ODKAZ}"])
     d = build_digest(report, settings, FakeClient(settings, draft))
     assert [f.title_cs for f in d.findings] == ["Česko", "Evropa", "Další"]
+    assert d.x_thread[-1].startswith("Celý přehled: https://") or any("https://" in p for p in d.x_thread)
 
 
 def test_title_only_items_never_in_email(settings, report):
@@ -95,7 +97,8 @@ def test_render_email_contains_findings_and_thread(settings, report):
     d = build_digest(report, settings, None)
     subject, html, text = render_email(d)
     assert "2026-W39" in subject
-    assert "Tři nejzajímavější zjištění" in html and "Návrh vlákna na X" in html
+    assert "Tři zjištění týdne" in html and "Návrh vlákna na X" not in html
+    assert "aktualizovaná" in html and "aktualizována" in subject
     assert d.findings[0].url in html and d.report_url in text
 
 
@@ -117,7 +120,7 @@ def test_cli_notify_dry_run(settings, report, tmp_path, capsys):
     write_json(week_path("2026-W39"), report)
     assert main(["notify", "--dry-run"]) == 0
     assert (tmp_path / "email-preview.html").exists()
-    assert "NÁVRH VLÁKNA NA X" in capsys.readouterr().out
+    assert "TŘI ZJIŠTĚNÍ TÝDNE" in capsys.readouterr().out
 
 
 def test_digest_retries_on_max_tokens(settings, report):
@@ -138,8 +141,8 @@ def test_digest_retries_on_max_tokens(settings, report):
                 raise LLMMaxTokens("cut")
             return ok, None
 
+    report.key_findings = []  # starší přehled: AI vybírá zjištění a píše vlákno
     client = Flaky(settings, ok)
     d = build_digest(report, settings, client)
     assert client.calls == [12000, 24000]
-    assert d.model == settings.llm.model_synthesis
-    assert [f.item_id for f in d.findings] == [f.item_id for f in report.key_findings]
+    assert d.model == settings.llm.model_synthesis and [f.title_cs for f in d.findings] == ["A", "B", "C"]
