@@ -1,61 +1,61 @@
 {
   "week": "2026-W46",
-  "generated_at": "2026-11-16T06:39:11.468889Z",
+  "generated_at": "2026-11-19T10:39:34.114605Z",
   "model": "claude-sonnet-5-5",
-  "headline_cs": "Česko na COP31 hlásí splněné závazky a investuje do vody v krajině, zatímco globální data ukazují stagnaci snižování emisí a nejistou cestu k 1,5 °C.",
+  "headline_cs": "Česko kleslo v klimatickém žebříčku CCPI na 45. místo, česká média řeší hlavně drahé energie a nové odvody z nadměrných zisků.",
   "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w46/",
   "findings": [
     {
-      "item_id": "ff3b504e4a15",
+      "item_id": "501f70022945",
       "geo": "CZ",
-      "title_cs": "Boom zájmu o zadržování vody v krajině",
-      "text_cs": "Do dvou výzev OPŽP na zadržování vody se přihlásilo 662 projektů a alokace byla navýšena z 350 na 850 milionů korun. Žádosti nyní kontroluje AOPK ČR. Velký zájem ukazuje, že obce a vlastníci adaptaci na sucho aktivně chtějí.\n",
-      "title": "O podporu na zadržování vody v krajině je velký zájem. Do výzev se přihlásilo 662 projektů",
-      "url": "https://mzp.gov.cz/cz/pro-media-a-verejnost/aktuality/archiv-tiskovych-zprav/o-podporu-na-zadrzovani-vody-v-krajine-je-velky-zajem-do-vyzev-se-prihlasilo-662-projektu",
-      "source_name": "Ministerstvo životního prostředí"
+      "title_cs": "Česko si pohoršilo v klimatickém indexu CCPI",
+      "text_cs": "Česko si o tři příčky pohoršilo a skončilo na 45. místě v indexu CCPI, tedy v kategorii států s nízkým hodnocením. Autoři podle Reflexu kritizují i působení Motoristů ve vládě.",
+      "title": "Česko si pohoršilo v klimatickém indexu",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/cesko-si-pohorsilo-v-klimatickem-indexu-379546",
+      "source_name": "ČT24 – Věda"
     },
     {
-      "item_id": "a74986bdbe1d",
-      "geo": "GLOBAL",
-      "title_cs": "Globální klimatická akce stagnuje už pět let",
-      "text_cs": "Podle Climate Action Tracker agregovaná klimatická akce stagnuje pět let. Současné politiky vedou k oteplení 2,7 °C a k nevratnému překročení hranice 1,5 °C. Zpomalení globální akce zvyšuje tlak na EU i na českou politiku.",
-      "title": "Without rapid action, the world is heading to irrecoverable overshoot",
-      "url": "https://climateactiontracker.org/publications/warming-projections-global-update-2026/",
-      "source_name": "Climate Action Tracker – publikace"
+      "item_id": "f9b82fbe7567",
+      "geo": "CZ",
+      "title_cs": "Innogy zdraží elektřinu i plyn bez fixace",
+      "text_cs": "Innogy zvýší cenu elektřiny bez fixace o 150 korun bez DPH za MWh a cenu plynu o 334 korun. Růst cen hlásí i další dodavatelé.",
+      "title": "Firma innogy zdraží elektřinu a plyn bez fixace, růst cen hlásí i další dodavatelé",
+      "url": "https://byznys.hn.cz/c1-67959250-firma-innogy-zdrazi-elektrinu-a-plyn-bez-fixace-rust-cen-hlasi-i-dalsi-dodavatele",
+      "source_name": "Hospodářské noviny – Byznys"
     },
     {
-      "item_id": "5c710ae9f2c5",
-      "geo": "GLOBAL",
-      "title_cs": "Sociální programy rozšiřují podporu klimatických opatření",
-      "text_cs": "Experimenty v 10 největších emitujících zemích ukázaly, že propojení sporného opatření se sociálními a ekonomickými programy rozšiřuje koalice podpory. Podpora přitom neklesla u pravicových voličů. Je to použitelná lekce i pro českou komunikaci o klimatu.",
-      "title": "Policy bundling and the political economy of climate policymaking",
-      "url": "https://doi.org/10.1080/09644016.2026.2756773",
-      "source_name": "Environmental Politics"
+      "item_id": "f2f08371541a",
+      "geo": "EU",
+      "title_cs": "EU zůstává na cestě k cílům pro rok 2030",
+      "text_cs": "Podle Evropské agentury pro životní prostředí (EEA) je EU stále na cestě ke cílům 2030. Emise klesly v roce 2025 o 1,6 % (předběžná data), tempo čistého snižování ale zpomalilo.",
+      "title": "Trends and projections: EU on track for 2030 emissions targets, but progress must accelerate",
+      "url": "https://www.eea.europa.eu/en/newsroom/news/trends-and-projections-eu-still-on-track-for-2030-emissions-targets-but-faster-progress-needed",
+      "source_name": "Evropská agentura pro životní prostředí (EEA)"
     }
   ],
   "x_thread": [
-    "🧵 Tento týden o klimatu: Česko má velký zájem o zadržování vody v krajině, zatímco globální klimatická akce podle analýzy stagnuje už pět let. Shrnutí zjištění v několika příspěvcích.",
-    "Ministerstvo životního prostředí: do dvou výzev OPŽP na zadržování vody se přihlásilo 662 projektů. Alokace byla navýšena z 350 na 850 milionů korun. Žádosti nyní kontroluje AOPK ČR. 💧",
-    "Climate Action Tracker: agregovaná klimatická akce stagnuje pět let. Současné politiky vedou k oteplení 2,7 °C a k nevratnému překročení hranice 1,5 °C.",
-    "Environmental Politics: experimenty v 10 největších emitujících zemích ukazují, že propojení sporného opatření se sociálními a ekonomickými programy rozšiřuje podporu, bez poklesu u pravice.",
-    "Celý týdenní přehled o dekarbonizaci a postojích veřejnosti najdete tady: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w46/ #klima #energetika"
+    "🧵 Česko kleslo v klimatickém žebříčku CCPI na 45. místo, o tři příčky níž. Co přinesl uplynulý týden v dekarbonizaci a postojích veřejnosti? Shrnutí ve vlákně.",
+    "1/ Podle ČT24 Věda Česko skončilo v indexu CCPI na 45. místě, v kategorii států s nízkým hodnocením. Autoři podle Reflexu kritizují i působení Motoristů ve vládě.",
+    "2/ Evropská agentura pro životní prostředí (EEA): EU je stále na cestě ke cílům 2030. Emise klesly v roce 2025 o 1,6 % (předběžná data), tempo čistého snižování ale zpomalilo.",
+    "3/ Podle Hospodářských novin Innogy zvýší cenu elektřiny bez fixace o 150 korun bez DPH za MWh a cenu plynu o 334 korun. Růst cen hlásí i další dodavatelé.",
+    "Celý týdenní přehled najdete zde: https://martinphilippstem.github.io/decarbotracker/tydny/2026-w46/ #klima #energetika"
   ],
   "notes": [],
   "usage": {
     "calls": 1,
-    "input_tokens": 4991,
-    "output_tokens": 914,
+    "input_tokens": 2186,
+    "output_tokens": 910,
     "cache_creation_input_tokens": 0,
     "cache_read_input_tokens": 0,
-    "cost_usd": 0.019122,
+    "cost_usd": 0.013472,
     "by_model": {
       "claude-sonnet-5-5": {
         "calls": 1.0,
-        "input_tokens": 4991.0,
-        "output_tokens": 914.0,
-        "cost_usd": 0.019122
+        "input_tokens": 2186.0,
+        "output_tokens": 910.0,
+        "cost_usd": 0.013472
       }
     }
   },
-  "sent_at": "2026-11-16T06:39:11.692965Z"
+  "sent_at": "2026-11-19T10:39:34.285767Z"
 }
