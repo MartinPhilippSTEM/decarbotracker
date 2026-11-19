@@ -1,6 +1,6 @@
 {
   "week": "2026-W46",
-  "generated_at": "2026-11-16T06:25:32.705462+00:00",
+  "generated_at": "2026-11-19T10:23:43.694327+00:00",
   "items": [
     {
       "id": "98c2cd21d407",
@@ -199,6 +199,178 @@
       "topic_filter": true,
       "source_weight": 0.8,
       "date_is_first_seen": true
+    },
+    {
+      "id": "f8a37628fde9",
+      "title": "Jak umělá inteligence hlídá zrak diabetiků? A jsou operace účinnější než moderní léky na obezitu?",
+      "url": "https://www.irozhlas.cz/veda-technologie/jak-umela-inteligence-hlida-zrak-diabetiku-a-jsou-operace-ucinnejsi-nez-moderni_2611160010_bod",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:10:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Paní Karolína žije s cukrovkou prvního typu už 27 let. Díky moderní inzulinové pumpě a senzoru, který nepřetržitě sleduje hladinu glukózy, se jí daří nemoc lépe zvládat. Nově jí navíc přímo v diabetologické ordinaci kontroluje zrak umělá inteligence. Ta dokáže včas upozornit na změny, kterých si pacient nemusí vůbec všimnout.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "f303ed32a266",
+      "title": "Electricity Coordination Group considers EU electricity market prepared for the winter",
+      "url": "https://energy.ec.europa.eu/news/electricity-coordination-group-considers-eu-electricity-market-prepared-winter-2026-11-16_en",
+      "source_id": "dg-ener",
+      "source_name": "Evropská komise – DG ENER",
+      "region": "EU",
+      "source_type": "government",
+      "language": "en",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "The EU electricity market is suitably prepared for the winter, but it is necessary to continue monitoring the market closely, according to discussions between the European Commission, national experts and key stakeholders in the Electricity Coordination Group (ECG) meeting on 12 November.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "ac612e7a4a61",
+      "title": "Přichází jedno z největších IPO historie. Bude Anthropic dobrá investice za jakoukoliv cenu? A co je hlavní otázka?",
+      "url": "https://archiv.hn.cz/c1-67959570-giganticke-ipo-na-dosah-anthropic-si-jde-na-burzu-pro-miliardy-dolaru-a-investori-lacni-po-jeho-akciich",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Blíží se jeden z největších burzovních debutů všech dob. Už tento čtvrtek by se na americké burze Nasdaq měly začít obchodovat akcie technologické společnosti Anthropic, která stojí za populárním modelem Claude.",
+      "authors": [
+        "Patrik Salát"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "5e44abaec2f7",
+      "title": "Klíčový zákon, který má ke start-upům přivést miliardy, čelí 500 připomínkám. Schillerová ho chce o půl roku odložit",
+      "url": "https://archiv.hn.cz/c1-67959020-klicovy-zakon-ktery-ma-ke-start-upum-privest-miliardy-celi-500-pripominkam-schillerova-ho-chce-o-pul-roku-odlozit",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Když vláda na konci srpna po několika měsících příprav představila startupový zákon, nechyběl u toho premiér Andrej Babiš, ministr průmyslu Karel Havlíček ani ministryně financí Alena Schillerová. Začínajícím podnikatelům slibovali, že k nim díky...",
+      "authors": [
+        "Jan Prokeš"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "4d1d210c2320",
+      "title": "Vlajkové fotomobily s portrétním objektivem ZEISS vracejí portrétu jeho váhu",
+      "url": "https://www.reflex.cz/clanek/prezentace-klienta/139245/vlajkove-fotomobily-s-portretnim-objektivem-zeiss-vraceji-portretu-jeho-vahu.html",
+      "source_id": "reflex",
+      "source_name": "Reflex",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Portrét patří k nejstarším a nejosobnějším žánrům fotografie. Nová řada vivo X500 Pro a X500 Pro Max, která právě vstupuje do prodeje, mu přináší teleobjektiv s certifikací ZEISS APO a ohniskem 85 mm, tedy ohniskem, které portrétisté volí po generace.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "460d3fabd72c",
+      "title": "Vysoké zisky nejsou důvod pro sektorovou daň. U bank může mít smysl kompenzovat chybějící DPH, říká ekonom Janský",
+      "url": "https://archiv.hn.cz/c1-67959240-vysoke-zisky-nejsou-duvod-pro-sektorovou-dan-u-bank-muze-mit-smysl-kompenzovat-chybejici-dph-rika-ekonom-jansky",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "České veřejné finance čelí strukturálnímu schodku, vládou Andreje Babiše (ANO) nově navržená mimořádná daň pro rafinerie ho ale neřeší, míní Petr Janský z Institutu ekonomických studií Univerzity Karlovy a zakladatel Centra veřejných financí....",
+      "authors": [
+        "Jitka Vlková"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "4013866ed304",
+      "title": "Open Coalition on Compliance Carbon Markets adopts COP31 Declaration and launches its Working Groups to advance carbon pricing for emission cuts and investment",
+      "url": "https://climate.ec.europa.eu/news-other-reads/news/open-coalition-compliance-carbon-markets-adopts-cop31-declaration-and-launches-its-working-groups-2026-11-16_en",
+      "source_id": "dg-clima",
+      "source_name": "Evropská komise – DG CLIMA",
+      "region": "EU",
+      "source_type": "government",
+      "language": "en",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "High-level representatives of the Open Coalition on Compliance Carbon Markets (OCCCM) today adopted the OCCCM COP31 Declaration at a meeting in Antalya.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3d169a62e7cb",
+      "title": "Investoři v Česku dozráli. Zažíváme třetí výraznou vlnu emancipace naší architektury, říká uznávaný architekt Marek Tichý",
+      "url": "https://archiv.hn.cz/c1-67959030-investori-v-cesku-dozrali-zazivame-treti-vyraznou-vlnu-emancipace-nasi-architektury-rika-uznavany-architekt-marek-tichy",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Developeři v Česku začali podle Marka Tichého více přemýšlet o veřejném prostoru a české stavby se kvalitou vyrovnají evropské špičce. Uznávaný architekt, který stojí za rekonstrukcí pražského hotelu InterContinental a letos zasedl v porotě soutěže...",
+      "authors": [
+        "Viktor Votruba"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "0c2a31ae368d",
+      "title": "Vrací se Němci k jádru? Vláda v Berlíně chce koupit strategickou firmu, která je partnerem ČEZ",
+      "url": "https://archiv.hn.cz/c1-67959100-vraci-se-nemci-k-jadru-vlada-v-berline-chce-koupit-strategickou-firmu-ktera-je-nepostradatelnym-partnerem-i-pro-cez",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Možnost, že Německo začne opět budovat reaktory, je pořád minimální. Přesto v tamní společnosti i politice dochází k určitému přehodnocení postoje k jaderným technologiím. Součástí je i aktuální záměr vlády v Berlíně koupit podíl v jaderné...",
+      "authors": [
+        "Jan Brož"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
     },
     {
       "id": "bdc9878701ae",
@@ -457,6 +629,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "4812044a301e",
+      "title": "Výra podupaly krávy, život se mu snaží zachránit ve stanici v Bartošovicích. Letos byli na hraně kapacit",
+      "url": "https://www.irozhlas.cz/veda-technologie/priroda/vyra-podupaly-kravy-zivot-se-mu-snazi-zachranit-ve-stanici-v-bartosovicich-letos_2611151830_jor",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T17:30:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Bartošovická záchranná stanice má za sebou mimořádné hektické období. Jen do začátku listopadu už přijala zhruba o dvě stě zraněných zvířat více než minulý rok. K nárůstu podle vedoucího stanice přispěly extrémně vysoké teploty během léta. Jedním z jejích posledních pacientů je výr velký, kterého málem ušlapaly krávy.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -859,6 +1049,44 @@
       "date_is_first_seen": false
     },
     {
+      "id": "de4407c87588",
+      "title": "AI odhalila dosud neznámé objevy v zápisnících matematika Gödela",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/ai-odhalila-dosud-nezname-objevy-v-zapisnicich-matematika-godela-379635",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T12:31:45Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Umělá inteligence (AI) pomáhá vědcům porozumět zápiskům rakouského matematika Kurta Gödela, rodáka z Brna, který změnil matematiku. Jeho zápisníky mají 1009 stran a z velké části jsou psané Gabelsbergerovým těsnopisem, jenž byl zastaralý už v době, kdy si Gödel poznámky zapisoval, uvedl britský deník The Guardian.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "e023960e3927",
+      "title": "Lehký otřes mozku za 9 tisíc, zlomené žebro za 12. Advokátka popisuje, kolik stojí lidský život na české silnici",
+      "url": "https://byznys.hn.cz/c1-67959600-lehky-otres-mozku-za-9-tisic-zlomene-zebro-za-12-advokatka-popisuje-kolik-stoji-lidsky-zivot-na-ceske-silnici",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T12:27:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Každý rok při dopravních nehodách v Česku zemře téměř 500 lidí. Po každém zůstala rodina, která kromě pohřbu musí řešit i trestní řízení a pojišťovnu viníka. Zákon žádnou částku za takto zmařený život nezná, soudy však vycházejí z rozsudku...",
+      "authors": [
+        "Michael Mareš"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "fb9442f923e2",
       "title": "Jihokorejský parlament se chystá řešit KHNP, stavba Dukovan běží dál",
       "url": "https://oenergetice.cz/ostatni/jihokorejsky-parlament-se-chysta-resit-khnp-stavba-dukovan-bezi-dal",
@@ -896,6 +1124,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "039553ce29a2",
+      "title": "Speciální senzory poznají barvu i složení odpadu. S tříděním pomáhá v Třinci nový robot",
+      "url": "https://www.irozhlas.cz/veda-technologie/specialni-senzory-poznaji-barvu-i-slozeni-odpadu-s-tridenim-pomaha-v-trinci-novy_2611141234_ntu",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T11:34:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Většina odpadů z Třinecka už končí v nové třídicí lince. Ta je teď ve zkušebním provozu. Na jejím konci je v Česku zatím unikátní robot. Sám rozpozná, jaký využitelný materiál prošel předchozími fázemi třídění, a vrátí ho zpátky do procesu.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -1555,6 +1801,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "73f150d0cc8e",
+      "title": "‚Jezdit po svém městě.‘ Středoškolák vyvíjí počítačovou hru o brněnském dopravním podniku",
+      "url": "https://www.irozhlas.cz/veda-technologie/technologie/jezdit-po-svem-meste-stredoskolak-vyviji-pocitacovou-hru-o-brnenskem-dopravnim_2611150800_jos",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T07:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Mladý fanoušek hromadné dopravy vytváří videohru o brněnském dopravním podniku. Hráči se v ní mohou stát řidiči autobusu anebo jejich cestujícími. Realistické virtuální Brno vytváří středoškolák z Ostravy. Brněnskou hromadnou dopravu si vybral proto, že je pro něj jednodušší než ta ostravská.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "e668741b06ec",
       "title": "Sedm velmocí na cestě do dluhového pekla: Proč ty nejzadluženější nemusí zkrachovat jako první?",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/statni-dluh-bankrot-usa-japonsko-g7",
@@ -1572,6 +1836,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "bdec77f6e41b",
+      "title": "Krokodýli přežili dinosaury, protože se drželi v teple, tvrdí vědci",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/krokodyli-prezili-dinosaury-protoze-se-drzeli-v-teple-tvrdi-vedci-379593",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-15T06:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Jedním z důvodů, proč krokodýli přežili následky dopadu meteoritu, který vyhubil dinosaury, je, že se vždy zarputile zdržovali v teplých klimatických podmínkách. Ukazují to výsledky nové studie.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -1815,6 +2097,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f47c2624e44b",
+      "title": "Vesmírná loď Starship se vrátila na Zemi, přistála do záchytných ramen",
+      "url": "https://ct24.ceskatelevize.cz/clanek/svet/vesmirna-lod-starship-se-vratila-na-zemi-pristala-do-zachytnych-ramen-379626",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T22:00:36Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Vesmírná loď Starship se po 22 hodinách letu na oběžné dráze, kde vypustila desítky družic, poprvé úspěšně vrátila na základnu v Texasu. Speciální ramena na přistávací rampě v areálu Starbase zachytila vysoko nad zemí druhý stupeň rakety, ukázala v přímém přenosu firma SpaceX. Patnáctá mise Starship se podle tiskových agentur stala „historickým milníkem v úsilí o opakované využívání raket“ při plánovaných letech nejen na oběžnou dráhu Země, ale i na Měsíc a na Mars. Mise však nebyla stoprocentně úspěšná, nosný stupeň Super Heavy se po startu zachytit nepodařilo.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "9f0b0ed7c424",
       "title": "Fabric Molds Could Bring Material-Saving Concrete Beams Within Reach",
       "url": "https://cleantechnica.com/2026/11/14/fabric-molds-could-bring-material-saving-concrete-beams-within-reach/",
@@ -1892,6 +2192,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "af0a946206cc",
+      "title": "Čechy byly zřejmě kolébkou keltského světa, naznačuje nová studie",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/cechy-byly-zrejme-kolebkou-keltskeho-sveta-naznacuje-nova-studie-379589",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T17:50:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Že se Keltové rozšířili po většině Evropy, se ví. Že bojovali proti Římanům a Caesarovi, vědí díky filmům a komiksům i malé děti. Až doposud se ale nevědělo, odkud se vzali. Nová studie jejich pravlast umisťuje na území dnešního Česka.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -1973,6 +2291,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "99928afc49cb",
+      "title": "Manželka, která vydělávala víc, kult osobnosti a 24 stejných triček. Kniha odhaluje skrytou tvář Jensena Huanga",
+      "url": "https://archiv.hn.cz/c1-67959590-kniha-ukazuje-skrytou-tvar-jensena-huanga-manzelka-co-vydelavala-vic-pes-sushi-kult-osobnosti-a-24-stejnych-tricek",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T16:37:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Jensen Huang od začátku svou kariéru založil na vztazích. Na ženě, která mu dovolila riskovat, na dvou hádavých spoluzakladatelích, kteří nevěřili nikomu jinému, a na lidech, kteří se ho bojí. A na tom, že sám sebe nepodrobuje niterným otázkám. Na...",
+      "authors": [
+        "Michael Mareš"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "3c0ad2fff78c",
       "title": "The US Is Auctioning Seabed Near American Samoa. A $3 Million Bid Will Not Build a Mine.",
       "url": "https://cleantechnica.com/2026/11/14/seabed-mining-lease-critical-minerals-business-case/",
@@ -2051,6 +2389,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "34f1053b978a",
+      "title": "Výzkum tajících ledovců i mimořádně odolných organismů. Čeští vědci se chystají na polární expedici",
+      "url": "https://www.irozhlas.cz/veda-technologie/veda/vyzkum-tajicich-ledovcu-i-mimoradne-odolnych-organismu-cesti-vedci-se-chystaji_2611140900_jor",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T15:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Brněnští vědci se připravují na další misi do Antarktidy. Na nejodlehlejší kontinent pojedou už začátkem ledna. Čeká je dlouhodobé sledování proměn antarktického prostředí, výzkum mimořádně odolných bakterií i zkoumání vlivu izolace na lidskou psychiku. Než ale vymění laboratoře za ledovou pustinu, musí zvládnout náročné přípravy. Od bezpečnostních školení přes logistiku až po výzkumné plány, jaké vzorky z jižního kontinentu přivézt.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "708c6594b910",
       "title": "The scientists fighting to help Maui wildfire survivors heal",
       "url": "https://grist.org/wildfires/the-scientists-fighting-to-help-maui-wildfire-survivors-heal/",
@@ -2064,6 +2420,26 @@
       "summary_raw": "Early on a Saturday morning in May, Ruben Juarez took the 45-minute flight from Oʻahu to Maui, just like he’d done dozens of times over the past three years. This one felt different. Juarez landed in Kahului Airport with his partner, Alika Maunakea, and drove on a long winding highway beside the piercing blue ocean until they reached the Lahaina Comprehensive Health Center. A cool breeze wafted in from the Pacific less than half a mile below as they set up stations for blood collection, lung function tests, and mental health check-ins, directing a team of Ph.D. students and local healthcare providers. Then they waited for the fire survivors to arrive. Ruben Juarez, left, and Alika Maunakea are professors at the University of Hawaiʻi and co-leads of the Maui Wildfire Exposure Study. Keerti Gopal On August 8, 2023, Maui was hit with the deadliest wildfires the U.S. has seen in over a century. They killed at least 102 people, displaced nearly 13,000 residents, and destroyed more than 2,200 buildings. Three years later, just 15 percent have been rebuilt. Juarez, an economist, and Maunakea, a biomedical scientist, never expected to focus on disaster recovery. But after the fires, they were thrust into the space by the overwhelming scale of need. The two University of Hawaiʻi professors dreamed up the Maui Wildfire Exposure Study, or MauiWES, as a form of rapid response: an effort to track the impacts of the fires on survivors’ health. Three years and 2,500 participants later, the…",
       "authors": [
         "Keerti Gopal"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "cd6b062c3f42",
+      "title": "Křetínského EPH neuspěl v soutěži na prodej německé státní firmy Uniper",
+      "url": "https://byznys.hn.cz/c1-67959580-kretinskeho-eph-neuspel-v-soutezi-na-prodej-nemecke-statni-firmy-uniper",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T13:36:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Berlín 14. listopadu (ČTK) - Skupina EPH českého miliardáře Daniela Křetínského neuspěla v soutěži na převzetí německé státní energetické firmy Uniper. S odkazem na své zdroje o tom dnes informují agentury Reuters a Bloomberg. EPH nepostoupila do...",
+      "authors": [
+        "ČTK"
       ],
       "doi": null,
       "topic_filter": true,
@@ -2146,6 +2522,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "5324e7f6a583",
+      "title": "‚Když se mu něco nelíbí, dá vám to najevo.‘ Na Proboštův betlém prý dohlíží i duch samotného autora",
+      "url": "https://www.irozhlas.cz/veda-technologie/historie/kdyz-se-mu-neco-nelibi-da-vam-najevo-na-probostuv-betlem-pry-dohlizi-i-duch_2611141330_lbl",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T12:30:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Třebechovické muzeum betlémů se v sobotu 14. listopadu po dvoutýdenní přestávce znovu otevře návštěvníkům. Muzejníci mezitím připravili dvě nové vánoční výstavy a restaurátoři se postarali také o Proboštův mechanický betlém. Více než sto let stará národní kulturní památka tak prošla pravidelnou údržbou.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -2369,6 +2763,42 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f2c1e222e56a",
+      "title": "Digitální spravedlnost slibuje i méně klamání. ‚Je v pořádku, že to Evropa chystá,‘ říká Koubský",
+      "url": "https://www.irozhlas.cz/veda-technologie/technologie/digitalni-spravedlnost-slibuje-i-mene-klamani-je-v-poradku-ze-evropa-chysta-rika_2611141000_vaa",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T09:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Klamavý marketing influencerů, manipulativní design nebo třeba nekalé praktiky při personalizaci služeb. Takové problémy má v online světě omezit návrh nového nařízení Evropské komise s názvem Digital Fairness Act neboli Akt o digitální spravedlnosti. „Myslím, že je v pořádku, že se něco takového chystá,“ poukazuje v pořadu Online Plus vědecký redaktor Deníku N Petr Koubský.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "66d3c2873c4f",
+      "title": "Přeplaval Moravu a převedl dva kamarády. Jiří Barteček utekl na Západ o 22 let později než Mašín",
+      "url": "https://www.irozhlas.cz/veda-technologie/historie/preplaval-moravu-a-prevedl-dva-kamarady-jiri-bartecek-utekl-na-zapad-o-22-let_2611141000_raf",
+      "source_id": "irozhlas-veda",
+      "source_name": "iROZHLAS – Věda a technologie",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T09:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "V roce 1975 sloužil Jiří Barteček z Karvinska u československé pohraniční stráže. Místo aby hlídal hranici, utekl do Rakouska a na svobodu pomohl i dvěma kamarádům. U Záhorské Vsi přeplaval řeku Moravu v kanadách a se služebním samopalem. Z Rakouska později odjel do Spojených států, kde se usadil a také spřátelil s protikomunistickým odbojářem Josefem Mašínem. Ten před několika dny zemřel a Barteček s ním trávil týdny před smrtí.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "0e53767921d5",
       "title": "České stopy krále Karla III.: Jak na britského panovníka vzpomíná česká kastelánka, památkář a chalupář?",
       "url": "https://www.reflex.cz/clanek/reportaze/115565/ceske-stopy-krale-karla-iii-jak-na-britskeho-panovnika-vzpomina-ceska-kastelanka-pamatkar-a-chalupar.html",
@@ -2384,6 +2814,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a1b71c87411c",
+      "title": "Microsoft po pátečním globálním výpadku obnovil funkčnost všech svých služeb",
+      "url": "https://byznys.hn.cz/c1-67959540-microsoft-po-patecnim-globalnim-vypadku-obnovil-funkcnost-vsech-svych-sluzeb",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T08:11:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Seattle (USA) 14. listopadu (ČTK) - Americká softwarová společnost Microsoft po pátečním celodenním výpadku obnovila funkčnost všech svých služeb. Oznámila to dnes v příspěvku na sociální síti X. Výpadek zasáhl jak domácnosti, tak firmy a státní...",
+      "authors": [
+        "ČTK"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
@@ -2461,6 +2911,24 @@
       "authors": [
         "Dominika Chrastová, Denník N"
       ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "156d4005e4e5",
+      "title": "Vědci objevili obřího pravěkého ptáka, který obýval stejnou jeskyni jako hobiti",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/vedci-objevili-obriho-pravekeho-ptaka-ktery-obyval-stejnou-jeskyni-jako-hobiti-379476",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T07:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Objev několika kostí v jeskyni na ostrově Flores vyvolal nadšení až po jejich důkladnějším prozkoumání. Vědci totiž zjistili, že drží v rukou pozůstatky doposud neznámého tvora, který rozměry zásadně překonával jeho moderní příbuzné.",
+      "authors": [],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
@@ -2685,6 +3153,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "f484790b5012",
+      "title": "SpaceX vyslala Starship na další testovací let. Nosná raketa při návratu explodovala",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/spacex-vyslala-starship-na-dalsi-testovaci-let-nosna-raketa-pri-navratu-explodovala-379611",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-14T02:29:44Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Společnost SpaceX amerického podnikatele Elona Muska v pátek vyslala z Texasu na patnáctý testovací let kosmickou loď Starship. Cílem mise je poprvé dopravit loď na oběžnou dráhu Země a následně ji vrátit na místo startu. První část raketového systému, nosný stupeň Super Heavy, však při pokusu o návrat explodovala nad Mexickým zálivem. Samotná loď Starship se úspěšně dostala na oběžnou dráhu a její návrat se očekává v sobotu, informovala agentura Reuters.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -2956,6 +3442,46 @@
       "date_is_first_seen": false
     },
     {
+      "id": "3df38a300f18",
+      "title": "How to Channel Voters’ Anxieties About Data Centers",
+      "url": "https://heatmap.news/plus/the-fight/qa/guardrails-shaunna-thomas",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-13T20:22:54Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "This week’s Q&A is with Shaunna Thomas of the Democrat-allied super PAC Guardrails Alliance, which describes itself as “not anti-technology” but supportive of AI “rules, accountability, and a government that actually represents the public.” Part of that AI accountability they’re calling for is on data centers. After the midterms, Guardrails Alliance sent a memorandum to all House and Senate Democratic offices arguing for AI and data center accountability to be a key part of their message and plans heading into the new Congress. Described as a “playbook for how to understand and channel anxieties about AI and data centers,” the document laid out “key narratives” that they said voters who care about these issues want to see reflected and echoed by their politics. They said the push against data centers could help Democrats build more lasting political power. I reached out and asked if Thomas could explain further what all of this means to my readers. She kindly obliged. The following conversation was lightly edited for clarity. Let’s start with the elections. What were your takeaways when it came to what voters want to see on data centers? I think the elections were a rebuke of the status quo on a number of fronts. We saw across the board that people are frustrated with what amounts to legalized corruption and the forcing without consent of new technology, and new infrastructure to support a technology that they didn’t ask for in ways that are harmful to their lives and the…",
+      "authors": [
+        "Jael Holzman"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "71ee2601a76a",
+      "title": "Consider the Lobstermen Affected by New York’s Empire Wind",
+      "url": "https://heatmap.news/plus/the-fight/hotspots/equinor-lobster-new-york",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-13T20:19:30Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "1. New York City — We have a new must-watch offshore wind lawsuit with potential implications for the entire sector — and this time, it’s from lobstermen seeking damages. In late October, a family of lobstermen sued Equinor in federal court claiming the company’s compensatory mitigation program is failing to adequately make up for alleged negative impacts to lobster fishing grounds in the New York Bight. According to the lawsuit, the wind project irreparably hurt fishing in previously trafficked waters. The suit also claims that Empire Wind construction destroyed lobster fishing pots and seeks at least $75,000 in damages as well as punitive damages and attorneys’ fees. The lawsuit is the first I have seen involving someone in aquaculture suing for damages over negative impacts of an already-constructed wind project, and it carries outsized implications as the Trump administration remands without vacatur the construction and operations plans for other offshore wind farms. This case is far from being decided, but that doesn’t matter: It is precisely the kind of complaint that Trump officials are likely to consider as they mull revisions to operational plans. An Equinor spokesman declined to comment on the case, telling me they don’t speak on pending litigation. 2. Hinds County, Mississippi — The largest proposed solar farm in Mississippi is moving forward after an appeals court rejected arguments from aggrieved local residents that it had been improperly approved. The…",
+      "authors": [
+        "Jael Holzman"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "d432cd575f2a",
       "title": "How California Gov.-elect Becerra could be better on climate than Newsom",
       "url": "https://www.canarymedia.com/articles/politics/california-gov-elect-becerra-climate",
@@ -3034,6 +3560,26 @@
       "doi": "10.1016/j.enpol.2026.115723",
       "topic_filter": true,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "2855b94f5685",
+      "title": "Data Center Developers Can’t Pay People Enough to Accept Them",
+      "url": "https://heatmap.news/plus/the-fight/spotlight/data-center-dividend-poll",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-13T18:59:55Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "This year’s midterm elections called into question the efficacy of a push to pay local residents directly in exchange for building data centers. Before the elections, I profiled the campaign for politicians to embrace the data center “dividend,” a policy idea modeled off Alaska’s Permanent Fund, which doles out checks to residents from profits off state oil, gas and mineral royalties. The Bitcoin Policy Institute, a tech policy think tank , was one of the first to trumpet the concept, but it was quickly taken up by President Donald Trump, who started raising it in speeches and on social media. “If companies want to make their Data Centers popular, pay the community, and/or individuals within the community, a ‘dividend,’” Trump posted to Truth Social on October 21. Clearly the idea didn’t stop the bleeding. Democrats trounced Trump’s party in the midterms on a message that was heavy on attacks against data centers. But that still doesn’t explain why direct payments did so little to move the American public. A Heatmap Pro poll conducted in early-to-mid October, right before the midterm elections, gives us an answer. As part of a broader survey of 2,500 registered voters, we asked about the idea — what we believe to be the first independent poll on direct payments for data centers by a news organization. We asked respondents whether there was a specific dollar amount they’d accept as a one-time cash payment in exchange for a data center being built near them. We also gave them…",
+      "authors": [
+        "Jael Holzman"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -3361,6 +3907,46 @@
       "doi": "10.1073/pnas.2616887123",
       "topic_filter": true,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "61fb9f6eaa08",
+      "title": "Where Rising Electricity Prices Showed Up in the Blue Wave",
+      "url": "https://heatmap.news/ideas/midterms-electricity-prices",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-13T18:04:41Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "The rise in household electricity costs over the past couple of years followed elected officials to the ballot box last week. But the pattern didn't hold evenly: Congressional seats flipped most often in states where bills rose fastest, while governors and regulators, the officials closest to rate decisions, were judged on very different terms. No analysis can account for exactly why someone voted the way they did. Still, polling just before and after the election has made clear that soaring utility bills and the cost of living were at the forefront of voters’ minds. It’s easy to imagine that a South Carolina voter who backed Trump in 2024 and is now paying about $20 per month more for electricity might have been more inclined to vote for Annie Andrews for Senate than the president’s pick, Darline Graham. While we can’t yet make a causal claim about how increases in voters’ average monthly bills influenced their decisions, we can look at where bills rose and where seats changed hands. To do that, we use data from Heatmap and MIT’s Electricity Price Hub to unpack the correlation between rising electricity bills under the second Trump administration and the electoral swings of this year’s midterms. Nationally, average electricity bills are up 10% since the start of the Trump administration. Meanwhile, the House popular vote swung 15 points toward Democrats compared to 2024’s presidential results, according to data from The New York Times . A swing that size would have flipped…",
+      "authors": [
+        "Steven Berit"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "54b29071b0e6",
+      "title": "Boj o lex Orlen. Rafinérskou daň, kterou navrhuje Schillerová, chtějí poslanci zmírnit",
+      "url": "https://archiv.hn.cz/c1-67959280-boj-o-lex-orlen-rafinerskou-dan-kterou-navrhuje-schillerova-chteji-poslanci-zmirnit",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T18:03:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Zavedením mimořádné rafinérské daně chce ministerstvo financí vybrat 5,5 miliardy korun. Daň, která zasáhne jedinou firmu v Česku, petrochemickou skupinu Orlen Unipetrol, se bude v Poslanecké sněmovně projednávat v úterý 24. listopadu. Někteří...",
+      "authors": [
+        "Petr Zenkner"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
@@ -3800,6 +4386,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f9b82fbe7567",
+      "title": "Firma innogy zdraží elektřinu a plyn bez fixace, růst cen hlásí i další dodavatelé",
+      "url": "https://byznys.hn.cz/c1-67959250-firma-innogy-zdrazi-elektrinu-a-plyn-bez-fixace-rust-cen-hlasi-i-dalsi-dodavatele",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T14:53:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Energetická společnost innogy v příštím roce zdraží dodávky energií zákazníkům se smlouvou na dobu neurčitou. Cenu elektřiny bez fixace oproti letošku zvýší o 150 korun bez DPH za spotřebovanou megawatthodinu (MWh). Cena plynu vzroste o 334 korun s...",
+      "authors": [
+        "ČTK"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "1a1093026fda",
       "title": "Is Tesla The Apple Of The EV Industry?",
       "url": "https://cleantechnica.com/2026/11/13/is-tesla-the-apple-of-the-ev-industry/",
@@ -4036,6 +4642,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "90a992840b04",
+      "title": "Geopolitika mění turistické cíle zámožných Čechů, Maledivy či Seychely vystřídala Evropa. Jeden den může vyjít i na 67 tisíc na osobu",
+      "url": "https://archiv.hn.cz/c1-67959180-geopolitika-meni-turisticke-cile-zamoznych-cechu-maledivy-ci-seychely-vystridala-evropa-jeden-den-muze-vyjit-i-na-67-tisic-na-osobu",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T12:57:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Začátek války na Blízkém východě na přelomu letošního února a března ze dne na den změnil preference takřka všech klientů tuzemských cestovních kanceláří. Výjimkou nebyli ani ti nejbohatší. Ukazují to výsledky letošního vydání Luxury Travel Reportu...",
+      "authors": [
+        "Adam Mašek"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "5df61923c83c",
       "title": "Sněmovna jedná o sektorové dani: Jen ODS bouchla do stolu se slovy: „Sektorové daně jsou zlo“",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/snemovna-sektorova-dan-pirati-stan-babis-ods",
@@ -4053,6 +4679,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "630991eb4a9d",
+      "title": "Jensen Huang’s Departure Throws the AI Boom into Fresh Chaos",
+      "url": "https://heatmap.news/am/nvidia-meta-sublime-stegra",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-13T12:49:34Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Current conditions: The United States National Oceanic and Atmospheric Administration has declared the ongoing El Niño a “super” version of the weather patterns that could be the most intense ever recorded • Storm Charles deluged Madeira, Portugal’s island exclave, as hundreds of flights were canceled to and from the Iberian country • Temperatures in New York City are set to drop as low as 39 degrees Fahrenheit as a nor’easter pummels the American Northeast ahead of what’s forecast to be a brisk but sunny weekend. THE TOP FIVE 1. Jensen Huang resigns from Nvidia, sowing fresh chaos for AI Nvidia CEO Jensen Huang stepped down Thursday amid a ballooning scandal over his extramarital affairs with a Chinese spy and at least two employees of the world’s top designer of microchips for artificial intelligence, according to press reports. His departure, and the controversy left in his wake, poses a test for AI stocks, which took a battering last week after Democrats’ blue wave victory in Congress, and of what The Wall Street Journal called “the great-man theory that the course of history is often determined by singular individuals.” SpaceX Elon Musk (who said it “would be an honor” to hire Huang) is plowing ahead with plans to invest more than $74 billion at two supercomputing campuses in Texas and Arizona that are designed to train frontier AI models, Investor’s Business Daily reported. While the company says it plans to work with local generators to power the Arizona site, the…",
+      "authors": [
+        "Alexander C. Kaufman"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -4096,6 +4742,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "627d23dca78d",
+      "title": "Brněnští mikroroboti mají zachytávat mikroplasty z ženských pohlavních orgánů",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/brnensti-mikroroboti-maji-zachytavat-mikroplasty-z-zenskych-pohlavnich-organu-379580",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T12:12:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Na první pohled vypadají jako obyčejný prášek, v lidském těle na sebe ale dokáží navázat mikroplasty. Tak mají fungovat speciální magnetičtí mikroroboti, které vyvinuli vědci z CEITEC VUT v Brně. Chtějí je využít k odstranění mikroplastů z ženských reprodukčních orgánů. První testy v simulovaném vaginálním prostředí ukázaly, že dokáží odstranit až polovinu přítomných mikroplastů.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "14b2ed149706",
       "title": "V Bangladéši se protestuje i za naši budoucnost",
       "url": "https://denikreferendum.cz/clanek/239591-v-bangladesi-se-protestuje-i-za-nasi-budoucnost",
@@ -4109,6 +4773,26 @@
       "summary_raw": "Desetitisíce lidí v ulicích bangladéšských měst. Místní pracující vykořisťovaní oděvním průmyslem usilují o normální mzdy. Bangladéš je dobrým příkladem státu, kde vláda slouží zájmům korporací. Pro Českou republiku jde o cennou zkušenost.",
       "authors": [
         "Anna Lazorová"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "01a37a0f188b",
+      "title": "Sektorové daně a opravdu hloupá válka o školní jídelny. Vláda dělá vše pro to, aby šli lidé v příštích dnech ven. S papírovou čepicí",
+      "url": "https://byznys.hn.cz/c1-67959130-sektorove-dane-a-opravdu-hloupa-valka-o-skolni-jidelny-vlada-dela-vse-pro-to-aby-sli-lide-v-pristich-dnech-ven-s-papirovou-cepici",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T12:01:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Máme za sebou týden čekání na novinky ohledně sektorových daní, o nichž jsme se ale nakonec nic nového nedozvěděli. Ministryně financí Alena Schillerová sice jednala s top českými ekonomy, ale nevypadá to, že by měla v rukou už ucelený směr a...",
+      "authors": [
+        "Jaroslav Mašek"
       ],
       "doi": null,
       "topic_filter": true,
@@ -4205,6 +4889,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "86a875af7365",
+      "title": "Tisícileté deště, povodně, stavy nouze. El Niño ukazuje v Americe svou extrémní podobu",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/tisicilete-deste-povodne-stavy-nouze-el-nino-ukazuje-v-americe-svou-extremni-podobu-379581",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T10:57:24Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Amerika v těchto týdnech zažívá projevy extrémní podoby klimatického jevu El Niño. Patrné to je především v případě prudkých dešťů, které tamní lidé nikdy nezažili.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -4451,6 +5153,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "e8819e5af77a",
+      "title": "Návrh dodatku Metodiky cenové regulace ke kapacitním mechanismům",
+      "url": "https://eru.gov.cz/navrh-dodatku-metodiky-cenove-regulace-ke-kapacitnim-mechanismum",
+      "source_id": "eru",
+      "source_name": "Energetický regulační úřad",
+      "region": "CZ",
+      "source_type": "government",
+      "language": "cs",
+      "published_at": "2026-11-13T09:37:11Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Návrh dodatku Metodiky cenové regulace ke kapacitním mechanismům jitka.kodesova… Pá, 11/13/2026 - 10:37 Návrh ERÚ Pravidla konzultačního procesu Připomínky Vypořádání připomínek Návrh ERÚ ERÚ zahajuje veřejný konzultační proces k návrhu metodiky regulace ceny za kapacitní mechanismus. Návrh metodiky byl zpracován na základě energetického zákona . Návrh metodiky je koncipován jako samostatný bod Metodiky cenové regulace pro Regulační období 2026–2030 pro odvětví elektroenergetiky, plynárenství, pro činnosti operátora trhu v elektroenergetice a plynárenství, pro elektroenergetické datové centrum, povinně vykupující a dodavatele poslední instance . Podle předběžných analýz ERÚ může rozpad nákladů za kapacitní mechanismy při striktním dodržení přílohy I bodu 26 pravidel CISAF vést k extrémním dopadům na některé skupiny zákazníků odebírajících elektřinu. Významné dopady lze očekávat zejména u průmyslových zákazníků s velkou spotřebou, kteří nemají možnosti ji flexibilně přesouvat v průběhu dne. Považujeme za zásadní na tyto možné významně negativní nákladové dopady upozornit v dostatečném časovém předstihu. Do skupiny zákazníků bez možnosti flexibilního přesunu spotřeby budou spadat i zákazníci z řad domácností a maloodběru podnikatelů, kteří v době zavedení plateb za kapacitní mechanismy ještě nebudou mít průběhové měření. Takoví zákazníci ale budou mít velmi nízkou spotřebu, a tedy i při relativně vysoké jednotkové ceně by neměl být absolutní dopad tak významný. Konzultovaný…",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
       "id": "d3cf9630ba1d",
       "title": "Lenin doma, Marx v ekonomice, nacionalismus navenek. Kevin Rudd na CEVRO popsal tři posuny Si Ťin-pchinga",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/kevin-rudd-cina-evropa",
@@ -4502,6 +5222,44 @@
       "summary_raw": "On an unusually cool and rainy Saturday morning in Decatur, Georgia, dozens of people filed into a warehouse at the back of a church parking lot, their arms full of what a less hopeful group might call junk. Some carried broken lamps, glitching electronics, or cracked furniture. Others walked in with tool boxes, multimeters for testing electric currents, and cans of WD-40. Beneath extension cords dangling from the rafters, they sorted themselves into smaller groups: the volunteer electricians, tailors, luthiers, carpenters, and at least one cutler (knife sharpener), commandeering nearby worktables and passersby as needed. That’s how Lilly Pettus ended up shoulder to shoulder with three strangers, their hands all pressing together the pieces of her family’s cracked dining room chair as wood glue hardened and a volunteer tightened a clamp. “This is so interesting,” a giddy Pettus said, inspecting for the first time the joints, one of them broken, that held together the chair she’d owned for decades. “You never even know how furniture is put together.” Lilly Pettus’s broken chair gets a hand from attendees at the Decatur repair café​. Nearby, a sign tracks repair progress during the event. Johnny Kauffman / Grist This is Decatur’s semi-regular repair café, one of a few hundred meetings like it across the United States. More Americans than ever are turning to these community gatherings to fix what they already own, resisting the influence of companies selling everything from…",
       "authors": [
         "Johnny Kauffman"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "47af89162565",
+      "title": "Středověcí Norové se pokoušeli zavést hygienická opatření, dosáhli pravého opaku",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/stredoveci-norove-se-pokouseli-zavest-hygienicka-opatreni-dosahli-praveho-opaku-379559",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T09:29:53Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Norští vědci popsali, jak se snaha o hygienická opatření vymstila v metropoli středověkého Norska. Doboví regulátoři vycházeli z nejmodernějšího vědeckého poznání, ale stejně neuspěli.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a5782f386ea2",
+      "title": "Drastická opatření u Mercedesu, na která si netroufli ani šéfové VW. V Německu je horko kvůli stěhování výroby do Maďarska",
+      "url": "https://archiv.hn.cz/c1-67959010-drasticka-opatreni-u-mercedesu-na-ktera-si-netroufli-ani-sefove-vw-v-nemecku-je-horko-kvuli-stehovani-vyroby-do-madarska",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T09:25:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Ve veřejném prostoru je nejvíce slyšet o problémech a úsporných řešeních koncernu Volkswagen (VW). I kvůli tomu, že mají dopadnout také na českou Škodu Auto. Trochu v ústraní zůstává momentální situace další německé automobilky Mercedes-Benz. Přitom...",
+      "authors": [
+        "Ondřej Charvát"
       ],
       "doi": null,
       "topic_filter": true,
@@ -4783,6 +5541,47 @@
       "date_is_first_seen": false
     },
     {
+      "id": "126eb006a287",
+      "title": "45 příhozů a hotovo. Trofejní dům v Pařížské získal v dražbě za 1,3 miliardy český miliardář. Rozšíří jeho sbírku pražských nemovitostí",
+      "url": "https://archiv.hn.cz/c1-67958960-45-prihozu-a-hotovo-trofejni-dum-v-parizske-ziskal-v-drazbe-za-1-3-miliardy-cesky-miliardar-rozsiri-jeho-sbirku-prazskych-nemovitosti",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T07:33:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Žádný dům v Česku se dosud ve veřejné dražbě nevydražil za víc peněz. Historický dům U svatého Jiří na rohu Pařížské a Široké v centru Prahy změnil majitele zhruba před týdnem. V elektronické dražbě o něj soupeřilo pět neznámých uchazečů, přičemž...",
+      "authors": [
+        "Pavel P. Novotný",
+        "Michael Mareš"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "931ba9336a26",
+      "title": "Něco se zadrhlo. Microsoft přiznává problémy s řešením výpadků, které postihly jeho služby. Výpadek pocítila i česká ministerstva",
+      "url": "https://byznys.hn.cz/c1-67958950-neco-se-zadrhlo-microsoft-priznava-problemy-s-resenim-vypadku-ktere-postihly-jeho-sluzby",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T07:17:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Americká softwarová společnost Microsoft má problémy při řešení výpadků, se kterými se od čtvrtečního večera potýkají uživatelé její internetové pošty Outlook i dalších služeb. Firma uvedla, že její snahy o odstranění výpadků nepostupují podle...",
+      "authors": [
+        "ČTK"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "dc3d52c3436f",
       "title": "Can Serbia Strengthen Central European Position in Europe After Vučić?",
       "url": "https://visegradinsight.eu/serbia-cee-relations-after-student-list-victory/?utm_source=rss&utm_medium=rss&utm_campaign=serbia-cee-relations-after-student-list-victory",
@@ -4818,6 +5617,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b16ad6861286",
+      "title": "V pátek skončí svět, spočítali v 60. letech vědci v Science. Kde se stala chyba?",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/v-patek-skonci-svet-spocitali-v-60-letech-vedci-v-science-kde-se-stala-chyba-378545",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-13T06:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Podle recenzované studie v odborném žurnálu Science mělo lidstvo zaniknout tím, že se na konci roku 2026 na Zemi doslova umačká – vědci spočítali, že se lidé na planetu už zkrátka nevejdou. Kde udělali chybu?",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -5014,6 +5831,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "c8d21d802ebe",
+      "title": "Transcript: Lots of Environmental Groups Oppose the Permitting Bill. This One Doesn’t.",
+      "url": "https://heatmap.news/podcast/shift-key-159-evergreen-baaja-transcript",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-13T01:08:15Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "This transcript has been automatically generated. Subscribe to “Shift Key” and find this episode on Apple Podcasts , Spotify , Amazon , YouTube , or wherever you get your podcasts. You can also add the show’s RSS feed to your podcast app to follow us directly. Robinson Meyer: Hello, it’s Thursday, November 12, and Congress is still debating the Senate Permitting Bill, officially known as the Bipartisan American Affordability and Jobs Act. We’ve been covering the bill here at Heatmap, as you know, and it would do a lot of different things, so many that it’s actually a bit of a struggle to summarize them all in just the introduction to this show. But let’s say briefly, it would initiate a federal buildout of long distance transmission lines, rework some parts of the National Environmental Policy Act, and changed some of how the federal government works with tribes. It would also rewrite parts of the Clean Water Act to generally give states less power and rewrite the Endangered Species Act to generally give states more power. Robinson Meyer: As I’m sure you’ve seen, it’s divided the environmental community and the broader set of interest groups that are aligned with the Democratic Party. The Wilderness Society opposes the bill, as does Earth Justice and former Vice President Al Gore. The AFL-CIO, the International Brotherhood of Electrical Workers, the Electrician’s Union, and the National Urban League all support the bill. One of the few environmental groups that has endorsed…",
+      "authors": [
+        "Robinson Meyer"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -5664,6 +6501,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "f96ea0400aed",
+      "title": "Commission launches first global alliance on climate and health research funding at COP31",
+      "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-launches-first-global-alliance-climate-and-health-research-funding-cop31-2026-11-13_en",
+      "source_id": "dg-clima",
+      "source_name": "Evropská komise – DG CLIMA",
+      "region": "EU",
+      "source_type": "government",
+      "language": "en",
+      "published_at": "2026-11-12T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "At COP 31 today, the European Commission launched the Multilateral Initiative on Climate & Health Research Funding together with the Wellcome Trust and public research funders from five continents.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "bdc89c684e38",
       "title": "LC_NSTU_R2 - \"Dataset: updated data\"",
       "url": "https://ec.europa.eu/eurostat/databrowser/product/page/LC_NSTU_R2",
@@ -5682,6 +6537,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "bbd1af33177e",
+      "title": "At COP31, the Commission launches climate-related actions under the Pact for the Mediterranean",
+      "url": "https://north-africa-middle-east-gulf.ec.europa.eu/news/cop31-commission-launches-climate-related-actions-under-pact-mediterranean-2026-11-13_en",
+      "source_id": "dg-clima",
+      "source_name": "Evropská komise – DG CLIMA",
+      "region": "EU",
+      "source_type": "government",
+      "language": "en",
+      "published_at": "2026-11-12T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "At the COP31 UN Climate Change Conference in Antalya, Türkiye, the Commission today presented the climate-related actions under the Pact for the Mediterranean .",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "a7e8ccef1eb0",
       "title": "Ten citizen-led energy communities win the first EU Prize for Governance Innovations in Energy Communities",
       "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/ten-citizen-led-energy-communities-win-first-eu-prize-governance-innovations-energy-communities-2026-11-10_en",
@@ -5697,6 +6570,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.0,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a2fe163e413c",
+      "title": "When Invasive Species Become a Problem for Crete's Fishers and the Ecosystem",
+      "url": "https://www.ecologic.eu/20731",
+      "source_id": "ecologic",
+      "source_name": "Ecologic Institute",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-12T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Through more than 20 interviews, a joint research team from Ecologic Institute and the HCMR explores how invasive marine species are changing fisheries in Crete and what practical solutions could work.",
+      "authors": [
+        "Ecologic Institute"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
       "date_is_first_seen": false
     },
     {
@@ -5772,6 +6665,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "17d5dcf6137c",
+      "title": "Einheitliche Zertifizierung, Umstrittene Regeln",
+      "url": "https://www.ecologic.eu/20727",
+      "source_id": "ecologic",
+      "source_name": "Ecologic Institute",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-12T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "The European Union has introduced detailed certification rules for permanent carbon removals for the first time, laying important groundwork for their future integration into EU climate policy. However, key provisions remain legally contested. This policy brief examines the requirements of the new regulation and explores its potential implications for European climate policy.",
+      "authors": [
+        "Ecologic Institute"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "0191486913ac",
       "title": "Babiš celý život bojoval proti zavedení bankovní daně. Proč nyní otáčí?",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/babis-sektorove-dane-banky",
@@ -5809,6 +6722,26 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "d4009d2cde91",
+      "title": "The Deadliest Part of a Wildfire Might Not Be the Blaze",
+      "url": "https://heatmap.news/adaptation/indonesia-smoke",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-12T22:13:55Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "It’s a morbid game to try to name the worst climate disaster of 2026. In Europe this summer, a series of extreme heat waves killed an estimated 50,000 people. In September, a thawing Himalayan glacier collapsed, sending a wall of water cascading through Tibet and Nepal, killing at least 1,500 people, with nearly 6,000 still missing months later. And this past January, authorities feared hundreds of migrants died while trying to cross the Mediterranean during Cyclone Harry, including 50 in one shipwreck alone. But the disaster that will result in perhaps the greatest and longest-lasting tragedy is the one unfolding right now in Indonesia. Wildfires in Sumatra and Kalimantan have burned more than 7 million acres in what is likely a record year for the fire-prone islands. The blazes have destroyed critical wildlife habitats, including rainforests occupied by orangutans, Sunda pangolins, and Javan leopards. But it’s not the direct human deaths from the fires, the habitat loss, or the historic acreage burned — those being the typical headline numbers for gauging how “bad” a given fire or fire season is — that best tell the story of the impacts, in this case. Rather, it is the toxic smoke blanketing Indonesia, Singapore, Malaysia, and Timor-Leste. For months, those emissions have been in every breath taken by the region’s 12.5 million inhabitants, about 4% of the world’s population. In Indonesia alone, authorities estimate the smoke has caused 400,000 respiratory infections. As of…",
+      "authors": [
+        "Jeva Lange"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -6059,6 +6992,46 @@
       "date_is_first_seen": false
     },
     {
+      "id": "a9d10b4a49e7",
+      "title": "Česko pošle na Ukrajinu někdejší elitní lokomotivy ČSD. Společně s federálními sestrami rozjedou trať do Užhorodu",
+      "url": "https://byznys.hn.cz/c1-67958720-cesko-posle-na-ukrajinu-nekdejsi-elitni-lokomotivy-csd-spolecne-s-federalnimi-sestrami-rozjedou-trat-do-uzhorodu",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T18:49:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Česko pošle na Ukrajinu jako humanitární pomoc pět lokomotiv řady 151. HN to potvrdily dva zdroje z resortu dopravy. Někdejší elitní lokomotivy federálních Československých drah (ČSD) si vyžádala ukrajinská strana. Společně se třemi stroji řady 350,...",
+      "authors": [
+        "Jan T. Beránek"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b648b89434d0",
+      "title": "Mercedes pozastaví investice v Německu, zvažuje i uzavření některých závodů",
+      "url": "https://byznys.hn.cz/c1-67958710-mercedes-pozastavi-investice-v-nemecku-zvazuje-i-uzavreni-nekterych-zavodu",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T18:32:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Německý výrobce prémiových vozů Mercedes-Benz pozastaví veškeré investice do svých německých závodů a zvažuje i uzavření některých z nich. Důvodem jsou vysoké náklady na výrobu a neúspěšná jednání se zaměstnaneckými radami a odbory o jejich snížení....",
+      "authors": [
+        "ČTK"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "fa0d2d37129b",
       "title": "Climate science says 1.5C is dead. No one wants to bury it.",
       "url": "https://www.politico.eu/article/climate-science-1-5c-target-global-warming-dead/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
@@ -6094,6 +7067,46 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "f22ddafaf656",
+      "title": "Electricity Isn’t the Only Thing Getting More Expensive Because of AI",
+      "url": "https://heatmap.news/ideas/gas-customer-protection-pledge",
+      "source_id": "heatmap",
+      "source_name": "Heatmap News",
+      "region": "US",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-12T17:58:04Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Everyone is talking about high energy prices, which were a major factor in the midterm elections. And it’s not just electricity: Families are paying 16% more for natural gas now than they were just two years ago. Within a few more years, the boom in electricity demand from data centers could add enough natural gas power plants to expand America’s gas power generation capacity by a third . Some back of the envelope math shows that the additional costs to regular customers from this expansion could total more than $23 billion across all retail gas and electricity prices by 2030. Large users choosing gas will raise costs for the more than 70 million households in America paying a gas bill every month. It’s simple supply and demand. Some data center developers are working with utilities to connect to the grid, but many others are building their own off-grid power plants that would burn natural gas to power their operations. That would require a massive gas infrastructure build-out on top of the supply pressure, raising costs still further. Earlier this year, hyperscalers and AI companies signed the Ratepayer Protection Pledge , committing to pay the full costs of their energy and infrastructure, “no matter what,” to avoid increasing energy costs for other customers. Agreeing to limit cost increases for energy is a good start, but the details of that pledge focused only on electricity customers, and it’s not enough to solve the problem. Almost nothing has been said on what that…",
+      "authors": [
+        "Jamie Van Nostrand"
+      ],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "b791739af195",
+      "title": "SpaceX plánuje investovat 74 miliard dolarů do dvou obřích výpočetních center v USA",
+      "url": "https://byznys.hn.cz/c1-67958700-spacex-planuje-investovat-74-miliard-dolaru-do-dvou-obrich-vypocetnich-center-v-usa",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T17:49:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Americká společnost SpaceX plánuje investovat více než 74 miliard USD (1,6 bilionu korun) do výstavby dvou rozsáhlých výpočetních center v amerických státech Texas a Arizona. Oznámila to dnes společnost. Investice rozšíří její aktivity v oblasti...",
+      "authors": [
+        "ČTK"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
@@ -6195,6 +7208,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "030ce96aa2cf",
+      "title": "Velká šance pro malé české e-shopy. AI agenti narovnají trh, říká manažer Adyenu a přidává překvapivá čísla",
+      "url": "https://archiv.hn.cz/c1-67958670-velka-sance-pro-male-ceske-e-shopy-ai-agenti-narovnaji-trh-rika-manazer-adyenu-a-pridava-prekvapiva-cisla",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T16:47:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Umělá inteligence zásadním způsobem mění to, jak lidé objevují, porovnávají a nakupují produkty. Od tradičních vyhledávačů se přesouvají k AI agentům jako ChatGPT, Gemini či Copilot. Co to znamená pro budoucnost e-commerce a jak se na tuto změnu...",
+      "authors": [
+        "Michael Mareš"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "438025cc60a9",
       "title": "Andrej jede do Izraele kupovat Iron Dome. Bože, bože...",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/babis-nakup-iron-dome-analyza",
@@ -6208,6 +7241,27 @@
       "summary_raw": "GLOSA JANA MALINY | Andrej Babiš ve svém nedělním videu opět předvedl, že mezi jeho politickým marketingem a realitou leží skutečně hluboká propast. Veřejnosti s vážnou tváří oznámil, že odletí do Izraele, aby vyjednal nákup slavného systému protivzdušné obrany Iron Dome, který nás má ochránit před balistickými raketami. Je to roztomilé. A má to háček: Iron Dome na balistické rakety vůbec neslouží. Sledovat předsedu vlády, jak zaměňuje protidronové sítě s protiraketovým štítem, je úsměvné i tragické zároveň.",
       "authors": [
         "Jan Malina"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "499dd0e3ff8a",
+      "title": "Česká zbrojařská hvězda ztrácí důvěru investorů. Jsou akcie CSG po propadu konečně levné?",
+      "url": "https://archiv.hn.cz/c1-67958660-ceska-zbrojarska-hvezda-ztraci-duveru-investoru-jsou-akcie-csg-po-propadu-konecne-levne",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T16:44:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Současný svět je nestabilní a plný konfliktů, z nichž ten na Ukrajině se odehrává v blízkosti Česka. Evropa navíc pod tlakem Ruska a hrozbami amerického prezidenta Donalda Trumpa začala zbrojit a doplňovat poloprázdné sklady. Zbrojaři by z toho měli...",
+      "authors": [
+        "Patrik Salát",
+        "Petr Zenkner"
       ],
       "doi": null,
       "topic_filter": true,
@@ -6232,6 +7286,26 @@
       "doi": null,
       "topic_filter": false,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "a438c53e7cf0",
+      "title": "Ceny elektřiny jsou na maximu a fosilní zdroje zvyšují výrobu. Jaderné elektrárny ČEZ přesto vydělaly o 12 miliard méně",
+      "url": "https://archiv.hn.cz/c1-67958650-ceny-elektriny-jsou-na-maximu-a-fosilni-zdroje-zvysuji-vyrobu-jaderne-elektrarny-cez-presto-vydelaly-o-12-miliard-mene",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T16:14:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Jednoduchá pravidla v energetice neplatí, třeba že když roste cena elektřiny, projeví se to pozitivně na výsledcích energetické skupiny ČEZ. Megawatthodina elektřiny na burzách se nyní obchoduje za více než 150 eur, zatímco před rokem byla pod 100...",
+      "authors": [
+        "Jan Brož"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
@@ -6353,6 +7427,26 @@
       "summary_raw": "Europoslanec Tomáš Zdechovský (KDU-ČSL, EPP) se obrací na Evropskou komisi kvůli zneužití svého jména čínskými státními médii. Ta zveřejnila rozhovor s jiným europoslancem, jeho výroky však nepravdivě připisovala právě Zdechovskému. Europoslanec je přesvědčen, že v jeho případě nešlo o náhodnou chybu, ale o možný pokus o cílenou informační manipulaci.",
       "authors": [
         "Vojtěch Kristen"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "aacfc5532eb3",
+      "title": "Energetické „zombie“ pochodují dál. Nevratné kauce je nezastavily, firmy dál žádají o astronomická připojení do sítí",
+      "url": "https://archiv.hn.cz/c1-67958220-energeticke-bdquo-zombie-ldquo-pochoduji-dal-nevratne-kauce-je-nezastavily-firmy-dal-zadaji-o-astronomicka-pripojeni-do-siti",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T15:38:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Připojit nový energetický zdroj, výrobní podnik nebo baterii k elektrické síti je v poslední době velký problém. Kapacita je „vybookovaná“ na dlouho dopředu. Aby distribuční společnosti mohly všechny žadatele připojit, musely by...",
+      "authors": [
+        "Jan Brož"
       ],
       "doi": null,
       "topic_filter": true,
@@ -6538,6 +7632,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "0340cc965cba",
+      "title": "Zdravotnictví tvoří pět procent uhlíkové stopy lidstva, říká lékařka. Zaměřila na to nový projekt",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/zdravotnictvi-tvori-pet-procent-uhlikove-stopy-lidstva-rika-lekarka-zamerila-na-to-novy-projekt-379547",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T14:24:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Až doposud se v Česku lidské zdraví v kontextu klimatu a životního prostředí nestudovalo. Má to změnit nový kabinet, který vznikl na Univerzitě Karlově. Jeho smysl a cíle popisuje v rozhovoru jeho vedoucí, lékařka Marie Bourne.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "4c31a7d9846b",
       "title": "Finland’s nuclear and wind expansion to drive clean power surge, says GlobalData",
       "url": "https://www.energymonitor.ai/analyst-comment/finland-nuclear-wind-expansion/",
@@ -6674,6 +7786,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "501f70022945",
+      "title": "Česko si pohoršilo v klimatickém indexu",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/cesko-si-pohorsilo-v-klimatickem-indexu-379546",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T12:59:45Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Česká republika si o tři příčky pohoršila v každoročním indexu klimatických změn CCPI. Umístila se na 45. místě, čímž spadá do kategorie států s nízkým hodnocením.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "4164df76b60b",
       "title": "Zlámaný Topol dnes v Atlasu. Přijďte na Jelínka a další hosty",
       "url": "https://www.info.cz/po-praci-lifestyle/pozvanka-zlamany-topol-kino-atlas-rozhodovani-pod-tlakem-jelinek",
@@ -6734,6 +7864,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "6005d3f48071",
+      "title": "Jedno pivo v hospodě, nebo čtyři doma u televize? Rozdíl mezi cenou točeného a „lahváčů“ už je přes 40 Kč a dál rychle roste",
+      "url": "https://archiv.hn.cz/c1-67958350-jedno-pivo-v-hospode-nebo-ctyri-doma-u-televize-rozdil-mezi-cenou-toceneho-a-lahvacu-uz-je-pres-40-kc-a-dal-rychle-roste",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T12:04:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Cenové nůžky mezi točeným pivem v gastronomii a lahvovým, případně plechovkovým nápojem z obchodu se čím dál více rozevírají. Rozhodnutí spořivého pivaře, zda zajít do kolektivu, nebo popíjet podomácku sám, tak není moc složité. Za stejnou cenu,...",
+      "authors": [
+        "Jan Brož"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "f3b6d23df292",
       "title": "„Média by teroristům neměla stavět pódium.“ Útočníci plánují násilí podle novinových titulků, říká expertka",
       "url": "https://www.reflex.cz/clanek/rozhovory/139343/media-by-teroristum-nemela-stavet-podium-utocnici-planuji-nasili-podle-novinovych-titulku-rika-expertka.html",
@@ -6772,6 +7922,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "bab231eda518",
+      "title": "Českým bankám se daří. Šesti největším stoupl zisk o osm procent na 74,4 miliardy korun",
+      "url": "https://archiv.hn.cz/c1-67958540-ceskym-bankam-se-dari-sesti-nejvetsim-stoupl-zisk-o-osm-procent-na-74-4-miliardy-korun",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T11:26:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Šestici největších tuzemských bank stoupl v prvních třech čtvrtletích letošního roku čistý zisk o osm procent na 74,4 miliardy korun. Loni ve stejném období to bylo 68,8 miliardy korun, předloni 63,3 miliardy korun. Vyplývá to z výsledků bank, které...",
+      "authors": [
+        "ČTK"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "2577dc2f72de",
       "title": "EU court rejects Poland’s bid to overturn 7 major climate laws",
       "url": "https://www.politico.eu/article/eu-court-rejects-poland-bid-overturn-7-climate-laws/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
@@ -6786,6 +7956,24 @@
       "authors": [
         "Bartosz Brzeziński"
       ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "76aca6c2dd7c",
+      "title": "Kůrovci disponují účinnou chemickou továrnou na štěpení celulózy, ukázal výzkum",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/kurovci-disponuji-ucinnou-chemickou-tovarnou-na-stepeni-celulozy-ukazal-vyzkum-379542",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T11:04:39Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Nový výzkum odhalil, že kůrovci jsou mnohem méně závislí na spolupráci s houbami, než se předpokládalo. Mohlo by to pomoci s jejich kontrolou, protože to naznačuje, že jejich šíření může být spojené se znečištěním ovzduší.",
+      "authors": [],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
@@ -6807,6 +7995,24 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.7,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "511a58caba42",
+      "title": "Rozmanitost Evropy a tajemství molekul. Do Česka míří nejprestižnější evropské granty",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/rozmanitost-evropy-a-tajemstvi-molekul-do-ceska-miri-nejprestiznejsi-evropske-granty-379515",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T11:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Evropská rada pro výzkum (ERC) vybrala 48 výzkumů, které dostanou v rámci grantů celkem 500 milionů eur (12,17 miliardy korun) na řešení vědeckých výzev, které vyžadují, aby výzkumníci spojili své znalosti. Dva z grantů letos míří do Česka. Každý z oceněných projektů dostane částku 8,5 milionu eur, v přepočtu 212 milionů korun.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -7075,6 +8281,26 @@
       "summary_raw": "“Electrify everything” has become a mantra in the fight against climate change. Switching a home’s heating, cooling, and other energy-intensive loads from fossil fuels to electricity could drastically reduce planet-warming emissions. But electrification has often run into a major, and expensive, hurdle: upgrading a home’s electric capacity. A home’s connection to the grid is rated by amperage, or amps, which caps the amount of current it can safely draw at once. The standard for houses built in the last few decades is generally 200 amps. Many older residences, however, have a lower limit because they were constructed when electricity powered little more than the lights, refrigerator, microwave, and perhaps the dryer. Research from Lawrence Berkeley National Laboratory found that roughly a third of homes in the United States have panel capacity of 100 amps or less. In the Northeast, that share rises to closer to half. As people install heat pumps, induction stoves, and EV chargers, they can run into a couple of potential issues. Their electric panel may simply run out of slots to install more circuit breakers, in which case the relatively easy fix of adding a subpanel often does the trick. But sometimes homeowners run into a bigger problem, where an electrician says all the new loads will push them past their home’s peak power limits. Upgrading an electrical service can start at a few thousand dollars and quickly skyrocket, particularly in rural areas or places where power…",
       "authors": [
         "Tik Root"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "5bd29808c707",
+      "title": "V Česku je prostředí pro těžaře složité. Ukrajina je z tohoto pohledu ten nejlepší partner, říká šéfka MND Ukraine Hamršmídová",
+      "url": "https://byznys.hn.cz/c1-67958310-v-cesku-je-prostredi-pro-tezare-extremne-nepratelske-ukrajina-je-z-tohoto-pohledu-ten-nejlepsi-partner-rika-sefka-mnd-ukraine-hamrsmidova",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T09:45:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Obchodní mise na Ukrajinu, kterou vicepremiér a ministr průmyslu Karel Havlíček (ANO) označuje za největší za poslední roky, se účastnili také lidé z těžební společnosti MND. Firma má na Ukrajině své stálé sídlo, takže se k delegaci přidala až ve...",
+      "authors": [
+        "Martin Ťopek"
       ],
       "doi": null,
       "topic_filter": true,
@@ -7362,6 +8588,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "46de720b174c",
+      "title": "ČEZ za tři čtvrtletí navýšil čistý zisk na 26,6 miliardy korun. Pomohl konec windfall tax",
+      "url": "https://byznys.hn.cz/c1-67958400-cez-za-tri-ctvrtleti-navysil-cisty-zisk-na-26-6-miliardy-korun-pomohl-konec-windfall-tax",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T07:49:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Energetická skupina ČEZ za tři čtvrtletí letošního roku vydělala 26,6 miliardy korun. Čistý zisk společnosti tak meziročně vzrostl o 24 procent. Přispělo k tomu zejména ukončení výběru daně z neočekávaných zisků, takzvané windfall tax. Vzrostl...",
+      "authors": [
+        "ČTK"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
       "id": "bf960eb2f3bd",
       "title": "The EU Cannot Afford Another Hungary",
       "url": "https://visegradinsight.eu/the-eu-cannot-afford-another-hungary/?utm_source=rss&utm_medium=rss&utm_campaign=the-eu-cannot-afford-another-hungary",
@@ -7399,6 +8645,46 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "68c411b039e4",
+      "title": "Na Ukrajinu míří z Česka letadla a lokomotivy, zničená země má zájem o mosty a střechy. Státní záruky však budou muset být efektivnější",
+      "url": "https://archiv.hn.cz/c1-67958290-na-ukrajinu-miri-z-ceska-letadla-a-lokomotivy-znicena-zeme-ma-zajem-o-mosty-a-strechy-statni-zaruky-vsak-budou-muset-byt-efektivnejsi",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T06:40:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Válkou zničenou Ukrajinu čeká těžká zima a bez další pomoci se neobejde. Země bránící se už pět let ruské agresi potřebuje například provizorní mosty, zdroje tepla nebo materiál na nové střechy. České firmy tohle všechno dodat umí, podle podnikatelů...",
+      "authors": [
+        "Martin Ťopek"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "171b42c8e21c",
+      "title": "Konec éry kožené bundy. Šéf Nvidie Jensen Huang rezignoval na svůj post kvůli špionské aféře",
+      "url": "https://byznys.hn.cz/c1-67958330-konec-ery-kozene-bundy-spravni-rada-nvidie-pripravuje-odvolani-sefa-jensena-huanga-akcie-firmy-padaji",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-12T06:16:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Jensen Huang má potíže. Po odhalení mimomanželského vztahu s čínskou manažerkou se objevily další závažné informace, které oslabily pozici jednoho z nejvlivnějších lidí na světě. Během čtvrtka pak nabraly události rychlý spád. Huang rezignoval na...",
+      "authors": [
+        "Otakar Schön"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
       "date_is_first_seen": false
     },
     {
@@ -7660,6 +8946,24 @@
       ],
       "doi": "10.1080/13504622.2026.2759715",
       "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "da1358cec83d",
+      "title": "European natural gas demand tracker",
+      "url": "https://www.bruegel.org/dataset/european-natural-gas-demand-tracker",
+      "source_id": "bruegel",
+      "source_name": "Bruegel – Energy & climate",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
       "source_weight": 1.1,
       "date_is_first_seen": false
     },
@@ -8056,6 +9360,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "77c72993cf7a",
+      "title": "Klimatická změna vytváří příznivější podmínky pro šíření nových škůdců",
+      "url": "https://www.klimatickazmena.cz/klimaticka-zmena-vytvari-priznivejsi-podminky-pro-sireni-novych-skudcu/",
+      "source_id": "klimatickazmena",
+      "source_name": "CzechGlobe – klimatickazmena.cz",
+      "region": "CZ",
+      "source_type": "research",
+      "language": "cs",
+      "published_at": "2026-11-12T00:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Klimatická změna ovlivňuje výskyt a šíření zemědělských škůdců v České republice. Mírnější zimy a teplejší léta umožňují některým druhům pronikat do oblastí, kde se dříve nevyskytovaly. Miroslav Trnka v rozhovoru pro ČT24 upozornil na rizika spojená s novými škůdci a zdůraznil význam jejich včasného monitoringu a účinné ochrany zemědělských plodin. Rozhovor je k dispozici v archivu ČT24 zde (odvysílán byl od 12:52 hod).",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "6f4a5013614a",
       "title": "Climate Change Education through AI-Powered Simulations among Rural Learners: A Framework for Developing Climate Literacy",
       "url": "https://doi.org/10.5281/zenodo.24218182",
@@ -8363,6 +9685,46 @@
         "Sven Linow"
       ],
       "doi": "10.1016/j.erss.2026.105073",
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "da3f57e1f861",
+      "title": "Nálepka firmy z Východu dál brzdí české zbrojaře na západních trzích",
+      "url": "https://byznys.hn.cz/c1-67958500-nalepka-firmy-z-vychodu-dal-brzdi-ceske-zbrojare-na-zapadnich-trzich",
+      "source_id": "hn-byznys",
+      "source_name": "Hospodářské noviny – Byznys",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-11T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Válka na Ukrajině proměnila pohled politiků, podnikatelů, finančních institucí i společnosti samotné na význam obranného průmyslu. Z opomíjeného sektoru se nyní stává jedna z priorit. Tento konflikt zároveň přinesl drsnou lekci samotným firmám, a to...",
+      "authors": [
+        "Petr Kain"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.8,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "bd8d07f72743",
+      "title": "The Best Way to Beat Them? Eat Them!",
+      "url": "https://www.ecologic.eu/20732",
+      "source_id": "ecologic",
+      "source_name": "Ecologic Institute",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-11T23:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "How do you fillet a lionfish? What can you make with a blue swimming crab? In Crete, marine researchers, fishers and culinary trainees explored whether putting edible invasive species on the menu could help protect the sea.",
+      "authors": [
+        "Ecologic Institute"
+      ],
+      "doi": null,
       "topic_filter": false,
       "source_weight": 1.1,
       "date_is_first_seen": false
@@ -9209,6 +10571,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "943929a59d50",
+      "title": "Chlumský rybník se promění v útočiště původních druhů, hlavně mihulí a pstruhů",
+      "url": "https://ct24.ceskatelevize.cz/clanek/regiony/chlumsky-rybnik-se-promeni-v-utociste-puvodnich-druhu-hlavne-mihuli-a-pstruhu-379451",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-11T18:06:22Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Z Chlumského rybníka u Volar na Prachaticku vznikne vodní oáza pro chráněnou mihuli potoční a pstruha obecného. Samotné obnově předcházel tříletý výzkum. Rybáři začali rybník vypouštět a odstraňují z něj současnou rybí obsádku, která neodpovídá přírodním podmínkám Šumavy. Vytvoří tak prostor pro původní druhy. Na projektu spolupracují vědci, město Volary, rybáři i Správa Národního parku Šumava.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "c3f61bd09c42",
       "title": "Vláda ustanovila komisi, aby zjistila, jestli to Oldřich Kaiser myslí vážně, nebo si dělá srandu",
       "url": "https://www.reflex.cz/clanek/divoky-kacer/139273/vlada-ustanovila-komisi-aby-zjistila-jestli-to-oldrich-kaiser-mysli-vazne-nebo-si-dela-srandu.html",
@@ -9284,26 +10664,6 @@
       "doi": null,
       "topic_filter": true,
       "source_weight": 1.2,
-      "date_is_first_seen": false
-    },
-    {
-      "id": "edfbc4a0f22e",
-      "title": "Nálepka firmy z Východu dál brzdí české zbrojaře na západních trzích",
-      "url": "https://ekonom.cz/c1-67957920-nalepka-firmy-z-vychodu-dal-brzdi-ceske-zbrojare-na-zapadnich-trzich",
-      "source_id": "ekonom",
-      "source_name": "Ekonom",
-      "region": "CZ",
-      "source_type": "media",
-      "language": "cs",
-      "published_at": "2026-11-11T17:00:00Z",
-      "first_seen": "2026-11-16T06:25:32.705462Z",
-      "summary_raw": "Válka na Ukrajině proměnila pohled politiků, podnikatelů, finančních institucí i společnosti samotné na význam obranného průmyslu. Z opomíjeného sektoru se nyní stává jedna z priorit. Tento konflikt zároveň přinesl drsnou lekci samotným firmám, a to...",
-      "authors": [
-        "Petr Kain"
-      ],
-      "doi": null,
-      "topic_filter": true,
-      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -9926,6 +11286,26 @@
       "date_is_first_seen": false
     },
     {
+      "id": "1ddcaf8fa79e",
+      "title": "Closing the gap: Turning mine site data into faster, better decisions",
+      "url": "https://www.energymonitor.ai/partner-content/closing-the-gap-turning-mine-site-data-into-faster-better-decisions-2/",
+      "source_id": "energy-monitor",
+      "source_name": "Energy Monitor",
+      "region": "GLOBAL",
+      "source_type": "media",
+      "language": "en",
+      "published_at": "2026-11-11T12:02:15Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "The value of connected mining is not defined by the volume of data generated, but by the quality of decisions and actions that data enables.",
+      "authors": [
+        "Fi Forrest"
+      ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
       "id": "b8fc970d02f6",
       "title": "Sektorové daně významně oslabují růst, prosperitu i příjem státu",
       "url": "https://www.info.cz/zpravodajstvi-a-komentare/sektorove-dane-babis-ekonomika-kapital-investice",
@@ -9964,6 +11344,24 @@
       "doi": "10.1016/j.enpol.2026.115720",
       "topic_filter": true,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "3ec8a3259491",
+      "title": "Ceny Česká hlava získali vědci za výzkum lidské řeči, imunity i historie",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/ceny-ceska-hlava-ziskali-vedci-za-vyzkum-lidske-reci-imunity-i-historie-379502",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-11T11:18:03Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Ceny Česká hlava získali letos vědci například za výzkum lidské řeči, imunity, reprodukce či za výzkum vedoucí k novým lékům. Národní cenu Česká hlava, kterou schválila v říjnu vláda, získal například Jan Černocký z Fakulty informačních technologií Vysokého učení technického v Brně za počítačové zpracování řeči.",
+      "authors": [],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
       "date_is_first_seen": false
     },
     {
@@ -10084,6 +11482,24 @@
       "authors": [
         "Respekt"
       ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "e7c6b43f9f44",
+      "title": "Čínští vědci se v kosmu dostali na píď od absolutní nuly",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/cinsti-vedci-se-v-kosmu-dostali-na-pid-od-absolutni-nuly-379507",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-11T10:19:20Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Na čínské vesmírné stanici panovala nejnižší teplota ve známém vesmíru, pouhých deset biliontin stupně Celsia od absolutní nuly. Mohlo by to pomoci s vývojem nových kvantových technologií i lepších senzorů.",
+      "authors": [],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
@@ -10250,6 +11666,24 @@
       "authors": [
         "Julie Hrstková"
       ],
+      "doi": null,
+      "topic_filter": true,
+      "source_weight": 0.9,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "28fbf5f2b808",
+      "title": "Lidé s rakovinou plic v sobě mají více mikroplastů, ukazuje výzkum",
+      "url": "https://ct24.ceskatelevize.cz/clanek/veda/lide-s-rakovinou-plic-v-sobe-maji-vice-mikroplastu-ukazuje-vyzkum-379437",
+      "source_id": "ct24-veda",
+      "source_name": "ČT24 – Věda",
+      "region": "CZ",
+      "source_type": "media",
+      "language": "cs",
+      "published_at": "2026-11-11T08:56:24Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "Mikroplastům se v moderním světě nedá vyhnout, drobné částečky umělých hmot jsou prakticky všudypřítomné. Nový evropský výzkum ukázal, že pacienti s rakovinou plic mají v plicních tkáních vyšší množství mikroplastů než zdraví lidé. Lékaře proto zajímá, jestli zde nemůže existovat nějaká souvislost.",
+      "authors": [],
       "doi": null,
       "topic_filter": true,
       "source_weight": 0.9,
@@ -10846,6 +12280,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "c46685f4f569",
+      "title": "European natural gas imports",
+      "url": "https://www.bruegel.org/dataset/european-natural-gas-imports",
+      "source_id": "bruegel",
+      "source_name": "Bruegel – Energy & climate",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-11T00:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "b425d1067793",
       "title": "LEXICAL-SEMANTIC AND ETHNOLINGUISTIC FEATURES OF CLIMATE- RELATED GEOGRAPHICAL TERMS IN THE AZERBAIJANI LANGUAGE",
       "url": "https://doi.org/10.70728/b.series.fil.v08.i10.116",
@@ -11166,6 +12618,24 @@
       ],
       "doi": "10.56201/wjimt.v8.no1.2024.pg13.25",
       "topic_filter": true,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "4492165ca060",
+      "title": "2026 European energy crisis fiscal response tracker",
+      "url": "https://www.bruegel.org/dataset/2026-european-energy-crisis-fiscal-response-tracker",
+      "source_id": "bruegel",
+      "source_name": "Bruegel – Energy & climate",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-11T00:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
       "source_weight": 1.1,
       "date_is_first_seen": false
     },
@@ -13182,6 +14652,24 @@
       "date_is_first_seen": false
     },
     {
+      "id": "e39140f35558",
+      "title": "As Lagarde steps down from the ECB, climate risks remain monetary risks",
+      "url": "https://www.bruegel.org/first-glance/lagarde-steps-down-ecb-climate-risks-remain-monetary-risks",
+      "source_id": "bruegel",
+      "source_name": "Bruegel – Energy & climate",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-10T00:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
       "id": "e0c7deaf815b",
       "title": "Integrating Nigerian Indigenous Climate Indicators with Regional Climate Forecasts: Framework Development and Retrospective Evaluation",
       "url": "https://doi.org/10.62292/njp.v35(s).2026.762",
@@ -13332,6 +14820,24 @@
       "doi": "10.1038/s41558-026-02769-9",
       "topic_filter": false,
       "source_weight": 1.2,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "c479d3f1911f",
+      "title": "Thermal storage can significantly cut industrial heat costs and accelerate electrification",
+      "url": "https://www.agora-industry.org/news-events/thermal-storage-can-significantly-cut-industrial-heat-costs-and-accelerate-electrification",
+      "source_id": "agora",
+      "source_name": "Agora Energiewende",
+      "region": "EU",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-10T00:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.1,
       "date_is_first_seen": false
     },
     {
@@ -13837,6 +15343,24 @@
       "doi": "10.1007/s44218-026-00164-7",
       "topic_filter": true,
       "source_weight": 1.1,
+      "date_is_first_seen": false
+    },
+    {
+      "id": "06fd13b192c4",
+      "title": "Ember Labs launches two new tools to explore methane targets and satellite data",
+      "url": "https://ember-energy.org/latest-updates/ember-labs-launches-two-new-tools-to-explore-methane-targets-and-satellite-data",
+      "source_id": "ember",
+      "source_name": "Ember",
+      "region": "GLOBAL",
+      "source_type": "think_tank",
+      "language": "en",
+      "published_at": "2026-11-10T00:00:00Z",
+      "first_seen": "2026-11-19T10:23:43.694327Z",
+      "summary_raw": "",
+      "authors": [],
+      "doi": null,
+      "topic_filter": false,
+      "source_weight": 1.3,
       "date_is_first_seen": false
     },
     {
