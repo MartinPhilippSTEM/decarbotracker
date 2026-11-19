@@ -72,6 +72,9 @@ def test_cz_mood_trend_with_topic_tooltip(settings, tmp_path):
     assert sec.count('class="mood-pt') == 2 and "<svg" in sec
     assert "2026-W45:" in sec and "nejčastější téma: energetické trhy" in sec
     assert "předchozí týden" in sec
+    # vývoj nálady je první věc v kapitole „O čem se píše v Česku“, s vysvětlením
+    assert html.index("O čem se píše v Česku") < html.index('id="nalada"')
+    assert "nad nulou" in sec and "dlouhodobý vývoj" in sec
 
 
 def test_backfill_from_report_items(settings):

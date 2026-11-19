@@ -106,4 +106,5 @@ def test_media_section_rendered(settings, tmp_path):
     html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
     assert "Co psala česká média" in html and "sběr každou hodinu" in html
     assert "Všech článků" in html  # tabulka podle médií (ve sbalené části pro analytiky)
+    assert "O čem se píše v Česku" in html
     assert arts[0].source_name in html

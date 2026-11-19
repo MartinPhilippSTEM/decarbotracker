@@ -289,3 +289,5 @@ html { scroll-behavior: smooth; }
 .mood-chart .last .mood-dot { fill: var(--accent); }
 .mood-chart .mood-hit { fill: transparent; cursor: help; }
 .mood-chart .mood-pt:hover .mood-dot, .mood-chart .mood-pt:focus .mood-dot { fill: var(--accent); stroke-width: 3.5; }
+.mood-explain { font-size: .98rem; margin: .4rem 0; }
+#v-cesku .mood { border-bottom: 1px solid var(--line); padding-bottom: .6rem; margin-bottom: .8rem; }

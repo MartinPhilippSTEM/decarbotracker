@@ -118,10 +118,15 @@
     <h2 id="analytici">Pro analytiky</h2>
     <p class="hint">Podrobnosti jsou sbalené – klikněte na název oddílu.</p>
 
+  {# „O čem se píše v Česku“: nejdřív vývoj nálady diskurzu, pak analýza českých médií #}
   {% set cur = cz_trend[-1] if cz_trend and cz_trend[-1].week == r.week else none %}
+  {% set has_media = r.media and r.media.n_relevant %}
+  {% if cur or has_media %}
+  <details class="fold media-sec" id="v-cesku">
+    <summary>O čem se píše v Česku <span class="fold-n">{% if cur %}nálada {{ '%+d'|format(cur.index) if cur.index else '≈ 0' }} · vývoj v čase{% endif %}{% if cur and has_media %} · {% endif %}{% if has_media %}{{ r.media.n_relevant }} článků{% endif %}</span></summary>
   {% if cur %}
-  <details class="fold mood" id="nalada">
-    <summary>Přibližná nálada diskurzu o Česku (odhad) <span class="fold-n">{{ '%+d'|format(cur.index) if cur.index else '≈ 0' }} · vývoj v čase</span></summary>
+  <div class="mood" id="nalada">
+    <h3>Přibližná nálada diskurzu o Česku (odhad)</h3>
     {% set prev = cz_trend[-2] if cz_trend|length >= 2 else none %}
     {% set tone = 'neg' if cur.index <= -10 else ('pos' if cur.index >= 10 else 'neu') %}
     <p class="mood-now">Tento týden <span class="mood-num mood-{{ tone }}">{{ '%+d'|format(cur.index) if cur.index else '≈ 0' }}</span>
@@ -150,13 +155,13 @@
       <p class="hint">Najeďte myší na bod: hodnota a nejčastější téma daného týdne.</p>
     </div>
     {% endif %}
+    <p class="mood-explain">Hodnoty nad nulou znamenají, že ve zprávách o Česku převažuje příznivé vyznění (rámování) vůči dekarbonizaci, hodnoty pod nulou nepříznivé. Důležitější než stav v jednom týdnu je sledovat dlouhodobý vývoj – jednotlivé týdny kolísají podle toho, jaké zprávy právě vyšly.</p>
     <p class="hint">Přibližný odhad z hodnocení AI (vyznění zpráv o Česku pro dekarbonizaci, −100 až +100), ne měření veřejného mínění. Není validovaný a výkyvy mezi týdny mohou být náhodné. <a href="{{ base }}metodika/#nalada">Jak odhad vzniká</a>.</p>
-  </details>
+  </div>
   {% endif %}
 
-    {% if r.media and r.media.n_relevant %}{% set m = r.media %}{% set marts = media_articles(m) %}
-    <details class="fold media-sec">
-      <summary>Co psala česká média <span class="fold-n">{{ m.n_relevant }} článků</span></summary>
+    {% if has_media %}{% set m = r.media %}{% set marts = media_articles(m) %}
+      <h3>Co psala česká média</h3>
       <p class="meta">{{ m.n_relevant }} článků k energetice a klimatu z {{ m.n_collected }} zachycených ve {{ m.outlets|length }} médiích · nejčastější témata: {% for k, v in m.topics.items() %}{% if loop.index <= 3 %}{{ media_topic_labels.get(k, k) }} ({{ v }}){% if loop.index < 3 and not loop.last %}, {% endif %}{% endif %}{% endfor %}</p>
       {% if m.draft %}
       <p class="lead"><strong>{{ m.draft.headline_cs|plain }}</strong></p>
@@ -183,8 +188,9 @@
         <tbody>{% for o in m.outlets %}{% if o.collected %}<tr><td>{{ o.outlet }}</td><td>{{ o.relevant }}</td><td>{{ o.collected }}</td><td>{{ ((o.relevant / o.collected) * 100)|round(1) }} %</td></tr>{% endif %}{% endfor %}</tbody>
       </table></div>
       <p class="hint">Analýza titulků a perexů z RSS feedů (sběr každou hodinu). Relevanci, téma, rámec, žánr a vyznění určuje AI, čísla počítá program. Kódování AI není validované. Průměrné vyznění ≈ {{ '%+d'|format(m.tone_index) if m.tone_index else '0' }} (−100 až +100, orientační).{% if m.notes %} Poznámky: {{ m.notes|join('; ') }}.{% endif %}</p>
-    </details>
     {% endif %}
+  </details>
+  {% endif %}
 
     {% if r.opportunities_cs %}
     <details class="fold">
