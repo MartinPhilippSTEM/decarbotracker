@@ -53,9 +53,10 @@ def test_mood_section_rendered_with_soft_wording(settings, tmp_path):
     html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
     assert "Přibližná nálada diskurzu o Česku" in html and "(odhad)" in html
     assert "Přibližný odhad z hodnocení AI" in html and "nejčastější téma" in html
-    # od 19. 11. 2026: jen Česko, pod Co sledovat (nad sbalenou částí), bez řádků EU/svět
-    assert html.index('id="nalada"') < html.index('id="analytici"')
-    assert "EU/Evropa" not in html[html.index('id="nalada"'):html.index('id="analytici"')]
+    # jen Česko, sbalené v části pro analytiky, bez řádků EU/svět
+    assert html.index('id="analytici"') < html.index('id="nalada"')
+    sec = html[html.index('id="nalada"'):]
+    assert "EU/Evropa" not in sec[:sec.index("</details>")]
 
 
 def test_cz_mood_trend_with_topic_tooltip(settings, tmp_path):
@@ -66,7 +67,8 @@ def test_cz_mood_trend_with_topic_tooltip(settings, tmp_path):
         rep.sentiment = summarize(sel, {i.id for i in rep.items})
         write_json(week_path(week), rep)
     html = (build_site(settings, out_dir=tmp_path / "site") / "index.html").read_text(encoding="utf-8")
-    sec = html[html.index('id="nalada"'):html.index('id="analytici"')]
+    sec = html[html.index('id="nalada"'):]
+    sec = sec[:sec.index("</details>")]
     assert sec.count('class="mood-pt') == 2 and "<svg" in sec
     assert "2026-W45:" in sec and "nejčastější téma: energetické trhy" in sec
     assert "předchozí týden" in sec

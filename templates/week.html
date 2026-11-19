@@ -2,16 +2,29 @@
 {% from "_macros.html" import tags, item_date, item_title, evidence, media_evidence %}
 {# Hutná struktura od 23. 11. 2026: zjištění → SWOT → Česko → EU a svět → postoje → co sledovat; zbytek sbalený pro analytiky.
    Starší týdny se vykreslují šablonou week_legacy.html. #}
-{% macro news_list(list_, show_geo) -%}
-<ol class="news">
-{% for n in list_ %}{% set it = items.get(n.item_id) %}{% if it %}
+{% macro news_item(n, show_geo) -%}
+{% set it = items.get(n.item_id) %}{% if it %}
   <li>
     <p class="news-title"><a href="{{ it.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ n.title_cs|plain }}</strong>&nbsp;↗</a>{% if n.key_figure and n.key_figure != 'neuvedeno' %} <span class="fig">{{ n.key_figure }}</span>{% endif %}</p>
     <p>{{ n.text_cs|rich }}</p>
     <p class="card-meta">{% if show_geo %}<span class="tag tag-{{ it.geo_focus|lower }}">{{ it.geo_focus }}</span> {% endif %}<span class="src">{{ it.source_name }}</span> · {{ item_date(it) }}{% if it.is_opinion %} · <span class="tag tag-opinion">názor</span>{% endif %}{% if it.from_media %} · <span class="tag tag-type">česká média</span>{% endif %}</p>
   </li>
-{% endif %}{% endfor %}
+{% endif %}
+{%- endmacro %}
+{# první 3 zprávy viditelné, zbytek rozbalovací #}
+{% macro news_list(list_, show_geo) -%}
+{% set shown = [] %}{% for n in list_ %}{% if items.get(n.item_id) %}{% set _ = shown.append(n) %}{% endif %}{% endfor %}
+<ol class="news">
+{% for n in shown[:3] %}{{ news_item(n, show_geo) }}{% endfor %}
 </ol>
+{% if shown|length > 3 %}
+<details class="fold more-news">
+  <summary>Další zprávy <span class="fold-n">{{ shown|length - 3 }}</span></summary>
+  <ol class="news" start="4">
+  {% for n in shown[3:] %}{{ news_item(n, show_geo) }}{% endfor %}
+  </ol>
+</details>
+{% endif %}
 {%- endmacro %}
 {% block title %}{% if is_latest %}{{ site.title }} – týden {{ r.week }}{% else %}Týden {{ r.week }} – {{ site.title }}{% endif %}{% endblock %}
 {% block description %}{{ (r.headline_cs or site.tagline)|plain }}{% endblock %}
@@ -101,10 +114,14 @@
   </section>
   {% endif %}
 
+  <section aria-labelledby="analytici" class="analyst">
+    <h2 id="analytici">Pro analytiky</h2>
+    <p class="hint">Podrobnosti jsou sbalené – klikněte na název oddílu.</p>
+
   {% set cur = cz_trend[-1] if cz_trend and cz_trend[-1].week == r.week else none %}
   {% if cur %}
-  <section aria-labelledby="nalada" class="mood">
-    <h2 id="nalada">Přibližná nálada diskurzu o Česku <span class="mood-est">(odhad)</span></h2>
+  <details class="fold mood" id="nalada">
+    <summary>Přibližná nálada diskurzu o Česku (odhad) <span class="fold-n">{{ '%+d'|format(cur.index) if cur.index else '≈ 0' }} · vývoj v čase</span></summary>
     {% set prev = cz_trend[-2] if cz_trend|length >= 2 else none %}
     {% set tone = 'neg' if cur.index <= -10 else ('pos' if cur.index >= 10 else 'neu') %}
     <p class="mood-now">Tento týden <span class="mood-num mood-{{ tone }}">{{ '%+d'|format(cur.index) if cur.index else '≈ 0' }}</span>
@@ -134,12 +151,8 @@
     </div>
     {% endif %}
     <p class="hint">Přibližný odhad z hodnocení AI (vyznění zpráv o Česku pro dekarbonizaci, −100 až +100), ne měření veřejného mínění. Není validovaný a výkyvy mezi týdny mohou být náhodné. <a href="{{ base }}metodika/#nalada">Jak odhad vzniká</a>.</p>
-  </section>
+  </details>
   {% endif %}
-
-  <section aria-labelledby="analytici" class="analyst">
-    <h2 id="analytici">Pro analytiky</h2>
-    <p class="hint">Podrobnosti jsou sbalené – klikněte na název oddílu.</p>
 
     {% if r.media and r.media.n_relevant %}{% set m = r.media %}{% set marts = media_articles(m) %}
     <details class="fold media-sec">

@@ -106,6 +106,10 @@ def test_glance_tables_rendered(settings, with_report, tmp_path):
     assert html.index("SWOT: dekarbonizace") < html.index('id="analytici"') < html.index("Všechny podklady")
     assert "<details class=\"fold\">" in html and "<details class=\"fold\" open" not in html
     assert "**" not in html and "<strong>" in html
+    # Česko: první 3 zprávy viditelné, 4. až v rozbalovací části „Další zprávy“
+    cz = html[html.index('id="cesko"'):html.index('id="svet"')]
+    first_list = cz[:cz.index("Další zprávy")]
+    assert first_list.count('class="news-title"') == 3 and cz.count('class="news-title"') == 4
 
 
 def test_opportunities_table_and_back_to_top(settings, with_report, tmp_path):
