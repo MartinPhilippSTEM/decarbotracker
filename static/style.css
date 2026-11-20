@@ -291,3 +291,5 @@ html { scroll-behavior: smooth; }
 .mood-chart .mood-pt:hover .mood-dot, .mood-chart .mood-pt:focus .mood-dot { fill: var(--accent); stroke-width: 3.5; }
 .mood-explain { font-size: .98rem; margin: .4rem 0; }
 #v-cesku .mood { border-bottom: 1px solid var(--line); padding-bottom: .6rem; margin-bottom: .8rem; }
+.opp { margin: .5rem 0 .8rem; }
+.stem-role { display: inline-block; margin-top: .25rem; padding: .2rem .55rem; border-left: 3px solid var(--accent); background: var(--accent-soft); border-radius: 3px; font-size: .95rem; }

@@ -260,7 +260,7 @@ def build_site(settings: Settings, out_dir: Path | None = None, base_url: str | 
                      "protected": source_review.is_protected(s)})
     api_rows = [h for k, h in health.items() if k.startswith("api-")]
     _write(out / "metodika" / "index.html", env.get_template("methodology.html").render(
-        page="methodology", rows=rows, api_rows=api_rows, sel=settings.selection, llm=settings.llm,
+        page="methodology", rows=rows, api_rows=api_rows, sel=settings.selection, llm=settings.llm, opp=settings.opportunities,
         manual=MANUAL_SOURCES, checked_at=(read_json(project_root() / "data" / "source_health.json", {}) or {}).get("checked_at"),
     ))
 

@@ -195,12 +195,13 @@
     {% if r.opportunities_cs %}
     <details class="fold">
       <summary>Příležitosti: výzvy a financování <span class="fold-n">{{ r.opportunities_cs|length }}</span></summary>
-      <p class="hint">Výzvy vhodné pro společenskovědní výzkum (bez technologických a investičních dotací). Vybírá AI – podmínky vždy ověřte u poskytovatele.</p>
+      <p class="hint">Výzvy vhodné pro portfolio STEM s uzávěrkou nejvýš 6 měsíců od konce týdne (bez technologických a investičních dotací), z jednoho programu nejvýš 3. Vybírá AI podle profilu STEM a navrhuje možné zapojení – podmínky vždy ověřte u poskytovatele.</p>
       {% for program, opps in opp_groups %}
       <h4 class="opp-program"><span class="opp-badge">{{ program }}</span></h4>
       <ul>
       {% for o in opps %}
-        <li><a href="{{ o.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ o.title_cs }}</strong>&nbsp;↗</a> – {% if o.amount_min == o.amount_max %}{{ o.amount_max }}{% else %}{{ o.amount_min }} – {{ o.amount_max }}{% endif %} · uzávěrka <strong>{{ o.deadline }}</strong>. {{ o.summary_cs|first_sentence|rich }}</li>
+        <li class="opp"><a href="{{ o.url }}" target="_blank" rel="noopener" class="item-link"><strong>{{ o.title_cs }}</strong>&nbsp;↗</a> – {% if o.amount_min == o.amount_max %}{{ o.amount_max }}{% else %}{{ o.amount_min }} – {{ o.amount_max }}{% endif %} · uzávěrka <strong>{{ o.deadline if o.deadline != 'neuvedeno' else 'neuvedena – ověřte u poskytovatele' }}</strong>. {{ o.summary_cs|rich }}
+          {% if o.stem_role_cs %}<br><span class="stem-role"><strong>Zapojení STEM:</strong> {{ o.stem_role_cs|rich }}</span>{% endif %}</li>
       {% endfor %}
       </ul>
       {% endfor %}

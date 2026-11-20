@@ -6,7 +6,7 @@ from decarbotracker.dedup import SeenState
 from decarbotracker.fetch.funding import budget_info, parse_eu_results
 from decarbotracker.llm import LLMError, UsageTracker
 from decarbotracker.models import OpportunityBatch, OpportunityDraft
-from decarbotracker.opportunities import build_pool, find_opportunities
+from decarbotracker.opportunities import build_pool, find_opportunities, parse_deadline
 
 EU_SOURCE = make_source(id="eu-funding", name="EU Funding & Tenders Portal", type="eu_funding", region="EU",
                         source_type="funding", topic_filter=False, funding=True)
@@ -66,7 +66,8 @@ class FakeClient:
 def _draft(item_id, title="Výzva"):
     return OpportunityDraft(item_id=item_id, title_cs=title, funder="TA ČR", amount_min="1 mil. Kč",
                             amount_max="5 mil. Kč", open_from="1. 10. 2026", deadline="15. 12. 2026",
-                            summary_cs="Podpora společenskovědního výzkumu.")
+                            summary_cs="Podpora společenskovědního výzkumu.",
+                            stem_role_cs="STEM jako partner: reprezentativní šetření v ČR.")
 
 
 def test_find_opportunities_validates_ids_and_copies_links(settings):
@@ -88,3 +89,50 @@ def test_find_opportunities_dry_run(settings):
     it = make_item(1, title="Grantová výzva", source_id="tacr", published=datetime(2026, 9, 25, tzinfo=UTC))
     opps, _ = find_opportunities([it], settings, None, SeenState(), {"tacr"}, NOW, "2026-W40")
     assert len(opps) == 1 and opps[0].deadline == "neuvedeno"
+
+
+def test_parse_deadline_formats():
+    from datetime import date
+
+    assert parse_deadline("15. 12. 2026") == date(2026, 12, 15)
+    assert parse_deadline("2027-03-04T17:00:00") == date(2027, 3, 4)
+    assert parse_deadline("31. března 2027") == date(2027, 3, 31)
+    assert parse_deadline("březen 2027") == date(2027, 3, 31)
+    assert parse_deadline("neuvedeno") is None
+
+
+def _eu(n, deadline, prog="HORIZON"):
+    it = make_item(n, title=f"Výzva {n} ({prog}-CL5-2027-01-D{n})", source_id="eu-funding",
+                   summary=f"Výzva EU | Uzávěrka: {deadline} | Štítek SSH (společenské a humanitní vědy)")
+    it.source_type = "funding"
+    return it
+
+
+def test_pool_drops_calls_outside_six_month_window():
+    """Uzávěrka později než 6 měsíců od konce týdne (nebo už prošlá) → výzva se nezobrazí."""
+    soon, far, past = _eu(1, "15. 1. 2027"), _eu(2, "23. 9. 2027"), _eu(3, "1. 9. 2026")
+    pool = build_pool([soon, far, past], {"eu-funding"}, SeenState(), NOW, 30, 50, "2026-W40", NOW)
+    assert [i.id for i in pool] == [soon.id]
+
+
+def test_shown_call_returns_as_reminder_only_near_deadline():
+    near, later = _eu(1, "20. 10. 2026"), _eu(2, "15. 2. 2027")
+    seen = SeenState(opportunities={near.id: "2026-W38", later.id: "2026-W38"})
+    pool = build_pool([near, later], {"eu-funding"}, seen, NOW, 30, 50, "2026-W40", NOW)
+    assert [i.id for i in pool] == [near.id]
+
+
+def test_finalize_caps_programme_and_window(settings):
+    calls = [_eu(i, "15. 1. 2027") for i in range(1, 6)] + [_eu(9, "15. 1. 2027", prog="LIFE")]
+    late = _eu(20, "15. 1. 2027")
+    drafts = [_draft(c.id) for c in calls] + [_draft(late.id)]
+    drafts[-1].deadline = "30. 11. 2027"  # AI uvedla uzávěrku mimo okno
+    for d in drafts[:-1]:
+        d.deadline = "15. 1. 2027"
+    client = FakeClient(settings, OpportunityBatch(opportunities=drafts))
+    opps, logs = find_opportunities(calls + [late], settings, client, SeenState(), {"eu-funding"}, NOW, "2026-W40")
+    progs = [o.title.split("(")[1].split("-")[0] for o in opps]
+    assert progs.count("HORIZON") == 3 and "LIFE" in progs
+    assert all(o.item_id != late.id for o in opps)
+    assert all(o.stem_role_cs for o in opps)
+    assert any("mimo okno" in line for line in logs) and any("z programu" in line for line in logs)

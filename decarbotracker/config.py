@@ -121,8 +121,10 @@ class AcademicSettings(BaseModel):
 class OpportunitySettings(BaseModel):
     enabled: bool = True
     max_items: int = 6
-    pool_max: int = 50
+    pool_max: int = 70
     lookback_days: int = 30
+    max_deadline_months: int = 6   # nezobrazovat výzvy s uzávěrkou později než za 6 měsíců od konce týdne
+    reminder_days: int = 45        # už zobrazená výzva se může vrátit, když do uzávěrky zbývá nejvýš tolik dní
     effort: str = "low"
     max_tokens: int = 12000
 

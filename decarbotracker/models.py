@@ -232,6 +232,7 @@ class OpportunityDraft(BaseModel):
     open_from: str = Field(description="od kdy lze podávat (datum ze vstupu); jinak 'neuvedeno'")
     deadline: str = Field(description="uzávěrka podávání (datum ze vstupu); jinak 'neuvedeno'")
     summary_cs: str = Field(description="max. 2 věty: co výzva podporuje a pro koho")
+    stem_role_cs: str = Field(description="1–2 věty: jak by se mohl zapojit STEM (role a konkrétní práce)")
 
 
 class OpportunityBatch(BaseModel):
@@ -239,6 +240,7 @@ class OpportunityBatch(BaseModel):
 
 
 class Opportunity(OpportunityDraft):
+    stem_role_cs: str = ""  # starší přehledy (do 16. 11. 2026) návrh zapojení nemají
     title: str
     url: str
     source_name: str

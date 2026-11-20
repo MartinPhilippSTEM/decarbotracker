@@ -217,6 +217,63 @@ sources:
     funding: true
     notes: "Aktuality a veřejné soutěže; posuzuje se i jako zdroj výzev (Příležitosti). Přidáno 1. 10. 2026."
 
+  # --- další poskytovatelé výzev (Příležitosti) – přidáno 20. 11. 2026, aby se neskenoval jen Horizon Europe
+  - id: gacr
+    name: Grantová agentura ČR (GA ČR)
+    type: scrape
+    url: "https://gacr.cz/aktuality/"
+    homepage: "https://gacr.cz/"
+    region: CZ
+    source_type: government
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    funding: true
+    notes: "Základní výzkum (standardní a mezinárodní projekty, JUNIOR STAR…). RSS feed webu nefunguje (404), proto výpis aktualit."
+    scrape: {item: "div.listBig > a", title: "span.-link", date: "span.-date", summary: "p.-small"}
+
+  - id: opst
+    name: OP Spravedlivá transformace (OPST)
+    type: rss
+    url: "https://opst.cz/feed/"
+    region: CZ
+    source_type: government
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    funding: true
+    notes: "Výzvy a novinky operačního programu pro uhelné regiony (Karlovarský, Ústecký, Moravskoslezský kraj)."
+
+  - id: opz-plus
+    name: OP Zaměstnanost plus (výzvy)
+    type: scrape
+    url: "https://www.esfcr.cz/vyzvy-opz-plus"
+    homepage: "https://www.esfcr.cz/"
+    region: CZ
+    source_type: government
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    funding: true
+    notes: "Výzvy OPZ+ (sociální politika, veřejná správa) – STEM v nich realizuje výzkumné projekty."
+    scrape: {item: "div.article", title: "h3.article-heading", summary: "p"}
+
+  - id: osf-cz
+    name: Nadace OSF
+    type: rss
+    url: "https://osf.cz/feed/"
+    region: CZ
+    source_type: ngo
+    language: cs
+    topic_filter: true
+    weight: 1.0
+    enabled: true
+    funding: true
+    notes: "Grantové výzvy nadace (demokracie, občanská společnost, nezávislá média)."
+
   - id: obnovitelne
     name: Obnovitelně.cz
     type: scrape
@@ -497,7 +554,7 @@ sources:
     scrape: {item: "div.card", title: "h3 a", date: "div.text_box_head", summary: "p.card_desc"}
 
   - id: eu-funding
-    name: EU Funding & Tenders Portal (výzvy SSH)
+    name: EU Funding & Tenders Portal (výzvy)
     type: eu_funding
     url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/calls-for-proposals"
     region: EU
@@ -507,7 +564,8 @@ sources:
     weight: 1.0
     enabled: true
     funding: true
-    notes: "Otevřené a ohlášené výzvy se štítkem SSH (společenské vědy) k tématům klima/energie, přes veřejné vyhledávací API portálu. Jen do sekce Příležitosti. Přidáno 1. 10. 2026."
+    max_items: 400
+    notes: "Otevřené a ohlášené výzvy přes veřejné vyhledávací API portálu: štítek SSH + tematické dotazy napříč programy (od 20. 11. 2026). Jen do sekce Příležitosti."
 
   # ======================================================================= EU / EVROPA – RSS
   - id: carbon-brief
