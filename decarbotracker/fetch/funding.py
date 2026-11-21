@@ -3,7 +3,7 @@
 Web portálu je aplikace v JavaScriptu, proto se nescrapuje. Od 20. 11. 2026 se neptáme jen na výzvy se štítkem
 SSH (to vracelo skoro jen Horizon Europe), ale i několika tematickými dotazy napříč programy (LIFE, CERV,
 Erasmus+, Interreg, JTM…). Bereme jen otevřené a ohlášené výzvy s budoucí uzávěrkou, které se týkají klimatu,
-energetiky a transformace, nebo společnosti, veřejného mínění a demokracie (portfolio STEM).
+energetiky a transformace (od 21. 11. 2026 už ne výzvy jen o demokracii či sociální politice bez vazby na klima).
 """
 
 from __future__ import annotations
@@ -29,15 +29,16 @@ STATUS_FORTHCOMING, STATUS_OPEN = "31094501", "31094502"
 TOPIC_RE = re.compile(
     r"\b(climate|energy|decarboni|green transition|energy transition|just transition|net.zero|emission|"
     r"carbon|renewable|fossil|heating|fuel poverty|energy poverty|electrif)", re.I)
-# … nebo společnost, veřejné mínění a demokracie (jen u výzev se štítkem SSH nebo z tematických dotazů)
+# společenská část výzvy (veřejnost, participace…) – odliší SSH výzvy od čistě technických
 SOCIETY_RE = re.compile(
     r"\b(public opinion|attitude|citizen|civil society|democra|polari[sz]|social cohesion|inequalit|"
     r"behaviou?r|survey|engagement|participat|trust|disinformation|misinformation|social innovation|"
-    r"vulnerable|poverty|welfare|labour market|integration|survey)", re.I)
+    r"vulnerable|poverty|welfare|co.creat|living lab|stakeholder|acceptance|acceptability)", re.I)
 # tematické dotazy napříč programy (text pro vyhledávání portálu); SSH dotaz je první
 QUERIES: list[tuple[str, bool]] = [
     ("***", True), ("energy poverty", False), ("just transition", False), ("energy transition", False),
-    ("climate citizens", False), ("public acceptance", False), ("climate policy", False), ("democracy", False),
+    ("climate citizens", False), ("public acceptance", False), ("climate policy", False), ("energy communities", False),
+    ("climate neutral cities", False),
 ]
 
 
@@ -104,8 +105,8 @@ def parse_eu_results(data: dict[str, Any], source: Source, *, now: datetime | No
         text = f"{title} {_first(md, 'callTitle')} {desc}"
         ssh = "SSH" in (md.get("crossCuttingPriorities") or []) or ssh_query
         social = bool(SOCIETY_RE.search(text))
-        if require_topic and not (TOPIC_RE.search(text) or (ssh and social)):
-            continue
+        if require_topic and not TOPIC_RE.search(text):
+            continue  # jen klima, energetika a transformace
         # technické výzvy Horizon Europe bez štítku SSH a bez společenské části (baterie, lodě…) pro STEM nejsou
         if require_topic and not ssh and not social and identifier.startswith("HORIZON"):
             continue

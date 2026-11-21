@@ -61,6 +61,17 @@ def parse_deadline(text: str) -> date | None:
         return None
 
 
+# klimatická a energeticko-transformační témata (bez diakritiky, česky i anglicky) – mají v poolu přednost
+CLIMATE_RE = re.compile(
+    r"(klima|energ|dekarboni|decarboni|transformac|transition|emis|uhl|coal|obnoviteln|renewable|"
+    r"vytapen|heating|climate|carbon|uhlik|fosil|fossil|ets ?2|zelen|green|udrzitel|sustainab|adaptac|adaptation)",
+    re.I)
+
+
+def is_climate(it: Item) -> bool:
+    return bool(CLIMATE_RE.search(strip_diacritics(f"{it.title} {(it.summary_raw or '')[:600]}")))
+
+
 def deadline_window(ref: datetime, months: int) -> tuple[date, date]:
     """Okno uzávěrek: od data týdne do + `months` měsíců (přibližně po 30,5 dne)."""
     start = ref.date()
@@ -98,8 +109,9 @@ def build_pool(items: list[Item], funding_source_ids: set[str], seen: SeenState,
     def rank(i: Item) -> tuple:
         dl = item_deadline(i)
         ssh = "Štítek SSH" in (i.summary_raw or "")
-        # české zdroje první, pak EU výzvy se štítkem SSH, pak ostatní; uvnitř nejbližší uzávěrka / nejnovější
-        return (i.region != "CZ", i.source_type == "funding" and not ssh, i.source_type == "funding",
+        # klimatické a energetické výzvy první; pak české zdroje, EU výzvy se štítkem SSH, ostatní;
+        # uvnitř nejbližší uzávěrka / nejnovější
+        return (not is_climate(i), i.region != "CZ", i.source_type == "funding" and not ssh, i.source_type == "funding",
                 dl or date.max, -i.effective_date.timestamp(), i.id)
 
     return sorted(pool.values(), key=rank)[:pool_max]

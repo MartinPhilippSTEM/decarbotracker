@@ -30,7 +30,7 @@ def test_budget_info_extracts_min_max():
 
 
 def test_pool_contains_funding_sources_and_call_titles_only():
-    call = make_item(1, title="TA ČR vyhlašuje veřejnou soutěž programu SIGMA", region="CZ", source_id="tacr")
+    call = make_item(1, title="TA ČR vyhlašuje veřejnou soutěž programu SIGMA k energetické transformaci", region="CZ", source_id="tacr")
     news = make_item(2, title="Ceny elektřiny rostou", region="CZ", source_id="oenergetice")
     titled = make_item(3, title="Nová výzva Modernizačního fondu", region="CZ", source_id="mzp")
     old = make_item(4, title="Výzva z loňska", region="CZ", source_id="tacr", published=NOW - timedelta(days=90))
@@ -42,6 +42,16 @@ def test_pool_contains_funding_sources_and_call_titles_only():
     assert call.id in ids and titled.id in ids and eu.id in ids
     assert news.id not in ids and old.id not in ids
     assert ids.index(call.id) < ids.index(eu.id)  # české první
+
+
+def test_pool_puts_climate_calls_first():
+    social = make_item(1, title="Výzva OPZ+ na sociální podnikání", region="CZ", source_id="opz-plus")
+    climate = make_item(2, title="Výzva na komunitní energetiku v uhelných regionech", region="CZ", source_id="opst")
+    eu = make_item(3, title="Citizens in the energy transition (HORIZON-X)", source_id="eu-funding")
+    eu.source_type = "funding"
+    ids = [i.id for i in build_pool([social, climate, eu], {"opz-plus", "opst", "eu-funding"}, SeenState(),
+                                    NOW, 30, 50)]
+    assert ids == [climate.id, eu.id, social.id]
 
 
 def test_pool_skips_opportunities_shown_in_other_week():
