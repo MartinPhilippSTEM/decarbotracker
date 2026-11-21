@@ -540,6 +540,48 @@ sources:
     funding: true
     notes: "Německá klimatická iniciativa pro EU (projekty, výzvy); posuzuje se i jako zdroj výzev. Přidáno 1. 10. 2026."
 
+  - id: cetp
+    name: Clean Energy Transition Partnership (CETP)
+    type: rss
+    url: "https://cetpartnership.eu/feed"
+    homepage: "https://cetpartnership.eu/calls"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: false
+    weight: 0.7
+    enabled: true
+    protected: true
+    notes: "Evropské partnerství pro výzkum energetické transformace (společné výzvy každý rok, i společenskovědní témata). Do příležitostí jen příspěvky ohlašující výzvu. Přidáno 21. 11. 2026."
+
+  - id: cinea
+    name: CINEA – Evropská výkonná agentura pro klima, infrastrukturu a životní prostředí
+    type: rss
+    url: "https://cinea.ec.europa.eu/node/2/rss_en"
+    homepage: "https://cinea.ec.europa.eu/"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: false
+    weight: 0.7
+    enabled: true
+    protected: true
+    notes: "Agentura spravující LIFE (vč. přechodu na čistou energii), Inovační fond a CEF Energy. Do příležitostí jen příspěvky ohlašující výzvu. Přidáno 21. 11. 2026."
+
+  - id: eui
+    name: European Urban Initiative (EUI)
+    type: rss
+    url: "https://www.urban-initiative.eu/rss.xml"
+    homepage: "https://www.urban-initiative.eu/"
+    region: EU
+    source_type: government
+    language: en
+    topic_filter: true
+    weight: 0.7
+    enabled: true
+    protected: true
+    notes: "Výzvy EU pro inovativní akce měst (klima, energetika, spravedlivá transformace) – partnerství měst s výzkumnými organizacemi. Do příležitostí jen příspěvky ohlašující výzvu. Přidáno 21. 11. 2026."
+
   - id: ecf
     name: European Climate Foundation
     type: scrape

@@ -23,7 +23,8 @@ log = logging.getLogger(__name__)
 
 # titulky zpráv, které nejspíš ohlašují výzvu (pro zdroje, které nejsou čistě grantové)
 CALL_RE = re.compile(
-    r"\b(vyzv|soutez|grant|dotac|call for (proposals|applications)|funding (call|opportunit)|open call|tender)", re.I)
+    r"\b(vyzv|soutez|grant|dotac|call for (proposals|applications|projects)|funding (call|opportunit)|open call|"
+    r"joint call|calls? (is |are )?(now )?open|tender)", re.I)
 
 MONTHS = {"ledna": 1, "unora": 2, "brezna": 3, "dubna": 4, "kvetna": 5, "cervna": 6, "cervence": 7, "srpna": 8,
           "zari": 9, "rijna": 10, "listopadu": 11, "prosince": 12,
