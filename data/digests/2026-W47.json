@@ -1,0 +1,48 @@
+{
+  "week": "2026-W47",
+  "generated_at": "2026-11-23T07:47:23.986681Z",
+  "model": "bez AI (zjištění z přehledu)",
+  "headline_cs": "Česko řeší drahé energie a podporu průmyslu, zatímco EU odkládá metanová pravidla a COP31 skončil bez dohody.",
+  "report_url": "https://martinphilippstem.github.io/decarbotracker/tydny/2026-w47/",
+  "findings": [
+    {
+      "item_id": "77696dea9d29",
+      "geo": "CZ",
+      "title_cs": "Česko zvažuje podporu energeticky náročného průmyslu",
+      "text_cs": "Česko zvažuje podporu pro energeticky náročné firmy a inspiruje se německým programem „Industriestrompreis“, který počítá s maximální cenou elektřiny pro podniky.",
+      "title": "Česko zvažuje podporu pro energeticky náročné firmy. Inspiruje se v Německu",
+      "url": "https://archiv.hn.cz/c1-67962230-zlevnime-vam-elektrinu-ale-investujte-do-dekarbonizace-cesko-zvazuje-nastroj-ktery-zavedlo-nemecko",
+      "source_name": "Hospodářské noviny – Byznys"
+    },
+    {
+      "item_id": "34dbc7eb8cc8",
+      "geo": "CZ",
+      "title_cs": "Většina Čechů škrtá výdaje",
+      "text_cs": "Podle říjnového průzkumu agentury Norstat pro TV Nova se výdaje snaží omezit zhruba 85 procent dotázaných a jen každý sedmý zvládne bez potíží zaplatit vše potřebné.",
+      "title": "Češi, šetříme! Inflace je nízká, peněženky přesto prázdné. Výdaje škrtá většina populace, hlavně mladí",
+      "url": "https://www.forum24.cz/cesi-setrime-inflace-je-nizka-penezenky-presto-prazdne-vydaje-skrta-vetsina-populace-hlavne-mladi",
+      "source_name": "FORUM 24"
+    },
+    {
+      "item_id": "0f88bf149732",
+      "geo": "EU",
+      "title_cs": "EU se dohodla na rychlejším povolování sítí a zdrojů",
+      "text_cs": "Evropský parlament a Rada dosáhly předběžné politické dohody o nových pravidlech pro zjednodušení a zrychlení povolování sítí a čisté energetické infrastruktury.",
+      "title": "Commission welcomes political agreement on faster and simpler permitting for grids, clean energy projects",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2450",
+      "source_name": "Evropská komise – DG ENER"
+    }
+  ],
+  "x_thread": [],
+  "notes": [],
+  "usage": {
+    "calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cost_usd": 0.0,
+    "by_model": {}
+  },
+  "sent_at": "2026-11-23T07:47:24.124348Z"
+}
